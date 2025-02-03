@@ -1,0 +1,59 @@
+API Endpoints for Edurizon Backend
+
+1. User Authentication
+   - Register a new user
+     POST /api/users/register
+     Request Body:
+     {
+       "name": "string",
+       "username": "string",
+       "email": "string",
+       "phone": "string",
+       "password": "string",
+       "role": "string" // "student", "counselor", "financeAdmin", "documentAdmin"
+     }
+     Response:
+     {
+       "_id": "string",
+       "name": "string",
+       "username": "string",
+       "email": "string",
+       "phone": "string",
+       "role": "string",
+       "token": "string"
+     }
+
+   - Login a user
+     POST /api/users/login
+     Request Body:
+     {
+       "username": "string",
+       "password": "string"
+     }
+     Response:
+     {
+       "_id": "string",
+       "name": "string",
+       "username": "string",
+       "email": "string",
+       "phone": "string",
+       "role": "string",
+       "token": "string"
+     }
+
+   - Google signup/login
+     POST /api/users/google
+     Request Body:
+     {
+       "tokenId": "string"
+     }
+     Response:
+     {
+       "_id": "string",
+       "name": "string",
+       "username": "string",
+       "email": "string",
+       "phone": "string",
+       "role": "string",
+       "token": "string"
+     }
