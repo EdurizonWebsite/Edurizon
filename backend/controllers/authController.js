@@ -17,11 +17,11 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new Error('Please provide all required fields');
   }
 
-  const userExists = await User.findOne({ username });
+  const userExists = await User.findOne({ $or: [{ username }, { email }, { phone }] });
 
   if (userExists) {
     res.status(400);
-    throw new Error('User already exists');
+    throw new Error('User already exists with the provided username, email, or phone number');
   }
 
   const hashedPassword = bcrypt.hashSync(password, 10);
@@ -98,13 +98,20 @@ const googleAuth = asyncHandler(async (req, res) => {
     let user = await User.findOne({ googleId });
 
     if (!user) {
-      user = await User.create({
-        name,
-        email,
-        username: email,
-        role: 'student',
-        googleId,
-      });
+      user = await User.findOne({ email });
+      if (user) {
+        // If user exists with the same email, update the googleId
+        user.googleId = googleId;
+        await user.save();
+      } else {
+        user = await User.create({
+          name,
+          email,
+          username: email,
+          role: 'student',
+          googleId,
+        });
+      }
     }
 
     const token = generateToken(user._id);

@@ -16,6 +16,7 @@ const Navbar = () => {
   const [universities, setUniversities] = useState<University[]>([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const router = useRouter();
+  const isMainPage = router.pathname === '/';
 
   useEffect(() => {
     const fetchUniversities = async () => {
@@ -27,6 +28,7 @@ const Navbar = () => {
   }, []);
 
   const handleUniversityClick = (id: string) => {
+    setDropdownOpen(false); // Close the dropdown
     const token = localStorage.getItem('token');
     if (!token) {
       router.push(`/login?redirect=/university/${id}`);
@@ -41,29 +43,29 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className={`p-4 ${isMainPage ? 'bg-transparent' : 'bg-gray-900'} fixed w-full z-50`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="relative">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="text-white bg-gray-700 px-4 py-2 rounded"
+            className="text-white bg-gray-800 px-4 py-2 rounded hover:bg-gray-700"
           >
             MBBS
           </button>
           {dropdownOpen && (
-            <div className="absolute left-0 mt-2 w-48 bg-white rounded shadow-lg">
+            <div className="absolute left-0 mt-2 w-48 bg-gray-800 rounded shadow-lg">
               {universities.length > 0 ? (
                 universities.map((university) => (
                   <div
                     key={university._id}
-                    className="px-4 py-2 text-gray-800 cursor-pointer"
+                    className="px-4 py-2 text-gray-300 cursor-pointer hover:bg-gray-700"
                     onClick={() => handleUniversityClick(university._id)}
                   >
                     {university.name} ({university.country})
                   </div>
                 ))
               ) : (
-                <div className="px-4 py-2 text-gray-800">No universities available</div>
+                <div className="px-4 py-2 text-gray-300">No universities available</div>
               )}
             </div>
           )}
@@ -71,7 +73,7 @@ const Navbar = () => {
         <div className="text-white text-lg font-bold">Edurizon</div>
         <button
           onClick={handleLogout}
-          className="text-white bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          className="text-white bg-red-600 px-4 py-2 rounded hover:bg-red-500"
         >
           Logout
         </button>

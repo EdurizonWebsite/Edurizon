@@ -1,12 +1,16 @@
-export default function Home() {
-  console.log('Rendering Home component');
+import React from 'react';
+import Navbar from '../components/Navbar';
+
+const Home = () => {
   return (
     <div>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-6">Welcome to Edurizon</h2>
-        </div>
+      <Navbar />
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
+        <h1 className="text-4xl font-bold mb-4">Welcome to Edurizon</h1>
+        <p className="text-lg">Your gateway to the best universities around the world.</p>
       </div>
     </div>
   );
-}
+};
+
+export default Home;
