@@ -57,3 +57,26 @@ API Endpoints for Edurizon Backend
        "role": "string",
        "token": "string"
      }
+
+2. University Information
+   - Get all MBBS universities
+     GET /api/universities/mbbs
+     Response:
+     [
+       {
+         "_id": "string",
+         "name": "string",
+         "country": "string",
+         "type": "string"
+       }
+     ]
+
+   - Get a single university by ID
+     GET /api/universities/:id
+     Response:
+     {
+       "_id": "string",
+       "name": "string",
+       "country": "string",
+       "type": "string"
+     }

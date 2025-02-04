@@ -1,4 +1,3 @@
-// filepath: backend/controllers/authController.js
 const asyncHandler = require('express-async-handler');
 const User = require('../models/userModel');
 const generateToken = require('../utils/generateToken');
@@ -88,42 +87,45 @@ const authUser = asyncHandler(async (req, res) => {
 const googleAuth = asyncHandler(async (req, res) => {
   const { tokenId } = req.body;
 
-  const ticket = await client.verifyIdToken({
-    idToken: tokenId,
-    audience: process.env.GOOGLE_CLIENT_ID,
-  });
-
-  const { name, email, sub: googleId } = ticket.getPayload();
-
-  let user = await User.findOne({ googleId });
-
-  if (!user) {
-    user = await User.create({
-      name,
-      email,
-      username: email,
-      phone: '',
-      password: '',
-      role: 'student',
-      googleId,
+  try {
+    const ticket = await client.verifyIdToken({
+      idToken: tokenId,
+      audience: process.env.GOOGLE_CLIENT_ID,
     });
-  }
 
-  const token = generateToken(user._id);
-  res.cookie('jwt', token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
-  });
-  res.json({
-    _id: user._id,
-    name: user.name,
-    username: user.username,
-    email: user.email,
-    phone: user.phone,
-    role: user.role,
-    token,
-  });
+    const { name, email, sub: googleId } = ticket.getPayload();
+
+    let user = await User.findOne({ googleId });
+
+    if (!user) {
+      user = await User.create({
+        name,
+        email,
+        username: email,
+        role: 'student',
+        googleId,
+      });
+    }
+
+    const token = generateToken(user._id);
+    res.cookie('jwt', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+    });
+    res.json({
+      _id: user._id,
+      name: user.name,
+      username: user.username,
+      email: user.email,
+      phone: user.phone,
+      role: user.role,
+      token,
+    });
+  } catch (error) {
+    console.error('Error during Google signup:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
 });
 
 module.exports = { registerUser, authUser, googleAuth };

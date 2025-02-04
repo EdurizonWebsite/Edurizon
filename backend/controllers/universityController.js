@@ -9,4 +9,17 @@ const getMBBSUniversities = asyncHandler(async (req, res) => {
   res.json(universities);
 });
 
-module.exports = { getMBBSUniversities };
+// @desc    Get a single university by ID
+// @route   GET /api/universities/:id
+// @access  Public
+const getUniversityById = asyncHandler(async (req, res) => {
+  const university = await University.findById(req.params.id);
+  if (university) {
+    res.json(university);
+  } else {
+    res.status(404);
+    throw new Error('University not found');
+  }
+});
+
+module.exports = { getMBBSUniversities, getUniversityById };
