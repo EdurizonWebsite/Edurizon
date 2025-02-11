@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
@@ -16,10 +16,6 @@ const LoginForm = () => {
 
   const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '';
 
-  useEffect(() => {
-    console.log('NEXT_PUBLIC_GOOGLE_CLIENT_ID:', clientId);
-  }, [clientId]);
-
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -28,59 +24,44 @@ const LoginForm = () => {
         password,
       });
       localStorage.setItem('token', response.data.token);
-      const redirect = router.query.redirect || '/';
-      router.push(redirect as string);
       toast.success('Login successful!');
+      router.push('/counselor/dashboard'); // Redirect to dashboard
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Invalid username or password');
+      const error = err as any;
+      console.error('Login error:', error.response?.data?.message || 'Invalid username or password');
+      toast.error(error.response?.data?.message || 'Invalid username or password');
     }
   };
 
-  const handleSignup = async (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      console.log('Registering:', { name, username, email, phone });
       const response = await axios.post('http://localhost:5000/api/users/register', {
         name,
         username,
         email,
         phone,
         password,
-        role: 'student',
+        role: 'counselor',
       });
+      console.log('Registration successful:', response.data);
       localStorage.setItem('token', response.data.token);
-      const redirect = router.query.redirect || '/';
-      router.push(redirect as string);
       toast.success('Signup successful!');
+      router.push('/counselor/dashboard'); // Redirect to dashboard
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Error during signup');
+      const error = err as any;
+      console.error('Registration error:', error.response?.data?.message || 'Error during signup');
+      toast.error(error.response?.data?.message || 'Error during signup');
     }
-  };
-
-  const handleGoogleSuccess = async (response: any) => {
-    try {
-      console.log('Google Sign-In success:', response);
-      const res = await axios.post('http://localhost:5000/api/users/google', {
-        tokenId: response.credential,
-      });
-      localStorage.setItem('token', res.data.token);
-      const redirect = router.query.redirect || '/';
-      router.push(redirect as string);
-      toast.success('Google Sign-In successful!');
-    } catch (err) {
-      toast.error(err.response?.data?.message || 'Error during Google signup');
-    }
-  };
-
-  const handleGoogleFailure = () => {
-    toast.error('Google Sign-In failed');
   };
 
   return (
     <GoogleOAuthProvider clientId={clientId}>
-      <div className="min-h-screen flex items-center justify-center bg-gray-900 pt-24"> {/* Add padding-top to avoid overlap with navbar */}
+      <div className="min-h-screen flex items-center justify-center bg-gray-900 pt-24">
         <div className="bg-gray-800 p-8 rounded shadow-md w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-6 text-white">{isLogin ? 'Login' : 'Signup'}</h2>
-          <form onSubmit={isLogin ? handleLogin : handleSignup}>
+          <h2 className="text-2xl font-bold mb-6 text-white">{isLogin ? 'Counselor Login' : 'Counselor Signup'}</h2>
+          <form onSubmit={isLogin ? handleLogin : handleRegister}>
             {!isLogin && (
               <>
                 <div className="mb-4">
@@ -157,13 +138,6 @@ const LoginForm = () => {
               {isLogin ? 'Login' : 'Signup'}
             </button>
           </form>
-          <div className="mt-4">
-            <GoogleLogin
-              onSuccess={handleGoogleSuccess}
-              onError={handleGoogleFailure}
-              className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-500 mt-4"
-            />
-          </div>
           <p className="mt-4 text-center text-gray-300">
             {isLogin ? "Don't have an account?" : 'Already have an account?'}{' '}
             <button
@@ -174,8 +148,8 @@ const LoginForm = () => {
             </button>
           </p>
         </div>
+        <ToastContainer />
       </div>
-      <ToastContainer />
     </GoogleOAuthProvider>
   );
 };

@@ -12,30 +12,29 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const registerUser = asyncHandler(async (req, res) => {
   const { name, username, email, phone, password, role } = req.body;
 
-  if (!name || !username || !email || !phone || !password || !role) {
-    res.status(400);
-    throw new Error('Please provide all required fields');
-  }
+  console.log('Registering user:', { name, username, email, phone, role });
 
-  const userExists = await User.findOne({ $or: [{ username }, { email }, { phone }] });
+  const userExists = await User.findOne({ $or: [{ email }, { username }, { phone }] });
 
   if (userExists) {
+    console.log('User already exists:', userExists);
     res.status(400);
-    throw new Error('User already exists with the provided username, email, or phone number');
+    throw new Error('User with this email, username, or phone already exists');
   }
-
-  const hashedPassword = bcrypt.hashSync(password, 10);
 
   const user = await User.create({
     name,
     username,
     email,
     phone,
-    password: hashedPassword,
+    password: bcrypt.hashSync(password, 10),
     role,
   });
 
   if (user) {
+    const token = generateToken(user._id);
+    console.log('User registered successfully:', user);
+    console.log('Generated token:', token);
     res.status(201).json({
       _id: user._id,
       name: user.name,
@@ -43,29 +42,29 @@ const registerUser = asyncHandler(async (req, res) => {
       email: user.email,
       phone: user.phone,
       role: user.role,
-      token: generateToken(user._id),
+      token,
     });
   } else {
+    console.log('Invalid user data');
     res.status(400);
     throw new Error('Invalid user data');
   }
 });
 
-// @desc    Auth user & get token
+// @desc    Authenticate user & get token
 // @route   POST /api/users/login
 // @access  Public
 const authUser = asyncHandler(async (req, res) => {
   const { username, password } = req.body;
 
+  console.log('Authenticating user:', { username });
+
   const user = await User.findOne({ username });
 
   if (user && (await bcrypt.compare(password, user.password))) {
     const token = generateToken(user._id);
-    res.cookie('jwt', token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
-    });
+    console.log('User authenticated successfully:', user);
+    console.log('Generated token:', token);
     res.json({
       _id: user._id,
       name: user.name,
@@ -76,6 +75,7 @@ const authUser = asyncHandler(async (req, res) => {
       token,
     });
   } else {
+    console.log('Invalid username or password');
     res.status(401);
     throw new Error('Invalid username or password');
   }
@@ -87,52 +87,29 @@ const authUser = asyncHandler(async (req, res) => {
 const googleAuth = asyncHandler(async (req, res) => {
   const { tokenId } = req.body;
 
-  try {
-    const ticket = await client.verifyIdToken({
-      idToken: tokenId,
-      audience: process.env.GOOGLE_CLIENT_ID,
-    });
+  const ticket = await client.verifyIdToken({
+    idToken: tokenId,
+    audience: process.env.GOOGLE_CLIENT_ID,
+  });
 
-    const { name, email, sub: googleId } = ticket.getPayload();
+  const { name, email, picture } = ticket.getPayload();
 
-    let user = await User.findOne({ googleId });
+  const user = await User.findOneAndUpdate(
+    { email },
+    { name, email, picture },
+    { new: true, upsert: true }
+  );
 
-    if (!user) {
-      user = await User.findOne({ email });
-      if (user) {
-        // If user exists with the same email, update the googleId
-        user.googleId = googleId;
-        await user.save();
-      } else {
-        user = await User.create({
-          name,
-          email,
-          username: email,
-          role: 'student',
-          googleId,
-        });
-      }
-    }
-
-    const token = generateToken(user._id);
-    res.cookie('jwt', token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
-    });
-    res.json({
-      _id: user._id,
-      name: user.name,
-      username: user.username,
-      email: user.email,
-      phone: user.phone,
-      role: user.role,
-      token,
-    });
-  } catch (error) {
-    console.error('Error during Google signup:', error);
-    res.status(500).json({ message: 'Internal Server Error' });
-  }
+  const token = generateToken(user._id);
+  console.log('Google authentication successful:', user);
+  console.log('Generated token:', token);
+  res.json({
+    _id: user._id,
+    name: user.name,
+    email: user.email,
+    picture: user.picture,
+    token,
+  });
 });
 
 module.exports = { registerUser, authUser, googleAuth };
