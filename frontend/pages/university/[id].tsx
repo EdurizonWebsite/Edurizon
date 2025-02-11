@@ -84,7 +84,39 @@ const UniversityDetails = ({ university }) => {
   };
 
   const handleJoinMeeting = () => {
+    console.log('Joining meeting:', meeting);
     setShowJoinModal(true);
+  };
+
+  useEffect(() => {
+    if (showJoinModal && meeting) {
+      const interval = setInterval(() => {
+        if (window.JitsiMeetExternalAPI) {
+          clearInterval(interval);
+          const domain = 'meet.jit.si';
+          const options = {
+            roomName: meeting.jitsiUrl?.split('/').pop(),
+            width: '100%',
+            height: '100%',
+            parentNode: document.querySelector('#jitsi-container'),
+            userInfo: {
+              displayName: 'Student',
+            },
+          };
+          const api = new window.JitsiMeetExternalAPI(domain, options);
+          api.addEventListener('videoConferenceJoined', () => {
+            console.log('Local User Joined');
+          });
+          api.addEventListener('videoConferenceLeft', () => {
+            console.log('Local User Left');
+          });
+        }
+      }, 100);
+    }
+  }, [showJoinModal, meeting]);
+
+  const handleCloseModal = () => {
+    setShowJoinModal(false);
   };
 
   if (!university) {
@@ -224,18 +256,12 @@ const UniversityDetails = ({ university }) => {
           <div className="bg-gray-800 p-8 rounded shadow-md w-full max-w-2xl relative">
             <button
               className="absolute top-2 right-2 text-white"
-              onClick={() => setShowJoinModal(false)}
+              onClick={handleCloseModal}
             >
               &times;
             </button>
             <h2 className="text-2xl font-bold mb-6 text-white">Join Meeting</h2>
-            <div className="w-full h-96">
-              <iframe
-                src={meeting.jitsiUrl}
-                allow="camera; microphone; fullscreen; display-capture"
-                className="w-full h-full rounded"
-              ></iframe>
-            </div>
+            <div id="jitsi-container" className="w-full h-96"></div>
           </div>
         </div>
       )}
