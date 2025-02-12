@@ -13,6 +13,7 @@
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
     "edurizon-website": "file:",
+    "framer-motion": "^12.4.2",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
