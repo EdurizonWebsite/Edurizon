@@ -12,6 +12,7 @@ module.exports = {
       },
       fontSize: {
         'testimonial':'clamp(42px,5.5vw,90px)',
+        'h0Text':'clamp(36px,4vw,80px)',        
         'h1Text':'clamp(32px,3.5vw,72px)',
         'h2Text':'clamp(28px,3vw,56px)',
         'h3Text':'clamp(24px,2.5vw,52px)',

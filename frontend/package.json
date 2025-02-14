@@ -13,11 +13,14 @@
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
     "edurizon-website": "file:",
+    "embla-carousel-react": "^8.5.2",
     "framer-motion": "^12.4.2",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-toastify": "^11.0.3"
+    "react-slick": "^0.30.3",
+    "react-toastify": "^11.0.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

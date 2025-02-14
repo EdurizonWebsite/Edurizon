@@ -125,7 +125,7 @@ const Navbar = () => {
         </div>
         <div className='flex gap-[.5vw]'>
           <TitleButton onClick={()=>{}} btnHeight={2.75} btnWidth={6.0625} btnRadius={6.25} btnTitle={"Sign Up"}/>
-          <IconButton onClick={()=>{}} btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={ApplyNowIcon} btnTitle={"Apply Now"} />
+          <IconButton onClick={()=>{}} className='text-smallText' btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={ApplyNowIcon} btnTitle={"Apply Now"} />
         </div>
 
         {/* <button

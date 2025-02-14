@@ -10,6 +10,23 @@ const nextConfig = {
     });
     return config;
   },
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',  // Dynamically map all routes
+        destination: '/auth/:path*', // Redirect them to the auth folder
+      },
+    ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/auth/:path*',
+        destination: '/:path*',
+        permanent: true, // Redirect users trying to access /auth/* back to home
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

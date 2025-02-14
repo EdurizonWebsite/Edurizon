@@ -23,10 +23,10 @@ const HeroSection = () => {
             />
             
             {/* Blurred Centered Div */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[54.625vw] h-[39.9375vw] [filter:blur(44.3125vw)] rounded-full bg-paleOrangeChosen"></div>
+            <div className="absolute z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[54.625vw] h-[39.9375vw] [filter:blur(44.3125vw)] rounded-full bg-paleOrangeChosen"></div>
   
             {/* Gradient Overlay */}
-            <div className="absolute bottom-0 left-0 w-full h-[80vh] bg-[linear-gradient(180deg,rgba(255,255,255,0),#fff_83.31%)]"></div>
+            <div className="z-[0] absolute bottom-0 left-0 w-full h-[80vh] bg-[linear-gradient(180deg,rgba(255,255,255,0),#fff_83.31%)]"></div>
           </div>
   
           <div className='z-[2] flex flex-col items-center justify-center '>
@@ -49,7 +49,7 @@ const HeroSection = () => {
   
   
             <div className='flex w-[27.4375vw] gap-[.0.4375vw]'>
-              <IconButton btnTitle={"Explore Opportunities"} btnHeight={2.75} btnWidth={13.1875} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={NorthEastIcon}/>
+              <IconButton btnTitle={"Explore Opportunities"} className='text-smallText' btnHeight={2.75} btnWidth={13.1875} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={NorthEastIcon}/>
               <TitleButton btnTitle={"Book Free Consultation"} btnHeight={2.75} btnWidth={13.1875} btnRadius={6.25} />
             </div>
           </div>

@@ -1,0 +1,35 @@
+
+.embla__container {
+  display: flex;
+  gap: 1.25vw;
+  touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 20.25vw;
+  min-width: 0;
+}
+
+
+.embla__button {
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.embla__button:disabled {
+  color: var(--detail-high-contrast);
+}
+
+.embla__progress {
+  width: 6.75vw;
+
+  height: .25vw;
+  background: white;
+}
+
+.embla__progress__bar {
+  height: 100%;
+  background: #FF7500;
+  transform-origin: left;
+  transition: transform 0.2s ease-out;
+}
