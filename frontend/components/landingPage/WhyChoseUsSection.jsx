@@ -32,20 +32,20 @@ const WhyChoseUsSection = () => {
                     <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
                     overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
                     text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={onBoardedIcon} />
-                            <p className='text-center'>5000+<br/>Students onboarded</p>
+                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={tieUpsIcon} />
+                            <p className='text-center'>150+<br/>University Tie Ups</p>
                     </div>
                     <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
                     overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
                     text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={onBoardedIcon} />
-                            <p className='text-center'>5000+<br/>Students onboarded</p>
+                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={experienceIcon} />
+                            <p className='text-center'>15+<br/>Years of Experience</p>
                     </div>
                     <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
                     overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
                     text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={onBoardedIcon} />
-                            <p className='text-center'>5000+<br/>Students onboarded</p>
+                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={academicCoursesIcon} />
+                            <p className='text-center'>150+<br/>Academic Courses</p>
                     </div>
                 </div>
 
@@ -56,6 +56,7 @@ const WhyChoseUsSection = () => {
         </div>
         <div className=' w-[53.5vw] h-[61vw] z-[2]'>
             <Image className='w-full h-full' src={whyChoseUsImg} alt='whyChoseUs' />
+            
         </div>
     </div>
   );

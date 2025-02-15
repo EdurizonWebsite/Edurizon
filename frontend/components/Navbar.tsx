@@ -52,7 +52,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`absolute px-[4.125vw] top-0 left-0 mt-[2rem] pb-[1.5vw] bg-transparent dark:bg-transparent w-full z-50`}>
+    <nav className={`${router.asPath=='/'?"absolute":'relative'} px-[4.125vw] top-0 left-0 mt-[2rem] pb-[1.5vw] bg-transparent dark:bg-transparent w-full z-50`}>
       <div className='flex items-center font-poppins text-regularText text-black dark:text-white w-full  '>
       <div className=" flex items-baseline text-[1vw] justify-between w-full">
         <div className='w-[15.125vw]'>

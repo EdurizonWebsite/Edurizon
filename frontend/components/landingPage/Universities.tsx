@@ -26,10 +26,7 @@ type SlideType = {
 
 
 type PropType = {
-  slides: SlideType[];
-  options?: EmblaOptionsType;
   autoScroll?: boolean; // New prop to control auto-scroll
-  emblaRef: React.RefObject<HTMLDivElement>;
 };
 
 const Universities: React.FC<PropType> = ({autoScroll=true}) => {
