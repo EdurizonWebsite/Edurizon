@@ -14,12 +14,12 @@ const FAQSection = () => {
         setSelected(i)
     }
     
-    return (<div className="my-[8vw] mx-[21.875vw] flex flex-col gap-[5.25vw] justify-center items-center w-auto ">
-                <h3 className="text-h3Text font-bold">Frequently Asked Questions</h3>
+    return (<div className="my-[8vw] mx-[21.875vw] flex flex-col gap-[5.25vw] justify-center items-center w-auto dark:text-white ">
+                <h3 className="text-h3Text font-bold ">Frequently Asked Questions</h3>
                 <div>
                     <div className="w-[56.25vw]">
                     {data.map((item,i)=>(
-                        <div key={i} className='item shadow-[0px_.125vw_.5vw_rgba(0,_0,_0,_0.1)] rounded-[1.25vw] mb-[1vw] px-[1.25vw] py-[1vw] w-full'>
+                        <div key={i} className='item shadow-[0px_.125vw_.5vw_rgba(0,_0,_0,_0.1)] dark:shadow-[0px_.125vw_.5vw_rgba(255,_255,_255,_0.1)] rounded-[1.25vw] mb-[1vw] px-[1.25vw] py-[1vw] w-full'>
                                 <div className='title' onClick={()=>toggle(i)} >
                                     <h2 className="font-semibold text-regularText font-poppins">{item.question}</h2>
                                     <Image className={`transition-all duration-300 ${selected==i ?"rotate-0":"rotate-180"}`}  alt="arrow" style={{ width:"2.375vw", height:"2.375vw" }}  src={selected==i?minusIcon:plusIcon}/>
