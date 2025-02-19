@@ -5,6 +5,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const userRoutes = require('./routes/userRoutes');
 const universityRoutes = require('./routes/universityRoutes');
+const meetingRoutes = require('./routes/meetingRoutes');
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.use(cookieParser());
 
 app.use('/api/users', userRoutes);
 app.use('/api/universities', universityRoutes);
+app.use('/api/meetings', meetingRoutes);
 
 const PORT = process.env.PORT || 5000;
 
