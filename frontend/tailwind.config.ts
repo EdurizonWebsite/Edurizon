@@ -28,7 +28,8 @@ module.exports = {
         orangeChosen:"#FF7500",
         brownChosen:"#9C572E",
         paleOrangeChosen:"#FFD7C3",
-        linenChosen:"#FEF0E6"
+        linenChosen:"#FEF0E6",
+        peachpuff: "rgba(255, 215, 195, 0.8)",
       }
     },
   },

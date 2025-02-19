@@ -33,3 +33,25 @@
   transform-origin: left;
   transition: transform 0.2s ease-out;
 }
+
+
+
+.embla__scrollbar {
+  position: relative;
+  width: 6.75vw;
+  padding-left: 10px;
+  height: .25vw; /* Adjust height as needed */
+  background-color: white; /* Scroll track color */
+  border-radius: .625vw;
+  overflow: hidden;
+}
+
+.embla__scrollbar__thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius:.625vw ;
+  background-color: #FF7500; /* Scrollbar thumb color */
+      transition: width 0.3s ease; /* Smooth transition */
+}

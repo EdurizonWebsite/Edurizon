@@ -17,8 +17,8 @@ export const IconButton: React.FC<IconButtonProps> = ({ onClick = () => {}, clas
     return (
         <button onClick={()=>{onClick}}
             style={{ width: `${btnWidth}vw`, height: `${btnHeight}vw`, padding: `${padding}vw`, borderRadius: `${btnRadius}vw` }}
-            className={`bg-transparent mr-0 pr-0 border-orangeChosen border-[1px] border-solid  flex justify-end items-center rounded-full ${className}`}> 
-            <p className='text-center text-orangeChosen pr-[.625vw]  font-poppins'>{btnTitle}</p>
+            className={`bg-transparent mr-0 pr-0 border-orangeChosen border-[1px] border-solid  flex justify-end items-center rounded-full text-orangeChosen ${className}`}> 
+            <p className='text-center  pr-[.625vw]  font-poppins'>{btnTitle}</p>
             <Image alt='iconImage' src={image} style={{width:`${iconWidth}vw`}}/>
         </button>
     );

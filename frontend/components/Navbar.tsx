@@ -10,6 +10,9 @@ import {motion} from 'framer-motion';
 import EdurizonLogo from '../public/assets/Images/EdurizonLogo.svg'
 import ApplyNowIcon from '../public/assets/Images/Icons/ApplyNowIcon.svg'
 import { IconButton, TitleButton } from './Buttons';
+import Link from 'next/link';
+import { TransitionLink } from '@/utils/TransitionLink';
+import ThemeToggle from './ThemeToggle';
 
 
 interface University {
@@ -54,9 +57,10 @@ const Navbar = () => {
   return (
     <nav className={`${router.asPath=='/'?"absolute":'relative'} px-[4.125vw] top-0 left-0 mt-[2rem] pb-[1.5vw] bg-transparent dark:bg-transparent w-full z-50`}>
       <div className='flex items-center font-poppins text-regularText text-black dark:text-white w-full  '>
-      <div className=" flex items-baseline text-[1vw] justify-between w-full">
-        <div className='w-[15.125vw]'>
+      <div className="relative flex items-baseline text-[1vw] justify-between w-full">
+        <div className='w-[15.125vw] relative'>
           <Image src={EdurizonLogo} alt="Edurizon Logo" layout="intrinsic" className='w-[8vw] h-[3.75vw] mt-[1vw]'/>
+          <div className="absolute top-[2vw] hidden dark:block  left-0 [filter:blur(2.3vw)] rounded-[50%] bg-paleOrangeChosen w-[8.375vw] h-[1vw]" />         
         </div>
         {/* <div className="relative">
           
@@ -87,16 +91,20 @@ const Navbar = () => {
         
         <div id='navbaritems' className="flex gap-[2.375vw]">
           <button >
+          <TransitionLink href='/'>
             <motion.div className='px-2' onHoverStart={()=>{setHovered(1)}} onHoverEnd={()=>setHovered(-1)} >
-            Home
+            Home  
             <div className={`border-t-[4px] border-orangeChosen    transition-all duration-500 ease-in-out rounded-xl ${hovered==1?"w-full":"w-0"} `}/>
             </motion.div>
+            </TransitionLink>
           </button>
           <button>
+          <TransitionLink key={"home"} href='aboutUs'>
           <motion.div className='px-2' onHoverStart={()=>{setHovered(2)}} onHoverEnd={()=>setHovered(-1)} >
             About Us
             <div className={`border-t-[4px] border-orangeChosen    transition-all duration-500 ease-in-out rounded-xl ${hovered==2?"w-full":"w-0"} `}/>
             </motion.div>
+            </TransitionLink>
           </button>
           <button>
           <motion.div className='px-2' onHoverStart={()=>{setHovered(3)}} onHoverEnd={()=>setHovered(-1)} >
@@ -133,8 +141,8 @@ const Navbar = () => {
           className="text-white bg-red-600 px-4 py-2 rounded hover:bg-red-500"
         >
           Logout
-        </button>
-        <ThemeToggle/> */}
+        </button> */}
+        <ThemeToggle/>
       </div>
       </div>
       
