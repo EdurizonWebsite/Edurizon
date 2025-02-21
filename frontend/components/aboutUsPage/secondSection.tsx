@@ -14,7 +14,7 @@ import DummyStudent4 from '../../public/assets/Images/landingPage/DummyStudent4.
 
 const SecondSection = () => {
     return (
-        <div className="flex flex-col  items-center" >
+        <div className="flex flex-col  items-center dark:text-white" >
             <div className='flex gap-[1.125vw] items-center p-[.5vw] my-[4.75vw] justify-center'>
             <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
             overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
@@ -41,7 +41,7 @@ const SecondSection = () => {
                     <p className='text-center'>150+<br/>Academic Courses</p>
             </div>
         </div>
-        <div className="w-[85vw] [background:linear-gradient(180deg,_#fff,_#ffd7c3)] flex flex-col  justify-center py-[4.75vw] px-[7.5vw] box-border gap-[1.062vw]"> 
+        <div className="w-[85vw] [background:linear-gradient(180deg,_#fff,_#ffd7c3)] dark:[background:linear-gradient(180deg,_rgba(0,0,0,1)_0%,_rgba(64,54,49,1)_100%)]  flex flex-col  justify-center py-[4.75vw] px-[7.5vw] box-border gap-[1.062vw]"> 
                 <div className="flex justify-between">
                         <div className="flex flex-col gap-[2.125vw] w-[30.625vw]">
                                 <div className='flex flex-col justify-center bg-linenChosen  mb-[1.5vw] text-black  text-tinyText h-[1.75vw] w-[7.675vw] rounded-[2.75vw]'>
@@ -67,7 +67,7 @@ const SecondSection = () => {
                                         <Image className="w-[2.594vw] relative rounded-[50%] h-[2.594vw] object-cover ml-[-0.813vw]" alt="" src={DummyStudent3} />
                                         <Image className="w-[2.594vw] relative rounded-[50%] h-[2.594vw] object-cover ml-[-0.813vw]" alt="" src={DummyStudent4} />
                                         </div>
-                                        <span className='text-black text-smallText whitespace-nowrap font-semibold'>Trusted by 5k+ Students</span>
+                                        <span className='text-black dark:text-white text-smallText whitespace-nowrap font-semibold'>Trusted by 5k+ Students</span>
                                 </div>
                         </div>
                 </div>

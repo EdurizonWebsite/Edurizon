@@ -5,7 +5,7 @@ import dummyTeamImage from '../../public/assets/Images/aboutUs/teamDummy.png'
 
 const TeamsSection=()=>{
     return (
-        <div className="px-[8.3125vw] py-[7.5vw] flex flex-col gap-[5.3125vw]">
+        <div className="px-[8.3125vw] py-[7.5vw] flex flex-col gap-[5.3125vw] dark:text-white">
             <div className="flex flex-col gap-[1.5vw]">
                 <h1 className="text-h1Text leading-[120%] font-helvetica text-center font-medium">Expert Counsellors guiding you through.</h1>
                 <p className="text-mediumText leading-[150%] font-poppins font-medium text-center">
