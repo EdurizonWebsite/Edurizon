@@ -1,7 +1,8 @@
 //
 
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 import whyChoseUsImg from '../../public/assets/Images/landingPage/whyChoseUs.png';
 import whyChoseUsDark from '../../public/assets/Images/landingPage/whyChoseUsDark.png';
 import onBoardedIcon from '../../public/assets/Images/Icons/onboardedIcon.svg';
@@ -10,6 +11,35 @@ import tieUpsIcon from '../../public/assets/Images/Icons/TieUpsIcon.svg';
 import experienceIcon from '../../public/assets/Images/Icons/ExperienceIcon.svg';
 
 const WhyChoseUsSection = () => {
+
+    // Original order of the divs
+  const initialDivs = [
+    { id: 1, image: onBoardedIcon, number: "5000+", label: "Students onboarded" },
+    { id: 2, image: tieUpsIcon, number: "150+", label: "University Tie Ups" },
+    { id: 3, image: experienceIcon, number: "15+", label: "Years of Experience" },
+    { id: 4, image: academicCoursesIcon, number: "150+", label: "Academic Courses" },
+  ];
+
+      // Toggle between original and cross order
+  const [isCross, setIsCross] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsCross((prev) => !prev);
+    }, 500000000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // When isCross is true, we swap the positions across the diagonal.
+  // For a 2x2 grid (rendered row-wise), reversing the array produces:
+  // Original: [1, 2, 3, 4] → Row1: 1,2; Row2: 3,4
+  // Cross:      [4, 3, 2, 1] → Row1: 4,3; Row2: 2,1
+  // This swaps top-left with bottom-right and top-right with bottom-left.
+  const displayDivs = isCross 
+    ? [initialDivs[3], initialDivs[2], initialDivs[1], initialDivs[0]]
+    : initialDivs;
+
+
   return (
     <div className='flex z-[10] '>
         <div className=' w-[46.5vw] z-[2] pl-[7.5vw]  mt-[4.75vw]'>
@@ -23,32 +53,30 @@ const WhyChoseUsSection = () => {
                     Edurizon Pvt. Ltd. is one of the best abroad education consultants Company, in Delhi. We have 7 branch offices all over India. We have been 
                     experts in the field of counseling for the last 10 years.
                 </p>
-                <div className='grid grid-cols-2 gap-[1.125vw] items-center p-[.5vw] mb-[9.375vw]'>
-                    <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[1.875vw] bg-white 
-                    overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
-                    text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={onBoardedIcon} />
-                            <p className='text-center'>5000+<br/>Students onboarded</p>
-                    </div>
-                    <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[1.875vw] bg-white 
-                    overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
-                    text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={tieUpsIcon} />
-                            <p className='text-center'>150+<br/>University Tie Ups</p>
-                    </div>
-                    <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[1.875vw] bg-white 
-                    overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
-                    text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={experienceIcon} />
-                            <p className='text-center'>15+<br/>Years of Experience</p>
-                    </div>
-                    <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[1.875vw] bg-white 
-                    overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
-                    text-regularText text-black">
-                            <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={academicCoursesIcon} />
-                            <p className='text-center'>150+<br/>Academic Courses</p>
-                    </div>
-                </div>
+                <motion.div 
+      layout
+      className="grid grid-cols-2 gap-[1.125vw] items-center p-[.5vw] mb-[9.375vw]"
+    >
+      {displayDivs.map((item) => (
+        <motion.div 
+          key={item.id}
+          layout
+          transition={{ duration: 0.5 }}
+          className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[1.875vw] bg-white overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center text-regularText text-black"
+        >
+          <Image
+            className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0"
+            alt={item.label}
+            src={item.image}
+          />
+          <p className="text-center">
+            {item.number}
+            <br />
+            {item.label}
+          </p>
+        </motion.div>
+      ))}
+    </motion.div>
 
 
             </div>
