@@ -3,8 +3,15 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-const UniversityDetails = ({ university }) => {
-  const [meetingStatus, setMeetingStatus] = useState(null);
+interface University {
+  _id: string;
+  name: string;
+  location: string;
+  courses?: string[];
+}
+
+const UniversityDetails = ({ university }: { university: University }) => {
+  const [meetingStatus, setMeetingStatus] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [showJoinModal, setShowJoinModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -15,7 +22,7 @@ const UniversityDetails = ({ university }) => {
     course: '',
   });
   const [loading, setLoading] = useState(false);
-  const [meeting, setMeeting] = useState(null);
+  const [meeting, setMeeting] = useState<{ jitsiUrl: string } | null>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -40,7 +47,7 @@ const UniversityDetails = ({ university }) => {
           setMeeting(response.data.meeting); // Set the meeting object
         }
       } catch (error) {
-        if (error.response && error.response.status === 401) {
+        if ((error as any).response && (error as any).response.status === 401) {
           console.error('Unauthorized access - invalid token');
           localStorage.removeItem('token');
           router.push('/login');
@@ -55,7 +62,7 @@ const UniversityDetails = ({ university }) => {
     }
   }, [university, router]);
 
-  const handleBookCounseling = async (e) => {
+  const handleBookCounseling = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setLoading(true);
     try {
@@ -269,7 +276,7 @@ const UniversityDetails = ({ university }) => {
   );
 };
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: { params: { id: any; }; }) {
   const { id } = context.params;
 
   try {
