@@ -66,7 +66,7 @@ const Universities: React.FC<PropType> = ({autoScroll=true}) => {
         return () => clearInterval(interval);
       }, [emblaApi, autoScroll]);
     return (
-        <div className="w-full  relative [background:linear-gradient(180deg,_#fef0e6,_#fff)] dark:[background:linear-gradient(180deg,_#000000,_#000)] h-[56.25vw] flex flex-col justify-between overflow-hidden font-poppins  py-[4.75vw] px-[7.5vw] box-border text-centertext-black">
+        <div className="w-full  relative gradient-bg h-[56.25vw] flex flex-col justify-between overflow-hidden font-poppins  py-[4.75vw] px-[7.5vw] box-border text-centertext-black">
             <div className="flex flex-row gap-[23.3125vw] items-center">
                 <div className="w-[37.1875vw]">
                 <div className='flex flex-col justify-center bg-paleOrangeChosen  mb-[1.5vw] text-black  text-tinyText h-[1.75vw] w-[9vw] rounded-[2.75vw]'>

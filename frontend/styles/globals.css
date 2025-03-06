@@ -5,7 +5,7 @@
 
 /* Custom scrollbar hide styles */
 /* Works in modern browsers */
-html, body {
+/* html, body {
   overflow-y: auto;
   scrollbar-width: none;
 }
@@ -13,7 +13,11 @@ html, body {
 html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
+ */
 
+ html {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 
 
 .dark body{
@@ -31,6 +35,23 @@ body{
   opacity: 0;
   transform: translateY(40px);
   filter: blur(12px);
+}
+
+/* Define your gradient variables */
+:root {
+  --gradient-light: linear-gradient(180deg, #fef0e6, #ffffff);
+  --gradient-dark: linear-gradient(180deg, #000000, #000000);
+}
+
+/* Set gradient for light mode */
+.gradient-bg {
+  background: var(--gradient-light);
+  transition: background 0.3s ease-in-out;
+}
+
+/* When dark mode class is activated (Tailwind's dark mode) */
+.dark .gradient-bg {
+  background: var(--gradient-dark);
 }
 
 /* Poppins font */

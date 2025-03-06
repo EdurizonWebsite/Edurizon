@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import { IconButton} from '@/components/Buttons';
 //Images Imports
-import ApplyNowIcon from '../../public/assets/Images/Icons/ApplyNowIcon.svg';
 import DummyStudent1 from '../../public/assets/Images/landingPage/DummyStudent1.png';
 import DummyStudent2 from '../../public/assets/Images/landingPage/DummyStudent2.png';
 import DummyStudent3 from '../../public/assets/Images/landingPage/DummyStudent3.png';
@@ -27,7 +26,7 @@ const CTASection = () => {
                         <Image className="w-[2.594vw] relative rounded-[50%] h-[2.594vw] object-cover ml-[-0.813vw]" alt="" src={DummyStudent4} />
                     </div>
                 </div>
-                <IconButton btnTitle={"Book Free Consultation"} className='text-regularText leading-[120%] bg-white' btnHeight={3.875} btnWidth={15.375} btnRadius={7.1875} padding={0.375} iconWidth={2.0625} image={ApplyNowIcon}/>
+                <IconButton btnTitle={"Book Free Consultation"} className='text-regularText leading-[120%] bg-white' btnHeight={3.875} btnWidth={15.375} btnRadius={7.1875} padding={0.375} iconWidth={2.0625} image={"assets/Images/Icons/ApplyNowIcon.svg"}/>
             </div>
         </div>
 

@@ -17,23 +17,31 @@ const HeroSection = () => {
         <div className="min-h-screen [background:linear-gradient(180deg,_#fef0e6,_#fff)] flex flex-col items-center justify-center font-poppins text-center  text-black">
           <div className="absolute top-0 left-0 w-full h-[120vh]">
             {/* Background Image */}
-            <Image 
-              src={bgImage} 
-              alt="Background" 
-              className="dark:hidden relative w-full h-[100vh] top-0 left-0 object-cover mix-blend-darken" 
-            />
-            <Image 
-              src={bgDarkImg} 
-              alt="Background" 
-              className="hidden dark:block relative w-full h-[100vh] top-0 left-0 object-cover mix-blend-darken" 
-            />
+            <div className="relative w-full h-[100vh] top-0 left-0">
+              {/* Light Mode Background */}
+              <Image
+                src={bgImage}
+                alt="Background"
+                className="absolute w-full h-full object-cover transition-opacity duration-200 ease-in-out 
+                          dark:opacity-0 opacity-100"
+              />
+
+              {/* Dark Mode Background */}
+              <Image
+                src={bgDarkImg}
+                alt="Background"
+                className="absolute w-full h-full object-cover transition-opacity duration-200 ease-in-out 
+                          opacity-0 dark:opacity-100"
+              />
+            </div>
+
             
             
             {/* Blurred Centered Div */}
             <div className="absolute z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[54.625vw] h-[39.9375vw] [filter:blur(44.3125vw)] rounded-full bg-paleOrangeChosen dark:hidden"></div>
   
             {/* Gradient Overlay */}
-            <div className="z-[0] absolute bottom-0 left-0 w-full h-[80vh] bg-[linear-gradient(180deg,rgba(255,255,255,0),#fff_83.31%)] dark:[background:linear-gradient(0deg,_#000,_rgba(43,_43,_43,_0))]"></div>
+            <div className="z-[0] absolute bottom-0 left-0 w-full h-[80vh] bg-[linear-gradient(180deg,rgba(255,255,255,0),#fff_83.31%)] dark:[background:linear-gradient(0deg,_#000,_rgba(43,_43,_43,_0))] transition-all duration-200 ease-in-out "></div>
           </div>
   
           <div className='z-[2] flex flex-col items-center justify-center '>
@@ -41,7 +49,7 @@ const HeroSection = () => {
             <div className='w-[58vw] mb-[1.5vw]'>
               <h1 className='text-h1Text font-helvetica leading-[120%] dark:text-white font-bold '>Unlock Your Study Abroad Dream Get Expert <span className='text-orangeChosen'>Guidance Today!</span></h1>
             </div>
-            <p className='w-[46.5625vw] text-regularText mb-[1.5vw]'>
+            <p className='w-[46.5625vw] text-black dark:text-white text-regularText mb-[1.5vw]'>
               Confused about university selection, visa, or applications? We simplify your journey and ensure you get admitted to top universities hassle-free.
             </p>
             <div className='mb-[2vw] flex gap-[1vw] items-center'>
