@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const excludedPaths = ['/login', '/admin','/signup']; // Paths to exclude Navbar & Footer
   const shouldExcludeLayout = excludedPaths.some((path) => router.pathname.includes(path));
-  const isAdminRoute = router.pathname.includes('/admin');
+  const isAdminRoute = router.pathname.includes('/');
 
   return (
     <ThemeProvider>
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       {isAdminRoute && isMobileView ? (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 text-center px-4">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-md">
-            <h1 className="text-2xl font-bold text-red-500 mb-4">Desktop Access Required</h1>
+            <h1 className="text-2xl font-bold text-blue-200 mb-4">Coming Soon</h1>
             <p className="text-gray-700">
               This page can only be accessed from a desktop device. Please switch to a device with a larger screen (≥768px).
             </p>

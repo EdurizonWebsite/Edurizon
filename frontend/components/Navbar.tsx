@@ -73,7 +73,7 @@ const Navbar = () => {
       <div className='flex items-center font-poppins text-regularText text-black dark:text-white w-full  '>
       <div className="relative flex items-center text-smallText md:text-regularText justify-between w-full">
         <div className='md:w-[15.125vw] relative'>
-          <Image src={EdurizonFinalLogo} alt="Edurizon Logo" layout="intrinsic" className='w-[17.75vw] md:w-[5vw] h-[14vw] md:h-[3.875vw] '/>
+          <img src="assets/Images/Icons/EdurizonFinalLogo.svg" alt="Edurizon Logo" layout="intrinsic" className='w-[17.75vw] md:w-[5vw] h-[14vw] md:h-[3.875vw] '/>
           <div className="absolute top-[2vw] hidden dark:block  left-0 [filter:blur(1.7vw)] rounded-[50%] bg-paleOrangeChosen w-[5.375vw] h-[1vw]" />         
         </div>
         {/* <div className="relative">
