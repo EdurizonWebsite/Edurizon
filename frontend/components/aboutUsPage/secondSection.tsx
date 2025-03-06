@@ -14,7 +14,7 @@ import DummyStudent4 from '../../public/assets/Images/landingPage/DummyStudent4.
 
 const SecondSection = () => {
     return (
-        <div className="flex flex-col  items-center dark:text-white" >
+        <div className="flex flex-col  items-center bg-white dark:bg-transparent dark:text-white" >
             <div className='flex gap-[1.125vw] items-center p-[.5vw] my-[4.75vw] justify-center'>
             <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
             overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 

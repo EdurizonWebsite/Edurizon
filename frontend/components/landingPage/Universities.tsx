@@ -7,7 +7,7 @@ import NorthEastIcon from '../../public/assets/Images/Icons/NorthEastIcon.svg';
 import EmblaCarousel from "../EmblaCarousel/EmblaCarousel";
 import useEmblaCarousel from 'embla-carousel-react'
 
-import '../EmblaCarousel/embla.css'
+
 
 // Country Images
 import Russia from '../../public/assets/Images/CountryImages/Russia.png';

@@ -30,8 +30,13 @@ const CounselorLogin = () => {
       toast.success('Login successful!');
       router.push('/counselor/dashboard'); // Redirect to dashboard
     } catch (err) {
-      console.error('Login error:', err.response?.data?.message || 'Invalid username or password');
-      toast.error(err.response?.data?.message || 'Invalid username or password');
+      if (axios.isAxiosError(err) && err.response) {
+        console.error('Login error:', err.response.data.message || 'Invalid username or password');
+        toast.error(err.response.data.message || 'Invalid username or password');
+      } else {
+        console.error('Login error:', 'Invalid username or password');
+        toast.error('Invalid username or password');
+      }
     }
   };
 
@@ -52,8 +57,13 @@ const CounselorLogin = () => {
       toast.success('Signup successful!');
       router.push('/counselor/dashboard'); // Redirect to dashboard
     } catch (err) {
-      console.error('Registration error:', err.response?.data?.message || 'Error during signup');
-      toast.error(err.response?.data?.message || 'Error during signup');
+      if (axios.isAxiosError(err) && err.response) {
+        console.error('Registration error:', err.response.data.message || 'Error during signup');
+        toast.error(err.response.data.message || 'Error during signup');
+      } else {
+        console.error('Registration error:', 'Error during signup');
+        toast.error('Error during signup');
+      }
     }
   };
 

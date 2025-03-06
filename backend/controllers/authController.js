@@ -3,9 +3,12 @@ const User = require('../models/userModel');
 const generateToken = require('../utils/generateToken');
 const bcrypt = require('bcryptjs');
 const { OAuth2Client } = require('google-auth-library');
-
+const unirest = require('unirest');
+const axios = require('axios');
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
+const API_KEY = "zuINnSbZTrDajXgf7L1eAWCR64ioPt0YvGKypO9MUhc52VJwQF8Y7KlbuDRvQHJBnCOpZk1TUGgIwW46";
+const sessionStore = {}; 
 // @desc    Register a new user
 // @route   POST /api/users/register
 // @access  Public
@@ -112,4 +115,39 @@ const googleAuth = asyncHandler(async (req, res) => {
   });
 });
 
-module.exports = { registerUser, authUser, googleAuth };
+const sendOtp=asyncHandler( async (req, res) => {
+  const apiUrl = "http://sms.gooadvert.com/vendorsms/pushsms.aspx";
+    const params = {
+        APIKey: "Q3u4IR40p0KH1iJaqtk2dg",
+        msisdn: "918319216778", // Recipient phone number
+        sid: "SAEHTL", // Sender ID
+        msg: "Today check-in Guest Name - MR KUMAR SAHIL SURYAWANSHI Check-In Date - 12/06/2022/ 22:06 Check Out Date - 13/06/2022 Rmno 109 Amount - 5824 Shree Appaji Enterprises",
+        fl: "0", // Flash message flag (0 = normal, 1 = flash)
+        gwid: "2" // Gateway ID
+    };
+
+    try {
+        const response = await axios.get(apiUrl, { params });
+        console.log("Response:", response.data);
+    } catch (error) {
+        console.error("Error sending SMS:", error);
+    }
+  
+});
+
+
+const verifyOtp=asyncHandler(async (req, res) => {
+  const { phone, otp } = req.body;
+
+    if (!phone || !otp) {
+        return res.status(400).json({ message: 'Phone number and OTP are required' });
+    }
+
+    if (sessionStore[phone] && sessionStore[phone] == otp) {
+        delete sessionStore[phone]; // OTP verified, remove from session
+        return res.json({ message: "OTP verified successfully" });
+    } else {
+        return res.status(400).json({ message: "Invalid OTP or OTP expired" });
+    }
+});
+module.exports = { registerUser, authUser, googleAuth,sendOtp,verifyOtp };

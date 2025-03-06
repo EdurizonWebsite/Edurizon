@@ -1,0 +1,36 @@
+/* Target the flag container */
+.flag-dropdown {
+    background-color: transparent !important; /* Change background if needed */
+    border: none !important; /* Remove any border */
+    border-radius: 3.125vw !important; /* Match the input field */
+    padding: 0 !important;
+  }
+  
+  /* Target the selected flag */
+  .selected-flag {
+    width: 2.5vw !important; /* Adjust flag size */
+    height: 3vw !important; /* Match input height */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Flag icon itself */
+  .flag {
+    width: 16px !important; /* Adjust flag width */
+    height: 12px !important;
+    scale: 1.7 !important;
+    margin-left: 1vw !important; 
+  }
+  
+  /* Disable hover and focus animation */
+.selected-flag:hover,
+.selected-flag:focus,
+.selected-flag:active {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+
