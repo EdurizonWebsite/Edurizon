@@ -41,13 +41,15 @@ export default FAQSection;
 
 
 const data=[{question:'How do I start the admission process?',
-    answer:'Infocube is a platform designed to provide students a one stop solution to all their serach of information it is desgined to provide students a community of the similar minds that students need to grow in there careers'},
+    answer:'Book a free consultation, and our experts will guide you step by step.'},
     {question:'Do you offer visa assistance?',
-    answer:'Which countries do you assist students in applying to?'},
+    answer:'Yes! We help with visa documentation, mock interviews, and submission.'},
     {question:'Which countries do you assist students in applying to?',
     answer:'We help students apply to top universities in the USA, UK, Canada, Australia, Europe, and other leading study destinations.'},
     {question:'Can I apply if I have a low GPA?',
-    answer:'Yes, In order to access certain features and personalized content, you will need to create an account. It\'s quick and easy process, and your information will be kept secure.'},
-    {question:' What are the requirements for studying abroad?',
-    answer:'To reset your password, go to the login page and click on the "Forgot Password" or "Reset Password" link. Follow the instruction sent to your registered email to create a new passowrd.'},
+    answer:'Yes! Our experts can help you find universities that accept students with lower GPAs and guide you on how to strengthen your application.'},
+    {question:'What are the requirements for studying abroad?',
+    answer:'Requirements vary by country and university, but generally include academic transcripts, language proficiency scores (IELTS, TOEFL, etc.), SOPs, LORs, and financial proof.'},
+    {question:'Do you provide assistance for education loans and financial aid?',
+        answer:'Absolutely! We help students explore scholarships, grants, and loan options to finance their education.'}
     ]

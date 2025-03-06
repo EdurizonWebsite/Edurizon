@@ -5,26 +5,13 @@ import Image from "next/image";
 
 import placeholder from '../../public/assets/Images/landingPage/associatedUniversity.png'
 const logosData = [
-    {  alt: "SF",height:5.5 },
-    {  alt: "Jimmy Choo",height:2.75 },
-    {  alt: "Burberry",height:4.875 },
-    {  alt: "Bvlgari",height:1.625 },
-    {  alt: "Prada",height:8.125 },
-    {  alt: "Emporio Armani",height:2 },
-    {  alt: "Ray-Ban",height:5.4375 },
-    {  alt: "ESS",height:6.25 },
-    {  alt: "Miu Miu",height:2.625 },
-    {  alt: "Swarovski",height:2.125 },
-    {  alt: "Dolce & Gabbana",height:1.625 },
-    {  alt: "Giorgio Armani",height:2.375 },
-    {  alt: "Michael Kors",height:4.5 },
-    {  alt: "Ralph Lauren",height: 2.25 },
-    {  alt: "Prada 2",height:2.5 },
-    {  alt: "Dakley",height: 5.125},
-    {  alt: "Tiffany" ,height:2.5},
-    {  alt: "Tory Burch",height:3.0625 },
-    {  alt: "Versace",height:5.75 },
-    {  alt: "Vogue", height:5.625},
+    {  alt: "SF", src: "/assets/Images/universities/university1.png" },
+    {  alt: "Jimmy Choo",src: "/assets/Images/universities/university2.png"},
+    {  alt: "Burberry",src: "/assets/Images/universities/university3.png" },
+    {  alt: "Bvlgari",src: "/assets/Images/universities/university4.png" },
+    {  alt: "Prada",src: "/assets/Images/universities/university5.png" },
+    {  alt: "Prada2",src: "/assets/Images/universities/university6.png" },
+    
   ];
 
 const AssociatedUniversitiesSection = () => {
@@ -37,8 +24,8 @@ const AssociatedUniversitiesSection = () => {
       slidesToScroll: 1,
       centerMode: true,
       autoplay: true,
-      speed: 1000,
-      autoplaySpeed: 1000,
+      speed: 1500,
+      autoplaySpeed: 1500,
       cssEase: "linear",
       variableWidth: true,
       pauseOnHover: false,   
@@ -51,7 +38,7 @@ const AssociatedUniversitiesSection = () => {
                 <Slider className="w-full"  ref={slider} {...settings}>   
                         {logosData.map((logo, index) => (
                         <div key={index} className="flex relative justify-center items-center">
-                        <Image src={placeholder} alt={logo.alt} className="max-h-full object-contain" style={{height:`${6}vw`}} />
+                        <img src={logo.src} alt={logo.alt} className="max-h-full object-contain" style={{height:`${6}vw`}} />
                         </div>
                     ))}
                 </Slider>
