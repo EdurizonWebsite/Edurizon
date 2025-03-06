@@ -19,25 +19,25 @@ const SecondSection = () => {
             <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
             overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
             text-regularText text-black">
-                    <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={onBoardedIcon} />
+                    <img className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src="/assets/Images/Icons/onboardedIcon.svg" />
                     <p className='text-center'>5000+<br/>Students onboarded</p>
             </div>
             <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
             overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
             text-regularText text-black">
-                    <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={tieUpsIcon} />
+                    <img className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src="/assets/Images/Icons/TieUpsIcon.svg" />
                     <p className='text-center'>150+<br/>University Tie Ups</p>
             </div>
             <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
             overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
             text-regularText text-black">
-                    <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={experienceIcon} />
+                    <img className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src="/assets/Images/Icons/ExperienceIcon.svg" />
                     <p className='text-center'>15+<br/>Years of Experience</p>
             </div>
             <div className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] rounded-[1.875vw] bg-white 
             overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center 
             text-regularText text-black">
-                    <Image className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src={academicCoursesIcon} />
+                    <img className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0" alt="Students onboarded Icon" src="/assets/Images/Icons/AcademinCoursesIcon.svg" />
                     <p className='text-center'>150+<br/>Academic Courses</p>
             </div>
         </div>

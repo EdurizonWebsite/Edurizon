@@ -1,5 +1,6 @@
 import Image from "next/image";
-import dummyTeamImage from '../../public/assets/Images/aboutUs/teamDummy.png'
+import maidulSir from '../../public/assets/Images/Team/maidulSir.png'
+
 const MessageFromMDSection = () => {
     return (
         <div className="my-[8vw] w-[85vw] mx-auto [background:linear-gradient(180deg,_#fff,_#ffd7c3)] dark:[background:linear-gradient(180deg,_rgba(0,0,0,1)_0%,_rgba(64,54,49,1)_100%)]  flex flex-row justify-between py-[4.75vw] px-[7.5vw] box-border gap-[1.062vw]"> 
@@ -21,7 +22,7 @@ const MessageFromMDSection = () => {
                         <p className="text-smallText font-poppins">Founder | Managing Director</p>
                 </div>
                 <div className="flex justify-around">
-                        <Image className="w-auto h-[29.75vw] rounded-[1vw]" alt="Our Story Img 1" src={dummyTeamImage}/>
+                        <Image className="w-auto h-[29.75vw] rounded-[1vw]" alt="Our Story Img 1" src={maidulSir}/>
                         
                 </div>
         </div>

@@ -103,7 +103,7 @@ const Universities: React.FC<PropType> = ({autoScroll=true}) => {
                 <EmblaCarousel slides={slides}  emblaRef={emblaRef} />
             </div>
             <div className="mx-auto">
-            <IconButton btnTitle={"Explore All Destinations"} className="font-medium text-regularText   " btnHeight={3.3} btnWidth={16} btnRadius={7.5} padding={0.5} iconWidth={2.1875} image={NorthEastIcon}/>
+            <IconButton btnTitle={"Explore All Destinations"} className="font-medium text-regularText   " btnHeight={3.3} btnWidth={16} btnRadius={7.5} padding={0.5} iconWidth={2.1875} image={"/assets/Images/Icons/NorthEastIcon.svg"}/>
             </div>
         </div>
     );

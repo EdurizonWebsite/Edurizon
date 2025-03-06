@@ -1,10 +1,4 @@
-import Image from 'next/image';
 
-import EdurizonLogo from '../public/assets/Images/EdurizonLogo.svg'
-import LocationIcon from '../public/assets/Images/Icons/locationIcon.svg'
-import XLogo from '../public/assets/Images/Icons/XLogo.svg'
-import InstagramLogo from '../public/assets/Images/Icons/InstagramLogo.svg'
-import YouTubeLogo from '../public/assets/Images/Icons/YouTubeLogo.svg'
 import { TransitionLink } from '@/utils/TransitionLink';
 const Footer = () => {
     return (
@@ -12,10 +6,10 @@ const Footer = () => {
             <div className="flex flex-col mx-[7.5vw] my-[2vw] font-poppins text-regularText dark:text-white">
                 <div className="flex flex-row justify-between   pb-[5vw]">
                     <div className="flex flex-col w-[20.1875vw] gap-[4vw] font-medium">
-                        <Image className='h-[2.8125vw] w-[12.25vw]' src={EdurizonLogo} alt="Edurizon Logo" />
+                        <img className='h-auto w-[5.25vw]' src="assets/Images/Icons/EdurizonFinalLogo.svg" alt="Edurizon Logo" />
                         <div className='flex flex-col gap-[.5vw] text-smallText leading-[150%]'>
                             <div className='flex flex-row gap-[.5vw]'>
-                                <Image className='h-[1.25vw] w-[.875vw]' src={LocationIcon} alt="Location Icon" />
+                                <img className='h-[1.25vw] w-[.875vw]' src="/assets/Images/Icons/locationIcon.svg" alt="Location Icon" />
                                 <p className=''>Pocket 111, 113, 115 1st Floor, Best Arcade Market, Canara Bank, Near K.M. Chowk, Sector-12 Dwarka, New Delhi - 110075</p>
 
                             </div>

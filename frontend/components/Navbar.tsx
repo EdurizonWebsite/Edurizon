@@ -203,7 +203,7 @@ const Navbar = () => {
             <TitleButton className='md:block hidden'  onClick={()=>{}} btnHeight={2.75} btnWidth={6.0625} btnRadius={6.25} btnTitle={"Sign Up"}/>
 
           </TransitionLink>
-          <IconButton onClick={()=>{}} className='text-regularText md:text-smallText' btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={ApplyNowIcon} btnTitle={"Apply Now"}
+          <IconButton onClick={()=>{}} className='text-regularText md:text-smallText' btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={"/assets/Images/Icons/ApplyNowIcon.svg"} btnTitle={"Apply Now"}
           btnHeightPhone={11} btnWidthPhone={33.5} btnRadiusPhone={15} iconWidthPhone={8} paddingPhone={3} />
           <Image src={MenuIcon} alt='menuIcon' className='md:hidden w-[8vw] h-[8vw]'/>
         </  div>

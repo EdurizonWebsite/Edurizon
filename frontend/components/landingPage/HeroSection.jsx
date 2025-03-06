@@ -56,7 +56,7 @@ const HeroSection = () => {
   
   
             <div className='flex w-[27.4375vw] gap-[.0.4375vw]'>
-              <IconButton btnTitle={"Explore Opportunities"} className='text-smallText dark:text-white' btnHeight={2.75} btnWidth={13.1875} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={NorthEastIcon}/>
+              <IconButton btnTitle={"Explore Opportunities"} className='text-smallText dark:text-white' btnHeight={2.75} btnWidth={13.1875} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={"/assets/Images/Icons/NorthEastIcon.svg"}/>
               <TitleButton btnTitle={"Book Free Consultation"} btnHeight={2.75} btnWidth={13.1875} btnRadius={6.25} />
             </div>
           </div>

@@ -14,10 +14,10 @@ const WhyChoseUsSection = () => {
 
     // Original order of the divs
   const initialDivs = [
-    { id: 1, image: onBoardedIcon, number: "5000+", label: "Students onboarded" },
-    { id: 2, image: tieUpsIcon, number: "450+", label: "University Tie Ups" },
-    { id: 3, image: experienceIcon, number: "19+", label: "Years of Experience" },
-    { id: 4, image: academicCoursesIcon, number: "150+", label: "Academic Courses" },
+    { id: 1, image: "/assets/Images/Icons/onboardedIcon.svg", number: "5000+", label: "Students onboarded" },
+    { id: 2, image: "/assets/Images/Icons/TieUpsIcon.svg", number: "450+", label: "University Tie Ups" },
+    { id: 3, image: "/assets/Images/Icons/ExperienceIcon.svg", number: "19+", label: "Years of Experience" },
+    { id: 4, image: "/assets/Images/Icons/AcademinCoursesIcon.svg", number: "150+", label: "Academic Courses" },
   ];
 
       // Toggle between original and cross order
@@ -62,7 +62,7 @@ const WhyChoseUsSection = () => {
                     transition={{ duration: 0.5 }}
                     className="w-[16.5vw] h-[12.875vw] relative shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[1.875vw] bg-white overflow-hidden shrink-0 flex flex-col items-center justify-start py-[1.5vw] px-[1.937vw] box-border gap-[1vw] text-center text-regularText text-black"
                   >
-                    <Image
+                    <img
                       className="w-[4.25vw] relative h-[4.25vw] overflow-hidden shrink-0"
                       alt={item.label}
                       src={item.image}
@@ -82,7 +82,7 @@ const WhyChoseUsSection = () => {
 
         </div>
         <div className=' w-auto h-[51.75vw] mt-[2.5vw] items z-[2]'>
-            <Image className='w-full h-full ' src={whyChoseUsImg} alt='whyChoseUs' />
+            <img className='w-full h-full ' src="/assets/Images/landingPage/WhyChoseUs2.svg" alt='whyChoseUs' />
             {/* <Image className='w-full h-full hidden dark:block' src={whyChoseUsDark} alt='whyChoseUs' /> */}
             
         </div>
