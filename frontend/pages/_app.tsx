@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return () => window.removeEventListener('resize', checkViewportWidth); // Cleanup
   }, []);
 
-  const excludedPaths = ['/login', '/admin']; // Paths to exclude Navbar & Footer
+  const excludedPaths = ['/login', '/admin','/signup']; // Paths to exclude Navbar & Footer
   const shouldExcludeLayout = excludedPaths.some((path) => router.pathname.includes(path));
   const isAdminRoute = router.pathname.includes('/admin');
 
