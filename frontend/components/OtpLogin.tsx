@@ -1,9 +1,9 @@
 
 import PhoneInput from 'react-phone-input-2';
-import "react-phone-input-2/lib/style.css"; //
+
 import React, { FormEvent, useState, useEffect, useTransition } from 'react';
 import axios from 'axios';
-import "./OtpLogin.css";
+
 import { TransitionLink } from '@/utils/TransitionLink';
 
 const OtpLogin = () => {

@@ -1,4 +1,11 @@
 import '../styles/globals.css';
+import '../components/landingPage/faq.css'
+import "../components/OtpLogin.css";
+import '../components/EmblaCarousel/embla.css';
+import '../components/landingPage/slider.css';
+import "react-phone-input-2/lib/style.css"; //
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';

@@ -2,7 +2,7 @@ import React,{useState} from "react"
 import Image from "next/image"
 import plusIcon from '../../public/assets/Images/Icons/plusIcon.svg'
 import minusIcon from '../../public/assets/Images/Icons/minusIcon.svg'
-import './faq.css'
+
 
 
 const FAQSection = () => {
