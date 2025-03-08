@@ -4,9 +4,16 @@
   gap: 1.25vw;
   touch-action: pan-y pinch-zoom;
 }
+
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 20.25vw;
+  min-width: 0;
+}
+
+.embla__slidePhone {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 50vw;
   min-width: 0;
 }
 
@@ -46,12 +53,33 @@
   overflow: hidden;
 }
 
+
+.embla__scrollbarPhone {
+  position: relative;
+  width: 26vw;
+  padding-left: 10px;
+  height: 1vw; /* Adjust height as needed */
+  background-color: white; /* Scroll track color */
+  border-radius: 6.25vw;
+  overflow: hidden;
+}
+
 .embla__scrollbar__thumb {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   border-radius:.625vw ;
+  background-color: #FF7500; /* Scrollbar thumb color */
+      transition: width 0.3s ease; /* Smooth transition */
+}
+
+.embla__scrollbar__thumbPhone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1vw;
+  border-radius:.5vw ;
   background-color: #FF7500; /* Scrollbar thumb color */
       transition: width 0.3s ease; /* Smooth transition */
 }

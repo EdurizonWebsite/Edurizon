@@ -31,14 +31,14 @@ const TeamsSection=()=>{
                         <Image alt="dummy image" src={sanjaySir} className=" w-full h-[19.5vw]"/>
                         <div className="w-full [backdrop-filter:blur(3vw)] flex flex-col gap-[.75vw] py-[.825vw] pl-[1.25vw]">
                             <h6 className="text-h6Text leading-[100%] font-poppins font-bold">Sanjay Burari</h6>
-                            <p className="text-smallText leading-[100%] font-poppins font-medium">Founder | Managing Director </p>
+                            <p className="text-smallText leading-[100%] font-poppins font-medium">CEO </p>
                         </div>
                     </div>
                     <div className="shadow-[.875vw_0.625vw_2.25vw_-.25vw_rgba(0,_0,_0,_0.1)] w-[17.625vw]">
                         <Image alt="dummy image" src={kunalSir} className=" w-full h-[19.5vw]"/>
                         <div className="w-full [backdrop-filter:blur(3vw)] flex flex-col gap-[.75vw] py-[.825vw] pl-[1.25vw]">
                             <h6 className="text-h6Text leading-[100%] font-poppins font-bold">Kunal Chauhan</h6>
-                            <p className="text-smallText leading-[100%] font-poppins font-medium">Counsellor</p>
+                            <p className="text-smallText leading-[100%] font-poppins font-medium">Academic Director</p>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const TeamsSection=()=>{
                         <Image alt="dummy image" src={karishmaMam} className=" w-full h-[19.5vw]"/>
                         <div className="w-full [backdrop-filter:blur(3vw)] flex flex-col gap-[.75vw] py-[.825vw] pl-[1.25vw]">
                             <h6 className="text-h6Text leading-[100%] font-poppins font-bold">Karishma Singh</h6>
-                            <p className="text-smallText leading-[100%] font-poppins font-medium">Counsellor</p>
+                            <p className="text-smallText leading-[100%] font-poppins font-medium">Overseas Head</p>
                         </div>
                     </div>
                     <div className="shadow-[.875vw_0.625vw_2.25vw_-.25vw_rgba(0,_0,_0,_0.1)] w-[17.625vw]">

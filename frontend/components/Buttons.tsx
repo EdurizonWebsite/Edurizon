@@ -50,21 +50,38 @@ interface TitleButtonProps {
   btnHeight: number;
   btnRadius: number;
   className2?: string;
+  btnWidthPhone: number;
+  btnHeightPhone: number;
+  btnRadiusPhone: number;
 }
 
   
-  export const TitleButton:React.FC<TitleButtonProps> = ({ onClick={}, className = '', btnTitle, btnWidth, btnHeight,btnRadius, className2='' }) => {
+  export const TitleButton:React.FC<TitleButtonProps> = ({ onClick={}, className = '', btnTitle, btnWidth, btnHeight,btnRadius, className2='', btnWidthPhone, btnHeightPhone,btnRadiusPhone }) => {
+    const [screenWidth, setScreenWidth] = useState<number | null>(null);
+
+    useEffect(() => {
+      // Set initial width and update on resize
+      setScreenWidth(window.innerWidth);
+  
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+    })
     return (
         <button
         onClick={()=>{onClick}}
         className={`group bg-orangeChosen dark:bg-orangeChosen  text-white  ${className}`}
-        style={{
+        style={(screenWidth ?? 0) > 768 ? {
           width: `${btnWidth}vw`,
           height: `${btnHeight}vw`,
           borderRadius: `${btnRadius}vw`
+        }:{
+          width: `${btnWidthPhone}vw`,
+          height: `${btnHeightPhone}vw`,
+          borderRadius: `${btnRadiusPhone}vw`
         }}
       >
-        <span className={`text-smallText text-center font-poppins ${className2}`} >
+        <span className={`text-smallTextPhone md:text-smallText text-center font-poppins ${className2}`} >
           {btnTitle}
         </span>
       </button>

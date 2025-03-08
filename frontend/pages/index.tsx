@@ -22,7 +22,7 @@ const Home = () => {
       <FAQSection/>
       <AssociatedUniversitySection/>
       <CTASection/>
-      <div className='fixed z-[10] top-[90vh] left-[4vw]'>
+      <div className='fixed z-[10] top-[85vh] md:top-[90vh] left-[4vw]'>
         <ThemeToggle/>
       </div>
         
