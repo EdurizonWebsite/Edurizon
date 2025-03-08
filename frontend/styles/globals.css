@@ -15,6 +15,18 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
  */
 
+ /* Hide scrollbar for Chrome, Safari and Edge */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
  html {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }

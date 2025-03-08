@@ -200,7 +200,7 @@ const Navbar = () => {
 
         <div className='flex gap-[1vw] md:gap-[.5vw] items-center'>
           <TransitionLink href='/login'>
-            <TitleButton className='md:block hidden'  onClick={()=>{}} btnHeight={2.75} btnWidth={6.0625} btnRadius={6.25} btnTitle={"Sign Up"}/>
+            <TitleButton className='md:block hidden'  onClick={()=>{}} btnHeightPhone={0} btnRadiusPhone={0} btnWidthPhone={0} btnHeight={2.75} btnWidth={6.0625} btnRadius={6.25} btnTitle={"Sign Up"}/>
 
           </TransitionLink>
           <IconButton onClick={()=>{}} className='text-regularText md:text-smallText' btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={"/assets/Images/Icons/ApplyNowIcon.svg"} btnTitle={"Apply Now"}

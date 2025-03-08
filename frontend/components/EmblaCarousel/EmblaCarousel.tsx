@@ -16,13 +16,22 @@ const EmblaCarousel: React.FC<PropType> = ({ slides,emblaRef }) => {
   const [screenWidth, setScreenWidth] = useState<number | null>(null);
   
       useEffect(() => {
-        // Set initial width and update on resize
+        // Set initial width
         setScreenWidth(window.innerWidth);
     
+        // Handle window resize
         const handleResize = () => {
           setScreenWidth(window.innerWidth);
         };
-      })
+    
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+    
+        // Cleanup event listener on unmount
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
   return (
     <div className="embla">
       <div className="overflow-hidden" ref={emblaRef}>

@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react';
-import Image from 'next/image';
 
 interface IconButtonProps {
   onClick?: () => void;
@@ -23,14 +22,23 @@ interface IconButtonProps {
 export const IconButton: React.FC<IconButtonProps> = ({ onClick = () => {}, className = '', iconWidth, btnWidth,btnHeight,padding, image,btnTitle,btnRadius, iconWidthPhone, btnWidthPhone,btnHeightPhone,paddingPhone, btnRadiusPhone, }) => {
   const [screenWidth, setScreenWidth] = useState<number | null>(null);
 
-  useEffect(() => {
-    // Set initial width and update on resize
-    setScreenWidth(window.innerWidth);
-
-    const handleResize = () => {
+    useEffect(() => {
+      // Set initial width
       setScreenWidth(window.innerWidth);
-    };
-  })
+  
+      // Handle window resize
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+  
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup event listener on unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
   return (
         <button onClick={()=>{onClick}}
             style={(screenWidth ?? 0) > 768 ? { width: `${btnWidth}vw`, height: `${btnHeight}vw`, padding: `${padding}vw`, borderRadius: `${btnRadius}vw` } : { width: `${btnWidthPhone}vw`, height: `${btnHeightPhone}vw`, padding: `${paddingPhone}vw`, borderRadius: `${btnRadiusPhone}vw` }}
@@ -60,13 +68,23 @@ interface TitleButtonProps {
     const [screenWidth, setScreenWidth] = useState<number | null>(null);
 
     useEffect(() => {
-      // Set initial width and update on resize
+      // Set initial width
       setScreenWidth(window.innerWidth);
   
+      // Handle window resize
       const handleResize = () => {
         setScreenWidth(window.innerWidth);
       };
-    })
+  
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup event listener on unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []); // Empty dependency array ensures this runs once on mount
+  
     return (
         <button
         onClick={()=>{onClick}}

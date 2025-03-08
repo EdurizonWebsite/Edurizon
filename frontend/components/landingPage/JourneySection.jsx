@@ -6,15 +6,16 @@ import Journey5 from '../../public/assets/Images/Icons/Journey5.svg'
 import Image from 'next/image'
 const JounreySection =()=>{
     return (
-        <div className=" my-[4.75vw] mx-[4.5vw]">
-            <div className="w-[41.125vw] mx-auto mb-[7vw] ">
-            <div className='flex flex-col font-poppins justify-center bg-paleOrangeChosen  mb-[1.5vw]  text-black  text-tinyText h-[1.75vw] w-[6.5vw] mx-auto rounded-[2.75vw]'>
+        <div className="my-[10vw] md:my-[4.75vw] mx-[6vw] md:mx-[4.5vw]">
+            <div className="w-full md:w-[41.125vw] mx-auto mb-[7vw] ">
+            <div className='flex flex-col font-poppins justify-center bg-paleOrangeChosen mb-[6vw] md:mb-[1.5vw]  text-black text-tinyTextPhone md:text-tinyText h-[7vw] md:h-[1.75vw] w-[21vw] md:w-[6.5vw] mx-auto rounded-[11vw] md:rounded-[2.75vw]'>
                 <p className=' text-center '>Journey</p></div>
                 <div className='mb-[.5vw] text-center'>
                     <h2 className='text-h2Text font-helvetica leading-[120%] dark:text-white'><strong><span className="text-h0Text">Y</span>our <span className='text-orangeChosen'>Journey</span> With Us</strong></h2>
+                    <p className='md:text-smallTextPhone text-tinyTextPhone text-black dark:text-white font-poppins'>From Application to Arrival - We Guide You Every Step of the Way!</p>
                 </div>
                 </div>
-                <div className="relative h-[103.875vw] mx-[1.5625vw]">
+                <div className="relative hidden md:block h-[103.875vw] mx-[1.5625vw]">
                 {/* Journey 1 */}
                 <div className='absolute top-[3vw] left-[0] w-[27.25vw] dark:text-white'>
                     <h5 className='text-h5Text font-helvetica font-bold leading-[140%] mb-[1vw]'>Consultation and University selection</h5>
@@ -61,6 +62,54 @@ const JounreySection =()=>{
                     <p className='text-smallText leading-[150%] font-poppins'>Moving to a new country is exciting but requires careful planning. We assist in booking safe and comfortable accommodation, flight tickets, and travel insurance, ensuring a seamless transition.</p>
                 </div>
                 <img src="/assets/Images/Icons/Journey5.svg" alt='Journey5' className='absolute left-[29.9375vw] top-[91vw] w-[19.3125vw] h-[12.875vw] ' />
+
+            </div>
+            <div className='md:hidden flex flex-row items-center overflow-x-auto gap-[3vw] no-scrollbar'>
+                <div className='w-[80vw] flex-shrink-0'>
+                    <img src="/assets/Images/Icons/Journey1.svg" alt="Journey1" className="w-[35vw] h-[35vw] mx-auto object-cover" />
+                    <h5 className='text-h5TextPhone font-helvetica font-bold leading-[140%] mb-[4vw]'>Consultation and University selection</h5>
+                    <p className='text-smallTextPhone leading-[150%] font-poppins'>Confused about which university to choose? Our expert advisors help you select the best university based on your academic background, budget, and career goals.</p>
+                </div>
+
+                <svg className='flex-shrink-0' style={{ width: "12.5vw", height: "15.75vw" }} viewBox="0 0 82 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869ZM81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869Z" fill="black"/>
+                </svg>
+
+                <div className='w-[80vw] flex-shrink-0'>
+                    <img src="/assets/Images/Icons/Journey2.svg" alt="Journey2" className="w-[35vw] h-[35vw] mx-auto object-cover" />
+                    <h5 className='text-h5TextPhone font-helvetica font-bold leading-[140%] mb-[4vw]'>Application & SOP Assistance</h5>
+                    <p className='text-smallTextPhone leading-[150%] font-poppins'>Edurizon Pvt. Ltd. is one of the best abroad education consultants Company, in Delhi. We have 7 branch offices all over India. We have been experts in the field of counseling for the last 10 years..</p>
+                </div>
+
+                <svg className='flex-shrink-0' style={{ width: "12.5vw", height: "15.75vw" }} viewBox="0 0 82 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869ZM81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869Z" fill="black"/>
+                </svg>
+
+                <div className='w-[80vw] flex-shrink-0'>
+                    <img src="/assets/Images/Icons/Journey3.svg" alt="Journey3" className="w-[35vw] h-[35vw] mx-auto object-cover" />
+                    <h5 className='text-h5TextPhone font-helvetica font-bold leading-[140%] mb-[4vw]'>Pre-Departure Support</h5>
+                    <p className='text-smallTextPhone leading-[150%] font-poppins'>Navigating the visa process can be daunting. We offer step-by-step assistance, from preparing documents to mock interview training, ensuring a smooth and hassle-free visa approval experience.</p>
+                </div>
+
+                <svg className='flex-shrink-0' style={{ width: "12.5vw", height: "15.75vw" }} viewBox="0 0 82 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869ZM81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869Z" fill="black"/>
+                </svg>
+
+                <div className='w-[80vw] flex-shrink-0'>
+                    <img src="/assets/Images/Icons/Journey4.svg" alt="Journey4" className="w-[35vw] h-[35vw] mx-auto object-cover" />
+                    <h5 className='text-h5TextPhone font-helvetica font-bold leading-[140%] mb-[4vw]'>Fly With Us</h5>
+                    <p className='text-smallTextPhone leading-[150%] font-poppins'>We try our best to accompany you with your complete process and from you departure to you post arrival guidance.</p>
+                </div>
+
+                <svg className='flex-shrink-0' style={{ width: "12.5vw", height: "15.75vw" }} viewBox="0 0 82 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869ZM81.6473 6.95159C82.0379 7.34211 82.0379 7.97527 81.6473 8.3658L75.2834 14.7298C74.8929 15.1203 74.2597 15.1203 73.8692 14.7298C73.4786 14.3392 73.4786 13.7061 73.8692 13.3155L79.526 7.65869L73.8692 2.00184C73.4786 1.61131 73.4786 0.978149 73.8692 0.587625C74.2597 0.197101 74.8929 0.197101 75.2834 0.587625L81.6473 6.95159ZM-1.51341e-07 6.6587L4.04701 6.6587L4.04701 8.6587L1.51342e-07 8.6587L-1.51341e-07 6.6587ZM12.141 6.6587L20.2351 6.6587L20.2351 8.6587L12.141 8.6587L12.141 6.6587ZM28.3291 6.6587L36.4231 6.6587L36.4231 8.6587L28.3291 8.6587L28.3291 6.6587ZM44.5171 6.6587L52.6112 6.6587L52.6112 8.6587L44.5171 8.6587L44.5171 6.6587ZM60.7052 6.6587L68.7992 6.65869L68.7992 8.65869L60.7052 8.6587L60.7052 6.6587ZM76.8932 6.65869L80.9402 6.65869L80.9402 8.65869L76.8932 8.65869L76.8932 6.65869Z" fill="black"/>
+                </svg>
+
+                <div className='w-[80vw] flex-shrink-0'>
+                    <img src="/assets/Images/Icons/Journey5.svg" alt="Journey5" className="w-[35vw] h-[35vw] mx-auto object-cover" />
+                    <h5 className='text-h5TextPhone font-helvetica font-bold leading-[140%] mb-[4vw]'>Accommodation & Travel Guidance</h5>
+                    <p className='text-smallTextPhone leading-[150%] font-poppins'>Moving to a new country is exciting but requires careful planning. We assist in booking safe and comfortable accommodation, flight tickets, and travel insurance, ensuring a seamless transition.</p>
+                </div>
 
             </div>
                 

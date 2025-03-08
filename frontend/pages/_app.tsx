@@ -12,6 +12,7 @@ import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ThemeProvider } from '@/context/themeContext';
+import  Head  from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -33,6 +34,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   const isAdminRoute = router.pathname.includes('/admin');
 
   return (
+    <>
+    <Head>
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    </Head>
     <ThemeProvider>
       {/* Show the warning message on admin routes for mobile viewports */}
       {isAdminRoute && isMobileView ? (
@@ -53,6 +58,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </>
       )}
     </ThemeProvider>
+    </>
   );
 }
 
