@@ -7,13 +7,8 @@ import Image  from 'next/image';
 import {motion} from 'framer-motion';
 
 //importing images
-import EdurizonLogo from '../public/assets/Images/EdurizonLogo.svg'
-import ApplyNowIcon from '../public/assets/Images/Icons/ApplyNowIcon.svg'
 import { IconButton, TitleButton } from './Buttons';
-import Link from 'next/link';
 import { TransitionLink } from '@/utils/TransitionLink';
-import ThemeToggle from './ThemeToggle';
-import EdurizonFinalLogo from '../public/assets/Images/Icons/EdurizonFinalLogo.svg';
 import MenuIcon from '../public/assets/Images/Icons/menuIcon.svg';
 interface University {
   _id: string;
@@ -205,7 +200,7 @@ const Navbar = () => {
           </TransitionLink>
           <IconButton onClick={()=>{}} className='text-regularText md:text-smallText' btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={"/assets/Images/Icons/ApplyNowIcon.svg"} btnTitle={"Apply Now"}
           btnHeightPhone={11} btnWidthPhone={33.5} btnRadiusPhone={15} iconWidthPhone={8} paddingPhone={3} />
-          <Image src={MenuIcon} alt='menuIcon' className='md:hidden w-[8vw] h-[8vw]'/>
+          <Image src="assets/Images/Icons/menuIcon.svg" width="40" height="40" alt='menuIcon' className='md:hidden w-[8vw] h-[8vw]'/>
         </  div>
 
         {/* <button
@@ -214,7 +209,6 @@ const Navbar = () => {
         >
           Logout
         </button> */}
-        {/* <ThemeToggle/> */}
       </div>
       </div>
       
