@@ -3,16 +3,10 @@
 import React,{useState, useEffect} from 'react';
 import Image from 'next/image';
 import { motion } from "framer-motion";
-import whyChoseUsImg from '../../public/assets/Images/landingPage/WhyChoseUs2.svg';
-import whyChoseUsDark from '../../public/assets/Images/landingPage/whyChoseUsDark.png';
-import onBoardedIcon from '../../public/assets/Images/Icons/onboardedIcon.svg';
-import academicCoursesIcon from '../../public/assets/Images/Icons/AcademinCoursesIcon.svg';
-import tieUpsIcon from '../../public/assets/Images/Icons/TieUpsIcon.svg';
-import experienceIcon from '../../public/assets/Images/Icons/ExperienceIcon.svg';
+
 
 const WhyChoseUsSection = () => {
-
-    // Original order of the divs
+    // Original ordr of the divs
   const initialDivs = [
     { id: 1, image: "/assets/Images/Icons/onboardedIcon.svg", number: "5000+", label: "Students onboarded" },
     { id: 2, image: "/assets/Images/Icons/TieUpsIcon.svg", number: "450+", label: "University Tie Ups" },
@@ -20,7 +14,6 @@ const WhyChoseUsSection = () => {
     { id: 4, image: "/assets/Images/Icons/AcademinCoursesIcon.svg", number: "150+", label: "Academic Courses" },
   ];
 
-      // Toggle between original and cross order
   const [isCross, setIsCross] = useState(false);
 
   useEffect(() => {
@@ -30,11 +23,6 @@ const WhyChoseUsSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // When isCross is true, we swap the positions across the diagonal.
-  // For a 2x2 grid (rendered row-wise), reversing the array produces:
-  // Original: [1, 2, 3, 4] → Row1: 1,2; Row2: 3,4
-  // Cross:      [4, 3, 2, 1] → Row1: 4,3; Row2: 2,1
-  // This swaps top-left with bottom-right and top-right with bottom-left.
   const displayDivs = isCross 
     ? [initialDivs[3], initialDivs[2], initialDivs[1], initialDivs[0]]
     : initialDivs;
@@ -85,7 +73,6 @@ const WhyChoseUsSection = () => {
         </div>
         <div className=' w-auto h-[116vw] md:h-[51.75vw] mt-[2.5vw] items z-[2]'>
             <img className='w-full h-full ' src="/assets/Images/landingPage/WhyChoseUs2.svg" alt='whyChoseUs' />
-            {/* <Image className='w-full h-full hidden dark:block' src={whyChoseUsDark} alt='whyChoseUs' /> */}
             
         </div>
     </div>
