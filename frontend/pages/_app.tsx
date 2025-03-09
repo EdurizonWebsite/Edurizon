@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="description" content="Your Website Description Here" />
-        <title>Your Website Title</title>
+        <title>Edurizon Private Limited</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preload" href="/assets/Fonts/Helvetica/Helvetica.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/assets/Images/landingPage/homeBackground.png" as="image" />

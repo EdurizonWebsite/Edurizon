@@ -5,7 +5,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 /** @type {import('next').NextConfig} */
 const nextConfig = withBundleAnalyzer({
   reactStrictMode: true,
-  swcMinify: true, // Ensures JavaScript minification
 
   env: {
     NEXT_PUBLIC_GOOGLE_CLIENT_ID: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
@@ -20,12 +19,6 @@ const nextConfig = withBundleAnalyzer({
 
     return config;
   },
-
-  experimental: {
-    optimizeFonts: true, // Improves font loading
-    optimizeImages: true, // Reduces image sizes
-  },
-
   async rewrites() {
     return [
       {

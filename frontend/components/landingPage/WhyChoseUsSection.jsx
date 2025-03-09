@@ -52,7 +52,9 @@ const WhyChoseUsSection = () => {
                     rounded-[3.75vw] md:rounded-[1.875vw]
                      bg-white overflow-hidden shrink-0 flex flex-col items-center justify-start py-[3vw] md:py-[1.5vw] px-[3.875vw] md:px-[1.937vw] box-border gap-[1vw] text-center text-regularText text-black"
                   >
-                    <img
+                    <Image
+                      width={64}
+                      height={64}
                       className="w-[8.5vw] h-[8.5vw] md:w-[4.25vw] md:h-[4.25vw] relative  overflow-hidden shrink-0"
                       alt={item.label}
                       src={item.image}
