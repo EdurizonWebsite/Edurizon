@@ -7,7 +7,10 @@ const socialLinks = [
   { href: "https://www.youtube.com/@EdurizonPvtLtd", icon: "M20.1052 4.00053C16.5012 3.75453 8.47423 3.75553 4.87523 4.00053C0.978235 4.26653 0.519234 6.62053 0.490234 12.8165C0.519234 19.0015 0.974235 21.3655 4.87523 21.6325C8.47523 21.8775 16.5012 21.8785 20.1052 21.6325C24.0022 21.3665 24.4612 19.0125 24.4902 12.8165C24.4612 6.63153 24.0062 4.26753 20.1052 4.00053ZM9.49023 16.8165V8.81653L17.4902 12.8095L9.49023 16.8165Z", name: "YouTube" }
 ];
 
-const quickLinks = ["Home", "About Us", "Study Destinations", "Services", "Blog", "Contact Us"];
+const quickLinks = [{ name: "Home", href: "/" },
+  { name: "About Us", href: "/aboutUs" },{ name: "Study Destination", href: "#" },
+  { name: "Blog", href: "#" },{ name: "Blog", href: "#" },
+  { name: "Contact Us", href: "#" },];
 const countries = ["Russia", "China", "Georgia", "Kazakhstan", "Bangladesh", "Nepal"];
 const services = ["Language Prep", "Shortlist Colleges", "Financial Planning", "SOP Review", "Start Now", "Visa Help", "Get a Counsellor"];
 
@@ -73,8 +76,8 @@ const Footer = () => {
           <div className="flex flex-col w-full md:w-[16.375vw] gap-[2vw] md:gap-[.75vw] font-medium">
             <p className="font-bold">Quick Links</p>
             {quickLinks.map((link, i) => (
-              <TransitionLink key={i} href={`/${link.replace(/\s+/g, "").toLowerCase()}`}>
-                <p>{link}</p>
+              <TransitionLink key={i} href={link.href}>
+                <p>{link.name}</p>
               </TransitionLink>
             ))}
           </div>
