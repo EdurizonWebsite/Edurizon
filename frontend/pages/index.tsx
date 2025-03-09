@@ -1,6 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import ThemeToggle from "../components/ThemeToggle";
+import Head from "next/head";
 
 // ✅ Critical Section (Load Hero Immediately with SSR)
 const HeroSection = dynamic(() => import("../components/landingPage/HeroSection"), { ssr: true });
@@ -16,6 +17,10 @@ const CTASection = dynamic(() => import("../components/landingPage/CTASection"),
 const Home = () => {
   return (
     <>
+    <Head>
+      <link rel="preload" href="/assets/Images/landingPage/homeBackground.png" as="image" />
+      <link rel="preload" href="/assets/Images/landingPage/darkBg.png" as="image" />
+    </Head>
       {/* ✅ Load Hero Section Immediately (Critical for LCP) */}
       <HeroSection />
 

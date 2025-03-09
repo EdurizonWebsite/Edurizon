@@ -46,8 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Edurizon Private Limited</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preload" href="/assets/Fonts/Helvetica/Helvetica.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/assets/Images/landingPage/homeBackground.png" as="image" />
-        <link rel="preload" href="/assets/Images/landingPage/darkBg.png" as="image" />
+        
       </Head>
 
       <ThemeProvider>

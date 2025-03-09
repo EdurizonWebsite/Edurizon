@@ -12,7 +12,7 @@ const Breadcrumbs: React.FC = () => {
   const breadcrumbNames: Record<string, string> = {
     dashboard: "Dashboard",
     products: "Products",
-    aboutus: "About Us",
+    aboutUs: "About Us",
     contact: "Contact Us",
   };
 
