@@ -8,7 +8,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-[10vw] md:w-[2.5vw] h-[10vw] md:h-[2.5vw] z-[20] bg-white dark:bg-transparent rounded-full 
+      className="w-[10vw] md:w-[2.5vw] h-[10vw]  md:h-[2.5vw] z-[20] bg-white dark:bg-transparent rounded-full 
       transition-all duration-500 ease-in-out"
     >
       {theme === "light" ? (

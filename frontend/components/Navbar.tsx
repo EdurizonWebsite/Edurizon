@@ -16,9 +16,9 @@ const Navbar = () => {
   const [hovered, setHovered] = useState(-1);
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [transitionEnd, setTransitionEnd] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
-
+  console.log(transitionEnd);
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/aboutUs" },
@@ -40,6 +40,17 @@ const Navbar = () => {
     "New Zealand",
     "Singapore",
   ];
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup on unmount
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav
@@ -156,22 +167,30 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-
-    {/* Mobile Menu */}
-    {isMenuOpen && (
-      <div className="fixed top-0 right-0 w-64 h-full bg-white shadow-lg p-4 transition-transform transform translate-x-0">
-        <button className="absolute top-4 right-4" onClick={() => setIsMenuOpen(false)}>
-          ✖
+    <div className='md:hidden'>
+    <div className={`fixed top-[14vw] w-[90vw] h-full px-[3vw] bg-[#f7f2fa] mt-[5vw] shadow-lg p-4 transition-all duration-300 transform ${
+          isMenuOpen ? transitionEnd ? "right-0":"right-[2vw]" : "right-[-90vw]"}`} onTransitionEnd={() => isMenuOpen && setTimeout(() => setTransitionEnd(true), 10)} >
+        <div className='flex justify-start gap-[3vw]'>
+         <IconButton className='ml-auto text-smallTextPhone opacity-70  ' image='/assets/Images/Icons/ApplyNowIcon.svg' iconWidth={0} padding={0} btnWidth={0} btnTitle='Apply Now' btnRadius={0} btnRadiusPhone={15} btnHeight={0} iconWidthPhone={7.75} paddingPhone={1.75} btnWidthPhone={34} btnHeightPhone={11}/>
+        <button  className=" text-orangeChosen " onClick={() => (setIsMenuOpen(false),setTransitionEnd(false))}>
+        <svg xmlns="http://www.w3.org/2000/svg" className='w-[6vw] h-[6vw]' viewBox="0 0 24 24" fill="none" stroke='#FF7500' 
+          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
         </button>
-        <ul className="mt-10">
+        </div>
+        
+        <ul className='font-poppins text-regularTextPhone'>
           {menuItems.map((item, index) => (
-            <li key={index} className="p-2 border-b">
+            <li key={index} className="p-[4vw] ">
               <a href={item.href}>{item.name}</a>
             </li>
           ))}
         </ul>
       </div>
-    )}
+      </div>
+
   </nav>
   );
 };

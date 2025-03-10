@@ -63,7 +63,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           <>
             {!shouldExcludeLayout && <Navbar />}
             <Component {...pageProps} />
-            {!shouldExcludeLayout && <Footer />}
+            <div id='footer'>
+            {!shouldExcludeLayout && <Footer />}</div>
           </>
         )}
       </ThemeProvider>
