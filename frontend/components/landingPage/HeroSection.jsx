@@ -17,26 +17,7 @@ const HeroSection = () => {
         <div className="min-h-screen [background:linear-gradient(180deg,_#fef0e6,_#fff)] flex flex-col items-center  md:justify-center font-poppins text-center  text-black">
           <div className="absolute top-0 left-0 w-full h-[120vh]">
             {/* Background Image */}
-            <div className="relative w-full h-[100vh] top-0 left-0">
-              {/* Light Mode Background */}
-              <Image src="/assets/Images/landingPage/homeBackground.webp"
-                alt="Beautiful Study Abroad Background"
-                layout="fill" // Uses full container width and height
-                objectFit="cover" // Ensures proper scaling without stretching
-                priority={true} // Ensures this image loads early (no lazy load for LCP)
-                quality={75} // Optimizes image size without quality loss
-                className="absolute object-cover w-full h-full dark:opacity-0 opacity-100"
-              />
-
-                            {/* Dark Mode Background */}
-                            <Image src="/assets/Images/landingPage/darkBg.webp" alt="Beautiful Study Abroad Background"
-                layout="fill" // Uses full container width and height
-                objectFit="cover" // Ensures proper scaling without stretching
-                priority={true} // Ensures this image loads early (no lazy load for LCP)
-                quality={75} // Optimizes image size without quality loss
-                className="absolute object-cover transition-opacity duration-200 ease-in-out  opacity-0 dark:opacity-100" />
-                          </div>
-
+           
             
             
             {/* Blurred Centered Div */}
