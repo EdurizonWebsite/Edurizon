@@ -17,7 +17,27 @@ const HeroSection = () => {
         <div className="min-h-screen [background:linear-gradient(180deg,_#fef0e6,_#fff)] flex flex-col items-center  md:justify-center font-poppins text-center  text-black">
           <div className="absolute top-0 left-0 w-full h-[120vh]">
             {/* Background Image */}
-           
+            <div className="relative w-full h-[100vh] top-0 left-0">
+              {/* Light Mode Background */}
+              <Image src="/assets/Images/landingPage/homeBackground.webp"
+                alt="Beautiful Study Abroad Background"
+                layout="fill" // Uses full container width and height
+                objectFit="cover" // Ensures proper scaling without stretching
+                priority={true} // Ensures this image loads early (no lazy load for LCP)
+                quality={75} // Optimizes image size without quality loss
+                className="absolute object-cover w-full h-full dark:opacity-0 opacity-100"
+                
+              />
+
+                            {/* Dark Mode Background */}
+                            <Image src="/assets/Images/landingPage/darkBg.webp" alt="Beautiful Study Abroad Background"
+                layout="fill" // Uses full container width and height
+                objectFit="cover" // Ensures proper scaling without stretching
+                priority={true} // Ensures this image loads early (no lazy load for LCP)
+                quality={75} // Optimizes image size without quality loss
+                className="absolute object-cover transition-opacity duration-200 ease-in-out  opacity-0 dark:opacity-100" />
+                          </div>
+
             
             
             {/* Blurred Centered Div */}
@@ -30,7 +50,7 @@ const HeroSection = () => {
           <div className='z-[2] flex flex-col items-center justify-center mt-[41vw] md:mt-[0vw]'>
             <div className='flex flex-col justify-center bg-paleOrangeChosen mx-auto mb-[8vw] md:mb-[1.75vw] text-black font-light text-tinyTextPhone md:text-tinyText h-[6vw] md:h-[1.75vw] w-[60vw] md:w-[20vw] rounded-[2.75vw]'><p className=' px-[3vw] md:px-[1.5vw]'>Explore best study abroad facilities</p></div>
             <div className='w-[88vw] md:w-[58vw] mb-[4vw] md:mb-[1.5vw]'>
-              <h1 className="text-h4TextPhone md:text-h1Text   leading-[120%] dark:text-white font-bold ">Unlock Your<br className='md:hidden'/> Study Abroad Dream Get Expert <span className='text-orangeChosen'>Guidance Today!</span></h1>
+              <h1 className="text-h4TextPhone md:text-h1Text font-['Helvetica',sans-serif] leading-[120%] dark:text-white font-bold ">Unlock Your<br className='md:hidden'/> Study Abroad Dream Get Expert <span className='text-orangeChosen'>Guidance Today!</span></h1>
             </div>
             <p className='w-[88vw] md:w-[46.5625vw] text-black dark:text-white text-smallTextPhone md:text-regularText mb-[8vw] md:mb-[1.5vw]'>
               Confused about university selection, visa, or applications? We simplify your journey and ensure you get admitted to top universities hassle-free.
