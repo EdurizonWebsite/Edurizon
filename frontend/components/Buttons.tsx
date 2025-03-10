@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-
+import Image from 'next/image';
 interface IconButtonProps {
   onClick?: () => void;
   className?: string;
@@ -44,7 +44,7 @@ export const IconButton: React.FC<IconButtonProps> = ({ onClick = () => {}, clas
             style={(screenWidth ?? 0) > 768 ? { width: `${btnWidth}vw`, height: `${btnHeight}vw`, padding: `${padding}vw`, borderRadius: `${btnRadius}vw` } : { width: `${btnWidthPhone}vw`, height: `${btnHeightPhone}vw`, padding: `${paddingPhone}vw`, borderRadius: `${btnRadiusPhone}vw` }}
             className={`mr-0 pr-0 border-orangeChosen border-[1px] border-solid  flex justify-end items-center rounded-full text-orangeChosen ${className}`}> 
             <p className='text-center  pr-[.625vw]  font-poppins'>{btnTitle}</p>
-            <img alt='iconImage' src={image} style={(screenWidth ?? 0) > 768 ? { width: `${iconWidth}vw` } : { width: `${iconWidthPhone}vw` }} />
+            <Image alt='iconImage' width={40} height={40} src={image} style={(screenWidth ?? 0) > 768 ? { width: `${iconWidth}vw` } : { width: `${iconWidthPhone}vw` }} />
         </button>
     );
 };

@@ -1,6 +1,7 @@
 // components/ThemeToggle.tsx
 import ThemeContext from "@/context/themeContext";
 import { useContext } from "react";
+import Image from "next/image";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -12,14 +13,16 @@ export default function ThemeToggle() {
       transition-all duration-500 ease-in-out"
     >
       {theme === "light" ? (
-        <img
+        <Image
+          width={40} height={40}
           className="p-1 w-full h-full border border-solid border-black border-1 rounded-full 
           transition-all duration-500 ease-in-out"
           alt="darkTheme"
           src="/assets/Images/Icons/DarkTheme.svg"
         />
       ) : (
-        <img
+        <Image
+          width={40} height={40}
           className="p-1 w-full h-full border border-solid border-white border-1 rounded-full 
           transition-all duration-500 ease-in-out"
           alt="lightTheme"
