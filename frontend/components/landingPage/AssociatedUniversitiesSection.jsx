@@ -33,7 +33,7 @@ const AssociatedUniversitiesSection = () => {
     };
     return (
         <div className="hidden md:flex h-[15vw] flex-col my-[2vw] gap-[2vw] justify-center items-center overflow-hidden">
-            <h3 className="text-h3Text font-helvetica text-center font-bold">Associated University</h3>
+            <h3 className="text-h3Text text-center font-bold">Associated University</h3>
             <div className="flex justify-center items-center overflow-hidden">
                 <Slider className="w-full"  ref={slider} {...settings}>   
                         {logosData.map((logo, index) => (

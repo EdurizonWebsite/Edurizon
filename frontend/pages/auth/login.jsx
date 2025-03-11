@@ -15,18 +15,18 @@ const Home = () => {
       <div className='h-screen w-full flex flex-row gap-[3.25vw] justify-between '>
         <div className='w-[33.125vw] flex flex-col gap-[4vw] ml-[8.5vw] my-auto py-[3.375vw]'>
           <div className='flex flex-col gap-[1vw]'>
-          <h3 className='font-helvetica leading-[120%] text-h3Text font-bold'>Unlock Your Study  Abroad Dream Get Expert <span className='text-orangeChosen'>Guidance Today!</span></h3>
-          <p className='font- text-mediumText font-poppins text-dimgrayChosen font-medium mb-[3vw]'>Welcome Back! Access Your Dashboard</p>
+          <h3 className=' leading-[120%] text-h3Text font-bold'>Unlock Your Study  Abroad Dream Get Expert <span className='text-orangeChosen'>Guidance Today!</span></h3>
+          <p className='font- text-mediumText  text-dimgrayChosen font-medium mb-[3vw]'>Welcome Back! Access Your Dashboard</p>
           
           <OtpLogin/>
-          <span className='text-smallText font-poppins text-dimgrayChosen font-light'>By signing up, you agree to the <TransitionLink href='/terms'> <span className='underline font-normal text-black'>Terms of use</span></TransitionLink> and <TransitionLink href='/terms'><span className='underline font-normal text-black'>Privacy Policy.</span></TransitionLink></span>
+          <span className='text-smallText  text-dimgrayChosen font-light'>By signing up, you agree to the <TransitionLink href='/terms'> <span className='underline font-normal text-black'>Terms of use</span></TransitionLink> and <TransitionLink href='/terms'><span className='underline font-normal text-black'>Privacy Policy.</span></TransitionLink></span>
             <div className='flex w-[30vw] items-center'>
                 <div className='w-full h-min border-dimgrayLightChosen border-[1px] border-solid'/>
-                <span className='mx-[1vw] text-dimgrayChosen font-medium text-regularText font-poppins'>OR</span>
+                <span className='mx-[1vw] text-dimgrayChosen font-medium text-regularText '>OR</span>
                 <div className='w-full h-min border-dimgrayLightChosen border-[1px] border-solid'/>
             </div>
             <div className='w-[30vw]'>
-                <p className='text-regularText font-poppins text-dimgrayChosen  text-center'>Don't have an account? <TransitionLink href='/signup'> <span className='text-orangeChosen'>Sign Up</span></TransitionLink> | <TransitionLink href='/'> <span className='text-orangeChosen'>Home</span></TransitionLink></p>
+                <p className='text-regularText  text-dimgrayChosen  text-center'>Don't have an account? <TransitionLink href='/signup'> <span className='text-orangeChosen'>Sign Up</span></TransitionLink> | <TransitionLink href='/'> <span className='text-orangeChosen'>Home</span></TransitionLink></p>
 
             </div>
           </div>

@@ -43,7 +43,7 @@ export const IconButton: React.FC<IconButtonProps> = ({ onClick = () => {}, clas
         <button onClick={()=>{onClick}}
             style={(screenWidth ?? 0) > 768 ? { width: `${btnWidth}vw`, height: `${btnHeight}vw`, padding: `${padding}vw`, borderRadius: `${btnRadius}vw` } : { width: `${btnWidthPhone}vw`, height: `${btnHeightPhone}vw`, padding: `${paddingPhone}vw`, borderRadius: `${btnRadiusPhone}vw` }}
             className={`mr-0 pr-0 border-orangeChosen border-[1px] border-solid  flex justify-end items-center rounded-full text-orangeChosen ${className}`}> 
-            <p className='text-center  pr-[.625vw]  font-poppins'>{btnTitle}</p>
+            <p className='text-center  pr-[.625vw]  '>{btnTitle}</p>
             <Image alt='iconImage' width={40} height={40} src={image} style={(screenWidth ?? 0) > 768 ? { width: `${iconWidth}vw` } : { width: `${iconWidthPhone}vw` }} />
         </button>
     );
@@ -99,7 +99,7 @@ interface TitleButtonProps {
           borderRadius: `${btnRadiusPhone}vw`
         }}
       >
-        <span className={`text-smallTextPhone md:text-smallText text-center font-poppins ${className2}`} >
+        <span className={`text-smallTextPhone md:text-smallText text-center ${className2}`} >
           {btnTitle}
         </span>
       </button>

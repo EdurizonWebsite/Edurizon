@@ -22,12 +22,14 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/aboutUs" },
-    { name: "Study Destinations", href: "#", dropdown: true },
+    { name: "Study Destinations", href: "#", dropdown: true , borderTop: true },
     { name: "College Predictor", href: "https://college-predictor-nine.vercel.app/", external: true },
     { name: "Budget Calculator", href: "#" },
-    { name: "Services", href: "#" },
+    { name: "Services", href: "#" , borderTop: true },
     { name: "Testimonials", href: "#" },
   ];
+
+  
 
   const studyDestinations = [
     "Russia",
@@ -58,9 +60,9 @@ const Navbar = () => {
       router.asPath === "/" ? "absolute" : "relative"
     } px-[2vw] md:px-[4.125vw] top-0 left-0 mt-[3vw] md:mt-[2vw] md:pb-[1.5vw] bg-transparent dark:bg-transparent w-full z-50`}
   >
-    <div className="flex items-center font-poppins text-regularText text-black dark:text-white w-full">
+    <div className="flex items-center  text-regularText text-black dark:text-white w-full">
       <div className="flex items-center justify-between w-full relative">
-        <div className="relative md:w-[15.125vw]">
+        <div className="relative md:w-[5vw]">
           <TransitionLink href="/">
         
           <Image 
@@ -73,6 +75,7 @@ const Navbar = () => {
           <div className="absolute top-[2vw] hidden dark:block left-0 [filter:blur(1.7vw)] rounded-[50%] bg-paleOrangeChosen w-[5.375vw] h-[1vw]" />
         </div>
 
+      <div className='flex gap-[3vw] items-center'>
        {/* Main Navigation */}
        <div id="navbaritems" className="hidden md:flex gap-[1.5vw]">
             {menuItems.map((item, index) =>
@@ -147,17 +150,17 @@ const Navbar = () => {
           </TransitionLink>
           <IconButton
             onClick={() => {}}
-            className="text-regularText md:text-smallText"
+            className="text-smallTextPhone flex  md:hidden lg:flex md:text-smallText"
             btnHeight={2.75}
             btnWidth={9.0625}
             btnRadius={6.25}
             padding={0.375}
             iconWidth={1.9125}
-            paddingPhone={3}
+            paddingPhone={1.5}
             iconWidthPhone={8}
             btnHeightPhone={11}
             btnRadiusPhone={15}
-            btnWidthPhone={33.5}
+            btnWidthPhone={36}
             image="/assets/Images/Icons/ApplyNowIcon.svg"
             btnTitle="Apply Now"
           />
@@ -165,9 +168,16 @@ const Navbar = () => {
             <Image src="assets/Images/Icons/menuIcon.svg" width="40" height="40" alt="menuIcon" className="md:hidden w-[8vw] h-[8vw]" />
           </button>
         </div>
+        </div>
       </div>
     </div>
     <div className='md:hidden'>
+    {isMenuOpen && (
+    <div 
+      className="fixed top-0 left-0 w-full h-full bg-white opacity-50 transition-opacity duration-300"
+      onClick={() => (setIsMenuOpen(false), setTransitionEnd(false))} // Closes menu when clicking outside
+    ></div>
+  )}
     <div className={`fixed top-[14vw] w-[90vw] h-full px-[3vw] bg-[#f7f2fa] mt-[5vw] shadow-lg p-4 transition-all duration-300 transform ${
           isMenuOpen ? transitionEnd ? "right-0":"right-[2vw]" : "right-[-90vw]"}`} onTransitionEnd={() => isMenuOpen && setTimeout(() => setTransitionEnd(true), 10)} >
         <div className='flex justify-start gap-[3vw]'>
@@ -181,13 +191,18 @@ const Navbar = () => {
         </button>
         </div>
         
-        <ul className='font-poppins text-regularTextPhone'>
+        <ul className=' text-regularTextPhone'>
           {menuItems.map((item, index) => (
-            <li key={index} className="p-[4vw] ">
-              <a href={item.href}>{item.name}</a>
+            <TransitionLink key={index} href={item.href} onClick={() => setIsMenuOpen(false)}>
+            <li className="mx-[4vw] py-[4vw]" style={item.borderTop ? {borderTop: '1.5px solid #cac4d0'} : {}}>
+              <span>{item.name}</span>
             </li>
+            </TransitionLink>
           ))}
         </ul>
+          <div className='flex justify-center mt-[2vw]'>
+            <TitleButton  btnWidthPhone={76} btnHeight={0} btnHeightPhone={11} btnRadius={0} btnRadiusPhone={25} btnTitle='Sign Up' btnWidth={0}/>
+          </div>
       </div>
       </div>
 

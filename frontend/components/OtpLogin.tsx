@@ -71,12 +71,12 @@ const OtpLogin = () => {
                         type="text"
                         placeholder="Enter OTP"
                         value={otp} 
-                        className='w-[30vw] h-[3vw] font-poppins text-regularText rounded-[6.25vw] border border-dimgrayChosen dark:border-white focus:outline-none px-[1.5vw]'
+                        className='w-[30vw] h-[3vw]  text-regularText rounded-[6.25vw] border border-dimgrayChosen dark:border-white focus:outline-none px-[1.5vw]'
                         onChange={(e) => setOtp(e.target.value)}
                     />
             {!otpSent ? 
                 <div className='w-[30vw]' >
-                    <button  className='bg-orangeChosen h-[3vw] w-[30vw] font-poppins text-regularText text-white rounded-[6.25vw]' onClick={sendOtp}>Send OTP</button>
+                    <button  className='bg-orangeChosen h-[3vw] w-[30vw]  text-regularText text-white rounded-[6.25vw]' onClick={sendOtp}>Send OTP</button>
                     <p className='text-red-400 text-right'>{message}</p>
 
                 </div>
@@ -85,7 +85,7 @@ const OtpLogin = () => {
 
                     
                     <div className='w-[30vw]' >
-                    <button  className='bg-orangeChosen h-[3vw] w-[30vw] font-poppins text-regularText text-white rounded-[6.25vw]' onClick={verifyOtp}>Verify OTP</button>
+                    <button  className='bg-orangeChosen h-[3vw] w-[30vw] text-regularText text-white rounded-[6.25vw]' onClick={verifyOtp}>Verify OTP</button>
                     <p className='text-red-400 text-right'>{message}</p>
                 </div>
 

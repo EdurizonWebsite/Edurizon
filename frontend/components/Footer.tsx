@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TransitionLink } from "@/utils/TransitionLink";
-
+import Image from "next/image";
 const socialLinks = [
   { href: "#", icon: "M14.7835 10.9799L23.712 0.816406H21.597L13.8411 9.63945L7.65101 0.816406H0.509766L9.87236 14.1597L0.509766 24.8164H2.6248L10.81 15.497L17.3485 24.8164H24.4898M3.38817 2.3783H6.63746L21.5954 23.3312H18.3453", name: "X" },
   { href: "https://www.instagram.com/edurizon_pvt.ltd/", icon: "M12.4902 2.97941C15.6942 2.97941 16.0742 2.99141 17.3402 3.04941C20.5922 3.19741 22.1112 4.74041 22.2592 7.96841C22.3172 9.23341 22.3282 9.61341 22.3282 12.8174C22.3282 16.0224 22.3162 16.4014 22.2592 17.6664C22.1102 20.8914 20.5952 22.4374 17.3402 22.5854C16.0742 22.6434 15.6962 22.6554 12.4902 22.6554C9.28623 22.6554 8.90623 22.6434 7.64123 22.5854C4.38123 22.4364 2.87023 20.8864 2.72223 17.6654C2.66423 16.4004 2.65223 16.0214 2.65223 12.8164C2.65223 9.61241 2.66523 9.23341 2.72223 7.96741C2.87123 4.74041 4.38623 3.19641 7.64123 3.04841C8.90723 2.99141 9.28623 2.97941 12.4902 2.97941Z", name: "Instagram" },
@@ -26,15 +26,15 @@ const Footer = () => {
 
   return (
     <footer className="w-full">
-      <div className="flex flex-col mx-[6vw] md:mx-[7.5vw] my-[8vw] md:my-[2vw] font-poppins text-smallTextPhone md:text-regularText dark:text-white">
+      <div className="flex flex-col mx-[6vw] md:mx-[7.5vw] my-[8vw] md:my-[2vw]  text-smallTextPhone md:text-regularText dark:text-white">
         {/* Footer Sections */}
         <div className="flex flex-col md:flex-row justify-between gap-[8vw] md:gap-[0vw] pb-[5vw]">
           {/* Logo and Contact Info */}
           <div className="flex flex-col w-full md:w-[20.1875vw] gap-[4vw] font-medium">
-            <img className="h-auto w-[20vw] md:w-[5.25vw]" src="assets/Images/Icons/EdurizonFinalLogo.svg" alt="Edurizon Logo" />
+            <Image width={40} height={40} className="h-auto w-[20vw] md:w-[5.25vw]" src="assets/Images/Icons/EdurizonFinalLogo.svg" alt="Edurizon Logo" />
             <div>
             <div className="flex flex-row gap-[2vw] md:gap-[1vw]">
-                <img className='h-[5vw] md:h-[1.25vw] w-[3.5vw] md:w-[.875vw]' src="/assets/Images/Icons/locationIcon.svg" alt="Location Icon" />
+                <Image width={40} height={40} className='h-[5vw] md:h-[1.25vw] w-[3.5vw] md:w-[.875vw]' src="/assets/Images/Icons/locationIcon.svg" alt="Location Icon" />
                 <div className="text-smallTextPhone md:text-smallText leading-[150%]">
               <p className="mb-2">Pocket 111, 113, 115 1st Floor, Best Arcade Market, Canara Bank, Near K.M. Chowk, Sector-12 Dwarka, New Delhi - 110075</p>
               

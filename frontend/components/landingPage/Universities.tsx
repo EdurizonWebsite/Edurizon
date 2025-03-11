@@ -24,8 +24,8 @@ const SLIDES = [
   { img: UK, title: "UK" },
   { img: Georgia, title: "Georgia" },
   { img: Germany, title: "Germany" },
-  { img: Georgia, title: "Georgia" },
-  { img: Germany, title: "Germany" },
+  { img: Georgia, title: "Georgia2" },
+  { img: Germany, title: "Germany2" },
 ];
 
 interface PropType {
@@ -63,14 +63,14 @@ const Universities: React.FC<PropType> = ({ autoScroll = true }) => {
   }, [emblaApi, autoScroll]);
 
   return (
-    <div className="w-full relative gradient-bg md:h-[56.25vw] flex flex-col justify-between overflow-hidden font-poppins py-[10vw] md:py-[4.75vw] px-[6.25vw] md:px-[7.5vw] box-border">
+    <div className="w-full relative gradient-bg md:h-[56.25vw] flex flex-col justify-between overflow-hidden  py-[10vw] md:py-[4.75vw] px-[6.25vw] md:px-[7.5vw] box-border">
       <div className="flex flex-row md:gap-[23.3125vw] items-center">
         {/* Header Section */}
         <div className="w-full md:w-[37.1875vw]">
           <div className="flex flex-col justify-center bg-paleOrangeChosen mb-[6vw] md:mb-[1.5vw] text-black text-tinyTextPhone md:text-tinyText h-[7vw] md:h-[1.75vw] w-[32.5vw] md:w-[9vw] rounded-[11vw] md:rounded-[2.75vw]">
             <p className="text-center">Destinations</p>
           </div>
-          <h2 className="text-h5TextPhone md:text-h2Text font-helvetica leading-[120%] dark:text-white">
+          <h2 className="text-h5TextPhone md:text-h2Text   leading-[120%] dark:text-white">
             <strong>
               Tied Up with <span className="text-orangeChosen">Universities</span>
             </strong>{" "}

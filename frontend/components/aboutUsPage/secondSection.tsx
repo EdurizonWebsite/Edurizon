@@ -66,7 +66,7 @@ const SecondSection = () => {
                                 <div className='flex flex-col justify-center bg-linenChosen mx-auto md:mx-0  md:mb-[1.5vw] text-black text-smallTextPhone md:text-tinyText h-[8vw] md:h-[1.75vw] w-[30vw] md:w-[7.675vw] rounded-[11vw] md:rounded-[2.75vw]'>
                                         <p className=' text-center'>Our Story</p>
                                 </div>
-                                <h4 className="text-h4TextPhone md:text-h4Text font-bold font-helvetica leading-[120%] md:text-left text-center" >Your Dreams And Our Expertise Leads To Your Success </h4>
+                                <h4 className="text-h4TextPhone md:text-h4Text font-bold leading-[120%] md:text-left text-center" >Your Dreams And Our Expertise Leads To Your Success </h4>
                         </div>
                         <div className="md:flex gap-[1vw] hidden">
                         <Image src={ourStoryImg2} alt="Our Story Image 2" className="w-[15.75vw] h-[11.1875vw] " />
@@ -76,7 +76,7 @@ const SecondSection = () => {
                 <div className="flex flex-col md:flex-row justify-between gap-[10vw] md:gap-0">
                         <Image className="w-full h-auto md:w-[30.75vw] md:h-[20.75vw]" alt="Our Story Img 1" src={ourStoryImg1}/>
                         <div className="flex flex-col gap-[6vw] md:gap-[1.5vw] justify-center md:w-[32.125vw]" >
-                                <p className="py-[.875vw] font-medium text-smallTextPhone md:text-smallText font-poppins leading-[150%]">
+                                <p className="py-[.875vw] font-medium text-smallTextPhone md:text-smallText leading-[150%]">
                                 Edurizon is a pioneer in overseas education consultancy, specializing in a wide range of programs, including MBBS in Russia, Georgia, Kazakhstan, Uzbekistan, and other top destinations. Whether you aspire to study MBBS, Engineering, MBA, or postgraduate courses, we provide personalized guidance to help you achieve your goals.
                                 </p>
                                 <div className=' flex gap-[4vw] md:gap-[1vw] items-center '>

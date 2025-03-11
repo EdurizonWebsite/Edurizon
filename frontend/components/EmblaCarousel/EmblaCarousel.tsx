@@ -38,15 +38,15 @@ const EmblaCarousel: React.FC<PropType> = ({ slides,emblaRef }) => {
         <div className="embla__container">
           {slides.map((slide,index) => (
             screenWidth && screenWidth > 768 ?
-            <div className="embla__slide" key={slide.title}>
+            <div className="embla__slide"  key={slide.title}>
               <div className="mr-[1.25vw]">
-               <Image style={{ height: "25vw",width:"20.25vw" }} src={slide.img} alt={slide.title} />
+               <Image loading='lazy' style={{ height: "25vw",width:"20.25vw" }} src={slide.img} alt={slide.title} />
               </div>
             </div>
             :
             <div className="embla__slidePhone"  key={slide.title}>
               <div  className={`${index==5?"mr-[1.25vw]":""}`}>
-               <Image style={{ height: "62vw",width:"50vw" }} src={slide.img} alt={slide.title} />
+               <Image loading='lazy' style={{ height: "62vw",width:"50vw" }} src={slide.img} alt={slide.title} />
               </div>
             </div>
           ))}

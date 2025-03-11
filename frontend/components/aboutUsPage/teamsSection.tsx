@@ -43,8 +43,8 @@ const TeamsSection=()=>{
     return (
         <div className="md:mx-[8.3125vw] mx-[6vw]  py-[10vw] md:py-[7.5vw] flex flex-col gap-[6vw] md:gap-[5.3125vw] dark:text-white">
             <div className="flex flex-col gap-[6vw] md:gap-[1.5vw]">
-                <h1 className="text-h4TextPhone md:text-h1Text leading-[120%] font-helvetica text-center font-medium">Expert Counsellors guiding you through.</h1>
-                <p className="text-mediumTextPhone md:text-mediumText leading-[150%] font-poppins font-medium text-center">
+                <h1 className="text-h4TextPhone md:text-h1Text leading-[120%] text-center font-bold">Expert Counsellors guiding you through.</h1>
+                <p className="text-mediumTextPhone md:text-mediumText leading-[150%]  font-medium text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/> tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
                 
@@ -65,8 +65,8 @@ const TeamsSection=()=>{
                 className="w-full h-[78.5vw] md:h-[19.5vw]"
               />
               <div className="w-full [backdrop-filter:blur(3vw)] flex flex-col gap-[3vw] md:gap-[.75vw] py-[4vw] pl-[5vw] md:py-[.825vw] md:pl-[1.25vw]">
-                <h6 className="text-h6TextPhone md:text-h6Text leading-[100%] font-poppins font-bold">{member.name}</h6>
-                <p className="text-smallTextPhone md:text-smallText leading-[100%] font-poppins font-medium">{member.position}</p>
+                <h6 className="text-h6TextPhone md:text-h6Text leading-[100%] font-bold">{member.name}</h6>
+                <p className="text-smallTextPhone md:text-smallText leading-[100%] font-medium">{member.position}</p>
                 
               </div>
             </div>

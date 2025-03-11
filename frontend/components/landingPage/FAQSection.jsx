@@ -1,7 +1,5 @@
 import React,{useState} from "react"
 import Image from "next/image"
-import plusIcon from '../../public/assets/Images/Icons/plusIcon.svg'
-import minusIcon from '../../public/assets/Images/Icons/minusIcon.svg'
 
 
 
@@ -21,12 +19,12 @@ const FAQSection = () => {
                     {data.map((item,i)=>(
                         <div key={i} className='item shadow-[0px_.25vw_2vw_rgba(0,_0,_0,_0.1)] md:shadow-[0px_.125vw_.5vw_rgba(0,_0,_0,_0.1)] dark:shadow-[0px_.25vw_2vw_rgba(255,_255,_255,_0.1)] md:dark:shadow-[0px_.125vw_.5vw_rgba(255,_255,_255,_0.1)] rounded-[5vw] md:rounded-[1.25vw] mb-[4vw] md:mb-[1vw] px-[5vw] md:px-[1.25vw] py-[4vw] md:py-[1vw] w-full'>
                                 <div className='title' onClick={()=>toggle(i)} >
-                                    <h2 className="font-semibold text-smallTextPhone md:text-regularText font-poppins">{item.question}</h2>
-                                    <img cl className={`transition-all duration-300 w-[4.75vw] md:w-[2.375vw] h-auto ${selected==i ?"rotate-0":"rotate-180"}`}  alt="arrow"   src={selected==i?"/assets/Images/Icons/minusIcon.svg":"/assets/Images/Icons/plusIcon.svg"}/>
+                                    <h2 className="font-semibold text-smallTextPhone md:text-regularText ">{item.question}</h2>
+                                    <Image width={40} height={40}  className={`transition-all duration-300 w-[4.75vw] md:w-[2.375vw] h-auto ${selected==i ?"rotate-0":"rotate-180"}`}  alt="arrow"   src={selected==i?"/assets/Images/Icons/minusIcon.svg":"/assets/Images/Icons/plusIcon.svg"}/>
                                 </div> 
                                 <div className={selected==i ?"content show ":" content "}>
                                 <div className='flex flex-row'>
-                                <div className='flex flex-row w-full md:w-[40.625vw]  font-light text-smallTextPhone md:text-regularText font-poppins'>{item.answer}</div>
+                                <div className='flex flex-row w-full md:w-[40.625vw]  font-light text-smallTextPhone md:text-regularText '>{item.answer}</div>
                                 </div>
                             </div>
 

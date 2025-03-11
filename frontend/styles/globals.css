@@ -3,18 +3,6 @@
 @tailwind utilities;
 
 
-/* Custom scrollbar hide styles */
-/* Works in modern browsers */
-/* html, body {
-  overflow-y: auto;
-  scrollbar-width: none;
-}
-
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none;
-}
- */
-
  /* Hide scrollbar for Chrome, Safari and Edge */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -65,104 +53,6 @@ body{
 .dark .gradient-bg {
   background: var(--gradient-dark);
 }
-
-/* Poppins font */
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/assets/Fonts/Poppins/Poppins-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-
-/* Poppins font */
-
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url('../public/assets/Fonts/Helvetica/helvetica-light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url('../public/assets/Fonts/Helvetica/Helvetica.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url('../public/assets/Fonts/Helvetica/Helvetica-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url('../public/assets/Fonts/Helvetica/Helvetica-Black.otf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
 
 
 @layer base {

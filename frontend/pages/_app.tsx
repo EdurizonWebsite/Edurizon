@@ -6,7 +6,7 @@ import "../components/landingPage/slider.css";
 import "react-phone-input-2/lib/style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { helvetica,poppins } from "../styles/fonts";
 import { useEffect, useState, useMemo } from "react";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
@@ -45,7 +45,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Your Website Description Here" />
         <title>Edurizon Private Limited</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="preload" href="/assets/Fonts/Helvetica/Helvetica.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <style>{`
+        
+        body {
+          font-family: ${poppins.style.fontFamily}, sans-serif;
+        }
+
+
+         h1, h2, h3, h4, h5, h6 {
+          font-family: ${helvetica.style.fontFamily}, sans-serif;
+        }
+        `}</style>
         
       </Head>
 

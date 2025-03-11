@@ -15,16 +15,7 @@ module.exports = {
       animation: {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
-  		fontFamily: {
-  			poppins: [
-  				'Poppins',
-  				'sans-serif'
-  			],
-  			helvetica: [
-  				'Helvetica',
-  				'sans-serif'
-  			]
-  		},
+  		
   		fontSize: {
   			testimonial: 'clamp(42px,5.5vw,90px)',
   			h0Text: 'clamp(36px,4vw,80px)',
