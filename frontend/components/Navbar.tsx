@@ -29,8 +29,10 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const router = useRouter();
   const isMainPage = router.pathname === '/';
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState('');
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [userDropdownVisible, setUserDropdownVisible] = useState(false);
 
   const studyDestinations = [
     "Russia",
@@ -46,11 +48,29 @@ const Navbar = () => {
 
   useEffect(() => {
     const fetchUniversities = async () => {
-      const response = await axios.get('http://localhost:5000/api/universities/mbbs');
-      setUniversities(response.data);
+      try {
+        const response = await axios.get('http://localhost:5001/api/universities/mbbs');
+        setUniversities(response.data);
+      } catch (error) {
+        console.error('Error fetching universities:', error);
+        setUniversities([]);
+      }
     };
 
     fetchUniversities();
+  }, []);
+
+  useEffect(() => {
+    // Check login status
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      const user = JSON.parse(userData);
+      setIsLoggedIn(true);
+      setUserName(user.name);
+    } else {
+      setIsLoggedIn(false);
+      setUserName('');
+    }
   }, []);
 
   const handleUniversityClick = (id: string) => {
@@ -64,8 +84,10 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    router.push('/login');
+    localStorage.removeItem('user');
+    setIsLoggedIn(false);
+    setUserName('');
+    router.push('/');
   };
 
   return (
@@ -73,7 +95,7 @@ const Navbar = () => {
       <div className='flex items-center font-poppins text-regularText text-black dark:text-white w-full  '>
       <div className="relative flex items-center text-smallText md:text-regularText justify-between w-full">
         <div className='md:w-[15.125vw] relative'>
-          <img src="assets/Images/Icons/EdurizonFinalLogo.svg" alt="Edurizon Logo" layout="intrinsic" className='w-[17.75vw] md:w-[5vw] h-[14vw] md:h-[3.875vw] '/>
+          <Image src={EdurizonFinalLogo} alt="Edurizon Logo" className='w-[17.75vw] md:w-[5vw] h-[14vw] md:h-[3.875vw] '/>
           <div className="absolute top-[2vw] hidden dark:block  left-0 [filter:blur(1.7vw)] rounded-[50%] bg-paleOrangeChosen w-[5.375vw] h-[1vw]" />         
         </div>
         {/* <div className="relative">
@@ -199,12 +221,57 @@ const Navbar = () => {
 
 
         <div className='flex gap-[1vw] md:gap-[.5vw] items-center'>
-          <TransitionLink href='/login'>
-            <TitleButton className='md:block hidden'  onClick={()=>{}} btnHeight={2.75} btnWidth={6.0625} btnRadius={6.25} btnTitle={"Sign Up"}/>
-
-          </TransitionLink>
-          <IconButton onClick={()=>{}} className='text-regularText md:text-smallText' btnHeight={2.75} btnWidth={9.0625} btnRadius={6.25} padding={0.375} iconWidth={1.9125} image={ApplyNowIcon} btnTitle={"Apply Now"}
-          btnHeightPhone={11} btnWidthPhone={33.5} btnRadiusPhone={15} iconWidthPhone={8} paddingPhone={3} />
+          {isLoggedIn ? (
+            <div className="relative">
+              <button
+                className="flex items-center gap-2 hover:text-orangeChosen transition-colors"
+                onMouseEnter={() => setUserDropdownVisible(true)}
+                onMouseLeave={() => setUserDropdownVisible(false)}
+              >
+                <span className="hidden md:block">Welcome, {userName}</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                {userDropdownVisible && (
+                  <div className="absolute right-0 mt-8 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-50">
+                    <button
+                      onClick={handleLogout}
+                      className="block w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </button>
+            </div>
+          ) : (
+            <TransitionLink href='/auth/login'>
+              <TitleButton 
+                className='md:block hidden' 
+                onClick={() => {}} 
+                btnHeight={2.75} 
+                btnWidth={6.0625} 
+                btnRadius={6.25} 
+                btnTitle={"Login"}
+              />
+            </TransitionLink>
+          )}
+          <IconButton 
+            onClick={() => {}} 
+            className='text-regularText md:text-smallText' 
+            btnHeight={2.75} 
+            btnWidth={9.0625} 
+            btnRadius={6.25} 
+            padding={0.375} 
+            iconWidth={1.9125} 
+            image={ApplyNowIcon} 
+            btnTitle={"Apply Now"}
+            btnHeightPhone={11} 
+            btnWidthPhone={33.5} 
+            btnRadiusPhone={15} 
+            iconWidthPhone={8} 
+            paddingPhone={3} 
+          />
           <Image src={MenuIcon} alt='menuIcon' className='md:hidden w-[8vw] h-[8vw]'/>
         </  div>
 

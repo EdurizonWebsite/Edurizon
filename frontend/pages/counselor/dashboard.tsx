@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
-
-declare global {
-  interface Window {
-    JitsiMeetExternalAPI: any;
-  }
-}
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface Meeting {
   _id: string;
@@ -28,35 +23,58 @@ interface Meeting {
 
 const CounselorDashboard = () => {
   const [meetings, setMeetings] = useState<Meeting[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [showJoinModal, setShowJoinModal] = useState(false);
   const [selectedMeeting, setSelectedMeeting] = useState<Meeting | null>(null);
   const [scheduledTime, setScheduledTime] = useState('');
   const router = useRouter();
 
+  // Check authentication on mount and setup interval to check token expiry
+  useEffect(() => {
+    const token = localStorage.getItem('counselorToken');
+    if (!token) {
+      router.push('/counselor/login');
+      return;
+    }
+
+    // Check token expiry every minute
+    const interval = setInterval(() => {
+      const token = localStorage.getItem('counselorToken');
+      if (!token) {
+        router.push('/counselor/login');
+      }
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, [router]);
+
+  // Fetch meetings with authentication
   useEffect(() => {
     const fetchMeetings = async () => {
       try {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('counselorToken');
         if (!token) {
           router.push('/counselor/login');
           return;
         }
 
-        console.log('Sending token in headers:', token);
-        const response = await axios.get('http://localhost:5000/api/meetings', {
+        const response = await axios.get('http://localhost:5001/api/meetings', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
 
-        console.log('Meetings response:', response.data);
-
         setMeetings(response.data);
-      } catch (error) {
-        console.error('Failed to fetch meetings', error);
-        router.push('/counselor/login');
+        setLoading(false);
+      } catch (error: any) {
+        console.error('Failed to fetch meetings:', error);
+        if (error.response?.status === 401) {
+          localStorage.removeItem('counselorToken');
+          router.push('/counselor/login');
+        }
+        toast.error('Failed to fetch meetings');
+        setLoading(false);
       }
     };
 
@@ -67,161 +85,187 @@ const CounselorDashboard = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const token = localStorage.getItem('token');
-      console.log('Sending token in headers:', token);
-      const response = await axios.put(`http://localhost:5000/api/meetings/${selectedMeeting?._id}`, {
-        status: 'Waiting',
-        scheduledTime,
-      }, {
-        headers: {
-          Authorization: `Bearer ${token}`,
+      const token = localStorage.getItem('counselorToken');
+      if (!token) {
+        router.push('/counselor/login');
+        return;
+      }
+
+      await axios.put(
+        `http://localhost:5001/api/meetings/${selectedMeeting?._id}`,
+        {
+          status: 'Waiting',
+          scheduledTime,
         },
-      });
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      setMeetings(meetings.map((meeting) =>
+        meeting._id === selectedMeeting?._id
+          ? { ...meeting, status: 'Waiting', scheduledTime }
+          : meeting
+      ));
+
       toast.success('Meeting scheduled successfully!');
-      setMeetings(meetings.map((meeting) => meeting._id === selectedMeeting?._id ? { ...meeting, status: 'Waiting', scheduledTime } : meeting));
       setShowScheduleModal(false);
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Failed to schedule meeting:', error);
+      if (error.response?.status === 401) {
+        localStorage.removeItem('counselorToken');
+        router.push('/counselor/login');
+      }
       toast.error('Failed to schedule meeting');
     } finally {
       setLoading(false);
     }
   };
 
-  const handleJoinMeeting = (meeting: Meeting) => {
-    console.log('Joining meeting:', meeting);
-    setSelectedMeeting(meeting);
-    setShowJoinModal(true);
+  const handleLogout = () => {
+    localStorage.removeItem('counselorToken');
+    router.push('/counselor/login');
   };
 
-  useEffect(() => {
-    if (showJoinModal && selectedMeeting) {
-      const interval = setInterval(() => {
-        if (window.JitsiMeetExternalAPI) {
-          clearInterval(interval);
-          const domain = 'meet.jit.si';
-          const options = {
-            roomName: selectedMeeting.jitsiUrl?.split('/').pop(),
-            width: '100%',
-            height: '100%',
-            parentNode: document.querySelector('#jitsi-container'),
-            userInfo: {
-              displayName: 'Counselor',
-            },
-          };
-          const api = new window.JitsiMeetExternalAPI(domain, options);
-          api.addEventListener('videoConferenceJoined', () => {
-            console.log('Local User Joined');
-          });
-          api.addEventListener('videoConferenceLeft', () => {
-            console.log('Local User Left');
-          });
-        }
-      }, 100);
-    }
-  }, [showJoinModal, selectedMeeting]);
-
-  const handleCloseModal = () => {
-    setShowJoinModal(false);
-  };
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    );
+  }
 
   return (
-    <div className="container mx-auto p-4 pt-24">
-      <h1 className="text-3xl font-bold mb-4">Counselor Dashboard</h1>
-      <div className="grid grid-cols-1 gap-4">
-        {meetings.map((meeting) => (
-          <div key={meeting._id} className="bg-gray-800 p-4 rounded shadow-md">
-            <h2 className="text-xl font-bold mb-2">{meeting.university.name}</h2>
-            <p className="text-lg mb-2">Student: {meeting.studentDetails.name}</p>
-            <p className="text-lg mb-2">Email: {meeting.studentDetails.email}</p>
-            <p className="text-lg mb-2">Phone: {meeting.studentDetails.phone}</p>
-            <p className="text-lg mb-2">Country: {meeting.studentDetails.country}</p>
-            <p className="text-lg mb-2">Course: {meeting.studentDetails.course}</p>
-            {meeting.status === 'Waiting for scheduling' ? (
-              <button
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-                onClick={() => {
-                  setSelectedMeeting(meeting);
-                  setShowScheduleModal(true);
-                }}
-              >
-                Schedule Meeting
-              </button>
-            ) : meeting.status === 'Waiting' ? (
-              <button
-                className="bg-yellow-500 text-white px-4 py-2 rounded"
-                disabled
-              >
-                Waiting
-              </button>
-            ) : meeting.status === 'Join' ? (
-              <button
-                className="bg-green-500 text-white px-4 py-2 rounded"
-                onClick={() => handleJoinMeeting(meeting)}
-              >
-                Join Meeting
-              </button>
-            ) : (
-              <button
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-                disabled
-              >
-                Completed
-              </button>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {showScheduleModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-gray-800 p-8 rounded shadow-md w-full max-w-md relative">
+    <div className="min-h-screen bg-gray-900">
+      <nav className="bg-gray-800 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="text-xl font-bold text-white">Counselor Dashboard</div>
             <button
-              className="absolute top-2 right-2 text-white"
-              onClick={() => setShowScheduleModal(false)}
+              onClick={handleLogout}
+              className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
             >
-              &times;
+              Logout
             </button>
-            <h2 className="text-2xl font-bold mb-6 text-white">Schedule Meeting</h2>
+          </div>
+        </div>
+      </nav>
+
+      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div className="px-4 py-6 sm:px-0">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {meetings.map((meeting) => (
+              <div key={meeting._id} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {meeting.university.name}
+                </h3>
+                <div className="space-y-2 text-gray-300">
+                  <p>Student: {meeting.studentDetails.name}</p>
+                  <p>Email: {meeting.studentDetails.email}</p>
+                  <p>Phone: {meeting.studentDetails.phone}</p>
+                  <p>Country: {meeting.studentDetails.country}</p>
+                  <p>Course: {meeting.studentDetails.course}</p>
+                  {meeting.scheduledTime && (
+                    <p>Scheduled: {new Date(meeting.scheduledTime).toLocaleString()}</p>
+                  )}
+                </div>
+                <div className="mt-4">
+                  {meeting.status === 'Waiting for scheduling' ? (
+                    <button
+                      className="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                      onClick={() => {
+                        setSelectedMeeting(meeting);
+                        setShowScheduleModal(true);
+                      }}
+                    >
+                      Schedule Meeting
+                    </button>
+                  ) : meeting.status === 'Waiting' ? (
+                    <div className="w-full bg-yellow-600 text-white px-4 py-2 rounded text-center">
+                      Waiting
+                    </div>
+                  ) : meeting.status === 'Join' ? (
+                    <button
+                      className="w-full bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                      onClick={() => {
+                        setSelectedMeeting(meeting);
+                        setShowJoinModal(true);
+                      }}
+                    >
+                      Join Meeting
+                    </button>
+                  ) : (
+                    <div className="w-full bg-gray-600 text-white px-4 py-2 rounded text-center">
+                      Completed
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+
+      {/* Schedule Modal */}
+      {showScheduleModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <div className="bg-gray-800 rounded-lg p-6 w-full max-w-md">
+            <h2 className="text-xl font-bold text-white mb-4">Schedule Meeting</h2>
             <form onSubmit={handleScheduleMeeting}>
               <div className="mb-4">
-                <label className="block text-gray-300 mb-2" htmlFor="scheduledTime">
-                  Scheduled Time
+                <label className="block text-gray-300 mb-2">
+                  Select Date and Time
                 </label>
                 <input
                   type="datetime-local"
-                  id="scheduledTime"
                   value={scheduledTime}
                   onChange={(e) => setScheduledTime(e.target.value)}
-                  className="w-full px-3 py-2 border rounded bg-gray-700 text-white"
+                  className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white"
                   required
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500"
-                disabled={loading}
-              >
-                {loading ? 'Scheduling...' : 'Schedule Meeting'}
-              </button>
+              <div className="flex justify-end space-x-3">
+                <button
+                  type="button"
+                  onClick={() => setShowScheduleModal(false)}
+                  className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                  disabled={loading}
+                >
+                  {loading ? 'Scheduling...' : 'Schedule'}
+                </button>
+              </div>
             </form>
           </div>
         </div>
       )}
 
+      {/* Join Meeting Modal */}
       {showJoinModal && selectedMeeting && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-gray-800 p-8 rounded shadow-md w-full max-w-2xl relative">
-            <button
-              className="absolute top-2 right-2 text-white"
-              onClick={handleCloseModal}
-            >
-              &times;
-            </button>
-            <h2 className="text-2xl font-bold mb-6 text-white">Join Meeting</h2>
-            <div id="jitsi-container" className="w-full h-96"></div>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <div className="bg-gray-800 rounded-lg p-6 w-full max-w-4xl h-[80vh]">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-white">Meeting Room</h2>
+              <button
+                onClick={() => setShowJoinModal(false)}
+                className="text-gray-400 hover:text-white"
+              >
+                Close
+              </button>
+            </div>
+            <div id="jitsi-container" className="w-full h-full rounded overflow-hidden" />
           </div>
         </div>
       )}
+
+      <ToastContainer />
     </div>
   );
 };

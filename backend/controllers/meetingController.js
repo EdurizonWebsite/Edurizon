@@ -43,6 +43,73 @@ const createGoogleMeetLink = async (meeting) => {
   return response.data.hangoutLink;
 };
 
+// @desc    Get all meetings for a user
+// @route   GET /api/meetings
+// @access  Private
+const getMeetings = asyncHandler(async (req, res) => {
+  let meetings;
+  
+  if (req.user.role === 'counselor') {
+    // Counselors can see meetings assigned to them or unassigned meetings
+    meetings = await Meeting.find({
+      $or: [
+        { counselor: req.user._id },
+        { counselor: null }
+      ]
+    }).populate('student', 'name email');
+  } else {
+    // Students can only see their own meetings
+    meetings = await Meeting.find({ student: req.user._id })
+      .populate('counselor', 'name email');
+  }
+
+  res.json(meetings);
+});
+
+// @desc    Create a new meeting
+// @route   POST /api/meetings/create
+// @access  Private
+const createMeeting = asyncHandler(async (req, res) => {
+  const { scheduledTime, description } = req.body;
+
+  if (!scheduledTime) {
+    res.status(400);
+    throw new Error('Please provide a scheduled time for the meeting');
+  }
+
+  const meeting = await Meeting.create({
+    student: req.user._id,
+    scheduledTime,
+    description,
+    status: 'Pending'
+  });
+
+  res.status(201).json(meeting);
+});
+
+// @desc    Get meeting status for a university
+// @route   GET /api/meetings/status/:universityId
+// @access  Private
+const getMeetingStatus = asyncHandler(async (req, res) => {
+  const { universityId } = req.params;
+  
+  const meeting = await Meeting.findOne({
+    student: req.user._id,
+    university: universityId
+  }).populate('counselor', 'name email');
+
+  if (!meeting) {
+    return res.json({ status: 'No meeting found' });
+  }
+
+  res.json({
+    status: meeting.status,
+    scheduledTime: meeting.scheduledTime,
+    counselor: meeting.counselor,
+    googleMeetUrl: meeting.googleMeetUrl
+  });
+});
+
 // @desc    Update meeting status and assign counselor
 // @route   PUT /api/meetings/:id
 // @access  Private (Counselor)
@@ -72,4 +139,9 @@ const updateMeetingStatus = asyncHandler(async (req, res) => {
   res.json(meeting);
 });
 
-module.exports = { updateMeetingStatus };
+module.exports = {
+  getMeetings,
+  createMeeting,
+  getMeetingStatus,
+  updateMeetingStatus
+};

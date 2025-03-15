@@ -5,6 +5,7 @@ const router = express.Router();
 router.post('/register', registerUser);
 router.post('/login', authUser);
 router.post('/google', googleAuth);
-router.post('/sendOtp',sendOtp)
-router.post('/verifyOtp',verifyOtp)
+router.post('/send-otp', sendOtp);
+router.post('/verify-otp', verifyOtp);
+
 module.exports = router;
