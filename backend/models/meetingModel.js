@@ -27,7 +27,7 @@ const meetingSchema = mongoose.Schema(
     scheduledTime: {
       type: Date,
     },
-    jitsiUrl: {
+    googleMeetUrl: {
       type: String,
     },
     counselor: {
