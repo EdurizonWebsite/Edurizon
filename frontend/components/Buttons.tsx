@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Image from 'next/image';
 
 interface IconButtonProps {
@@ -11,15 +11,32 @@ interface IconButtonProps {
   image: string;
   btnTitle: string;
   btnRadius?: number;
+  iconWidthPhone?: number;
+  btnWidthPhone?: number;
+  btnHeightPhone?: number;
+  paddingPhone?: number;
+  btnRadiusPhone?: number;
+
+
 }
 
-export const IconButton: React.FC<IconButtonProps> = ({ onClick = () => {}, className = '', iconWidth, btnWidth,btnHeight,padding, image,btnTitle,btnRadius }) => {
-    return (
+export const IconButton: React.FC<IconButtonProps> = ({ onClick = () => {}, className = '', iconWidth, btnWidth,btnHeight,padding, image,btnTitle,btnRadius, iconWidthPhone, btnWidthPhone,btnHeightPhone,paddingPhone, btnRadiusPhone, }) => {
+  const [screenWidth, setScreenWidth] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Set initial width and update on resize
+    setScreenWidth(window.innerWidth);
+
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+  })
+  return (
         <button onClick={()=>{onClick}}
-            style={{ width: `${btnWidth}vw`, height: `${btnHeight}vw`, padding: `${padding}vw`, borderRadius: `${btnRadius}vw` }}
+            style={(screenWidth ?? 0) > 768 ? { width: `${btnWidth}vw`, height: `${btnHeight}vw`, padding: `${padding}vw`, borderRadius: `${btnRadius}vw` } : { width: `${btnWidthPhone}vw`, height: `${btnHeightPhone}vw`, padding: `${paddingPhone}vw`, borderRadius: `${btnRadiusPhone}vw` }}
             className={`bg-transparent mr-0 pr-0 border-orangeChosen border-[1px] border-solid  flex justify-end items-center rounded-full text-orangeChosen ${className}`}> 
             <p className='text-center  pr-[.625vw]  font-poppins'>{btnTitle}</p>
-            <Image alt='iconImage' src={image} style={{width:`${iconWidth}vw`}}/>
+            <Image alt='iconImage' src={image} style={(screenWidth ?? 0) > 768 ? { width: `${iconWidth}vw` } : { width: `${iconWidthPhone}vw` }} />
         </button>
     );
 };

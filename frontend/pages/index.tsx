@@ -1,4 +1,6 @@
 import React from 'react';
+import ThemeToggle from '../components/ThemeToggle';
+
 import HeroSection from '../components/landingPage/HeroSection.jsx'
 import WhyChoseUsSection from '../components/landingPage/WhyChoseUsSection.jsx'
 import Universities from '../components/landingPage/Universities'
@@ -11,7 +13,8 @@ import AssociatedUniversitySection from '../components/landingPage/AssociatedUni
 
 const Home = () => {
   return (
-    <div>
+    <div className='relative'>
+      
       <HeroSection/>
       <WhyChoseUsSection/>
       <Universities/>
@@ -19,6 +22,10 @@ const Home = () => {
       <FAQSection/>
       <AssociatedUniversitySection/>
       <CTASection/>
+      <div className='fixed top-[90vh] left-[4vw]'>
+        <ThemeToggle/>
+      </div>
+        
     </div>
   );
 };
