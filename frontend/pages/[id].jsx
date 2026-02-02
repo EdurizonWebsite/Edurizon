@@ -1,34 +1,11 @@
 import React from 'react'
-import Head from 'next/head'
-
-const WORDPRESS_BASE = 'https://srv757671.hstgr.cloud/wp-json/wp/v2'
-const RESERVED_SLUGS = new Set([
-  'admin',
-  'api',
-  'blog',
-  'blogs',
-  'study-destination',
-  'study-destinations',
-  'contact',
-  'contact-us',
-  'about',
-  'aboutUs',
-  'login',
-  'signup',
-  'registered-student-login',
-  'student-dashboard',
-  'college-predictor',
-  'counselor',
-  'terms',
-  'testimonial',
-])
 
 const BlogPageDetails = ({ page }) => {
   return (
     <div className='container  p-8 pb-16 pt-[20vw] md:pt-[7.25vw]'>
       <section className='mx-auto  max-w-[800px]'>
         <h1 className='text-h4TextPhone md:text-h4Text pb-[2vw] font-bold'>{page.title.rendered}</h1>
-        <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+        <div className='wp-content' dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
       </section>
     </div>
   )

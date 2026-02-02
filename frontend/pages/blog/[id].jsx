@@ -3,9 +3,9 @@ import React from 'react'
 const BlogPageDetails = ({ page }) => {
   return (
     <div className='container  p-8 pb-16'>
-      <section className='mx-auto  max-w-[800px]'>
+      <section className='mx-auto px-4 md:max-w-[800px] xl:max-w-[1600px]'>
         <h1 className='text-h4TextPhone md:text-h4Text pb-[2vw] font-bold'>{page.title.rendered}</h1>
-        <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+        <div className='wp-content' dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
       </section>
     </div>
   )

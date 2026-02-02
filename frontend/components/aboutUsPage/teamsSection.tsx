@@ -12,11 +12,6 @@ const teamMembers = [
         name: "Kunal Chauhan",
         position: "Academic Director",
         image: "/assets/Images/Team/kunalSir.png",
-      },
-      {
-        name: "Lalit Sir",
-        position: "Counsellor",
-        image: "/assets/Images/Team/lalitSir.png",
       }
     ],
     [
@@ -44,7 +39,7 @@ const TeamsSection=()=>{
             <div className="flex flex-col gap-[6vw] md:gap-[1.5vw]">
                 <h1 className="text-h4TextPhone md:text-h1Text leading-[120%] text-center font-bold">Expert Counsellors guiding you through.</h1>
                 <p className="text-mediumTextPhone md:text-mediumText leading-[150%]  font-medium text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/> tempor incididunt ut labore et dolore magna aliqua. 
+                We provide personalized guidance tailored to your academic goals, helping you navigate admissions, documentation, and university selection with clarity and confidence.
                 </p>
                 
             </div>
