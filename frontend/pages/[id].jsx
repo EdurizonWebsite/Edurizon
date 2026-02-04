@@ -3,8 +3,8 @@ import React from 'react'
 const BlogPageDetails = ({ page }) => {
   return (
     <div className='container  p-8 pb-16 pt-[20vw] md:pt-[7.25vw]'>
-      <section className='mx-auto  max-w-[800px]'>
-        <h1 className='text-h4TextPhone md:text-h4Text pb-[2vw] font-bold'>{page.title.rendered}</h1>
+      <section className='mx-auto  max-w-[1200px]'>
+        <h1 className='text-h2TextPhone md:text-h2Text leading-[120%] pb-[2vw] font-bold'>{page.title.rendered}</h1>
         <div className='wp-content' dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
       </section>
     </div>

@@ -158,22 +158,27 @@ body{
 
 .wp-content h2 {
   @apply text-h2TextPhone md:text-h2Text;
+  line-height: 120%;
 }
 
 .wp-content h3 {
   @apply text-h3TextPhone md:text-h3Text;
+  line-height: 120%;
 }
 
 .wp-content h4 {
   @apply text-h4TextPhone md:text-h4Text;
+  line-height: 120%;
 }
 
 .wp-content h5 {
   @apply text-h5TextPhone md:text-h5Text;
+  line-height: 120%;
 }
 
 .wp-content h6 {
   @apply text-h6TextPhone md:text-h6Text;
+  line-height: 120%;
 }
 
 /* Paragraphs */
