@@ -132,6 +132,53 @@ function MyApp({ Component, pageProps }: AppProps) {
   const shouldExcludeLayout = excludedPaths.some(path => router.pathname.includes(path));
   const isAdminRoute = useMemo(() => router.pathname.includes('/admin'), [router.pathname]);
 
+  // Form 
+  const [showConsultationForm, setShowConsultationForm] = useState(false);
+  const [formFilled, setFormFilled] = useState(false)
+  
+
+  useEffect(() => {
+        if (showConsultationForm) {
+          document.body.style.overflow = "hidden"; // Disable scrolling
+        } else {
+          document.body.style.overflow = "auto"; // Enable scrolling
+        }
+        return () => {
+          document.body.style.overflow = "auto"; // Cleanup on unmount
+        };
+      }, [showConsultationForm]);
+
+  useEffect(() => {
+    const timeouts: NodeJS.Timeout[] = [];
+  
+    const showFormAtIntervals = () => {
+      timeouts.push(
+        setTimeout(() => {
+          setShowConsultationForm(true);
+        }, 5 * 1000) // After 30 seconds
+      );
+  
+      timeouts.push(
+        setTimeout(() => {
+          setShowConsultationForm(true);
+        }, 20 * 1000) // After 5 minutes
+      );
+  
+      timeouts.push(
+        setTimeout(() => {
+          setShowConsultationForm(true);
+        },  40* 1000) // After 20 minutes
+      );
+    };
+  
+    showFormAtIntervals();
+  
+    // Clean up on unmount
+    return () => {
+      timeouts.forEach(clearTimeout);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -179,6 +226,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           <GoogleAnalytics gaId="G-Z25NZ103DJ" />
           <div id="footer">
             {!shouldExcludeLayout && <CTASectionComponent />}
+          </div>
+          {/* 💬 Show Consultation Form when triggered */}
+          <div className={`fixed top-0  left-0 w-full h-screen bg-black bg-opacity-50  ${showConsultationForm?"opacity-100 scale-100 z-50 ":"opacity-0 -z-50 scale-95"}   flex items-center justify-center transition-opacity duration-300 ease-in-out`}>
+            <ConsultationForm onClose={() => setShowConsultationForm(false)} />
           </div>
         </div>
       </ThemeProvider>

@@ -35,19 +35,19 @@ const Home = () => {
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, 10 * 1000) // After 30 seconds
+        }, 5 * 1000) // After 30 seconds
       );
   
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, (1 * 60) * 1000) // After 5 minutes
+        }, 20 * 1000) // After 5 minutes
       );
   
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, (10 * 60) * 1000) // After 20 minutes
+        },  40* 1000) // After 20 minutes
       );
     };
   
