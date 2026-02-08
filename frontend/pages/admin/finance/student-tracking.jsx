@@ -608,7 +608,7 @@ const FinanceStudentTrackingPage = () => {
                           {student.phone || '—'}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          {student.feeStructure ? (
+                          {student.financeInfo.feeStructureLink ? (
                             <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
                               Available
                             </span>
@@ -619,8 +619,8 @@ const FinanceStudentTrackingPage = () => {
                           )}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          {student.feeStructure ? (
-                            student.feeStructureAgreed ? (
+                          {student.financeInfo.feeStructureLink ? (
+                            student.financeInfo.feeStructureAgreed ? (
                               <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
                                 Agreed
                               </span>
@@ -634,8 +634,8 @@ const FinanceStudentTrackingPage = () => {
                           )}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                          {student.feeStructureGeneratedDate ? (
-                            new Date(student.feeStructureGeneratedDate).toLocaleDateString('en-US', {
+                          {student.financeInfo.feeStructureGeneratedDate ? (
+                            new Date(student.financeInfo.feeStructureGeneratedDate).toLocaleDateString('en-US', {
                               year: 'numeric',
                               month: 'short',
                               day: 'numeric'
@@ -645,19 +645,19 @@ const FinanceStudentTrackingPage = () => {
                           )}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          {student.feeStructure ? (
+                          {student.financeInfo.feeStructureLink ? (
                             <div className="flex items-center gap-2">
                               <button
                               type="button"
                               className="text-sm font-medium text-teal-600 hover:text-teal-800"
-                              onClick={() => openPdfModal(student.feeStructure, student.name)}
+                              onClick={() => openPdfModal(student.financeInfo.feeStructureLink, student.name)}
                             >
                               View
                             </button>
                             <button
                               type="button"
                               className="text-sm font-medium text-teal-600 hover:text-teal-800"
-                              onClick={() => handleDownloadDocument(student.feeStructure, student.name)}
+                              onClick={() => handleDownloadDocument(student.financeInfo.feeStructureLink, student.name)}
                             >
                               Download 
                             </button>

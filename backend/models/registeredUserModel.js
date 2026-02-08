@@ -52,6 +52,10 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    fatherName:{
+      type:String,
+      required:false
+    },
     gender: {
       type: String,
       enum: ['male', 'female', 'other'],

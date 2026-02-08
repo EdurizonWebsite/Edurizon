@@ -43,6 +43,8 @@ router.post('/bills', ...requireFinanceAdmin, async (req, res) => {
       studentName, 
       url,
       purpose,
+      // financeInfo,
+      // fatherName,
     } = req.body;
 
     if (!studentId || !description || amountDue === undefined || !studentName) {
@@ -335,7 +337,7 @@ router.patch('/bills/:billId/payment', ...requireFinanceAdmin, async (req, res) 
 // Route 6: Get List of All Students
 router.get('/students/all', ...requireFinanceAdmin, async (_req, res) => {
   try {
-    const students = await RegisteredStudent.find({}, 'name email phone').sort({ name: 1 });
+    const students = await RegisteredStudent.find({}).sort({ name: 1 });
 
     res.json({
       success: true,

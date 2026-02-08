@@ -91,6 +91,7 @@ const feeStructure = async (req, res) => {
           flightTickets: ticketsIncluded || false,
           firstYearPackage: firstYearPackageIncluded || false,
         };
+        student.fatherName=fatherName;
         
         // Initialize bills array if it doesn't exist
         if (!student.financeInfo.bills) {
@@ -107,7 +108,7 @@ const feeStructure = async (req, res) => {
         if (student.schema.paths.feeStructureAgreed) {
           student.feeStructureAgreed = false;
         }
-
+        console.log('student data' , student)
         await student.save();
 
         // Send notification to student about fee structure generation
@@ -165,13 +166,15 @@ const billStructure = async (req, res) => {
       paymentNumber,
       studentName,
       university,
+      country,
       status,
       currency = 'INR',
       purpose,
       fatherName,
-      programme
+      programme,
+      financeInfo
     } = req.body;
-
+    console.log('response getting from client side',req.body)
     // Validate required fields
     if (!studentId || !paymentAmount || !studentName) {
       return res.status(400).json({
@@ -191,6 +194,13 @@ const billStructure = async (req, res) => {
 
     // Get finance tracking info using the helper function
     const financeTracking = await getFinanceTrackingInfo(studentId);
+    let pendingProcessingInr=financeTracking.pendingProcessingInr
+    let pendingOtc=financeTracking.pendingOtcUsd
+    if(currency==='USD'){
+      pendingOtc=pendingOtc-paymentAmount
+    }else{
+      pendingProcessingInr=pendingProcessingInr-paymentAmount
+    }
 
     // Determine if this is an OTC payment
     const isOtcPayment = currency === 'USD' && purpose && (purpose.toLowerCase().includes('otc') || purpose.toLowerCase().includes('one time'));
@@ -214,8 +224,8 @@ const billStructure = async (req, res) => {
       totalOtcUsd: financeTracking.totalOtcUsd,
       totalProcessingInr: financeTracking.totalProcessingInr,
       otcPaid: financeTracking.otcPaid, // Total OTC paid (including this payment)
-      pendingOtcUsd: financeTracking.pendingOtcUsd, // PDF will adjust for current payment
-      pendingProcessingInr: financeTracking.pendingProcessingInr, // PDF will adjust for current payment
+      pendingOtcUsd: pendingOtc, // PDF will adjust for current payment
+      pendingProcessingInr: pendingProcessingInr, // PDF will adjust for current payment
     });
 
     // Create a buffer to store PDF

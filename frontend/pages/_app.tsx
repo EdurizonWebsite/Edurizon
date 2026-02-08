@@ -149,6 +149,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       }, [showConsultationForm]);
 
   useEffect(() => {
+    // Don't show form on admin routes
+    if (isAdminRoute) return;
+    
     const timeouts: NodeJS.Timeout[] = [];
   
     const showFormAtIntervals = () => {
@@ -177,7 +180,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return () => {
       timeouts.forEach(clearTimeout);
     };
-  }, []);
+  }, [isAdminRoute]);
 
   return (
     <>
@@ -228,9 +231,11 @@ function MyApp({ Component, pageProps }: AppProps) {
             {!shouldExcludeLayout && <CTASectionComponent />}
           </div>
           {/* 💬 Show Consultation Form when triggered */}
-          <div className={`fixed top-0  left-0 w-full h-screen bg-black bg-opacity-50  ${showConsultationForm?"opacity-100 scale-100 z-50 ":"opacity-0 -z-50 scale-95"}   flex items-center justify-center transition-opacity duration-300 ease-in-out`}>
-            <ConsultationForm onClose={() => setShowConsultationForm(false)} />
-          </div>
+          {!isAdminRoute && (
+            <div className={`fixed top-0  left-0 w-full h-screen bg-black bg-opacity-50  ${showConsultationForm?"opacity-100 scale-100 z-50 ":"opacity-0 -z-50 scale-95"}   flex items-center justify-center transition-opacity duration-300 ease-in-out`}>
+              <ConsultationForm onClose={() => setShowConsultationForm(false)} />
+            </div>
+          )}
         </div>
       </ThemeProvider>
     </>

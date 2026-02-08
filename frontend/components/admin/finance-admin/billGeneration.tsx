@@ -5,6 +5,14 @@ import { baseUrl } from '@/lib/baseUrl';
 import toast, {Toaster} from 'react-hot-toast';
 import authHeaders from '@/components/admin/authHeader'
 
+type StudentStruct={
+  financeInfo:{},
+  fatherName:string,
+  enrolledCountry:string[],
+  enrolledUniversity:string[],
+  intendedCourse:string
+}
+
 const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData:()=>void ,students?:any[]}) => {
     
     const [billFormOpen,setBillFormOpen] = useState(true);
@@ -20,6 +28,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
       });
     const [studentPickerOpen, setStudentPickerOpen] = useState(false);
     const [studentPickerSearch, setStudentPickerSearch] = useState('');
+    const [selectedStudent, setSelectedStudent] = useState<StudentStruct>();
 
 
     const handleBillFormChange = (field:any, value:any) => {
@@ -33,6 +42,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           studentId: student._id,
           studentName: student.name,
         }));
+        setSelectedStudent(student)
         setStudentPickerOpen(false);
       };
 
@@ -52,17 +62,24 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         const purpose = billForm.purpose || (billForm.chargeType === 'otc' ? 'OTC Payment' : 'Processing Fee Payment');
 
         // Generate payment receipt PDF (receipt is generated immediately for completed payments)
+      // university,
+      // fatherName,
+      // programme
         const receiptPayload = {
           studentId: billForm.studentId,
           paymentAmount: Number(billForm.amountPaid),
           paymentNumber: 1, // Auto-increment or calculate based on existing bills
           studentName: billForm.studentName,
-          university: billForm.studentId ? 'To be determined' : '', // Will be fetched from student's financeInfo
+          university: selectedStudent!.enrolledUniversity, // Will be fetched from student's financeInfo
+          country: selectedStudent!.enrolledCountry, // Will be fetched from student's financeInfo
           status:'completed', // Receipts are only for completed payments
           currency: currency,
           purpose: purpose,
+          fatherName:selectedStudent!.fatherName,
+          programme:selectedStudent!.intendedCourse.toLocaleUpperCase(),
+          financeInfo:selectedStudent!.financeInfo,
         };
-
+        console.log(receiptPayload)
         const res:any= await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
         
         // Create bill record with receipt URL - amountPaid equals amountDue for completed receipts
@@ -109,10 +126,12 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
     
         // Ensure students is an array before iterating
         const studentsArray = Array.isArray(students) ? students : [];
-        const sorted = [...studentsArray].sort((a, b) =>
+        let sorted = [...studentsArray].sort((a, b) =>
           (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
         );
-    
+        sorted= sorted.filter((item)=>{
+          return item.financeInfo.feeStructureLink!=null
+        })
         if (!query) return sorted;
     
         return sorted.filter(

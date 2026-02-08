@@ -190,29 +190,29 @@ const FinanceDashboard = () => {
         amount: Number(paymentModal.amount),
         method: paymentModal.method || 'Manual',
       };
-      const bill=await axios.patch(
+      const bill = await axios.patch(
         `${baseUrl}/api/admin/finance/bills/${paymentModal.bill._id}/payment`,
         payload,
         { headers }
       );
-      
+
       const receiptPayload = {
         studentId: bill.data.data.studentId,
         paymentAmount: Number(paymentModal.amount),
         paymentNumber: 1,
         studentName: bill.data.data.studentName,
         university: bill.data.data.university,
-        status:'completed'
+        status: 'completed'
       };
 
-      const res=await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
+      const res = await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
 
       const updateStudentPayload = {
         studentId: bill.data.data.studentId,
         oldUrl: bill.data.data.url,
-        newBill:{status:'completed', url:res.data.url},
+        newBill: { status: 'completed', url: res.data.url },
       }
-      
+
       axios.patch(`${baseUrl}/api/admin/finance/update-student-receipt-status`, updateStudentPayload, { headers })
 
       toast.success('Payment recorded');
@@ -284,7 +284,7 @@ const FinanceDashboard = () => {
     }
   }, [pdfContext]);
 
- 
+
   const renderTabs = () => (
     <div className="flex flex-wrap gap-3">
       {[
@@ -297,11 +297,10 @@ const FinanceDashboard = () => {
             key={tab.key}
             type="button"
             onClick={() => setActiveTab(tab.key)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-              isActive
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${isActive
                 ? 'bg-teal-600 text-white shadow'
                 : 'bg-white text-gray-600 border border-gray-200 hover:border-teal-400'
-            }`}
+              }`}
           >
             {tab.label}
           </button>
@@ -369,18 +368,18 @@ const FinanceDashboard = () => {
               {activeTab === 'students' && (
                 <div className="flex flex-col gap-6">
                   <BillGeneration fetchFinanceData={fetchFinanceData} students={students} />
-                  <FeeStructureGeneration fetchFinanceData={fetchFinanceData} students={students}/>
+                  <FeeStructureGeneration fetchFinanceData={fetchFinanceData} students={students} />
 
                 </div>
               )}
-              {activeTab === 'pending' &&  <PendingBills pendingTabRows={pendingTabRows} openStudentBillsModal={openStudentBillsModal} openPaymentModal={openPaymentModal} />}
+              {activeTab === 'pending' && <PendingBills pendingTabRows={pendingTabRows} openStudentBillsModal={openStudentBillsModal} openPaymentModal={openPaymentModal} />}
             </>
           )}
         </div>
       </div>
 
       {studentModal.open && (
-      
+
         <StudentModal studentModal={studentModal} closeStudentModal={closeStudentModal} openPaymentModal={openPaymentModal} handleDownloadReceipt={handleDownloadReceipt} />
       )}
 

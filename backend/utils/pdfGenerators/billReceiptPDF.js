@@ -217,9 +217,17 @@ const generateBillReceiptPDF = (options) => {
   }
   
   // Show pending processing charge
-  doc.fontSize(11)
+  if(adjustedPendingProcessing>0){
+    doc.fontSize(11)
      .font('Times-Roman')
      .text(`Processing: Rs ${adjustedPendingProcessing.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, col1Start, leftY, { width: colWidth });
+  
+  }else if(totalProcessingInr>0){
+    doc.fontSize(11)
+     .font('Times-Roman')
+     .text(`Processing: Rs 0.00 (Fully Paid)`, col1Start, leftY, { width: colWidth });
+    
+  }
   
   // Show pending OTC if applicable
   if (adjustedPendingOtc > 0) {
@@ -278,7 +286,7 @@ const generateBillReceiptPDF = (options) => {
   
   doc.fontSize(11)
      .font('Times-Roman')
-     .text(`We acknowledged receipt of ${paymentAmountInWords} only mode, on account of ${paymentPurpose}`, col2Start, rightY, { 
+     .text(`We acknowledged receipt of ${paymentAmountInWords} only in online mode, on account of registration fees for the admission.`, col2Start, rightY, { 
        width: colWidth,
        lineGap: 4
      });

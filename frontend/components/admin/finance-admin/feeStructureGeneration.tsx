@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use, useEffect } from 'react'
 import {useState,useMemo} from 'react'
 import axios from 'axios';
 import { baseUrl } from '@/lib/baseUrl';
@@ -25,7 +25,7 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
     const [studentPickerOpen, setStudentPickerOpen] = useState(false);
     const [studentPickerSearch, setStudentPickerSearch] = useState('');
 
-
+   
     const handleBillFormChange = (field:any, value:any) => {
     setBillForm((prev) => ({ ...prev, [field]: value }));
     };
@@ -115,24 +115,23 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
         setSubmittingBill(false);
     }
     }
-
+    
     const filteredStudentOptions = useMemo(() => {
         const query = studentPickerSearch.trim().toLowerCase();
     
         // Ensure students is an array before iterating
         const studentsArray = Array.isArray(students) ? students : [];
-        const sorted = [...studentsArray].sort((a, b) =>
+        let sorted = [...studentsArray].sort((a, b) =>
           (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
         );
-    
+       
+
         if (!query) return sorted;
-    
         return sorted.filter(
           (student) =>
             student.name?.toLowerCase().includes(query) || student.email?.toLowerCase().includes(query)
         );
       }, [studentPickerSearch, students]);
-  
     return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200">
       <button
