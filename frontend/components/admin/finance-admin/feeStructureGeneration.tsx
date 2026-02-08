@@ -121,7 +121,7 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
     
         // Ensure students is an array before iterating
         const studentsArray = Array.isArray(students) ? students : [];
-        let sorted = [...studentsArray].sort((a, b) =>
+        const sorted = [...studentsArray].sort((a, b) =>
           (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
         );
        

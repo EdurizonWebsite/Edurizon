@@ -6,7 +6,7 @@ import toast, {Toaster} from 'react-hot-toast';
 import authHeaders from '@/components/admin/authHeader'
 
 type StudentStruct={
-  financeInfo:{},
+  financeInfo: Record<string, any>,
   fatherName:string,
   enrolledCountry:string[],
   enrolledUniversity:string[],
