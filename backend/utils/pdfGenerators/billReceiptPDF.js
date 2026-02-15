@@ -387,7 +387,7 @@ const generateBillReceiptPDF = (options) => {
     }];
   }else{
     if(paymentsArray.length>3){
-      paymentsArray=paymentsArray.slice(0,3)
+      paymentsArray=paymentsArray.slice(paymentsArray.length-3,paymentsArray.length)
     }
     const paymentAmountFormatted = currency === 'USD' 
     ? `USD ${roundCurrency(Number(paymentAmount)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
