@@ -418,10 +418,7 @@ const generateBillReceiptPDF = (options) => {
   ];
   
   // Convert payments array to table rows format
-  const paymentDetailsRows = paymentsArray
-  .slice()         // creates a copy
-  .reverse()       // reverse order
-  .map((payment, index) => {
+  const paymentDetailsRows = paymentsArray.map((payment, index) => {
     return [
       String(payment.srNo || index + 1),
       payment.date || receiptDate,
