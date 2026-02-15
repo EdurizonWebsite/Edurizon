@@ -1,5 +1,6 @@
 const { RegisteredStudent } = require('../models/registeredUserModel');
 const FinanceBill = require('../model/FinanceBill');
+const mongoose = require('mongoose');
 
 /**
  * Calculate remaining processing charge balance for a student
@@ -125,11 +126,62 @@ const roundCurrency = (amount) => {
   return Math.round(amount * 100) / 100;
 };
 
+/**
+ * Fetch bill documents from database using an array of bill IDs
+ * @param {Array<String>} billIds - Array of MongoDB ObjectIds (as strings or ObjectIds)
+ * @returns {Promise<Array>} - Array of bill documents from database, or empty array if invalid input
+ */
+const getBillsData = async (billIds) => {
+  try {
+    // Return empty array if input is invalid
+    if (!billIds || !Array.isArray(billIds) || billIds.length === 0) {
+      return [];
+    }
+
+    // Filter and validate ObjectIds
+    const validIds = billIds.filter(id => {
+      // Check if it's a valid MongoDB ObjectId
+      if (typeof id === 'string') {
+        return mongoose.Types.ObjectId.isValid(id);
+      }
+      // If it's already an ObjectId instance, it's valid
+      return id instanceof mongoose.Types.ObjectId;
+    });
+
+    // Return empty array if no valid IDs found
+    if (validIds.length === 0) {
+      return [];
+    }
+
+    // Convert all IDs to ObjectId instances for consistent querying
+    const objectIds = validIds.map(id => {
+      if (typeof id === 'string') {
+        return new mongoose.Types.ObjectId(id);
+      }
+      return id;
+    });
+
+    // Query bills using $in operator with lean() for performance
+    const bills = await FinanceBill.find({
+      _id: { $in: objectIds }
+    })
+    .lean()
+    .sort({ issueDate: -1 }); // Sort by issue date descending (newest first)
+
+    return bills;
+  } catch (error) {
+    console.error('Error fetching bills data:', error);
+    // Return empty array on error to prevent breaking the calling code
+    return [];
+  }
+};
+
 module.exports = {
   calculateRemainingProcessingBalance,
   calculateRemainingOtcBalance,
   getFinanceTrackingInfo,
-  roundCurrency
+  roundCurrency,
+  getBillsData
 };
 
 

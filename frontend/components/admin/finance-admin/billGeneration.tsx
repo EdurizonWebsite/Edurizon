@@ -24,6 +24,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         billDate: new Date().toISOString().split('T')[0], // Today's date as default
         description: '',
         chargeType: 'processing', // 'otc' or 'processing'
+        accountDetail: 'EDURIZON',
         purpose: '',
       });
     const [studentPickerOpen, setStudentPickerOpen] = useState(false);
@@ -78,6 +79,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           fatherName:selectedStudent!.fatherName,
           programme:selectedStudent!.intendedCourse.toLocaleUpperCase(),
           financeInfo:selectedStudent!.financeInfo,
+          accountDetail:billForm.accountDetail
         };
         console.log(receiptPayload)
         const res:any= await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
@@ -106,6 +108,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         description: '',
         chargeType: 'processing',
         purpose: '',
+        accountDetail:"Edurizon"
         });
         setStudentPickerSearch('');
         await fetchFinanceData();
@@ -273,6 +276,16 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
                   placeholder={billForm.chargeType === 'otc' ? 'e.g., Full OTC Payment' : 'e.g., Partial Processing Fee, Full Processing Fee'}
                   value={billForm.purpose}
                   onChange={(e) => handleBillFormChange('purpose', e.target.value)}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Account Name</label>
+                <input
+                  type="text"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+                  placeholder={'Enter Account Name in which money has been transfered to.'}
+                  value={billForm.accountDetail}
+                  onChange={(e) => handleBillFormChange('accountDetail', e.target.value)}
                 />
               </div>
             </div>

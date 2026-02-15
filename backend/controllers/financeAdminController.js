@@ -1,6 +1,6 @@
 const { RegisteredStudent } = require('../models/registeredUserModel');
 const { uploadToCloudinary } = require('../utils/cloudinary');
-const { getFinanceTrackingInfo, roundCurrency } = require('../utils/financeHelpers');
+const { getFinanceTrackingInfo, roundCurrency, getBillsData } = require('../utils/financeHelpers');
 const FinanceBill = require('../model/FinanceBill');
 const { generateFeeStructurePDF } = require('../utils/pdfGenerators/feeStructurePDF');
 const { generateBillReceiptPDF } = require('../utils/pdfGenerators/billReceiptPDF');
@@ -172,7 +172,8 @@ const billStructure = async (req, res) => {
       purpose,
       fatherName,
       programme,
-      financeInfo
+      financeInfo,
+      accountDetail
     } = req.body;
     console.log('response getting from client side',req.body)
     // Validate required fields
@@ -211,6 +212,42 @@ const billStructure = async (req, res) => {
       ? Math.max(0, financeTracking.otcPaid - Number(paymentAmount))
       : financeTracking.otcPaid;
 
+    // Fetch bill documents from database using bill IDs
+    const billsData = await getBillsData(financeInfo?.bills || []);
+    
+    // Transform bill documents into format expected by PDF generator
+    const transformedPayments = billsData.map((bill, index) => {
+      // Format date
+      const billDate = bill.issueDate 
+        ? new Date(bill.issueDate).toLocaleDateString('en-IN', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          })
+        : new Date().toLocaleDateString('en-IN', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          });
+      
+      // Determine currency and format amount
+      const isOtcBill = bill.purpose === 'One Time Charge';
+      const billCurrency = isOtcBill ? 'USD' : 'INR';
+      const billAmount = bill.amountPaid || 0;
+      const formattedAmount = billCurrency === 'USD'
+        ? `USD ${roundCurrency(billAmount).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+        : `Rs ${billAmount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      
+      return {
+        srNo: index + 1,
+        date: billDate,
+        amount: formattedAmount,
+        accountDetails: bill.accountName || accountDetail || 'EDURIZON PVT LTD',
+        description: bill.description || bill.purpose || 'Payment',
+        mode: 'Bank Transfer'
+      };
+    });
+
     // Generate PDF using the modular PDF generator
     const doc = generateBillReceiptPDF({
       student,
@@ -226,6 +263,8 @@ const billStructure = async (req, res) => {
       otcPaid: financeTracking.otcPaid, // Total OTC paid (including this payment)
       pendingOtcUsd: pendingOtc, // PDF will adjust for current payment
       pendingProcessingInr: pendingProcessingInr, // PDF will adjust for current payment
+      payments: transformedPayments,
+      accountDetail: accountDetail || 'EDURIZON PVT LTD'
     });
 
     // Create a buffer to store PDF

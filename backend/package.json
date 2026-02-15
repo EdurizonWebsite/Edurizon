@@ -9,9 +9,8 @@
     "start": "node app.js",
     "vercel-build": "echo 'Vercel build completed'",
     "init-admin": "node scripts/initSuperAdmin.js",
-    "test-zoom": "node scripts/testZoomApi.js",
-    "test-whatsapp": "node scripts/testWhatsApp.js",
-    "cleanup-meetings": "node scripts/cleanupMeetings.js"
+    
+    "test-bill-receipt": "node utils/pdfGenerators/testBillReceipt.js"
   },
   "keywords": [],
   "author": "",
