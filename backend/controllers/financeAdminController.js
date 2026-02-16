@@ -173,7 +173,9 @@ const billStructure = async (req, res) => {
       fatherName,
       programme,
       financeInfo,
-      accountDetail
+      description,
+      accountDetail,
+      paymentMode
     } = req.body;
     console.log('response getting from client side',req.body)
     // Validate required fields
@@ -244,7 +246,7 @@ const billStructure = async (req, res) => {
         amount: formattedAmount,
         accountDetails: bill.accountName || accountDetail || 'EDURIZON PVT LTD',
         description: bill.description || bill.purpose || 'Payment',
-        mode: 'Bank Transfer'
+        mode: bill.paymentMode || 'Online Mode'
       };
     });
 
@@ -264,8 +266,11 @@ const billStructure = async (req, res) => {
       pendingOtcUsd: pendingOtc, // PDF will adjust for current payment
       pendingProcessingInr: pendingProcessingInr, // PDF will adjust for current payment
       payments: transformedPayments,
-      accountDetail: accountDetail || 'EDURIZON PVT LTD'
+      accountDetail: accountDetail || 'EDURIZON PVT LTD',
+      paymentMode:paymentMode,
+      description:description
     });
+    console.log('Doc that is generated',doc)
 
     // Create a buffer to store PDF
     const chunks = [];
@@ -273,7 +278,7 @@ const billStructure = async (req, res) => {
     doc.on('end', async () => {
       try {
         const pdfBuffer = Buffer.concat(chunks);
-
+        console.log('PDF Buffer',pdfBuffer)
         // Upload PDF to Cloudinary
         const cloudinaryResult = await uploadToCloudinary(
           pdfBuffer,

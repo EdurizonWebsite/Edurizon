@@ -39,6 +39,11 @@ const financeBillSchema = new Schema(
       required:false,
       default:'Edurizon'
     },
+    paymentMode:{
+      type:String,
+      required:false,
+      default:"Online mode"
+    },
     purpose: {
       type: ['Processing Fee', 'One Time Charge'],
       required: true,

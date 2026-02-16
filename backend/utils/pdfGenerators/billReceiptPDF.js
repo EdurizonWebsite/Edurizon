@@ -191,7 +191,9 @@ const generateBillReceiptPDF = (options) => {
     pendingOtcUsd = 0,
     pendingProcessingInr = 0,
     payments = [{},{},{},{}], // Optional payments array
-    accountDetail='EDURIZON PVT LTD'
+    description,
+    accountDetail='EDURIZON PVT LTD',
+    paymentMode="Bank Transfer"
   } = options;
 
   // Create PDF document
@@ -381,9 +383,9 @@ const generateBillReceiptPDF = (options) => {
       srNo: 1,
       date: receiptDate,
       amount: paymentAmountFormatted,
-      accountDetails: 'EDURIZON PVT LTD',
-      description: paymentPurpose,
-      mode: 'Bank Transfer'
+      accountDetails: accountDetail,
+      description: description,
+      mode: paymentMode
     }];
   }else{
     if(paymentsArray.length>3){
@@ -402,8 +404,8 @@ const generateBillReceiptPDF = (options) => {
       date: receiptDate,
       amount: paymentAmountFormatted,
       accountDetails: accountDetail,
-      description: paymentPurpose,
-      mode: 'Bank Transfer'
+      description: description,
+      mode: paymentMode
     })
   }
   

@@ -25,6 +25,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         description: '',
         chargeType: 'processing', // 'otc' or 'processing'
         accountDetail: 'EDURIZON',
+        paymentMode: 'Online Mode',
         purpose: '',
       });
     const [studentPickerOpen, setStudentPickerOpen] = useState(false);
@@ -79,7 +80,9 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           fatherName:selectedStudent!.fatherName,
           programme:selectedStudent!.intendedCourse.toLocaleUpperCase(),
           financeInfo:selectedStudent!.financeInfo,
-          accountDetail:billForm.accountDetail
+          accountDetail:billForm.accountDetail,
+          paymentMode:billForm.paymentMode,
+          description:billForm.description
         };
         console.log(receiptPayload)
         const res:any= await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
@@ -96,6 +99,8 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         studentName: billForm.studentName,
         url: res.data.url, // Store the receipt PDF URL in FinanceBill model
         purpose: mappedPurpose, // Must be 'Processing Fee' or 'One Time Charge'
+        paymentMode:billForm.paymentMode,
+        accountName:billForm.accountDetail
         };
 
         await axios.post(`${baseUrl}/api/admin/finance/bills`, payload, { headers });
@@ -108,7 +113,8 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         description: '',
         chargeType: 'processing',
         purpose: '',
-        accountDetail:"Edurizon"
+        accountDetail:"Edurizon",
+        paymentMode:'Online Mode'
         });
         setStudentPickerSearch('');
         await fetchFinanceData();
@@ -276,6 +282,16 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
                   placeholder={billForm.chargeType === 'otc' ? 'e.g., Full OTC Payment' : 'e.g., Partial Processing Fee, Full Processing Fee'}
                   value={billForm.purpose}
                   onChange={(e) => handleBillFormChange('purpose', e.target.value)}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Payment Mode</label>
+                <input
+                  type="text"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+                  placeholder={billForm.chargeType === 'otc' ? 'e.g., Full OTC Payment' : 'e.g., Partial Processing Fee, Full Processing Fee'}
+                  value={billForm.paymentMode}
+                  onChange={(e) => handleBillFormChange('paymentMode', e.target.value)}
                 />
               </div>
               <div>

@@ -43,6 +43,8 @@ router.post('/bills', ...requireFinanceAdmin, async (req, res) => {
       studentName, 
       url,
       purpose,
+      paymentMode,
+      accountName,
       // financeInfo,
       // fatherName,
     } = req.body;
@@ -84,6 +86,8 @@ router.post('/bills', ...requireFinanceAdmin, async (req, res) => {
       amountPaid: amountPaid || 0,
       purpose: mappedPurpose,
       issuedBy,
+      paymentMode,
+      accountName,
       url: url || null, // Store the receipt URL
     });
 
