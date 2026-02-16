@@ -14,9 +14,8 @@ const uploadToCloudinary = async (fileBuffer, folder = 'edurizon/documents') => 
       cloudinary.uploader.upload_stream(
         {
           folder: folder,
-          resource_type: 'auto',
-          quality: 'auto',
-          fetch_format: 'auto'
+          resource_type: 'raw',
+          public_id: `receipt_${Date.now()}.pdf`,
         },
         (error, result) => {
           if (error) {

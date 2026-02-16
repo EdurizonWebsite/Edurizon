@@ -24,7 +24,7 @@ const { roundCurrency } = require('../financeHelpers');
 
 // Constants
 const HEADER_HEIGHT = 100;
-const FOOTER_HEIGHT = 140;
+const FOOTER_HEIGHT = 160;
 const CONTENT_START_Y = 120;
 const MARGIN = 40;
 const LINE_SPACING = 18;
@@ -190,7 +190,7 @@ const generateBillReceiptPDF = (options) => {
     otcPaid = 0,
     pendingOtcUsd = 0,
     pendingProcessingInr = 0,
-    payments = [{},{},{},{}], // Optional payments array
+    payments = [{srNo:0},{srNo:1},{srNo:2},{srNo:3},{srNo:4}], // Optional payments array
     description,
     accountDetail='EDURIZON PVT LTD',
     paymentMode="Bank Transfer"
@@ -206,7 +206,7 @@ const generateBillReceiptPDF = (options) => {
   const pageWidth = doc.page.width;
   const pageHeight = doc.page.height;
   const contentWidth = pageWidth - 2 * MARGIN;
-  const safeBottom = pageHeight - FOOTER_HEIGHT - 20;
+  const safeBottom = pageHeight - FOOTER_HEIGHT;
 
   // Draw header on first page
   drawHeader(doc, pageWidth);
@@ -388,9 +388,6 @@ const generateBillReceiptPDF = (options) => {
       mode: paymentMode
     }];
   }else{
-    if(paymentsArray.length>3){
-      paymentsArray=paymentsArray.slice(paymentsArray.length-3,paymentsArray.length)
-    }
     const paymentAmountFormatted = currency === 'USD' 
     ? `USD ${roundCurrency(Number(paymentAmount)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
     : `Rs ${Number(paymentAmount).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -440,37 +437,59 @@ const generateBillReceiptPDF = (options) => {
   doc.fontSize(10).font('Times-Bold');
   const sectionTitleHeight = doc.heightOfString('Payment Details:', { width: contentWidth }) + 8;
   
-  doc.fontSize(10).font('Times-Bold');
-  const estimatedNoteHeight = doc.heightOfString('Note: Above payment is Non-refundable', { width: contentWidth }) + SECTION_SPACING;
-  const estimatedSignatureHeight = 50;
+  // Split payment rows: first 3 on first page, rest on second page
+  const firstThreeRows = paymentDetailsRows.slice(0, 6);
+  const remainingRows = paymentDetailsRows.slice(6);
   
-  // Calculate total required height for Payment Details section + Note + Signature
-  const tableHeight = getPaymentTableHeight(doc, paymentDetailsRows, tableRowHeight, tableHeaderHeight);
-  const requiredHeight = sectionTitleHeight + tableHeight + estimatedNoteHeight + estimatedSignatureHeight + SECTION_SPACING;
+  // Calculate height for first 3 rows
+  const firstTableHeight = getPaymentTableHeight(doc, firstThreeRows, tableRowHeight, tableHeaderHeight);
+  const firstTableRequiredHeight = sectionTitleHeight + firstTableHeight + SECTION_SPACING;
   
-  // Smart pagination: Check if everything fits on current page
+  // Smart pagination: Check if first table fits on current page
   const remainingHeight = safeBottom - yPosition;
   
-  if (requiredHeight > remainingHeight) {
+  if (firstTableRequiredHeight > remainingHeight) {
     // Move to next page if section doesn't fit
     doc.addPage();
     drawHeader(doc, pageWidth);
     yPosition = CONTENT_START_Y;
   }
   
-  // Heading
+  // Heading for first page
   yPosition = drawSectionTitle(doc, 'Payment Details:', MARGIN, yPosition, contentWidth);
   
-  // Draw table with only actual payment rows (no empty rows)
+  // Draw first 3 rows on current page
   yPosition = drawTable(doc, {
     x: MARGIN,
     y: yPosition,
     columns: paymentDetailsColumns,
-    rows: paymentDetailsRows, // Only actual payments, no empty rows
+    rows: firstThreeRows,
     rowHeight: tableRowHeight
   });
   
   yPosition += SECTION_SPACING;
+  
+  // If there are more than 3 rows, draw remaining rows on a new page
+  if (remainingRows.length > 0) {
+    // Add new page for remaining rows
+    doc.addPage();
+    drawHeader(doc, pageWidth);
+    yPosition = CONTENT_START_Y;
+    
+    // Heading for second page
+    yPosition = drawSectionTitle(doc, 'Payment Details (continued):', MARGIN, yPosition, contentWidth);
+    
+    // Draw remaining rows
+    yPosition = drawTable(doc, {
+      x: MARGIN,
+      y: yPosition,
+      columns: paymentDetailsColumns,
+      rows: remainingRows,
+      rowHeight: tableRowHeight
+    });
+    
+    yPosition += SECTION_SPACING;
+  }
 
   // ============================================
   // 5. NOTE SECTION
@@ -487,21 +506,9 @@ const generateBillReceiptPDF = (options) => {
   // ============================================
   // 6. SIGNATURE AREA
   // ============================================
-  const signatureHeight = 50;
-  yPosition = ensureSpace(doc, yPosition, signatureHeight, pageHeight, FOOTER_HEIGHT);
+  // const signatureHeight = 50;
+  // yPosition = ensureSpace(doc, yPosition, signatureHeight, pageHeight, FOOTER_HEIGHT);
   
-  // Left signature
-  doc.fontSize(9)
-     .font('Times-Roman')
-     .text('Sign..................... Parent', col1Start, yPosition, { width: colWidth });
-  
-  // Right signature
-  doc.fontSize(9)
-     .font('Times-Roman')
-     .text('Sign..................... Student', col2Start, yPosition, { width: colWidth });
-  
-  yPosition += signatureHeight;
-
   // ============================================
   // 7. FOOTER
   // ============================================

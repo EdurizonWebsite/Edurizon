@@ -270,7 +270,6 @@ const billStructure = async (req, res) => {
       paymentMode:paymentMode,
       description:description
     });
-    console.log('Doc that is generated',doc)
 
     // Create a buffer to store PDF
     const chunks = [];
@@ -278,7 +277,6 @@ const billStructure = async (req, res) => {
     doc.on('end', async () => {
       try {
         const pdfBuffer = Buffer.concat(chunks);
-        console.log('PDF Buffer',pdfBuffer)
         // Upload PDF to Cloudinary
         const cloudinaryResult = await uploadToCloudinary(
           pdfBuffer,
