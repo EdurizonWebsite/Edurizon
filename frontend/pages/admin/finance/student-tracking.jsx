@@ -340,30 +340,68 @@ const FinanceStudentTrackingPage = () => {
   };
 
   const handleDownloadDocument = async (url, docName) => {
-    if (!url){
+    if (!url) {
       console.log('url is not found');
-      return};
-  
+      return;
+    }
+
     try {
       const response = await fetch(url);
       const blob = await response.blob();
-  
+
       const blobUrl = window.URL.createObjectURL(blob);
-  
-      const link = document.createElement("a");
+
+      const link = document.createElement('a');
       link.href = blobUrl;
-  
+
       // filename (extract from URL or default)
-      link.download = docName ||"document.jpg";
-  
+      link.download = docName || 'document.jpg';
+
       document.body.appendChild(link);
       link.click();
       link.remove();
-  
+
       // Cleanup
       window.URL.revokeObjectURL(blobUrl);
     } catch (error) {
-      console.error("Download failed", error);
+      console.error('Download failed', error);
+    }
+  };
+
+  /**
+   * Delete a finance bill record for the current student.
+   * Removes the bill from backend and refreshes both the main list and modal list.
+   */
+  const handleDeleteBill = async (bill) => {
+    if (!bill?._id) {
+      toast.error('Bill information is missing');
+      return;
+    }
+
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this bill record? This action cannot be undone.',
+    );
+    if (!confirmed) return;
+
+    try {
+      const headers = authHeaders();
+      await axios.delete(`${baseUrl}/api/admin/finance/bills/${bill._id}`, {
+        headers,
+      });
+
+      toast.success('Bill record deleted successfully');
+
+      // Refresh overall finance data
+      await fetchFinanceData();
+
+      // If modal is open for a student, refresh that student's bills as well
+      if (studentModal.open && studentModal.student) {
+        await openStudentBillsModal(studentModal.student);
+      }
+    } catch (err) {
+      console.error('Failed to delete bill record:', err);
+      const message = err?.response?.data?.message || 'Failed to delete bill record';
+      toast.error(message);
     }
   };
 
@@ -756,13 +794,22 @@ const FinanceStudentTrackingPage = () => {
                         </td>
                         <td className="px-4 py-3">{renderStatusBadge(bill.status)}</td>
                         <td className="px-4 py-3">
-                          <button
-                            type="button"
-                            className="text-sm font-medium text-teal-600 hover:text-teal-800"
-                            onClick={() => handleDownloadDocument(bill.url, bill.description)}
-                          >
-                            Download Bill Receipt
-                          </button>
+                          <div className="flex items-center gap-3">
+                            <button
+                              type="button"
+                              className="text-sm font-medium text-teal-600 hover:text-teal-800"
+                              onClick={() => handleDownloadDocument(bill.url, bill.description)}
+                            >
+                              Download Bill Receipt
+                            </button>
+                            <button
+                              type="button"
+                              className="text-sm font-medium text-red-600 hover:text-red-800"
+                              onClick={() => handleDeleteBill(bill)}
+                            >
+                              Delete Bill
+                            </button>
+                          </div>
                         </td>
                       </tr>
                     ))}

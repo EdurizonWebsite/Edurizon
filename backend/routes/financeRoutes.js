@@ -407,6 +407,82 @@ router.post('/bills/generate-receipt', ...requireFinanceAdmin, billStructure);
 // Route for updating student enrollment (countries and universities)
 router.put('/students/enrollment', ...requireFinanceAdmin, updateStudentEnrollment);
 
+// Route 7: Delete Bill
+router.delete('/bills/:billId', ...requireFinanceAdmin, async (req, res) => {
+  try {
+    const { billId } = req.params;
+
+    if (!billId) {
+      return res.status(400).json({
+        success: false,
+        message: 'billId param is required',
+      });
+    }
+
+    const bill = await FinanceBill.findById(billId);
+    if (!bill) {
+      return res.status(404).json({
+        success: false,
+        message: 'Finance bill not found',
+      });
+    }
+
+    const studentId = bill.studentId;
+
+    // Delete the bill document
+    await bill.deleteOne();
+
+    // Remove bill reference from student's financeInfo.bills and adjust oneTimeChargePaid if needed
+    if (studentId) {
+      const student = await RegisteredStudent.findById(studentId);
+      if (student && student.financeInfo) {
+        // Remove bill id from bills array
+        if (Array.isArray(student.financeInfo.bills)) {
+          student.financeInfo.bills = student.financeInfo.bills.filter(
+            (id) => id.toString() !== String(billId),
+          );
+          student.markModified('financeInfo.bills');
+        }
+
+        // Recompute oneTimeChargePaid from remaining OTC bills to keep data consistent
+        const otcBills = await FinanceBill.find({
+          studentId,
+          purpose: 'One Time Charge',
+        });
+
+        const totalOtcPaidFromBills = otcBills.reduce(
+          (sum, b) => sum + (b.amountPaid || 0),
+          0,
+        );
+
+        const totalOtc =
+          student.financeInfo.oneTimeCharge ||
+          student.financeInfo.totalOtcUsd ||
+          0;
+
+        student.financeInfo.oneTimeChargePaid = Math.min(
+          totalOtcPaidFromBills,
+          totalOtc,
+        );
+        student.markModified('financeInfo.oneTimeChargePaid');
+
+        await student.save();
+      }
+    }
+
+    return res.json({
+      success: true,
+      message: 'Finance bill deleted successfully',
+    });
+  } catch (error) {
+    console.error('Error deleting finance bill:', error);
+    return res.status(500).json({
+      success: false,
+      message: 'Failed to delete finance bill',
+    });
+  }
+});
+
 module.exports = router;
 
 
