@@ -353,7 +353,7 @@ const ViewSessions = () => {
   }
 
   return (
-    <Layout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+    <Layout navItems={navItems} >
       <Toaster />
       
       {/* Header */}

@@ -45,7 +45,7 @@ const DigitalTeam = () => {
 
     return (
     <div>
-      <DocumentLayout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+      <DocumentLayout navItems={navItems} >
         <div>
             {
                 adminData?.role=='super-admin'?<SuperAdminTable/>:<MemberTable adminData={adminData} setAdminData={setAdminData}/>

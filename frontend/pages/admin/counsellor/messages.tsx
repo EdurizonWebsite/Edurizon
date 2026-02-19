@@ -516,7 +516,7 @@ const Messages = () => {
   const selectedConv = conversations.find(conv => conv.id === selectedConversation);
 
   return (
-    <Layout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+    <Layout navItems={navItems} >
       <Toaster />
       <div className="flex h-screen bg-[#F4F5F7]">
         {/* Left Panel - Conversations List */}

@@ -473,7 +473,7 @@ const DocumentPage: React.FC<DocumentPageProps> = ({ id }) => {
     };
 
   return (
-    <DocumentLayout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+    <DocumentLayout navItems={navItems} >
       <Toaster/>
       <div>
         <div className="py-8">
