@@ -4,6 +4,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import DocumentLayout from '@/components/admin/DocumentLayout';
 import { baseUrl } from '@/lib/baseUrl';
 import { getAdminToken } from '@/utils/adminStorage';
+import { useSearch } from '@/context/SearchContext';
+import { filterStudents } from '@/utils/studentFilter';
 import GridViewIcon from '@mui/icons-material/GridView';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 const navItems = [
@@ -20,11 +22,11 @@ const navItems = [
 ];
 
 const FinanceStudentTrackingPage = () => {
+  const { debouncedSearchQuery } = useSearch();
   const [activeTab, setActiveTab] = useState('bills'); // 'bills' or 'feeStructure'
   const [students, setStudents] = useState([]);
   const [allBills, setAllBills] = useState([]);
   const [pendingBills, setPendingBills] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [pdfModal, setPdfModal] = useState({
@@ -158,8 +160,6 @@ const FinanceStudentTrackingPage = () => {
   }, [allBills]);
 
   const enrichedStudents = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-
     const mapped = students.map((student) => {
       const summary =
         studentFinancialMap.get(student._id) || {
@@ -194,34 +194,22 @@ const FinanceStudentTrackingPage = () => {
       };
     });
 
-    const filtered = mapped.filter((student) => {
-      if (!query) return true;
-      return (
-        student.name?.toLowerCase().includes(query) ||
-        student.email?.toLowerCase().includes(query) ||
-        student.overallStatus?.toLowerCase().includes(query)
-      );
-    });
+    // Use global search filter utility
+    const filtered = filterStudents(mapped, debouncedSearchQuery);
 
     // Sort alphabetically by student name
     return filtered.sort((a, b) =>
       (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
     );
-  }, [students, studentFinancialMap, searchQuery]);
+  }, [students, studentFinancialMap, debouncedSearchQuery]);
 
   const filteredFeeStructureStudents = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-    const filtered = students.filter((student) => {
-      if (!query) return true;
-      return (
-        student.name?.toLowerCase().includes(query) ||
-        student.email?.toLowerCase().includes(query)
-      );
-    });
+    // Use global search filter utility
+    const filtered = filterStudents(students, debouncedSearchQuery);
     return filtered.sort((a, b) =>
       (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
     );
-  }, [students, searchQuery]);
+  }, [students, debouncedSearchQuery]);
 
   const openStudentBillsModal = async (student) => {
     setStudentModal({
@@ -434,30 +422,6 @@ const FinanceStudentTrackingPage = () => {
                     ? 'View student-wise billing, payments, and outstanding amounts.'
                     : 'View and manage student fee structure documents.'}
                 </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="relative">
-                  <svg
-                    className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"
-                    />
-                  </svg>
-                  <input
-                    type="text"
-                    placeholder={activeTab === 'bills' ? 'Search students or status...' : 'Search students...'}
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:ring-teal-500 focus:border-teal-500 text-sm bg-gray-50"
-                  />
-                </div>
               </div>
             </div>
 

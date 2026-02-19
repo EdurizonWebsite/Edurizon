@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import DocumentLayout from '@/components/admin/DocumentLayout';
 import { baseUrl } from '@/lib/baseUrl';
 import axios from 'axios';
@@ -7,6 +7,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import AdminTable from '@/components/admin/AdminTable';
 import { useRouter } from "next/router";
 import { TransitionLink } from '@/utils/TransitionLink';
+import { useSearch } from '@/context/SearchContext';
+import { filterStudents } from '@/utils/studentFilter';
 import GridViewIcon from '@mui/icons-material/GridView';
 const navItems = [
   {
@@ -46,8 +48,7 @@ const csvDataFields = [
 ];  
 
 const DocumentManagement = () => {
-  // Navbar Search
-  const [searchTerm, setSearchTerm] = useState('');
+  const { debouncedSearchQuery } = useSearch();
 
   // Action Button
   const [openDropdownId2, setOpenDropdownId2] = useState<string | null>(null);  
@@ -247,12 +248,18 @@ const DocumentManagement = () => {
 
 
 
+  // Filter students based on global search query
+  const filteredStudents = useMemo(() => {
+    const students = activeTab === 'allStudents' ? registeredStudents : [];
+    return filterStudents(students, debouncedSearchQuery);
+  }, [activeTab, registeredStudents, debouncedSearchQuery]);
+
   useEffect(() => {
-    setCurrentLeads(activeTab === 'allStudents' ? registeredStudents : []);
-  }, [activeTab, registeredStudents]);
+    setCurrentLeads(filteredStudents);
+  }, [filteredStudents]);
 
   return (
-    <DocumentLayout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+    <DocumentLayout navItems={navItems}>
       <Toaster />
       <div>
         {}

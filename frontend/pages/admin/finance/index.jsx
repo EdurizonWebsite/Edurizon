@@ -34,7 +34,6 @@ const navItems = [
 
 const FinanceDashboard = () => {
   const [activeTab, setActiveTab] = useState('students');
-  const [topSearchTerm, setTopSearchTerm] = useState('');
   const [students, setStudents] = useState([]);
   const [allBills, setAllBills] = useState([]);
   const [pendingBills, setPendingBills] = useState([]);
@@ -311,7 +310,7 @@ const FinanceDashboard = () => {
 
 
   return (
-    <DocumentLayout navItems={navItems} searchTerm={topSearchTerm} setSearchTerm={setTopSearchTerm}>
+    <DocumentLayout navItems={navItems}>
       <div className="min-h-screen bg-[#F5F7FA] px-6 py-8">
         <Toaster position="top-right" />
         <div className="flex flex-col gap-6">

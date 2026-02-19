@@ -14,6 +14,7 @@ import MeetingSuccessModal from './MeetingSuccessModal';
 import MeetingSchedulerModal from './MeetingSchedulerModal';
 import ScheduledMeetingsModal from './ScheduledMeetingsModal';
 import { clearAdminAuth, getAdminData, getAdminToken } from '@/utils/adminStorage';
+import { useSearch } from '@/context/SearchContext';
 interface AdminData {
   role: string;
   _id?: string;
@@ -40,8 +41,9 @@ interface AdminTask {
   status: 'Pending' | 'Completed' | 'Overdue';
 }
 
-export default function Layout({ children, navItems, searchTerm,setSearchTerm }: { children: React.ReactNode, navItems: Array<{ href: string, icon: React.ReactNode, label: string,  }>, searchTerm: string, setSearchTerm: (term: string) => void }) {
+export default function Layout({ children, navItems }: { children: React.ReactNode, navItems: Array<{ href: string, icon: React.ReactNode, label: string,  }> }) {
   const { pathname } = useRouter();
+  const { searchQuery, setSearchQuery } = useSearch();
   const [adminData, setAdminData] = useState<AdminData | null>(null);
   const [showMeetingModal, setShowMeetingModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -475,7 +477,13 @@ export default function Layout({ children, navItems, searchTerm,setSearchTerm }:
           </div>
             </div>
             <div className='ml-[32px] w-[340px] bg-white rounded-[16px]  h-[48px] overflow-hidden flex'>
-                <input type="text" placeholder="Search..." className='w-full  h-full outline-none px-[12px] text-smallText' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                <input 
+                  type="text" 
+                  placeholder="Search..." 
+                  className='w-full  h-full outline-none px-[12px] text-smallText' 
+                  value={searchQuery} 
+                  onChange={(e) => setSearchQuery(e.target.value)} 
+                />
                 <SearchIcon className='ml-auto my-auto mr-[12px]' style={{fontSize: '32px', color: '#666666'}}/>
             </div>
         </nav>

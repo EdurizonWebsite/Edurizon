@@ -14,6 +14,7 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import { ThemeProvider } from "@/context/themeContext";
+import { SearchProvider } from "@/context/SearchContext";
 import Head from "next/head";
 import {GoogleAnalytics} from '@next/third-parties/google'
 import axios from "axios";
@@ -213,14 +214,15 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
 
       <ThemeProvider>
-        {/* Loading Overlay */}
-        {isLoading && (
-          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white text-xl font-semibold">
-            Loading...
-          </div>
-        )}
+        <SearchProvider>
+          {/* Loading Overlay */}
+          {isLoading && (
+            <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white text-xl font-semibold">
+              Loading...
+            </div>
+          )}
 
-        <div className="relative">
+          <div className="relative">
           {/* Admin routes are now fully accessible on all screen sizes */}
           {/* {!shouldExcludeLayout && <NavHeader/>} */}
 
@@ -236,7 +238,8 @@ function MyApp({ Component, pageProps }: AppProps) {
               <ConsultationForm onClose={() => setShowConsultationForm(false)} />
             </div>
           )}
-        </div>
+          </div>
+        </SearchProvider>
       </ThemeProvider>
     </>
   );

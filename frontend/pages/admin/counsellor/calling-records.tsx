@@ -7,6 +7,7 @@ import GridViewIcon from '@mui/icons-material/GridView';
 import CallIcon from '@mui/icons-material/Call';
 import MessageIcon from '@mui/icons-material/Message';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { useSearch } from '@/context/SearchContext';
 
 interface Lead {
   _id: string;
@@ -32,7 +33,6 @@ const CallingRecords = () => {
   const [leads, setLeads] = useState<Lead[]>([]);
   const [filteredLeads, setFilteredLeads] = useState<Lead[]>([]);
   const [adminData, setAdminData] = useState<any>(null);
-  const [searchTerm, setSearchTerm] = useState('');
   const [showFollowUpModal, setShowFollowUpModal] = useState(false);
   const [selectedLeadForFollowUp, setSelectedLeadForFollowUp] = useState<Lead | null>(null);
   const [followUpDateInput, setFollowUpDateInput] = useState('');
@@ -68,6 +68,9 @@ const CallingRecords = () => {
   const counsellorId = adminData?._id;
 
   const [itemsPerPage, setItemsPerPage] = useState(10);
+
+  // Global search (top-right header search bar)
+  const { debouncedSearchQuery } = useSearch();
 
   const isSameDate = (dateStr?: string | null, refDate?: Date) => {
     if (!dateStr) return false;
@@ -107,16 +110,35 @@ const CallingRecords = () => {
     }
   };
 
-  // Filter leads based on active tab
+  // Filter leads based on active tab + global search (after tab, before pagination)
   useEffect(() => {
+    let base: Lead[];
+
     if (activeTab === 'all') {
-      setFilteredLeads(leads);
+      base = leads;
     } else if (activeTab === 'followup') {
-      setFilteredLeads(leads.filter(lead => lead.leadType === 'follow-up'));
+      base = leads.filter(lead => lead.leadType === 'follow-up');
     } else {
-      setFilteredLeads(leads.filter(lead => lead.leadType === activeTab));
+      base = leads.filter(lead => lead.leadType === activeTab);
     }
-  }, [activeTab, leads]);
+
+    const query = debouncedSearchQuery.trim().toLowerCase();
+    if (query) {
+      base = base.filter((lead) => {
+        const name = (lead.name || '').toLowerCase();
+        const phone = (lead.phone || '').toLowerCase();
+        const country = (lead.countryInterested || '').toLowerCase();
+
+        return (
+          name.includes(query) ||
+          phone.includes(query) ||
+          country.includes(query)
+        );
+      });
+    }
+
+    setFilteredLeads(base);
+  }, [activeTab, leads, debouncedSearchQuery]);
 
   // Compute today's and past follow-ups whenever leads change
   useEffect(() => {
@@ -614,7 +636,7 @@ const CallingRecords = () => {
   }
 
   return (
-    <Layout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+    <Layout navItems={navItems}>
       <Toaster />
       
       {/* Header */}

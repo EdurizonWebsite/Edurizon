@@ -2,6 +2,8 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Layout from '@/components/admin/DocumentLayout';
 import { getRegisteredStudentsByCounsellor } from '@/services/api';
 import toast, { Toaster } from 'react-hot-toast';
+import { useSearch } from '@/context/SearchContext';
+import { filterStudents } from '@/utils/studentFilter';
 import GridViewIcon from '@mui/icons-material/GridView';
 import CallIcon from '@mui/icons-material/Call';
 import PersonIcon from '@mui/icons-material/Person';
@@ -23,6 +25,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import axios from 'axios';
 import { baseUrl } from '@/lib/baseUrl';
 import { COUNTRIES, getUniversitiesByCountry } from '@/lib/constants';
+import { Student } from '@/utils/studentFilter';
 
 interface RegisteredStudent {
   _id: string;
@@ -84,13 +87,13 @@ const navItems = [
 ];
 
 const RegisteredStudents = () => {
+  const { debouncedSearchQuery } = useSearch();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [activeTab, setActiveTab] = useState('all');
   const [students, setStudents] = useState<RegisteredStudent[]>([]);
   const [filteredStudents, setFilteredStudents] = useState<RegisteredStudent[]>([]);
   const [adminData, setAdminData] = useState<any>(null);
-  const [searchTerm, setSearchTerm] = useState('');
   const [selectedStudent, setSelectedStudent] = useState<RegisteredStudent | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
@@ -134,9 +137,9 @@ const RegisteredStudents = () => {
     }
   };
 
-  // Filter students based on active tab and search term
+  // Filter students based on active tab and global search term
   useEffect(() => {
-    let filtered = students;
+    let filtered:Student[]|RegisteredStudent[] = students;
 
     // Filter by tab
     if (activeTab === 'consultation') {
@@ -155,19 +158,11 @@ const RegisteredStudents = () => {
       filtered = filtered.filter(student => student.applicationStage === 'Departure');
     }
 
-    // Filter by search term
-    if (searchTerm) {
-      filtered = filtered.filter(student => 
-        student.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        student.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        student.phone?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        student.studyDestination.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        student.intendedCourse.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+    // Use global search filter utility
+    filtered = filterStudents(filtered, debouncedSearchQuery);
 
-    setFilteredStudents(filtered);
-  }, [activeTab, students, searchTerm]);
+    setFilteredStudents(filtered as RegisteredStudent[]);
+  }, [activeTab, students, debouncedSearchQuery]);
 
   // Fetch admin data on component mount
   useEffect(() => {
@@ -483,7 +478,7 @@ const RegisteredStudents = () => {
   }
 
   return (
-    <Layout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+    <Layout navItems={navItems}>
       <Toaster />
       
       {/* Header */}
@@ -567,9 +562,9 @@ const RegisteredStudents = () => {
             <div className="text-center py-12">
               <PersonIcon className="w-16 h-16 text-gray-300 mx-auto mb-4" />
               <h3 className="text-lg font-medium text-gray-900 mb-2">No students found</h3>
-              <p className="text-gray-500">
+              {/* <p className="text-gray-500">
                 {searchTerm ? 'Try adjusting your search terms' : 'No students are assigned to you yet'}
-              </p>
+              </p> */}
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">

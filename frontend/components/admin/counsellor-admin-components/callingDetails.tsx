@@ -1,5 +1,5 @@
-import React, { useState,useEffect, use } from 'react'
-import AdminTable from '../AdminTable'
+import React, { useState, useEffect, useMemo, use } from 'react';
+import AdminTable from '../AdminTable';
 import axios from 'axios';
 import { baseUrl } from '@/lib/baseUrl';
 import AddStudentPopup from './AddStudentPopup';
@@ -10,18 +10,22 @@ import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import { countryOptions, courseOptions } from '@/lib/adminData';
+import { useSearch } from '@/context/SearchContext';
 interface Lead {
     leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered';
     [key: string]: any; // other fields if you’re not typing them yet
   }
   
 
-const CallingDetails= ()  => {
+const CallingDetails = ()  => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [activeTab, setActiveTab] = useState('allLeads');
     const [currentDataForTable, setCurrentDataForTable] = useState<any[]>([]);
     const [itemsPerPage, setItemsPerPage] = useState(10);
+
+    // Global search (top-right header search bar)
+    const { debouncedSearchQuery } = useSearch();
 
     // Leads and Student Data
     const [leads,setLeads] = useState<Lead[]>([]);
@@ -155,6 +159,46 @@ const CallingDetails= ()  => {
             { key: "registered", label: 'Registered', count:registered.length},
             { key: "enrolled", label: 'Students Enrolled', count:enrolledStudents.length},
             ];  
+
+        // Filter data for global search after tab/filter selection but before pagination
+        const filteredDataForTable = useMemo(() => {
+            const query = debouncedSearchQuery.trim().toLowerCase();
+            if (!query) {
+                return currentDataForTable;
+            }
+
+            return currentDataForTable.filter((lead: any) => {
+                const name = String(lead?.name ?? '').toLowerCase();
+                const email = String(lead?.email ?? '').toLowerCase();
+                const phone = String(lead?.phone ?? '').toLowerCase();
+
+                // Prefer enrolledCountry/enrolledUniversity if present, else fall back to lead fields
+                const universitySource =
+                    lead?.enrolledUniversity ??
+                    lead?.university ??
+                    null;
+                const university = Array.isArray(universitySource)
+                    ? universitySource.join(' ').toLowerCase()
+                    : String(universitySource ?? '').toLowerCase();
+
+                const countrySource =
+                    lead?.enrolledCountry ??
+                    lead?.countryInterested ??
+                    lead?.country ??
+                    null;
+                const country = Array.isArray(countrySource)
+                    ? countrySource.join(' ').toLowerCase()
+                    : String(countrySource ?? '').toLowerCase();
+
+                return (
+                    name.includes(query) ||
+                    email.includes(query) ||
+                    phone.includes(query) ||
+                    university.includes(query) ||
+                    country.includes(query)
+                );
+            });
+        }, [currentDataForTable, debouncedSearchQuery]);
 
         // Fetching leads and registered students data initialization
         useEffect(() => {
@@ -608,7 +652,8 @@ const CallingDetails= ()  => {
                     csvDataFields={csvDataFields} 
                     loading={loading} 
                     error={error} 
-                    leads={currentDataForTable} 
+                    // Apply global search filtering before pagination
+                    leads={filteredDataForTable} 
                     setActiveTab={setActiveTab} 
                     tabs={tabs} 
                     activeTab={activeTab} 

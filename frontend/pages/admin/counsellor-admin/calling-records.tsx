@@ -23,7 +23,6 @@ const navItems = [
 ]
 
 const CounsellorAdmin = () => {
-    const [searchTerm, setSearchTerm] = useState('');
      // Table Data
     
     const [adminData, setAdminData] = useState<any>(null);
@@ -42,7 +41,7 @@ const CounsellorAdmin = () => {
 
     return (
     <div>
-      <DocumentLayout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+      <DocumentLayout navItems={navItems}>
         <div>
             <CallingRecordComponent/>
         </div>

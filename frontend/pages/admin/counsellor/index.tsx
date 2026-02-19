@@ -35,7 +35,6 @@ const navItems = [
 ];
 
 const Dashboard = () => {
-  const [searchTerm, setSearchTerm] = useState('');
   const [adminData, setAdminData] = useState<any>(null);
   useEffect(() => {
     if(sessionStorage.getItem('adminData')){
@@ -52,7 +51,7 @@ const Dashboard = () => {
   
 
   return (
-     <Layout navItems={navItems} searchTerm={searchTerm} setSearchTerm={setSearchTerm}>
+     <Layout navItems={navItems}>
       <Toaster />
       <div>
         <CallingDetails adminData={adminData} ITEMS_PER_PAGE={10} />
