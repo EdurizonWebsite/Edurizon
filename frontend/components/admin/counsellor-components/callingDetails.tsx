@@ -177,7 +177,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
             { key: "pending", label:'Pending', count:pending.length},
             { key: "follow-up", label:'Follow Up', count:followUp.length},
             { key: "negative", label: 'Negative', count:negative.length},
-            { key: "completed", label: 'Completed', count:completed.length},
+            { key: "completed", label: 'Positive', count:completed.length},
             { key: "registered", label: 'Students Enrolled', count:registeredStudents.length},
             ];  
 

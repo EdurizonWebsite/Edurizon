@@ -223,7 +223,7 @@ const CallingRecords = () => {
     { key: 'pending', label: 'Pending', count: leads.filter(lead => lead.leadType === 'pending').length },
     { key: 'followup', label: 'Follow Up', count: leads.filter(lead => lead.leadType === 'follow-up').length },
     { key: 'negative', label: 'Negative', count: leads.filter(lead => lead.leadType === 'negative').length },
-    { key: 'completed', label: 'Completed', count: leads.filter(lead => lead.leadType === 'completed').length },
+    { key: 'completed', label: 'Positive', count: leads.filter(lead => lead.leadType === 'completed').length },
     { key: 'registered', label: 'Registered', count: leads.filter(lead => lead.leadType === 'registered').length },
   ];
 
@@ -367,7 +367,7 @@ const CallingRecords = () => {
               <option value="pending" className="bg-white text-yellow-600">⏳ Pending</option>
               <option value="follow-up" className="bg-white text-blue-600">📞 Follow Up</option>
               <option value="negative" className="bg-white text-red-600">❌ Negative</option>
-              <option value="completed" className="bg-white text-green-600">✅ Completed</option>
+              <option value="completed" className="bg-white text-green-600">✅ Positive</option>
               <option value="registered" className="bg-white text-purple-600">🎓 Registered</option>
             </select>
           </div>

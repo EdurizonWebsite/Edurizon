@@ -111,7 +111,7 @@ const CallingRecordComponent = ()  => {
         {
           key: "country",
           render: (lead:any) => (
-            <span className="text-sm text-gray-500">{lead.interestedCountry??'None'}</span>
+            <span className="text-sm text-gray-500">{lead.countryInterested??'None'}</span>
           ),
         },
         {
@@ -189,7 +189,7 @@ const CallingRecordComponent = ()  => {
             render: (lead:any) => {
               const type = lead.leadType || 'none';
               const label = type !== 'none'
-                ? type.charAt(0).toUpperCase() + type.slice(1)
+                ? type=='completed' ? 'Positive' : type.charAt(0).toUpperCase() + type.slice(1)
                 : 'None';
 
               const getLeadStatusClasses = (status: string) => {
