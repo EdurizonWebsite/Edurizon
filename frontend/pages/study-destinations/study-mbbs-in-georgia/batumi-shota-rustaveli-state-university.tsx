@@ -4,6 +4,7 @@ import UnlistedTableEqualWidth from '@/components/studyDestinationComponents/unL
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import Head from 'next/head'
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
 
 const academicCalenderData = {
     id: "georgia",
@@ -56,12 +57,6 @@ const services = [
 ];
 
 const BatumShotaRustaveliStateUniversity = () => {
-    const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
     return (
         <>
             <Head>
@@ -97,10 +92,7 @@ const BatumShotaRustaveliStateUniversity = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='relative mt-[1vw] justify-end  flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                        <CallingBox/>
                         </div>
                 </div>
             </div>

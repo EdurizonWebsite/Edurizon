@@ -4,6 +4,9 @@ import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import { TransitionLink } from '@/utils/TransitionLink'
 import Head from 'next/head'
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
+import CollegeOverviewTable from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeOverviewTable'
+import { CollegeDataOverviewInterface } from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeDataOverviewInterface'
 
 const academicCalenderData = {
     id: "nepal",
@@ -38,7 +41,7 @@ const services = [
     {
         icon: "/assets/Images/Icons/feesIcon.svg",
         text: "Tuition Fees",
-        label: "55L",
+        label: "75,000 USD",
     },
     {
         icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -58,12 +61,33 @@ const services = [
 ];
 
 const NepalgunjMedicalCollege = () => {
-    const callBtnFnc = () => {
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc = () => {
-        window.open('https://wa.me/919873381377?')
-    }
+    const collegeDataOverview: {
+        label: string;
+        value: CollegeDataOverviewInterface[];
+      } = {
+        label: "Nepalgunj Medical College at a glance",
+        value: [
+          { label: "College name", value: "Nepalgunj Medical College" },
+          { label: "University affiliation", value: "KU" },
+          { label: "Year of Establishment", value: "1997" },
+          { label: "Recognition", value: "WHO, NMC" },
+          { label: "Medium of Instruction", value: "English" },
+          { label: "Course Duration", value: "4.5 years" },
+          { label: "Internship Duration", value: "1 year" },
+          { label: "Hospital Bed Number", value: "1050" },
+          { label: "NEET", value: "Mandatory" },
+          { label: "Country Rank", value: "22" },
+          { label: "Intake", value: "September" },
+          { 
+            label: "Bed Distribution", 
+            value: "750 at Kohalpur, 250 at Nepalgunj" 
+          },
+          { 
+            label: "Official Website", 
+            value: "https://www.ngmc.edu.np" 
+          }
+        ]
+      };    
     return (
         <>
             <Head>
@@ -124,10 +148,7 @@ const NepalgunjMedicalCollege = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                            <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                            <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw]'><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                        </div>
+                        <CallingBox/>
                     </div>
                 </div>
             </div>
@@ -324,38 +345,7 @@ const NepalgunjMedicalCollege = () => {
                         </div>
 
             {/* At a glance Section */}
-            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Nepalgunj Medical College at a glance</h3>
-                <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2">
-                    <li className='font-bold'>o	College name</li>
-                    <li>Nepalgunj Medical College</li>
-                    <li className='font-bold'>o	University affiliation</li>
-                    <li>KU</li>
-                    <li className='font-bold'>o	Year of establishment</li>
-                    <li>1997</li>
-                    <li className='font-bold'>o	Recognition</li>
-                    <li>WHO, NMC</li>
-                    <li className='font-bold'>o	Medium of instruction</li>
-                    <li>English</li>
-                    <li className='font-bold'>o	Course duration</li>
-                    <li>4.5 years</li>
-                    <li className='font-bold'>o	Internship duration</li>
-                    <li>1 year</li>
-                    <li className='font-bold'>o	Hospital bed number</li>
-                    <li>1050</li>
-                    <li className='font-bold'>o	NEET</li>
-                    <li>Mandatory</li>
-                    <li className='font-bold'>o	Country Ranking</li>
-                    <li>22</li>
-                    <li className='font-bold'>o	Intake</li>
-                    <li>September</li>
-                    <li className='font-bold'>o	Number of Bed hospital</li>
-                    <li>750 at Kohalpur, 250 at Nepalgunj</li>
-                    <li className='font-bold'>o	Official Website</li>
-                    <li><a href="https://www.ngmc.edu.np" target='_blank' rel='noreferrer'>www.ngmc.edu.np</a></li>
-                </ul>
-            </section>
-
+            <CollegeOverviewTable title={collegeDataOverview.label} data={collegeDataOverview.value}/>
             {/* Eligibility Criteria */}
             <ListedTable id={eligibilityData.id} section2={eligibilityData.section2} content={eligibilityData.content} />
 

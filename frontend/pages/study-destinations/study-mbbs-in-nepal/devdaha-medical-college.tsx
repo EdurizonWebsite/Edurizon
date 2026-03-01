@@ -1,6 +1,8 @@
 import ListedTable from '@/components/studyDestinationComponents/ListedTable'
 import React from 'react'
 import Head from 'next/head'
+import { CollegeDataOverviewInterface } from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeDataOverviewInterface'
+import CollegeOverviewTable from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeOverviewTable'
 const academicCalenderData={
     id:"nepal",
     section2:"",
@@ -34,7 +36,7 @@ const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
       text: "Tuition Fees | Hostel Fees",
-      label: "55Lakhs",
+      label: "75,000 USD",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -56,14 +58,41 @@ const services = [
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import { TransitionLink } from '@/utils/TransitionLink';
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
 
 const NewPage = () => {
-  const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
+  const collegeDataOverview: {
+    label: string;
+    value: CollegeDataOverviewInterface[];
+  } = {
+    label: "Devdaha Medical College at a glance",
+    value: [
+      { label: "College name", value: "Devdaha Medical College" },
+      { label: "University affiliation", value: "KU" },
+      { label: "Recognition", value: "WHO, NMC" },
+      { label: "Year of Establishment", value: "2006" },
+      { label: "Hospital bed Number", value: "500" },
+      { label: "Medium of Instruction", value: "English" },
+      { label: "Course Duration", value: "4.5 years" },
+      { label: "Internship Duration", value: "1 year" },
+      { label: "NEET", value: "Mandatory" },
+      { label: "Country Ranking", value: "150" },
+      { label: "World Ranking", value: "561" },
+      { label: "Intake", value: "September" },
+      { 
+        label: "Location", 
+        value: "Bhaluhi, Rupendehi, Devdaha-8, Nepal" 
+      },
+      { 
+        label: "Nearest Indian Border (Sunauli - UP, Gorakhpur)", 
+        value: "31 Km" 
+      },
+      { 
+        label: "Nearest Indian Border (Bihar - Birgunj)", 
+        value: "239 Km" 
+      }
+    ]
+  };
   return (
     <>
       <Head>
@@ -124,10 +153,7 @@ const NewPage = () => {
                                       </div>
                                     ))}
                                   </div>
-                      <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                      <CallingBox/>
                     </div>
                 </div>                                 
             </div>
@@ -260,48 +286,8 @@ const NewPage = () => {
                         </div>
 
           {/* At a galance  */}
-            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-              <h3 className="text-h6TextPhone leading-[120%]  md:text-h5Text text-left">Devdaha  Medical College at a glance </h3>
+            <CollegeOverviewTable title={collegeDataOverview.label} data={collegeDataOverview.value} /> 
              
-                <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2 ">
-                <li className='font-bold'>o	College name	</li>
-                <li>Devdaha Medical College</li>
-                <li className='font-bold'>o	University affiliation	</li>
-                <li>KU</li>
-                <li className='font-bold'>o	Recognition</li>
-                <li>WHO, NMC</li>
-                <li className='font-bold'>o	Year of Establishment</li>
-                <li>2006</li>
-                 <li className='font-bold'>o	Hospital bed Number</li>
-                <li>500</li>
-                <li className='font-bold'>o	Medium of Instruction</li>
-                <li>English</li>
-                <li className='font-bold'>o	Course Duration</li>
-                <li>4.5 years</li>
-                <li className='font-bold'>o	Internship Duration</li>
-                <li>1 year</li>
-                <li className='font-bold'>o	NEET</li>
-                <li>Mandatory</li>
-                <li className='font-bold'>o	Ranking</li>
-                <li>
-                  <ul className='text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify'>
-                    <li>Country Ranking-150</li>
-                    <li>World Ranking-561</li>
-                  </ul>
-                </li>                
-                <li className='font-bold'>o	Intake</li>
-                <li>September</li>
-                <li className='font-bold'>o	Location</li>
-                <li>Bhaluhi, Rupendehi, Devdaha-8, Nepal</li>
-                <li className='font-bold'>o	Nearest Indian Border</li>
-                <li>
-                  <ul className='text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify'>
-                    <li>31 Km from Sunauli - UP (Gorakhpur)</li>
-                    <li>239 Km from Bihar (Birgunj)</li>
-                  </ul>
-                </li>
-                </ul>  
-            </section>
 
 
         {/* Eligibility Criteria */}

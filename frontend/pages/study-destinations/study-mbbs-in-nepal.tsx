@@ -73,7 +73,7 @@ const KUAffiliated = [
     name: "Kathmandu Medical College",
     location: "Kathmandu",
     year: 1997,
-    fee: "55 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/kathmandu-medical-college"
   },
@@ -82,7 +82,7 @@ const KUAffiliated = [
     name: "Nepal Medical College",
     location: "Jorpati, Kathmandu",
     year: 1994,
-    fee: "55 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/nepal-medical-college"
   },
@@ -91,7 +91,7 @@ const KUAffiliated = [
     name: "Manipal College & Medical Science",
     location: "Pokhra",
     year: 1994,
-    fee: "$75000",
+    fee: "75,000 USD",
     duration: 50,
     href:"/study-destinations/study-mbbs-in-nepal/manipal-college-of-medical-science"
   },
@@ -100,7 +100,7 @@ const KUAffiliated = [
     name: "Lumbini Medical College",
     location: "Palpa, Tansen",
     year: 2006,
-    fee: "50 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/lumbini-medical-college"
   },
@@ -109,7 +109,7 @@ const KUAffiliated = [
     name: "Devdaha Medical College",
     location: "Sunauli / Bhairaba border Rupandehi, Devdaha",
     year: 2006,
-    fee: "55 L",
+    fee: "75,000 USD",
     duration: 20,
     href:"/study-destinations/study-mbbs-in-nepal/devdaha-medical-college"
   },
@@ -118,7 +118,7 @@ const KUAffiliated = [
     name: "Nobel Medical College",
     location: "Biratnagar, Nepal (6-8 KM away from Jogbani border (Bihar)",
     year: 2004,
-    fee: "52 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/nobel-medical-college"
   },
@@ -127,7 +127,7 @@ const KUAffiliated = [
     name: "Nepalgunj Medical College, Nepalgunj",
     location: "Bordering Bahraich, UP",
     year: 2004,
-    fee: "55L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/nepalgunj-medical-college"
   },
@@ -136,7 +136,7 @@ const KUAffiliated = [
     name: "College of Medical Sciences",
     location: "Bharatpur, Chitwan",
     year: 1994,
-    fee: "56 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/college-of-medical-science"
   },
@@ -145,7 +145,7 @@ const KUAffiliated = [
     name: "Birat Medical College",
     location: "Biratnagar",
     year: 2014,
-    fee: "52 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/birat-medical-college"
   },
@@ -154,7 +154,7 @@ const KUAffiliated = [
     name: "B & C Medical College & Teaching Hospital",
     location: "Jhapa",
     year: 2012,
-    fee: "52 L",
+    fee: "75,000 USD",
     duration: "16",
     href:"/study-destinations/study-mbbs-in-nepal/b&c-medical-college"
   },
@@ -166,7 +166,7 @@ const TUAffiliated=[
     name: "Chitwan Medical College",
     location: "Bharatpur, Chitwan",
     year: 2006,
-    fee: "57 L with hostel",
+    fee: "75,000 USD",
     duration: 33,
      href:"/study-destinations/study-mbbs-in-nepal/chitwan-medical-college"
   },
@@ -175,7 +175,7 @@ const TUAffiliated=[
     name: "National Medical College",
     location: "Birgunj (Raxaul Border – 5 Km away)",
     year: 2001,
-    fee: "55 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/national-medical-college"
   },
@@ -184,7 +184,7 @@ const TUAffiliated=[
     name: "KIST Medical College",
     location: "Lalitpur, Kathmandu",
     year: 2006,
-    fee: "55 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/kist-medical-college"
   },
@@ -193,34 +193,34 @@ const TUAffiliated=[
     name: "Janaki Medical College",
     location: "Janakpur",
     year: 1999,
-    fee: "44 L",
+    fee: "75,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/janaki-medical-college"
   },
-  {
-    id: 5,
-    name: "Karnali Academy of Health Science",
-    location: "Jumla",
-    year: 2011,
-    fee: "$50,000",
-    duration: 4,
-  },
-  {
-    id: 6,
-    name: "Gandaki Medical College",
-    location: "Pokhra",
-    year: 2007,
-    fee: "55 L",
-    duration: "33",
-  },
-  {
-    id: 7,
-    name: "Universal Medical College",
-    location: "Bhairahawa",
-    year: 1971,
-    fee: "55 L",
-    duration: "33",
-  },
+  // {
+  //   id: 5,
+  //   name: "Karnali Academy of Health Science",
+  //   location: "Jumla",
+  //   year: 2011,
+  //   fee: "$50,000",
+  //   duration: 4,
+  // },
+  // {
+  //   id: 6,
+  //   name: "Gandaki Medical College",
+  //   location: "Pokhra",
+  //   year: 2007,
+  //   fee: "55 L",
+  //   duration: "33",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Universal Medical College",
+  //   location: "Bhairahawa",
+  //   year: 1971,
+  //   fee: "55 L",
+  //   duration: "33",
+  // },
 ]
 
 const videoData=[

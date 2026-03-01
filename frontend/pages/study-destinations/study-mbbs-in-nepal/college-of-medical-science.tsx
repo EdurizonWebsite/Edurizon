@@ -34,7 +34,7 @@ const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
       text: "Tuition Fees | Hostel Fees",
-      label: "56Lakhs",
+      label: "75,000 USD",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -56,14 +56,34 @@ const services = [
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import { TransitionLink } from '@/utils/TransitionLink';
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
+import { CollegeDataOverviewInterface } from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeDataOverviewInterface'
+import CollegeOverviewTable from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeOverviewTable'
 
-const NewPage = () => {
-  const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
+const NewPage = () => { 
+  const collegeDataOverview: {
+    label: string;
+    value: CollegeDataOverviewInterface[];
+  } = {
+    label: "College of Medical Science at a glance",
+    value: [
+      { label: "College name", value: "College of Medical Science" },
+      { label: "University affiliation", value: "KU" },
+      { label: "Recognition", value: "WHO, NMC" },
+      { label: "Medium of Instruction", value: "English" },
+      { label: "Course Duration", value: "4.5 years" },
+      { label: "Internship Duration", value: "1 year" },
+      { label: "NEET", value: "Mandatory" },
+      { label: "Country Ranking", value: "22" },
+      { label: "World Ranking", value: "5960" },
+      { label: "Intake", value: "September" },
+      { label: "Location", value: "Chitwan, Nepal" },
+      { 
+        label: "Official Website", 
+        value: "https://chitwanmedicalcollege.edu.np/" 
+      }
+    ]
+  };
   return (
     <>
       <Head>
@@ -124,10 +144,7 @@ const NewPage = () => {
                                       </div>
                                     ))}
                                   </div>
-                      <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                      <CallingBox/>
                     </div>
                 </div>                                 
             </div>
@@ -214,7 +231,7 @@ const NewPage = () => {
         
 
             {/* At a galance  */}
-            
+            <CollegeOverviewTable title={collegeDataOverview.label} data={collegeDataOverview.value} /> 
 
           {/* Why chose section */}
           <div className="p-[8vw] md:p-[4vw] flex flex-col md:flex-row text-black px-[6vw] md:px-[12.5vw] gap-[5vw] md:gap-[2vw] mb-[10vw] md:mb-[4vw] items-center bg-linenChosen">

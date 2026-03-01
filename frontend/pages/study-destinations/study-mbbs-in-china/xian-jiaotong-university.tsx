@@ -4,6 +4,7 @@ import UnlistedTableEqualWidth from '@/components/studyDestinationComponents/unL
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import Head from 'next/head'
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
 
 const academicCalenderData = {
     id: "china",
@@ -36,7 +37,7 @@ const services = [
     {
         icon: "/assets/Images/Icons/feesIcon.svg",
         text: "Tuition Fees",
-        label: "RMB 30,000/Year",
+        label: "40,800 RMB/Year",
     },
     {
         icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -56,12 +57,6 @@ const services = [
 ];
 
 const XianJiaotongUniversity = () => {
-    const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
     
     return (
         <>
@@ -90,7 +85,7 @@ const XianJiaotongUniversity = () => {
                 <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/xian-university"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/xian-university" hrefLang="en-in"/>
             </Head>
-            <div>
+            <div className='text-justify'>
             <div className="flex flex-col gap-[2vw] mb-[1vw] py-[4vw] items-center pt-[20vw]  md:pt-[8vw]">
                 <div className="mx-[6vw] flex flex-col items-center gap-[2vw] md:gap-[2vw]">
                     <Breadcrumbs/>
@@ -110,16 +105,13 @@ const XianJiaotongUniversity = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                            <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                            <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                        </div>
+                        <CallingBox/>
                     </div>
                 </div>
             </div>
 
             {/* About Xi'an Jiaotong University */}
-            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
+            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] text-justify">
                 <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About Xi'an Jiaotong University</h3>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Xi'an Jiaotong University (XJTU) is a leading public research university located in Xi'an, Shaanxi Province, China.</li>

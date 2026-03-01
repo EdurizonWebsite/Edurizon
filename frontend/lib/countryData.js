@@ -271,7 +271,7 @@ const ChinaData={
         ["Xiamen University","₹4,56,000 Lakhs","₹33,600"],
         ["Southeast University","₹3,93,600 Lakhs","₹72,000"],
         ["Xinjiang Medical University","₹3,60,000 Lakhs","₹54,000"],
-        ["Xi'an Jiaotong University","₹3,60,000 Lakhs","₹54,000"],
+        ["Xi'an Jiaotong University","40,800 RMB","8,700 RMB"],
         ],
         href:["/study-destinations/study-mbbs-in-china/zhejiang-university","/study-destinations/study-mbbs-in-china/nanjing-medical-university","/study-destinations/study-mbbs-in-china/xiamen-university","/study-destinations/study-mbbs-in-china/southeast-university","/study-destinations/study-mbbs-in-china/xinjiang-university","/study-destinations/study-mbbs-in-china/xian-jiaotong-university"],  
     },

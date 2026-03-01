@@ -67,59 +67,48 @@ const academicData={
 
 const universities = [
     {
+      id: 6,
+      name: "CAIMU",
+      feesInUSD: 3500,
+      hostelFeesInUSD: 500,
+      href: "/study-destinations/study-mbbs-in-kyrgyzstan/central-asian-international-medical-university"
+    },
+    {
       id: 1,
       name: "Jalal-Abad State University",
       feesInUSD: 4200,
-      feesInINR: '3,57,000',
       hostelFeesInUSD: 800,
-      hostelFeesInINR: '68,000',
       href: "/study-destinations/study-mbbs-in-kyrgyzstan/jalal-abad-state-university"
     },
     {
       id: 2,
       name: "Jalal-Abad International University",
-      feesInUSD: 3200,
-      feesInINR: '2,72,000',
-      hostelFeesInUSD: 500,
-      hostelFeesInINR: '42,500',
+      feesInUSD: 3500,
+      hostelFeesInUSD: 600,
       href: "/study-destinations/study-mbbs-in-kyrgyzstan/jalal-abad-international-university"
     },
     {
       id: 3,
       name: "Osh International State Medical University",
       feesInUSD: 3500,
-      feesInINR: '2,97,500',
       hostelFeesInUSD: 600,
-      hostelFeesInINR: '51,000',
       href: "/study-destinations/study-mbbs-in-kyrgyzstan/osh-international-state-medical-university"
     },
     {
       id: 4,
       name: "Osh State University",
       feesInUSD: 4000,
-      feesInINR: '3,40,000',
-      hostelFeesInUSD: 800,
-      hostelFeesInINR: '68,000',
+      hostelFeesInUSD: 1500,
       href: "/study-destinations/study-mbbs-in-kyrgyzstan/osh-state-university"
     },
     {
       id: 5,
       name: "Royal Metropolitan University",
       feesInUSD: 3500,
-      feesInINR: '2,97,000',
       hostelFeesInUSD: 800,
-      hostelFeesInINR: '68,000',
       href: "/study-destinations/study-mbbs-in-kyrgyzstan/royal-metropolitan-university"
     },
-    {
-      id: 6,
-      name: "CAIMU",
-      feesInUSD: 3200,
-      feesInINR: '2,72,000',
-      hostelFeesInUSD: 500,
-      hostelFeesInINR: '42,500',
-      href: "/study-destinations/study-mbbs-in-kyrgyzstan/central-asian-international-medical-university"
-    },
+    
   ];
 
 
@@ -198,9 +187,7 @@ const NewPage = () => {
                   <tr>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]">Name of University</td>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Tution Fees in USD/Year</td>
-                    <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Tution Fees in INR/Year</td>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Hostel Fees in USD/Year</td>
-                    <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Hostel Fees in INR/Year</td>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]">Know More</td>
                 </tr></thead>
             <tbody className="text-smallTextPhone md:text-regularText align-top"> 
@@ -220,15 +207,11 @@ const NewPage = () => {
             <td className="border dark:text-white  border-black dark:border-white px-[.75vw] py-[.625vw]">
               {college.feesInUSD}
             </td>
-            <td className="border dark:text-white  border-black dark:border-white px-[.75vw] py-[.625vw]">
-              {college.feesInINR}
-            </td>
+          
             <td className="border dark:text-white  border-black dark:border-white px-[.75vw] py-[.625vw]">
               {college.hostelFeesInUSD}
             </td>
-            <td className="border dark:text-white whitespace-nowrap  border-black dark:border-white px-[.75vw] py-[.625vw]">
-              {college.hostelFeesInINR}
-            </td>
+          
             <td className="border dark:text-white whitespace-nowrap  border-black dark:border-white px-[.75vw] py-[.625vw]">
               {college.href && <TransitionLink href={college.href}>
                 Know More

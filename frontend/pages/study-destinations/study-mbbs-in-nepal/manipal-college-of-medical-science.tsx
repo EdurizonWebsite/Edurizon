@@ -34,7 +34,7 @@ const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
       text: "Tuition Fees",
-      label: "$75000",
+      label: "75,000 USD",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -56,14 +56,43 @@ const services = [
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import { TransitionLink } from '@/utils/TransitionLink';
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
+import CollegeOverviewTable from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeOverviewTable'
+import { CollegeDataOverviewInterface } from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeDataOverviewInterface'
 
-const NewPage = () => {
-  const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
+const NewPage = () => { 
+  const collegeDataOverview: {
+    label: string;
+    value: CollegeDataOverviewInterface[];
+  } = {
+    label: "Manipal College of Medical Science at a glance",
+    value: [
+      { label: "College name", value: "Manipal College of Medical Science" },
+      { label: "University affiliation", value: "KU" },
+      { label: "Recognition", value: "WHO, NMC" },
+      { label: "Year of Establishment", value: "1994" },
+      { label: "Medium of Instruction", value: "English" },
+      { label: "Course Duration", value: "4.5 years" },
+      { label: "Internship Duration", value: "1 year" },
+      { label: "NEET", value: "Mandatory" },
+      { label: "Intake", value: "September" },
+      { label: "Location", value: "Pokhara, Nepal" },
+      { label: "Hospital Bed Number", value: "750" },
+      { label: "Country Rank", value: "9" },
+      { label: "World Rank", value: "1407" },
+      { 
+        label: "Official Website", 
+        value: "https://www.manipalpokhara.edu.np" 
+      },
+      { label: "Students", value: "45,000+" },
+      { label: "Countries Represented", value: "67+" },
+      { label: "International Collaborations", value: "250+" },
+      { label: "Courses Offered", value: "350+ across 31 disciplines" },
+      { label: "Years of Education Excellence", value: "25+" },
+      { label: "Alumni", value: "3500+" },
+      { label: "Indian Style Mess", value: "Available" }
+    ]
+  };
   return (
     <>
       <Head>
@@ -124,10 +153,7 @@ const NewPage = () => {
                                       </div>
                                     ))}
                                   </div>
-                      <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                      <CallingBox/>
                     </div>
                 </div>                                 
             </div>
@@ -350,57 +376,7 @@ const NewPage = () => {
                     </section>
 
                     {/* At a galance  */}
-            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-              <h3 className="text-h6TextPhone leading-[120%]  md:text-h5Text text-left">Manipal College of Medical Science at a glance </h3>
-             
-                <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2 ">
-                <li className='font-bold'>o	College name	</li>
-                <li>Manipal College of Medical Science</li>
-                <li className='font-bold'>o	University affiliation	</li>
-                <li>KU</li>
-                <li className='font-bold'>o	Recognition</li>
-                <li>WHO, NMC</li>
-                <li className='font-bold'>o	Year of Establishment</li>
-                <li>1994</li>
-                <li className='font-bold'>o	Medium of Instruction</li>
-                <li>English</li>
-                <li className='font-bold'>o	Course Duration</li>
-                <li>4.5 years</li>
-                <li className='font-bold'>o	Internship Duration</li>
-                <li>1 year</li>
-                <li className='font-bold'>o	NEET</li>
-                <li>Mandatory</li>                
-                <li className='font-bold'>o	Intake</li>
-                <li>September</li>
-                <li className='font-bold'>o	Location</li>
-                <li>Pokhara, Nepal</li>
-                <li className='font-bold'>o	Hospital bed Number</li>
-                <li>750</li>
-                <li className='font-bold'>o	MCOMS Country Rank</li>
-                <li>9</li>
-                <li className='font-bold'>o	MCOMS World Rank</li>
-                <li>1407</li>
-                 <li className='font-bold'>o	Website</li>
-                <li><a href='wwwmanipalpokhara.edu.np'>wwwmanipalpokhara.edu.np</a></li>
-                
-
-                <li className='font-bold'>o	Uses Modern Technology
-                    <ul className='list-disc  ml-[3vw] md:ml-[1.5vw] '>
-                        <li>45,000+ STUDENTS</li>
-                        <li>67+ COUNTRIES</li>
-                        <li>250+ INTERNATIONAL COLLABORATIONS</li>
-                        <li>350+ COURSES ACROSS 31 DISCIPLINES</li>
-                        <li>25+YEARS OF WORLD CLASS EDUCATION</li>
-                        <li>3500+ ALUMNI</li>
-                    </ul>	</li>
-                <li></li>
-                <li className='font-bold'>o	Indian Style Mess</li>
-                <li></li>
-
-                
-                
-                </ul>  
-            </section>
+            <CollegeOverviewTable title={collegeDataOverview.label} data={collegeDataOverview.value}/>
 
         {/* Eligibility Criteria */}
                 <ListedTable id={eligibilityData.id} section2={eligibilityData.section2} content={eligibilityData.content} />1
@@ -408,7 +384,7 @@ const NewPage = () => {
                 <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
                 <h3 className="text-h6TextPhone leading-[120%]  md:text-h5Text  text-left">Manipal College of Medical Science Fee Structure</h3>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-                    <li>$75000 </li>
+                    <li>75,000 USD</li>
                     <li>Accommodation & Food - extra</li>
                 </ul> 
 

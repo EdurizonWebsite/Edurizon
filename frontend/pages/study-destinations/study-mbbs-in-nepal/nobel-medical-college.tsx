@@ -34,7 +34,7 @@ const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
       text: "Tuition Fees",
-      label: "52Lakh",
+      label: "75,000 USD",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -56,14 +56,40 @@ const services = [
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import { TransitionLink } from '@/utils/TransitionLink';
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
+import CollegeOverviewTable from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeOverviewTable'
+import { CollegeDataOverviewInterface } from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeDataOverviewInterface'
 
 const NewPage = () => {
-  const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
+  const collegeDataOverview: {
+    label: string;
+    value: CollegeDataOverviewInterface[];
+  } = {
+    label: "Nobel Medical College at a glance",
+    value: [
+      { label: "College name", value: "Nobel Medical College" },
+      { label: "University affiliation", value: "KU" },
+      { label: "Recognition", value: "WHO, NMC" },
+      { label: "Year of Establishment", value: "2004" },
+      { label: "Medium of Instruction", value: "English" },
+      { label: "Course Duration", value: "4.5 years" },
+      { label: "Internship Duration", value: "1 year" },
+      { label: "Country Rank", value: "6th" },
+      { label: "NEET", value: "Mandatory" },
+      { label: "Intake", value: "September" },
+      { label: "Location", value: "Biratnagar, Nepal" },
+      { label: "Number of Beds", value: "1050" },
+      { label: "Number of Specialty Services", value: "22" },
+      { label: "Number of Super Specialty Services", value: "14" },
+      { label: "Number of Diagnostic Service Departments", value: "04" },
+      { label: "Number of Teaching Staff", value: "300" },
+      { label: "Number of Medical/Technical Staff", value: "268" },
+      { label: "Number of Nursing Personnel", value: "583" },
+      { label: "Number of Support Staff", value: "210" },
+      { label: "Number of Outsource Personnel", value: "516" },
+      { label: "Daily Average Out Patients", value: "1500" }
+    ]
+  };  
   return (
     <>
       <Head>
@@ -124,10 +150,7 @@ const NewPage = () => {
                                       </div>
                                     ))}
                                   </div>
-                      <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                      <CallingBox/>
                     </div>
                 </div>                                 
             </div>
@@ -178,60 +201,8 @@ const NewPage = () => {
               </ul>     
             </section>
 
-            {/* At a galance  */}
-            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-              <h3 className="text-h6TextPhone leading-[120%]  md:text-h5Text text-left">Nobel Medical College at a glance </h3>
-             
-                <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2 ">
-                <li className='font-bold'>o	College name	</li>
-                <li>Nobel Medical College</li>
-                <li className='font-bold'>o	University affiliation	</li>
-                <li>KU</li>
-                <li className='font-bold'>o	Recognition</li>
-                <li>WHO, NMC</li>
-                <li className='font-bold'>o	Year of Establishment</li>
-                <li>2004</li>
-                <li className='font-bold'>o	Medium of Instruction</li>
-                <li>English</li>
-                <li className='font-bold'>o	Course Duration</li>
-                <li>4.5 years</li>
-                <li className='font-bold'>o	Internship Duration</li>
-                <li>1 year</li>
-                <li className='font-bold'>o	Country Rank</li>
-                <li>6th</li>
-                <li className='font-bold'>o	NEET</li>
-                <li>Mandatory</li>                
-                <li className='font-bold'>o	Intake</li>
-                <li>September</li>
-                <li className='font-bold'>o	Location</li>
-                <li>Biratnagar, Nepal</li>
-                <li className='font-bold'>o	Number of beds</li>
-                <li>1050</li>
-                <li className='font-bold'>o	Number of specialty services	</li>
-                <li>22</li>
-                <li className='font-bold'>o	Number of super specialty services	</li>
-                <li>14</li>
-
-                <li className='font-bold'>o	Number of diagnostic service departments</li>
-                <li>04</li>
-                <li className='font-bold'>o	Number of teaching staff	</li>
-                <li>300</li>
-                <li className='font-bold'>o	Number of medical/technical staff	</li>
-                <li>268</li>
-
-                <li className='font-bold'>o	Number of nursing personnel		</li>
-                <li>583</li>
-                <li className='font-bold'>o	Number of support staff	</li>
-                <li>210</li>
-                <li className='font-bold'>o	Number of outsource personnel	</li>
-                <li>516</li>
-                <li className='font-bold'>o	Daily average out patients		</li>
-                <li>1500</li>
-
-                
-                
-                </ul>  
-            </section>
+           {/* At a galance  */}
+          <CollegeOverviewTable title={collegeDataOverview.label} data={collegeDataOverview.value}/>
 
 
          <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">

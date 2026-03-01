@@ -32,8 +32,8 @@ const eligibilityData={
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tuition Fees | Hostel Fees",
-      label: "$4500 | $500",
+      text: "Tuition Fees",
+      label: "75,000 USD",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -49,20 +49,41 @@ const services = [
       icon: "/assets/Images/Icons/AcademinCoursesIcon.svg",
       text: "Amazing Fact",
       label: "EUROPE & CENTRAL ASIAN RANK - 36",
-    },
+    },  
   ];
+
+  const collegeDataOverview: {
+    label: string;
+    value: CollegeDataOverviewInterface[];
+  }= 
+    {
+      label: "B & C Medical College at a glance",
+      value: [
+        { label: "College name", value: "B & C Medical College" },
+        { label: "Year of establishment", value: "2011" },
+        { label: "University affiliation", value: "KU" },
+        { label: "Recognition", value: "WHO, NMC" },
+        { label: "Medium of Instruction", value: "English" },
+        { label: "Course Duration", value: "4.5 years" },
+        { label: "Internship Duration", value: "1 year" },
+        { label: "NEET", value: "Mandatory" },
+        { label: "Intake", value: "September" },
+        { label: "Location", value: "Jhapa, Nepal" },
+        { label: "Bedded Hospital", value: "750" },
+        { label: "Daily OPD", value: "1500" }
+      ]
+    }
+  
+
 
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import { TransitionLink } from '@/utils/TransitionLink';
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
+import { CollegeDataOverviewInterface } from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeDataOverviewInterface'
+import CollegeOverviewTable from '@/components/studyDestinationComponents/mbbs-in-nepal/collegeOverviewTable'
 
 const NewPage = () => {
-    const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
   return (
     <>
       <Head>
@@ -125,10 +146,7 @@ const NewPage = () => {
                                       </div>
                                     ))}
                                   </div>
-                      <div className='absolute right-0 bottom-[2vw] flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                      <CallingBox/>
                     </div>
                 </div>                                 
             </div>
@@ -207,37 +225,8 @@ const NewPage = () => {
                 </ul>  
             </section>
 
-            {/* Notable Medical  */}
-            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-              <h3 className="text-h6TextPhone leading-[120%]  md:text-h5Text text-left">Nobel Medical College - at a glance</h3>
-             
-                <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2 ">
-                <li className='font-bold'>o	College name	</li>
-                <li>B & C Medical College</li>
-                <li className='font-bold'>o	Year of establishment	</li>
-                <li>2011</li>
-                <li className='font-bold'>o	University affiliation	</li>
-                <li>KU</li>
-                <li className='font-bold'>o	Recognition</li>
-                <li>WHO, NMC</li>
-                <li className='font-bold'>o	Medium of Instruction</li>
-                <li>English</li>
-                <li className='font-bold'>o	Course Duration</li>
-                <li>4.5 years</li>
-                <li className='font-bold'>o	Internship Duration</li>
-                <li>1 year</li>
-                <li className='font-bold'>o	NEET</li>
-                <li>Mandatory</li>
-                <li className='font-bold'>o	Intake</li>
-                <li>September</li>
-                <li className='font-bold'>o	Location</li>
-                <li>Jhapa, Nepal</li>
-                <li className='font-bold'>o	Bedded Hospital</li>
-                <li>750</li>
-                <li className='font-bold'>o	Daily OPD</li>
-                <li>1500</li>
-                </ul>  
-            </section>
+           {/* Notable Medical  */}
+           <CollegeOverviewTable title={collegeDataOverview.label} data={collegeDataOverview.value} />
 
             
 

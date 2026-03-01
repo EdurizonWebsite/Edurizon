@@ -3,6 +3,7 @@ import ListedTable from '@/components/studyDestinationComponents/ListedTable'
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcumbs'
 import Head from 'next/head'
+import CallingBox from '@/components/studyDestinationComponents/header/callingBox'
 
 
 const eligibilityData = {
@@ -23,7 +24,7 @@ const services = [
     {
         icon: "/assets/Images/Icons/feesIcon.svg",
         text: "Tuition Fees",
-        label: "3200 USD/Year",
+        label: "3500 USD/Year",
     },
     {
         icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -43,12 +44,6 @@ const services = [
 ];
 
 const TbilisiStateMedicalUniversity = () => {
-    const callBtnFnc=()=>{
-        window.location.href = "tel:+919873381377"
-    }
-    const whatsappBtnFnc=()=>{
-        window.open('https://wa.me/919873381377?')
-    }
     return (
         <>
         <Head>
@@ -110,10 +105,7 @@ const TbilisiStateMedicalUniversity = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='relative mt-[1vw] justify-end  flex gap-[8px] text-white text-smallTextPhone md:text-regularText font-semibold'>
-                        <button onClick={callBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[10vw] md:rounded-[.675vw] p-[10px]'>+91 98733 81377</button>
-                        <button onClick={whatsappBtnFnc} className='bg-orangeChosen md:h-[3vw] w-[12vw] md:rounded-[.675vw] flex items-center justify-center p-[10px] gap-[2vw] md:gap-[.5vw] '><Image src={"/assets/Images/Icons/whatsapp.png"} alt='whatsapp' width={40} height={40} /> +91 98733 81377</button>
-                      </div>
+                        <CallingBox/>
                         </div>
                 </div>
             </div>
@@ -227,7 +219,7 @@ const TbilisiStateMedicalUniversity = () => {
                     <li className='font-bold'>o Intake</li>
                     <li>September/October & Feburary/March</li>
                     <li className='font-bold'>o Tution Fees</li>
-                    <li>$3200 yearly</li>
+                    <li>$3500 yearly</li>
                     <li className='font-bold'>o Hostel Fees</li>
                     <li>$500 yearly</li>
                     <li className='font-bold'>o Mess Fees</li>

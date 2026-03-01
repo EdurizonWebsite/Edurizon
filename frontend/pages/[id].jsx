@@ -14,7 +14,7 @@ const BlogPageDetails = ({ page }) => {
 export async function getServerSideProps(context) {
   const { id } = context.params
   const res = await fetch(
-    `https://srv757671.hstgr.cloud/wp-json/wp/v2/posts?slug=${id}&_fields=id,slug,title,content`
+    `https://srv757671.hstgr.cloud/wp-j son/wp/v2/posts?slug=${id}&_fields=id,slug,title,content`
   )
   const data = await res.json()
   const page = data[0] || null
