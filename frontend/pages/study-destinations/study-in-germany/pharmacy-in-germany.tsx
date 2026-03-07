@@ -28,7 +28,6 @@ const PharmacyInGermany = () => {
         <meta name="twitter:description" content="Explore pharmacy courses in Germany for international students. Learn about universities, scholarships, and career opportunities. https://www.edurizon.in/study-destinations/study-in-germany/pharmacy-in-germany" />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Germany" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/pharmacy-in-germany"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/pharmacy-in-germany" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}

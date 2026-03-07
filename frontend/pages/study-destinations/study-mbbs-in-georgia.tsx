@@ -373,11 +373,7 @@ const NewPage = () => {
   />
   <meta name="twitter:image:alt" content="MBBS In Georgia" />
 
-  {/* Canonical */}
-  <link
-    rel="canonical"
-    href="https://www.edurizon.in/study-destinations/study-mbbs-in-georgia"
-  />
+
   <link
     rel="alternate"
     href="https://www.edurizon.in/study-destinations/study-mbbs-in-georgia"

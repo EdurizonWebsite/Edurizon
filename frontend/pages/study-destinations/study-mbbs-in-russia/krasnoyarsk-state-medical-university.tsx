@@ -51,7 +51,6 @@ const NewPage = () => {
         <meta name="twitter:description" content="From cost of MBBS in Russia to university admission & eligibility, https://www.edurizon.in/study-destinations/study-mbbs-in-russia/krasnoyarsk-state-medical-university provides detailed information and scholarship tips for Indian students." />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Russia" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/krasnoyarsk-state-medical-university"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/krasnoyarsk-state-medical-university" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}

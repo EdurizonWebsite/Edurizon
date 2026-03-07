@@ -29,7 +29,6 @@ const Masters = () => {
 <meta name="twitter:description" content="Discover master’s programs in Germany for international students. Apply to top universities with free tuition and scholarship options https://www.edurizon.in/study-destinations/study-in-germany/masters-in-germany ." />
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
 <meta name="twitter:image:alt" content="MBBS in Germany" />
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/masters-in-germany"/>
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/masters-in-germany" hrefLang="en-in"/>
 
 

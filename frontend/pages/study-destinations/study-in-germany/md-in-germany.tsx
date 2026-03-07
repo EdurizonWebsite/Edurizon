@@ -32,7 +32,6 @@ const MD = () => {
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
 <meta name="twitter:image:alt" content="MD in Germany" />
 
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/md-in-germany" />
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/md-in-germany" hrefLang="en-in" />
 
 <script

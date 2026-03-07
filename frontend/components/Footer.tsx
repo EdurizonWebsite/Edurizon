@@ -8,7 +8,7 @@ const socialLinks = [
 ];
 
 const quickLinks = [{ name: "Home", href: "/" },
-  { name: "About Us", href: "/aboutUs" },{ name: "Study Destination", href: "/study-destinations" },
+  { name: "About Us", href: "/about-us" },{ name: "Study Destination", href: "/study-destinations" },
   { name: "Blog", href: "#" },
   { name: "Contact Us", href: "https://wa.me/919873381377?" },];
 const countries = [ { name: "Russia", href: "/study-destinations/study-mbbs-in-russia" },

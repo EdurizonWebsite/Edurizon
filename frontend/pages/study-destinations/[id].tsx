@@ -84,7 +84,6 @@ const metaData={
 <meta name="twitter:description" content="Pursue MBBS in Russia at top-ranked medical universities. Affordable fees, English-medium courses, and best options for Indian students."/>
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg"/>
 <meta name="twitter:image:alt" content="MBBS In Russia"/>
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia"/>
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia" hrefLang="en-in"/>
 
 
@@ -109,7 +108,6 @@ const metaData={
 <meta name="description" content="Study MBBS in China at Top 10 medical universities or colleges which offer quality education and affordable MBBS fees." />
 <meta name="author" content="edurizon" />
 <meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china"/>
   </Head>,
   
 }
@@ -215,9 +213,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const id  = context.params?.id;
   const countryData = countryNames[id as keyof typeof countryNames];
   if (!countryData) {
-    return <div>
-      Why not found
-      </div>
+    return {
+      notFound: true,
+    };
   }
   return {
     props: { id,countryData },

@@ -97,7 +97,6 @@ const BashkirMedicalUniversity=()=>{
                 <meta name="twitter:description" content="Discover low cost MBBS in Russia for Indian students. Get complete admission & eligibility info, cost estimates, scholarships & top universities at https://www.edurizon.in/study-destinations/study-mbbs-in-russia/bashkir-medical-university" />
                 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
                 <meta name="twitter:image:alt" content="Best Divorce Lawyer in Delhi" />
-                <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/bashkir-medical-university"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/bashkir-medical-university" hrefLang="en-in"/>
 
                 {/* Google tag (gtag.js) */}

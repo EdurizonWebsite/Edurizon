@@ -1,41 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
 import ActionAreaCard from '@/components/studyDestinationComponents/studyDestinationCard'
+import { decodeWpEntities } from '@/utils/blog/encodingConverter'
 
-const normalizeEncodedEntities = (input) => {
-  if (!input) return input
-
-  // WordPress sometimes returns entities that are escaped one or more times, e.g. "&amp;#8211;" or "&amp;amp;ndash;"
-  let out = input
-  for (let i = 0; i < 4; i += 1) {
-    const next = out.replace(/&amp;((?:#\d+|#x[0-9a-fA-F]+|[a-zA-Z][a-zA-Z0-9]+);)/g, '&$1')
-    if (next === out) break
-    out = next
-  }
-  return out
-}
-
-const decodeNumericEntities = (input) => {
-  if (!input) return input
-  return input
-    .replace(/&#(\d+);/g, (_, num) => {
-      const codePoint = Number(num)
-      return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : _
-    })
-    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => {
-      const codePoint = Number.parseInt(hex, 16)
-      return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : _
-    })
-}
-
-const decodeWpEntities = (input, { decodeNumeric = false } = {}) => {
-  const normalized = normalizeEncodedEntities(input)
-  const maybeNumeric = decodeNumeric ? decodeNumericEntities(normalized) : normalized
-
-  // Common named dash entities (kept for plain-text rendering when decodeNumeric is false)
-  return maybeNumeric.replace(/&ndash;|&mdash;/g, (m) => (m === '&ndash;' ? '–' : '—'))
-}
-
-const Blog = ({ blogs }) => {
+const Blog = ({ blogs, page, totalPages }) => {
   return (
     <div className="container mx-auto p-8 pb-16 pt-[20vw] md:pt-[7.25vw]">
       <h1 className="text-h4TextPhone md:text-h4Text font-bold text-center mb-[2vw]">
@@ -46,12 +14,34 @@ const Blog = ({ blogs }) => {
           <ActionAreaCard
             key={blog.id}
             href={`/${blog.slug}`}
-            image={blog.imageUrl || "/assets/Images/blogs/placeholder.webp"}
+            image={blog.imageUrl || '/assets/Images/blogs/placeholder.webp'}
             title={decodeWpEntities(blog.title?.rendered || '', { decodeNumeric: true })}
             category="Blog"
             description={decodeWpEntities(blog.acf?.summary || 'No description available')}
           />
         ))}
+      </div>
+
+      <div className="mt-8 flex items-center justify-center gap-4">
+        {page > 1 && (
+          <Link
+            href={{ pathname: '/blog', query: { page: page - 1 } }}
+            className="rounded-full border border-orangeChosen px-4 py-2 text-sm font-medium text-orangeChosen hover:bg-orangeChosen hover:text-white transition-colors"
+          >
+            Previous Page
+          </Link>
+        )}
+        <span className="text-sm text-gray-600">
+          Page {page} of {totalPages}
+        </span>
+        {page < totalPages && (
+          <Link
+            href={{ pathname: '/blog', query: { page: page + 1 } }}
+            className="rounded-full border border-orangeChosen px-4 py-2 text-sm font-medium text-orangeChosen hover:bg-orangeChosen hover:text-white transition-colors"
+          >
+            Next Page
+          </Link>
+        )}
       </div>
     </div>
   )
@@ -59,9 +49,18 @@ const Blog = ({ blogs }) => {
 
 
 export async function getServerSideProps(context) {
+  const perPage = 15
+  const pageParam = Array.isArray(context.query.page) ? context.query.page[0] : context.query.page
+  const page = Number.parseInt(pageParam || '1', 10) || 1
+
   const res = await fetch(
-    `https://srv757671.hstgr.cloud/wp-json/wp/v2/blogs?_fields=id,slug,title,acf&per_page=100`
+    `https://srv757671.hstgr.cloud/wp-json/wp/v2/blogs?_fields=id,slug,title,acf&per_page=${perPage}&page=${page}`
   )
+
+  if (!res.ok) {
+    return { notFound: true }
+  }
+
   const blogs = await res.json()
 
   // Fetch image URLs for each blog using the ACF thumbnail ID
@@ -83,8 +82,10 @@ export async function getServerSideProps(context) {
     })
   )
 
+  const totalPages = Number.parseInt(res.headers.get('X-WP-TotalPages') || '1', 10) || 1
+
   return {
-    props: { blogs: blogsWithImages },
+    props: { blogs: blogsWithImages, page, totalPages },
   }
 }
 

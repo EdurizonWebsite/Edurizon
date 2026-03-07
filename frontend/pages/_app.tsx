@@ -186,6 +186,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const siteUrl = "https://www.edurizon.in";
   const path = router.asPath?.split("#")[0]?.split("?")[0] || "/";
   const canonicalUrl = `${siteUrl}${path === "/" ? "" : path}`;
+  const hasCustomCanonical = router.pathname.startsWith("/study-destinations");
 
   return (
     <>
@@ -198,7 +199,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href={canonicalUrl} />
+        {/* {!hasCustomCanonical && <link rel="canonical" href={canonicalUrl} />} */}
+        <link rel="canonical" href={canonicalUrl} />  
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

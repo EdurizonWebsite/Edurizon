@@ -28,7 +28,6 @@ const MastersInPublicHealthInGermany = () => {
 <meta name="twitter:description" content="Build your career with an MPH in Germany. Explore universities, free education opportunities, and scholarships for international students." />
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
 <meta name="twitter:image:alt" content="Masters in Public Health in Germany" />
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/masters-in-public-health-in-germany" />
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/masters-in-public-health-in-germany" hrefLang="en-in" />
 
 <script

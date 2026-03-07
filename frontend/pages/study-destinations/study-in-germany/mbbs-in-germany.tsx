@@ -28,7 +28,6 @@ const MBBSInGermany = () => {
 <meta name="twitter:description" content="Study medicine in Germany at world-class universities. Learn about MBBS admission, tuition fees, scholarships, and language courses." />
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
 <meta name="twitter:image:alt" content="MBBS in Germany" />
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/mbbs-in-germany" />
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/mbbs-in-germany" hrefLang="en-in" />
 
 <script

@@ -142,10 +142,6 @@ const Ausbildung = () => {
       <meta name="twitter:image:alt" content="Ausbildung in Germany" />
 
       <link
-        rel="canonical"
-        href="https://www.edurizon.in/study-destinations/study-in-germany/ausbildung"
-      />
-      <link
         rel="alternate"
         href="https://www.edurizon.in/study-destinations/study-in-germany/ausbildung"
         hrefLang="en-in"

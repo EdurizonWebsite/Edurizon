@@ -28,7 +28,7 @@ const MSInEconomicsInGermany = () => {
         <meta name="twitter:description" content="Apply for MS in Economics in Germany. Explore free education options, scholarships, and top universities for international students. https://www.edurizon.in/study-destinations/study-in-germany/ms-in-economics-in-germany" />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Germany" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/ms-in-economics-in-germany"/>
+        <link  href="https://www.edurizon.in/study-destinations/study-in-germany/ms-in-economics-in-germany"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/ms-in-economics-in-germany" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}

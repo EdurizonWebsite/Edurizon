@@ -86,7 +86,6 @@ const NewPage=()=>{
                 <meta name="twitter:description" content="Pursue MBBS at Tajik National University. Top medical college in Tajikistan with low tuition fees, scholarships & global recognition." />
                 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
                 <meta name="twitter:image:alt" content="MBBS in Tajikistan" />
-                <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-tajikistan/tajik-national-university"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-tajikistan/tajik-national-university" hrefLang="en-in"/>
 
                 {/* Google tag (gtag.js) */}

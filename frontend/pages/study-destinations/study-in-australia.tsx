@@ -10,7 +10,6 @@ const NewPage=()=>{
                 <meta name="description" content="Study in Australia" />
                 <meta name="keywords" content="Study in Australia" />
                 <meta name="author" content="Edurizon" />
-                <link rel="canonical" href="https://www.edurizon.in/study-in-australia" />
             </Head>
             <section className="country-inner-banner dark:bg-black">
                 <div className="container pt-[4vw] pb-[4vw] md:pb-0">

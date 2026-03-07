@@ -13,25 +13,20 @@ function sleep(ms:number){
 }
 
 export const TransitionLink = ({ href, children,...props }:TransitionLinkProps)=>{
-    const router = useRouter();
+    // const router = useRouter();
 
-    const handleTransition = async(
-        e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-    )=>{
-        e.preventDefault();
-
-        const body =document.querySelector('body');
-        body?.classList.add('page-transition');
-
-        await sleep(200);
-        await router.push(href);
-        await sleep(200);
-        body?.classList.remove('page-transition');
-    }
+    const handleClick = () => {
+        const body = document.querySelector("body");
+        body?.classList.add("page-transition");
+    
+        setTimeout(() => {
+          body?.classList.remove("page-transition");
+        }, 400);
+      };
 
 
 
 
-    return <Link className="dark:text-white dark:hover:text-orange-400 transition-colors duration-300 ease-in-out" onClick={handleTransition}
+    return <Link className="dark:text-white dark:hover:text-orange-400 transition-colors duration-300 ease-in-out" onClick={handleClick}
      href={href} {...props}> {children} </Link>
 } 

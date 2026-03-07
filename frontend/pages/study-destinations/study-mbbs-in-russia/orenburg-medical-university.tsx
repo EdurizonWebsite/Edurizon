@@ -56,7 +56,6 @@ const OrenburgMedicalUniversity=()=>{
             <meta name="twitter:description" content="Compare cost of MBBS in Russia, find admission & eligibility rules and apply to universities with help from https://www.edurizon.in/study-destinations/study-mbbs-in-russia/orenburg-medical-university." />
             <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
             <meta name="twitter:image:alt" content="MBBS in Russia" />
-            <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/orenburg-medical-university"/>
             <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/orenburg-medical-university" hrefLang="en-in"/>
 
             {/* Google tag (gtag.js) */}

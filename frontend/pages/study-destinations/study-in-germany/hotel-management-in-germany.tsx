@@ -29,7 +29,6 @@ const HotelManagement = () => {
 <meta name="twitter:description" content="Build a global career in hospitality. Explore hotel management courses in Germany with affordable fees and international exposure. https://www.edurizon.in/study-destinations/study-in-germany/hotel-management-in-germany" />
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
 <meta name="twitter:image:alt" content="Hotel Management in Germany" />
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/hotel-management-in-germany" />
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/hotel-management-in-germany" hrefLang="en-in" />
 
 <script

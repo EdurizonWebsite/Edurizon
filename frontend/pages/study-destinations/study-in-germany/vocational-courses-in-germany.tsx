@@ -28,7 +28,6 @@ const VocationalCoursesInGermany = () => {
         <meta name="twitter:description" content="Choose from top Ausbildung and vocational training programs in Germany. Learn and earn while studying with global career prospects. https://www.edurizon.in/study-destinations/study-in-germany/vocational-courses-in-germany" />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Germany" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/vocational-courses-in-germany"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/vocational-courses-in-germany" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}

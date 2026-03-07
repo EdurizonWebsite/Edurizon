@@ -93,7 +93,6 @@ const NewPage=()=>{
                 <meta name="twitter:description" content="Explore free education in Germany for international students. Apply to top universities with scholarships and career opportunities." />
                 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
                 <meta name="twitter:image:alt" content="MBBS In Germany" />
-                <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany" hrefLang="en-in"/>
 
                 {/* Google tag (gtag.js) */}
@@ -115,7 +114,7 @@ const NewPage=()=>{
                     <div className="flex flex-row align-items-center ">
                     <div className="col-xl-10 col-lg-10 col-md-10 col-sm-9 col-9 ">
                         <div className="heading">
-                        <h2 className=" text-h5TextPhone md:text-h5Text">Study in Germany</h2>
+                        <h1 className=" text-h5TextPhone md:text-h5Text">Study in Germany</h1>
                         </div>
                         <Breadcrumbs/>
                     </div>

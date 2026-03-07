@@ -28,7 +28,6 @@ const PhDInGermany = () => {
         <meta name="twitter:description" content="Pursue a PhD in Germany with scholarships and low tuition fees. Learn about universities, research opportunities, and application process. https://www.edurizon.in/study-destinations/study-in-germany/phd-in-germany" />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Germany" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-in-germany/phd-in-germany"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-in-germany/phd-in-germany" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}

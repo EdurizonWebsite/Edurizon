@@ -77,10 +77,7 @@ const NewPage = () => {
   content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg"
 />
 <meta name="twitter:image:alt" content="MBBS in China" />
-<link
-  rel="canonical"
-  href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/southeast-university"
-/>
+
 <link
   rel="alternate"
   href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/southeast-university"

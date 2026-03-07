@@ -52,7 +52,6 @@ const NewPage = () => {
 <meta name="twitter:description" content="Compare cost of MBBS in Russia, find admission & eligibility rules and apply to universities with help from Discover affordable MBBS in China, admission process, and fee structure with scholarship details at https://www.edurizon.in/study-destinations/study-mbbs-in-china/zhejiang-university"/>
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg"/>
 <meta name="twitter:image:alt" content="MBBS in China"/>
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/zhejiang-university"/>
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/zhejiang-university" hrefLang="en-in"/>
 
 

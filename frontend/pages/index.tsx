@@ -14,56 +14,13 @@ const FAQSection = dynamic(() => import("../components/landingPage/FAQSection"),
 const AssociatedUniversitiesSection = dynamic(() => import("../components/landingPage/AssociatedUniversitiesSection"), { ssr: false });
 
 const Home = () => {
-  // const [showConsultationForm, setShowConsultationForm] = useState(false);
-  
 
-  // useEffect(() => {
-  //       if (showConsultationForm) {
-  //         document.body.style.overflow = "hidden"; // Disable scrolling
-  //       } else {
-  //         document.body.style.overflow = "auto"; // Enable scrolling
-  //       }
-  //       return () => {
-  //         document.body.style.overflow = "auto"; // Cleanup on unmount
-  //       };
-  //     }, [showConsultationForm]);
-
-  // useEffect(() => {
-  //   const timeouts: NodeJS.Timeout[] = [];
-  
-  //   const showFormAtIntervals = () => {
-  //     timeouts.push(
-  //       setTimeout(() => {
-  //         setShowConsultationForm(true);
-  //       }, 5 * 1000) // After 30 seconds
-  //     );
-  
-  //     timeouts.push(
-  //       setTimeout(() => {
-  //         setShowConsultationForm(true);
-  //       }, 20 * 1000) // After 5 minutes
-  //     );
-  
-  //     timeouts.push(
-  //       setTimeout(() => {
-  //         setShowConsultationForm(true);
-  //       },  40* 1000) // After 20 minutes
-  //     );
-  //   };
-  
-  //   showFormAtIntervals();
-  
-  //   // Clean up on unmount
-  //   return () => {
-  //     timeouts.forEach(clearTimeout);
-  //   };
-  // }, []);
   
   return (
     <> 
     <Head>
         <title>Study MBBS Abroad, MBBS Abroad for Indian Students | Edurizon</title>
-        <meta name="description" content="Edurizon offers affordable education, global exposure & easy admission to Study MBBS Abroad for Indian Students." />
+        <meta name="description" content="Edurizon offers affordable MBBS abroad options with global exposure, trusted universities, and complete admission support for Indian students." />
         <meta name="keywords" content="Study MBBS Abroad, MBBS Abroad for Indian Students" />
         <meta name="author" content="Edurizon" />
       </Head>

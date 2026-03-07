@@ -50,7 +50,6 @@ const NewPage=()=>{
                 <meta name="twitter:description" content="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/north-western-state-medical-university helps Indian students find low cost MBBS in Russia, with info about university rankings, admission & scholarship." />
                 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
                 <meta name="twitter:image:alt" content="MBBS in Russia" />
-                <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/north-western-state-medical-university"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/north-western-state-medical-university" hrefLang="en-in"/>
 
                 {/* Google tag (gtag.js) */}
@@ -265,7 +264,7 @@ const NewPage=()=>{
                 <tr>
                   <th scope="row">Authorisation Letter</th>
                   <td>
-                    <a href="assets/pdf/authorisation-letter-north-western-mtate-medical-university.pdf" target="_blank">
+                    <a href="../../assets/pdf/authorisation-letter-north-western-state-medical-university.pdf" target="_blank">
                       <i className="fas fa-file-pdf" ></i> <b>North-Western State Medical University</b>
                     </a>
                   </td>

@@ -31,7 +31,7 @@ const Navbar = () => {
   const [studyDestinationHover, setStudyDestinationHover] = useState(0);
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/aboutUs" },
+    { name: "About Us", href: "/about-us" },
     { name: "Study Destinations", href: "/study-destinations?category=Destination", dropdown: true , borderTop: true },
     { name: "Blogs", href: "/blog", external: false },
     // { name: "Budget Calculator", href: "#" },

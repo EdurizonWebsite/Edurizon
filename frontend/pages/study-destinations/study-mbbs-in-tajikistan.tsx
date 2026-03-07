@@ -210,11 +210,7 @@ const NewPage=()=>{
   />
   <meta name="twitter:image:alt" content="MBBS In Tajikistan" />
 
-  {/* Canonical */}
-  <link
-    rel="canonical"
-    href="https://www.edurizon.in/study-destinations/study-mbbs-in-tajikistan"
-  />
+  
   <link
     rel="alternate"
     href="https://www.edurizon.in/study-destinations/study-mbbs-in-tajikistan"

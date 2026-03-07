@@ -48,7 +48,6 @@ const NewPage=()=>{
                 <meta name="twitter:description" content="Visit https://www.edurizon.in/study-destinations/study-mbbs-in-russia/northern-state-medical-university for clear details on MBBS in Russia cost, admission steps, eligibility & how to get scholarships." />
                 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
                 <meta name="twitter:image:alt" content="MBBS in Russia" />
-                <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/northern-state-medical-university"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/northern-state-medical-university" hrefLang="en-in"/>
 
                 {/* Google tag (gtag.js) */}

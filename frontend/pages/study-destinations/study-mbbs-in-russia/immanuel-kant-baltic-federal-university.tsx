@@ -51,7 +51,6 @@ const ImmanuelKantBalticFederalUniversity = () => {
         <meta name="twitter:description" content="Learn the true cost of MBBS in Russia, scholarship options and best university admission process for Indian students on https://www.edurizon.in/study-destinations/study-mbbs-in-russia/immanuel-kant-baltic-federal-university" />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Russia" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/immanuel-kant-baltic-federal-university"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-russia/immanuel-kant-baltic-federal-university" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}
@@ -353,7 +352,7 @@ const ImmanuelKantBalticFederalUniversity = () => {
         <div className="heading">
           <h4>Authorisation Letter of Immanuel Kant Baltic Federal University</h4>
         </div>
-        <div className="card p-2 d-inline-block"><p className="mb-0"><a href="assets/pdf/authorisation-letter-of-lmmanuel-kant-baltic-federal-university.pdf" target="_blank"><b><i className="fas fa-file-pdf"></i> Authorisation Letter</b></a></p></div>
+        <div className="card p-2 d-inline-block"><p className="mb-0"><a href="../../assets/pdf/authorisation-letter-of-lmmanuel-kant-baltic-federal-university.pdf" target="_blank"><b><i className="fas fa-file-pdf"></i> Authorisation Letter</b></a></p></div>
       </div>
     </div>
   </div>

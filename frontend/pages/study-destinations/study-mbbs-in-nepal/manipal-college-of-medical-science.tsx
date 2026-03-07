@@ -117,7 +117,6 @@ const NewPage = () => {
         <meta name="twitter:description" content="Know all about Manipal College of Medical Sciences MBBS program, fee details, and scholarship info at https://www.edurizon.in/study-destinations/study-mbbs-in-nepal/manipal-college-of-medical-science." />
         <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
         <meta name="twitter:image:alt" content="MBBS in Nepal" />
-        <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-nepal/manipal-college-of-medical-science"/>
         <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-nepal/manipal-college-of-medical-science" hrefLang="en-in"/>
 
         {/* Google tag (gtag.js) */}
@@ -141,7 +140,7 @@ const NewPage = () => {
                 <div className='bg-linenChosen flex flex-col md:flex-row gap-[3vw] items-center w-full text-black'>
                     <Image className='w-full md:w-[40.625vw] h-full' src={"/assets/Images/mbbs-in-nepal/manipal-college-of-medical-science.png"} alt='college Image' width={650} height={550}/>
                     <div className='relative mx-[6vw] md:mx-0 py-[4vw]'>
-                      <h2 className='font-bold text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw]'>Manipal College of Medical Science</h2>
+                      <h1 className='font-bold text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw]'>Manipal College of Medical Science</h1>
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-[2.25vw]  md:gap-[.75vw] items-center  justify-center">
                                     {services.map((item, index) => (
                                       <div key={index} className="w-full md:w-[16.5vw] relative mx-auto shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] 

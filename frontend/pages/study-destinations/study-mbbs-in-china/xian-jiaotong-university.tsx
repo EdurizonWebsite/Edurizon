@@ -82,7 +82,6 @@ const XianJiaotongUniversity = () => {
                 <meta name="twitter:description" content="Explore MBBS at Xi'an Jiaotong University in China. C9 League member, Project 985, Double First-Class, with affordable fees for Indian students." />
                 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg" />
                 <meta name="twitter:image:alt" content="MBBS in China" />
-                <link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/xian-university"/>
                 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-china/xian-university" hrefLang="en-in"/>
             </Head>
             <div className='text-justify'>

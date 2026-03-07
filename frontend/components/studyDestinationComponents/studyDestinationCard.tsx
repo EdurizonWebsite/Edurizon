@@ -28,7 +28,7 @@ export default function ActionAreaCard({ category, image, title, description, hr
     <TransitionLink href={href}>
     <div className='shadow-[3px_4px_4px_rgba(0,_0,_0,_0.25)] md:rounded-[1.875vw] overflow-hidden dark:shadow-[2px_3px_14.3px_rgba(255,_255,_255,_0.25)]'  style={{ maxWidth:innerWidth>768? 416:300,borderRadius: innerWidth>768? '16px':'8px' }}>
       <CardActionArea className='bg-black' > 
-        <Image src={image} alt={title} width={140} height={140} layout='responsive' className='max-h-[415px] overflow-hidden' />
+        <Image src={image} alt={title} width={140} height={140} layout='responsive' className='max-h-[300px] md:max-h-[250px] overflow-hidden' />
           <div  className=' dark:bg-black text-black dark:text-white font-roboto pt-[12px] md:pt-[24px] pb-[8px] md:pb-[12px] px-[8px] flex flex-col gap-[8px]'>
           <span className=' font-bold text-[12px] md:text-[14px] '>
             {category}

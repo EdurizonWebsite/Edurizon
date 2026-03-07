@@ -111,7 +111,6 @@ const OshInternationalStateMedicalUniversity = () => {
 <meta name="twitter:description" content="Study MBBS at Osh International State Medical University. Affordable fee structure, English-medium programs, and global recognition for Indian students."/>
 <meta name="twitter:image" content="https://www.edurizon.in/assets/Images/landingPage/WhyChoseUs2.svg"/>
 <meta name="twitter:image:alt" content="MBBS in Kyrgyzstan"/>
-<link rel="canonical" href="https://www.edurizon.in/study-destinations/study-mbbs-in-kyrgyzstan/osh-international-state-medical-university"/>
 <link rel="alternate" href="https://www.edurizon.in/study-destinations/study-mbbs-in-kyrgyzstan/osh-international-state-medical-university" hrefLang="en-in"/>
 
 
@@ -137,7 +136,7 @@ const OshInternationalStateMedicalUniversity = () => {
                 <div className='bg-linenChosen flex flex-col md:flex-row gap-[3vw] items-center w-full '>
                     <Image className='w-full md:w-[40.625vw] h-full' src={"/assets/Images/mbbs-in-kyrgyzstan/Osh-intenational-state-medical-university.png"} alt='college Image' width={650} height={550}/>
                     <div className='relative mx-[6vw] md:mx-0 py-[4vw]'>
-                        <h2 className='font-bold text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw] dark:text-black'>Osh International State Medical University</h2>
+                        <h1 className='font-bold text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw] dark:text-black'>Osh International State Medical University</h1>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-[2.25vw] md:gap-[.75vw] items-center justify-center">
                             {services.map((item, index) => (
                                 <div key={index} className="w-full md:w-[16.5vw] relative mx-auto shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] rounded-[3.75vw] md:rounded-[1.875vw] bg-white overflow-hidden shrink-0 flex items-center justify-start py-[3vw] md:py-[1.5vw] px-[3.875vw] md:px-[1.937vw] box-border gap-[1vw] text-center text-regularText text-black">
