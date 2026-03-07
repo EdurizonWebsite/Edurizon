@@ -134,7 +134,7 @@ const universities = [
       id: 4,
       name: "SEU, Georgian National University",
       location: "Tbilisi",
-      feesInUSD: 5500,
+      feesInUSD: 5900,
       hostelFeesInUSD: 3000,
       href: "/study-destinations/study-mbbs-in-georgia/georgian-national-university-seu"
     },

@@ -32,7 +32,7 @@ const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
       text: "Tuition Fees",
-      label: "5500 USD/Year",
+      label: "5900 USD/Year",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
