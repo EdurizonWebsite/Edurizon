@@ -98,7 +98,7 @@ const NewPage=()=>{
               <div className="row">
                   <div className="col-xl-12 col-md-12 col-12">
                       <div className="heading">
-                          <h3 className="text-h5TextPhone md:text-h5Text">Important videos of Northern State Medical University</h3>
+                          <h2 className="text-h5TextPhone md:text-h5Text">Important videos of Northern State Medical University</h2>
                       </div>
                   </div>
               </div>
@@ -132,7 +132,7 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Northern State Medical University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">Northern State Medical University</h2>
         </div>
         <p>
           Northern State Medical University is a state-run medical institution of higher education located in Arkhangelsk, Russia. It was founded in the year 1932 as Arkhangelsk State Medical Institute and later renamed Northern State
@@ -151,7 +151,7 @@ const NewPage=()=>{
           <li>Northern State Medical University is a leading and renowned medical university located in Arkhangelsk, Russia. The university was founded in 1936.</li>
         </ul>
         <div className="heading">
-          <h3>Northern State Medical University Location</h3>
+          <h2>Northern State Medical University Location</h2>
         </div>
         <ul className="points-two">
           <li>Northern State Medical University is located in Arkhangelsk, Russia. Arkhangelsk is the largest city in north European Russia.</li>
@@ -168,7 +168,7 @@ const NewPage=()=>{
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Quick Highlights of Northern State Medical University</h3>
+            <h2 className="text-h5TextPhone md:text-h5Text">Quick Highlights of Northern State Medical University</h2>
           </div>
           <div className="table-responsive">
             <table className="table table-bordered table-striped align-middle">
@@ -222,7 +222,7 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">City at a Glance</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">City at a Glance</h2>
         </div>
         <p>Arkhangelsk is a city located in the north western part of Russia, on the banks of the Northern Dvina River, near the White Sea. It is the administrative center of the Arkhangelsk Oblast.</p>
         <p>The White Sea, which is roughly 40 kilometers from Arkhangelsk, contributes to the city's windy, humid environment and frequent rains.</p>
@@ -245,7 +245,7 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Recognitions of Northern State Medical University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">Recognitions of Northern State Medical University</h2>
           <p>Several reputable international organizations, including the following, have acknowledged Northern State Medical University:</p>
         </div>
         <ul className="points-two">
@@ -263,7 +263,7 @@ const NewPage=()=>{
     <div className="row">
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Why Study at Northern State Medical University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">Why Study at Northern State Medical University</h2>
         </div>
         <ul className="points-two">
           <li>The institution has state-of-the-art, fully furnished labs. Projectors, computers, and all the medical equipment needed are present.</li>
@@ -275,7 +275,7 @@ const NewPage=()=>{
       </div>
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Faculties of Northern State Medical University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">Faculties of Northern State Medical University</h2>
         </div>
         <ul className="points-two">
           <li>Faculty of General Medicine.</li>
@@ -297,7 +297,7 @@ const NewPage=()=>{
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Fees Structure of Northern State Medical University</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Fees Structure of Northern State Medical University</h2>
             </div>
             <div className="table-responsive">
               <table className="table table-bordered table-striped align-middle">
@@ -318,13 +318,13 @@ const NewPage=()=>{
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <div className="heading">
-              <h3 className="pt-[1vw] text-h5TextPhone md:text-h5Text">The other charges which are included in your total budget</h3>
+              <h2 className="pt-[1vw] text-h5TextPhone md:text-h5Text">The other charges which are included in your total budget</h2>
             </div> 
             <p>Visa Renewal, Medical checkup, Medical insurance, Biometric, Food optional (Self/Mess), and Air Ticket will be extra.</p>
           </div>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="pt-[1vw] text-h5TextPhone md:text-h5Text">Northern State Medical University Russia Fees in Indian Rupees</h3>
+              <h2 className="pt-[1vw] text-h5TextPhone md:text-h5Text">Northern State Medical University Russia Fees in Indian Rupees</h2>
             </div>
             <div className="table-responsive">
               <table className="table table-bordered table-striped align-middle">
@@ -339,7 +339,7 @@ const NewPage=()=>{
           </div>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3  className="text-h5TextPhone md:text-h5Text">Eligibility Criteria for Admission in Northern State Medical University</h3>
+              <h2  className="text-h5TextPhone md:text-h5Text">Eligibility Criteria for Admission in Northern State Medical University</h2>
             </div>
             <p><b>The following requirements must be met by any Indian student wishing to study MBBS in Russia Northern State Medical University:</b></p>
             <ul className="points-two">
@@ -362,7 +362,7 @@ const NewPage=()=>{
         <div className="row"> 
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Northern State Medical University Hostel</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Northern State Medical University Hostel</h2>
             </div>
             <ul className="points-two">
               <li>Rooms are equipped with modern facilities. </li>
@@ -389,7 +389,7 @@ const NewPage=()=>{
         <div className="row"> 
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Northern State Medical University Ranking 2023-2024</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Northern State Medical University Ranking 2023-2024</h2>
             </div>
             <ul className="points-two"> 
               <li>Northern State Medical University ranking 2023-2024.</li>
@@ -409,7 +409,7 @@ const NewPage=()=>{
         <div className="row"> 
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Northern State Medical University Russia Review</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Northern State Medical University Russia Review</h2>
             </div>
             <ul className="points-two">
               <li>Northern State Medical University in Arkhangelsk, Russia, was known for offering medical education in various fields. It was established in the year 1936 and is one of the leading medical universities in the northwest region of Russia.</li>
@@ -428,7 +428,7 @@ const NewPage=()=>{
         <div className="row"> 
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Northern State Medical UniversityOfficial Website</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Northern State Medical UniversityOfficial Website</h2>
             </div>
             <p><b><a href="https://nsmu.ru/" target="_blank"><i className="fas fa-globe" aria-hidden="true"></i> Nsmu.ru</a></b></p>
             <p><b><a href="mailto:interdean@nsmu.ru" target="_blank"><i className="fas fa-envelope"></i> interdean@nsmu.ru</a></b></p>
@@ -443,7 +443,7 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0"> 
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Documents Required for Northern State Medical University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">Documents Required for Northern State Medical University</h2>
           <p><b>The following documents must be submitted as part of the Northern State Medical University MBBS admissions process:</b></p>
         </div>
         <ul className="points-two">
@@ -458,7 +458,7 @@ const NewPage=()=>{
   </div>
 </section> 
 <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] my-[10vw] md:my-[1vw]">
-              <h3 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h3>
+              <h2 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h2>
 
               <div className='relative md:flex gap-[4vw] md:gap-[1vw] justify-center'>
                 <Image src={"/assets/Images/authorization/russia/Russia4.jpg"} className='w-full md:w-[20vw] h-auto' width={1080} height={1080} alt='isbu1'/>

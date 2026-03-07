@@ -129,7 +129,7 @@ const NewPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="mt-0">Important Videos of University / Student & Parent Review</h3>
+                            <h2 className="mt-0">Important Videos of University / Student & Parent Review</h2>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@ const NewPage = () => {
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="mt-0">About Xinjiang University</h3>
+                    <h2 className="mt-0">About Xinjiang University</h2>
                 </div>
                 <ul className="points-two">
                     <li>
@@ -243,7 +243,7 @@ const NewPage = () => {
                     <li>Xinjiang University consists of 23 colleges with more than 26,000 students enrolled. Among them are 19,000 undergraduate students, 230 doctoral and 3400 master degree candidates and over 500 overseas students.</li>
                 </ul>
                 <div className="heading">
-                    <h3>About URUMQI</h3>
+                    <h2>About URUMQI</h2>
                 </div>
                 <p>URUMQI formerly known as Dihua is the capital of the Xinjiang Uyghur Autonomous Region in the far northwest of the People's Republic of China.</p>
                 <p>
@@ -256,13 +256,13 @@ const NewPage = () => {
                 </p>
 
                 <div className="heading">
-                    <h3>Population</h3>
+                    <h2>Population</h2>
                 </div>
                 <ul className="points-two">
                     <li>With an estimated population of 3.5 million in 2015, Urumqi is the second-largest city in China's north-western interior as well as the largest in Central Asia in terms of population.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Climate</h3>
+                    <h2>Climate</h2>
                 </div>
                 <ul className="points-two">
                     <li>In Urumqi, a continental cold semi-arid climate prevails, with very large differences between summer and winter.</li>
@@ -273,7 +273,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>Faculty of Xinjiang University</h3>
+                    <h2>Faculty of Xinjiang University</h2>
                 </div>
                 <ul className="points-two">
                     <li>Xinjiang University is doing a lot of work on the formation of career trajectories for students and graduates.</li>
@@ -287,7 +287,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>Ranking</h3>
+                    <h2>Ranking</h2>
                 </div>
                 <ul className="points-two">
                     <li>In the year 2021, Xinjiang University was ranked 762th by SCImago Institutions Rankings among research universities around the world.</li>
@@ -301,7 +301,7 @@ const NewPage = () => {
                     </li>
                 </ul>
                 <div className="heading">
-                    <h3>Accommodation</h3>
+                    <h2>Accommodation</h2>
                 </div>
                 <ul className="points-two">
                     <li>Hostels are situated nearby to the university.</li>
@@ -315,7 +315,7 @@ const NewPage = () => {
                     <li>Dormitory rooms have all the required furniture items already installed. Bedding items are given to the students at their check-in. Rooms are cleaned by maintainable personnel every week.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Teacher Student Ratio</h3>
+                    <h2>Teacher Student Ratio</h2>
                 </div>
                 <ul className="points-two">
                     <li>Teacher student ratio of Xinjiang University is 1:12 which assures utmost personal care of all students by teachers.</li>
@@ -326,7 +326,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>Student Life</h3>
+                    <h2>Student Life</h2>
                 </div>
                 <ul className="points-two">
                     <li>As of now, more than 50,000 international students have chosen this University to be their destination.</li>
@@ -343,7 +343,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>Other Benefit</h3>
+                    <h2>Other Benefit</h2>
                 </div>
                 <ul className="points-two">
                     <li>Xinjiang University is one of the top and oldest University.</li>
@@ -358,7 +358,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>Scholarship</h3>
+                    <h2>Scholarship</h2>
                 </div>
                 <ul className="points-two">
                     <li>
@@ -369,7 +369,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>What are the major advantages of doing MBBS from Xinjiang University?</h3>
+                    <h2>What are the major advantages of doing MBBS from Xinjiang University?</h2>
                 </div>
                 <ul className="points-two">
                     <li>Xinjiang University is considered to be one of the top and most demanding Universities in China.</li>
@@ -380,7 +380,7 @@ const NewPage = () => {
                     <li>Students from the 3rd year start working in Hospital with patients and use modern methods of diagnostic and treatment.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Why to Choose Xinjiang University</h3>
+                    <h2>Why to Choose Xinjiang University</h2>
                 </div>
                 <ul className="points-two">
                     <li>High quality education with huge practical exposure.</li>
@@ -394,7 +394,7 @@ const NewPage = () => {
                 </ul>
 
                 <div className="heading">
-                    <h3>Basic criteria</h3>
+                    <h2>Basic criteria</h2>
                 </div>
                 <div className="table-responsive">
                     <table className="table table-bordered table-striped align-middle">
@@ -437,7 +437,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Documents Required for MBBS Admission in Xinjiang University</h3>
+                        <h2 className="mt-0">Documents Required for MBBS Admission in Xinjiang University</h2>
                     </div>
                     <ul className="points-two">
                         <li>10th, 12th Mark sheet.</li>

@@ -151,7 +151,7 @@ const NewPage = () => {
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
               <h3 className="text-h5TextPhone leading-[120%]  md:text-h3Text md:text-center text-left mb-[4vw] md:mb-[1vw]">Kathmandu Medical College</h3>
        
-              <p className='text-smallTextPhone  text-left md:text-regularText md:text-justify'>
+              <div className='text-smallTextPhone  text-left md:text-regularText md:text-justify'>
                 Kathmandu Medical College has been established in the year 1997, is a private institute which is situated in heart of Kathmandu. Kathmandu Medical College is affiliated with Kathmandu University.
                 <br/><br/>
                 Kathmandu Medical College functions from two complexes
@@ -167,7 +167,7 @@ The Kathmandu medical college has ample facilities for tutorials.  All lecture h
 
 Each room is appropriately equipped to facilitate small group discussions. Also, there are seminar rooms which hold the practice of the clinical skill, clinical courses on a variety of topics clinical meetings, and journal club meeting intended to benefit both students and staff. These activities are strongly supported by the faculty of Medical Education at Kathmandu medical college.<br/><br/>
 
-                </p>                        
+                </div>                        
             </section>
 
         

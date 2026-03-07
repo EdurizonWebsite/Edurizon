@@ -48,13 +48,13 @@ const NursingInGermany = () => {
         <Breadcrumbs />
         <div>
           <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">Nursing Degree From Germany</h1>
-          <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>GOLDEN OPPORTUNITY FOR NURSES</h5>
+          <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>GOLDEN OPPORTUNITY FOR NURSES</span>
         </div>
       </div>
       {/* <Image src={"/assets/Images/study-in-germany/ausbildungImg2.webp"} alt='nursing-in-germany' width={1920} height={1080} className='w-full h-full object-cover' /> */}
       {/* Overview Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Bachelor's Level Program</li>
           <li>Ausbildung with Placement in Germany</li>
@@ -62,7 +62,7 @@ const NursingInGermany = () => {
       </div>
       {/* Nursing Requirement Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Nursing Requirement - Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Nursing Requirement - Germany</h2>
         <ul className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>There are not enough nurses in Germany & 84,000 Nurses will be short till 2020, according to the "Rheinisch Westfälisches Institut für Wirtschaftsforschung". Till 2030 the gap will be over 200,000 Nurses.</li>
           <li>That's why Germany now starts to hire certified nurses from abroad. So far Hungary, Romania, Spain, the Philippines have sent nurses to work in German hospitals and retirement homes.</li>
@@ -70,15 +70,15 @@ const NursingInGermany = () => {
       </div>
       {/* Nursing Careers in Germany Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Nursing Careers in Germany - Program Information</h3>
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Eligibility</h4>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Nursing Careers in Germany - Program Information</h2>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Eligibility</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>10+2 with PCB (Min. 60%)</li>
           <li>Proficiency in German: B1 Level</li>
           <li>IELTS not required but students should have good knowledge of English</li>
           <li>Candidate will learn German Language B1 in India</li>
         </ul>
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Program Information</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Program Information</h3>
         <ul className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Candidates will join the Nursing Education cum Training in Germany</li>
           <li>Streams: Nursing & Health Care, Geriatric Care</li>
@@ -90,7 +90,7 @@ const NursingInGermany = () => {
       </div>
       {/* Remuneration Structure Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Germany Nurses - Remuneration Structure</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Germany Nurses - Remuneration Structure</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Salary During Course: €1000 Per Month</li>
           <li>Salary After Course: €2500 Per Month</li>
@@ -102,7 +102,7 @@ const NursingInGermany = () => {
       </div>
       {/* Advantages Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Nursing from Germany (Ausbildung) - Advantages</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Nursing from Germany (Ausbildung) - Advantages</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Low Budget Course</li>
           <li>Government & State Run Universities</li>
@@ -114,7 +114,7 @@ const NursingInGermany = () => {
       </div>
       {/* Study & Settle in Europe Program Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Study & Settle in Europe Program</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Study & Settle in Europe Program</h2>
         <ul className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Students will work on part time jobs/internships during the course and will receive salary/stipend</li>
           <li>Students can support their living expenses with such part time salary & stipend</li>
@@ -124,7 +124,7 @@ const NursingInGermany = () => {
       </div>
       {/* Advantages to Candidates Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Advantages to Candidates</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Advantages to Candidates</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Analysis of Profile and Best Solution to pursue suitable course to secure placement in Europe</li>
           <li>Entrance Test & Language Coaching arrangements, if required</li>
@@ -136,7 +136,7 @@ const NursingInGermany = () => {
       </div>
       {/* VISA Rules Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>VISA Rules</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>VISA Rules</h2>
         <ul className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Candidates will be granted student VISA to join the respective courses</li>
           <li>The Students receive TRC (Temporary Residence Card) after joining</li>
@@ -147,13 +147,13 @@ const NursingInGermany = () => {
       </div>
       {/* Settlement in Europe & Placement Support Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Settlement in Europe & Placement Support</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Settlement in Europe & Placement Support</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Candidates get good chances of placement in Europe</li>
           <li>Has tie up with universities with Placement Cell, ensuring placement of students</li>
           <li>Directly or through its European companies has Authorization from European Government authorities & companies for Placement of Eligible candidates</li>
         </ul>
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Placement Support - Important Note</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Placement Support - Important Note</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Placement Success depends on Profile, Performance, Smartness & Adaptability of the Candidate</li>
           <li>Placement & Salary will be as per prevailing Industry Norms & Rules</li>
@@ -162,7 +162,7 @@ const NursingInGermany = () => {
       </div>
       {/* Services Offered Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Services Offered</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Services Offered</h2>
         <ul className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Eligibility Verification</li>
           <li>Course & Country Selection, University Selection</li>
@@ -180,7 +180,7 @@ const NursingInGermany = () => {
       </div>
       {/* Germany Facts Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Germany: Some Facts</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Germany: Some Facts</h2>
         <ul className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Germany is one of the most densely populated countries in Europe</li>
           <li>University is free for everyone (even non-Germans)</li>
@@ -193,7 +193,7 @@ const NursingInGermany = () => {
       </div>
       {/* Final Advantages to Candidates Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Advantages to Candidates</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Advantages to Candidates</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Work Contract & Employment in German Health Facilities</li>
           <li>Local Support to Candidates till settlement</li>

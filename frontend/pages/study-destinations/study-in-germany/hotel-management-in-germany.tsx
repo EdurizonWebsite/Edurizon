@@ -52,16 +52,16 @@ const HotelManagement = () => {
         <Breadcrumbs />
         <div >
         <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">HOTEL MANAGEMENT (Dual Bachelors)</h1>
-        <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER</h5>
+        <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER</span>
         </div>
         </div>
         
 
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>BACHELOR OF ARTS IN HOTEL MANAGEMENT (B.A/ Arts)</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>BACHELOR OF ARTS IN HOTEL MANAGEMENT (B.A/ Arts)</h2>
             
-            <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Benefits:</h4>
+            <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Benefits:</h3>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>NO Tuition Fee</li>
                 <li>Monthly salary first year : EURO 700/ annually EURO 8,400 (Gross)</li>
@@ -76,7 +76,7 @@ const HotelManagement = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Program Details</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Program Details</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Duration: 3,5 years (7 semesters)</li>
                 <li>Bachelor of Arts Hotel Management (180 ECTS, FIBAA-Accredited)</li>
@@ -87,7 +87,7 @@ const HotelManagement = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Entrance requirements</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Entrance requirements</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Graduated from 12th successfully, with at least 51%</li>
                 <li>Successfully graduated from Freshman Course („Studienkolleg") with FSP-Examination</li>
@@ -103,7 +103,7 @@ const HotelManagement = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Type and content of the Program</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Type and content of the Program</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>German Language Course (480 lessons), followed by Foundation Course („Studienkolleg"), followed by Dual Bachelor of Arts in Hotel Management (provided successful passing of FSP). Medium of instruction will be German.</li>
                 <li>Successful applicants will be provided with a conditional Letter of Admission from the University and a conditional Employment Contract.</li>
@@ -113,7 +113,7 @@ const HotelManagement = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>This embedded systems includes - among others - the following:</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>This embedded systems includes - among others - the following:</h2>
             <ol className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Mock-Interview for Visa preparation service by international phone call</li>
                 <li>Visa documentation sent to India</li>
@@ -136,8 +136,8 @@ const HotelManagement = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-            in India as well as in Germany</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+            in India as well as in Germany</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Invitation letter</li>
                 <li>Accommodation assistance</li>

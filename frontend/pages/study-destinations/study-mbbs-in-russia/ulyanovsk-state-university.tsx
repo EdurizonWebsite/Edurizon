@@ -96,7 +96,7 @@ const NewPage = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Ulyanovsk State University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">Ulyanovsk State University</h2>
           <p><b>Full name:</b> The Federal State-Funded Educational Institution of Higher Education "Ulyanovsk State University".</p>
         </div>
         <p>It is a public university situated across the Volga River in Ulyanovsk, Russia. Moscow is around 440 kilometers away. With over 16,000 students, 68 majors, and six colleges, this university is among the biggest research universities in Russia. It improved its educational levels and undertook reforms. "Classical choice" served as its motto when it was founded in 1988. The institution employees 1238 seasoned professionals, the bulk of who hold doctorates; the remaining members have various science degrees.</p>
@@ -113,7 +113,7 @@ const NewPage = () => {
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Quick Highlights of Ulyanovsk State University</h3>
+            <h2 className="text-h5TextPhone md:text-h5Text">Quick Highlights of Ulyanovsk State University</h2>
             <p className="mb-4"><b>Listed below are the key highlights of Ulyanovsk State University</b></p>
           </div>
           <div className="table-responsive">
@@ -169,7 +169,7 @@ const NewPage = () => {
     <div className="row immigrate-bg">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">City at Glance</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text">City at Glance</h2>
         </div>
         <ul className="points-two">
           <li>Ulyanovsk is a city that is growing and blossoming every day. All of its residents are able to live respectable lives because to it. The city has an amazing year-round appearance thanks to its lovely parks, streets, and gardens. </li>
@@ -178,7 +178,7 @@ const NewPage = () => {
       </div>
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Affiliation and Recognition of Ulyanovsk State University</h3>
+          <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Affiliation and Recognition of Ulyanovsk State University</h2>
         </div>
         <p><b>One of Russia's top medical schools, Ulyanovsk State University is associated with and accredited by numerous Medical Councils, including:</b></p>
         <ul className="points-two">
@@ -199,7 +199,7 @@ const NewPage = () => {
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Faculties of Ulyanovsk State University</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Faculties of Ulyanovsk State University</h2>
               <p><b>There are many faculties provided by the university, some of the here:</b></p>
             </div>
             <ul className="points-three">
@@ -222,7 +222,7 @@ const NewPage = () => {
           </div>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Why Study MBBS at Ulyanovsk State University Russia?</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Why Study MBBS at Ulyanovsk State University Russia?</h2>
               <p><b>There are 6 faculties at the Samara State Medical University:</b></p>
             </div>
             <ul className="points-two">
@@ -246,7 +246,7 @@ const NewPage = () => {
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Fees Structure of Ulyanovsk State University</h3>
+              <h2 className="text-h5TextPhone md:text-h5Text">Fees Structure of Ulyanovsk State University</h2>
             </div>
             <div className="table-responsive">
               <table className="table table-bordered table-striped align-middle">
@@ -276,7 +276,7 @@ const NewPage = () => {
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Ulyanovsk State University Eligibility Criteria</h3>
+            <h2 className="text-h5TextPhone md:text-h5Text">Ulyanovsk State University Eligibility Criteria</h2>
             <p><b>Students must meet the requirements in order to be admitted to the MBBS program at Ulyanovsk State University in Russia</b></p>
           </div>
           <ul className="points-two">
@@ -295,7 +295,7 @@ const NewPage = () => {
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Required Documents During Application Process</h3>
+            <h2 className="text-h5TextPhone md:text-h5Text">Required Documents During Application Process</h2>
             <p><b>Please carry all these related documents before admission to Petrozavodsk State Medical University</b></p>
           </div>
           <ul className="points-two">

@@ -107,7 +107,7 @@ const NewPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="mt-0">Important Videos of University / Student & Parent Review</h3>
+                            <h2 className="mt-0">Important Videos of University / Student & Parent Review</h2>
                         </div>
                     </div>
                 </div>
@@ -142,25 +142,25 @@ const NewPage = () => {
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="mt-0">About Zhejiang University</h3>
+                    <h2 className="mt-0">About Zhejiang University</h2>
                 </div>
                 <p>Zhejiang University was founded in the year 1897, and is one of the oldest and prestigious university of China. The University has 37schools, colleges and departments which offers 300 graduate programs, and 140 undergraduate programs.</p>
                 <p>Zhejiang University is also included in the list of elite C9 league and is a className A Double First className University. The University consists of faculty members of more than 3,741 scholars, 10 liberal Arts and Humanities Senior Professors, 133 recipients of the National Science Fund for distinguished young scholars, 121 Chang Jiang Scholars Program Professors and 45 members from the Chinese Academy of Sciences and the Chinese Academy of Engineering.</p>
                 <p>Currently the University has a total enrollment of 54,641 students which includes graduates, undergraduates, PhD, and International students. Zhejiang University has 5 academic libraries with a total collection of more than 7.7 million volumes of textbooks making it one of the China’s highest collections of textbooks. The University has total 7 affiliated hospitals, 2 international joint institutes, boasts over 150 student organizations and 1 museum.</p>
                 <p>The University has 7 campuses, Yuquan Campus, Xixi Campus, Haining International Campus, Huajiachi Campus, Zhijiang Campus, Zijin’gang Campus, and Zhoushan campus.</p>
                 <div className="heading">
-                    <h3>Location</h3>
+                    <h2>Location</h2>
                 </div>
                 <p>Zhejiang University is located in Hangzhou, which is the most populous and the capital city of Zhejiang Province in China. The city was also rated as the best commercial city of China by Forbes. It is the third city in China to host the Asian Games in 2022 after Beijing. It is also one of the most renowned and prosperous city of China.</p>
                 <p>Some of the best known attractions of the city are City’s West Lake, and UNESCO World Heritage site. Hangzhou is famous for many tourist attraction sites like tea and silk, the ancient water towns and many more to explore.</p>
                 <div className="heading">
-                    <h3>Climate</h3>
+                    <h2>Climate</h2>
                 </div>
                 <p>The Climate of Hangzhou is mild and warm throughout the year. The city experiences enough rainfall and sunshine all the year. July is the hottest month of the year with a temperature of 29 degree centigrade.</p>
                 <p>Winter last from December till February month and January is the coldest month of the year. In winter the temperature drops down to 3 degree centigrade. There is little snowfall during the peak winter session only.</p>
                 <p>Summer season experiences good amount rainfall from mid June to September. Temperature varies in most of the season but most probably it remains warm.</p>
                 <div className="heading">
-                    <h3>Advantages of Zhejiang University </h3>
+                    <h2>Advantages of Zhejiang University </h2>
                 </div>
                 <ul className="points-two">
                     <li>QS World ranking of the University is 54.</li>
@@ -173,15 +173,15 @@ const NewPage = () => {
                     <li>The University has a high level of 7 affiliated hospitals for its students.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Intake</h3>
+                    <h2>Intake</h2>
                 </div>
                 <p>MBBS in China has probably 1 intake in a year. Generally, classes start from the month of September, so our students start departing from the first week of September only. China has very limited number of seats for International students. Almost all the seats are filled up very fast for most of the universities that is why the students are requested to Pre- book their seat from the month of December. China offers world ranked universities and most of the universities are included in C9 league.</p>
                 <div className="heading">
-                    <h3>Scholarship</h3>
+                    <h2>Scholarship</h2>
                 </div>
                 <p>China offers scholarship to International students based on their performance. Every University in China provides scholarship but they have set their own criteria for granting scholarship. Zhejiang University offers scholarship to International students from the 2nd year of study only to the top performing 5 medical students. For Scholarship apart from study full attendance is taken into consideration.</p>
                 <div className="heading">
-                    <h3>Hostel</h3>
+                    <h2>Hostel</h2>
                 </div>
                 <p>Zhejiang University has its own hostel which provides single sharing room for the students. Separate apartment is built for all boys and girls. Biometric entry of the students is compulsory in the hostel for which a card has been issued to them based on which they have to enter into their rooms. Same biometric card is required for attendance in the classes also. Apart from biometrics, hostel warden is also available in every building besides the security guards at the main entrance. CC TV camera is installed all around the campus for effective surveillance, safety and security of the students.</p>
             </div>
@@ -195,7 +195,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-md-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0 mb-3 mb-md-0">Our Director visited China</h3>
+                        <h2 className="mt-0 mb-3 mb-md-0">Our Director visited China</h2>
                     </div>
                     <div id="edurizon-photos" className="owl-carousel">
                         <div className="edu-photos">
@@ -291,7 +291,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="mt-0 mb-4">Quick Facts</h3>
+                    <h2 className="mt-0 mb-4">Quick Facts</h2>
                 </div>
                 <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -359,7 +359,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Documents Required for MBBS admission in Zhejing University</h3>
+                        <h2 className="mt-0">Documents Required for MBBS admission in Zhejing University</h2>
                     </div>
                     <ul className="points-two">
                         <li>10th, 12th Mark sheet.</li>
@@ -383,7 +383,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="mt-0">Why Choose Edurizon for admission in Zhejiang University</h3>
+                    <h2 className="mt-0">Why Choose Edurizon for admission in Zhejiang University</h2>
                 </div>
                 <ul className="points-two">
                     <li>Edurizon Pvt Ltd is an authorized agent of Zhejiang University.</li>

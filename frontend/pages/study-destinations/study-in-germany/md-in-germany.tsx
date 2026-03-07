@@ -55,13 +55,13 @@ const MD = () => {
         <Breadcrumbs />
         <div >
         <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">MD (Medicine) Program in Germany</h1>
-        <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER</h5>
+        <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER</span>
         </div>
         </div>
       
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>PROGRAM FOR INTERNATIONAL DOCTORS</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>PROGRAM FOR INTERNATIONAL DOCTORS</h2>
             <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Doctors and other medical professionals are in great demand in Germany. With the shortage of skills there is a big opportunity for these professionals. We help you with the entire process to become a recognized doctor in Germany.</p>
             
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
@@ -74,7 +74,7 @@ const MD = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Evaluation of documents</li>
                 <li>Translation of documents into German language</li>
@@ -88,7 +88,7 @@ const MD = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>The German Medical Exam contents</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>The German Medical Exam contents</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Translation German - Latin/ Latin - German</li>
                 <li>Identification of body parts</li>
@@ -101,7 +101,7 @@ const MD = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Preparation course for the Medical German exam</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Preparation course for the Medical German exam</h2>
             <p className='text-regularTextPhone md:text-regularText leading-[130%]'>(entry condition, completion of German B2 certificate)</p>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Providing lists with German vocabulary</li>
@@ -116,7 +116,7 @@ const MD = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>STEP-BY-STEP GUIDE</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>STEP-BY-STEP GUIDE</h2>
             <ol className='list-decimal pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Sign the registration form and transfer the registration fees.</li>
                 <li>In order for us to apply for on your behalf at the state office for recognition, all the relevant documents need to be translated into German by a court appointed translator. us can request an estimate of costs involved for the translation of your documents. Alternatively, the translation can be done by a certified, state-approved translator in your home country.</li>
@@ -146,7 +146,7 @@ const MD = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>PROGRAM COSTS</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>PROGRAM COSTS</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Registration Fee - 500 EUR</li>
                 <li>German intensive language course (A1 to C1, 40 weeks, 30 teaching units per week) - 8650 EUR</li>
@@ -160,8 +160,8 @@ const MD = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-            in India as well as in Germany</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+            in India as well as in Germany</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Invitation letter</li>
                 <li>Accommodation assistance</li>

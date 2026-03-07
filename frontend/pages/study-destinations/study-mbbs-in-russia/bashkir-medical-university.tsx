@@ -145,8 +145,8 @@ const BashkirMedicalUniversity=()=>{
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="text-h5TextPhone md:text-h5Text">Important Videos of University / Student & Parent Review</h3>
-                            <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                            <h2 className="text-h5TextPhone md:text-h5Text">Important Videos of University / Student & Parent Review</h2>
+                            <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                         </div>
                     </div>
                 </div>
@@ -190,8 +190,8 @@ const BashkirMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <p>Established in 1932,Bashkir State Medical University located at Ufa is one of the top and leading institutions of Russia and the center of the medical and pharmaceutical sciences of the Republic of Bashkortostan.</p>
                 <p>Initially the University started with only one Faculty that is Faculty of General Medicine. But later in 1961, it extended itself to Faculty of pediatrics and Faculty of Preventive Medicine in 1970 which was later renamed to Faculty of Preventive Medicine and Microbiology. Two more faculties - Faculty of Dentistry and Faculty of Pharmacy were extended by 1976 -1981.</p>
@@ -215,8 +215,8 @@ const BashkirMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University, UFA</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University, UFA</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <ul className="points-two">
                     <li>Bashkir State Medical University is one of the leading medical universities in Russia.</li>
@@ -227,8 +227,8 @@ const BashkirMedicalUniversity=()=>{
             </div>
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University offers following Programs</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University offers following Programs</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <ul className="points-two">
                     <li>Faculty of General Medicine (MBBS).</li>
@@ -253,8 +253,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Undergraduate Courses in Bashkir State Medical University</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Undergraduate Courses in Bashkir State Medical University</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <ul className="points-two">
                     <li>The University offers a number of undergraduate courses and is quite popular for Medical education among the International students because of its low tuition fees and excellent education system.</li>
@@ -272,8 +272,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University Admission</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University Admission</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <p>In order to get admission in Bashkir State Medical University, an Indian applicant must fulfill these requirements:</p>
                 <ul className="points-two">
@@ -293,8 +293,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University - Clinic</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University - Clinic</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <ul className="points-two">
                     <li>BSMU has a unique medical institution and a huge clinic with over 625 beds and teaching facilities. The University clinic is equipped with all modern CT and MRI facilities, up-to-date digital biplane angiography system with electrophysiology laboratory and intracardiac navigation system and single photon emission computed tomography (SPECT). More than 24000 patients are treated annually at the University clinic and more than 10000 surgeries along with 4000 babies are delivered hereunder expert supervision. </li>
@@ -305,8 +305,8 @@ const BashkirMedicalUniversity=()=>{
                     <li>Surgical robot is a rack which is performed with the help of four manipulators. The Surgeon with the help of the increased three-dimensional image of high definition (3D, HD) visualize anatomical structures in a more detailed manner, which, together with precision instruments with high freedom of movement, provides the most accurate tissue dissection. An operating surgeon, located behind the remote control console, controls the movements of the camera and manipulators and conducts the whole process. </li>
                 </ul>
                 <div className="heading">
-                    <h3 className="pt-2 text-h5TextPhone md:text-h5Text">United Center of Simulation-Based Training, Bashkir State Medical University</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="pt-2 text-h5TextPhone md:text-h5Text">United Center of Simulation-Based Training, Bashkir State Medical University</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <ul className="points-two">
                     <li>BSMU United Center of Simulation Based Training was established on 21st December 2011 according to the government decree of the Russian Federation № 1069 "On financial support for the establishment of simulation training centres in federal state budgetary institutions".But the Grand opening of the United Center of Simulation-Based Training took place on 23 November 2012 at the 80th anniversary of the Bashkir State Medical University.</li>
@@ -328,8 +328,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Students International Exchanges, Bashkir State Medical University</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Students International Exchanges, Bashkir State Medical University</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <ul className="points-two">
                     <li>BSMU Partnership with various scientific, educational, and healthcare centreshas provided students with uncountable opportunities.They get familiar withdifferent culture and traditions of other countries and regions, to conduct individual researches in foreign universities. This has helped them to improve their professional and language skills to a great extent. </li>
@@ -348,8 +348,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Quick Facts in Bashkir State Medical University</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Quick Facts in Bashkir State Medical University</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -409,8 +409,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University fees</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University fees</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -435,15 +435,15 @@ const BashkirMedicalUniversity=()=>{
                 </div>
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h4  className="pt-2 text-h6TextPhone md:text-h6Text">Bashkir State Medical University Location</h4>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h3  className="pt-2 text-h6TextPhone md:text-h6Text">Bashkir State Medical University Location</h3>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <p>Ulitsa Lenina, 3, UFA, Republic of Bashkortostan, Russia - 450008</p>
                 </div>
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h4  className="pt-2 text-h6TextPhone md:text-h6Text">Bashkir State Medical University official Website</h4>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h3  className="pt-2 text-h6TextPhone md:text-h6Text">Bashkir State Medical University official Website</h3>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div>
                 <p><a href="https://bashgmu.ru/" target="_blank"><i className="fas fa-globe" aria-hidden="true"></i> Bashgmu.ru</a></p>
                 <p><a href="mailto:bashsnu@yandex.ru" target="_blank"><i className="fas fa-envelope"></i> bashsnu@yandex.ru</a></p>
@@ -458,8 +458,8 @@ const BashkirMedicalUniversity=()=>{
         <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University Entrance Exam</h3>
-                    <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Bashkir State Medical University Entrance Exam</h2>
+                    <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                 </div> 
                 <ul className="points-two">
                     <li>Bashkir State Medical University conducts exams in respect of all international students, including Indian.</li>
@@ -471,8 +471,8 @@ const BashkirMedicalUniversity=()=>{
             </div>
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Bashkir State Medical University for Indian Students</h3>
-                <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Bashkir State Medical University for Indian Students</h2>
+                <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
             </div> 
             <ul className="points-two">
                 <li>Bashkir State Medical University (BSMU), located in Ufa, Russia, has emerged as a leading institution for medical education, attracting students from multiple corners of the globe, including India.</li>
@@ -481,8 +481,8 @@ const BashkirMedicalUniversity=()=>{
         </div>
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-            <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Bashkir State Medical University FMGE Result</h3>
-            <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+            <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Bashkir State Medical University FMGE Result</h2>
+            <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
         </div> 
         <ul className="points-two">
             <li>The FMGE result of Bashkir State Medical University is good.</li>
@@ -500,8 +500,8 @@ const BashkirMedicalUniversity=()=>{
             <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                            <h3 className="text-h5TextPhone md:text-h5Text">Admission Process in Bashkir State Medical University</h3>
-                            <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                            <h2 className="text-h5TextPhone md:text-h5Text">Admission Process in Bashkir State Medical University</h2>
+                            <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                         </div>
                         <ul className="points-two">
                             <li>We always try to advise students to apply at the earliest possible for admissions.</li>
@@ -518,8 +518,8 @@ const BashkirMedicalUniversity=()=>{
                     </div>
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Admission Dates in Bashkir State Medical University</h3>
-                        <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                        <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Admission Dates in Bashkir State Medical University</h2>
+                        <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                     </div>
                     <ul className="points-two">
                         <li>Admission for MBBS in Bashkir State Medical University generally starts from the Month of April every year.</li>
@@ -531,8 +531,8 @@ const BashkirMedicalUniversity=()=>{
                 
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                        <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Documents Required Applying for Visa in Bashkir state medical University</h3>
-                        <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                        <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Documents Required Applying for Visa in Bashkir state medical University</h2>
+                        <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                     </div>
                     <ul className="points-two">
                         <li>12th Marksheet (for attestation from Ministry of External Affairs).</li>
@@ -544,8 +544,8 @@ const BashkirMedicalUniversity=()=>{
                 </div>
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                        <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Eligibility in Bashkir state medical University</h3>
-                        <h5>MBBS in Russia – MBBS in Bashkir State Medical University</h5>
+                        <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Eligibility in Bashkir state medical University</h2>
+                        <span>MBBS in Russia – MBBS in Bashkir State Medical University</span>
                     </div>
                     <ul className="points-two">
                         <li>Above 50% in 10+2, PCBE.</li>
@@ -559,7 +559,7 @@ const BashkirMedicalUniversity=()=>{
     </div>
 </section>
 <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] my-[10vw] md:my-[1vw]">
-              <h3 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h3>
+              <h2 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h2>
 
               <div className='relative md:flex gap-[4vw] md:gap-[1vw] justify-center'>
                 <Image src={"/assets/Images/authorization/russia/Russia7.jpg"} className='w-full md:w-[20vw] h-auto' width={1080} height={1080} alt='isbu1'/>

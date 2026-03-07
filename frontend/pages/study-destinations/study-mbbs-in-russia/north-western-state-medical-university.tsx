@@ -100,8 +100,8 @@ const NewPage=()=>{
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="text-h5TextPhone md:text-h5Text">Important videos of North-Western State Medical University</h3>
-                            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+                            <h2 className="text-h5TextPhone md:text-h5Text">Important videos of North-Western State Medical University</h2>
+                            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
                         </div>
                     </div>
                 </div>
@@ -142,8 +142,8 @@ const NewPage=()=>{
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">North-Western State Medical University</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">North-Western State Medical University</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <p>
             The two oldest educational and medical establishments in Russia, St. Petersburg Medical Academy of Postgraduate Education and St. Petersburg State Medical Academy named after I. I. I. Mechnikov, merged to form North-Western
@@ -176,8 +176,8 @@ const NewPage=()=>{
             <li>North Western State Medical University has a big museum complex (Museum of forensic medicine with thanatology center, Museum of Anatomy, Museum of dentistry, SZGMU history museum).</li>
           </ul>
           <div className="heading">
-            <h3 className="pt-4 text-h5TextPhone md:text-h5Text">Why Study MBBS at North-Western State Medical University Russia?</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="pt-4 text-h5TextPhone md:text-h5Text">Why Study MBBS at North-Western State Medical University Russia?</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <ul className="points-two">
             <li>North-Western State Medical University Saint Petersburg offers the best quality education in medicine that too at an affordable cost.</li>
@@ -203,8 +203,8 @@ const NewPage=()=>{
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Quick Highlight of North-Western State Medical University</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Quick Highlight of North-Western State Medical University</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <div className="table-responsive">
             <table className="table table-bordered table-striped align-middle">
@@ -292,8 +292,8 @@ const NewPage=()=>{
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">About the Saint Petersburg City</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">About the Saint Petersburg City</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <p>Russia's Saint Petersburg is a stunning city with a vibrant past and present. Situated at the head of the Gulf of Finland on the Baltic Sea, on the Neva River, this city is the second largest in Russia.</p>
           <p>
@@ -313,8 +313,8 @@ const NewPage=()=>{
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Affiliation and Recognition of North-Western State Medical University</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Affiliation and Recognition of North-Western State Medical University</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <p>These are the renowned bodies who’ve given reputation to the North-Western State Medical University.</p>
           <ul className="points-two">
@@ -333,8 +333,8 @@ const NewPage=()=>{
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Faculties of North-Western State Medical University</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Faculties of North-Western State Medical University</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <p>North-Western State Medical University faculties differ from one department to another, encompassing various disciplines and specialties.</p>
           <ul className="points-two">
@@ -357,8 +357,8 @@ const NewPage=()=>{
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Why Study MBBS at North-Western State Medical University Russia?</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Why Study MBBS at North-Western State Medical University Russia?</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <p>The greatest pharmaceutical is available at a reasonable price from North-Western State Medical University in Saint Petersburg. This university offers affordable, high-quality medical education to all students.</p>
           <p>
@@ -380,10 +380,10 @@ const NewPage=()=>{
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Fee Structure of North-Western State Medical University 2024-25</h3>
+            <h2 className="text-h5TextPhone md:text-h5Text">Fee Structure of North-Western State Medical University 2024-25</h2>
               <p>North Western State Medical University is a well-known Russian medical institution offering quality education at reasonable costs. North Western State Medical University Fees are affordable and transparent, making it a preferred choice for Indian students seeking globally recognized MBBS programs with strong clinical exposure.
 </p>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
           </div>
           <div className="table-responsive">
             <table className="table table-bordered table-striped align-middle">
@@ -411,8 +411,8 @@ const NewPage=()=>{
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Eligibility Criteria for Admission in North-Western State Medical University</h3>
-            <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Eligibility Criteria for Admission in North-Western State Medical University</h2>
+            <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
             <p>The following requirements must be met by any Indian student wishing to study MBBS in Russia at Immanuel Kant Baltic Federal University:</p>
           </div>
           <ul className="points-two">
@@ -433,8 +433,8 @@ const NewPage=()=>{
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Documents Required for North-Western State Medical University</h3>
-              <h5>MBBS in Russia – MBBS in North-Western State Medical University</h5>
+              <h2 className="text-h5TextPhone md:text-h5Text">Documents Required for North-Western State Medical University</h2>
+              <span>MBBS in Russia – MBBS in North-Western State Medical University</span>
               <p><b>The following documents must be submitted as part of the Immanuel Kant Baltic Federal University's MBBS admissions process:</b></p>
             </div>
             <ul className="points-two">
@@ -451,7 +451,7 @@ const NewPage=()=>{
   </div>
 </section>
 <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] my-[10vw] md:my-[1vw]">
-              <h3 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h3>
+              <h2 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h2>
 
               <div className='relative md:flex gap-[4vw] md:gap-[1vw] justify-center'>
                 <Image src={"/assets/Images/authorization/russia/Russia5.jpg"} className='w-full md:w-[20vw] h-auto' width={1080} height={1080} alt='isbu1'/>

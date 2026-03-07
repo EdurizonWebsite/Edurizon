@@ -129,7 +129,7 @@ const NewPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="mt-0">Important Videos of University / Student & Parent Review</h3>
+                            <h2 className="mt-0">Important Videos of University / Student & Parent Review</h2>
                         </div>
                     </div>
                 </div>
@@ -169,13 +169,13 @@ const NewPage = () => {
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                 <div className="heading">
-                    <h3 className="mt-0">About Xiamen University</h3>
+                    <h2 className="mt-0">About Xiamen University</h2>
                 </div>
                 <p>Tan Kah Kee, a well-known patriotic overseas Chinese leader, founded Xiamen University in 1921. It was the first overseas Chinese to create a university in China. Over the past ninety years, Xiamen University has amassed a wealth of expertise in providing educational programs. The university which offers a reasonably wide variety of educational programs and have strong faculty and staff, has grown into a first-className comprehensive university in China with significant international influence.</p>
                 <p>It is now the sole university in any of China's five special economic zones. Xiamen University has a large international presence, has developed a strong faculty and staff. Xiamen University has generated over 200,000 undergraduates and graduates for the country since its foundation, as well as over 60 academicians from the Chinese Academy of Sciences (CAS) and the Chinese Academy of Engineering (CAE).</p>
                 <p>Over 270 institutes of higher education in China and overseas have inter-university collaboration relationships with Xiamen University. The campaign to teach Chinese as a foreign language is strongly promoted at Xiamen University. With institutions in North America, Europe, Africa, and other parts of the world, the university has co-founded 15 Confucius Institutes. It is the primary university most actively engaged in cross-strait educational, scientific, and cultural interactions due to its particularly excellent geographical location and advantageous personnel resources.</p>
                 <div className="heading">
-                    <h3>About Faculties</h3>
+                    <h2>About Faculties</h2>
                 </div>
                 <ul className="points-two">
                 <li>XMU currently has a faculty of over 2,600 full-time teachers and researchers, of whom 22 are the members of the Chinese Academy of Sciences or of the Chinese Academy of Engineering (including 9 who are employed simultaneously by other institutions), and 44 professors are Distinguished or Chair Professors on the Changjiang Scholars Program.</li>
@@ -190,14 +190,14 @@ const NewPage = () => {
                 <li>Xiamen University is ranked number 10 in China for medical education, demonstrating that it is a top performer among China's medical universities.</li>
                 </ul>
                 <div className="heading">
-                    <h3>University Ranking</h3>
+                    <h2>University Ranking</h2>
                 </div>
                 <ul className="points-two">
                     <li><b>QS World Rank 2022: 407</b></li>
                     <li><b>Asian University Ranking: 73</b></li>
                 </ul>
                 <div className="heading">
-                    <h3>Quick Highlights of Xiamen University China</h3>
+                    <h2>Quick Highlights of Xiamen University China</h2>
                 </div>
                 <div className="table-responsive">
                     <table className="table table-bordered table-striped align-middle">
@@ -247,7 +247,7 @@ const NewPage = () => {
                     </table>
                 </div>
                 <div className="heading">
-                    <h3>Other Benefits</h3>
+                    <h2>Other Benefits</h2>
                 </div>
                 <ul className="points-two">
                     <li>One of the best medical universities of the world with under 500 world rank.</li>
@@ -263,7 +263,7 @@ const NewPage = () => {
                     <li><b>Corner for Foreign Languages: </b> Once a week, students can attend the foreign language corner in the courtyard of the OEC college building, where students of various majors and nationalities can meet and converse in a foreign language that they both understand.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Duration of MBBS Programme</h3>
+                    <h2>Duration of MBBS Programme</h2>
                 </div>
                 <ul className="points-two">
                     <li>The duration of MBBS in Xiamen University is for 5+1 years. </li>
@@ -271,11 +271,11 @@ const NewPage = () => {
                     <li>Only 1 intake in Xiamen University which every year commences from the Month of September.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Weather</h3>
+                    <h2>Weather</h2>
                 </div>
                 <p>Xiamen, which is located in the subtropical zone, has a maritime environment with pleasant, spring-like weather throughout the year. The brilliant sunlight, pleasant breezes, lush greenery, and vibrant flowers can be enjoyed all year.</p>
                 <div className="heading">
-                    <h3>Airport Facilities</h3>
+                    <h2>Airport Facilities</h2>
                 </div>
                 <ul className="points-two">
                     <li>There is a connecting flight from New Delhi International Airport to Xiamen University.</li>
@@ -285,7 +285,7 @@ const NewPage = () => {
                     85 km to Quanzhou Jinjiang Airport (JJN / ZSQZ)</li>
                 </ul>
                 <div className="heading">
-                    <h3>Basic Criteria</h3>
+                    <h2>Basic Criteria</h2>
                 </div>
                 <ul className="points-two">
                     <li><b>Minimum percentage for MBBS: </b> 70% PCBE.</li>
@@ -304,7 +304,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Chinese Government Scholarship</h3>
+                        <h2 className="mt-0">Chinese Government Scholarship</h2>
                     </div>
                     <ul className="points-two">
                         <li>International students studying in China are eligible for Chinese Government Scholarship that is being awarded by the Chinese Scholarship Council (CSC). </li>
@@ -313,7 +313,7 @@ const NewPage = () => {
                         <li>At present 289 Chinese Universities are designated to offer a wide range of programs in science, engineering, fine arts, philosophy, economics, medicine, legal studies, agriculture, history, literature and management under the CSC Scholarship scheme at all levels.</li>
                     </ul>
                     <div className="heading">
-                        <h3>Documents Required for Chinese Government Scholarship</h3>
+                        <h2>Documents Required for Chinese Government Scholarship</h2>
                     </div>
                     <ul className="points-two">
                         <li>A duly filled application form.</li>
@@ -335,7 +335,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-md-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0 mb-3 mb-md-0">Our Director visited China</h3>
+                        <h2 className="mt-0 mb-3 mb-md-0">Our Director visited China</h2>
                     </div>
                     <div id="edurizon-photos" className="owl-carousel">
                         <div className="edu-photos">
@@ -430,7 +430,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Documents Required for MBBS Admission in Xiamen University</h3>
+                        <h2 className="mt-0">Documents Required for MBBS Admission in Xiamen University</h2>
                     </div>
                     <ul className="points-two">
                         <li>10th, 12th Mark sheet.</li>
@@ -444,7 +444,7 @@ const NewPage = () => {
                         <li>Migration & Transfer Certificate.</li>
                     </ul>
                     <div className="heading">
-                        <h3>Eligibility</h3>
+                        <h2>Eligibility</h2>
                     </div>
                     <ul className="points-two">
                         <li>An applicant must be Non-Chinese National and must possess a valid passport with a valid Chinese visa for study in China.</li>

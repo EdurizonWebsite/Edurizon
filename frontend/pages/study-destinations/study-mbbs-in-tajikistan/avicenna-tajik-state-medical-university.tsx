@@ -124,14 +124,14 @@ const AvicennaTajikStateMedicalUniversity = () => {
 
             {/* About Tajikistan */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Avicenna Tajik State Medical University (ATSMU)</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Avicenna Tajik State Medical University (ATSMU)</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Established in the year 1939, Avicenna Tajik State Medical University (ATSMU) is one of Central Asia's most respected and oldest medical institutions.</li>
                     <li>ATSMU is located in Dushanbe city, which is the capital city of Tajikistan.</li>
                     <li>ATSMU is globally recognized for its commitment to quality medical education, hands-on clinical training, and a strong community of international students — especially from India, Nepal, Bangladesh, and African nations.</li>
                     <li>Named after the world-famous physician and philosopher Avicenna (Ibn Sina), ATSMU is a center of excellence for aspiring doctors looking to pursue MBBS abroad at an affordable cost with global recognition.</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About Tajikistan – A Rising Hub for Medical Education</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About Tajikistan – A Rising Hub for Medical Education</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Tajikistan is a beautiful, landlocked country in Central Asia, bordered by China, Afghanistan, Uzbekistan, and Kyrgyzstan. It is known for its natural landscapes, friendly people, and safe environment — making it an emerging destination for international education.</li>
                     <li>Capital: Dushanbe</li>
@@ -140,7 +140,7 @@ const AvicennaTajikStateMedicalUniversity = () => {
                     <li>Climate: Moderate — warm summers, cold winters</li>
                     <li>With strong diplomatic relations with India, Tajikistan offers a welcoming atmosphere for Indian students. The country's low cost of living, cultural familiarity, and stable government make it a safe and affordable place to pursue a medical degree.</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Dushanbe – The Heart of Tajikistan</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Dushanbe – The Heart of Tajikistan</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Dushanbe, the capital and largest city of Tajikistan, is a modern and student-friendly city.</li>
                     <li>Dushanbe is a clean, green, and well-planned urban center with excellent infrastructure and international connectivity.</li>
@@ -156,7 +156,7 @@ const AvicennaTajikStateMedicalUniversity = () => {
             <div className="p-[8vw] md:p-[4vw] flex flex-col md:flex-row px-[6vw] md:px-[12.5vw] gap-[5vw] md:gap-[2vw] text-black mb-[10vw] md:mb-[4vw] items-center bg-linenChosen">
                 <div className="flex flex-col gap-[2vw] md:gap-[1vw]">
                     <div>
-                        <h3 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%] mb-[4vw] md:mb-[1vw]">Why Study MBBS at ATSMU?</h3>
+                        <h2 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%] mb-[4vw] md:mb-[1vw]">Why Study MBBS at ATSMU?</h2>
                         <ul className="list-disc list-outside pl-[2vw] md:pl-[1.5vw] text-smallTextPhone md:text-regularText">
                             <li><strong>Globally Recognized University:</strong> Approved by the National Medical Commission (NMC), India. Listed in WHO, FAIMER, ECFMG, WFME, and the World Directory of Medical Schools. Degree is valid in India, USA, UK, Canada & Europe.</li>
                             <li><strong>Affordable Medical Education:</strong> No donation or capitation fees. Annual tuition fees from ₹2.5 Lakhs. Budget-friendly accommodation and living expenses.</li>
@@ -171,7 +171,7 @@ const AvicennaTajikStateMedicalUniversity = () => {
 
             {/* At a glance Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">ATSMU at a glance</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">ATSMU at a glance</h2>
                 <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2">
                     <li className='font-bold'>o College name</li>
                     <li>Avicenna Tajik State Medical University (ATSMU)</li>
@@ -196,7 +196,7 @@ const AvicennaTajikStateMedicalUniversity = () => {
 
             {/* MBBS Program Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">ATSMU is highly popular among Indian students due to following main reasons:</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">ATSMU is highly popular among Indian students due to following main reasons:</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Limited seats thereby offered quality education</li>
                     <li>Affordable & reasonable fees & other expenses</li>
@@ -216,13 +216,13 @@ const AvicennaTajikStateMedicalUniversity = () => {
                     <li>Weather - Same like India.</li>
                     <li>Currency - Somoni</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MBBS Curriculum Highlights</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MBBS Curriculum Highlights</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Structured for Indian NMC & NEXT standards</li>
                     <li>Core subjects include: Anatomy, Physiology, Pathology, Surgery, Medicine, Pediatrics, OBGYN, Microbiology, etc.</li>
                     <li>Regular assessments, skill labs, and hospital-based learning</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Documents Required</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Documents Required</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Valid Passport</li>
                     <li>10th & 12th Mark Sheets</li>
@@ -237,7 +237,7 @@ const AvicennaTajikStateMedicalUniversity = () => {
 
             {/* Contact Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Plan Your Future with Edurizon – India's Trusted Abroad MBBS Consultant</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Plan Your Future with Edurizon – India's Trusted Abroad MBBS Consultant</h2>
                 <p className="text-smallTextPhone text-left md:text-regularText font-semibold mt-[1vw]">Edurizon Pvt. Ltd.<br/>
                 111,113,115, 1st Floor, Best Arcade, Beside Canara Bank, Near K.M. Chowk, Sector 7 Extension, Pocket 6, Sector 12 Dwarka, New Delhi – 110075<br/>
                 +91-9540994829<br/>

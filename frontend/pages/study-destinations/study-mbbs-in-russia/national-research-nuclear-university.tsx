@@ -121,7 +121,7 @@ const NewPage = () => {
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research Nuclear University MEPhI (Moscow Engineering Physics Institute), MBBS in Russia – MBBS in MEPhI</h4>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research Nuclear University MEPhI (Moscow Engineering Physics Institute), MBBS in Russia – MBBS in MEPhI</h3>
               </div>
               <p>
                 MEPhI is a public technical university in Moscow, Russia. It was founded in the year 1942 as the Moscow Mechanical Institute of Munitions, but later renamed as Moscow Mechanical Institute. Its original mission was to train
@@ -139,36 +139,36 @@ const NewPage = () => {
                 science, technology, and engineering.
               </p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">New Wave of Development</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">New Wave of Development</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <p>A new wave of university development began in the year 2009, when MEPhI became one of the only two schools in Russia that were recognized by the Russian government as National Universities.</p>
               <p>The same year MEPhI was renamed as the National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)</p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Mission of MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Mission of MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <p>
                 MEPhI empowers the world’s best nuclear technology experts and talented students to produce secure and stable energy, excel in creating applied sciences, boost human capital and economic output in various fields, support
                 industry and business, and be innovative and creative – as much as they want and can. Overall mission of MEPhI is to energize and improve people’s lives in Russia and all over the world.
               </p>
               <div className="heading">
-                <h3>Strategy of MEPhI</h3>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h2>Strategy of MEPhI</h2>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The strategic goal of MEPhI is to become a global leader in education, science and innovation in nuclear, radiation, sub-nano and nano- technologies and engineering.</li>
                 <li>It is to provide a significant contribution to an innovation-driven growth and the competitiveness of the Rosatom State Corporation and other leading Russian high-tech companies in global markets.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Values and culture of MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Values and culture of MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The culture at MEPhI is based on the principles of openness, internationalism, and innovation.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Core Values of MEPhI</h4>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Core Values of MEPhI</h3>
               </div>
               <ul className="points-two">
                 <li>Accountability for results.</li>
@@ -178,8 +178,8 @@ const NewPage = () => {
                 <li>One team.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Campus of MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Campus of MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <p><b>15 campuses</b></p>
               <ul className="points-two">
@@ -187,8 +187,8 @@ const NewPage = () => {
                 <li>It combines 12 higher education institutions and 3 colleges totalling 16200 students and over 1500 full and associate professors.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Student population in MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Student population in MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>MEPhI has about 35,000 students at branches in Moscow and in Obninsk.</li>
@@ -196,8 +196,8 @@ const NewPage = () => {
                 <li>In Obninsk there are around 4229 students, 380 professors, including 229 PhDs.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Global university</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Global university</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>MEPhI is a global university. It has adapted the European Bologna education process, and now offers BS, MS and PhD programs.</li>
@@ -208,8 +208,8 @@ const NewPage = () => {
                 <li>MEPhI is the base organization of the CIS member states for training, retraining and advanced training of the personnel in the field peaceful use of atomic energy.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Plans of MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Plans of MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -218,15 +218,15 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Own Research Reactor</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Own Research Reactor</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>We have our own pool-type research reactor, with “blue glow”, discovered by Cherenkov, one the University’s co-founders.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Graduates of MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Graduates of MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>MEPhI has undergraduate and graduate students from country like CIS, Bangladesh, Brazil, Bolivia, Bulgaria, Cuba, China, Egypt, India, Myanmar, Rwanda, Turkey, Vietnam, Zambia, and many others.</li>
@@ -240,8 +240,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">5/100 Project</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">5/100 Project</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -256,8 +256,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">MEPhI offers Unique Advantages for Education and Research:</h4>
-                <h5>MBBS in RUSSIA – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">MEPhI offers Unique Advantages for Education and Research:</h3>
+                <span>MBBS in RUSSIA – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>Compliances with the International Standards in Engineering Education.</li>
@@ -268,8 +268,8 @@ const NewPage = () => {
                 <li>Unique degree programs for professions and technologies of the future.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Faculty of National Research University, MEPhI</h4>
-                <h5>MBBS in Russia, MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Faculty of National Research University, MEPhI</h3>
+                <span>MBBS in Russia, MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The faculty at National Research University, MEPhI consists of highly qualified professors & researchers, many of whom have earned their degrees from prestigious universities around the world.</li>
@@ -280,8 +280,8 @@ const NewPage = () => {
                 <li>Some of them are members of the Academy of Sciences. The teachers deliver lectures, conduct seminars and practical classNamees.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Today, MEPhI has 09 main departments (faculties or institutes):</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Today, MEPhI has 09 main departments (faculties or institutes):</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>Institute of Nuclear Physics and Engineering.</li>
@@ -295,8 +295,8 @@ const NewPage = () => {
                 <li>Faculty of Business Informatics and Complex Systems Management.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Rankings of MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Rankings of MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -309,14 +309,14 @@ const NewPage = () => {
                 <li>In 2023 U.S. News & World Report rated the university #483 in the world.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Notable Alumni in National Research University, MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Notable Alumni in National Research University, MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>National Research University, MEPhI prepares extensive human resources for the economy of Russia, from journalists to finance professionals and managers.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Following few are Notable Alumni of MEPhI - MBBS in MEPhI</h4>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Following few are Notable Alumni of MEPhI - MBBS in MEPhI</h3>
               </div>
               <ul className="points-two">
                 <li>Nicolay Gennadiyevich Basov – Nobel Prize.</li>
@@ -329,8 +329,8 @@ const NewPage = () => {
                 <li>Lev Artsimovich – known as "the father of the Tokamak".</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Quick Highlights of National Research Nuclear University, MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Quick Highlights of National Research Nuclear University, MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <div className="table-responsive">
                 <table className="table table-bordered table-striped align-middle">
@@ -393,8 +393,8 @@ const NewPage = () => {
                 </table>
               </div>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Advantages of MBBS at National Research Nuclear University, MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Advantages of MBBS at National Research Nuclear University, MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>MEPhI is one of the top University in Russia.</li>
@@ -413,8 +413,8 @@ const NewPage = () => {
                 <li>There are many sport clubs where students go for sports activities.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Hostel & Accommodation at National Research Nuclear University, MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Hostel & Accommodation at National Research Nuclear University, MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The house consists of one bedroom suite style and shared apartments.</li>
@@ -429,8 +429,8 @@ const NewPage = () => {
                 <li>Each campus has comfortable rooms and necessary living facilities such as dining rooms, housekeeping complexes, recreation areas, libraries & sports grounds.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Library of MEPhI</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Library of MEPhI</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -457,8 +457,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Facilities for Students</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Facilities for Students</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The office gives out educational literature for temporary use. In addition to the obtained sets of textbooks, students may take additional educational literature, which is recommended by the training schedule.</li>
@@ -466,16 +466,16 @@ const NewPage = () => {
                 <li>This subscription plan has a reading room.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Student Reading Room</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Student Reading Room</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The literary fund is formed according to the student training programs and schedules. Inside the reading room, the reader may use educational and scientific literature, as well as, reference books.</li>
                 <li>The room has computer access to the library of educational publications at <a href="www.library.mephi.ru" target="_target">www.library.mephi.ru</a>(link is external)(link is external).</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Electronic Library</h4>
-                <h5>MBBS in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Electronic Library</h3>
+                <span>MBBS in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -485,8 +485,8 @@ const NewPage = () => {
                 <li>Library staff gives consultations and lectures on the modern methods of how to source, search and analyze the information. Students can sign up for a series of lectures on the library website.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Canteen & Cafeterias MEPhI</h4>
-                <h5>MBBS in Russia – MBBS IN MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Canteen & Cafeterias MEPhI</h3>
+                <span>MBBS in Russia – MBBS IN MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>MEPhI offers 3 dining halls + 1 dining hall for staff only and 4 buffets, which can serve about 1000 visitors at a time.</li>
@@ -500,8 +500,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Cost of Education and Living</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Cost of Education and Living</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The most significant advantages of studying at National Research University, MEPhI is the affordability in cost of education as well as cost of living.</li>
@@ -509,8 +509,8 @@ const NewPage = () => {
                 <li>This makes it an attractive option for Indian students seeking quality education at a reasonable and affordable cost.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Sports Facility in MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Sports Facility in MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>Studying at MEPhI is not only learning complex subjects but also a great opportunity to take up sports.</li>
@@ -524,8 +524,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Different Sport Programme in Mephi</h4>
-                <h5>Mbbs in Russia - MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Different Sport Programme in Mephi</h3>
+                <span>Mbbs in Russia - MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -550,7 +550,7 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research University MEPhI Fees structure</h4>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research University MEPhI Fees structure</h3>
               </div>
               <div className="table-responsive">
                 <table className="table table-bordered table-striped align-middle">
@@ -570,27 +570,27 @@ const NewPage = () => {
                 </table>
               </div>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research University MEPhI courses duration</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research University MEPhI courses duration</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <p>MBBS course duration in National Research University, MEPhI is 6 years including internship</p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">MEPhI General Medicine</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">MEPhI General Medicine</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>General Medicine, MBBS programme, was started in National Research University, MEPhI from 2008.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Website of National Research University, MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Website of National Research University, MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <p>
                 <b><a href="www.eng.mephi.ru" target="_blank">www.eng.mephi.ru</a></b>
               </p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Location of MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Location of MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>Kashira Hwy – 31, Moscow, Russia - 115409.</li>
@@ -598,13 +598,13 @@ const NewPage = () => {
                 <li>85 Km away from Russia.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Duration of MBBS in National Research University, MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Duration of MBBS in National Research University, MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <p>National Research University, MEPhI has 6 years MBBS programme including one year internship.</p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research University, MEPhI for Indian Student</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">National Research University, MEPhI for Indian Student</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
               </div>
               <ul className="points-two">
                 <li>The cost of studying MBBS in Russia is affordable.</li>
@@ -613,16 +613,16 @@ const NewPage = () => {
                 <li>No need to go outside Moscow as MEPhI is situated in Moscow itself.</li>
               </ul>
               <div className="">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">MBBS in National Research University, MEPhI</h4>
-                <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">MBBS in National Research University, MEPhI</h3>
+                <span>MBBS in Russia – MBBS in MEPhI</span>
                 <ul className="points-two">
                   <li>MBBS in Russia is not recognized in India but recognized globally.</li>
                   <li>MEPhI ensure to provide word className faculty and education at affordable costs.</li>
                   <li>English is the medium of instruction which breaks the barriers of communication for international students including Indian students.</li>
                 </ul>
                 <div className="heading">
-                  <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">NMC approved medical Universities in Russia</h4>
-                  <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                  <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">NMC approved medical Universities in Russia</h3>
+                  <span>MBBS in Russia – MBBS in MEPhI</span>
                 </div>
                 <ul className="points-two">
                   <li>MBBS of Russia is valid in India after passing FMGE conducted by National Board of Education (NBE).</li>
@@ -635,8 +635,8 @@ const NewPage = () => {
                   <li>Being in the WHO directory also signifies adherence to global standards in medical education.</li>
                 </ul>
                 <div className="points-two">
-                  <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">English Taught Programme</h4>
-                  <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                  <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">English Taught Programme</h3>
+                  <span>MBBS in Russia – MBBS in MEPhI</span>
                 </div>
                 <ul className="points-two">
                   <li>MEPhI offers several programs, especially in medicine, which are taught in English.</li>
@@ -644,8 +644,8 @@ const NewPage = () => {
                   <li>English-taught program ensures that language barriers do not hinder the learning experience of Indian students.</li>
                 </ul>
                 <div className="heading">
-                  <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Student Exchange Programs</h4>
-                  <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                  <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Student Exchange Programs</h3>
+                  <span>MBBS in Russia – MBBS in MEPhI</span>
                 </div>
                 <ul className="points-two">
                   <li>MEPhI participates in various student exchange programs, allowing Indian or international students to spend a considerable time at partner universities abroad.</li>
@@ -653,8 +653,8 @@ const NewPage = () => {
                   <li>Participation in such programs enhances the global perspective and gives exposure.</li>
                 </ul>
                 <div className="heading">
-                  <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Research Opportunities</h4>
-                  <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                  <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Research Opportunities</h3>
+                  <span>MBBS in Russia – MBBS in MEPhI</span>
                 </div>
                 <ul className="points-two">
                   <li>MEPhI invariably emphasizes on research & innovation thereby encouraging students to engage in scientific research projects.</li>
@@ -662,7 +662,7 @@ const NewPage = () => {
                   <li>Indian students could collaborate with faculty members on research projects, contributing to their academic & professional.</li>
                 </ul>
                 <div className="heading">
-                  <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Eligibility Criteria for Admission in National Research University, MEPhI</h4>
+                  <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Eligibility Criteria for Admission in National Research University, MEPhI</h3>
                 </div>
                 <p><b>Following eligibility criteria for Indian student who are wishing to pursue their MBBS in National Research University, MEPhI, Russia:</b></p>
                 <ul className="points-two">
@@ -671,8 +671,8 @@ const NewPage = () => {
                   <li><b>NEET requirements:</b> Must qualify NEET exam.</li>
                 </ul>
                 <div className="heading">
-                  <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Documents Required for National Research University, MEPhI</h4>
-                  <h5>MBBS in Russia – MBBS in MEPhI</h5>
+                  <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] m:pt-[1vw]">Documents Required for National Research University, MEPhI</h3>
+                  <span>MBBS in Russia – MBBS in MEPhI</span>
                 </div>
                 <p><b>The following documents are required for admission process In National Research University, MEPhI, Russia:</b></p>
                 <ul className="points-two">
@@ -692,7 +692,7 @@ const NewPage = () => {
   </div>
 </section>
 <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] my-[10vw] md:my-[1vw]">
-              <h3 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h3>
+              <h2 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h2>
 
               <div className='relative md:flex gap-[4vw] md:gap-[1vw] justify-center'>
                 <Image src={"/assets/Images/authorization/russia/Russia9.jpg"} className='w-full md:w-[30vw] h-auto' width={1080} height={1080} alt='isbu1'/>

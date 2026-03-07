@@ -127,7 +127,7 @@ const NewPage=()=>{
 
             {/* Mbbs from Tajik national University */}
             <section className="mx-[6vw] md:mx-[12.5vw] py-[10vw] md:py-[4vw]">
-              <h3 className="text-h5TextPhone leading-[120%] mb-[4vw] md:mb-[1vw] text-center md:text-h3Text">MBBS From Tajik National University</h3>
+              <h2 className="text-h5TextPhone leading-[120%] mb-[4vw] md:mb-[1vw] text-center md:text-h3Text">MBBS From Tajik National University</h2>
               <p className="text-smallTextPhone text-left md:text-regularText md:text-justify">
               Tajik National University, TNU was established by the Resolution of Soviet of Ministries of the USSR on 21st March 1947. Tajik National University started its functioning from 1st September 1848 in Dushanbe. Tajik National University is one of a leading centre in training qualified specialists for the different spheres of the national economy of the country.
 The State University of Tajikistan named after V.I. Lenin from 1957 was renamed into State University of Tajikistan in 1992 and subsequently Tajik State National University in the year 1997.
@@ -138,11 +138,11 @@ Tajik National University is the first and largest university in Tajikistan. It 
            {/* Dubane */}
            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] pt-[5vw] md:pt-[2vw] flex md:flex-row flex-col-reverse items-center gap-[6vw] md:gap-[5vw] "> 
                   <div className="flex flex-col gap-[3vw] md:gap-[1.5vw] w-full md:w-[37.5vw] flex-shrink-0 ">
-                    <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text">DUSHANBE CITY</h3>
+                    <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text">DUSHANBE CITY</h2>
                     <p className="text-smallTextPhone text-left md:text-regularText md:text-justify">Dushanbe is the capital of Tajikistan which is situated on the Varzob River. Rudaki Park which is named after a classical poet is situated on the east bank of the river.</p>
-                    <h4 className="text-h6TextPhone leading-[120%] md:text-h4Text">Tajik National University main campus</h4>
+                    <h3 className="text-h6TextPhone leading-[120%] md:text-h4Text">Tajik National University main campus</h3>
                     <p className="text-smallTextPhone text-left md:text-regularText md:text-justify">The head office of Tajik National university, TNU is located in Dushanbe city which is also capital of Tajikistan. The campus of TNU is spread over in 500 acres.</p>
-                    <h4 className="text-h6TextPhone leading-[120%] md:text-h4Text">Tajik National University - History</h4>
+                    <h3 className="text-h6TextPhone leading-[120%] md:text-h4Text">Tajik National University - History</h3>
                     <p className="text-smallTextPhone text-left md:text-regularText md:text-justify">TNU was formed on 21 March 1947. In the year 2009, a high school and Mathematics discipline were established at the university.</p>
                   </div>
                   <Image src="/assets/Images/mbbs-in-tajikistan/tajik-national-university/Tajikistan2.png" alt="Tajikistan" width={1920} height={1080} className="w-full  h-auto rounded-[4vw] md:rounded-[1vw]"/>
@@ -150,7 +150,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
            {/* Tajik National University Facilities */}
 
            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] ">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University - Facilities</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University - Facilities</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] ">Tajik National University, TNU encompasses publishing, a research library, a botanical garden, a hostel, 114 departments (107 special departments) and a military chair and high school.
                   </p>
                   <ul className="list-disc pl-[4vw] md:pl-[1.5vw] list-outside text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%]">
@@ -163,7 +163,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
 
            {/* Tajik National University Notable Alumini */}
            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] ">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University - Notable Alumini</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University - Notable Alumini</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] ">Tajik National University, TNU, prepares extensive human resources for the economy of Tajikistan, from journalists to finance professionals and managers.
                   President <a href="https://en.wikipedia.org/wiki/Emomali_Rahmon" className="underline">Emomali Rahmon</a> and the former chairman of the <a href="https://en.wikipedia.org/wiki/National_Bank_of_Tajikistan" className="underline">National Bank of Tajikistan</a> Murodali Alimardon are alumni of Tajik National University, TNU.
                   </p>
@@ -172,7 +172,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
             {/* Tajik National University Facts */}
             <section className="flex flex-col md:flex-row mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] justify-between ">
               <div className="md:w-[37.5vw] flex-shrink-0">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University - Key Facts</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University - Key Facts</h2>
                   <ul className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                     <li><strong>Type</strong> - National University like AIIMS in India</li>
                     <li><strong>Established</strong> - 21st March, 1947</li>
@@ -207,7 +207,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
 
            {/* MBBS in Indian Student */}
            <section className=" mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] gap-[vw] justify-between ">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">MBBS in Tajik Natinonal University for Indian Student</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">MBBS in Tajik Natinonal University for Indian Student</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] mb-[2vw] md:mb-[.5vw]">The cost of studying MBBS in TNU, Tajikistan is affordable just like India. TNU is highly popular among Indian students due to following main reasons:-</p>
                   <div className="flex flex-col md:flex-row gap-[3vw] md:gap-[1.5vw]  ">
                   <ul className="text-smallTextPhone text-left md:text-regularText w-full md:w-[37.5vw] flex-shrink-0 md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
@@ -237,7 +237,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
            {/*NMC approved Medical College in Tajikistan  */}
            <section className=" mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] justify-between items-center gap-[2vw] flex flex-col md:flex-row">
             <div className="md:w-[37.5vw] flex-shrink-0 ">
-              <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">NMC approved medical colleges in Tajikistan</h3>
+              <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">NMC approved medical colleges in Tajikistan</h2>
               <ul className="text-smallTextPhone text-left md:text-regularText w-full md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                 <li>MBBS of Tajikistan is valid in India after passing FMGE/NExT conducted by National Board of Education (NBE).</li>
                 <li>For Indian foreign medical graduates, the FMGE is conducted twice a year.</li>
@@ -251,13 +251,13 @@ Tajik National University is the first and largest university in Tajikistan. It 
             </div>
             <div>
               <Image src="/assets/Images/mbbs-in-tajikistan/tajik-national-university/Tajikistan4.jpg" alt="Tajikistan" width={600} height={500} className="mx-auto md:w-[20vw] h-auto rounded-[4vw] md:rounded-[1vw] "/>                  
-              <h3 className="text-smallTextPhone leading-[120%] md:text-regularText mt-[3vw] md:mt-[1.5vw] text-center ">Our Director with Head of Anatomy Department of Tajik National University</h3>
+              <h2 className="text-smallTextPhone leading-[120%] md:text-regularText mt-[3vw] md:mt-[1.5vw] text-center ">Our Director with Head of Anatomy Department of Tajik National University</h2>
             </div>
            </section>
 
             {/*TNU hostel  */}
             <section className=" mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] gap-[vw] justify-between ">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University Hostel</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Tajik National University Hostel</h2>
                   <ul className="text-smallTextPhone text-left md:text-regularText w-full md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                     <li>Tajik National University's residence halls are a collection of contemporary student campuses. They have access to all they need for a comfortable stay, independent study and scientific work, leisure, athletics, and involvement in university culture.</li>
                     <li>Each campus has comfortable rooms and necessary living facilities such as dining rooms, housekeeping complexes, recreation areas, libraries, sports grounds, gyms.</li>
@@ -271,7 +271,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
            </section>
            {/*Research Opportunity  */}
            <section className=" mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] gap-[vw] justify-between ">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Research Opportunity in Tajik National University</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Research Opportunity in Tajik National University</h2>
                   <ul className="text-smallTextPhone text-left md:text-regularText w-full md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">                
                     <li>TNU always prioritizes innovation and research, which motivates students to work on scientific research projects.</li>
                     <li>TNU boasts a large number of research centers and laboratories with state-of-the-art equipment.</li>
@@ -282,7 +282,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
            {/* Tajik National University Facts */}
            <section className="flex flex-col md:flex-row mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] gap-[8vw] md:gap-0 justify-between ">
               <div className="md:w-[36vw] flex-shrink-0">
-                    <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Step by Step Complete Admission Process</h3>
+                    <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Step by Step Complete Admission Process</h2>
                     <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%]">Following Documents are required for admission in Tajik National University.</p>
                     <ul className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                       <li>Submission of documents </li>
@@ -297,7 +297,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
               </div>
               
               <div className="md:w-[36vw] flex-shrink-0">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Documents Required for Tajik Natinonal University</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Documents Required for Tajik Natinonal University</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%]">Following Documents are required for admission in Tajik National University.</p>
                   <ul className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                     <li>10th & 12th Mark Sheets (Must Passed 12th with at least 50% in Physics, Chemistry and Biology).</li>

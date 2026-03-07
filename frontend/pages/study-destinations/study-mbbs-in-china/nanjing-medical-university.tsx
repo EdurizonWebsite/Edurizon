@@ -132,7 +132,7 @@ const NewPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="mt-0">Important Videos of University / Student & Parent Review</h3>
+                            <h2 className="mt-0">Important Videos of University / Student & Parent Review</h2>
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@ const NewPage = () => {
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="mt-0">About Nanjing Medical University</h3>
+                    <h2 className="mt-0">About Nanjing Medical University</h2>
                 </div>
                 <p>Nanjing Medical University was established in the year 1934 as Jiangsu Provincial College of Health Policy & Management. In 1957, Nanjing Medical University shifted from Zhenjiang to Nanjing & changed its name to Nanjing Medical College. In the year 1962, Nanjing Medical College became one of the first group of medical colleges in China & and finally in the year 1993 it’s renamed as Nanjing Medical University.</p>
                 <p>Nanjing Medical University has 20 schools; it has 24 affiliated hospitals & more than 50 teaching hospitals in Shanghai, Shandong, Zhejiang& Jiangsu provinces.</p>
@@ -186,21 +186,21 @@ const NewPage = () => {
                 <p>The University having a land area of eight hectares acts as a main center mainly for clinical teaching programme and research option. The University library possess not less than 1,080, 000 printed medical resources, a good number of 1,500,000 e-resources and over 6,000 journals in a variety of languages. This makes the University the main center of attraction for all the medical literature in Jiangsu province. NMU is accountable for issuing at least 11 scholastic journals. Nanjing medical university is one of the top medical universities in china for Mbbs. Students from India & other countries are preferring Nanjing Medical University for MBBS in China. In the year 2014 Nanjing medical university is ranked between 401-500 in the world.</p>
                 <p>Nanjing Medical Universiry was one of the first university to offer an English taught MBBS program as approved by Ministry of Education of the People’s Republic of China The University consist of an international exchange and cooperation programme also in which it forwards instructors overseas for studies and works with scientific research ins titutions and medical schools in the Britain, United States of America, Australia, Germany, Japan and France. By the year 2014 there were enough foreigners studying, almsost 500 foreign students in total. NMU is a partner organization with the World Health Organization.</p>
                 <div className="heading">
-                    <h3>Ranking</h3>
+                    <h2>Ranking</h2>
                 </div>
                 <p>It is ranked between 401-500 in the world.</p>
                 <p>Among the universities of China it is ranked between 26-32nd position.</p>
                 <div className="heading">
-                    <h3>Location</h3>
+                    <h2>Location</h2>
                 </div>
                 <p>Nanjing medical university is located at Jiangsu province, which is located at Eastern Central coast area of China. Nanjing is the third smallest and fourth most populous city in China. This province is very famous for Education, Finance, Technology and Tourism. Jiangsu is one of the most developed provinces in China; It has highest GDP in China. Jiangsu borders Shanghai to the south, Anhui to the west, Shandong in the north. Jiangsu has the coast line of more than 1000 km with Yellow sea & Yangtze river.</p>
                 <div className="heading">
-                    <h3>Climate</h3>
+                    <h2>Climate</h2>
                 </div>
                 <p>The average annual temperature of Nanjing is 16 degree centigrade. The temperature rises to 32 degree centigrade during the July month.</p>
                 <p>January is the coldest month of the year with an average temperature of 7 degree centigrade. Sometimes the temperature falls below -1 degree centigrade. The climate of Nanjing is defined as hot summers and cold winters. The city experiences plenty of rainfall during the whole year and occasional snowfall.</p>
                 <div className="heading">
-                    <h3>Advantages of Nanjing Medical University</h3>
+                    <h2>Advantages of Nanjing Medical University</h2>
                 </div>
                 <ul className="points-two">
                     <li>Nanjing Medical University is the best medical college in China.</li>
@@ -225,17 +225,17 @@ const NewPage = () => {
                     <li>The University is also a partner organization with the World Health Organization.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Intake</h3>
+                    <h2>Intake</h2>
                 </div>
                 <p>The Universities of China has only 1 intake in a year. Classes start from the month of September every year .So by mid of September all the students reach China. Advance booking generally starts from the month of December only. Seats are filled very fast for most of the top universities. So it is required to book in advance.</p>
                 <div className="heading">
-                    <h3>Scholarship</h3>
+                    <h2>Scholarship</h2>
                 </div>
                     <p>Nanjing Medical University is gaining popularity amongst the talented students as it carefully picks up the best talents of the country by offering them with good scholarship.The University offers Scholarship to the medical students based on their 12th percentage &amp; NEET score.So higher the score more the scholarship.</p>
                     <p>We, Edurizon Pvt Ltd have helped our students get almost 70% scholarships of their tuition fees in the year 2018. Edurizon have always maintained transparency with its students and this is the main reason why maximum number of parents and students have trusted us till today. As a practice we believe in favoring our students &amp; take all the necessary measures so that our students get higher scholarships.</p>
                     <p>Nanjing Medical University not only provides scholarship to students in the first year but also top 10 students of the university get scholarship.Top rank holder gets 50% waiver in tuition fees. Unlike other consultancy, Edurizon always believes in informing the students about the scholarship they are eligible for even if they are not aware of the fact, and that is the reason Edurizon Pvt Ltd is known as the best consultant for mbbs in china.</p>
                 <div className="heading">
-                    <h3>Hostel</h3>
+                    <h2>Hostel</h2>
                 </div>
                 <p>The University hostel is very huge and is located within the campus. There is separate hostel for both boys and girls and are provided with all facilities inside the hostel. Safety and security is very tight. Students are not allowed to enter the hostel without a biometric entry. If any outsider wants to meet the students they have to take special permission, then only they can take entry.</p>
                 
@@ -249,7 +249,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Fees Structure of Nanjing Medical University</h3>
+                        <h2 className="mt-0">Fees Structure of Nanjing Medical University</h2>
                     </div>
                 <div className="table-responsive">
                     <table className="table table-bordered table-striped align-middle">
@@ -302,7 +302,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-md-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0 mb-3 mb-md-0">Our Director visited Nanjing Medical University</h3>
+                        <h2 className="mt-0 mb-3 mb-md-0">Our Director visited Nanjing Medical University</h2>
                     </div>
                     <div id="edurizon-photos" className="owl-carousel">
                         <div className="edu-photos">
@@ -398,7 +398,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="mt-0 mb-4">Quick Facts</h3>
+                    <h2 className="mt-0 mb-4">Quick Facts</h2>
                 </div>
                 <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -466,7 +466,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Documents Required for MBBS Admission in Nanjing Medical University</h3>
+                        <h2 className="mt-0">Documents Required for MBBS Admission in Nanjing Medical University</h2>
                     </div>
                     <ul className="points-two">
                         <li>10th, 12th Mark sheet.</li>

@@ -100,8 +100,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
               <div className="row">
                   <div className="col-xl-12 col-md-12 col-12">
                       <div className="heading">
-                          <h3 className="text-h5TextPhone md:text-h5Text">Important videos of Immanuel Kant Baltic Federal University</h3>
-                          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+                          <h2 className="text-h5TextPhone md:text-h5Text">Important videos of Immanuel Kant Baltic Federal University</h2>
+                          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
                       </div>
                   </div>
               </div>
@@ -135,8 +135,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <p>
           The Baltic Federal University, also known as Immanuel Kant Baltic Federal University, is a university located in Kaliningrad, Russia. It was named after Immanuel Kant to honour his contributions to philosophy. The university
@@ -163,8 +163,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University, Kaliningrad, Russia New Campus</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University, Kaliningrad, Russia New Campus</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <p>Kaliningrad was founded by Teutonic knights in the XIII century. It became one of the cities of the Hanseatic League and was once the capital of Prussia. The philosopher Immanuel Kant spent all his life in the city and died there in 1804.</p>
         <p>Today Kaliningrad is a dynamically developing trade and industrial centre of Russia’s westernmost region. The historical legacy of many centuries, which has garnered interest in the past years, successfully intertwines with signs of the third millennium, creating a unique combination, which attracts guests from all over the world.</p>
@@ -178,8 +178,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Why Study MBBS at Immanuel Kant Baltic Federal University</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Why Study MBBS at Immanuel Kant Baltic Federal University</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>Immanuel Kant Baltic Federal is a Government University which can be equated with AIIMS.</li>
@@ -203,8 +203,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Student Life at Immanuel Kant Baltic Federal University</h3>
-            <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Student Life at Immanuel Kant Baltic Federal University</h2>
+            <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
           </div> 
           <ul className="points-two">
             <li>Extracurricular activities being conducted for the holistic development of students.</li>
@@ -225,8 +225,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal Key Figures & Facts</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal Key Figures & Facts</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>Students - 12 000+.</li>
@@ -241,8 +241,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
       </div>
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="pt-[1vw] text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal Infrastructure</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="pt-[1vw] text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal Infrastructure</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>Educational buildings  23.</li>
@@ -259,8 +259,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Application Dates for Immanuel Kant Baltic Federal University</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Application Dates for Immanuel Kant Baltic Federal University</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>Immanuel Kant Baltic Federal University admission 2024.</li>
@@ -277,8 +277,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University Entrance Exam</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University Entrance Exam</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>Entrance examinations for applicants into Bachelor programmes will be held from.</li> 
@@ -288,8 +288,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
           <li>The International General Medicine programme does not require Russian language skills.</li>
         </ul>
         <div className="heading">
-          <h3>Duration of MBBS Course in Immanuel Kant Baltic Federal University</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2>Duration of MBBS Course in Immanuel Kant Baltic Federal University</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <p>Duration of the MBBS course in Immanuel Kant Baltic Federal University, Russia is 6 years including internship.</p>
       </div>
@@ -301,8 +301,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University for Indian Students</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University for Indian Students</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>Immanuel Kant Baltic Federal University is one of the 10 Russian federal universities and it holds a leading position in education and science in the Northwestern Federal District.</li>
@@ -310,11 +310,11 @@ const ImmanuelKantBalticFederalUniversity = () => {
           <li>Several Indian students are presently pursuing their MBBS from Immanuel Kant Baltic Federal University.</li>
         </ul>
         <div className="heading">
-          <h3 className='pt-[1vw] text-h5TextPhone md:text-h5Text'>Immanuel Kant Baltic Federal University FMGE Result</h3>
+          <h2 className='pt-[1vw] text-h5TextPhone md:text-h5Text'>Immanuel Kant Baltic Federal University FMGE Result</h2>
         </div>
         <p>42.31% - 2024.</p>
         <div className="heading">
-          <h3 className='pt-[1vw] text-h5TextPhone md:text-h5Text'>Immanuel Kant Baltic Federal University Hostel</h3>
+          <h2 className='pt-[1vw] text-h5TextPhone md:text-h5Text'>Immanuel Kant Baltic Federal University Hostel</h2>
         </div>
          <ul className="points-two">
           <li>Immanuel Kant Baltic Federal University has 13 comfortable dormitories for international students. </li>
@@ -330,8 +330,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University Acceptance Rate</h3>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University Acceptance Rate</h2>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>The Immanuel Kant Baltic Federal University is a leading university of the Kaliningrad region and one of 10 federal universities of the Russian Federation.</li>
@@ -344,7 +344,7 @@ const ImmanuelKantBalticFederalUniversity = () => {
       <div className="col-xl-6 col-lg-6 col-md-6 col-12">
         <div className="heading">
           <h4>Immanuel Kant Baltic Federal University Official Website</h4>
-          <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+          <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <p><a href="https://kantiana.ru/" target="_blank"><b><i className="fas fa-globe" aria-hidden="true"></i> Kantiana.ru</b></a></p>
       </div>
@@ -363,8 +363,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="text-h5TextPhone md:text-h5Text">Quick Highlights of About Immanuel Kant Baltic Federal University</h3>
-                        <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+                        <h2 className="text-h5TextPhone md:text-h5Text">Quick Highlights of About Immanuel Kant Baltic Federal University</h2>
+                        <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
                     </div>
                     <div className="table-responsive">
                         <table className="table table-bordered align-middle">
@@ -435,8 +435,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
     <div className="row">
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University City at a Glance</h3>
-            <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Immanuel Kant Baltic Federal University City at a Glance</h2>
+            <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
           </div>
           <ul className="points-two">
             <li>Kaliningrad, a city beside the Baltic Sea, was a part of Germany for seven centuries.</li>
@@ -448,8 +448,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
         </div> 
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="mt-0">Recognitions of Immanuel Kant Baltic Federal University</h3> 
-            <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+            <h2 className="mt-0">Recognitions of Immanuel Kant Baltic Federal University</h2> 
+            <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
         </div>
         <ul className="points-two">
           <li>National Medical Commission (erstwhile Medical Council of India).</li>
@@ -469,7 +469,7 @@ const ImmanuelKantBalticFederalUniversity = () => {
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Faculties of Immanuel Kant Baltic Federal University</h3>
+            <h2 className="text-h5TextPhone md:text-h5Text">Faculties of Immanuel Kant Baltic Federal University</h2>
             <p><b>Total 4 faculties in Immanuel Kant Baltic Federal University: </b></p>
           </div> 
           <ul className="points-two">
@@ -481,8 +481,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
         </div>
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className='pt-[1vw] text-h5TextPhone md:text-h5Text'>Fee Structure of Immanuel Kant Baltic Federal University</h3>
-            <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+            <h2 className='pt-[1vw] text-h5TextPhone md:text-h5Text'>Fee Structure of Immanuel Kant Baltic Federal University</h2>
+            <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
           </div>
           <div className="table-responsive">
             <table className="table table-bordered table-striped align-middle">
@@ -511,8 +511,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Eligibility Criteria for Admission in Immanuel Kant Baltic Federal University</h3>
-            <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Eligibility Criteria for Admission in Immanuel Kant Baltic Federal University</h2>
+            <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
           </div>
           <p>The following requirements must be met by any Indian student wishing to study MBBS in Russia at Immanuel Kant Baltic Federal University:</p>
           <ul className="points-two">
@@ -532,8 +532,8 @@ const ImmanuelKantBalticFederalUniversity = () => {
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text">Documents Required for Immanuel Kant Baltic Federal University</h3>
-            <h5>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text">Documents Required for Immanuel Kant Baltic Federal University</h2>
+            <span>MBBS in Russia – MBBS in Immanuel Kant Baltic Federal University</span>
             <p><b>The following documents must be submitted as part of the Immanuel Kant Baltic Federal University's MBBS admissions process:</b></p>
           </div> 
           <ul className="points-two">

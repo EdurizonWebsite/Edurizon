@@ -123,13 +123,13 @@ const MedicalSocialInstituteOfTajikistan = () => {
 
             {/* About Tajikistan */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-            <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About MSIT, Tajikistan</h3>
+            <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About MSIT, Tajikistan</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>The Medical Social Institute of Tajikistan (MSIT) is a premier medical education institution located in the heart of Dushanbe, the capital of Tajikistan.</li>
                     <li>Established with a vision to offer high-quality and globally recognized medical education, MSIT has quickly emerged as a preferred destination for international medical aspirants, especially from India and South Asia.</li>
                     <li>MSIT is committed to academic excellence, student-centered learning, and producing competent, ethical, and skilled medical professionals. The university follows the international standards of medical education and is fully equipped with modern teaching tools, digital classrooms, laboratories, simulation centers, and a strong practical training system.</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About Tajikistan: A Safe and Friendly Study Destination</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">About Tajikistan: A Safe and Friendly Study Destination</h2>
                 <p className="text-smallTextPhone text-left md:text-regularText">Tajikistan is a Central Asian country known for its stunning mountainous landscapes, cultural richness, and peaceful society. It shares friendly relations with India and offers a welcoming atmosphere for international students.</p>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Capital: Dushanbe</li>
@@ -138,7 +138,7 @@ const MedicalSocialInstituteOfTajikistan = () => {
                     <li>Climate: Continental (pleasant weather, especially suitable for Indian students)</li>
                     <li>Religion: Majority Muslim (harmonious and tolerant society)</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Life in Dushanbe</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Life in Dushanbe</h2>
                 <p className="text-smallTextPhone text-left md:text-regularText">Dushanbe is the capital of Tajikistan which is situated on the Varzob River. Rudaki Park which is named after a classical poet is situated on the east bank of the river.<br/> It offers:</p>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Safe and affordable accommodation options</li>
@@ -153,7 +153,7 @@ const MedicalSocialInstituteOfTajikistan = () => {
             <div className="p-[8vw] md:p-[4vw] flex flex-col md:flex-row px-[6vw] md:px-[12.5vw] gap-[5vw] text-black md:gap-[2vw] mb-[10vw] md:mb-[4vw] items-center bg-linenChosen">
                 <div className="flex flex-col gap-[2vw] md:gap-[1vw]">
                     <div>
-                        <h3 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%] mb-[4vw] md:mb-[1vw] ">Why Choose MSIT for MBBS Abroad?</h3>
+                        <h2 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%] mb-[4vw] md:mb-[1vw] ">Why Choose MSIT for MBBS Abroad?</h2>
                         <ul className="list-disc list-outside pl-[2vw] md:pl-[1.5vw] text-smallTextPhone md:text-regularText">
                             <li>Globally Recognized Degree: MSIT's MBBS degree is recognized by global bodies such as WHO, FAIMER, and it is listed in the World Directory of Medical Schools (WDOMS). Graduates are eligible to sit for international licensing exams like FMGE (India), USMLE (USA), PLAB (UK), etc.</li>
                             <li>Affordable Education: Pursuing MBBS at MSIT is highly cost-effective. The tuition fees and living expenses in Tajikistan are much lower compared to private medical colleges in India or universities in countries like the USA, UK, or Australia.</li>
@@ -168,7 +168,7 @@ const MedicalSocialInstituteOfTajikistan = () => {
 
             {/* At a glance Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT at a glance</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT at a glance</h2>
                 <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2">
                     <li className='font-bold'>o College name</li>
                     <li>Medical Social Institute of Tajikistan (MSIT)</li>
@@ -195,7 +195,7 @@ const MedicalSocialInstituteOfTajikistan = () => {
 
             {/* MBBS Program Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT for Indian Students</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT for Indian Students</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Separate hostels for Indian boys and girls</li>
                     <li>Indian food in the mess</li>
@@ -211,11 +211,11 @@ const MedicalSocialInstituteOfTajikistan = () => {
                     <li>Safe & secure place to study</li>
                     <li>English is the medium of instruction which breaks the barriers of communication for international students including Indian students.</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Hostel & Food</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Hostel & Food</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Fully furnished hostels with Indian mess & 24/7 security is available</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT location</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT location</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>MSIT is located at Dushanbe, Tajikistan. Dushanbe is one of the most prominent national medical colleges of Tajikistan.</li>
                 </ul>
@@ -227,13 +227,13 @@ const MedicalSocialInstituteOfTajikistan = () => {
 
             {/* Admission Process Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT: Eligibility criteria</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">MSIT: Eligibility criteria</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Age requirement: The applicant should be 17 years of age as on 31st December in the admission year.</li>
                     <li>Academic requirements: Applicant must have passed 12th standard with at least 50% in Physics, Chemistry and Biology.</li>
                     <li>NEET requirements:  Must qualify NEET exam.</li>
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Step By Step Complete Admission Process</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Step By Step Complete Admission Process</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
                     <li>Submission of documents 
                         <ul className="ml-[2vw] list-disc">
@@ -256,7 +256,7 @@ const MedicalSocialInstituteOfTajikistan = () => {
 
             {/* Contact Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Contact Us for Admission Guidance</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Contact Us for Admission Guidance</h2>
                 <p className="text-smallTextPhone text-left md:text-regularText">Your Trusted Admission Partner for MBBS Abroad</p>
                 <p className="text-smallTextPhone text-left md:text-regularText font-semibold mt-[1vw]">Edurizon Pvt. Ltd.<br/>
                 111,113,115, 1st Floor, Best Arcade,<br/>

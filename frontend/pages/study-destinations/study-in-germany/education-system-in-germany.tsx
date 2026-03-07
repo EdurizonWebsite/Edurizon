@@ -51,19 +51,19 @@ const EducationSystemInGermany = () => {
         <Breadcrumbs />
         <div>
           <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">German Education System</h1>
-          <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</h5>
+          <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</span>
         </div>
       </div>
 
       {/* Overview Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Germany's education system is guided by the Basic Law ("Grundgesetz"), with oversight from the Federal Ministry of Education, Cultural Affairs, and Science. The education system's regulation involves cooperation between the Federal government and the Länder (German states). While the Länder hold significant legislative power over education, some areas, known as "joint tasks" (Gemeinschaftsaufgaben), see joint federal-state collaboration.</p>
       </div>
 
       {/* Structure of the German Education System Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Structure of the German Education System</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Structure of the German Education System</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Germany's education system is divided into five key levels:</p>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Early Childhood Education</li>
@@ -76,9 +76,9 @@ const EducationSystemInGermany = () => {
 
       {/* Levels of Education Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Levels of Education</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Levels of Education</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>1. Early Childhood Education</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>1. Early Childhood Education</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Age: 0-6 years</li>
           <li>Responsibility: Managed by the State Youth Welfare Office ("Landesjugendämter") of each state.</li>
@@ -86,7 +86,7 @@ const EducationSystemInGermany = () => {
           <li>Focus: Early childhood education includes language development, motor skills, and social interaction.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>2. Primary Education</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>2. Primary Education</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Age: 6-10 years</li>
           <li>Schools: Grundschule (Primary School).</li>
@@ -94,7 +94,7 @@ const EducationSystemInGermany = () => {
           <li>Subjects: German, Mathematics, Foreign Language, Art, Music, Sports, Religion/Ethics.</li>
         </ul>
 
-        <h5 className='text-h5TextPhone md:text-h5Text font-bold leading-[130%] text-left'>Grading System:</h5>
+        <h3 className='text-h5TextPhone md:text-h5Text font-bold leading-[130%] text-left'>Grading System:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>1 (Very Good)</li>
           <li>2 (Good)</li>
@@ -104,10 +104,10 @@ const EducationSystemInGermany = () => {
           <li>6 (Very Poor)</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>3. Secondary Education</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>3. Secondary Education</h3>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Secondary education is divided into two stages:</p>
         
-        <h5 className='text-h5TextPhone md:text-h5Text font-bold leading-[130%] text-left'>Lower Secondary (Sekundarstufe I)</h5>
+        <h3 className='text-h5TextPhone md:text-h5Text font-bold leading-[130%] text-left'>Lower Secondary (Sekundarstufe I)</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Age: 10-15/16 years</li>
           <li>Schools:</li>
@@ -119,13 +119,13 @@ const EducationSystemInGermany = () => {
           </ul>
         </ul>
 
-        <h5 className='text-h5TextPhone md:text-h5Text font-bold leading-[130%] text-left'>Upper Secondary (Sekundarstufe II)</h5>
+        <h3 className='text-h5TextPhone md:text-h5Text font-bold leading-[130%] text-left'>Upper Secondary (Sekundarstufe II)</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Age: 15/16-18 years</li>
           <li>Purpose: Prepares students for university or vocational training.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>4. Tertiary Education</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>4. Tertiary Education</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Universities offer Bachelor's, Master's, and Ph.D. programs across various fields.</li>
           <li>Universities of Applied Sciences (Fachhochschulen) focus on practical, career-oriented education.</li>
@@ -135,27 +135,27 @@ const EducationSystemInGermany = () => {
 
       {/* Types of Tertiary Institutions Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Types of Tertiary Institutions in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Types of Tertiary Institutions in Germany</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Universities (Universitäten)</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Universities (Universitäten)</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Offer a broad range of academic programs, including research and development.</li>
           <li>Degrees: Bachelor, Master, PhD.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Universities of Applied Sciences (Fachhochschulen)</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Universities of Applied Sciences (Fachhochschulen)</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Focus on practical and applied education.</li>
           <li>Degrees: Bachelor, Master.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Art and Music Colleges</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Art and Music Colleges</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Specialized education in creative fields like fine arts, design, and music.</li>
           <li>Degrees: Bachelor, Master of Fine Arts.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Professional Academies (Berufsakademien)</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Professional Academies (Berufsakademien)</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Provide career-specific education alongside practical training.</li>
           <li>Degrees: Bachelor's programs.</li>
@@ -164,21 +164,21 @@ const EducationSystemInGermany = () => {
 
       {/* Key Qualifications Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Key Qualifications in the German Higher Education System</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Key Qualifications in the German Higher Education System</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Bachelor's Degree</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Bachelor's Degree</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Duration: 3-4 years (6-8 semesters)</li>
           <li>Fields: Arts, Engineering, Law, Sciences, etc.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Master's Degree</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Master's Degree</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Duration: 2-4 semesters</li>
           <li>Fields: Science, Engineering, Arts, Law, etc.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Ph.D.</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Ph.D.</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Research Focus: In-depth academic research.</li>
           <li>Requirements: Master's degree, research proposal, oral defense.</li>
@@ -187,7 +187,7 @@ const EducationSystemInGermany = () => {
 
       {/* Grading System Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Grading System in German Secondary and Tertiary Education</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Grading System in German Secondary and Tertiary Education</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Grades are assigned on a 1-6 scale:</p>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>1: Very Good</li>
@@ -201,16 +201,16 @@ const EducationSystemInGermany = () => {
 
       {/* Admission Requirements Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Admission Requirements for Higher Education in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Admission Requirements for Higher Education in Germany</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Bachelor's Admission Requirements:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Bachelor's Admission Requirements:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Qualification: Abitur or equivalent foreign secondary school-leaving certificate.</li>
           <li>Language Proficiency: German (for German-taught programs) or English (for English-taught programs).</li>
           <li>Additional Tests: Some institutions require admission exams, especially for art and sports programs.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Master's Admission Requirements:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Master's Admission Requirements:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Qualification: Bachelor's degree in a related field.</li>
           <li>Language Proficiency: Typically English (IELTS/TOEFL for English programs).</li>
@@ -220,7 +220,7 @@ const EducationSystemInGermany = () => {
 
       {/* Specialization Areas Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Specialization Areas in German Higher Education</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Specialization Areas in German Higher Education</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Engineering: Electrical, Mechanical, Civil, and Chemical Engineering</li>
           <li>Sciences: Biology, Chemistry, Physics, and Earth Sciences</li>
@@ -233,10 +233,10 @@ const EducationSystemInGermany = () => {
 
       {/* Continuing Education Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Continuing Education & Lifelong Learning</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Continuing Education & Lifelong Learning</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Germany encourages ongoing education through both public and private institutions. Continuing education programs are designed to keep individuals competitive in a rapidly evolving job market. These are available for professionals looking to specialize or advance their career.</p>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Popular Fields of Study in Continuing Education</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Popular Fields of Study in Continuing Education</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Technology & Engineering</li>
           <li>Business & Management</li>
@@ -248,15 +248,15 @@ const EducationSystemInGermany = () => {
 
       {/* Conclusion Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Conclusion</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Conclusion</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Germany's education system offers a diverse range of opportunities for both local and international students. With globally recognized institutions, cutting-edge research, and strong industry ties, it's an ideal destination for pursuing higher education.</p>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Explore your educational future in Germany and unlock career success through a structured and practical learning environment.</p>
       </div>
 
       {/* Services Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-        in India as well as in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+        in India as well as in Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Invitation letter</li>
           <li>Accommodation assistance</li>
@@ -281,7 +281,7 @@ const EducationSystemInGermany = () => {
 
       {/* Interesting Facts Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Public Universities charge zero tuition fees</li>
           <li>18 months stay back facilities</li>

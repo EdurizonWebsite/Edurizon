@@ -48,13 +48,13 @@ const PharmacyInGermany = () => {
         <Breadcrumbs />
         <div>
           <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">Study Pharmacy in Germany</h1>
-          <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</h5>
+          <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</span>
         </div>
       </div>
 
       {/* Overview Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Germany is home to global pharmaceutical giants such as Bayer and Boehringer Ingelheim, making it a hub for pharma research and production. Beyond the industry, pharmacists in local pharmacies enjoy a well-respected profession.</p>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>With this recognition, Germany offers international students strong opportunities to study and build careers in pharmacy.</p>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Currently, there are 12 universities offering 12 English-taught degree programs in Pharmacy, covering diverse specialisations from pharmaceutical marketing to industrial pharmacy, biotechnology, chemistry, and medicine.</p>
@@ -62,19 +62,19 @@ const PharmacyInGermany = () => {
 
       {/* Quick Facts Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Quick Facts</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Quick Facts</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>12 Study Programs in English</li>
           <li>8 Universities in International Rankings</li>
         </ul>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Minimum: €0 (7 programs for EU citizens, 6 for non-EU citizens)</li>
           <li>Maximum: €35,000 per semester</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Deadlines:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Deadlines:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Winter Semester: Between August 31 – July 15</li>
           <li>Summer Semester: Between May 31 – July 15</li>
@@ -83,7 +83,7 @@ const PharmacyInGermany = () => {
 
       {/* Featured Universities Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Featured Universities</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Featured Universities</h2>
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
@@ -129,7 +129,7 @@ const PharmacyInGermany = () => {
 
       {/* Tuition Fee Ranges Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Tuition Fee Ranges</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Tuition Fee Ranges</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Free (EU citizens)</li>
           <li>Free (Non-EU citizens)</li>
@@ -142,7 +142,7 @@ const PharmacyInGermany = () => {
 
       {/* English-Taught Pharmacy Programs Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>English-Taught Pharmacy Programs</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>English-Taught Pharmacy Programs</h2>
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
@@ -185,7 +185,7 @@ const PharmacyInGermany = () => {
           </table>
         </div>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left mt-4'>Highlights:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left mt-4'>Highlights:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Top-class academic education since 1848</li>
           <li>Complete Master's in only one year</li>
@@ -195,30 +195,30 @@ const PharmacyInGermany = () => {
 
       {/* Application & Admission Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Application & Admission</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Application & Admission</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Deadlines:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Deadlines:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Winter Semester 2022/23: 4 programs</li>
           <li>Summer Semester 2023: 5 programs</li>
           <li>Winter Semester 2023/24: 11 programs</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Requirements:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Requirements:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Bachelor's in a related field (Pharmaceutical Medicine, Chemistry, Biology, etc.)</li>
           <li>CV and Motivation Letter</li>
           <li>Proof of English: B2 level (IELTS/TOEFL/Cambridge)</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Language Proficiency:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Language Proficiency:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>IELTS: 5.0 – 6.5</li>
           <li>TOEFL: 80 – 94</li>
           <li>Cambridge: B2 (FCE) – C2 (CPE)</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Modes:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Modes:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>58.3% Direct at University</li>
           <li>25% via Uni-assist</li>
@@ -227,7 +227,7 @@ const PharmacyInGermany = () => {
 
       {/* Universities Offering English-Taught Programs Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Universities Offering English-Taught Pharmacy Programs</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Universities Offering English-Taught Pharmacy Programs</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Freie Universität Berlin – Public, 38,000 students, Free tuition</li>
           <li>Goethe University Frankfurt – Public, 42,000 students, Fees up to €35,000</li>
@@ -238,7 +238,7 @@ const PharmacyInGermany = () => {
 
       {/* Why Choose Germany Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Why Choose Germany for Pharmacy Studies?</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Why Choose Germany for Pharmacy Studies?</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Globally recognised pharmaceutical industry leaders</li>
           <li>Free or affordable tuition at many universities</li>
@@ -250,8 +250,8 @@ const PharmacyInGermany = () => {
 
       {/* Services Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-        in India as well as in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+        in India as well as in Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Invitation letter</li>
           <li>Accommodation assistance</li>
@@ -276,7 +276,7 @@ const PharmacyInGermany = () => {
 
       {/* Interesting Facts Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Public Universities charge zero tuition fees</li>
           <li>18 months stay back facilities</li>

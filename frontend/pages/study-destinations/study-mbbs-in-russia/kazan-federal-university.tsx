@@ -197,9 +197,9 @@ const KazanFederalUniversity = () => {
         </div>
         <div className="grid grid-cols-2 gap-[5vw] mx-[12.5vw] my-[4vw]">
             <div className="flex flex-col gap-[2vw] justify-center">
-                <h3 className="text-h3Text font-bold leading-[120%]">
+                <h2 className="text-h3Text font-bold leading-[120%]">
                     The City <br/> <span className="text-orangeChosen">Kazan</span>
-                </h3>
+                </h2>
                 <p className="text-regularText leading-[150%] text-justify">
                 The history of Kazan situated in the center of Europe which is a multinational and multifessional city of Russia is filled with millennium past record. The university is very easily reachable by underground metro from the dormitory. The city is also well known around the world for many cultural events and international sport like universaide 2013 (world student games) FINA World Acquatics Championships 2015, International Classical Ballet and Opera Festivals, International Festival of Muslim Cinema and 21st FIFA World Cup (2018).
                 </p>
@@ -224,11 +224,11 @@ const KazanFederalUniversity = () => {
         <div>
         <div className=" flex flex-col  mx-[12.5vw] gap-[2vw] py-[4vw] mb-[4vw]">
             <div className="flex flex-col gap-[1vw]">
-            <h3 className="text-h5TextPhone md:text-h3Text text-center font-bold leading-[130%]">Kazan Federal University Entrance Exam</h3>
+            <h2 className="text-h5TextPhone md:text-h3Text text-center font-bold leading-[130%]">Kazan Federal University Entrance Exam</h2>
             <p className="text-smallText text-center ">Kazan Federal Conducts entrance exams in respect to all international students, including Indians, every year.</p>
             </div>
             <div className="flex flex-col gap-[1vw]">
-                <h4 className="text-h4Text font-bold text-left">Kazan Federal University Entrance Exam Sample Paper</h4>
+                <span className="text-h4Text font-bold text-left">Kazan Federal University Entrance Exam Sample Paper</span>
                 <ul className="text-regularText list-disc list-inside">
                     <li>The subjects for the entrance exams are English & Biology.</li>
                     <li>It is mandatory to get qualified in each subject.</li>

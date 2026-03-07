@@ -99,8 +99,8 @@ const NewPage = () => {
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text ">Important videos of Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text ">Important videos of Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <div className="video-section">
                 <a href="https://youtu.be/PPfnTwTGEtw?si=TRsDtKzX6itJ2TVn" data-fancybox="video-gallery">
@@ -113,8 +113,8 @@ const NewPage = () => {
             </div>
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <p className='dark:text-black'>
                 Ural State Medical University was established in the year 1930. Since Ural State Medical University is accredited by both UNESCO and the WHO, it can guarantee the highest standards of theoretical instruction, research, and
@@ -127,8 +127,8 @@ const NewPage = () => {
               <p>Ural State Medical University has about 1300 academic staff members, including over 600 professors and associate professors, and has over 7000 students.</p>
               <p>International recognition for Ural State Medical University programs is granted by the University of Education and Science of the Russian Federation.</p>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Ranking</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Ranking</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Ural State Medical University ranking - 14.</li>
@@ -140,15 +140,15 @@ const NewPage = () => {
                 <li>Ural State Medical University has very low fees and therefore Ural State Medical University is an economical University.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Duration of MBBS in Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Duration of MBBS in Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Ural State Medical University has 6 years MBBS programme including internship.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Scientific Medical Library at Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Scientific Medical Library at Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -157,8 +157,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Key Facts of Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Key Facts of Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <div className="table-responsive">
                 <table className="table table-bordered table-striped align-middle">
@@ -252,8 +252,8 @@ const NewPage = () => {
                 </table>
               </div>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> About Yekaterinburg City</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> About Yekaterinburg City</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>This is the largest city in Russia's Sverdlovsk Oblast and Ural Federal District is Yekaterinburg, which also serves as their administrative hub.</li>
@@ -263,8 +263,8 @@ const NewPage = () => {
                 <li>Located on the Trans-Siberian Railway, it serves as a vital link between Moscow and the Far East of Russia.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Fee Structure</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Fee Structure</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <div className="table-responsive">
                 <table className="table table-bordered table-striped align-middle">
@@ -282,12 +282,12 @@ const NewPage = () => {
               </div>
               <p><b>Note:</b> Charges for Visa renewal, medical insurance, medical checkup, biometrics etc. will be nominal taken separately by the Ural State Medical University</p>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Hostel Facilities at Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Hostel Facilities at Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <p>The campus at Ural State Medical University is an integral component of the institution, serving as temporary residence for non-resident students, full-time residents, and applicants during entrance examinations.</p>
               <div className="heading">
-                <h5>The following features characterize the hostel facilities:</h5>
+                <span>The following features characterize the hostel facilities:</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -311,8 +311,8 @@ const NewPage = () => {
                 </a>
               </div>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Dormitory Living</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Dormitory Living</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -348,12 +348,12 @@ const NewPage = () => {
                 </a>
               </div>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> About The Sverdlovsk City</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> About The Sverdlovsk City</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <p>Sverdlovsk Oblast is a federal subject (oblast) located in the Ural Federal District of Russia.</p>
               <div className="heading">
-                <h5>Here are some key details about Sverdlovsk Oblast:</h5>
+                <span>Here are some key details about Sverdlovsk Oblast:</span>
               </div>
               <ul className="points-two">
                 <li>
@@ -416,8 +416,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University for Indian Students</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University for Indian Students</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Very good University.</li>
@@ -426,8 +426,8 @@ const NewPage = () => {
                 <li>4-time foods (breakfast, Lunch, tea/snacks & dinner) are available in just $1200 for 10 months.</li>
               </ul>
               <div className="heading">
-                <h4>Advantages of MBBS in Russia for Indian Students</h4>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2>Advantages of MBBS in Russia for Indian Students</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <p>Studying MBBS (Bachelor of Medicine, Bachelor of Surgery) in Russia offers several advantages, making it an attractive option for international students including Indians.</p>
               <ul className="points-two">
@@ -471,8 +471,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Affiliation and Recognition of Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Affiliation and Recognition of Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
                 <p><b>Ural State Medical University Russia is one of the biggest medical universities in Russia, it is affiliated and recognized by various Medical Councils such as:</b></p>
               </div>
               <ul className="points-two">
@@ -482,8 +482,8 @@ const NewPage = () => {
                 <li>Ministry of Science & Higher Education of the Russian Federation.</li>
               </ul>
               <div className="heading">
-                <h4>Faculty of Ural State Medical University</h4>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2>Faculty of Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-three">
                 <li>Faculty of Dentistry.</li>
@@ -493,8 +493,8 @@ const NewPage = () => {
                 <li>Faculty of Psychology.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Why Study MBBS at Ural State Medical University Russia?</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Why Study MBBS at Ural State Medical University Russia?</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Ural State Medical University has affiliations with and recognition from several international medical councils.</li>
@@ -504,8 +504,8 @@ const NewPage = () => {
                 <li>Students can gain practical experience and exposure to state-of-the-art medical technologies in the university's well-equipped laboratories and clinical settings.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Eligibility Criteria of Ural State Medical University</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Eligibility Criteria of Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Applicant should have minimum 17 years of age as on December 31st, of the year of admission.</li>
@@ -513,23 +513,23 @@ const NewPage = () => {
                 <li>NEET qualifying marks.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Admission</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Admission</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Admissions are done on first-cum-first basis.</li>
                 <li>300 MBBS seats are reserved for the Indian students.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Entrance Exam</h3>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Entrance Exam</h2>
               </div>
               <ul className="points-two">
                 <li>Online entrance exam will be held for the subject like Chemistry, Biology and English.</li>
                 <li>Passing/qualifying marks will be 30 out of 45.</li>
               </ul>
               <div className="heading">
-                <h3 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Location</h3>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]"> Ural State Medical University Location</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <ul className="points-two">
                 <li>Ural State Medical University is a public Medical University in Yekaterinburg, Sverdlovsk Oblast in the Ural region of Russia.</li>
@@ -537,12 +537,12 @@ const NewPage = () => {
                 <li>Ural State Medical University is the only institution of higher education in the Sverdlovsk Oblast which prepares doctors and pharmacists with higher education.</li>
               </ul>
               <div className="heading">
-                <h4>Address of Ural State Medical University</h4>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2>Address of Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <p>Ulitsa Repina, 3, Yekaterinburg, Sverdlovskaya oblast, Russia - 620014</p>
               <div className="heading">
-                <h4>Ural State Medical University Official Website</h4>
+                <h2>Ural State Medical University Official Website</h2>
               </div>
               <p>
                 <b>
@@ -550,12 +550,12 @@ const NewPage = () => {
                 </b>
               </p>
               <div className="heading">
-                <h4>How to Reach Ural State Medical University</h4>
-                <h5>MBBS in Russia – MBBS in Ural State Medical University</h5>
+                <h2>How to Reach Ural State Medical University</h2>
+                <span>MBBS in Russia – MBBS in Ural State Medical University</span>
               </div>
               <p>Delhi to Tashkent & Tashkent to Yekaterinburg</p>
               <div className="heading">
-                <h4>Airlines</h4>
+                <h2>Airlines</h2>
               </div>
               <ul className="points-three">
                 <li>Uzbek Airlines</li>

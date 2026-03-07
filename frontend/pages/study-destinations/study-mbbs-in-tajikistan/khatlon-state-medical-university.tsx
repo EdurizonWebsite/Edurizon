@@ -111,7 +111,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* About Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] ">
-                <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text text-left mb-[4vw] md:mb-[1vw]">About Khatlon State Medical University</h3>
+                <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text text-left mb-[4vw] md:mb-[1vw]">About Khatlon State Medical University</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Tajikistan is a landlocked country in Central Asia. Landlocked nations are surrounded by land and do not have access to the open sea.</li>
                     <li>Established in the year 1967 at the Kulyab State Medical College with a class of just 30 students, the journey of KSMU started.</li>
@@ -128,12 +128,12 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Location Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-            <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Dushanbe City</h3>
+            <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Dushanbe City</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] mb-[4vw] md:mb-[1vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Dushanbe is the capital of Tajikistan which is situated on the Varzob River. Rudaki Park which is named after a classical poet is situated on the east bank of the river.</li>
                    
                 </ul>
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Danghara City</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Danghara City</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Danghara is a town in the Khatlon Region of Tajikistan.</li>
                     <li>It is the capital of Danghara District.</li>
@@ -143,7 +143,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Faculty Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University Faculty and Facilities</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University Faculty and Facilities</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>The faculty at Khatlon State Medical University consists of highly qualified professors & researchers, many of whom have earned their degrees from prestigious universities around the world.</li>
                     <li>The Khatlon State Medical University boasts state-of-the-art facilities, including modern laboratories, libraries, and computer centers.</li>
@@ -161,7 +161,7 @@ const KhatlonStateMedicalUniversity = () => {
             {/* Why Choose Section */}
             <div className="p-[8vw] md:p-[4vw] flex flex-col md:flex-row px-[6vw] md:px-[12.5vw] gap-[5vw] md:gap-[2vw] mb-[10vw] md:mb-[4vw] text-black items-center bg-linenChosen">
                 <div className="flex flex-col gap-[2vw] md:gap-[1vw]">
-                    <h3 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%]">Why Choose KSMU for Indian Students?</h3>
+                    <h2 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%]">Why Choose KSMU for Indian Students?</h2>
                     <div>
                     <p>The cost of studying MBBS in Khatlon State Medical University is affordable just like India.</p>
                     
@@ -192,7 +192,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Recognition Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University - Recognition</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University - Recognition</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Khatlon State Medical University is recognized by NMC, WHO etc.</li>
                     <li>This recognition is very crucial for Indian students who wish to pursue their medical education from KSMU and thereafter wish to practice medicine in India upon their return.</li>
@@ -205,7 +205,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Facilities Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medial University - Library and Simulation Center</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medial University - Library and Simulation Center</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>An electronic library with 150 sitting capacities</li>
                     <li>Collection of 33,269 books and 75,474 electronic educational materials</li>
@@ -218,7 +218,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Hostel Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University – Hostel & Canteen</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University – Hostel & Canteen</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Residence halls of Khatlon State Medical University are a set of modern campuses for students.</li>
                     <li>Each campus has comfortable rooms and necessary living facilities such as dining rooms, housekeeping complexes, recreation areas & sports grounds.</li>
@@ -233,7 +233,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Curriculum Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Curriculum & Teaching Methods</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Curriculum & Teaching Methods</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li> KSMU teaches its curriculum in English, making it an attractive option for international students. If students are looking for an Indian university situated abroad where you can grow academically and explore a diverse culture then KSMU should be an ideal choice for you.</li>
                     <li>Khatlon state medical university is dedicated to producing well-rounded healthcare professionals through a blend of traditional and innovative teaching methods. With a comprehensive curriculum and hands-on training, the university equips students to meet the evolving demands of the global medical field.</li>
@@ -265,7 +265,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Research Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">KSMU – Research Opportunities</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">KSMU – Research Opportunities</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>KSMU invariably emphasizes on research & innovation thereby encouraging students to engage in scientific research projects.</li>
                     <li>KSMU has numerous research centers and laboratories which are equipped with ultra-modern facilities.</li>
@@ -275,7 +275,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* At a glance Section */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University at a glance</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Khatlon State Medical University at a glance</h2>
                 <ul className="text-smallTextPhone ml-[3vw] md:ml-[1.5vw] text-left gap-x-[1vw] md:text-regularText md:text-justify grid grid-cols-2">
                     <li className='font-bold'>o College name</li>
                     <li>Khatlon State Medical University</li>
@@ -297,7 +297,7 @@ const KhatlonStateMedicalUniversity = () => {
 
             {/* Documents Required */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Documents Required for KSMU</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Documents Required for KSMU</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify mb-[4vw] md:mb-[1vw]">
                     <li>10th & 12th Marksheets</li>
                     <li>Valid Indian passport</li>
@@ -305,7 +305,7 @@ const KhatlonStateMedicalUniversity = () => {
                     <li>NEET scorecard</li>
                 </ul>
 
-                <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Admission Process</h3>
+                <h2 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Admission Process</h2>
                 <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Submission of documents:
                         <ul className="list-disc ml-[3vw]">

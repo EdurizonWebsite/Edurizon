@@ -96,8 +96,8 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3  className="text-h5TextPhone md:text-h5Text">Petrozavodsk State Medical University</h3>
-          <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+          <h2  className="text-h5TextPhone md:text-h5Text">Petrozavodsk State Medical University</h2>
+          <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
         </div>
         <p>Petrozavodsk, the capital of Karelia in northwest Russia, is situated on the western side of Lake Onega, the second-largest lake in Europe. It is mostly well-known for the Museum of Fine Arts, which features Russian paintings and
           folk art alongside medieval icons. The National Museum of the Republic of Karelia is located near circular Lenin Square and uses natural history and archaeology exhibits to explore the history of the area.</p>
@@ -114,8 +114,8 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3  className="text-h5TextPhone md:text-h5Text">Why Study MBBS At Petrozavodsk State University, Russia?</h3>
-          <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+          <h2  className="text-h5TextPhone md:text-h5Text">Why Study MBBS At Petrozavodsk State University, Russia?</h2>
+          <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
         </div>
         <p><b>There are various reasons why you should choose Petrozavodsk State University to study MBBS.</b></p>
          <ul className="points-two">
@@ -137,8 +137,8 @@ const NewPage=()=>{
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3  className="text-h5TextPhone md:text-h5Text">Quick Highlights about Petrozavodsk State University, Russia</h3>
-            <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+            <h2  className="text-h5TextPhone md:text-h5Text">Quick Highlights about Petrozavodsk State University, Russia</h2>
+            <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
           </div>
           <div className="table-responsive">
             <table className="table table-bordered table-striped align-middle">
@@ -196,8 +196,8 @@ const NewPage=()=>{
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3  className="text-h5TextPhone md:text-h5Text">Duration of MBBS in Petrozavodsk State University</h3>
-          <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+          <h2  className="text-h5TextPhone md:text-h5Text">Duration of MBBS in Petrozavodsk State University</h2>
+          <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
         </div> 
          <ul className="points-two">
           <li>Petrozavodsk State University offers a 6 year medical degree including one year internship.</li>
@@ -213,8 +213,8 @@ const NewPage=()=>{
     <div className="row">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3  className="text-h5TextPhone md:text-h5Text">About Petrozavodsk City</h3>
-          <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+          <h2  className="text-h5TextPhone md:text-h5Text">About Petrozavodsk City</h2>
+          <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
         </div>
         <ul className="points-two">
           <li>In northwest Russia, Petrozavodsk is a city situated on the western bank of Lake Onega.</li>
@@ -232,8 +232,8 @@ const NewPage=()=>{
       <div className="row">
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <div className="heading">
-            <h3  className="text-h5TextPhone md:text-h5Text">Faculties of Petrozavodsk State University</h3>
-            <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+            <h2  className="text-h5TextPhone md:text-h5Text">Faculties of Petrozavodsk State University</h2>
+            <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
           </div>
           <ul className="points-two">
             <li>Institute of Medicine.</li>
@@ -253,8 +253,8 @@ const NewPage=()=>{
         </div>
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3  className="pt-2 text-h5TextPhone md:text-h5Text">Recognitions of Petrozavodsk State University</h3>
-          <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+          <h2  className="pt-2 text-h5TextPhone md:text-h5Text">Recognitions of Petrozavodsk State University</h2>
+          <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
         </div> 
         <ul className="points-two">
           <li>World Health Organization (WHO).</li>
@@ -272,8 +272,8 @@ const NewPage=()=>{
       <div className="immigrate-bg">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3  className="text-h5TextPhone md:text-h5Text">Petrozavodsk State University Ranking 2023-2024</h3>
-            <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+            <h2  className="text-h5TextPhone md:text-h5Text">Petrozavodsk State University Ranking 2023-2024</h2>
+            <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
           </div>
           <p>Petrozavodsk State University Ranking in Country - <b>64</b></p>
           <p>Petrozavodsk State University World Ranking - <b>2591</b></p> 
@@ -288,8 +288,8 @@ const NewPage=()=>{
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3  className="text-h5TextPhone md:text-h5Text">Fee Structure of Petrozavodsk State University 2024-25</h3>
-              <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+              <h2  className="text-h5TextPhone md:text-h5Text">Fee Structure of Petrozavodsk State University 2024-25</h2>
+              <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
             </div>
             <div className="table-responsive">
               <table className="table table-bordered table-striped align-middle">
@@ -310,8 +310,8 @@ const NewPage=()=>{
           </div>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div className="heading">
-              <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Eligibility To Study MBBS In Petrozavodsk State University</h3>
-              <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+              <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Eligibility To Study MBBS In Petrozavodsk State University</h2>
+              <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
             </div>
             <p><b>Following eligibility criteria to get admission in Petrozavodsk State University for MBBS course:</b></p>
             <ul className="points-two">
@@ -332,8 +332,8 @@ const NewPage=()=>{
         <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div className="heading">
-            <h3  className="text-h5TextPhone md:text-h5Text">Documents Required for Petrozavodsk State University</h3>
-            <h5>MBBS in Russia – MBBS in Petrozavodsk State University</h5>
+            <h2  className="text-h5TextPhone md:text-h5Text">Documents Required for Petrozavodsk State University</h2>
+            <span>MBBS in Russia – MBBS in Petrozavodsk State University</span>
             <p><b>Please carry all these related documents before admission to Petrozavodsk State Medical University.</b></p>
           </div>
           <ul className="points-two">
@@ -352,7 +352,7 @@ const NewPage=()=>{
   </div>
 </section> 
 <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] my-[10vw] md:my-[1vw]">
-              <h3 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h3>
+              <h2 className="text-h5TextPhone leading-[120%] pb-[2vw] md:pb-[.5vw]   md:text-h3Text text-center font-bold">Authorization</h2>
 
               <div className='relative md:flex gap-[4vw] md:gap-[1vw] justify-center'>
                 <Image src={"/assets/Images/authorization/russia/Russia8.jpg"} className='w-full md:w-[20vw] h-auto' width={1080} height={1080} alt='isbu1'/>

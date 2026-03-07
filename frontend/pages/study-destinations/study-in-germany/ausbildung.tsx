@@ -172,9 +172,9 @@ const Ausbildung = () => {
       {/* Why Chose Section */}
       <div className=" flex flex-col-reverse md:flex-row gap-[5vw] px-[6vw] md:px-[12.5vw] dark:text-black bg-linenChosen py-[10vw] md:py-[4vw] items-center  ">
             <div className="flex flex-col gap-[1.5vw] w-full md:w-[39.625vw]">
-                <h3 className="text-h5TextPhone md:text-h3Text font-bold leading-[130%]">
+                <h1 className="text-h5TextPhone md:text-h3Text font-bold leading-[130%]">
                 Why Choose Edurizon for Your Ausbildung Journey?
-                </h3>
+                </h1>
                 <p>
                 At Edurizon, we provide expert guidance to ensure your transition into the German vocational training system is smooth and successful. We understand the nuances of Germany Ausbildung courses and offer:
                 </p>

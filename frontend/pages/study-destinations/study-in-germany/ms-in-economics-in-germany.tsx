@@ -49,20 +49,20 @@ const MSInEconomicsInGermany = () => {
         <Breadcrumbs />
         <div>
           <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">MS in Economics in Germany</h1>
-          <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</h5>
+          <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</span>
         </div>
       </div>
 
       {/* Overview Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>The MS in Economics program in Germany is a 2-year master's degree designed for students seeking advanced analytical and quantitative skills in economics. Germany is home to many prestigious universities offering the program, which attracts students from around the world.</p>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>With over 25% of economists in Germany holding a master's degree, an MS in Economics can significantly boost career prospects, particularly in areas such as economic research, data analysis, policy advisory, and consultancy.</p>
       </div>
 
       {/* Why Study MS in Economics Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Why Study MS in Economics in Germany?</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Why Study MS in Economics in Germany?</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li><strong>Top-ranked Universities:</strong> Study at world-renowned institutions like Ludwig Maximilian University of Munich, Heidelberg University, and RWTH Aachen University.</li>
           <li><strong>Public Universities:</strong> Many public universities in Germany do not charge tuition fees, making it an attractive study destination.</li>
@@ -74,20 +74,20 @@ const MSInEconomicsInGermany = () => {
 
       {/* Program Details Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>MS in Economics: Program Details</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>MS in Economics: Program Details</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Program Duration</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Program Duration</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>2 Years</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h3>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Public universities typically charge no tuition fees. However, students must pay a semester fee ranging from €265 to €6,703 annually, depending on the university and program.</p>
       </div>
 
       {/* Top Universities Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Top Universities Offering MS in Economics</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Top Universities Offering MS in Economics</h2>
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
@@ -149,7 +149,7 @@ const MSInEconomicsInGermany = () => {
 
       {/* Specialisations Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Specialisations in MS in Economics</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Specialisations in MS in Economics</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Students pursuing MS in Economics in Germany can choose from various specialisations, including:</p>
         
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
@@ -160,7 +160,7 @@ const MSInEconomicsInGermany = () => {
           <li><strong>International Economics:</strong> Explore global trade, commercial trade policies, and their economic impacts.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Other Topics:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Other Topics:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Monetary Economics</li>
           <li>Game Theory</li>
@@ -172,9 +172,9 @@ const MSInEconomicsInGermany = () => {
 
       {/* Admission Requirements Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Admission Requirements</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Admission Requirements</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Eligibility</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Eligibility</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Bachelor's Degree in Economics or a related field from a recognized institution.</li>
           <li>GRE (for non-EU students) with a score of 320 or above.</li>
@@ -182,7 +182,7 @@ const MSInEconomicsInGermany = () => {
           <li>German Language proficiency (CEFR Level A1) within one year of enrollment.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Documents Required</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Documents Required</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>CV/Resume</li>
           <li>Letter of Motivation (max 500 words)</li>
@@ -194,7 +194,7 @@ const MSInEconomicsInGermany = () => {
           <li>University Entrance Qualification</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Process</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Process</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li><strong>Apply Online:</strong> Submit documents to the university or via uni-assist.</li>
           <li><strong>Wait for Admission Response:</strong> If accepted, proceed to visa application.</li>
@@ -205,7 +205,7 @@ const MSInEconomicsInGermany = () => {
 
       {/* Career Opportunities Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>MS in Economics: Career Opportunities</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>MS in Economics: Career Opportunities</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Graduates of the MS in Economics program can find job opportunities in various sectors:</p>
         
         <div className="overflow-x-auto">
@@ -244,9 +244,9 @@ const MSInEconomicsInGermany = () => {
 
       {/* Cost of Studying Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Cost of Studying MS in Economics in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Cost of Studying MS in Economics in Germany</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Pre-arrival Costs</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Pre-arrival Costs</h3>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
             <thead>
@@ -276,10 +276,10 @@ const MSInEconomicsInGermany = () => {
           </table>
         </div>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h3>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Most public universities charge no tuition fees. However, students must pay a semester fee ranging from €265 to €6,703 annually.</p>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Cost of Living</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Cost of Living</h3>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>On average, students spend around €850 per month on living expenses, including rent, food, transportation, and leisure activities.</p>
         
         <div className="overflow-x-auto">
@@ -326,9 +326,9 @@ const MSInEconomicsInGermany = () => {
 
       {/* Scholarships Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Scholarships for MS in Economics in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Scholarships for MS in Economics in Germany</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Non-Government Scholarships</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Non-Government Scholarships</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Heinrich Boll Scholarship</li>
           <li>MASTA Scholarship</li>
@@ -336,7 +336,7 @@ const MSInEconomicsInGermany = () => {
           <li>British Council IELTS Award (€12,121.52)</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Government-funded Scholarships</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Government-funded Scholarships</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>DAAD Scholarships</li>
           <li>Erasmus+ Program (EU-based funding for international students)</li>
@@ -345,7 +345,7 @@ const MSInEconomicsInGermany = () => {
 
       {/* Advantages Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Advantages for Candidates</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Advantages for Candidates</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Work Contract & Employment in German health facilities.</li>
           <li>Local Support for candidates until settlement.</li>
@@ -357,8 +357,8 @@ const MSInEconomicsInGermany = () => {
 
       {/* Services Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-        in India as well as in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+        in India as well as in Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Invitation letter</li>
           <li>Accommodation assistance</li>
@@ -383,7 +383,7 @@ const MSInEconomicsInGermany = () => {
 
       {/* Interesting Facts Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Public Universities charge zero tuition fees</li>
           <li>18 months stay back facilities</li>

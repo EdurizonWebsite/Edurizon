@@ -51,20 +51,20 @@ const MastersInPublicHealthInGermany = () => {
         <Breadcrumbs />
         <div>
           <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">Masters in Public Health in Germany</h1>
-          <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</h5>
+          <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER OPPORTUNITIES</span>
         </div>
       </div>
 
       {/* Overview Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Overview</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>The Masters in Public Health (MPH) in Germany is a 2-year program designed to equip students with the skills necessary to improve the quality of life of communities through disease prevention, treatment, and mental health awareness. With globally-ranked universities and affordable tuition fees, Germany offers an excellent platform for public health education.</p>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Graduates of the MPH program can expect an average salary of €42,000 per annum (approximately ₹36.15 lakhs). The program typically costs between €12,000 – €16,000 (₹10.32 lakhs – ₹13.77 lakhs), with many public universities offering low-cost or no tuition fees.</p>
       </div>
 
       {/* Why Study MPH Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Why Study Masters in Public Health in Germany?</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Why Study Masters in Public Health in Germany?</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li><strong>Globally Ranked Institutions:</strong> Study at top universities like Ludwig Maximilian University of Munich, Heidelberg University, and Charité - Universitätsmedizin Berlin.</li>
           <li><strong>Affordable Education:</strong> Public universities often charge no tuition fees, with only a semester fee ranging from €200 - €350.</li>
@@ -76,14 +76,14 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Key Program Details Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Key Program Details</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Key Program Details</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Program Duration</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Program Duration</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>1 to 2 years</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>€12,000 – €16,000 per year (₹10.32 lakhs – ₹13.77 lakhs)</li>
           <li>Semester Fees: €200 – €350 (₹17,215 – ₹30,127) at most public universities.</li>
@@ -92,7 +92,7 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Top Universities Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Top Universities Offering Masters in Public Health</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Top Universities Offering Masters in Public Health</h2>
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
@@ -160,7 +160,7 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Specialisations Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Specialisations in MPH</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Specialisations in MPH</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Students pursuing the MPH program in Germany can choose from various specialisations, including:</p>
         
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
@@ -170,7 +170,7 @@ const MastersInPublicHealthInGermany = () => {
           <li><strong>Epidemiology & Biostatistics:</strong> Study disease patterns and statistical methods for public health research.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Other popular areas include:</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Other popular areas include:</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Health Information Management</li>
           <li>Occupational Health & Safety</li>
@@ -180,9 +180,9 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Admission Requirements Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Admission Requirements</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Admission Requirements</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Eligibility</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Eligibility</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Bachelor's degree in Public Health or a relevant field.</li>
           <li>English Proficiency: IELTS 6.5, TOEFL 88.</li>
@@ -190,7 +190,7 @@ const MastersInPublicHealthInGermany = () => {
           <li>GRE Scores (for some universities): Between 300-320.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Documents Required</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Documents Required</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Passport Copy</li>
           <li>Academic Transcripts (with proof of completed degree)</li>
@@ -201,7 +201,7 @@ const MastersInPublicHealthInGermany = () => {
           <li>Proof of Financial Resources (approximately €8,800 for the first year)</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Process</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Application Process</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li><strong>Apply Online:</strong> Submit your documents directly to the university or via uni-assist (for most German universities).</li>
           <li><strong>Wait for Admission Response:</strong> Once accepted, proceed with visa application.</li>
@@ -212,9 +212,9 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Cost of Studying Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Cost of Studying MPH in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Cost of Studying MPH in Germany</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Pre-arrival Expenses</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Pre-arrival Expenses</h3>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
             <thead>
@@ -244,10 +244,10 @@ const MastersInPublicHealthInGermany = () => {
           </table>
         </div>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Tuition Fees</h3>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Public universities in Germany charge no tuition fees, but students need to pay a semester fee ranging from €200 - €350.</p>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Cost of Living</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Cost of Living</h3>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>On average, students need approximately €867 per month (₹73,800) for living expenses, including accommodation, food, and travel.</p>
         
         <div className="overflow-x-auto">
@@ -286,9 +286,9 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Scholarships Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Scholarships for MPH in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Scholarships for MPH in Germany</h2>
         
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Government-Funded Scholarships</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>Government-Funded Scholarships</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>DAAD Scholarships: Fully-funded scholarships for international students.</li>
           <li>Heinrich Boll Scholarships: €850/month and additional allowances.</li>
@@ -296,7 +296,7 @@ const MastersInPublicHealthInGermany = () => {
           <li>DAAD 2020 Scholarship for Medicine and Public Health: €850 for graduates or €1,200 for doctoral candidates.</li>
         </ul>
 
-        <h4 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>University-Specific Scholarships</h4>
+        <h3 className='text-h4TextPhone md:text-h4Text font-bold leading-[130%] text-left'>University-Specific Scholarships</h3>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Hof University Scholarships: €10,000 to €65,900 per year.</li>
           <li>Erasmus+ Scholarships: EU funding for international student exchanges.</li>
@@ -305,7 +305,7 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Career Scope Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Career Scope after MPH</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Career Scope after MPH</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Graduates of the MPH program in Germany can work in the public health sector, healthcare management, and international health organisations. Job roles include:</p>
         
         <div className="overflow-x-auto">
@@ -348,7 +348,7 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* University Comparison Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>University Comparison for MPH</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>University Comparison for MPH</h2>
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
@@ -397,14 +397,14 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Conclusion Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Conclusion</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Conclusion</h2>
         <p className='text-regularTextPhone md:text-regularText leading-[130%]'>Germany offers high-quality education in Public Health with affordable fees and no tuition costs at many universities. The country provides an excellent job market for graduates, with opportunities in various sectors such as healthcare management, policy advisory, and international health.</p>
       </div>
 
       {/* Services Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-        in India as well as in Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+        in India as well as in Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Invitation letter</li>
           <li>Accommodation assistance</li>
@@ -429,7 +429,7 @@ const MastersInPublicHealthInGermany = () => {
 
       {/* Interesting Facts Section */}
       <div className='flex flex-col gap-[1vw] w-full'>
-        <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h3>
+        <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h2>
         <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone'>
           <li>Public Universities charge zero tuition fees</li>
           <li>18 months stay back facilities</li>

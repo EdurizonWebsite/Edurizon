@@ -157,8 +157,8 @@ const NewPage = () => {
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text">History</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text">History</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <p className='text-black'>
                 Tambov State University named after G.R. Derzhavin with 100 years of history is a modern educational and research center based on the best practices of a traditional university. Sometimes referred to as G. R. Derzhavin State
@@ -177,8 +177,8 @@ const NewPage = () => {
               </p >
 
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">The Tambov State University structure is divided into 15 segments which comprise of:-</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">The Tambov State University structure is divided into 15 segments which comprise of:-</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>3 academies</li>
@@ -187,16 +187,16 @@ const NewPage = () => {
               </ul>
               <p>Over 15,000 prospective students from all over the world pursue their study at Tambov State University every year.</p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov City</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov City</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <p className='text-black'>
                 Tambov is a city and the administrative center of Tambov Oblast, central Russia, at the confluence of the Tsna and Studenents rivers, about 418 km south-southeast of Moscow. With a population of 261,803 as of 2021, Tambov is
                 the largest city, and historical center, of the Tambov Oblast as a whole.
               </p>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University – at a Glance</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University – at a Glance</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <div className="table-responsive">
                 <table className="table table-bordered table-striped align-middle">
@@ -277,8 +277,8 @@ const NewPage = () => {
                 </table>
               </div>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">About Tambov State University</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">About Tambov State University</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Tambov State University is the biggest university in Tambov region.</li>
@@ -291,8 +291,8 @@ const NewPage = () => {
                 </li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University has the largest infrastructure in the region</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University has the largest infrastructure in the region</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>well-equipped academic buildings</li>
@@ -305,8 +305,8 @@ const NewPage = () => {
                 <li>The largest scientific library in the region</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Tambov State University is an old University.</li>
@@ -316,8 +316,8 @@ const NewPage = () => {
                 <li>Tambov State University has very low fees and therefore Tambov State University is an economical University.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Hostel</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Hostel</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <p><b>15 campuses</b></p>
               <ul className="points-two">
@@ -327,16 +327,16 @@ const NewPage = () => {
                 <li>All other facilities like washing Machine, WIFI, water filter, microwave etc. is available in all hostels.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Fee Structure</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Fee Structure</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Tuition + Hostel + Biometric Fees – 3,85,000 Ruble.</li>
                 <li>Charges for Visa renewal, medical insurance, medical checkup etc. will be nominal and taken separately by the Tambov State University</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University for Indian Students</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University for Indian Students</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Recognized, reputed and very good University.</li>
@@ -346,8 +346,8 @@ const NewPage = () => {
                 <li>Semester-wise fees can be paid.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Affiliation and Recognition of Tambov State University</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Affiliation and Recognition of Tambov State University</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <p><b>The Tambov State University has been affiliated and recognized by the various medical council bodies such as</b></p>
               <ul className="points-two">
@@ -356,8 +356,8 @@ const NewPage = () => {
                 <li>Ministry of Science & Higher Education of the Russian Federation.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University has seven faculties. The faculty details are given below</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University has seven faculties. The faculty details are given below</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Faculty of General Medicine.</li>
@@ -369,8 +369,8 @@ const NewPage = () => {
                 <li>Faculty of General Practitioners.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University for MBBS/Reviews</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University for MBBS/Reviews</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Tambov State University has affiliations with and recognition from several international medical councils.</li>
@@ -380,8 +380,8 @@ const NewPage = () => {
                 <li>Students can gain practical experience and exposure to state-of-the-art medical technologies in the university's well-equipped laboratories and clinical settings. MBBS in RUSSIA – MBBS IN TAMBOV STATE UNIVERSITY.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Ranking</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Ranking</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <p><b>Tambov State University is one of the top public universities in Tambov, Russia</b></p>
               <ul className="points-two">
@@ -390,8 +390,8 @@ const NewPage = () => {
                 <li>World Ranking - 4,844.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Eligibility Criteria</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Eligibility Criteria</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Applicant should have minimum 17 years of age as on December 31st, of the year of admission.</li>
@@ -399,8 +399,8 @@ const NewPage = () => {
                 <li>NEET qualifying marks.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Admission</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Admission</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Admissions are done on first-cum-first basis.</li>
@@ -410,16 +410,16 @@ const NewPage = () => {
                 <li>Student must possess valid Indian passport.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Eentrance Exam</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University Eentrance Exam</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Online entrance exam will be held for the subject like Chemistry & Biology.</li>
                 <li>Passing/qualifying marks will be 50 out of 100.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University location</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University location</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Tambov State University is a public University in Tambov city, Tambov Oblast region of Russia. MBSS IN RUSSIA – MBBS IN TAMBOV STATE UNIVERSITY.</li>
@@ -427,22 +427,22 @@ const NewPage = () => {
                 <li>Tambov State University is the only institution of higher education in the Tambov Oblast which prepares doctors and pharmacists with higher education. MBSS IN RUSSIA – MBBS IN TAMBOV STATE UNIVERSITY.</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Address of Tambov State University</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Address of Tambov State University</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>392000, Tambov, Internatsionalnaya St., 33 Tambov, Russia</li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University official website</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">Tambov State University official website</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li><a href="http://www.tsutmb.ru/" target="_blank">http://www.tsutmb.ru/</a></li>
               </ul>
               <div className="heading">
-                <h4 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">How to Reach Tambov State University</h4>
-                <h5>MBSS in Russia – MBBS in Tambov State University</h5>
+                <h2 className="text-h5TextPhone md:text-h5Text pt-[2vw] md:pt-[1vw]">How to Reach Tambov State University</h2>
+                <span>MBSS in Russia – MBBS in Tambov State University</span>
               </div>
               <ul className="points-two">
                 <li>Delhi to Moscow – by flight.</li>

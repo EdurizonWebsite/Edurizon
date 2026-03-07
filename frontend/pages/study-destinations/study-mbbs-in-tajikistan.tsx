@@ -250,7 +250,7 @@ const NewPage=()=>{
            {/* Dubane */}
            <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw] pt-[5vw] md:pt-[2vw] flex md:flex-row flex-col-reverse items-center gap-[6vw] md:gap-[5vw] "> 
                   <div className="flex flex-col gap-[3vw] md:gap-[1.5vw] flex-shrink-0 ">
-                    <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text">DUSHANBE CITY</h3>
+                    <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text">DUSHANBE CITY</h2>
                     <p className="text-smallTextPhone text-left md:text-regularText md:text-justify">Dushanbe is the capital of Tajikistan which is situated on the Varzob River. Rudaki Park which is named after a classical poet is situated on the east bank of the river.  </p>
                   </div>
            </section>
@@ -261,7 +261,7 @@ const NewPage=()=>{
 
             {/* Cultural Insights and Geographical Overview */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Cultural Insights and Geographical Overview</h3>
+                <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Cultural Insights and Geographical Overview</h2>
                 <div className="text-smallTextPhone md:text-regularText text-justify space-y-[2vw] md:space-y-[1vw]">
                     <p>Tajikistan, located in Central Asia, offers a unique cultural blend with influences from Persian, Russian, and Central Asian traditions. Its capital, Dushanbe, is home to many educational institutions, including medical universities.</p>
                     <p>Known for its scenic landscapes and hospitable environment, Tajikistan attracts international students, including a large number from India. The republic of Tajikistan provides students with a safe environment, making it a preferred choice for Indian students moving to Tajikistan to study MBBS.</p>
@@ -271,7 +271,7 @@ const NewPage=()=>{
 
             {/* License to Practice */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">License to Practice</h3>
+                <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">License to Practice</h2>
                 <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw] space-y-[1vw] md:space-y-[0.5vw]">
                     <li>As per NMC Gazette 2021, students need to take licence from that particular country from which she/he has done his/her MBBS.</li>
                     <li>Tajikistan is following all the guidelines as laid down in the Gazette.</li>
@@ -285,16 +285,16 @@ const NewPage=()=>{
 
             {/* Living and Accommodation */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Living and Accommodation in Tajikistan</h3>
+                <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Living and Accommodation in Tajikistan</h2>
                 
-                <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Cost of Living</h4>
+                <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Cost of Living</h3>
                 <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[2vw]">
                     <li>Cost of living in Tajikistan is like India.</li>
                     <li>Students can manage their living cost easily like India.</li>
                     <li>Food is available at 100-120 USD per month.</li>
                 </ul>
 
-                <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Hostel Facilities</h4>
+                <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Hostel Facilities</h3>
                 <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw]">
                     <li>All universities in Tajikistan are providing proper accommodation with all basic necessary facilities.</li>
                     <li>Separate arrangements for boys and girls.</li>
@@ -306,11 +306,11 @@ const NewPage=()=>{
 
             {/* Academic Environment */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Academic Environment</h3>
+                <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Academic Environment</h2>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-[4vw] md:gap-[2vw]">
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Class Strength</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Class Strength</h3>
                         <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw]">
                             <li>The strength of the batch is between 12-15 students.</li>
                             <li>Every student gets the individual attention of the teachers.</li>
@@ -318,17 +318,17 @@ const NewPage=()=>{
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Infrastructure</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Infrastructure</h3>
                         <p className="text-smallTextPhone md:text-regularText">All the Universities in Tajikistan have a world-class structure with ultra-modern gadgets in all hospitals.</p>
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">International Exposure</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">International Exposure</h3>
                         <p className="text-smallTextPhone md:text-regularText">Students get international exposure which help them greatly. Tajikistan provides opportunities for medical students to get exposed to large patient inflow.</p>
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Safety and Security</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Safety and Security</h3>
                         <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw]">
                             <li>Safety and security are top priority for both students and parents.</li>
                             <li>Universities of Tajikistan offer safe and comfortable boarding options under CCTV surveillance.</li>
@@ -341,7 +341,7 @@ const NewPage=()=>{
 
             {/* Program Details */}
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
-                <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Top Medical Universities in Tajikistan</h3>
+                <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[4vw] md:mb-[2vw]">Top Medical Universities in Tajikistan</h2>
             <p className="text-regularTexts text-center">Tajikistan offers quality medical education through government-recognized universities with affordable tuition fees. Best Medical Colleges/Universities in Tajikistan provide English-medium MBBS programs, modern infrastructure, and good clinical exposure, making them an attractive choice for international students. Medical education in Tajikistan is known for its affordability and globally accepted curriculum. Tajikistan MBBS Fees are comparatively low, making it easier for Indian students to pursue quality medical education with modern facilities and clinical exposure.
 </p>
                 <div className="overflow-x-auto">
@@ -383,17 +383,17 @@ const NewPage=()=>{
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-[4vw] md:gap-[2vw] mt-[4vw]">
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Program Cost</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Program Cost</h3>
                         <p className="text-smallTextPhone md:text-regularText">Minimum Fees/hostel – 26 lakh onwards</p>
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Medium of Instruction</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Medium of Instruction</h3>
                         <p className="text-smallTextPhone md:text-regularText">English is the medium of instruction for MBBS course for international students in Tajikistan.</p>
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Program Duration</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Program Duration</h3>
                         <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw]">
                             <li>Tajikistan has 5 years MBBS programme and one-year separate internship.</li>
                             <li>The programme of MBBS designed as 5 + 1 basis.</li>
@@ -401,7 +401,7 @@ const NewPage=()=>{
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Admission Process</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Admission Process</h3>
                         <ul className="text-smallTextPhone md:text-regularText list-disc ml-[3vw] md:ml-[1.5vw]">
                             <li>No entrance test for MBBS admission in Tajikistan</li>
                             <li>Admissions are taken on first-cum-first-serve basis.</li>
@@ -410,7 +410,7 @@ const NewPage=()=>{
                     </div>
 
                     <div>
-                        <h4 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Travel Information</h4>
+                        <h3 className="text-h6TextPhone md:text-h5Text mb-[2vw] md:mb-[1vw]">Travel Information</h3>
                         <p className="text-smallTextPhone md:text-regularText">3 hour air journey from India to Dushanbe, capital of Tajikistan</p>
                     </div>
                 </div>
@@ -422,7 +422,7 @@ const NewPage=()=>{
            {/* Admission Process */}
            <section className="flex flex-col md:flex-row mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] gap-[8vw] md:gap-0 justify-between ">
               <div className="md:w-[36vw] flex-shrink-0">
-                    <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Step by Step Complete Admission Process</h3>
+                    <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Step by Step Complete Admission Process</h2>
                     <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%]">Following Documents are required for admission in Tajik National University.</p>
                     <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] text-left md:text-regularText md:text-justify">
                     <li>Submission of documents:
@@ -444,7 +444,7 @@ const NewPage=()=>{
               </div>
               
               <div className="md:w-[36vw] flex-shrink-0">
-                  <h3 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Documents Required for Tajik Natinonal University</h3>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Documents Required for Tajik Natinonal University</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%]">Following Documents are required for admission in Tajik National University.</p>
                   <ul className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                     <li>10th & 12th Mark Sheets.</li>

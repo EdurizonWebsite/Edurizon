@@ -134,7 +134,7 @@ const NewPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-md-12 col-12">
                         <div className="heading">
-                            <h3 className="mt-0">Important Videos of University / Student & Parent Review</h3>
+                            <h2 className="mt-0">Important Videos of University / Student & Parent Review</h2>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ const NewPage = () => {
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="mt-0">About Southeast University</h3>
+                    <h2 className="mt-0">About Southeast University</h2>
                 </div>
                 <p>
                     South East University is one of the oldest university of China located in the city of Nanjing. It is a public research university in Jiangsu Province which was established in the year 1902.South East University has been
@@ -215,14 +215,14 @@ const NewPage = () => {
                     University.
                 </p>
                 <div className="heading">
-                    <h3>Ranking</h3>
+                    <h2>Ranking</h2>
                 </div>
                 <p>
                     Southeast University is ranked in the top 300 in the world. Among the research universities also the university is ranked is ranked in top 20. Nationally also the University has been ranked in top 3 in different fields
                     like art history, urban planning, architecture, landscape architecture, electronic engineering, biomedical engineering and transportation engineering.
                 </p>
                 <div className="heading">
-                    <h3>Location</h3>
+                    <h2>Location</h2>
                 </div>
                 <p>
                     Southeast University is located in the capital city of China that is Nanjing. Since the Ming Dynasty the city is considered as a sacred place for education and is one of the largest commercial centers of East China
@@ -234,14 +234,14 @@ const NewPage = () => {
                     Mountain, Qinhuai River, Stone city, Ming palace, Chaotian Palace, and Fuzimiao.
                 </p>
                 <div className="heading">
-                    <h3>Climate</h3>
+                    <h2>Climate</h2>
                 </div>
                 <p>
                     Nanjing city has hot summers and cold winters. The maximum annual temperature is 32 degree centigrade during the summers and July is the hottest month of the year. The average low temperature goes down to -1 degree
                     centigrade during the winters. January is the coldest month of the year. Snowfall occurs occasionally during the peak month.
                 </p>
                 <div className="heading">
-                    <h3>Advantages of Southeast University</h3>
+                    <h2>Advantages of Southeast University</h2>
                 </div>
                 <ul className="points-two">
                     <li>Southeast University offers quality education at a very affordable cost and attempts to develop as a centre of excellence.</li>
@@ -253,21 +253,21 @@ const NewPage = () => {
                     <li>Southeast University is a public research university located in the main capital city of China, Nanjing.</li>
                 </ul>
                 <div className="heading">
-                    <h3>Intake</h3>
+                    <h2>Intake</h2>
                 </div>
                 <p>
                     All the 45 universities of China have only one Intake in a year. It is very tough to get admission in the universities of China due to the high demand. Almost all the Universities of China are world ranked, so 70% of the
                     seats are occupied by International students other than India. Pre booking is done in advance and all the top university seats are filled up before the 12th result.
                 </p>
                 <div className="heading">
-                    <h3>Scholarship</h3>
+                    <h2>Scholarship</h2>
                 </div>
                 <p>
                     China is the only country to provide scholarship to International students. Every University in China has their own criteria for granting scholarship. Southeast University offers scholarship every year to top 10 medical
                     students during their course of study. Scholarship is not only based on the percentage of marks acquired but as a whole attendance, punctuality and other curricular activities are considered.
                 </p>
                 <div className="heading">
-                    <h3>Hostel</h3>
+                    <h2>Hostel</h2>
                 </div>
                 <p>
                     Southeast University hostel is located within the University campus. There is a huge canteen nearby the hostel with all facilities including daily need commodities. The University has around 50-60 multistoried buildings
@@ -285,7 +285,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Fees Structure of Southeast University</h3>
+                        <h2 className="mt-0">Fees Structure of Southeast University</h2>
                     </div>
                     <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -339,7 +339,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-md-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0 mb-3 mb-md-0">Our Director visited Southeast University</h3>
+                        <h2 className="mt-0 mb-3 mb-md-0">Our Director visited Southeast University</h2>
                     </div>
                     <div id="edurizon-photos" className="owl-carousel">
                         <div className="edu-photos">
@@ -404,7 +404,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                    <h3 className="mt-0 mb-4">Quick Facts</h3>
+                    <h2 className="mt-0 mb-4">Quick Facts</h2>
                 </div>
                 <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -471,7 +471,7 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="mt-0">Documents Required for MBBS Admission in Southeast University</h3>
+                        <h2 className="mt-0">Documents Required for MBBS Admission in Southeast University</h2>
                     </div>
                     <ul className="points-two">
                         <li>10th, 12th Mark sheet.</li>

@@ -158,7 +158,7 @@ const NewPage = () => {
             <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
               <h3 className="text-h5TextPhone leading-[120%]  md:text-h3Text md:text-center text-left mb-[4vw] md:mb-[1vw]">Lumbini Medical College</h3>
        
-              <p className='text-smallTextPhone  text-left md:text-regularText md:text-justify'>
+              <div className='text-smallTextPhone  text-left md:text-regularText md:text-justify'>
                
 
                 <ul className=" list-disc ml-[3vw] md:ml-[1.5vw]">
@@ -178,7 +178,7 @@ const NewPage = () => {
 
                 </ul>
 
-                </p>                        
+                </div>                        
             </section>
 
         

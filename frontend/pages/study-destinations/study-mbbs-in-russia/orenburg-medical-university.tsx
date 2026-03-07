@@ -103,7 +103,7 @@ const OrenburgMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">About Orenburg State Medical University</h3>
+                    <h2 className="text-h5TextPhone md:text-h5Text">About Orenburg State Medical University</h2>
                 </div>
                 <p>Orenburg State Medical University (OrSMU), situated in the Russian city of Orenburg, is one of the best government medical schools in the country. It was founded in 1944. It provides courses leading to masters, doctorate, and bachelor's degrees in a variety of subject areas that are officially recognized as higher education degrees. The University satisfies every contemporary criterion and prerequisite set forth for graduate-level medical programs. For this reason, the most sought-after Russian medical school is Orenburg State Medical University, especially for Indian students hoping to pursue an MBBS in Russia. </p>
                 <p>In order to prepare the upcoming generation of doctors, researchers, and healthcare workers, Orenburg State Medical University offers top-notch educational programs. This university has produced numerous well-known experts in the medical profession. They are employed in public and private medical and preventive facilities, holding prominent roles in state governance frameworks, and resolving fundamental problems in the advancement of contemporary medicine. </p>
@@ -119,7 +119,7 @@ const OrenburgMedicalUniversity=()=>{
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="text-h5TextPhone md:text-h5Text">Quick Facts of Orenburg State Medical University</h3>
+                        <h2 className="text-h5TextPhone md:text-h5Text">Quick Facts of Orenburg State Medical University</h2>
                     </div>
                     <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -176,7 +176,7 @@ const OrenburgMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">City at a Glance</h3>
+                    <h2 className="text-h5TextPhone md:text-h5Text">City at a Glance</h2>
                 </div>
                 <ul className="points-two">
                     <li>The administrative hub of Russia's Orenburg Oblast is Orenburg. </li>
@@ -196,7 +196,7 @@ const OrenburgMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Recognitions of Orenburg State Medical University</h3>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Recognitions of Orenburg State Medical University</h2>
                     <p>Several reputable international organizations, including the following, have acknowledged Orenburg State Medical University:</p>
                 </div>
                 <ul className="points-two">
@@ -214,7 +214,7 @@ const OrenburgMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Faculties of Orenburg State Medical University</h3>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Faculties of Orenburg State Medical University</h2>
                 </div>
                 <ul className="points-three">
                     <li>Eco biology.</li>
@@ -250,7 +250,7 @@ const OrenburgMedicalUniversity=()=>{
         <div className="row immigrate-bg g-0">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Why Choose Orenburg State Medical University for MBBS in Russia</h3>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Why Choose Orenburg State Medical University for MBBS in Russia</h2>
                 </div>
                 <ul className="points-two">
                     <li>Learners Here, more than 3,000 students and 1000 listeners are enrolled in the MBBS program.</li>
@@ -270,7 +270,7 @@ const OrenburgMedicalUniversity=()=>{
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="text-h5TextPhone md:text-h5Text">Fees Structure of Orenburg State Medical University</h3>
+                        <h2 className="text-h5TextPhone md:text-h5Text">Fees Structure of Orenburg State Medical University</h2>
                     </div>
                     <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -290,7 +290,7 @@ const OrenburgMedicalUniversity=()=>{
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"> 
                   <div className="heading">
-              <h3 className="text-h5TextPhone md:text-h5Text">Other Charges which includes in</h3> 
+              <h2 className="text-h5TextPhone md:text-h5Text">Other Charges which includes in</h2> 
           </div>
           <ul className="points-two"> 
               <li>Visa, Medical Insurance, Biometric, Medical Checkup, Food, and Air Ticket will be extra charge.</li>
@@ -309,7 +309,7 @@ const OrenburgMedicalUniversity=()=>{
         <div className="row immigrate-bg">
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <div className="heading">
-                    <h3 className="text-h5TextPhone md:text-h5Text">Orenburg State Medical University's Eligibility Standards</h3>
+                    <h2 className="text-h5TextPhone md:text-h5Text">Orenburg State Medical University's Eligibility Standards</h2>
                 </div>
                 <p>This is the eligibility criteria for all applicants to the MBBS program at Orenburg State Medical University. The university has implemented a simplified admissions process for international applicants, making it very simple to gain admission. The full set of requirements for MBBS admission to OSMU is provided below.</p>
                 <ul className="points-two">
@@ -322,7 +322,7 @@ const OrenburgMedicalUniversity=()=>{
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <div className="heading">
-                <h3 className="pt-2  text-h5TextPhone md:text-h5Text">Academics</h3>
+                <h2 className="pt-2  text-h5TextPhone md:text-h5Text">Academics</h2>
                 </div>
                 <ul className="points-two">
                     <li>A minimum of 50% marks is required in the 12th className exam.</li>
@@ -330,13 +330,13 @@ const OrenburgMedicalUniversity=()=>{
                     <li>Physics, Chemistry, and Biology are compulsory subjects.</li>
                 </ul>
                 <div className="heading">
-                <h3 className="pt-2  text-h5TextPhone md:text-h5Text">Criteria</h3>
+                <h2 className="pt-2  text-h5TextPhone md:text-h5Text">Criteria</h2>
                 </div>
                 <ul className="points-two">
                     <li>Candidates need to qualify for the NEET Exam to get admission to OSMU.</li>
                 </ul>
                 <div className="heading">
-                <h3 className="pt-2 text-h5TextPhone md:text-h5Text">Age</h3>
+                <h2 className="pt-2 text-h5TextPhone md:text-h5Text">Age</h2>
                 </div>
                 <ul className="points-two">
                     <li>The minimum age required is 17; students completing 17 till 31 December of the admission year are also eligible.</li>
@@ -353,7 +353,7 @@ const OrenburgMedicalUniversity=()=>{
             <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                             <div className="heading">
-                        <h3 className="text-h5TextPhone md:text-h5Text">Documents Required for Orenburg State Medical University</h3>
+                        <h2 className="text-h5TextPhone md:text-h5Text">Documents Required for Orenburg State Medical University</h2>
                     </div> 
                     <ul className="points-two"> 
                         <li>10TH/12TH Mark sheet.</li>
@@ -374,7 +374,7 @@ const OrenburgMedicalUniversity=()=>{
             <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                             <div className="heading">
-                        <h3 className="text-h5TextPhone md:text-h5Text">Student's life at Orenburg State Medical University</h3>
+                        <h2 className="text-h5TextPhone md:text-h5Text">Student's life at Orenburg State Medical University</h2>
                     </div> 
                     <ul className="points-two"> 
                         <li><b>Cultural Events:</b> For their international medical students, the university hosts dancing, music, and other cultural programs.</li>

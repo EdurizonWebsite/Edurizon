@@ -98,8 +98,8 @@ const NewPage = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Krasnoyarsk State Medical University</h3>
-          <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Krasnoyarsk State Medical University</h2>
+          <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
         </div>
         <p>One of the top universities in Siberia and the Far East for higher education is Krasnoyarsk State Medical University. Third in Siberia and the Far East, Krasnoyarsk State Medical University is ranked third among medical universities in the Russian Federation. It is ranked seventeenth overall. Combining Leningrad Medical Institute and Leningrad Pediatric Dental Institute, Krasnoyarsk State Medical University was formed. The All-Union Committee for Higher Education issued an order in 1942 that established Krasnoyarsk Medical Institute, which later became Krasnoyarsk State Medical University. The Krasnoyarsk Medical Institute only had a medical faculty until 1958, when a pediatric faculty was established. Three faculties were established: the Faculty of Dentistry in 1978, the Faculty of Higher Nursing Education in 1992, and the Faculty of Pharmacy in 2006. Over 30,000 physicians, pediatricians, dentists, managers, and organizers of practical public health have been trained at Krasnoyarsk State Medical University during its history. Krasnoyarsk State Medical University has trained roughly 2,500 physicians during the past five years. </p>
         <p>About 800 students are enrolled in Krasnoyarsk University across all faculties as of right now. The Krasnoyarsk State Medical University is a dynamic institution. Krasnoyarsk State Medical University has added eight new departments in the previous five years, including the Interdepartmental Biochemical Research Laboratory, the Laboratory of Anthropology, the Institute of Nutrition, and the Morphological Center. In international collaboration with other universities in Krasnoyarsk, Russia, Japan, France, Italy, Germany, and other nations, Krasnoyarsk State Medical University has undertaken innovative and engaging cooperative initiatives. Currently, 690 professors and teachers work at Krasnoyarsk State Medical University throughout 66 departments.</p>
@@ -113,8 +113,8 @@ const NewPage = () => {
             <div className="immigrate-bg">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div className="heading">
-                        <h3 className="text-h5TextPhone md:text-h5Text"> Quick Highlights Of About Krasnoyarsk State Medical University</h3>
-                        <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+                        <h2 className="text-h5TextPhone md:text-h5Text"> Quick Highlights Of About Krasnoyarsk State Medical University</h2>
+                        <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
                     </div>
                     <div className="table-responsive">
                         <table className="table table-bordered table-striped align-middle">
@@ -173,8 +173,8 @@ const NewPage = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text"> Krasnoyarsk City</h3>
-          <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text"> Krasnoyarsk City</h2>
+          <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
         </div>
          <p>The largest city in Krasnoyarsk Krai, Russia, is also its administrative hub. It is the second-biggest city in Siberia after Novosibirsk, and it is located along the Yenisey River. More than 1.1 million people live there. One of the biggest aluminum producers in the nation, Krasnoyarsk is also a significant intersection of the well-known Trans-Siberian Railway. Author Anton Chekhov deemed Krasnoyarsk to be the most beautiful city in Siberia due to the area's unparalleled natural scenery. Located 10 kilometers south of the city is the Stolby Nature Sanctuary. Home to the Siberian Federal University, Krasnoyarsk is a significant hub for education in Siberia. 2019 saw the third Winter Universiade held in Russia, with Krasnoyarsk serving as host city.</p>
       </div>
@@ -186,8 +186,8 @@ const NewPage = () => {
     <div className="row immigrate-bg">
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Affiliation and Recognition of Krasnoyarsk State Medical University</h3>
-          <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Affiliation and Recognition of Krasnoyarsk State Medical University</h2>
+          <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
         </div>
          <ul className="points-two">
           <li>The Russian government established the Krasnoyarsk State Medical University.</li>
@@ -198,8 +198,8 @@ const NewPage = () => {
       </div>
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text"> Faculties of Krasnoyarsk State Medical University</h3>
-          <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text"> Faculties of Krasnoyarsk State Medical University</h2>
+          <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
         </div>
          <ul  className="points-two">
           <li>Faculty of General Medicine.</li>
@@ -218,8 +218,8 @@ const NewPage = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text">Why Study MBBS at Krasnoyarsk State Medical University?</h3>
-          <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text">Why Study MBBS at Krasnoyarsk State Medical University?</h2>
+          <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
           <p>Students at Krasnoyarsk State Medical University will have access to excellent resources that will help them comprehend the subject matter more fully. </p>
           <p>After graduating from Krasnoyarsk State Medical University, a student will be well-equipped to face obstacles outside of the classroom.</p>
           <p>Since English will be the primary medium of instruction, international students will be able to follow along.</p>
@@ -245,8 +245,8 @@ const NewPage = () => {
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                   <div className="heading">
-                      <h3 className="text-h5TextPhone md:text-h5Text">Fee Structure of Krasnoyarsk State Medical University</h3>
-                      <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+                      <h2 className="text-h5TextPhone md:text-h5Text">Fee Structure of Krasnoyarsk State Medical University</h2>
+                      <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
                   </div>
                   <div className="table-responsive">
                       <table className="table table-bordered table-striped align-middle">
@@ -266,8 +266,8 @@ const NewPage = () => {
               </div>
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
                 <div className="heading">
-            <h3 className="text-h5TextPhone md:text-h5Text"> Eligibility Criteria to Study Medicine at Krasnoyarsk State Medical University?</h3> 
-            <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+            <h2 className="text-h5TextPhone md:text-h5Text"> Eligibility Criteria to Study Medicine at Krasnoyarsk State Medical University?</h2> 
+            <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
             <p>In recent years, international students aiming to obtain a medical degree have grown to love Russia's Krasnoyarsk State Medical University. To apply to the Krasnoyarsk State Medical University in Russia's MBBS program, make sure you meet the requirements listed below.</p>
         </div>
         <ul className="points-two"> 
@@ -288,8 +288,8 @@ const NewPage = () => {
     <div className="row immigrate-bg g-0">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="heading">
-          <h3 className="text-h5TextPhone md:text-h5Text"> Documents Required for Krasnoyarsk State Medical University</h3>
-          <h5>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</h5>
+          <h2 className="text-h5TextPhone md:text-h5Text"> Documents Required for Krasnoyarsk State Medical University</h2>
+          <span>MBBS in Russia – MBBS in Krasnoyarsk State Medical University</span>
           <p><b>Please bring all of these necessary documents with you when you apply to Krasnoyarsk State Medical University.</b></p>
         </div>
         <ul className="points-two">

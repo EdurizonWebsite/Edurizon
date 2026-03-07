@@ -53,14 +53,14 @@ const Masters = () => {
         <Breadcrumbs />
         <div >
         <h1 className="text-h4TextPhone md:text-h1Text font-bold text-center text-orangeChosen leading-[120%] pb-[4vw]">Masters in Germany</h1>
-        <h5 className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER</h5>
+        <span className='text-h5TextPhone md:text-h5Text font-bold text-center leading-[130%]'>STUDY & SETTLE IN GERMANY | 100% PLACEMENT | EXCELLENT CAREER</span>
         </div>
         </div>
         
      
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Public Universities</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Public Universities</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>University Stuttgart</li>
                 <li>University of Manngeim</li>
@@ -79,7 +79,7 @@ const Masters = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Private Universities</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Private Universities</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Fees - 9000 EURO to 20000 EURO (For whole course)</li>
                 <li>50+ universities which provide Masters in English taught programme in different field. It also varies the fees structure according to course and duration</li>
@@ -87,7 +87,7 @@ const Masters = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Cost of living</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Cost of living</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>600 – 900 EURO per month depend upon cities</li>
                 <li>Block account - 10,323 Euro for maintenance</li>
@@ -95,7 +95,7 @@ const Masters = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Scholarship/students support</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Scholarship/students support</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>DAAD</li>
                 <li>Study portal scholarship</li>
@@ -103,7 +103,7 @@ const Masters = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Academic requirement</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Academic requirement</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>10th - 12th with 60% and more</li>
                 <li>Bachelors - With 60 % And more</li>
@@ -117,8 +117,8 @@ const Masters = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
-            in India as well as in Germany</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>We provide the following facilities<br/>
+            in India as well as in Germany</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Invitation letter</li>
                 <li>Accommodation assistance</li>
@@ -142,7 +142,7 @@ const Masters = () => {
         </div>
 
         <div className='flex flex-col gap-[1vw] w-full'>
-            <h3 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h3>
+            <h2 className='text-h3TextPhone md:text-h3Text font-bold leading-[130%] text-left underline'>Interesting facts about Germany</h2>
             <ul className='list-disc pl-[6vw] md:pl-[1.5vw] font-medium list-outside md:text-regularText text-regularTextPhone '>
                 <li>Public Universities charge zero tuition fees</li>
                 <li>18 months stay back facilities</li>
