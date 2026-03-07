@@ -66,20 +66,6 @@ const Home = () => {
         <meta name="description" content="Edurizon offers affordable education, global exposure & easy admission to Study MBBS Abroad for Indian Students." />
         <meta name="keywords" content="Study MBBS Abroad, MBBS Abroad for Indian Students" />
         <meta name="author" content="Edurizon" />
-        <link rel="canonical" href="https://www.edurizon.in" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Edurizon",
-              "url": "https://www.edurizon.in",
-              "logo": "https://www.edurizon.in/favicon.ico",
-              "description": "Edurizon offers affordable education, global exposure & easy admission to Study MBBS Abroad for Indian Students.",
-            }),
-          }}
-        />
       </Head>
 
     

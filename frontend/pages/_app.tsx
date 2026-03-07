@@ -183,6 +183,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [isAdminRoute]);
 
+  const siteUrl = "https://www.edurizon.in";
+  const path = router.asPath?.split("#")[0]?.split("?")[0] || "/";
+  const canonicalUrl = `${siteUrl}${path === "/" ? "" : path}`;
+
   return (
     <>
       <Head>
@@ -191,13 +195,26 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
-        
-
-        
         {/* SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://www.edurizon.in" />
+        <link rel="canonical" href={canonicalUrl} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Edurizon",
+              url: siteUrl,
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${siteUrl}/study-destinations?category=Destination&search={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* Google Analytics */}
