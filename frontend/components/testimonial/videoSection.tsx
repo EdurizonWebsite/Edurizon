@@ -131,7 +131,7 @@ const VideoSection = () => {
   return (
     <div className='px-[5vw]'>
         <h2 className='text-h3TextPhone md:text-h2Text font-bold text-center pb-[2vw] md:pb-[1.5vw]'>
-        Why Student Love Us
+        Why Students Love Us
         </h2>
         <section className="mb-[16px] md:mb-[32px] mx-[-12px] sm:mx-[-16px] md:mx-[0px] lg:mb-[32px] xl:mb-[48px] overflow-x-auto whitespace-nowrap md:overflow-x-visible md:whitespace-normal md:flex justify-center md:flex-row gap-[8px] md:gap-[20px] lg:gap-[24px] flex-wrap">
       {categories.map((name, index) => (

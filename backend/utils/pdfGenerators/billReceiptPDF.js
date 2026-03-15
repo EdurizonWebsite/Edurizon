@@ -277,7 +277,7 @@ const generateBillReceiptPDF = (options) => {
   leftY = drawLabelValue(doc, 'Student Name', studentName, col1Start, leftY, colWidth);
   leftY = drawLabelValue(doc, 'Father\'s Name', fatherNameText, col1Start, leftY, colWidth);
   leftY = drawLabelValue(doc, 'Email', studentEmail, col1Start, leftY, colWidth);
-  leftY = drawLabelValue(doc, 'Phone', studentPhone, col1Start, leftY, colWidth);
+  // leftY = drawLabelValue(doc, 'Phone', studentPhone, col1Start, leftY, colWidth);
 
   // RIGHT COLUMN - Academic Information
   rightY = drawSectionTitle(doc, 'Academic Information', col2Start, rightY, colWidth);
@@ -324,12 +324,12 @@ const generateBillReceiptPDF = (options) => {
   
   // If current payment is processing fee, subtract it from pending
   if (currency === 'INR' && purpose && purpose.toLowerCase().includes('processing')) {
-    adjustedPendingProcessing = Math.max(0, pendingProcessingInr - Number(paymentAmount));
+    adjustedPendingProcessing = pendingProcessingInr;
   }
   
   // If current payment is OTC, subtract it from pending
   if (currency === 'USD' && purpose && (purpose.toLowerCase().includes('otc') || purpose.toLowerCase().includes('one time'))) {
-    adjustedPendingOtc = Math.max(0, pendingOtcUsd - Number(paymentAmount));
+    adjustedPendingOtc = pendingOtcUsd - Number(paymentAmount);
   }
   
   // Table columns

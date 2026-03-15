@@ -49,7 +49,8 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
       country: '',
       course: '',
       status: '',
-      counsellor: ''
+      counsellor: '',
+      source: '',
     });
     
     // Assign counsellor states
@@ -220,7 +221,8 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                 country: '',
                 course: '',
                 status: '',
-                counsellor: ''
+                counsellor: '',
+                source: '',
             });
             setSelectedLeads([]);
         },[activeTab])
@@ -388,6 +390,13 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                     lead.assignedCounsellor === filterCriteria.counsellor
                 );
             }
+
+            if (filterCriteria.source.trim()) {
+                const sourceQuery = filterCriteria.source.trim().toLowerCase();
+                filteredData = filteredData.filter(lead =>
+                    String(lead.source || 'Website').toLowerCase().includes(sourceQuery)
+                );
+            }
             
             setCurrentDataForTable(filteredData);
             setShowFilterModal(false);
@@ -400,7 +409,8 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                 country: '',
                 course: '',
                 status: '',
-                counsellor: ''
+                counsellor: '',
+                source: '',
             });
             setCurrentDataForTable(leads);
             setShowFilterModal(false);
@@ -556,7 +566,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                       />
                     </div>
-                                         <div>
+                    <div>
                        <label className="block text-sm font-medium text-gray-700 mb-2">Country</label>
                        <select
                          value={filterCriteria.country}
@@ -600,7 +610,17 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                         <option value="completed">Completed</option>
                       </select>
                     </div>
-                                         <div className="col-span-2">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Source</label>
+                      <input
+                        type="text"
+                        value={filterCriteria.source}
+                        onChange={(e) => setFilterCriteria(prev => ({ ...prev, source: e.target.value }))}
+                        placeholder="Search by source..."
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                      />
+                    </div>
+                     <div className="col-span-2">
                        <label className="block text-sm font-medium text-gray-700 mb-2">Counsellor</label>
                        <select
                          value={filterCriteria.counsellor}

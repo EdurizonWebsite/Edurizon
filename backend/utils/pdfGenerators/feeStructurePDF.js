@@ -98,7 +98,7 @@ const generateFeeStructurePDF = (options) => {
   doc.text(`Email: ${student.email || 'N/A'}`, col1Start, leftY, { width: colWidth });
   
   leftY += 18;
-  doc.text(`Phone: ${student.phone || 'N/A'}`, col1Start, leftY, { width: colWidth });
+//   doc.text(`Phone: ${student.phone || 'N/A'}`, col1Start, leftY, { width: colWidth });
   
   leftY += 18;
   // Handle multiple countries (comma separated)

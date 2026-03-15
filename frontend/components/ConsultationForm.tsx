@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,6 +7,9 @@ interface ConsultationFormProps {
   onClose: () => void;
 }
 import Image from 'next/image';
+
+const SESSION_STORAGE_KEY = 'edurizon_consultation_submitted';
+
 const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -16,6 +19,13 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
   });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [alreadySubmittedThisSession, setAlreadySubmittedThisSession] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && sessionStorage.getItem(SESSION_STORAGE_KEY) === 'true') {
+      setAlreadySubmittedThisSession(true);
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,25 +38,30 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading || alreadySubmittedThisSession) return;
     setLoading(true);
+    let succeeded = false;
     try {
-      // Send request without requiring login
       const requestData = {
         ...formData,
         status: 'pending'
       };
 
       const response = await axios.post(
-        `${baseUrl}/api/consultation/request`, 
+        `${baseUrl}/api/consultation/request`,
         requestData
       );
 
       if (response.data.success) {
+        succeeded = true;
+        if (typeof window !== 'undefined') {
+          sessionStorage.setItem(SESSION_STORAGE_KEY, 'true');
+        }
+        setAlreadySubmittedThisSession(true);
         toast.success('Consultation request submitted successfully! We will contact you soon.');
-        // Wait for toast to appear before closing modal
         setTimeout(() => {
           onClose();
-        }, 1000); // 2 second delay
+        }, 1000);
       }
     } catch (error: any) {
       console.error('Consultation request error:', error);
@@ -59,7 +74,7 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
         toast.error('An error occurred while submitting your request.');
       }
     } finally {
-      setLoading(false);
+      if (!succeeded) setLoading(false);
     }
   };
 
@@ -129,10 +144,10 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
             </button>
             <button
               type="submit"
-              disabled={loading}
-              className="px-[4vw] md:px-[1.5vw] py-[1.5vw] md:py-[.5vw] font-medium text-white bg-orangeChosen border-[1px] rounded-[12.5vw] md:rounded-[6.25vw] hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeChosen disabled:opacity-50"
+              disabled={loading || alreadySubmittedThisSession}
+              className="px-[4vw] md:px-[1.5vw] py-[1.5vw] md:py-[.5vw] font-medium text-white bg-orangeChosen border-[1px] rounded-[12.5vw] md:rounded-[6.25vw] hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeChosen disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Submitting...' : 'Submit'}
+              {alreadySubmittedThisSession ? 'Already submitted' : loading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
         </form>
