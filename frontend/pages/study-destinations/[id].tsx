@@ -132,6 +132,9 @@ const NewPage = ({ id,countryData }: NewPageProps) => {
 
       {/* Scholarship Section */}
       {countryData.scholarshipSection && <ScholarshipSection id={id} data={countryData.scholarshipSection} />}
+
+      {/* CSCA Requirement Section (China MBBS) */}
+      {id === "study-mbbs-in-china" ? <CSCARequirementSection id={id} /> : null}
       
       {/* Country Cost Data */}
       {countryData.countryCostData && <CostTable id={id} data={countryData.countryCostData} />}
@@ -203,6 +206,7 @@ import CostTable from "@/components/studyDestinationComponents/costTable";
 import WhyChoseUniversity from "@/components/studyDestinationComponents/whyChoseUniversity";
 import countryNames  from '@/lib/countryData';
 import ScholarshipSection from "@/components/studyDestinationComponents/scholarshipSection";
+import CSCARequirementSection from "@/components/studyDestinationComponents/cscaRequirementSection";
 import UnlistedTable from "@/components/studyDestinationComponents/unListedTable";
 import AdmissionProcess from "@/components/studyDestinationComponents/admissionProcess";
 import RelatedVideos from "@/components/videoSlider";
