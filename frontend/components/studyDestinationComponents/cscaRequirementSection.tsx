@@ -43,7 +43,7 @@ export default function CSCARequirementSection({}: CSCARequirementSectionProps) 
 
           <div className="relative rounded-[4vw] md:rounded-[1.25vw] overflow-hidden border border-black/10 dark:border-white/10">
             <Image
-              src="https://images.unsplash.com/photo-1588072432836-7fb78a7e8a0a?auto=format&fit=crop&w=1600&q=70"
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=70"
               alt="Online exam preparation and study"
               width={1600}
               height={1000}
