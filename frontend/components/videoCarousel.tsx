@@ -1,7 +1,6 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Padding } from '@mui/icons-material';
 
 
 
@@ -14,9 +13,9 @@ interface Video {
   channel: string;
 }
 
-const VideoCarousel = ({ videoData }: { videoData: Video[] }) => {
+const VideoCarousel = ({ videoData, title='What Our Students Has To Say About Us' }: {title:string,videoData: Video[] }) => {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 1000,
       autoplay: true,
@@ -24,7 +23,7 @@ const VideoCarousel = ({ videoData }: { videoData: Video[] }) => {
       slidesToShow: 4,
       slidesToScroll: 1,
       pauseOnHover: true,
-      arrows: false,
+      arrows: true,
       responsive: [
         {
           breakpoint: 768,
@@ -35,7 +34,7 @@ const VideoCarousel = ({ videoData }: { videoData: Video[] }) => {
   
     return (
       <div className=" mb-[10vw] md:mb-[8vw] ">
-        <h2 className="text-center text-h5TextPhone md:text-h3Text font-bold mb-[2vw] md:mb-[1vw] leading-[130%]">What Our Students Has To Say About Us</h2>
+        <h2 className="text-center text-h5TextPhone md:text-h3Text font-bold mb-[2vw] md:mb-[1vw] leading-[130%]">{title}</h2>
         <Slider {...settings} className='px-[2vw] md:px-0 flex flex-row items-start justify-start'>
           {videoData.map((video) => (
             <div key={video.id} className="">

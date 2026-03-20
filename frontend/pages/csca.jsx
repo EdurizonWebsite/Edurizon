@@ -6,7 +6,9 @@ import InfoCard from "@/components/csca/InfoCard";
 import ExamCard from "@/components/csca/ExamCard";
 import SubjectCard from "@/components/csca/SubjectCard";
 import CTASection from "@/components/csca/CTASection";
-
+import UnlistedTable from "@/components/studyDestinationComponents/unListedTable";
+import countryNames from "@/lib/countryData";
+import VideoCarousel from "@/components/videoCarousel";
 const overview = {
   title: "CSCA",
   subtitle: "Start Your Higher Education in China",
@@ -44,7 +46,114 @@ const icon = {
   ),
 };
 
+export const videos = [
+  {
+    id: 1,
+    title: 'Exposing the Real Cost of Medical Study Abroad',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/0BF-kRVlX5E/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=0BF-kRVlX5E',
+    state: 'general'
+  },
+  {
+    id: 2,
+    title: 'Study Abroad Guidance',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/wDyCtDtdOuU/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=wDyCtDtdOuU',
+    state: 'general'
+  },
+  // {
+  //   id: 3,
+  //   title: 'MBBS Abroad Information',
+  //   channel: 'Edurizon Pvt Ltd',
+  //   thumbnail: 'https://img.youtube.com/vi/2CMapuFuPTM/maxresdefault.jpg',
+  //   link: 'https://www.youtube.com/watch?v=2CMapuFuPTM',
+  //   state: 'general'
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Medical Study Abroad Tips',
+  //   channel: 'Edurizon Pvt Ltd',
+  //   thumbnail: 'https://img.youtube.com/vi/hFL_VInm6yc/maxresdefault.jpg',
+  //   link: 'https://www.youtube.com/watch?v=hFL_VInm6yc',
+  //   state: 'general'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'MBBS Abroad Student Guide',
+  //   channel: 'Edurizon Pvt Ltd',
+  //   thumbnail: 'https://img.youtube.com/vi/6i5YDgvy2MU/maxresdefault.jpg',
+  //   link: 'https://www.youtube.com/watch?v=6i5YDgvy2MU',
+  //   state: 'general'
+  // },
+  {
+    id: 6,
+    title: 'Study Abroad Reality Check',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/DdHQx5OhbhY/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=DdHQx5OhbhY',
+    state: 'general'
+  },
+  {
+    id: 7,
+    title: 'Student Experience Abroad',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/LIAnNYDMEQs/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=LIAnNYDMEQs',
+    state: 'general'
+  },
+  {
+    id: 8,
+    title: 'MBBS Abroad Explained',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/T0gI3qDCyos/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=T0gI3qDCyos',
+    state: 'general'
+  },
+  {
+    id: 9,
+    title: 'Study Abroad Insights',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/3JA3KOKdeW8/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=3JA3KOKdeW8',
+    state: 'general'
+  },
+  {
+    id: 10,
+    title: 'Medical Abroad Overview',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/VKvD4mcQOKo/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=VKvD4mcQOKo',
+    state: 'general'
+  },
+  {
+    id: 11,
+    title: 'MBBS Abroad Consultation',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/G7i7lijJxtw/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=G7i7lijJxtw',
+    state: 'general'
+  },
+  {
+    id: 12,
+    title: 'Study Abroad Complete Guide',
+    channel: 'Edurizon Pvt Ltd',
+    thumbnail: 'https://img.youtube.com/vi/Jq0VtA6b3IE/maxresdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=Jq0VtA6b3IE',
+    state: 'general'
+  }
+];
+
 export default function CSCAOverviewPage() {
+  console.log(countryNames["study-mbbs-in-china"])
+  const chianUniversityData={
+    title:"Universities in which CSCA provide scholarships",
+    subTitle:"",
+    description:'Medical education in China is widely known for its affordability and high academic standards. China MBBS Fees are comparatively lower than many other countries, offering Indian students access to quality universities, modern infrastructure, and excellent clinical exposure at a reasonable cost. For more details regarding any of the below university you can click on the university name and visit their webpages.',
+    data:countryNames["study-mbbs-in-china"].countryFeeStructure?.data,
+    href:countryNames["study-mbbs-in-china"].countryFeeStructure?.href,
+  }
   return (
     <>
       <Head>
@@ -53,10 +162,11 @@ export default function CSCAOverviewPage() {
           name="description"
           content="CSCA overview for international students applying to China (especially MBBS): exam dates, registration, subjects, format, eligibility, and why CSCA matters."
         />
+        <meta name="keywords" content="How to apply for CSCA exam in China, CSCA certification exam fees in China, CSCA Exam China, CSCA exam syllabus and pattern China" />
         <meta name="robots" content="index, follow" />
       </Head>
 
-      <main className="pt-[20vw] md:pt-[7.25vw] flex flex-col gap-[10vw] md:gap-[4vw] ">
+      <main className="pt-[20vw] md:pt-[7.25vw] flex flex-col gap-[10vw] md:gap-[4vw] overflow-hidden ">
         {/* Hero */}
         <section className="mx-[6vw] md:mx-[12.5vw]">
           <div className="rounded-[5vw] md:rounded-[1.75vw] border border-black/10 dark:border-white/10 bg-linenChosen overflow-hidden shadow-[0_16px_45px_rgba(0,0,0,0.10)]">
@@ -162,7 +272,9 @@ export default function CSCAOverviewPage() {
             <InfoCard icon={icon.shield} title="Boosts top-university chances" description="Strong scores can strengthen applications where CSCA is preferred or required." />
           </div>
         </section>
-
+        
+          <UnlistedTable section2={"feeStructure"} id={'csca-overview'} content={chianUniversityData} />
+        
         {/* Exam Structure */}
         <section className="mx-[6vw] md:mx-[12.5vw]">
           <SectionHeader
@@ -247,7 +359,7 @@ export default function CSCAOverviewPage() {
             </div>
           </div>
         </section>
-
+        <VideoCarousel videoData={videos} title="Why Chose Edurizon for MBBS in China" />
         {/* CTA Banner */}
         <section className="pb-[12vw] md:pb-[6vw]">
           <CTASection
