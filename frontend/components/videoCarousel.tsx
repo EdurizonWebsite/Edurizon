@@ -13,7 +13,7 @@ interface Video {
   channel: string;
 }
 
-const VideoCarousel = ({ videoData, title='What Our Students Has To Say About Us' }: {title?:string,videoData: Video[] }) => {
+const VideoCarousel = ({ videoData, title='What Our Students Have Say About Us' }: {title?:string,videoData: Video[] }) => {
     const settings = {
       dots: true,
       infinite: true,

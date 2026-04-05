@@ -189,6 +189,14 @@ export const destinationData =[
       budget: "under25",
       description:"It is a national key comprehensive university with students from various ethnic groups. It is one of two in Xinjiang entering the national “211 Project.” On December 30, 2000, the former Xinjiang University and Xinjiang Engineering Institute merged into a new Xinjiang University. "
     },
+    {
+      image:"/assets/Images/CountryBlogs/studyDestinationCard/China.webp",
+      title:"Nantong University",
+      category:"University",
+      href:"/study-destinations/study-mbbs-in-china/nantong-university",
+      budget: "under35",
+      description:"Established in 1912, Nantong University is one of China’s well-recognized institutions with a strong legacy in medical education and research. It was founded by renowned industrialist and educator Zhang Jian."
+    },
 
     // MBBS in Nepal
     {

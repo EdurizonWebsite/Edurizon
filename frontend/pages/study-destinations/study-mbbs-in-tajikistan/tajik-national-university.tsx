@@ -207,7 +207,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
 
            {/* MBBS in Indian Student */}
            <section className=" mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[2vw] pt-[5vw] md:pt-[0vw] gap-[vw] justify-between ">
-                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">MBBS in Tajik Natinonal University for Indian Student</h2>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">MBBS in Tajik National University for Indian Student</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] mb-[2vw] md:mb-[.5vw]">The cost of studying MBBS in TNU, Tajikistan is affordable just like India. TNU is highly popular among Indian students due to following main reasons:-</p>
                   <div className="flex flex-col md:flex-row gap-[3vw] md:gap-[1.5vw]  ">
                   <ul className="text-smallTextPhone text-left md:text-regularText w-full md:w-[37.5vw] flex-shrink-0 md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
@@ -297,7 +297,7 @@ Tajik National University is the first and largest university in Tajikistan. It 
               </div>
               
               <div className="md:w-[36vw] flex-shrink-0">
-                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Documents Required for Tajik Natinonal University</h2>
+                  <h2 className="text-h5TextPhone leading-[120%] md:text-h3Text mb-[3vw] md:mb-[1.5vw]">Documents Required for Tajik National University</h2>
                   <p className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%]">Following Documents are required for admission in Tajik National University.</p>
                   <ul className="text-smallTextPhone text-left md:text-regularText md:text-justify leading-[150%] list-disc pl-[4vw] md:pl-[1.5vw] list-outside">
                     <li>10th & 12th Mark Sheets (Must Passed 12th with at least 50% in Physics, Chemistry and Biology).</li>
