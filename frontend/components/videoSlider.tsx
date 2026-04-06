@@ -40,7 +40,7 @@ const RelatedVideos = ({videoData}:RelatedVideosProps) => {
   
     return (
       <div className=" mb-[10vw] md:mb-[8vw] dark:text-white">
-        <h2 className="text-center text-h5TextPhone md:text-h3Text font-bold mb-[2vw] md:mb-[1vw] leading-[130%] ">What Our Students Has To Say About Us</h2>
+        <h2 className="text-center text-h5TextPhone md:text-h3Text font-bold mb-[2vw] md:mb-[1vw] leading-[130%] ">What Our Students Have Say About Us</h2>
         <Slider {...settings} className='px-[2vw] md:px-0 flex flex-row items-start justify-start'>
           {videoData.map((video) => (
             <div key={video.id} className="">
