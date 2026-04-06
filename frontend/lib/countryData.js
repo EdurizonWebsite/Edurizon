@@ -275,7 +275,7 @@ const ChinaData={
         ["Nantong University","26,000 RMB","6,000 RMB"],
         ["Anhui Medical University","Contact for details","Contact for details"],
         ],
-        href:["/study-destinations/study-mbbs-in-china/zhejiang-university","/study-destinations/study-mbbs-in-china/nanjing-medical-university","/study-destinations/study-mbbs-in-china/xiamen-university","/study-destinations/study-mbbs-in-china/southeast-university","/study-destinations/study-mbbs-in-china/xinjiang-university","/study-destinations/study-mbbs-in-china/xian-jiaotong-university","/study-destinations/study-mbbs-in-china/nantong-university"],  
+        href:["/study-destinations/study-mbbs-in-china/zhejiang-university","/study-destinations/study-mbbs-in-china/nanjing-medical-university","/study-destinations/study-mbbs-in-china/xiamen-university","/study-destinations/study-mbbs-in-china/southeast-university","/study-destinations/study-mbbs-in-china/xinjiang-university","/study-destinations/study-mbbs-in-china/xian-jiaotong-university","/study-destinations/study-mbbs-in-china/nantong-university","/study-destinations/study-mbbs-in-china/anhui-medical-university"],  
     },
     countryAdditionalCost:{
         title:"Additional Costs",
