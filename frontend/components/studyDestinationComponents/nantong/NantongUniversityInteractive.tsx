@@ -10,8 +10,8 @@ import CallingBox from "@/components/studyDestinationComponents/header/callingBo
 const services = [
   {
     icon: "/assets/Images/Icons/feesIcon.svg",
-    text: "Duration",
-    label: "6 Years (5+1 Internship)",
+    text: "Tution Fee",
+    label: "26,000 RNB/Year ",
   },
   {
     icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -56,7 +56,7 @@ function SectionNav({
 }) {
   return (
     <nav
-      className="sticky top-[14vw] md:top-[8vw] z-30 mx-[4vw] md:mx-[12.5vw] mb-[6vw] md:mb-[2vw]"
+      className="sticky top-[20vw] md:top-[8vw] z-30 mx-[4vw] md:mx-[12.5vw] mb-[6vw] md:mb-[2vw]"
       aria-label="Page sections"
     >
       <div className="rounded-full border border-black/10 dark:border-white/15 bg-white/90 dark:bg-black/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.08)] px-[2vw] md:px-[1vw] py-[2vw] md:py-[0.65vw] overflow-x-auto no-scrollbar">
@@ -173,7 +173,7 @@ const esiTags = [
 function getNavScrollOffsetPx(): number {
   if (typeof window === "undefined") return 0;
   const w = window.innerWidth;
-  return w * (w >= 768 ? 0.12 : 0.12);
+  return w * (w >= 768 ? 0.12 : 0.32);
 }
 
 export default function NantongUniversityInteractive() {
@@ -248,7 +248,7 @@ export default function NantongUniversityInteractive() {
             transition={{ duration: 0.55, delay: 0.05 }}
           >
             <Image
-              className="w-full h-[55vw] md:h-full min-h-[280px] object-cover"
+              className="w-full h-[55vw] md:h-full min-h-[280px] md:object-cover"
               src="/assets/Images/mbbs-in-china/associated-universities/nantong-university.webp"
               alt="Nantong University campus"
               width={650}
@@ -313,7 +313,7 @@ export default function NantongUniversityInteractive() {
               </Link>
               <button
                 type="button"
-                onClick={() => scrollTo("nt-admission")}
+                onClick={() => scrollTo("nt-documents")}
                 className="inline-flex rounded-full border-2 border-orangeChosen px-[5vw] md:px-[1.25vw] py-[2.5vw] md:py-[0.5vw] text-smallTextPhone md:text-smallText font-semibold text-orangeChosen transition-colors hover:bg-orangeChosen/10"
               >
                 View admission checklist
@@ -344,7 +344,7 @@ export default function NantongUniversityInteractive() {
           </div>
         ))}
       </motion.div>
-      <div className="sticky top-[14vw] md:top-[6vw] pt-[1vw] z-100  bg-white ">
+      <div className="sticky top-[16vw] md:top-[6vw] pt-[1vw] z-100  bg-white ">
 
       <SectionNav activeId={activeId} onNavigate={scrollTo} />
       </div>
@@ -558,6 +558,8 @@ export default function NantongUniversityInteractive() {
             {[
               "Degree: MBBS (Bachelor of Medicine & Bachelor of Surgery)",
               "Medium of Teaching: English",
+              "Tution Fees: 26,000 RMB/Year",
+              "Hostel Fee: 6,000 RMB/Year",
               "Duration: 6 Years (5 Years Study + 1 Year Internship)",
               "Clinical Training: Affiliated teaching hospitals",
               "Location: Nantong (1 hour from Shanghai)",
@@ -866,7 +868,7 @@ export default function NantongUniversityInteractive() {
             <li>Globally recognized medical degrees (WHO-listed)</li>
           </ul>
 
-          <div className="rounded-[4vw] md:rounded-[1.25vw] border-2 border-orangeChosen/30 bg-gradient-to-br from-linenChosen to-white dark:from-white/5 dark:to-transparent p-[6vw] md:p-[2vw] shadow-[0_12px_40px_rgba(255,117,0,0.12)]">
+          <div id="nt-documents" className="scroll-mt-[12vw] md:scroll-mt-[7vw] rounded-[4vw] md:rounded-[1.25vw] border-2 border-orangeChosen/30 bg-gradient-to-br from-linenChosen to-white dark:from-white/5 dark:to-transparent p-[6vw] md:p-[2vw] shadow-[0_12px_40px_rgba(255,117,0,0.12)]">
             <h3 className="text-h5TextPhone md:text-h4Text font-bold mb-[3vw] md:mb-[1vw]">
               Documents Required for MBBS admission in Zhejing University
             </h3>

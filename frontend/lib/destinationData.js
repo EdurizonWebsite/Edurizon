@@ -190,14 +190,22 @@ export const destinationData =[
       description:"It is a national key comprehensive university with students from various ethnic groups. It is one of two in Xinjiang entering the national “211 Project.” On December 30, 2000, the former Xinjiang University and Xinjiang Engineering Institute merged into a new Xinjiang University. "
     },
     {
-      image:"/assets/Images/CountryBlogs/studyDestinationCard/China.webp",
+      image:"/assets/Images/mbbs-in-china/associated-universities/nantong-university.webp",
       title:"Nantong University",
       category:"University",
       href:"/study-destinations/study-mbbs-in-china/nantong-university",
       budget: "under35",
       description:"Established in 1912, Nantong University is one of China’s well-recognized institutions with a strong legacy in medical education and research. It was founded by renowned industrialist and educator Zhang Jian."
     },
-
+    {
+      image:"/assets/Images/mbbs-in-china/associated-universities/nantong-university.webp",
+      title:"Anhui Medical University",
+      category:"University",
+      href:"/study-destinations/study-mbbs-in-china/anhui-medical-university",
+      budget: "under35",
+      description:"Anhui Medical University is a public university located in Hefei, Anhui Province, China. It is one of the top medical universities in China and is known for its strong medical education and research."
+    },
+    
     // MBBS in Nepal
     {
     image: "/assets/Images/CountryBlogs/studyDestinationCard/nepal/b&c-medical-college.webp",
