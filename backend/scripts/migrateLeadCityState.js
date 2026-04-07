@@ -6,7 +6,7 @@ const Leads = require('../models/leadsModel');
  * Safe to run multiple times.
  */
 const migrateLeadCityState = async () => {
-  const mongoUri ='mongodb://viraj_mern:viraj_mern123@ac-dujfq2x-shard-00-00.evlwc4r.mongodb.net:27017,ac-dujfq2x-shard-00-01.evlwc4r.mongodb.net:27017,ac-dujfq2x-shard-00-02.evlwc4r.mongodb.net:27017/?ssl=true&replicaSet=atlas-f6k66e-shard-0&authSource=admin&appName=gofood'
+  const mongoUri =' process.env.MONGODB_URI || process.env.MONGODB_URI;'
 
   if (!mongoUri) {
     throw new Error('MONGO_URI or MONGODB_URI is required');

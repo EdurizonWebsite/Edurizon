@@ -359,12 +359,29 @@ const CallingRecords = () => {
                       });
 
                       if (response.success) {
-                        setLeads((prev) =>
-                          prev.map((l) =>
-                            l._id === lead._id ? { ...l, city: cityInput, state: stateInput } : l
-                          )
-                        );
-                        toast.success('City/State updated successfully');
+                        const persistedLead = response?.data;
+                        const persistedCity = String(persistedLead?.city ?? '').trim();
+                        const persistedState = String(persistedLead?.state ?? '').trim();
+                        const requestedCity = cityInput.trim();
+                        const requestedState = stateInput.trim();
+
+                        const isPersisted =
+                          persistedCity === requestedCity && persistedState === requestedState;
+
+                        if (isPersisted) {
+                          setLeads((prev) =>
+                            prev.map((l) =>
+                              l._id === lead._id
+                                ? { ...l, city: persistedCity, state: persistedState }
+                                : l
+                            )
+                          );
+                          toast.success('City/State updated successfully');
+                        } else {
+                          // Avoid optimistic UI mismatch when backend ignores city/state update.
+                          await fetchLeads();
+                          toast.error('Update not persisted on server. Please check backend deployment.');
+                        }
                       } else {
                         toast.error(response.message || 'Failed to update city/state');
                       }
