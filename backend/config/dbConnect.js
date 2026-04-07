@@ -11,6 +11,7 @@ const connectDB = async () => {
     // Check if there are any universities in the database
    
   } catch (error) {
+    console.log(error)
     console.error(`Error: ${error.message}`);
     process.exit(1);
   }

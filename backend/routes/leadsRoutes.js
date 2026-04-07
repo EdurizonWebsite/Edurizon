@@ -11,6 +11,19 @@ const {
   updateLeadStatus,
 } = require('../controllers/leadsController');
 
+const validateOptionalCityState = (req, res, next) => {
+  const { city, state } = req.body;
+
+  if ((city !== undefined && typeof city !== 'string') || (state !== undefined && typeof state !== 'string')) {
+    return res.status(400).json({
+      success: false,
+      message: 'City and state must be strings'
+    });
+  }
+
+  next();
+};
+
 // Apply authentication middleware to all routes
 
 // @route   GET /api/leads
@@ -40,7 +53,7 @@ router.post('/', addLead);
 // @route   PUT /api/leads/:id
 // @desc    Update/modify a lead
 // @access  Private
-router.put('/:id', modifyLead);
+router.put('/:id', validateOptionalCityState, modifyLead);
 
 // @route   DELETE /api/leads/:id
 // @desc    Delete a lead
@@ -50,6 +63,6 @@ router.delete('/:id', deleteLead);
 // @route   PATCH /api/leads/:id/update-status
 // @desc    Update calling status and category instantly
 // @access  Private
-router.patch('/:id/update-status', updateLeadStatus);
+router.patch('/:id/update-status', validateOptionalCityState, updateLeadStatus);
 
 module.exports = router;

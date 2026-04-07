@@ -27,6 +27,8 @@ export interface UpdateLeadStatusPayload {
   callingDate?: string | null;
   followUpDate?: string | null;
   remark?: string;
+  city?: string;
+  state?: string;
 }
 
 export const getLeadsByCounsellor = async (counsellorId: string) => {

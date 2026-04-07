@@ -19,6 +19,8 @@ interface Lead {
   leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered';
   leadStatus: 'pending' | 'hot' | 'warm' | 'cold' | 'negative' | 'completed';
   remark: string;
+  city?: string;
+  state?: string;
   updatedAt: string;
   assignedCounsellor: any;
   // Explicit dates stored in DB (can be null/undefined)
@@ -40,6 +42,10 @@ const CallingRecords = () => {
   const [pastFollowUps, setPastFollowUps] = useState<Lead[]>([]);
   const [editingRemarkId, setEditingRemarkId] = useState<string | null>(null);
   const [remarkInput, setRemarkInput] = useState('');
+  const [editingLocationId, setEditingLocationId] = useState<string | null>(null);
+  const [cityInput, setCityInput] = useState('');
+  const [stateInput, setStateInput] = useState('');
+  const [isSavingLocation, setIsSavingLocation] = useState(false);
 
   const navItems = [
     {
@@ -233,6 +239,8 @@ const CallingRecords = () => {
     "Student Name",
     "Country",
     "Contact Number",
+    "City",
+    "State",
     "Course",
     "Calling Status",
     "Lead Type",
@@ -292,6 +300,116 @@ const CallingRecords = () => {
       render: (lead: Lead) => (
         <span className="text-sm text-gray-500">{lead.phone || 'None'}</span>
       ),
+    },
+    {
+      key: "city",
+      render: (lead: Lead) => {
+        const isEditingLocation = editingLocationId === lead._id;
+        if (isEditingLocation) {
+          return (
+            <input
+              type="text"
+              value={cityInput}
+              onChange={(e) => setCityInput(e.target.value)}
+              placeholder="City"
+              className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+            />
+          );
+        }
+
+        return (
+          <button
+            type="button"
+            onClick={() => {
+              setEditingLocationId(lead._id);
+              setCityInput(lead.city || '');
+              setStateInput(lead.state || '');
+            }}
+            className="text-left text-sm text-gray-500 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {lead.city || 'Add city'}
+          </button>
+        );
+      },
+    },
+    {
+      key: "state",
+      render: (lead: Lead) => {
+        const isEditingLocation = editingLocationId === lead._id;
+        if (isEditingLocation) {
+          return (
+            <div className="flex flex-col gap-1">
+              <input
+                type="text"
+                value={stateInput}
+                onChange={(e) => setStateInput(e.target.value)}
+                placeholder="State"
+                className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+              />
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  disabled={isSavingLocation}
+                  onClick={async () => {
+                    try {
+                      setIsSavingLocation(true);
+                      const response = await updateLeadStatus(lead._id, {
+                        city: cityInput,
+                        state: stateInput,
+                      });
+
+                      if (response.success) {
+                        setLeads((prev) =>
+                          prev.map((l) =>
+                            l._id === lead._id ? { ...l, city: cityInput, state: stateInput } : l
+                          )
+                        );
+                        toast.success('City/State updated successfully');
+                      } else {
+                        toast.error(response.message || 'Failed to update city/state');
+                      }
+                    } catch (err: any) {
+                      toast.error(err.response?.data?.message || 'Failed to update city/state');
+                    } finally {
+                      setIsSavingLocation(false);
+                      setEditingLocationId(null);
+                    }
+                  }}
+                  className="text-xs px-2 py-1 rounded-md bg-teal-600 text-white hover:bg-teal-700 disabled:opacity-60"
+                >
+                  {isSavingLocation ? 'Saving...' : 'Save'}
+                </button>
+                <button
+                  type="button"
+                  disabled={isSavingLocation}
+                  onClick={() => {
+                    setEditingLocationId(null);
+                    setCityInput('');
+                    setStateInput('');
+                  }}
+                  className="text-xs px-2 py-1 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          );
+        }
+
+        return (
+          <button
+            type="button"
+            onClick={() => {
+              setEditingLocationId(lead._id);
+              setCityInput(lead.city || '');
+              setStateInput(lead.state || '');
+            }}
+            className="text-left text-sm text-gray-500 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {lead.state || 'Add state'}
+          </button>
+        );
+      },
     },
     {
       key: "course",

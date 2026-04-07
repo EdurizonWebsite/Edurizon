@@ -82,6 +82,14 @@ const leadsSchema = mongoose.Schema(
     source:{
       type:String,
       default:'Website'
+    },
+    city:{
+      type:String,
+      default:''
+    },
+    state:{
+      type:String,
+      default:''
     }
   },
   {

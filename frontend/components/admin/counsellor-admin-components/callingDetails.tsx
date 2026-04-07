@@ -11,6 +11,7 @@ import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import { countryOptions, courseOptions } from '@/lib/adminData';
 import { useSearch } from '@/context/SearchContext';
+import { applyLeadFilters } from '@/lib/leadFilters';
 interface Lead {
     leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered';
     [key: string]: any; // other fields if you’re not typing them yet
@@ -53,6 +54,8 @@ const CallingDetails = ()  => {
       status: '',
       counsellor: '',
       source: '',
+      city: '',
+      state: '',
     });
     
     // Assign counsellor states
@@ -66,6 +69,8 @@ const CallingDetails = ()  => {
         "Student Name",
         "Interested Country",
         "Contact No.",
+        "City",
+        "State",
         "Interested Course",
         activeTab=='registered'?'Enrollment Date':'Lead Date',
         'Assigned to',
@@ -120,6 +125,18 @@ const CallingDetails = ()  => {
           render: (lead:any) => (
       
               <span className="text-sm text-gray-500">{lead.phone}</span>
+          ),
+        },
+        {
+          key: "city",
+          render: (lead:any) => (
+            <span className="text-sm text-gray-500">{lead.city || 'N/A'}</span>
+          ),
+        },
+        {
+          key: "state",
+          render: (lead:any) => (
+            <span className="text-sm text-gray-500">{lead.state || 'N/A'}</span>
           ),
         },
         {
@@ -243,6 +260,8 @@ const CallingDetails = ()  => {
                 status: '',
                 counsellor: '',
                 source: '',
+                city: '',
+                state: '',
             });
             setSelectedLeads([]);
             setSelectedCounsellor('');
@@ -362,44 +381,7 @@ const CallingDetails = ()  => {
 
         // Filter leads based on criteria
         const filterLeadsByCriteria = () => {
-            let filteredData = [...leads];
-            
-            if (filterCriteria.name) {
-                filteredData = filteredData.filter(lead => 
-                    lead.name.toLowerCase().includes(filterCriteria.name.toLowerCase())
-                );
-            }
-            
-            if (filterCriteria.country) {
-                filteredData = filteredData.filter(lead => 
-                    lead.countryInterested?.toLowerCase() === filterCriteria.country.toLowerCase()
-                );
-            }
-            
-            if (filterCriteria.course) {
-                filteredData = filteredData.filter(lead => 
-                    lead.courseName?.toLowerCase() === filterCriteria.course.toLowerCase()
-                );
-            }
-            
-            if (filterCriteria.status) {
-                filteredData = filteredData.filter(lead => 
-                    lead.leadType === filterCriteria.status
-                );
-            }
-            
-            if (filterCriteria.counsellor) {
-                filteredData = filteredData.filter(lead => 
-                    lead.assignedCounsellor === filterCriteria.counsellor
-                );
-            }
-
-            if (filterCriteria.source.trim()) {
-                const sourceQuery = filterCriteria.source.trim().toLowerCase();
-                filteredData = filteredData.filter(lead =>
-                    String(lead.source || 'Website').toLowerCase().includes(sourceQuery)
-                );
-            }
+            const filteredData = applyLeadFilters(leads as any[], filterCriteria);
             
             setCurrentDataForTable(filteredData);
             setShowFilterModal(false);
@@ -414,6 +396,8 @@ const CallingDetails = ()  => {
                 status: '',
                 counsellor: '',
                 source: '',
+                city: '',
+                state: '',
             });
             setCurrentDataForTable(leads);
             setShowFilterModal(false);
@@ -790,6 +774,26 @@ const CallingDetails = ()  => {
                         value={filterCriteria.source}
                         onChange={(e) => setFilterCriteria(prev => ({ ...prev, source: e.target.value }))}
                         placeholder="Search by source..."
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">City</label>
+                      <input
+                        type="text"
+                        value={filterCriteria.city}
+                        onChange={(e) => setFilterCriteria(prev => ({ ...prev, city: e.target.value }))}
+                        placeholder="Search by city..."
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">State</label>
+                      <input
+                        type="text"
+                        value={filterCriteria.state}
+                        onChange={(e) => setFilterCriteria(prev => ({ ...prev, state: e.target.value }))}
+                        placeholder="Search by state..."
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                       />
                     </div>

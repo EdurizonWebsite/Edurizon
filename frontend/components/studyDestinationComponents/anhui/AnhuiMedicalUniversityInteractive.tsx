@@ -10,8 +10,8 @@ import CallingBox from "@/components/studyDestinationComponents/header/callingBo
 const services = [
   {
     icon: "/assets/Images/Icons/feesIcon.svg",
-    text: "Duration",
-    label: "6 Years",
+    text: "Tution Fees",
+    label: "30,000 RMB/Year",
   },
   {
     icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -399,6 +399,8 @@ export default function AnhuiMedicalUniversityInteractive() {
         </MotionBlock>
         <div className="grid md:grid-cols-2 gap-[3vw] md:gap-[1vw] mb-[6vw] md:mb-[2vw]">
           {[
+            "Tution Fees: 30,000 RMB/Year",
+            "Hostel Fees: 4,000 RMB/Year",
             "24 teaching faculties",
             "10 affiliated hospitals (strong clinical exposure)",
             "40+ clinical training centers",

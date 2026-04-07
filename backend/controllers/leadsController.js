@@ -1,5 +1,7 @@
 const Leads = require('../models/leadsModel');
 
+const isOptionalString = (value) => value === undefined || typeof value === 'string';
+
 // @desc    Fetch all leads
 // @route   GET /api/leads
 // @access  Private
@@ -73,6 +75,8 @@ const addLead = async (req, res) => {
       callingDate,
       followUpDate,
       source,
+      city,
+      state,
     } = req.body;
 
     // Validate required fields
@@ -80,6 +84,13 @@ const addLead = async (req, res) => {
       return res.status(400).json({
         success: false,
         message: 'Name is required'
+      });
+    }
+
+    if (!isOptionalString(city) || !isOptionalString(state)) {
+      return res.status(400).json({
+        success: false,
+        message: 'City and state must be strings'
       });
     }
 
@@ -99,7 +110,9 @@ const addLead = async (req, res) => {
       remark,
       assignedCounsellor,
       assignedCounsellorName,
-      source: (source && source.trim()) ? source.trim() : 'Website'
+      source: (source && source.trim()) ? source.trim() : 'Website',
+      city: city !== undefined ? city.trim() : '',
+      state: state !== undefined ? state.trim() : ''
     });
 
     const savedLead = await newLead.save();
@@ -142,7 +155,16 @@ const modifyLead = async (req, res) => {
       callingDate,
       followUpDate,
       source,
+      city,
+      state,
     } = req.body;
+
+    if (!isOptionalString(city) || !isOptionalString(state)) {
+      return res.status(400).json({
+        success: false,
+        message: 'City and state must be strings'
+      });
+    }
 
     // Find the lead first
     const lead = await Leads.findById(req.params.id);
@@ -175,6 +197,8 @@ const modifyLead = async (req, res) => {
     if (assignedCounsellor !== undefined) lead.assignedCounsellor = assignedCounsellor;
     if (assignedCounsellorName !== undefined) lead.assignedCounsellorName=assignedCounsellorName;
     if (source !== undefined) lead.source = source;
+    if (city !== undefined) lead.city = city.trim();
+    if (state !== undefined) lead.state = state.trim();
 
     const updatedLead = await lead.save();
     
@@ -298,7 +322,23 @@ const getLeadsByCounsellor = async (req, res) => {
 const updateLeadStatus = async (req, res) => {
   try {
     const { id } = req.params;
-    const { callingStatus, leadType, leadStatus, callingDate, followUpDate, remark } = req.body;
+    const {
+      callingStatus,
+      leadType,
+      leadStatus,
+      callingDate,
+      followUpDate,
+      remark,
+      city,
+      state
+    } = req.body;
+
+    if (!isOptionalString(city) || !isOptionalString(state)) {
+      return res.status(400).json({
+        success: false,
+        message: 'City and state must be strings'
+      });
+    }
 
     const lead = await Leads.findById(id);
     
@@ -324,6 +364,12 @@ const updateLeadStatus = async (req, res) => {
     }
     if (remark !== undefined) {
       lead.remark = remark;
+    }
+    if (city !== undefined) {
+      lead.city = city.trim();
+    }
+    if (state !== undefined) {
+      lead.state = state.trim();
     }
     
     // Update the updatedAt timestamp

@@ -273,7 +273,7 @@ const ChinaData={
         ["Xinjiang Medical University","₹3,60,000 Lakhs","₹54,000"],
         ["Xi'an Jiaotong University","40,800 RMB","8,700 RMB"],
         ["Nantong University","26,000 RMB","6,000 RMB"],
-        ["Anhui Medical University","Contact for details","Contact for details"],
+        ["Anhui Medical University","30,000 RMB","4,000 RMB"],
         ],
         href:["/study-destinations/study-mbbs-in-china/zhejiang-university","/study-destinations/study-mbbs-in-china/nanjing-medical-university","/study-destinations/study-mbbs-in-china/xiamen-university","/study-destinations/study-mbbs-in-china/southeast-university","/study-destinations/study-mbbs-in-china/xinjiang-university","/study-destinations/study-mbbs-in-china/xian-jiaotong-university","/study-destinations/study-mbbs-in-china/nantong-university","/study-destinations/study-mbbs-in-china/anhui-medical-university"],  
     },

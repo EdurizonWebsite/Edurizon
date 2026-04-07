@@ -24,6 +24,15 @@ const OFFICE_LOCATIONS = [
     whatsapp: '918274014900',
     mapLink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4590.805240932832!2d88.35307341694683!3d22.57322373677324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a1c086f16b%3A0x2cc5ec8674d52d0!2sEdurizon%20Pvt.%20Ltd.-%20STUDY%20ABROAD!5e1!3m2!1sen!2sin!4v1769806240684!5m2!1sen!2sin',
   },
+  {
+    id:'Dubai',
+    name:'Dubai Office',
+    city:'Dubai',
+    address:'16 Gold House Building, Gold Souk Dubai',
+    phone: '+918274014900',
+    whatsapp: '918274014900',
+    mapLink:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4495.927065491783!2d55.29813610000001!3d25.270023499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43438edb60cd%3A0xbc047ee4e16b356d!2sDubai%20Gold%20Souk!5e1!3m2!1sen!2sin!4v1775585772384!5m2!1sen!2sin'
+  }
 ];
 
 const ContactUs = () => {
