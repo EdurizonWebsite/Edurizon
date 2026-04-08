@@ -251,7 +251,7 @@ export default function AnhuiMedicalUniversityInteractive() {
               transition={{ delay: 0.15, duration: 0.4 }}
               className="font-bold text-left text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw]"
             >
-              MBBS in China - Anhui Medical University
+              Anhui Medical University
             </motion.h1>
             <motion.div
               className="grid grid-cols-2 md:grid-cols-3 gap-[2.25vw] md:gap-[.75vw] items-center justify-center"
