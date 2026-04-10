@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcumbs";
 import AuthorizationSlider from "@/components/studyDestinationComponents/authorizationSlider";
+import { TransitionLink } from "@/utils/TransitionLink";
 
 export const NewPage = () => {
 
@@ -132,6 +133,9 @@ export const NewPage = () => {
             <h3 className="pt-[1vw] text-h5TextPhone md:text-h5Text">Top 10 Colleges in Bangladesh for MBBS in Bangladesh</h3>
           </div>
           <ul className="points-two">
+            <TransitionLink href="/study-destinations/study-mbbs-in-bangladesh/bgc-trust-medical-university">
+              <li>BGC Trust Medical College.</li>
+            </TransitionLink>
             <li>Dhaka National Medical College.</li>
             <li>Anwar Khan Modern Medical College.</li>
             <li>Dhaka Central International Medical College.</li>
@@ -304,13 +308,14 @@ export const NewPage = () => {
                   <tr>
                     <th scope="row">1.</th>
                     <td>
-                      <b><a href="">Anwar Khan Modern Medical College</a></b>
+                      <b><TransitionLink href="/study-destinations/study-mbbs-in-bangladesh/bgc-trust-medical-university">BGC Trust Medical College</TransitionLink></b>
                     </td>
-                    <td>50,000</td>
-                    <td>42,00,000</td>
-                    <td>26,000</td>
-                    <td>21,84,000</td>
-                    <td><a href="#" className="btn-custom btn-univ-detail">Read More</a></td>
+                    <td>33,000</td>
+                    <td>29,82,000</td>
+                    <td>13,000</td>
+                    <td>10,92,000</td>
+                    <td><div className="btn-custom btn-univ-detail"><TransitionLink href="/study-destinations/study-mbbs-in-bangladesh/bgc-trust-medical-university">
+                    Read More</TransitionLink></div></td>
                   </tr>
                   <tr>
                     <th scope="row">2.</th>

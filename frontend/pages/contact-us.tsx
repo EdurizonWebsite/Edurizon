@@ -156,7 +156,7 @@ const ContactUs = () => {
           
           
           <div>
-            <label className="block  font-medium text-white dark:text-gray-300">Country Intrested</label>
+            <label className="block  font-medium text-white dark:text-gray-300">Country Interested</label>
             <input
               type="text"
               name="interestedCountry"
@@ -167,7 +167,7 @@ const ContactUs = () => {
             />
           </div>
           <div>
-            <label className="block  font-medium text-white dark:text-gray-300">Course Intrested</label>
+            <label className="block  font-medium text-white dark:text-gray-300">Course Interested</label>
             <input
               type="text"
               name="interestedCourse"

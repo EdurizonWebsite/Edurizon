@@ -108,7 +108,7 @@ export default function BgcTrustMedicalUniversityInteractive() {
           >
             <Image
               className="w-full h-[55vw] md:h-full min-h-[280px] object-cover"
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=75"
+              src="/assets/Images/mbbs-in-bangladesh/bgc-trust-medical-university.webp"
               alt="BGC Trust Medical College campus"
               width={650}
               height={550}
@@ -313,8 +313,8 @@ export default function BgcTrustMedicalUniversityInteractive() {
               </ul>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=75"
-              className="w-full md:w-[32.5vw] h-auto rounded-[2vw] md:rounded-[1vw] object-cover shadow-xl"
+              src="/assets/Images/mbbs-in-nepal/nepal2.png"
+              className="w-full md:w-[32.5vw] h-auto rounded-[2vw] md:rounded-[1vw] object-cover"
               width={690}
               height={690}
               alt="Medical students campus life"
