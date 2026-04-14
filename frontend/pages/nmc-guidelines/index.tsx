@@ -16,7 +16,9 @@ const NmcGuidelines = () => {
       <meta name="geo.position" content="22.351115;78.667743" />
     </Head>
     <section>
-        
+        <div className=''>
+
+        </div>
     </section>
     </>
   )

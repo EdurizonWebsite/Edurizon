@@ -22,6 +22,8 @@ interface ExcelLead {
   courseName: string;
   remark: string;
   source: string;
+  city: string;
+  state: string;
 }
 
 const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: ImportLeadsFromExcelDialogProps) => {
@@ -99,7 +101,9 @@ const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: Import
             countryInterested: '',
             courseName: '',
             remark: '',
-            source: 'Website'
+            source: 'Website',
+            city: '',
+            state: '',
           };
 
                      headers.forEach((header, colIndex) => {
@@ -124,6 +128,10 @@ const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: Import
                if (sourceValue) {
                  lead.source = sourceValue;
                }
+             } else if (headerLower === 'city') {
+               lead.city = String(value);
+             } else if (headerLower === 'state') {
+               lead.state = String(value);
              }
              
            
@@ -194,7 +202,9 @@ const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: Import
               callingStatus: 'pending',
               leadStatus: 'pending',
               assignedCounsellor: assignedTo?._id,
-              assignedCounsellorName: assignedTo ? `${assignedTo.firstName} ${assignedTo.lastName}` : undefined
+              assignedCounsellorName: assignedTo ? `${assignedTo.firstName} ${assignedTo.lastName}` : undefined,
+              city: lead.city.trim() || undefined,
+              state: lead.state.trim() || undefined
             },
             {
               headers: {
@@ -237,9 +247,9 @@ const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: Import
 
   const downloadTemplate = () => {
     const template = [
-      ['Name', 'Email', 'Phone', 'Country Interested', 'Course Name', 'Remark', 'Source'],
-      ['John Doe', 'john@example.com', '+1234567890', 'Russia', 'MBBS', 'Interested in medical studies', 'Website'],
-      ['Jane Smith', 'jane@example.com', '+0987654321', 'Germany', 'B.Tech', 'Looking for engineering programs', 'Referral']
+      ['Name', 'Email', 'Phone', 'Country Interested', 'Course Name', 'Remark', 'Source', 'City', 'State'],
+      ['John Doe', 'john@example.com', '+1234567890', 'Russia', 'MBBS', 'Interested in medical studies', 'Website', 'Mumbai', 'Maharashtra'],
+      ['Jane Smith', 'jane@example.com', '+0987654321', 'Germany', 'B.Tech', 'Looking for engineering programs', 'Referral', 'Berlin', 'Berlin']
     ];
 
     const ws = XLSX.utils.aoa_to_sheet(template);
@@ -357,6 +367,8 @@ const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: Import
                       <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Course</th>
                       <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Remark</th>
                       <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Source</th>
+                      <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">City</th>
+                      <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">State</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -369,6 +381,8 @@ const ImportLeadsFromExcel = ({ isOpen, onClose, onSuccess, assignedTo }: Import
                         <td className="px-4 py-2 text-sm text-gray-500 border-b">{lead.courseName || '-'}</td>
                         <td className="px-4 py-2 text-sm text-gray-500 border-b">{lead.remark || '-'}</td>
                         <td className="px-4 py-2 text-sm text-gray-500 border-b">{lead.source || 'Website'}</td>
+                        <td className="px-4 py-2 text-sm text-gray-500 border-b">{lead.city || '-'}</td>
+                        <td className="px-4 py-2 text-sm text-gray-500 border-b">{lead.state || '-'}</td>
                       </tr>
                     ))}
                   </tbody>

@@ -95,8 +95,6 @@ const CallingRecordComponent = ()  => {
         'courseName',
         'createdAt',
         'leadStatus',
-        'remark',
-        'assignedCounsellorName',
         'leadType'
       ];
 
@@ -169,6 +167,7 @@ const CallingRecordComponent = ()  => {
            {
             key: "callingStatus",
             render: (lead:any) => {
+              console.log(lead.callingStatus);
               const status = lead.callingStatus || 'pending';
               const label = status
                 .split('-')
@@ -181,15 +180,42 @@ const CallingRecordComponent = ()  => {
                     return 'text-yellow-700 bg-yellow-50 border-yellow-200';
                   case 'follow-up':
                     return 'text-blue-700 bg-blue-50 border-blue-200';
+                  case 'call-back':
+                    return 'text-orange-700 bg-orange-50 border-orange-200';
                   case 'no-answer':
                     return 'text-orange-700 bg-orange-50 border-orange-200';
+                  case 'expensive':
+                    return 'text-pink-700 bg-pink-50 border-pink-200';
                   case 'not-interested':
                     return 'text-red-700 bg-red-50 border-red-200';
+                  case 'switched-off':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'wrong-no':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'already-taken':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'incoming-not-available':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'in-10th-12th':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'confirmed':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'next-year':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'after-neet':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'call-cut':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'line-busy':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'plan-changed':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
+                  case 'wrongly-clicked':
+                    return 'text-gray-700 bg-gray-50 border-gray-200';
                   default:
                     return 'text-gray-700 bg-gray-50 border-gray-200';
                 }
               };
-
               return (
                 <span
                   className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${getCallingStatusClasses(
@@ -221,6 +247,10 @@ const CallingRecordComponent = ()  => {
                     return 'text-green-700 bg-green-50 border-green-200';
                   case 'registered':
                     return 'text-purple-700 bg-purple-50 border-purple-200';
+                  case 'warm':
+                    return 'text-orange-700 bg-orange-50 border-orange-200';
+                  case 'cold':
+                    return 'text-blue-700 bg-blue-50 border-blue-200';
                   default:
                     return 'text-gray-700 bg-gray-50 border-gray-200';
                 }

@@ -457,6 +457,7 @@ const CallingRecords = () => {
               className={`text-sm border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent font-medium ${getCallingStatusColor(lead.callingStatus)}`}
             >
               <option value="follow-up" className="bg-white text-blue-600">📞 Follow Up</option>
+              <option value="call-back" className="bg-white text-blue-600">📞 Call Back</option>
               <option value="no-answer" className="bg-white text-orange-600">📵 No Answer</option>
               <option value="expensive" className="bg-white text-pink-600">💸 Expensive</option>
               <option value="not-interested" className="bg-white text-red-600">❌ Not Interested</option>
@@ -502,6 +503,8 @@ const CallingRecords = () => {
               <option value="pending" className="bg-white text-yellow-600">⏳ Pending</option>
               <option value="follow-up" className="bg-white text-blue-600">📞 Follow Up</option>
               <option value="negative" className="bg-white text-red-600">❌ Negative</option>
+              <option value="warm" className="bg-white text-orange-600  ">🔥 Warm Lead</option>
+              <option value="cold" className="bg-white text-blue-600">🥶 Cold Lead</option>
               <option value="completed" className="bg-white text-green-600">✅ Positive</option>
               <option value="registered" className="bg-white text-purple-600">🎓 Registered</option>
             </select>
