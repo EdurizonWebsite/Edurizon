@@ -279,8 +279,11 @@ const ChinaData={
         ["Xi'an Jiaotong University","40,800 RMB","8,700 RMB"],
         ["Nantong University","26,000 RMB","6,000 RMB"],
         ["Anhui Medical University","30,000 RMB","4,000 RMB"],
+        ["Jiangsu University","Contact Us","N/A"],
+        ["Shandong University","Contact Us","N/A"],
+        ["Wenzhou Medical University","Contact Us","N/A"],
         ],
-        href:["/study-destinations/study-mbbs-in-china/zhejiang-university","/study-destinations/study-mbbs-in-china/nanjing-medical-university","/study-destinations/study-mbbs-in-china/xiamen-university","/study-destinations/study-mbbs-in-china/southeast-university","/study-destinations/study-mbbs-in-china/xinjiang-university","/study-destinations/study-mbbs-in-china/xian-jiaotong-university","/study-destinations/study-mbbs-in-china/nantong-university","/study-destinations/study-mbbs-in-china/anhui-medical-university"],  
+        href:["/study-destinations/study-mbbs-in-china/zhejiang-university","/study-destinations/study-mbbs-in-china/nanjing-medical-university","/study-destinations/study-mbbs-in-china/xiamen-university","/study-destinations/study-mbbs-in-china/southeast-university","/study-destinations/study-mbbs-in-china/xinjiang-university","/study-destinations/study-mbbs-in-china/xian-jiaotong-university","/study-destinations/study-mbbs-in-china/nantong-university","/study-destinations/study-mbbs-in-china/anhui-medical-university","/study-destinations/study-mbbs-in-china/jiangsu-university","/study-destinations/study-mbbs-in-china/shandong-university","/study-destinations/study-mbbs-in-china/wenzhou-medical-university"],  
     },
     countryAdditionalCost:{
         title:"Additional Costs",

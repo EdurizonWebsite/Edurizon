@@ -471,6 +471,28 @@ export const destinationData =[
     href: "/study-destinations/study-mbbs-in-russia/ingush-state-university",
     description: "Ingush State University is a leading institution in Russia offering comprehensive MBBS training for global students."
   },
+  {
+    image: "/assets/Images/mbbs-in-russia/jiangsu-university.webp",
+    title: "Jiangsu University",
+    category: "University",
+    href: "/study-destinations/study-mbbs-in-russia/jiangsu-university",
+    description: "Jiangsu University is a leading institution in Russia offering comprehensive MBBS training for global students."
+  },
+  {
+    image: "/assets/Images/mbbs-in-russia/shandong-university.webp",
+    title: "Shandong University",
+    category: "University",
+    href: "/study-destinations/study-mbbs-in-russia/shandong-university",
+    description: "Shandong University is a leading institution in Russia offering comprehensive MBBS training for global students."
+  },
+  {
+    image: "/assets/Images/mbbs-in-russia/wenzhou-medical-university.webp",
+    title: "Wenzhou Medical University",
+    category: "University",
+    href: "/study-destinations/study-mbbs-in-russia/wenzhou-medical-university",
+    description: "Wenzhou Medical University is a leading institution in Russia offering comprehensive MBBS training for global students."
+  },
+
 
   
  
