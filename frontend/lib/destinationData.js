@@ -456,6 +456,21 @@ export const destinationData =[
     budget: "under25",
     description: "Royal Metropolitan University is a leading institution in Kyrgyzstan offering globally recognized MBBS programs with state-of-the-art infrastructure."
   },
+  // MBBS in Russia
+  {
+    image: "/assets/Images/mbbs-in-russia/chuvash-state-university.webp",
+    title: "Chuvash State University",
+    category: "University",
+    href: "/study-destinations/study-mbbs-in-russia/chuvash-state-university",
+    description: "Chuvash State University is a leading institution in Russia offering comprehensive MBBS training for global students."
+  },
+  {
+    image: "/assets/Images/mbbs-in-russia/ingush-state-university.webp",
+    title: "Ingush State University",
+    category: "University",
+    href: "/study-destinations/study-mbbs-in-russia/ingush-state-university",
+    description: "Ingush State University is a leading institution in Russia offering comprehensive MBBS training for global students."
+  },
 
   
  
