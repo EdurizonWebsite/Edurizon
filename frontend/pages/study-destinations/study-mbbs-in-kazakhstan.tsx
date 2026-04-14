@@ -1,5 +1,6 @@
 import Breadcrumbs from "@/components/Breadcumbs";
 import RelatedCountries from "@/components/studyDestinationComponents/relatedCountries";
+import { TransitionLink } from "@/utils/TransitionLink";
 import Image from "next/image";
 const NewPage=()=>{
     return(
@@ -125,45 +126,47 @@ const NewPage=()=>{
                 <tr>
                   <th scope="row">1.</th>
                   <td>
-                    <a >
+                    <TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/kazakh-national-medical-university">
                       <Image width={100} height={100} src="/assets/Images/mbbs-in-kazakhstan/university-logo/kazakhstan-national-medical-university-logo.png" className="img-fluid univ-logo-size" alt="Kazakhstan National Medical University" title="Kazakhstan National Medical University" />
-                    </a>
+                    </TransitionLink>
                   </td>
                   <td>
-                    <b><a >Kazakh National Medical University</a></b>
+                    <b><TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/kazakh-national-medical-university">Kazakh National Medical University</TransitionLink></b>
                   </td>
-                  <td></td>
+                  <td>Contact Us For Details</td>
                   <td>5 Years</td>
-                  <td><a  className="btn-custom btn-univ-detail">Read More</a></td>
+                  <td><a href="/study-destinations/study-mbbs-in-kazakhstan/kazakh-national-medical-university"  className="btn-custom btn-univ-detail">Read More</a></td>
                 </tr>
                 <tr>
                 <th scope="row">2.</th>
                   <td>
-                    <a >
+                    <TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/west-kazakhstan-marat-ospanov-medical-university">
                       <Image  width={100} height={100} src="/assets/Images/mbbs-in-kazakhstan/university-logo/west-kazakhstan-medical-university-logo.png" className="img-fluid univ-logo-size" alt="West Kazakhstan Medical University" title="West Kazakhstan Medical University" />
-                    </a>
+                    </TransitionLink>
                   </td>
                   <td>
-                    <b><a >West Kazakhstan Medical University</a></b>
+                    <b><TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/west-kazakhstan-marat-ospanov-medical-university">West Kazakhstan Marat Ospanov Medical University</TransitionLink></b>
                   </td>
-                  <td></td>
+                  <td>Contact Us For Details</td>
                   <td>5 Years</td>
-                  <td><a className="btn-custom btn-univ-detail">Read More</a></td>
+                  <td><a href="/study-destinations/study-mbbs-in-kazakhstan/west-kazakhstan-marat-ospanov-medical-university" className="btn-custom btn-univ-detail">Read More</a></td>
                 </tr>
                 <tr>
                   <th scope="row">3.</th>
                   <td>
+                    <TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/al-farabi-kazakh-national-university">
                     <Image  width={100} height={100}
                       src="/assets/Images/mbbs-in-kazakhstan/university-logo/al-farabi-kazakh-national-university-logo.jpeg"
                       className="img-fluid univ-logo-size"
                       alt="Al-Farabi Kazakh National University"
                       title="Al-Farabi Kazakh National University"
                     />
+                    </TransitionLink>
                   </td>
-                  <td><b>Al-Farabi Kazakh National University</b></td>
-                  <td>$34,000</td>
+                  <td><b><TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/al-farabi-kazakh-national-university">Al-Farabi Kazakh National University</TransitionLink></b></td>
+                  <td>Contact Us For Details</td>
                   <td>5 Years</td>
-                  <td><a href="#" className="btn-custom btn-univ-detail">Read More</a></td>
+                  <td><a href="/study-destinations/study-mbbs-in-kazakhstan/al-farabi-kazakh-national-university" className="btn-custom btn-univ-detail">Read More</a></td>
                 </tr>
                 <tr>
                   <th scope="row">4.</th>
