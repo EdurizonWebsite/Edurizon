@@ -1,6 +1,7 @@
 import Breadcrumbs from "@/components/Breadcumbs";
 import RelatedCountries from "@/components/studyDestinationComponents/relatedCountries";
 import { TransitionLink } from "@/utils/TransitionLink";
+import Link from "next/link";
 import Image from "next/image";
 const NewPage=()=>{
     return(
@@ -135,7 +136,7 @@ const NewPage=()=>{
                   </td>
                   <td>Contact Us For Details</td>
                   <td>5 Years</td>
-                  <td><a href="/study-destinations/study-mbbs-in-kazakhstan/kazakh-national-medical-university"  className="btn-custom btn-univ-detail">Read More</a></td>
+                  <td><Link href="/study-destinations/study-mbbs-in-kazakhstan/kazakh-national-medical-university"  className="btn-custom btn-univ-detail">Read More</Link></td>
                 </tr>
                 <tr>
                 <th scope="row">2.</th>
@@ -149,7 +150,7 @@ const NewPage=()=>{
                   </td>
                   <td>Contact Us For Details</td>
                   <td>5 Years</td>
-                  <td><a href="/study-destinations/study-mbbs-in-kazakhstan/west-kazakhstan-marat-ospanov-medical-university" className="btn-custom btn-univ-detail">Read More</a></td>
+                  <td><Link href="/study-destinations/study-mbbs-in-kazakhstan/west-kazakhstan-marat-ospanov-medical-university" className="btn-custom btn-univ-detail">Read More</Link></td>
                 </tr>
                 <tr>
                   <th scope="row">3.</th>
@@ -166,7 +167,7 @@ const NewPage=()=>{
                   <td><b><TransitionLink href="/study-destinations/study-mbbs-in-kazakhstan/al-farabi-kazakh-national-university">Al-Farabi Kazakh National University</TransitionLink></b></td>
                   <td>Contact Us For Details</td>
                   <td>5 Years</td>
-                  <td><a href="/study-destinations/study-mbbs-in-kazakhstan/al-farabi-kazakh-national-university" className="btn-custom btn-univ-detail">Read More</a></td>
+                  <td><Link href="/study-destinations/study-mbbs-in-kazakhstan/al-farabi-kazakh-national-university" className="btn-custom btn-univ-detail">Read More</Link></td>
                 </tr>
                 <tr>
                   <th scope="row">4.</th>
