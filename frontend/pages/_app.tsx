@@ -16,7 +16,6 @@ import dynamic from "next/dynamic";
 import { ThemeProvider } from "@/context/themeContext";
 import { SearchProvider } from "@/context/SearchContext";
 import Head from "next/head";
-import {GoogleAnalytics} from '@next/third-parties/google'
 import axios from "axios";
 import { baseUrl } from "@/lib/baseUrl";
 import Script from "next/script";
@@ -35,7 +34,7 @@ if (typeof window !== "undefined") {
   setupAdminAxiosInterceptor();
 }
 
-const GA_TRACKING_ID = "G-Z25NZ103DJ";
+const GA_TRACKING_ID = "G-2BSRSYBTXP";
 
 // ✅ Load Navbar and Footer Only When Needed
 const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
@@ -247,7 +246,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
           {!shouldExcludeLayout && <Navbar />}
           {pathname === '/' ? <Home /> : <Component {...pageProps} />}
-          <GoogleAnalytics gaId="G-Z25NZ103DJ" />
           <div id="footer">
             {!shouldExcludeLayout && <CTASectionComponent />}
           </div>
