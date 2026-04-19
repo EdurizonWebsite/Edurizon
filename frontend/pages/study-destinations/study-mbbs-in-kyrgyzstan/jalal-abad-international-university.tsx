@@ -241,7 +241,7 @@ const JalalAbadInternationalUniversity = () => {
                     <li>Mandatory</li>
                     <li className='font-bold'>o Intake</li>
                     <li>September/October & Feburary/March</li>
-                    <li className='font-bold'>o Tution Fees</li>
+                    <li className='font-bold'>o Tuition Fees</li>
                     <li>$3500 yearly</li>
                     <li className='font-bold'>o Hostel Fees</li>
                     <li>$600 yearly</li>

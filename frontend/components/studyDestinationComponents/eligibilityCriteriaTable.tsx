@@ -9,7 +9,7 @@ interface EligibilityCriteriaProps {
 
 const EligibilityCriteria = ({ id,data,countryName }: EligibilityCriteriaProps) => {
     return (
-        <div className="flex flex-col mx-[6vw] md:mx-[12.5vw] gap-[2vw] md:gap-[4vw] mb-[10vw] md:mb-[8vw]">
+        <div className="flex flex-col mx-[6vw] md:mx-[12.5vw] gap-[2vw] md:gap-[4vw] ">
           <div className="flex flex-col gap-[1.5vw]">
           <h3 className="text-h5TextPhone md:text-h3Text font-bold text-center leading-[120%]">Eligibility Criteria</h3>
           <h5 className="text-center text-regularTextPhone md:text-h5Text font-bold opacity-80]">Are You Eligible to Study MBBS in {countryName}?</h5>

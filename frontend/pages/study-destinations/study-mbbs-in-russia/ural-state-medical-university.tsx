@@ -3,11 +3,17 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcumbs";
 import Head from 'next/head';
 
+const feesData = {
+  tuition: "3,60,000",
+  hostel: "16,000",
+};
+
+
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
-      label: "Ruble 3,00,000 / Year",
+      text: "Tuition Fees",
+      label: `Ruble ${feesData.tuition}/ Year`
     },
     {
       icon: "/assets/Images/Icons/TieUpsIcon.svg",
@@ -239,15 +245,6 @@ const NewPage = () => {
                       <th scope="row">University &amp; Review videos</th>
                       <td><a href="https://www.youtube.com/c/EdurizonPvtLtd" target="_blank" className="btn-custom btn-univ-detail">Click Here</a></td>
                     </tr>
-                    <tr>
-                      <th scope="row">Need Sample Paper</th>
-                      <td>
-                        <a href="callto:9873381377" className="btn-custom btn-univ-detail" title="9873381377"><i className="fas fa-phone-volume" aria-hidden="true"></i> <span className="d-none d-lg-inline-block">Call</span></a>
-                        <a href="https://wa.link/v328m4" className="btn-custom whtsp-btn btn-univ-detail"  title="9873381377">
-                          <i className="fab fa-whatsapp" aria-hidden="true"></i> <span className="d-none d-lg-inline-block">Whatsapp</span>
-                        </a>
-                      </td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -271,11 +268,11 @@ const NewPage = () => {
                   <tbody>
                     <tr>
                       <th scope="row">Tuition Fees</th>
-                      <td>3,00,000 Ruble</td>
+                      <td>{feesData.tuition} Ruble</td>
                     </tr>
                     <tr>
                       <th scope="row">Hostel Fees</th>
-                      <td>18,000 Ruble</td>
+                      <td>{feesData.hostel} Ruble</td>
                     </tr>
                   </tbody>
                 </table>

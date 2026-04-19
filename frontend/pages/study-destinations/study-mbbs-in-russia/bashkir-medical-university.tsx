@@ -7,11 +7,16 @@ import UnlistedTable from "@/components/studyDestinationComponents/unListedTable
 import Image from "next/image";
 import Head from "next/head";
 
+const feesData = {
+    tuition: "3,99,000",
+    hostel: "45,000",
+};
+
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
-      label: "Ruble 4,90,080 / Year",
+      text: "Tuition Fees",
+      label: `Ruble ${feesData.tuition} / Year`,
     },
     {
       icon: "/assets/Images/Icons/TieUpsIcon.svg",
@@ -30,6 +35,7 @@ const services = [
     },
   ];
 
+
 const why=["All 50,000 students who are studying and enjoying at the 2nd oldest university of Russia, Kazan Federal University knows the answer.",
 "A world of thoughts, ideas, diversity and culture can be discovered from students of Kazan Federal University which was once always considered as a bridge between the students of east and west. You will be able to grow, explore yourself more, identify your talent, ability and learn many things from the outside world apart from classroom teaching.",
 "Kazan Federal University is a top rated university in Russia with 215 years of experience in imparting quality education and research work in extensive field for its students.",
@@ -41,8 +47,8 @@ const feeStructure={
     subTitle:"Kazan Federal University Fees",
     data:[
         ["Expense", "Annual Cost"],
-        ["Tution Fees","3,70,080 Ruble"],
-        ["Hostel Fees","36,000 Ruble"],
+        ["Tuition Fees", `${feesData.tuition} Ruble`],
+        ["Hostel Fees", `${feesData.hostel} Ruble`],
     ]
 }
 
@@ -53,7 +59,7 @@ const facts={
         [],
         ["Established In","1909"],
         ["Recognition","NMC, WHO, ECFMG (USMLE), GMC (PLAB), AMEE"],
-        ["Fees","3,70,080 per year"],
+        ["Fees", `${feesData.tuition} per year`],
         ["Medium of Teaching","1Fully English"],
         ["Course Duration","6 Years"],
         ["Indian students","Yes"],
@@ -364,7 +370,7 @@ const BashkirMedicalUniversity=()=>{
                                 </tr>
                                 <tr>
                                     <th scope="row">Fees</th>
-                                    <td>Ruble 3,70,080 per year</td>
+                                    <td>{`Ruble ${feesData.tuition} per year`}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Medium of Teaching</th>
@@ -423,11 +429,11 @@ const BashkirMedicalUniversity=()=>{
                             <tbody>
                                 <tr>
                                     <th scope="row">Tuition Fees</th>
-                                    <td>3,70,080</td> 
+                                    <td>{feesData.tuition}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Hostel Fees</th>
-                                    <td> 36,000</td> 
+                                    <td>{feesData.hostel}</td>
                                 </tr> 
                             </tbody>
                         </table>

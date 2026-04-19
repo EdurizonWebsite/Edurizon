@@ -2,12 +2,16 @@ import React from 'react'
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcumbs";
 import Head from "next/head";
+const feesData = {
+  tuition: "3,47,380",
+  hostel: "20,000",
+};
 
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
-      label: "Ruble 3,15,700 / Year",
+      text: "Tuition Fees",
+      label: `Ruble ${feesData.tuition} / Year`
     },
     {
       icon: "/assets/Images/Icons/TieUpsIcon.svg",
@@ -379,10 +383,10 @@ const ImmanuelKantBalticFederalUniversity = () => {
                                 </tr>
                                 <tr>
                                   <th scope="row" >Immanuel Kant Baltic Federal University Fees</th>
-                                  <td>3,15,700 Ruble per annum	-	2024</td> 
+                                  <td>{feesData.tuition} Ruble per annum	-	2026</td> 
                               </tr>
                               <tr> 
-                                <td>15,000 Ruble per annum	-	2024</td>
+                                <td>{feesData.hostel} Ruble per annum	-	2026</td>
                             </tr>
                                 <tr>
                                     <th scope="row">Recognition</th>
@@ -489,11 +493,11 @@ const ImmanuelKantBalticFederalUniversity = () => {
                 <tbody>
                     <tr>
                         <th scope="row">Tuition Fees</th>
-                        <td>3,15,700 Ruble</td>
+                        <td>{feesData.tuition} Ruble</td>
                     </tr>
                     <tr>
                         <th scope="row">Hostel Fees</th>
-                        <td>15,000 Ruble</td>
+                        <td>{feesData.hostel} Ruble</td>
                     </tr> 
                 </tbody>
             </table>

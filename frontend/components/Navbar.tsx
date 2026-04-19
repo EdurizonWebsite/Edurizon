@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import ThemeContext from '@/context/themeContext';
 import { useRouter } from 'next/router';
 import Image  from 'next/image';
 import {motion} from 'framer-motion';
@@ -15,6 +16,7 @@ interface University {
 }
 
 const Navbar = () => {
+  const { theme } = useContext(ThemeContext);
 
   const [isLoggedIn, setIsLoggedIn] = useState<'user' | 'counselor'|'registered-student' | null>(null);
   const [userName, setUserName] = useState('');
@@ -178,16 +180,20 @@ const Navbar = () => {
   return (
     
     <nav
-    className={`${
+    className={` ${
       isScrolled ? "fixed top-0 ":  "top-0  absolute " 
-    } px-[2vw] md:px-[4.125vw] left-0 text md:pb-[.5vw] w-full z-50 transition-all duration-500 ease-out pt-[2vw] md:pt-[1vw]`}
+    } px-[2vw] md:px-[4.125vw] left-0 text md:pb-[.5vw] w-full z-50  transition-all duration-500 ease-out pt-[2vw] md:pt-[1vw]`}
     style={{
-      backgroundColor: isScrolled ? '#FFFFFF' : 'transparent',
+      backgroundColor: isScrolled
+        ? theme === 'dark'
+          ? '#000000'
+          : '#FFFFFF'
+        : 'transparent',
       backdropFilter: isScrolled ? 'blur(8px)' : 'none',
       boxShadow: isScrolled ? '0 4px 6px -1px rgba(0, 0, 0, 0.05)' : 'none',
     }}
   >
-      <div className="flex items-center  text-regularText text-black dark:text-white w-full">
+      <div className="flex items-center   text-regularText text-black dark:text-white w-full">
       <div className="flex items-center justify-between w-full ">
           <div className="relative md:w-[10vw] md:ml-[-2vw]">
           <TransitionLink href="/">

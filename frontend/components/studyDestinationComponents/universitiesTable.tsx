@@ -18,7 +18,7 @@ interface UniversitiesProps {
 
 const Universities = ({ id,data,countryName,para }: UniversitiesProps) => {
     return (
-        <div id='universities in country' className="flex flex-col mx-[6vw] md:mx-[12.5vw] mb-[10vw] md:mb-[8vw] gap-[3vw] md:gap-[4vw]">
+        <div id='universities in country' className="flex flex-col mx-[6vw] md:mx-[12.5vw] mb-[5vw] md:mb-[4vw] gap-[3vw] md:gap-[4vw]">
           <div>
           <h3 className="text-center text-h5TextPhone md:text-h3Text font-bold leading-[120%]">Top Medical Colleges in {countryName} <br/>For Indian Students</h3>
           <p className="text-regularTextPhone md:text-regularText text-justify">{para}</p>
@@ -40,7 +40,7 @@ const Universities = ({ id,data,countryName,para }: UniversitiesProps) => {
               <tr key={i}>
                 <td className=" border dark:text-black bg-linenChosen underline border-black  dark:border-borderGreyChosen dark:border-r-black  dark:border-b-black px-[.75vw] py-[.625vw] font-semibold">
                 <TransitionLink href={university.href}>
-                  <p className="text-black hover:text-orange-400 duration-300 transition-colors ease-in-out">
+                  <p className="text-black text-left hover:text-orange-400 duration-300 transition-colors ease-in-out">
                   
                 {university.universityName}</p>
                 </TransitionLink></td>

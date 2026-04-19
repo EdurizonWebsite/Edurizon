@@ -16,9 +16,14 @@ import {
   sectionHeadingClass,
   subHeadingClass,
 } from "@/components/studyDestinationComponents/shared/interactive";
+const feesData = {
+  tuition: "2,99,000",
+  hostel: "25,000",
+};
+
 
 const services = [
-  { icon: "/assets/Images/Icons/feesIcon.svg", text: "Established", label: "1973" },
+  { icon: "/assets/Images/Icons/feesIcon.svg", text: "Tution|Hostel Fees/year", label: `${feesData.tuition} | ${feesData.hostel}` },
   { icon: "/assets/Images/Icons/ExperienceIcon.svg", text: "Type", label: "Public University" },
   { icon: "/assets/Images/Icons/TieUpsIcon.svg", text: "Location", label: "Kemerovo, Russia" },
   { icon: "/assets/Images/Icons/AcademinCoursesIcon.svg", text: "Students", label: "21,000+" },
@@ -281,6 +286,10 @@ export default function KemorovoStateUniversityInteractive() {
           <h3 className={sectionHeadingClass}>Affordable MBBS Fees Structure</h3>
           <p className={paragraphClass}>
             KemSU is known for offering low-cost MBBS education without compromising quality.
+            <ul>
+              <li>Tution Fees: {feesData.tuition} Rubel</li>
+              <li>Hostel Fees: {feesData.hostel} Rubel</li>
+            </ul>
           </p>
           <h4 className={subHeadingClass}>Why It’s Budget-Friendly</h4>
           <ul className={listClass + " mb-[4vw] md:mb-[1vw]"}>

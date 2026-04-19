@@ -6,7 +6,7 @@ import Head from "next/head";
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
+      text: "Tuition Fees",
       label: "Ruble 6,57,360 / Year",
     },
     {

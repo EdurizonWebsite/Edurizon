@@ -17,8 +17,14 @@ import {
   subHeadingClass,
 } from "@/components/studyDestinationComponents/shared/interactive";
 
+const feesData = {
+  tuition: "3,19,000",
+  hostel: "12,000",
+};
+
+
 const services = [
-  { icon: "/assets/Images/Icons/feesIcon.svg", text: "Established", label: "1955" },
+  { icon: "/assets/Images/Icons/feesIcon.svg", text: "Tution|Hostel Fees/year", label: `${feesData.tuition} | ${feesData.hostel}` },
   { icon: "/assets/Images/Icons/ExperienceIcon.svg", text: "Medium", label: "English & Russian" },
   { icon: "/assets/Images/Icons/TieUpsIcon.svg", text: "Location", label: "Kemerovo, Russia" },
   { icon: "/assets/Images/Icons/AcademinCoursesIcon.svg", text: "Duration", label: "6 Years" },
@@ -308,8 +314,8 @@ export default function KemorovoStateMedicalUniversityInteractive() {
         </MotionRevealBlock>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-[3vw] md:gap-[1vw] mb-[6vw] md:mb-[2vw]">
           {[
-            "Affordable tuition fees",
-            "Low-cost hostel accommodation",
+            `Affordable tuition fees: ${feesData.tuition} Rubel/Year`,
+            `Low-cost hostel accommodation: ${feesData.hostel} Rubel/Year`,
             "No donation or hidden charges",
             "Subsidized fees for future years",
           ].map((item) => (

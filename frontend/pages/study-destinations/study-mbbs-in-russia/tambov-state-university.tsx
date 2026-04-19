@@ -3,12 +3,17 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcumbs";
 import RelatedVideos from '@/components/videoSlider';
 import Head from 'next/head';
+const feesData = {
+  tuition: "4,10,000",
+  hostel: "Included",
+};
+
 
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
-      label: "Ruble 3,85,000 / Year",
+      text: "Tuition Fees",
+      label: `Ruble ${feesData.tuition} / Year`,
     },
     {
       icon: "/assets/Images/Icons/TieUpsIcon.svg",

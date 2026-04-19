@@ -78,6 +78,7 @@ const Breadcrumbs: React.FC = () => {
     'masters-in-germany':'Masters in Germany',
     'md-in-germany':'MD in Germany',
     'hotel-management-in-germany':'Hotel Management in Germany',
+    'mbbs-university-in-russia-fees':'MBBS Universities in Russia Fees Comparision'
   };
 
   return (

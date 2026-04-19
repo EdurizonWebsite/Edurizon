@@ -10,7 +10,7 @@ import CallingBox from "@/components/studyDestinationComponents/header/callingBo
 const services = [
   {
     icon: "/assets/Images/Icons/feesIcon.svg",
-    text: "Tution Fee",
+    text: "tuition Fee",
     label: "26,000 RNB/Year ",
   },
   {
@@ -558,7 +558,7 @@ export default function NantongUniversityInteractive() {
             {[
               "Degree: MBBS (Bachelor of Medicine & Bachelor of Surgery)",
               "Medium of Teaching: English",
-              "Tution Fees: 26,000 RMB/Year",
+              "Tuition Fees: 26,000 RMB/Year",
               "Hostel Fee: 6,000 RMB/Year",
               "Duration: 6 Years (5 Years Study + 1 Year Internship)",
               "Clinical Training: Affiliated teaching hospitals",

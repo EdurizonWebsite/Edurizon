@@ -1,13 +1,18 @@
 import Breadcrumbs from "@/components/Breadcumbs"
 import Image from "next/image"
 import Head from "next/head"
+const feesData = {
+  tuition: "3,50,000",
+  hostel: "30,000",
+};
+
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
-      label: "Rs. 3,20,000 yearly",
+      text: "Tuition Fees",
+      label: `${feesData.tuition} yearly`,
     },
-    {
+    { 
       icon: "/assets/Images/Icons/TieUpsIcon.svg",
       text: "City & Province",
       label: "Arkhangelsk Oblast, Russia",
@@ -304,11 +309,11 @@ const NewPage=()=>{
                 <tbody>
                   <tr>
                     <th scope="row">Tuition Fees</th>
-                    <td>$6,500</td>
+                    <td>{feesData.tuition}</td>
                   </tr>
                   <tr>
                     <th scope="row">Hostel Fees</th>
-                    <td>Including Hostel Fees</td>
+                    <td>{feesData.hostel}</td>
                   </tr>
                 </tbody>
               </table>

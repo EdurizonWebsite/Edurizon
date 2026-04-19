@@ -6,7 +6,7 @@ import Script from "next/script";
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
+      text: "Tuition Fees",
       label: "RMB 34,000/Year",
     },
     {

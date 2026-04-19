@@ -12,8 +12,8 @@ import Script from "next/script";
 const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
-      text: "Tution Fees",
-      label: "Ruble 5,94,000 / Year",
+      text: "Tuition Fees",
+      label: "Ruble 6,60,000 / Year",
     },
     {
       icon: "/assets/Images/Icons/TieUpsIcon.svg",
@@ -44,9 +44,9 @@ const feeStructure = {
   description: "Kazan Federal University is popular among international students for its quality education and transparent cost structure. Kazan Federal University MBBS Fees are affordable compared to many other countries, offering Indian students access to modern facilities, experienced faculty, and excellent clinical training.",
   data: [
     ["Expense", "Annual Cost"],
-    ["Tution Fees", "5,94,000 Ruble"],
-    ["Hostel Fees", "24,000 Ruble"],
-    ["Miscellaneous", "10,000–20,000 Ruble"],
+    ["Tuition Fees", "6,60,000 Ruble"],
+    ["Hostel Fees", "25,000 Ruble"],
+    ["Miscellaneous", "25,000 Ruble"],
   ],
 };
 

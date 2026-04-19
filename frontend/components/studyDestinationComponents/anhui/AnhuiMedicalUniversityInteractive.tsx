@@ -10,7 +10,7 @@ import CallingBox from "@/components/studyDestinationComponents/header/callingBo
 const services = [
   {
     icon: "/assets/Images/Icons/feesIcon.svg",
-    text: "Tution Fees",
+    text: "Tuition Fees",
     label: "30,000 RMB/Year",
   },
   {
@@ -350,7 +350,7 @@ export default function AnhuiMedicalUniversityInteractive() {
           </p>
           <h4 className={h4}>History</h4>
           <p className={p}>
-            Established in 1926 as Dongnan Medical College in Shanghai, the institution later shifted to Anhui Province and finally to Hefei. It was renamed Anhui Medical College and officially became Anhui Medical University in 1996. Today, it stands among the recognized universities for study MBBS in China.
+            Established in 1926 as Dongnan Medical College in Shanghai, the instituition later shifted to Anhui Province and finally to Hefei. It was renamed Anhui Medical College and officially became Anhui Medical University in 1996. Today, it stands among the recognized universities for study MBBS in China.
           </p>
         </MotionBlock>
       </section>
@@ -373,7 +373,7 @@ export default function AnhuiMedicalUniversityInteractive() {
           </p>
           <h4 className={h4}>Education Hub</h4>
           <p className={p}>
-            The city hosts several reputed institutions including Anhui Medical University, making it a strong center for medical education in China and attracting students globally.
+            The city hosts several reputed instituitions including Anhui Medical University, making it a strong center for medical education in China and attracting students globally.
           </p>
           <h4 className={h4}>Student Lifestyle & Living Cost</h4>
           <p className={p}>Hefei is ideal for students looking for affordable MBBS in China:</p>
@@ -399,7 +399,7 @@ export default function AnhuiMedicalUniversityInteractive() {
         </MotionBlock>
         <div className="grid md:grid-cols-2 gap-[3vw] md:gap-[1vw] mb-[6vw] md:mb-[2vw]">
           {[
-            "Tution Fees: 30,000 RMB/Year",
+            "tuition Fees: 30,000 RMB/Year",
             "Hostel Fees: 4,000 RMB/Year",
             "24 teaching faculties",
             "10 affiliated hospitals (strong clinical exposure)",
@@ -437,7 +437,7 @@ export default function AnhuiMedicalUniversityInteractive() {
           </AccordionItem>
           <AccordionItem title="International Collaboration">
             <p className={p + " mb-0"}>
-              The university has partnerships with global institutions, offering exchange programs and enhancing opportunities for students pursuing MBBS abroad in China.
+              The university has partnerships with global instituitions, offering exchange programs and enhancing opportunities for students pursuing MBBS abroad in China.
             </p>
           </AccordionItem>
         </div>

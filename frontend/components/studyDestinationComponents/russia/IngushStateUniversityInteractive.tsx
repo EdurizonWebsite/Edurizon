@@ -17,8 +17,14 @@ import {
   subHeadingClass,
 } from "@/components/studyDestinationComponents/shared/interactive";
 
+const feesData = {
+  tuition: "2,65,000",
+  hostel: "81,000",
+};
+
+
 const services = [
-  { icon: "/assets/Images/Icons/feesIcon.svg", text: "Tution Fees", label: "2,00,000 RUB/year" },
+  { icon: "/assets/Images/Icons/feesIcon.svg", text: "Tution|Hostel Fees/year", label: `${feesData.tuition} | ${feesData.hostel}` },
   { icon: "/assets/Images/Icons/ExperienceIcon.svg", text: "Type", label: "Public (Government)" },
   { icon: "/assets/Images/Icons/TieUpsIcon.svg", text: "Location", label: "Magas, Russia" },
   { icon: "/assets/Images/Icons/AcademinCoursesIcon.svg", text: "MBBS Duration", label: "6 Years" },

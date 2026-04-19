@@ -56,7 +56,7 @@ export default function CollegeDetailDialouge({isOpen,setIsOpen,college,isGovern
                             <p>{isGovernment?"Government Seats:":isManagement?"Management Seat B1:":"State Seats:"}</p>
                             <p>{isManagement?"Management Seat B2:":"Management Seats"}</p>
                             <p>NRI Seats:</p>
-                            <p>Tution Fees:</p>
+                            <p>tuition Fees:</p>
                             <p>NRI Fees:</p>
                         </div>
                         <div className='col-span-1'>
@@ -64,7 +64,7 @@ export default function CollegeDetailDialouge({isOpen,setIsOpen,college,isGovern
                             <p>{isGovernment?college['GovernmentSeats']:isManagement?college['ManagementSeatsCatB1']:college["StateSeats"]}</p>
                             <p>{isManagement?college['ManagementSeatsCatB2']:college["ManagementSeats"]}</p>
                             <p>{college["NRISeats"]}</p>
-                            <p>{college["TutionFees"]=="N/A"?"N/A":<>₹ {college["TutionFees"]}</>}</p>
+                            <p>{college["tuitionFees"]=="N/A"?"N/A":<>₹ {college["tuitionFees"]}</>}</p>
                             <p>{college["NRIFees"]=="N/A"?"N/A":<>₹ {college["NRIFees"]}</>}</p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ export default function CollegeDetailDialouge({isOpen,setIsOpen,college,isGovern
                             <p>{isGovernment?"Government Seats:":isManagement?"Management Seat B1:":"State Seats:"}</p>
                             <p>{isManagement?"Management Seat B2:":"Management Seats"}</p>
                             <p>NRI Seats:</p>
-                            <p>Tution Fees:</p>
+                            <p>tuition Fees:</p>
                             <p>NRI Fees:</p>
                         </div>
                         <div className='col-span-1'>
@@ -149,7 +149,7 @@ export default function CollegeDetailDialouge({isOpen,setIsOpen,college,isGovern
                             <p>{isGovernment?college['GovernmentSeats']:isManagement?college['ManagementSeatsCatB1']:college["StateSeats"]}</p>
                             <p>{isManagement?college['ManagementSeatsCatB2']:college["ManagementSeats"]}</p>
                             <p>{college["NRISeats"]}</p>
-                            <p>{college["TutionFees"]=="N/A"?"N/A":<>₹ {college["TutionFees"]}</>}</p>
+                            <p>{college["tuitionFees"]=="N/A"?"N/A":<>₹ {college["tuitionFees"]}</>}</p>
                             <p>{college["NRIFees"]=="N/A"?"N/A":<>₹ {college["NRIFees"]}</>}</p>
                         </div>
                     </div>

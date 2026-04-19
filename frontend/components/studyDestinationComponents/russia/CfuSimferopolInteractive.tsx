@@ -17,6 +17,12 @@ import {
   subHeadingClass,
 } from "@/components/studyDestinationComponents/shared/interactive";
 
+const feesData = {
+  tuition: "3,50,000",
+  hostel: "30,000",
+};
+
+
 const services = [
   { icon: "/assets/Images/Icons/feesIcon.svg", text: "Tuition", label: "3,00,000 RUB/year" },
   { icon: "/assets/Images/Icons/ExperienceIcon.svg", text: "Medium", label: "English" },

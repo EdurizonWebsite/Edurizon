@@ -144,21 +144,38 @@ const NewPage = ({ id,countryData }: NewPageProps) => {
 
       {/* Country Specific Section 3 */}
       {countryData.countrySpecificSection3 && <Section3 id={id} data={countryData.countrySpecificSection3.data}/> }
-
+      {id === "study-mbbs-in-russia" && (
+        <div className="mx-[6vw] md:mx-[12.5vw] -mt-[4vw] md:-mt-[1vw] mb-[2vw] md:mb-0">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-[3vw] md:gap-[1.25vw] rounded-[3vw] md:rounded-[1vw] border border-orangeChosen/25 bg-linenChosen px-[5vw] md:px-[1.75vw] py-[4vw] md:py-[1.25vw] shadow-[0_8px_28px_rgba(255,117,0,0.12)]">
+            <p className="text-smallTextPhone md:text-regularText text-left leading-[170%] text-foreground max-w-[640px]">
+              <span className="font-semibold text-orangeChosen">Russia fee guide:</span> compare tuition, hostel, and other charges across low, medium, and higher-fee universities in one ordered page.
+            </p>
+            <TransitionLink href="/study-destinations/study-mbbs-in-russia/mbbs-university-in-russia-fees">
+              <span className="shrink-0 inline-flex items-center justify-center rounded-full bg-orangeChosen px-[5vw] md:px-[1.35vw] py-[2.5vw] md:py-[0.55vw] text-smallTextPhone md:text-smallText font-semibold text-white shadow-md hover:opacity-95 transition-opacity">
+                View fee comparison →
+              </span>
+            </TransitionLink>
+          </div>
+        </div>
+      )}
       {/* Country Universiteis */}
       {countryData.countryUniversities && <Universities id={id} para={countryData.para} data={countryData.countryUniversities} countryName={countryData.countryName} />}
 
 
-
+      
       {countryData.keyHighlightsSection && <UnlistedTable section2={"highlight"} content={countryData.keyHighlightsSection} id={id}/>}
 
       {countryData.whyChoseUniversity && <WhyChoseUniversity id={id} title={countryData.whyChoseUniversity.title} imageURL={countryData.whyChoseUniversity.imageURL} content={countryData.whyChoseUniversity.content}/>}
+
+          
 
       {/* Country Eligibilty Criteria  */}
       {countryData.countryEligibilityStructure && <EligibilityCriteria id={id} data={countryData.countryEligibilityStructure} countryName={countryData.countryName} />}
       
       {/* Country Fee Structure */}
       {countryData.countryFeeStructure && <UnlistedTable section2={"feeStructure"} id={id} content={countryData.countryFeeStructure} />}
+
+      
       {/* Country Additional Cost */}
       {<AdmissionProcess subHeading={countryData.admissionProcess.title}/>}
      {countryData.countryAdditionalCost && <UnlistedTable section2={"additionalCost"} id={id} content={countryData.countryAdditionalCost} />}
@@ -212,6 +229,7 @@ import AdmissionProcess from "@/components/studyDestinationComponents/admissionP
 import RelatedVideos from "@/components/videoSlider";
 import RussiaReasonsToStudy from "@/components/studyDestinationComponents/russiaReasonsToStudy";
 import AuthorizationSlider from "@/components/studyDestinationComponents/authorizationSlider";
+import { TransitionLink } from "@/utils/TransitionLink";
 // Server-Side Rendering (SSR)
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const id  = context.params?.id;

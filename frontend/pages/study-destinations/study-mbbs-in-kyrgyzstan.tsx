@@ -186,7 +186,7 @@ const NewPage = () => {
                 <thead className="text-smallTextPhone md:text-regularText text-center font-bold align-top bg-linenChosen">
                   <tr>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]">Name of University</td>
-                    <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Tution Fees in USD/Year</td>
+                    <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Tuition Fees in USD/Year</td>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]"> Hostel Fees in USD/Year</td>
                     <td className="border  dark:text-black dark:border-b-black dark:border-r-black border-black dark:border-borderGreyChosen px-[.75vw] py-[.625vw]">Know More</td>
                 </tr></thead>
