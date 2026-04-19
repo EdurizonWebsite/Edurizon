@@ -16,8 +16,8 @@ interface Lead {
   countryInterested: string;
   courseName: string;
   callingStatus: 'pending' | 'follow-up' | 'no-answer' | 'not-interested';
-  leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered';
-  leadStatus: 'pending' | 'hot' | 'warm' | 'cold' | 'negative' | 'completed';
+  leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered' | 'positive-plus';
+  leadStatus: 'pending' | 'hot' | 'warm' | 'cold' | 'negative' | 'completed' | 'positive-plus';
   remark: string;
   city?: string;
   state?: string;
@@ -230,6 +230,7 @@ const CallingRecords = () => {
     { key: 'followup', label: 'Follow Up', count: leads.filter(lead => lead.leadType === 'follow-up').length },
     { key: 'negative', label: 'Negative', count: leads.filter(lead => lead.leadType === 'negative').length },
     { key: 'completed', label: 'Positive', count: leads.filter(lead => lead.leadType === 'completed').length },
+    { key: 'positive-plus', label: 'Positive Plus', count: leads.filter(lead => lead.leadType === 'positive-plus').length },
     { key: 'registered', label: 'Registered', count: leads.filter(lead => lead.leadType === 'registered').length },
   ];
 
@@ -506,6 +507,7 @@ const CallingRecords = () => {
               <option value="warm" className="bg-white text-orange-600  ">🔥 Warm Lead</option>
               <option value="cold" className="bg-white text-blue-600">🥶 Cold Lead</option>
               <option value="completed" className="bg-white text-green-600">✅ Positive</option>
+              <option value="positive-plus" className="bg-white text-pink-600">✅ Positive Plus</option>
               <option value="registered" className="bg-white text-purple-600">🎓 Registered</option>
             </select>
           </div>

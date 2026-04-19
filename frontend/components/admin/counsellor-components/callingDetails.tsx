@@ -35,7 +35,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
     const [negative, setNegative] = useState<Lead[]>([]);
     const [completed, setCompleted] = useState<Lead[]>([]);
     const [registeredStudents, setRegisteredStudents] = useState<any[]>([]);
-
+    const [positivePlus, setPositivePlus] = useState<Lead[]>([]);
     // Popup Open States
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [isFormToAddRegisteredStudentDialogOpen, setIsFormToAddRegisteredStudentDialogOpen] = useState(false);
@@ -196,6 +196,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
             { key: "follow-up", label:'Follow Up', count:followUp.length},
             { key: "negative", label: 'Negative', count:negative.length},
             { key: "completed", label: 'Positive', count:completed.length},
+            { key: "positive-plus", label: 'Positive Plus', count:positivePlus.length},
             { key: "registered", label: 'Students Enrolled', count:registeredStudents.length},
             ];  
 
@@ -231,6 +232,8 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                 setCurrentDataForTable(negative)
             }else if(activeTab=='completed'){
                 setCurrentDataForTable(completed)
+            }else if(activeTab=='positive-plus'){
+                setCurrentDataForTable(positivePlus)
             }
             // Clear filters and selections when switching tabs
             setFilterCriteria({
@@ -291,6 +294,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
             setFollowUp([])
             setNegative([])
             setCompleted([])
+            setPositivePlus([])
             leads.forEach((lead:any)=>{
                 if(lead.leadType=='pending'){
                     setPending(prev=>[...prev,lead])
@@ -300,6 +304,8 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
                     setNegative(prev=>[...prev,lead])
                 }else if(lead.leadType=='completed'){
                     setCompleted(prev=>[...prev,lead])
+                }else if(lead.leadType=='positive-plus'){
+                    setPositivePlus(prev=>[...prev,lead])
                 }
             })
         }

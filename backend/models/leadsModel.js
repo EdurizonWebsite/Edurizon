@@ -26,7 +26,7 @@ const leadsSchema = mongoose.Schema(
     },
     leadType:{
         type:String,
-        enum: ['pending','follow-up','negative','completed','registered','warm','cold'],
+        enum: ['pending','follow-up','negative','completed','registered','positive-plus'],
         default: 'pending'
     },
     callingStatus:{
@@ -55,7 +55,7 @@ const leadsSchema = mongoose.Schema(
     },
     leadStatus:{
         type:String,
-        enum: ['hot','warm','negative','cold','pending','completed'],
+        enum: ['hot','warm','negative','cold','pending','completed','positive-plus'],
         default:'pending'
     },
     // Explicit calling date (separate from createdAt/updatedAt)

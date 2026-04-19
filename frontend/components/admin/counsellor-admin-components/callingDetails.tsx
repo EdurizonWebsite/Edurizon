@@ -13,7 +13,7 @@ import { countryOptions, courseOptions } from '@/lib/adminData';
 import { useSearch } from '@/context/SearchContext';
 import { applyLeadFilters } from '@/lib/leadFilters';
 interface Lead {
-    leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered';
+    leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered' | 'positive-plus';
     [key: string]: any; // other fields if you’re not typing them yet
   }
   
@@ -35,6 +35,7 @@ const CallingDetails = ()  => {
     const [negative, setNegative] = useState<Lead[]>([]);
     const [completed, setCompleted] = useState<Lead[]>([]);
     const [registered, setRegistered] = useState<Lead[]>([]);
+    const [positivePlus, setPositivePlus] = useState<Lead[]>([]);
     const [enrolledStudents, setenrolledStudents] = useState([]);
     const [selectedLead,setSelectedLead] = useState<Lead|null>(null);
 
@@ -174,6 +175,7 @@ const CallingDetails = ()  => {
             { key: "follow-up", label:'Follow Up', count:followUp.length},
             { key: "negative", label: 'Negative', count:negative.length},
             { key: "completed", label: 'Positive', count:completed.length},
+            { key: "positive-plus", label: 'Positive Plus', count:positivePlus.length},
             { key: "registered", label: 'Registered', count:registered.length},
             { key: "enrolled", label: 'Students Enrolled', count:enrolledStudents.length},
             ];  
@@ -251,6 +253,8 @@ const CallingDetails = ()  => {
                 setCurrentDataForTable(completed)
             }else if(activeTab=='registered'){
                 setCurrentDataForTable(registered)
+            }else if(activeTab=='positive-plus'){
+                setCurrentDataForTable(positivePlus)
             }
             // Clear filters and selections when switching tabs
             setFilterCriteria({
@@ -271,12 +275,14 @@ const CallingDetails = ()  => {
         // Function to fetch leads data
         const fetchLeadsData = async () => {
             try {
+              console.log("fetching leads data for counsellor admin");
                 const token = localStorage.getItem('adminToken');
                 if (!token) {
+                  console.log("ERRR");
+
                   setError('Not authenticated. Please log in again.');
                   return;
                 }
-        
                 // Ensure token has Bearer prefix
                 const authToken = token.startsWith('Bearer ') ? token : `Bearer ${token}`;
                 const assignedRes = await axios.get(`${baseUrl}/api/leads/get-all`, {
@@ -284,7 +290,9 @@ const CallingDetails = ()  => {
                     Authorization: authToken
                   }
                 });
+
                 if (assignedRes.data.success) {
+
                   setLeads(assignedRes.data.data);
                   filterLeads(assignedRes.data.data);
                 }
@@ -310,6 +318,7 @@ const CallingDetails = ()  => {
             setNegative([])
             setCompleted([])
             setRegistered([])
+            setPositivePlus([])
             leads.forEach((lead:any)=>{
                 if(lead.leadType=='pending'){
                     setPending(prev=>[...prev,lead])
@@ -321,6 +330,8 @@ const CallingDetails = ()  => {
                     setCompleted(prev=>[...prev,lead])
                 }else if(lead.leadType=='registered'){
                     setRegistered(prev=>[...prev,lead])
+                }else if(lead.leadType=='positive-plus'){
+                    setPositivePlus(prev=>[...prev,lead])
                 }
             })
         }
