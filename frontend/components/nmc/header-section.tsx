@@ -1,5 +1,14 @@
 import Image from "next/image";
-export default function NMCHeader() {
+
+type NMCHeaderProps = {
+  onExploreClick?: () => void;
+  onDownloadClick?: () => void;
+};
+
+export default function NMCHeader({
+  onExploreClick,
+  onDownloadClick,
+}: NMCHeaderProps) {
     
   return (
     
@@ -24,10 +33,18 @@ export default function NMCHeader() {
             recognized in India.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-[#A14000] text-white px-[16px] md:px-[1.5vw] py-[12px] md:py-[1vw] rounded-full font-bold text-regularTextPhone md:text-mediumText hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-primary/20">
+            <button
+              type="button"
+              onClick={onExploreClick}
+              className="bg-[#A14000] text-white px-[16px] md:px-[1.5vw] py-[12px] md:py-[1vw] rounded-full font-bold text-regularTextPhone md:text-mediumText hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-primary/20"
+            >
               Explore Guidelines
             </button>
-            <button className="flex items-center gap-2 px-[16px] md:px-[1.5vw] py-[12px] md:py-[1vw] rounded-full font-bold text-regularTextPhone md:text-mediumText border-2 border-paleOrangeChosen hover:bg-paleOrangeChosen transition-all duration-300">
+            <button
+              type="button"
+              onClick={onDownloadClick}
+              className="flex items-center gap-2 px-[16px] md:px-[1.5vw] py-[12px] md:py-[1vw] rounded-full font-bold text-regularTextPhone md:text-mediumText border-2 border-paleOrangeChosen hover:bg-paleOrangeChosen transition-all duration-300"
+            >
               <span className="material-symbols-outlined">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12V12M2 16C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14V11H2V14V14V14H14V14V14V11H16V14C16 14.55 15.8042 15.0208 15.4125 15.4125C15.0208 15.8042 14.55 16 14 16H2V16" fill="#1F1B18"/>

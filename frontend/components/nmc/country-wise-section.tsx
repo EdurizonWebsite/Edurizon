@@ -1,9 +1,14 @@
 import { nmcCards } from "@/lib/nmc-country-data"
 import card from "./card"
-import { useRef } from "react"
+import { useRef, useState } from "react"
+import ContactUnlockModal from "@/components/pdf/ContactUnlockModal"
 
 export default function CountryWiseSection(){
     const scrollContainerRef = useRef<HTMLDivElement>(null)
+    const [isFormOpen, setIsFormOpen] = useState(false)
+    const [selectedCountry, setSelectedCountry] = useState<string>("")
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false)
+    const hideSuccessPopupTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
     const scroll = (direction: 'left' | 'right') => {
         if (scrollContainerRef.current) {
@@ -54,12 +59,93 @@ export default function CountryWiseSection(){
 
             <div ref={scrollContainerRef} className="flex gap-[1.5vw] overflow-auto no-scrollbar py-[3vw] px-[2vw] snap-x snap-mandatory">
                 {nmcCards.map((cardDetail,index)=>(
-                        <div key={index} className="flex shrink-0 snap-start">
+                        <div
+                            key={index}
+                            className="flex shrink-0 snap-start"
+                            role="button"
+                            tabIndex={0}
+                            onClick={() => {
+                                setSelectedCountry(cardDetail.countryName)
+                                setIsFormOpen(true)
+                            }}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault()
+                                    setSelectedCountry(cardDetail.countryName)
+                                    setIsFormOpen(true)
+                                }
+                            }}
+                        >
                             {card(cardDetail)}
                         </div>
                     ))}
             </div>
 
+            {isFormOpen && (
+                <ContactUnlockModal
+                    isOpen={isFormOpen}
+                    onClose={() => setIsFormOpen(false)}
+                    title="Contact us"
+                    subtitle="Submit your details and our team will reach out."
+                    submitLabel="Submit"
+                    interestedCountry={selectedCountry}
+                    remark="Lead from NMC Page"
+                    extraFields={[
+                        {
+                            name: "interestedCountry",
+                            label: "Interested country",
+                            required: true,
+                            readOnly: true,
+                            value: selectedCountry,
+                        },
+                    ]}
+                    onSuccess={() => {
+                        setShowSuccessPopup(true)
+                        if (hideSuccessPopupTimeoutRef.current) {
+                            clearTimeout(hideSuccessPopupTimeoutRef.current)
+                        }
+                        hideSuccessPopupTimeoutRef.current = setTimeout(() => setShowSuccessPopup(false), 2600)
+                    }}
+                />
+            )}
+
+            {showSuccessPopup && (
+                <div className="fixed inset-0 z-[9999] bg-black/60 flex items-center justify-center p-4 transition-opacity duration-200">
+                    <div className="relative w-full max-w-md rounded-2xl bg-white/95 backdrop-blur border border-primary-fixed shadow-2xl p-6 text-center animate-[popupIn_180ms_ease-out]">
+                        <button
+                            type="button"
+                            aria-label="Close"
+                            onClick={() => {
+                                if (hideSuccessPopupTimeoutRef.current) {
+                                    clearTimeout(hideSuccessPopupTimeoutRef.current)
+                                }
+                                setShowSuccessPopup(false)
+                            }}
+                            className="absolute right-3 top-3 px-3 py-2 rounded-lg hover:bg-black/5 text-on-surface"
+                        >
+                            ✕
+                        </button>
+                        <div className="font-bold text-regularTextPhone md:text-regularText text-on-surface">
+                            Our team will contact you soon
+                        </div>
+                        <div className="mt-2 text-tinyTextPhone md:text-tinyText text-on-surface-variant">
+                            Thanks for submitting your details.
+                        </div>
+                    </div>
+                    <style jsx global>{`
+                      @keyframes popupIn {
+                        from {
+                          opacity: 0;
+                          transform: translateY(8px) scale(0.98);
+                        }
+                        to {
+                          opacity: 1;
+                          transform: translateY(0) scale(1);
+                        }
+                      }
+                    `}</style>
+                </div>
+            )}
         </section>
     )
 }

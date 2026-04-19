@@ -12,7 +12,7 @@ const Leads = require('../models/leadsModel');
 // @access  Public
 const createConsultationRequest = asyncHandler(async (req, res) => {
     try {
-        const { name, email, phone, interestedCountry } = req.body;
+        const { name, email, phone, interestedCountry,remark } = req.body;
 
         // Validate required fields
         if (!name || !email || !phone || !interestedCountry) {
@@ -41,13 +41,19 @@ const createConsultationRequest = asyncHandler(async (req, res) => {
         });
 
         // Create a lead
+        let source='Website - NMC Page'
+        if(remark==null){
+          remark='Request Received from Home Page Consultation Form',
+          source='Website - Home Page'
+        }
         await Leads.create({
           name,
           email,
           phone,
           countryInterested:interestedCountry,
           status: 'pending',
-          remark: 'Request Received from Home Page Consultation Form'
+          remark: remark,
+          source:source
         })
 
         res.status(201).json({

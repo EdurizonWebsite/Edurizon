@@ -135,6 +135,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   // Form 
   const [showConsultationForm, setShowConsultationForm] = useState(false);
   const [formFilled, setFormFilled] = useState(false)
+  const [suppressConsultationForm, setSuppressConsultationForm] = useState(false);
   
 
   useEffect(() => {
@@ -149,6 +150,19 @@ function MyApp({ Component, pageProps }: AppProps) {
       }, [showConsultationForm]);
 
   useEffect(() => {
+    const handler = (e: Event) => {
+      const ce = e as CustomEvent<{ suppress?: boolean }>;
+      if (typeof ce.detail?.suppress === "boolean") {
+        setSuppressConsultationForm(ce.detail.suppress);
+      }
+    };
+    window.addEventListener("edurizon:suppress-consultation", handler as EventListener);
+    return () => {
+      window.removeEventListener("edurizon:suppress-consultation", handler as EventListener);
+    };
+  }, []);
+
+  useEffect(() => {
     // Don't show form on admin routes
     if (isAdminRoute) return;
     
@@ -158,7 +172,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, 5 * 100000) // After 30 seconds
+        }, 5 * 1000) // After 30 seconds
       );
   
       timeouts.push(
@@ -250,8 +264,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             {!shouldExcludeLayout && <CTASectionComponent />}
           </div>
           {/* 💬 Show Consultation Form when triggered */}
-          {!isAdminRoute && (
-            <div className={`fixed top-0  left-0 w-full h-screen bg-black bg-opacity-50  ${showConsultationForm?"opacity-100 scale-100 z-50 ":"opacity-0 -z-50 scale-95"}   flex items-center justify-center transition-opacity duration-300 ease-in-out`}>
+          {!isAdminRoute && !suppressConsultationForm && (            <div className={`fixed top-0  left-0 w-full h-screen bg-black bg-opacity-50  ${showConsultationForm?"opacity-100 scale-100 z-50 ":"opacity-0 -z-50 scale-95"}   flex items-center justify-center transition-opacity duration-300 ease-in-out`}>
               <ConsultationForm onClose={() => setShowConsultationForm(false)} />
             </div>
           )}

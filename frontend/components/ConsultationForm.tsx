@@ -5,12 +5,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import {baseUrl} from '@/lib/baseUrl';
 interface ConsultationFormProps {
   onClose: () => void;
+  initialInterestedCountry?: string;
+  lockInterestedCountry?: boolean;
+  onSuccess?: () => void;
 }
 import Image from 'next/image';
 
 const SESSION_STORAGE_KEY = 'edurizon_consultation_submitted';
 
-const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
+const ConsultationForm: React.FC<ConsultationFormProps> = ({
+  onClose,
+  initialInterestedCountry,
+  lockInterestedCountry = false,
+  onSuccess,
+}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,6 +34,14 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
       setAlreadySubmittedThisSession(true);
     }
   }, []);
+
+  useEffect(() => {
+    if (!initialInterestedCountry) return;
+    setFormData(prev => ({
+      ...prev,
+      interestedCountry: initialInterestedCountry
+    }));
+  }, [initialInterestedCountry]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -54,6 +70,8 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
 
       if (response.data.success) {
         succeeded = true;
+        setSuccess(true);
+        onSuccess?.();
         if (typeof window !== 'undefined') {
           sessionStorage.setItem(SESSION_STORAGE_KEY, 'true');
         }
@@ -61,7 +79,7 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
         toast.success('Consultation request submitted successfully! We will contact you soon.');
         setTimeout(() => {
           onClose();
-        }, 1000);
+        }, 1200);
       }
     } catch (error: any) {
       console.error('Consultation request error:', error);
@@ -130,6 +148,7 @@ const ConsultationForm: React.FC<ConsultationFormProps> = ({ onClose }) => {
               value={formData.interestedCountry}
               onChange={handleChange}
               required
+              readOnly={lockInterestedCountry}
               className="mt-[1vw] md:mt-[0.375vw] block w-full px-[2vw] md:px-3 py-[1vw] md:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orangeChosen focus:border-orangeChosen dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             />
           </div>

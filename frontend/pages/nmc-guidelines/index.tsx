@@ -5,7 +5,19 @@ import Head from "next/head";
 import React from "react";
 import { faqs } from "@/lib/nmc-country-data";
 import NMCHeader from "@/components/nmc/header-section";
+import { useRouter } from "next/router";
 const NmcGuidelines = () => {
+  const router = useRouter();
+
+  const handleExploreGuidelines = () => {
+    const el = document.getElementById("nmc-country-wise-section");
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleOpenGazettePdf = () => {
+    router.push("/nmc-guidelines/nmc-gazette-2021");
+  };
+
   return (
     <>
       <Head>
@@ -26,7 +38,10 @@ const NmcGuidelines = () => {
         <Breadcrumbs />
 
         {/* Header */}
-        <NMCHeader />
+        <NMCHeader
+          onExploreClick={handleExploreGuidelines}
+          onDownloadClick={handleOpenGazettePdf}
+        />
         {/* Advisory from NMC*/}
         <section className="px-8 py-10 relative  ">
           <div className="max-w-7xl mx-auto bg-linenChosen  border border-primary-fixed p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6 shadow-sm">
@@ -61,7 +76,9 @@ const NmcGuidelines = () => {
           </div>
         </section>
         {/* Country Wise Section  */}
-        <CountryWiseSection />
+        <section id="nmc-country-wise-section" className="w-full">
+          <CountryWiseSection />
+        </section>
 
         {/* FAQ Section */}
         <FAQSection data={faqs} />
