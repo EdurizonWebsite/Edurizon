@@ -5,6 +5,7 @@ import { IconButton } from "../Buttons";
 import NorthEastIcon from '../../public/assets/Images/Icons/NorthEastIcon.svg';
 import EmblaCarousel from "../EmblaCarousel/EmblaCarousel";
 import useEmblaCarousel from 'embla-carousel-react'
+import { NextButton, PrevButton,usePrevNextButtons } from "../EmblaCarousel/EmblaCarouselArrowButtons";
 
 
 
@@ -13,8 +14,7 @@ import Russia from '../../public/assets/Images/CountryImages/Russia.png';
 import UK from '../../public/assets/Images/CountryImages/UK.png';
 import Georgia from '../../public/assets/Images/CountryImages/Georgia.png';
 import Germany from '../../public/assets/Images/CountryImages/Germany.png';
-import { NextButton, PrevButton,usePrevNextButtons } from "../EmblaCarousel/EmblaCarouselArrowButtons";
-import { StaticImageData } from "next/image";
+
 import { TransitionLink } from "@/utils/TransitionLink";
 
 

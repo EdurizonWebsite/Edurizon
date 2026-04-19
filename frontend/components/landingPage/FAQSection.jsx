@@ -3,7 +3,7 @@ import Image from "next/image"
 import ThemeContext from "@/context/themeContext"
 
 
-const FAQSection = () => {
+export function FAQSection({data}){
     const [selected,setSelected]=useState(null)
     const { theme } = useContext(ThemeContext);
     
@@ -39,17 +39,3 @@ const FAQSection = () => {
             )}
 
 export default FAQSection;
-
-
-const data=[{question:'How do I start the admission process?',
-    answer:'Book a free consultation, and our experts will guide you step by step.'},
-    {question:'Do you offer visa assistance?',
-    answer:'Yes! We help with visa documentation, mock interviews, and submission.'},
-    {question:'Which countries do you assist students in applying to?',
-    answer:'We help students apply to top universities in the USA, UK, Canada, Australia, Europe, and other leading study destinations.'},
-    {question:'Can I apply if I have a low GPA?',
-    answer:'Yes! Our experts can help you find universities that accept students with lower GPAs and guide you on how to strengthen your application.'},
-    {question:'What are the requirements for studying abroad?',
-    answer:'Requirements vary by country and university, but generally include academic transcripts, language proficiency scores (IELTS, TOEFL, etc.), SOPs, LORs, and financial proof.'},
-    
-    ]

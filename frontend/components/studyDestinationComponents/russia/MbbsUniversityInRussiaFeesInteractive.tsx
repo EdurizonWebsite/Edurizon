@@ -156,7 +156,7 @@ export default function MbbsUniversityInRussiaFeesInteractive() {
   }, [updateActiveFromScroll]);
 
   return (
-    <div className="pb-[10vw] md:pb-[4vw]  pt-[20vw] md:pt-[8vw]">
+    <div className="pb-[10vw] md:pb-[4vw]  pt-[5vw] md:pt-[3vw]">
       <div className="relative mx-[6vw] md:mx-[12.5vw] mt-[18vw] md:mt-[6vw] mb-[6vw] md:mb-[2.5vw]">
         <Breadcrumbs />
       </div>

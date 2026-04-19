@@ -1,5 +1,6 @@
 import React, {useState,useEffect}  from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { IconButton} from '@/components/Buttons';
 import ConsultationForm from '@/components/ConsultationForm';
 //Images Imports
@@ -9,7 +10,22 @@ import DummyStudent3 from '../../public/assets/Images/landingPage/DummyStudent3.
 import DummyStudent4 from '../../public/assets/Images/landingPage/DummyStudent4.png';
 
 const CTASection = () => {
+    const router = useRouter();
+    const route = (router?.pathname || '').replace(/^\//, '');
+    const isNmcGuidelines = route === 'nmc-guidelines';
+
+    const [heading, setHeading]=useState('Sign Up for free consultation and latest updates')
+    const [description, setDescription] = useState('Get a Free Study Abroad Consultation Today! Our expert advisors will guide you through university selection, applications, visas, and scholarships – all for FREE!')
     const [showConsultationForm, setShowConsultationForm] = useState(false);
+    
+    useEffect(() => {
+      if (isNmcGuidelines) {
+        setHeading('Confused about NMC guidelines?\nGet expert counselling.');
+        setDescription(
+          'Our advisors stay updated with every regulatory shift to ensure your\ncareer remains protected and compliant with Indian laws.'
+        );
+      }
+    }, [isNmcGuidelines]);
     
       const handleConsultationClick = () => {
         setShowConsultationForm(true);
@@ -29,8 +45,8 @@ const CTASection = () => {
          
         <div className="mx-[7.5vw] mb-[14.5vw] md:mb-[9vw] py-[10vw] md:py-0 px-[6vw] rounded-[10vw] md:rounded-[2.5vw] w-auto h-[52vw] md:h-[28.5625vw] text-white flex md:flex-row gap-[8.625vw] bg-orangeChosen" >
             <div className="hidden md:block w-[43.1875vw] my-auto">
-                <h2 className="text-h2Text font-bold leading-[120%] mb-[1vw]">Sign Up for free consultation and latest updates</h2>
-                    <p className="text-regularText leading-[150%]">Get a Free Study Abroad Consultation Today! Our expert advisors will guide you through university selection, applications, visas, and scholarships – all for FREE!</p>
+                <h2 className="text-h2Text font-bold leading-[120%] mb-[1vw]">{heading}</h2>
+                    <p className="text-regularText leading-[150%]">{description}</p>
                 </div>
             <div className='w-full md:w-[19vw] my-auto flex flex-col items-center gap-[4.5vw] md:gap-[1vw]'>
                 <div className=' flex flex-row gap-[2vw] md:gap-[1.125vw] '>

@@ -1,8 +1,9 @@
 import "../styles/globals.css";
-import "../components/landingPage/faq.css";
+import "../components/landingPage/faq.css"; 
 import "../components/OtpLogin.css";
 import "../components/EmblaCarousel/embla.css";
 import "../components/landingPage/slider.css";
+import '../components/nmc/header.css';
 import "react-phone-input-2/lib/style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,7 +45,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [isMobileView, setIsMobileView] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const freeConsultationRef = useRef(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -158,7 +158,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, 5 * 1000) // After 30 seconds
+        }, 5 * 100000) // After 30 seconds
       );
   
       timeouts.push(

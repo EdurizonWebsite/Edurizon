@@ -36,7 +36,7 @@ const Navbar = () => {
     { name: "About Us", href: "/about-us" },
     { name: "Study Destinations", href: "/study-destinations?category=Destination", dropdown: true , borderTop: true },
     { name: "Blogs", href: "/blog", external: false },
-    // { name: "Budget Calculator", href: "#" },
+    { name: "NMC Guidelines", href: "/nmc-guidelines" },
     { name: "Contact Us", href: "/contact-us" , borderTop: true },
     { name: "Testimonials", href: "/testimonial", external: false },
   ];
