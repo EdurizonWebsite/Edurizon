@@ -12,7 +12,7 @@ const Leads = require('../models/leadsModel');
 // @access  Public
 const createConsultationRequest = asyncHandler(async (req, res) => {
     try {
-        const { name, email, phone, interestedCountry,remark } = req.body;
+        let { name, email, phone, interestedCountry,remark } = req.body;
 
         // Validate required fields
         if (!name || !email || !phone || !interestedCountry) {
