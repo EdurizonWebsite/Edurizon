@@ -23,7 +23,7 @@ export default function NmcGazette2021Page() {
             title="NMC Gazette 2021"
             pdfUrl="/assets/pdf/NMC%20GAZETTE%202021.pdf"
             storageKey="pdf_access:nmc_gazette_2021"
-            contactCtaLabel="Contact Us"
+            contactCtaLabel="Download"
           />
         </section>
       </section>

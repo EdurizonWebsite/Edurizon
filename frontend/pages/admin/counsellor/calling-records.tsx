@@ -504,8 +504,6 @@ const CallingRecords = () => {
               <option value="pending" className="bg-white text-yellow-600">⏳ Pending</option>
               <option value="follow-up" className="bg-white text-blue-600">📞 Follow Up</option>
               <option value="negative" className="bg-white text-red-600">❌ Negative</option>
-              <option value="warm" className="bg-white text-orange-600  ">🔥 Warm Lead</option>
-              <option value="cold" className="bg-white text-blue-600">🥶 Cold Lead</option>
               <option value="completed" className="bg-white text-green-600">✅ Positive</option>
               <option value="positive-plus" className="bg-white text-pink-600">✅ Positive Plus</option>
               <option value="registered" className="bg-white text-purple-600">🎓 Registered</option>

@@ -12,7 +12,7 @@ export default function PdfAccessGate({
   pdfUrl,
   title = "Document",
   storageKey,
-  contactCtaLabel = "Contact Us",
+  contactCtaLabel = "Download",
 }: PdfAccessGateProps) {
   const [unlocked, setUnlocked] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);

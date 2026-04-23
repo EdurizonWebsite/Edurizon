@@ -6,7 +6,7 @@ export default function card(cardDetail:nmcCard){
     return (
         <article className="flex flex-col items-center gap-[1vw] w-[clamp(280px,21.875vvw,300px)] bg-white  rounded-[12px] md:rounded-[1.5vw] overflow-hidden shadow-none hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer">
             <div className="relative">
-                <Image height={300} width={300} alt="card" className="w-[clamp(280px,21.875vvw,300px)] md:w-full h-auto object-cover" src={cardDetail.src} />
+                <Image height={300} width={300} alt="card" className="w-[clamp(280px,21.875vvw,300px)] md:w-fu h-auto object-cover" src={cardDetail.src} />
                 <div className="absolute top-[1vw] left-[1vw] rounded-[30px] bg-linenChosen px-[0.5vw] py-[6px] flex items-center gap-[0.5vw] ">
                     <Image height={30} width={30} alt="flag" className="size-4 object-cover border border-black rounded-full" src={cardDetail.flgSrc} />
                     <p className="text-tinyTextPhone md:text-tinyText font-semibold font-poppins leading-[100%] text-[#1F1B18]">

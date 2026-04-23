@@ -33,42 +33,6 @@ export const nmcCards:nmcCard[] = [
       countryUrl:'/study-destination/study-mbbs-in-china'
     },
     {
-      src:'/assets/Images/CountryBlogs/studyDestinationCard/Germany.webp',
-      flgSrc:'/assets/Images/country-flag/german.png',
-      countryName:'Germany',
-      pdfSrc:'/assets/nmc/germany.pdf',
-      description:[
-        'No Tuition Fees (Public Universities)',
-        'German Language Required',
-        'High Quality Education',
-      ],
-      countryUrl:'/study-destination/study-mbbs-in-germany'
-    },
-    {
-      src:'/assets/Images/CountryBlogs/studyDestinationCard/Hungary.webp',
-      flgSrc:'/assets/Images/country-flag/hungary.png',
-      countryName:'Hungary',
-      pdfSrc:'/assets/nmc/hungary.pdf',
-      description:[
-        '6 Years MBBS Program',
-        'EU Recognized Degree',
-        'English Medium Courses',
-      ],
-      countryUrl:'/study-destination/study-mbbs-in-hungary'
-    },
-    {
-      src:'/assets/Images/CountryBlogs/studyDestinationCard/UK.webp',
-      flgSrc:'/assets/Images/country-flag/uk.png',
-      countryName:'UK',
-      pdfSrc:'/assets/nmc/uk.pdf',
-      description:[
-        '5 Years MBBS Program',
-        'Top Ranked Universities',
-        'High Tuition Fees',
-      ],
-      countryUrl:'/study-destination/study-mbbs-in-uk'
-    },
-    {
       src:'/assets/Images/CountryBlogs/studyDestinationCard/Tajikistan.webp',
       flgSrc:'/assets/Images/country-flag/tajikistan.png',
       countryName:'Tajikistan',
@@ -79,18 +43,6 @@ export const nmcCards:nmcCard[] = [
         'Growing Popularity',
       ],
       countryUrl:'/study-destination/study-mbbs-in-tajikistan'
-    },
-    {
-      src:'/assets/Images/CountryBlogs/studyDestinationCard/Australia.webp',
-      flgSrc:'/assets/Images/country-flag/australia.jpg',
-      countryName:'Australia',
-      pdfSrc:'/assets/nmc/australia.pdf',
-      description:[
-        'Globally Recognized Degrees',
-        'High Clinical Exposure',
-        'Premium Education Cost',
-      ],
-      countryUrl:'/study-destination/study-mbbs-in-australia'
     },
     {
       src:'/assets/Images/CountryBlogs/studyDestinationCard/Kyrgyzstan.webp',
