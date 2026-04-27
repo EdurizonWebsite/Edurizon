@@ -27,7 +27,7 @@ export function FAQSection({data}){
                                 </div> 
                                 <div className={selected==i ?"content show ":" content "}>
                                 <div className='flex flex-row'>
-                                <div className='flex flex-row w-full md:w-[40.625vw] font-extralight  text-smallTextPhone md:text-smallText '>{item.answer}</div>
+                                <pre className='flex flex-row w-full md:w-[40.625vw] font-extralight  text-smallTextPhone md:text-smallText font-poppins '>{item.answer}</pre>
                                 </div>
                             </div>
 

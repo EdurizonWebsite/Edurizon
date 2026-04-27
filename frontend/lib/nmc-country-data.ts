@@ -130,21 +130,67 @@ export const nmcCards:nmcCard[] = [
     // }
   ]
 
-export const faqs=[
+  export const faqs = [
     {
-        question:'What are the latest NMC guidelines for 2024?',
-        answer:'The latest NMC guidelines (FMGL 2021) remain the primary regulatory framework for 2024. Key updates emphasize that students must complete their entire course and internship at the same institution, and the medium of instruction must be English. Additionally, students must be eligible to register as medical practitioners in the country where they obtained their degree.'
+      question: 'Are you aware of the latest NMC guidelines for studying MBBS abroad?',
+      answer: `
+  NMC has issued comprehensive guidelines for Foreign Medical Graduates focusing on:
+  
+  i) 54 months MBBS
+  ii) 12-month internship
+  iii) Internship should not be in parts
+  iv) Medium of instruction should be English
+  v) Licence to practice
+  vi) Degree must be completed from the same University where it is started
+  vii) University should be recognized by WHO
+  `
     },
     {
-        question:'Is the 12-month internship mandatory abroad?',
-        answer:'Yes, according to the FMGL Regulations 2021, a 12-month clinical internship must be completed in the same medical institution from which the degree was obtained. This must be done before applying for the FMGE screening test in India. After passing FMGE, students are further required to complete an additional 12 months of internship (CRMI) in India to obtain permanent registration.'
+      question: 'Do you know that NEET qualification is mandatory for MBBS abroad eligibility?',
+      answer: 'Yes, qualifying NEET is mandatory for Indian students who wish to study MBBS abroad and later practice in India.'
     },
     {
-        question:'Are degrees from the Philippines still valid?',
-        answer:'Degrees from the Philippines are valid provided they comply with the FMGL 2021 criteria. Recent clarifications suggest that the MD program (which follows the BS course) must be of 54 months duration to meet the 4.5-year academic requirement. Students who enrolled after the 2021 notification must ensure their curriculum aligns perfectly with the total duration and internship rules specified by the NMC.'
+      question: 'Are you aware that the foreign medical course must be recognized as per NMC norms?',
+      answer: 'Yes, the university and degree must meet NMC regulations; otherwise, students may face registration issues in India.'
     },
     {
-        question:'What is the "one institution" rule?',
-        answer:'The "one institution" rule mandates that the entire primary medical qualification, including the clinical clerkship and internship, must be completed at a single medical university or institution. Transferring between colleges or countries during the course of study is no longer permitted for students seeking recognition of their foreign medical degrees by the National Medical Commission of India.'
+      question: 'Do you know that the total course duration should be at least 54 months?',
+      answer: 'Yes, the medical course must have a minimum duration of 54 months (4.5 years), excluding internship.'
+    },
+    {
+      question: 'Are you aware that a 12-month internship is mandatory after completion of MBBS abroad?',
+      answer: 'Yes, students must complete a 12-month clinical internship as part of their medical education.'
+    },
+    {
+      question: 'Do you know that the internship should be completed in the same country/university?',
+      answer: 'Yes, as per NMC guidelines, the internship should be part of the same institution where the student studied medicine.'
+    },
+    {
+      question: 'Are you aware that the medium of instruction should be English?',
+      answer: 'Yes, the course should be taught in English to ensure students understand academics and remain eligible.'
+    },
+    {
+      question: 'Do you know that practical clinical training is compulsory as per NMC guidelines?',
+      answer: 'Yes, hands-on clinical exposure and hospital training are essential parts of the medical program.'
+    },
+    {
+      question: 'Are you aware that students must clear FMGE / NEXT to practice in India after MBBS abroad?',
+      answer: 'Yes, students must qualify the screening or licensing exam (FMGE or NEXT) prescribed by Indian authorities to practice in India.'
+    },
+    {
+      question: 'Do you know that choosing the wrong university may create eligibility issues in India?',
+      answer: 'Yes, selecting a non-compliant university can lead to serious issues in registration and medical practice rights in India.'
+    },
+    {
+      question: 'Are you aware of hidden risks in non-NMC compliant universities?',
+      answer: 'Yes, risks include invalid degree, poor clinical exposure, additional expenses, delayed graduation, and possible rejection of medical licence.'
+    },
+    {
+      question: 'Do you need expert guidance for selecting an NMC-approved university?',
+      answer: 'Yes, professional counselling helps students choose the right university safely and confidently.'
+    },
+    {
+      question: 'Would you like a free counselling session regarding latest NMC guidelines for MBBS abroad?',
+      answer: 'Yes, free counselling helps students understand eligibility, country options, and make safe admission decisions.'
     }
-]
+  ];
