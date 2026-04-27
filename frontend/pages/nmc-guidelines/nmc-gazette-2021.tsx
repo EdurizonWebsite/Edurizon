@@ -1,7 +1,11 @@
 import Head from "next/head";
 import React from "react";
 import Breadcrumbs from "@/components/Breadcumbs";
-import PdfAccessGate from "@/components/pdf/PdfAccessGate";
+import dynamic from "next/dynamic";
+
+const PdfAccessGate = dynamic(() => import("@/components/pdf/PdfAccessGate"), {
+  ssr: false,
+});
 
 export default function NmcGazette2021Page() {
   return (
