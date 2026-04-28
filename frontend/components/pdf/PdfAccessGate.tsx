@@ -105,9 +105,9 @@ export default function PdfAccessGate({
               {!unlocked && (
                 <div className="mt-6 sticky top-[50%] translate-y-[-50%] z-10 flex justify-center">
                   <div className="max-w-xl w-full rounded-2xl bg-white/85 backdrop-blur-md border border-primary-fixed shadow-lg p-4 text-center">
-                    <div className="text-smallTextPhone md:text-smallText font-bold text-on-surface">
+                    {/* <div className="text-smallTextPhone md:text-smallText font-bold text-on-surface">
                       Submit your details to get full document.
-                    </div>
+                    </div> */}
                     <div className="mt-1 text-tinyTextPhone md:text-tinyText text-on-surface-variant">
                       Click “{contactCtaLabel}” and submit your details to unlock.
                     </div>

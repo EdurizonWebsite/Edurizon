@@ -79,7 +79,8 @@ const Breadcrumbs: React.FC = () => {
     'md-in-germany':'MD in Germany',
     'hotel-management-in-germany':'Hotel Management in Germany',
     'mbbs-university-in-russia-fees':'MBBS Universities in Russia Fees Comparision',
-    'nmc-guidelines':'NMC Guidelines'
+    'nmc-guidelines':'NMC Guidelines',
+    'nmc-gazette-2021':'NMC Gazette 2021'
   };
 
   return (

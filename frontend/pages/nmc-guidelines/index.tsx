@@ -6,6 +6,7 @@ import React from "react";
 import { faqs } from "@/lib/nmc-country-data";
 import NMCHeader from "@/components/nmc/header-section";
 import { useRouter } from "next/router";
+import { TransitionLink } from "@/utils/TransitionLink";
 const NmcGuidelines = () => {
   const router = useRouter();
 
@@ -70,9 +71,11 @@ const NmcGuidelines = () => {
                 requirements.
               </p>
             </div>
-            <button className="flex-shrink-0 hover:bg-[#351000] transition-all duration-300 ease-in-out text-white px-6 py-3 rounded-full font-bold bg-[#a5451c] whitespace-nowrap text-smallTextPhone md:text-smallText">
-              Read Full Advisory
-            </button>
+            <TransitionLink href="/nmc-guidelines/nmc-gazette-2021">
+              <button className="flex-shrink-0 hover:bg-[#351000] transition-all duration-300 ease-in-out text-white px-6 py-3 rounded-full font-bold bg-[#a5451c] whitespace-nowrap text-smallTextPhone md:text-smallText">
+                Read Full Advisory
+              </button>
+            </TransitionLink>
           </div>
         </section>
         {/* Country Wise Section  */}
