@@ -89,7 +89,7 @@ const AddCounsellor = ({ isOpen, onClose, onSuccess }: AddCounsellorDialogProps)
     try {
       const token = localStorage.getItem('adminToken');
       const response = await axios.post(
-        `${baseUrl}/api/admin/register`,
+        `${baseUrl}/api/admin/register-counsellor`,
         formData,
         {
           headers: {

@@ -1,7 +1,6 @@
 import React from 'react'
 
 const BlogPageDetails = ({ page }) => {
-  console.log("page",page)
   return (
     <div className='container  p-8 pb-16'>
       <section className='mx-auto px-4 md:max-w-[800px] xl:max-w-[1600px]'>

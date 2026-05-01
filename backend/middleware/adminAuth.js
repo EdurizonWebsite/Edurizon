@@ -72,3 +72,13 @@ exports.isSuperAdmin = (req, res, next) => {
   }
   next();
 }; 
+
+exports.isCounsellorAdmin = (req, res, next) => {
+  if (req.adminUser.role !== 'counsellorAdmin' && req.adminUser.role !== 'super-admin') {
+    return res.status(403).json({
+      status: 'error',
+      message: 'This action requires counsellor admin or super admin privileges'
+    });
+  }
+  next();
+}; 

@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const adminAuthController = require('../controllers/adminAuthController');
 const adminUserController = require('../controllers/adminUserController');
-const { protectAdminRoute, restrictTo, isSuperAdmin } = require('../middleware/adminAuth');
+const { protectAdminRoute, restrictTo, isSuperAdmin, isCounsellorAdmin } = require('../middleware/adminAuth');
 const {getAllCounsellors} = require('../controllers/adminCounsellorAdminController');
 const { RegisteredStudent } = require('../models/registeredUserModel');
 const {
@@ -43,6 +43,7 @@ router.delete('/users/:userId', isSuperAdmin, adminUserController.removeUser);
 
 // Admin user routes
 router.post('/register', isSuperAdmin, adminAuthController.register);
+router.post('/register-counsellor', isCounsellorAdmin, adminAuthController.register);
 router.patch('/update-password', adminAuthController.updatePassword);
 router.get('/roles', adminAuthController.getRoles);
 
