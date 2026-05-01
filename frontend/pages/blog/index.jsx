@@ -14,7 +14,7 @@ const Blog = ({ blogs, page, totalPages }) => {
           <ActionAreaCard
             key={blog.id}
             href={`/${blog.slug}`}
-            image={blog.imageUrl || '/assets/Images/blogs/placeholder.webp'}
+            image={blog.imageUrl ?? '/assets/Images/blogs/placeholder.webp'}
             title={decodeWpEntities(blog.title?.rendered || '', { decodeNumeric: true })}
             category="Blog"
             description={decodeWpEntities(blog.acf?.summary || 'No description available')}
@@ -72,13 +72,15 @@ export async function getServerSideProps(context) {
           const imgRes = await fetch(
             `https://srv757671.hstgr.cloud/wp-json/wp/v2/media/${blog.acf.thumbnail}`
           )
-          const imgData = await imgRes.json()
-          imageUrl = imgData.source_url
+          if (imgRes.ok) {
+            const imgData = await imgRes.json()
+            imageUrl = typeof imgData?.source_url === 'string' ? imgData.source_url : null
+          }
         } catch (err) {
           console.error("Error fetching media:", err)
         }
       }
-      return { ...blog, imageUrl }
+      return { ...blog, imageUrl: imageUrl ?? null }
     })
   )
 

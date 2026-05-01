@@ -51,7 +51,7 @@ const leadsSchema = mongoose.Schema(
             'plan-changed',
             'wrongly-clicked'
         ],
-        default: 'follow-up'
+        default: 'pending'
     },
     leadStatus:{
         type:String,

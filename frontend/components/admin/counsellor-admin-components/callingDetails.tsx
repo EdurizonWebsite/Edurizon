@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, use } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import AdminTable from '../AdminTable';
 import axios from 'axios';
 import { baseUrl } from '@/lib/baseUrl';
@@ -64,6 +64,30 @@ const CallingDetails = ()  => {
     const [counsellors, setCounsellors] = useState<any[]>([]);
     const [selectedCounsellor, setSelectedCounsellor] = useState('');
     const [assigningCounsellor, setAssigningCounsellor] = useState(false);
+    const isBackfillingCounsellorNames = useRef(false);
+
+    const getCounsellorIdFromLead = (lead: any) => {
+        if (!lead?.assignedCounsellor) return '';
+        if (typeof lead.assignedCounsellor === 'string') return lead.assignedCounsellor;
+        if (typeof lead.assignedCounsellor === 'object') return lead.assignedCounsellor?._id ?? '';
+        return '';
+    };
+
+    const getCounsellorFullName = (counsellor: any) => {
+        if (!counsellor) return '';
+        const fullName = `${counsellor.firstName ?? ''} ${counsellor.lastName ?? ''}`.trim();
+        return fullName;
+    };
+
+    const getAssignedCounsellorName = (lead: any) => {
+        if (lead?.assignedCounsellorName) return lead.assignedCounsellorName;
+        console.log("lead",lead);
+
+        const counsellorId = getCounsellorIdFromLead(lead);
+        if (!counsellorId) return '';
+        const matchedCounsellor = counsellors.find((c: any) => c._id === counsellorId);
+        return getCounsellorFullName(matchedCounsellor);
+    };
 
     const  tableHeaders = [
         "S.No",
@@ -159,7 +183,7 @@ const CallingDetails = ()  => {
         {
             key: "assigned to",
             render: (lead:any) => (
-              <span className="text-sm text-gray-500">{lead.assignedCounsellorName??'None'}</span>
+              <span className="text-sm text-gray-500">{getAssignedCounsellorName(lead) || 'None'}</span>
             ),
           },
         {
@@ -236,6 +260,85 @@ const CallingDetails = ()  => {
             setCurrentDataForTable(leads)
         },[leads])
 
+        useEffect(() => {
+            const backfillAssignedCounsellorNames = async () => {
+                if (!leads.length || !counsellors.length || isBackfillingCounsellorNames.current) {
+                    return;
+                }
+
+                const leadsToBackfill = leads
+                    .filter((lead: any) => !lead?.assignedCounsellorName)
+                    .map((lead: any) => {
+                        const counsellorId = getCounsellorIdFromLead(lead);
+                        if (!counsellorId) return null;
+                        const matchedCounsellor = counsellors.find((c: any) => c._id === counsellorId);
+                        if (!matchedCounsellor) return null;
+                        const counsellorName = getCounsellorFullName(matchedCounsellor);
+                        if (!counsellorName) return null;
+                        return {
+                            leadId: lead._id,
+                            counsellorId,
+                            counsellorName
+                        };
+                    })
+                    .filter(Boolean) as { leadId: string; counsellorId: string; counsellorName: string }[];
+
+                if (!leadsToBackfill.length) return;
+
+                try {
+                    isBackfillingCounsellorNames.current = true;
+                    const token = localStorage.getItem('adminToken');
+                    if (!token) return;
+
+                    const authToken = token.startsWith('Bearer ') ? token : `Bearer ${token}`;
+                    const successfulUpdates = new Set<string>();
+
+                    await Promise.all(
+                        leadsToBackfill.map(async ({ leadId, counsellorId, counsellorName }) => {
+                            try {
+                                const response = await axios.put(
+                                    `${baseUrl}/api/leads/${leadId}`,
+                                    {
+                                        assignedCounsellor: counsellorId,
+                                        assignedCounsellorName: counsellorName
+                                    },
+                                    {
+                                        headers: { Authorization: authToken }
+                                    }
+                                );
+
+                                if (response?.data?.success) {
+                                    successfulUpdates.add(leadId);
+                                }
+                            } catch (error) {
+                                console.error(`Failed to backfill counsellor name for lead ${leadId}`, error);
+                            }
+                        })
+                    );
+
+                    if (successfulUpdates.size) {
+                        setLeads((prevLeads: any[]) => {
+                            const updatedLeads = prevLeads.map((lead: any) => {
+                                if (!successfulUpdates.has(lead._id)) return lead;
+                                const matchedUpdate = leadsToBackfill.find((item) => item.leadId === lead._id);
+                                if (!matchedUpdate) return lead;
+                                return {
+                                    ...lead,
+                                    assignedCounsellorName: matchedUpdate.counsellorName
+                                };
+                            });
+                            filterLeads(updatedLeads);
+                            return updatedLeads;
+                        });
+                    }
+                } finally {
+                    isBackfillingCounsellorNames.current = false;
+                }
+            };
+
+            backfillAssignedCounsellorNames();
+        }, [leads, counsellors]);
+
 
         // selecting which data to show
         useEffect(()=>{
@@ -292,7 +395,7 @@ const CallingDetails = ()  => {
                 });
 
                 if (assignedRes.data.success) {
-
+                  console.log("assignedRes.data.data",assignedRes.data.data);
                   setLeads(assignedRes.data.data);
                   filterLeads(assignedRes.data.data);
                 }
