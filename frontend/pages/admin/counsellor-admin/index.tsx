@@ -49,7 +49,7 @@ const CounsellorAdmin = () => {
     return (
     <div>
       <DocumentLayout navItems={navItems}>
-        <div>
+        <div className="min-w-0">
             <CounsellorDetails/>
             <CallingDetails/>
         </div>

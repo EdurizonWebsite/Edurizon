@@ -435,7 +435,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
 
    
     return (
-        <div className='m-[32px] rounded-[8px] bg-white py-[16px] px-[8px] shadow-sm'>
+        <div className='m-4 sm:m-6 lg:m-[32px] rounded-[8px] bg-white py-[16px] px-[8px] shadow-sm'>
             <div className='flex justify-between items-center px-[32px]'>
             <h4 className='text-h6Text font-medium font-poppins '>Calling Dashboard</h4>
             <div className='flex items-center gap-[16px] '>
@@ -470,7 +470,7 @@ const CallingDetails:React.FC<{adminData:any,ITEMS_PER_PAGE:number}> = ({adminDa
             
             </div>
             </div>
-            <div className=' m-[16px] rounded-[8px] overflow-hidden shadow-sm'>
+            <div className='m-3 sm:m-4 lg:m-[16px] rounded-[8px] overflow-hidden shadow-sm'>
                 <AdminTable 
                     ITEMS_PER_PAGE={itemsPerPage} 
                     tableColumns={tableColumns} 

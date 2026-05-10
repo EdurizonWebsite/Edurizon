@@ -8,6 +8,8 @@ import { clearAdminAuth, getAdminData, getAdminToken } from '@/utils/adminStorag
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SearchIcon from '@mui/icons-material/Search';
 import LogoutIcon from '@mui/icons-material/Logout';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import BreadcrumbAdmin from '../BreadcumbAdmin';
 import PersonIcon from '@mui/icons-material/Person';
 import PeopleIcon from '@mui/icons-material/People';
@@ -57,6 +59,7 @@ interface AdminTask {
 
 const AdminLayout = ({ children }: AdminLayoutProps) => {
   const router = useRouter();
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [userRole, setUserRole] = useState<string>('');
   const [adminData, setAdminData] = useState<any>(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -393,6 +396,10 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
     };
   }, [showMeetingDropdown]);
 
+  useEffect(() => {
+    setMobileNavOpen(false);
+  }, [router.pathname]);
+
   const navigationItems = [
     { 
       name: 'Dashboard', 
@@ -459,25 +466,48 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 flex">
-      <aside className="w-[280px] bg-adminBgChosen text-white flex flex-col">
-        <div className="mx-auto h-full flex flex-col justify-between py-[48px]">
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col lg:flex-row">
+      {mobileNavOpen && (
+        <button
+          type="button"
+          aria-label="Close navigation menu"
+          className="fixed inset-0 z-40 bg-black/40 lg:hidden"
+          onClick={() => setMobileNavOpen(false)}
+        />
+      )}
+
+      <aside
+        className={`fixed lg:static inset-y-0 left-0 z-50 w-[280px] shrink-0 bg-adminBgChosen text-white flex flex-col min-h-screen transition-transform duration-200 ease-out lg:translate-x-0 ${
+          mobileNavOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex justify-end p-3 lg:hidden">
+          <button
+            type="button"
+            aria-label="Close menu"
+            className="p-2 rounded-md hover:bg-white/10 text-white"
+            onClick={() => setMobileNavOpen(false)}
+          >
+            <CloseIcon style={{ fontSize: 24 }} />
+          </button>
+        </div>
+        <div className="mx-auto h-full flex flex-col justify-between py-6 lg:py-[48px] px-3 w-full flex-1">
           <div>
             <div className="text-2xl font-bold">
               <p className="text-center">EDURIZON</p>
             </div>
-            <nav className="mt-[40px] flex flex-col gap-[16px]">
+            <nav className="mt-8 lg:mt-[40px] flex flex-col gap-[16px] items-stretch">
               {filteredNavigation.map((item) => {
                 const isActive = router.pathname === item.href;
                 return (
-                  <Link key={item.name} href={item.href}>
+                  <Link key={item.name} href={item.href} onClick={() => setMobileNavOpen(false)}>
                     <button
-                      className={`w-[224px] py-[12px] px-[16px] rounded-[4px] text-white flex gap-[12px] hover:bg-adminGreenChosen ${
+                      className={`w-full max-w-[224px] mx-auto py-[12px] px-[16px] rounded-[4px] text-white flex gap-[12px] hover:bg-adminGreenChosen ${
                         isActive ? "bg-adminGreenChosen font-semibold" : "font-medium"
                       }`}
                     >
                       {item.icon}
-                      {item.name}
+                      <span className="truncate">{item.name}</span>
                     </button>
                   </Link>
                 );
@@ -486,7 +516,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
           </div>
           <button
             onClick={handleLogout}
-            className="w-[224px] py-[12px] px-[16px] mb-[100px] rounded-[4px] text-white bg-[rgba(255,255,255,0.08)] flex gap-[12px] hover:bg-adminGreenChosen font-medium"
+            className="w-full max-w-[224px] mx-auto py-[12px] px-[16px] mb-8 lg:mb-[100px] rounded-[4px] text-white bg-[rgba(255,255,255,0.08)] flex gap-[12px] hover:bg-adminGreenChosen font-medium"
           >
             <LogoutIcon className='w-[24px] h-[24px]' /> 
             Logout
@@ -495,14 +525,27 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 overflow-auto bg-[#F4F5F7]" >
-        <nav className='border-b-2 items-center border-[#E8E8E8] px-[24px] py-[24px] flex'>
-          <h4 className='font-bold text-h5Text'>Hello, {adminData?.firstName}</h4>
-          <Image src="/assets/Images/admin/double-chevron-right.svg" width={20} height={20} className='ml-[2vw] w-[1.5vw] h-[1.5vw]' alt='arrow down icon' />
-          <BreadcrumbAdmin role={adminData?.role}/>
+      <main className="flex-1 min-w-0 overflow-auto bg-[#F4F5F7]" >
+        <nav className='border-b-2 border-[#E8E8E8] px-4 py-4 sm:px-6 sm:py-5 flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:items-center'>
+          <div className="flex items-start sm:items-center gap-2 min-w-0 flex-1">
+            <button
+              type="button"
+              className="lg:hidden shrink-0 p-2 -ml-2 rounded-md text-gray-700 hover:bg-gray-100"
+              aria-label="Open navigation menu"
+              onClick={() => setMobileNavOpen(true)}
+            >
+              <MenuIcon style={{ fontSize: 28, color: '#333' }} />
+            </button>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:flex-wrap gap-1 sm:gap-2 min-w-0">
+              <h4 className='font-bold text-h5Text truncate'>Hello, {adminData?.firstName}</h4>
+              <Image src="/assets/Images/admin/double-chevron-right.svg" width={20} height={20} className='hidden sm:block shrink-0 w-5 h-5' alt='arrow down icon' />
+              <BreadcrumbAdmin role={adminData?.role}/>
+            </div>
+          </div>
           
           {/* Notifications */}
-          <div className="relative ml-auto mr-3">
+          <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-end lg:ml-auto shrink-0">
+          <div className="relative">
             <button
               type="button"
               onClick={handleToggleNotifications}
@@ -517,7 +560,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
             </button>
 
             {showNotifications && (
-              <div className="absolute right-0 mt-2 w-80 bg-white rounded-md shadow-lg border border-gray-200 z-50">
+              <div className="absolute right-0 mt-2 w-[min(100vw-2rem,20rem)] max-w-sm bg-white rounded-md shadow-lg border border-gray-200 z-50">
                 <div className="px-4 py-2 border-b flex items-center justify-between">
                   <span className="text-sm font-semibold text-gray-800">Tasks & Updates</span>
                   {notificationsLoading && (
@@ -649,7 +692,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
           </div>
 
           <div 
-            className="relative meeting-dropdown-container ml-[12px]  group"
+            className="relative meeting-dropdown-container group"
             onMouseEnter={() => setShowMeetingDropdown(true)}
             onMouseLeave={() => setShowMeetingDropdown(false)}
           >
@@ -691,15 +734,16 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
               </div>
             )}
           </div>
-          <div className='ml-[32px] w-[340px] bg-white rounded-[16px]  h-[48px] overflow-hidden flex'>
+          <div className='w-full lg:w-[340px] lg:shrink-0 lg:ml-2 bg-white rounded-[16px] h-[48px] overflow-hidden flex'>
             <input 
               type="text" 
               placeholder="Search..." 
-              className='w-full  h-full outline-none px-[12px] text-smallText' 
+              className='w-full h-full outline-none px-[12px] text-smallText min-w-0' 
               value={searchTerm} 
               onChange={(e) => setSearchTerm(e.target.value)} 
             />
-            <SearchIcon className='ml-auto my-auto mr-[12px]' style={{fontSize: '32px', color: '#666666'}}/>
+            <SearchIcon className='ml-auto my-auto mr-[12px] shrink-0' style={{fontSize: '32px', color: '#666666'}}/>
+          </div>
           </div>
         </nav>  
         {children}

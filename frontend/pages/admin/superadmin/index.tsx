@@ -308,33 +308,33 @@ const AdminDashboard = () => {
 
   return (
     <AdminLayout>
-      <div className="py-6">
+      <div className="py-4 sm:py-6 min-w-0">
     
-        <div className="mx-auto  px-4 sm:px-6 md:px-8">
+        <div className="mx-auto px-4 sm:px-6 md:px-8 max-w-[100vw]">
           <Header/>
 
           
 
           {/* Team Section */}
-          <div className="mt-8">
+          <div className="mt-6 sm:mt-8">
             <div className="bg-white rounded-lg shadow">
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-xl font-semibold text-gray-900">Team Details</h2>
-                  <div className="flex gap-4">
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
+                  <h2 className="text-lg sm:text-xl font-semibold text-gray-900">Team Details</h2>
+                  <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                     {/* <button className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">
                       Team Call
                     </button> */}
-                    <Link href="/admin/superadmin/tasks/create">
+                    <Link href="/admin/superadmin/tasks/create" className="w-full sm:w-auto">
                       <button
-                        className="bg-white border border-teal-600 text-teal-700 px-4 py-2 rounded-md hover:bg-teal-50 flex items-center"
+                        className="w-full sm:w-auto bg-white border border-teal-600 text-teal-700 px-4 py-2 rounded-md hover:bg-teal-50 flex items-center justify-center"
                       >
                         New Task/Update
                       </button>
                     </Link>
                     <button
                       onClick={() => setIsAddMemberDialogOpen(true)}
-                      className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 flex items-center"
+                      className="w-full sm:w-auto bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 flex items-center justify-center"
                     >
                       <span className="mr-2">+</span>
                       Add Member
@@ -343,9 +343,9 @@ const AdminDashboard = () => {
                 </div>
 
                 {/* Team Tabs */}
-                <div className="mb-6">
-                  <div className="border-b border-gray-200">
-                    <nav className="-mb-px flex space-x-8">
+                <div className="mb-6 -mx-4 sm:mx-0">
+                  <div className="border-b border-gray-200 overflow-x-auto">
+                    <nav className="-mb-px flex gap-4 sm:gap-8 px-4 sm:px-0 min-w-0">
                       {tabs.map((tab) => (
                         <button
                           key={tab}
@@ -380,47 +380,47 @@ const AdminDashboard = () => {
                     <table className="min-w-full">
                       <thead className="bg-teal-600 text-white">
                         <tr>
-                          <th className="px-6 py-3 text-left text-sm font-semibold">Member name</th>
-                          {activeTab === 'Counseling' && <th className="px-6 py-3 text-left text-sm font-semibold">Country</th>}
-                          <th className="px-6 py-3 text-left text-sm font-semibold">Contact No.</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold">Joining Date</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold">Login-Access</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold">Remove</th>
-                          <th className='px-6 py-3 text-left text-sm font-semibold'>View</th>
-                          <th className='px-6 py-3 text-left text-sm font-semibold'>Attendance</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Member name</th>
+                          {activeTab === 'Counseling' && <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Country</th>}
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Contact No.</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Joining Date</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Login-Access</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Remove</th>
+                          <th className='px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold'>View</th>
+                          <th className='px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold'>Attendance</th>
                         </tr>
                       </thead>
                       <tbody className="bg-white divide-y divide-gray-200">
                         {currentItems.map((member) => (
                           <tr key={member._id} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 whitespace-nowrap">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                               <div className="flex items-center">
-                                <div className="ml-4">
+                                <div className="sm:ml-4 min-w-0">
                                   <div className="text-sm font-medium text-gray-900">
                                     {member.firstName} {member.lastName}
                                   </div>
-                                  <div className="text-sm text-gray-500">{member.email}</div>
+                                  <div className="text-xs sm:text-sm text-gray-500 truncate max-w-[12rem] sm:max-w-none">{member.email}</div>
                                 </div>
                               </div>
                             </td>
                             {activeTab === 'Counseling' && (
-                              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {member.country.join(', ')}
+                              <td className="px-3 sm:px-6 py-4 text-sm text-gray-500 max-w-[10rem] sm:max-w-none">
+                                <span className="line-clamp-2 sm:line-clamp-none">{member.country.join(', ')}</span>
                               </td>
                             )}
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                               {member.contactNo}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                               {member.createdAt 
                                 ? new Date(member.createdAt).toLocaleDateString()
                                 : 'N/A'
                               }
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                               <button
                                 onClick={() => toggleAccess(member._id, member.active)}
-                                className={`px-3 py-1 rounded-full text-sm ${
+                                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm ${
                                   member.active
                                     ? 'bg-blue-100 text-blue-800'
                                     : 'bg-gray-100 text-gray-800'
@@ -429,7 +429,7 @@ const AdminDashboard = () => {
                                 {member.active ? 'Access' : 'No Access'}
                               </button> 
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                               <button
                                 onClick={() => removeMember(member._id)}
                                 className="text-red-600 hover:text-red-900"
@@ -439,21 +439,21 @@ const AdminDashboard = () => {
                                 </svg>
                               </button>
                             </td>
-                            <td className=''>
+                            <td className='px-3 sm:px-6 py-4 whitespace-nowrap'>
                             <div className="relative">
                               <button
                                 onClick={()=>{handleImpersonate(member._id)}}
-                                className="bg-teal-100  text-teal-800 px-[32px] py-[8px] rounded-full text-sm font-medium  items-center"
+                                className="bg-teal-100 text-teal-800 px-3 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap"
                             >
                               View
                             </button>
                           </div>
                             </td>
-                            <td className=''>
+                            <td className='px-3 sm:px-6 py-4 whitespace-nowrap'>
                             <div className="relative">
                               <button
                                 onClick={() => handleViewAttendance(member)}
-                                className="bg-blue-100 text-blue-800 px-[32px] py-[8px] rounded-full text-sm font-medium items-center"
+                                className="bg-blue-100 text-blue-800 px-3 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap"
                               >
                                 Attendance
                               </button>
@@ -468,7 +468,7 @@ const AdminDashboard = () => {
 
                 {/* Pagination */}
                 {totalPages > 1 && (
-                  <div className="flex items-center justify-end mt-4 gap-2">
+                  <div className="flex flex-wrap items-center justify-center sm:justify-end mt-4 gap-2">
                     <button
                       onClick={() => handlePageChange(currentPage - 1)}
                       disabled={currentPage === 1}
@@ -511,7 +511,7 @@ const AdminDashboard = () => {
                       </svg>
                     </button>
 
-                    <span className="ml-4 text-sm text-gray-600">
+                    <span className="w-full sm:w-auto text-center sm:text-left sm:ml-4 text-sm text-gray-600 basis-full sm:basis-auto">
                       Page {currentPage} of {totalPages}
                     </span>
                   </div>
@@ -533,16 +533,17 @@ const AdminDashboard = () => {
 
       {/* Attendance Modal */}
       {showAttendanceModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
-            <div className="p-6">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-xl font-semibold text-gray-900">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-4 sm:p-6">
+              <div className="flex justify-between items-start gap-3 mb-6">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-900 min-w-0 flex-1 pr-2">
                   Attendance - {selectedMemberAttendance?.firstName} {selectedMemberAttendance?.lastName}
                 </h2>
                 <button
                   onClick={() => setShowAttendanceModal(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-gray-600 shrink-0"
+                  aria-label="Close"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -564,33 +565,33 @@ const AdminDashboard = () => {
                     <table className="min-w-full">
                       <thead className="bg-gray-50">
                         <tr>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">Date</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">Login Time</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">Logout Time</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">Duration</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">IP Address</th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">Status</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">Date</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">Login Time</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">Logout Time</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">Duration</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">IP Address</th>
+                          <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">Status</th>
                         </tr>
                       </thead>
                       <tbody className="bg-white divide-y divide-gray-200">
                         {attendanceData.map((record, index) => (
                           <tr key={index} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-xs sm:text-sm text-gray-900">
                               {new Date(record.date).toLocaleDateString()}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-xs sm:text-sm text-gray-900">
                               {new Date(record.loginTime).toLocaleString()}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-xs sm:text-sm text-gray-900">
                               {record.logoutTime ? new Date(record.logoutTime).toLocaleString() : 'Still Active'}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-xs sm:text-sm text-gray-900">
                               {record.sessionDuration ? `${record.sessionDuration} minutes` : 'N/A'}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-xs sm:text-sm text-gray-500">
                               {record.ipAddress}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
+                            <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                               <span className={`px-2 py-1 rounded-full text-xs ${
                                 record.isActive 
                                   ? 'bg-green-100 text-green-800' 

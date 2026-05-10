@@ -908,7 +908,7 @@ const CallingRecordComponent = ()  => {
 
    
     return (
-        <div className='m-[32px] rounded-[8px] bg-white py-[16px] px-[8px] shadow-sm'>
+        <div className='m-4 sm:m-6 lg:m-[32px] rounded-[8px] bg-white py-[16px] px-[8px] shadow-sm'>
             {/* Pending Follow-ups Section */}
             {pendingFollowUps.length > 0 && (
                 <div className='mb-6 mx-[32px] bg-yellow-50 border border-yellow-200 rounded-lg p-4'>
@@ -1021,7 +1021,7 @@ const CallingRecordComponent = ()  => {
                 </button>
             </div>
             </div>
-            <div className=' m-[16px] rounded-[8px] overflow-hidden shadow-sm'>
+            <div className='m-3 sm:m-4 lg:m-[16px] rounded-[8px] overflow-hidden shadow-sm'>
                 <AdminTable 
                     ITEMS_PER_PAGE={itemsPerPage} 
                     tableColumns={tableColumns} 

@@ -46,69 +46,67 @@ const Header = () => {
   return (
     <div className="w-full mb-6">
       {/* Metric Cards Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-4">
         {/* Total Students Leads Card */}
-        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
+        <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-100">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex-1 min-w-0">
               <h3 className="text-gray-600 text-sm font-medium mb-2">
                 Total Students Leads
               </h3>
-              <div className="flex items-center justify-between">
-                <span className="text-3xl font-bold text-gray-900">
-                  {loading ? '...' : leadsCount}
-                </span>
-              </div>
+              <span className="text-3xl font-bold text-gray-900">
+                {loading ? '...' : leadsCount}
+              </span>
             </div>
+            <div className="w-full sm:w-auto shrink-0">
             <TransitionLink href="/admin/counsellor-admin/calling-records">
-            <button className="ml-4 bg-teal-600 hover:bg-teal-700 text-white w-[200px] h-[60px] font-bold py-2 rounded-lg text-smallText  transition-colors duration-200">
+            <button className="w-full sm:w-[200px] min-h-[48px] sm:h-[60px] bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 sm:py-2 rounded-lg text-smallText transition-colors duration-200">
               View Leads
             </button>
             </TransitionLink>
+            </div>
           </div>
         </div>
 
         {/* Applications in Progress Card */}
-        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
+        <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-100">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex-1 min-w-0">
               <h3 className="text-gray-600 text-sm font-medium mb-2">
                 Applications in Progress
               </h3>
-              <div className="flex items-center justify-between">
-                <span className="text-3xl font-bold text-gray-900">
-                  {loading ? '...' : registeredStudentsCount}
-                </span>
-                <div className="w-20"></div> {/* Spacer for alignment */}
-              </div>
+              <span className="text-3xl font-bold text-gray-900">
+                {loading ? '...' : registeredStudentsCount}
+              </span>
             </div>
+            <div className="w-full sm:w-auto shrink-0">
             <TransitionLink href="/admin/counsellor-admin/registered-students">
-            <button className="ml-4 bg-teal-600 hover:bg-teal-700 text-white w-[200px] h-[60px] font-bold py-2 rounded-lg text-smallText transition-colors duration-200">
+            <button className="w-full sm:w-[200px] min-h-[48px] sm:h-[60px] bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 sm:py-2 rounded-lg text-smallText transition-colors duration-200">
               Students
             </button>
             </TransitionLink>
+            </div>
           </div>
         </div>
 
         {/* Partner Universities Card */}
-        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
+        <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-100">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex-1 min-w-0">
               <h3 className="text-gray-600 text-sm font-medium mb-2">
                 Partner Universities
               </h3>
-              <div className="flex items-center justify-between">
               <span className="text-3xl font-bold text-gray-900">
                   {loading ? '...' : universitiesCount}
                 </span>
-                <div className="w-20"></div> {/* Spacer for alignment */}
-              </div>
             </div>
+            <div className="w-full sm:w-auto shrink-0">
             <TransitionLink href="/admin/superadmin/partnered-universities">
-            <button className="ml-4 bg-teal-600 hover:bg-teal-700 text-white w-[200px] h-[60px] font-bold py-2 rounded-lg text-smallText transition-colors duration-200">
+            <button className="w-full sm:w-[200px] min-h-[48px] sm:h-[60px] bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 sm:py-2 rounded-lg text-smallText transition-colors duration-200">
               View
             </button>
             </TransitionLink>
+            </div>
           </div>
         </div>
       </div>     

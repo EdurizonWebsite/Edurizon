@@ -128,7 +128,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
     if (selectedLeads.length === 0) {
       toast.error('Please select leads to export');
       return;
-    }``
+    }
     const filename = `selected-${activeTab}-leads-${new Date().toISOString().split('T')[0]}.csv`;
 
     const selectedLeadsData = leads.filter(lead => selectedLeads.includes(lead._id));
@@ -139,8 +139,8 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
   return (
     <div>
      <div className="border-b border-gray-200 ">
-                <div className={`flex justify-between items-center px-6 ${bgColor}`}>
-                  <nav className="-mb-px flex space-x-8 overflow-x-auto" aria-label="Tabs">
+                <div className={`flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center px-3 sm:px-6 py-2 ${bgColor}`}>
+                  <nav className="-mb-px flex gap-4 sm:gap-8 overflow-x-auto pb-1" aria-label="Tabs">
                     {tabs.map((tab) => (
                         <div key={tab.key} className="flex flex-col items-start">
                             <button
@@ -164,7 +164,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
                     ))}
                   </nav>
                   
-                  <div className="flex space-x-3">
+                  <div className="flex flex-wrap gap-2 sm:gap-3 shrink-0">
                     <button
                       onClick={handleExportSelected}
                       className={`px-3 py-2 text-sm font-medium rounded-md ${
@@ -199,7 +199,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
                   <table className="min-w-full divide-y  divide-gray-200">
                     <thead className="bg-gray-50">
                       <tr>
-                        <th scope="col" className="px-6 py-3 text-left">
+                        <th scope="col" className="px-3 sm:px-6 py-3 text-left">
                           <input
                             type="checkbox"
                             className="rounded border-gray-300 text-teal-600 focus:ring-teal-500"
@@ -211,7 +211,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
                         <th
                             key={header}
                             scope="col"
-                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                            className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
                             {header}
                         </th>
@@ -221,7 +221,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
                     <tbody className="bg-white divide-y divide-gray-200">
                       {currentItems.map((lead,index) => (
                         <tr key={lead._id} className="hover:bg-gray-50">
-                          <td className="px-6 py-4 whitespace-nowrap">
+                          <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                             <input
                               type="checkbox"
                               className="rounded border-gray-300 text-teal-600 focus:ring-teal-500"
@@ -231,7 +231,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
                           </td>
                           
                           {tableColumns.map((col) => (
-                                <td key={col.key} className="px-6 py-4 whitespace-nowrap">
+                                <td key={col.key} className="px-3 sm:px-6 py-4 whitespace-nowrap">
                                 {col.render(lead, startIndex + index)}
                                 </td>
                             ))}
@@ -242,7 +242,7 @@ const AdminTable = ({ ITEMS_PER_PAGE, tableHeaders, tableColumns,leads, loading,
 
                   {/* Pagination */}
                   {totalPages > 1 && (
-                    <div className="flex items-center justify-end p-4 gap-2">
+                    <div className="flex flex-wrap items-center justify-center sm:justify-end p-3 sm:p-4 gap-2">
                       <button
                         onClick={() => handlePageChange(currentPage - 1)}
                         disabled={currentPage === 1}

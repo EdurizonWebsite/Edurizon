@@ -42,7 +42,7 @@ const CounsellorAdmin = () => {
     return (
     <div>
       <DocumentLayout navItems={navItems}>
-        <div>
+        <div className="min-w-0">
             <CallingRecordComponent/>
         </div>
         </DocumentLayout>

@@ -697,16 +697,16 @@ const CallingDetails = ()  => {
 
    
     return (
-        <div className='m-[32px] rounded-[8px] bg-white py-[16px] px-[8px] shadow-sm'>
-            <div className='flex justify-between items-center px-[32px]'>
-            <h4 className='text-h6Text font-medium font-poppins '>Calling Dashboard</h4>
-            <div className='flex items-center gap-[16px] '>
-            <div className='flex items-center gap-2 mr-4'>
-                <span className='text-sm text-gray-500'>Show:</span>
+        <div className='m-4 sm:m-6 lg:m-[32px] rounded-[8px] bg-white py-[16px] px-[8px] shadow-sm'>
+            <div className='flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-3 sm:px-6 lg:px-8 min-w-0'>
+            <h4 className='text-h6Text font-medium font-poppins shrink-0'>Calling Dashboard</h4>
+            <div className='flex flex-wrap items-center gap-2 sm:gap-3 min-w-0 w-full sm:w-auto sm:justify-end'>
+            <div className='flex items-center gap-2 shrink-0'>
+                <span className='text-sm text-gray-500 whitespace-nowrap'>Show:</span>
                 <select 
                     value={itemsPerPage}
                     onChange={(e) => setItemsPerPage(Number(e.target.value))}
-                    className='text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-teal-500'
+                    className='text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-teal-500 min-w-0'
                 >
                     <option value={10}>10</option>
                     <option value={20}>20</option>
@@ -717,12 +717,12 @@ const CallingDetails = ()  => {
             </div>
             <button 
                 onClick={() => setShowFilterModal(true)}
-                className={`text-[#344054] text-[14px] px-[4px] py-2 rounded-[8px] hover:bg-gray-100 flex items-center ${
+                className={`text-[#344054] text-[14px] px-2 py-2 rounded-[8px] hover:bg-gray-100 flex items-center shrink-0 ${
                     Object.values(filterCriteria).some(value => value !== '') ? 'bg-teal-100 border border-teal-300' : ''
                 }`}
             >
                     <FilterListOutlinedIcon style={{fontSize:'20px'}}/>
-                    <span className='ml-[4px]'>Filter</span>
+                    <span className='ml-1 sm:ml-[4px]'>Filter</span>
                                          {Object.values(filterCriteria).some(value => value !== '') && (
                          <span className='ml-2 bg-teal-600 text-white text-xs px-2 py-1 rounded-full'>
                              {Object.values(filterCriteria).filter(value => value !== '').length}
@@ -732,26 +732,27 @@ const CallingDetails = ()  => {
             <button 
                 onClick={deleteSelectedLeads}
                 disabled={selectedLeads.length === 0}
-                className={`text-[#344054] text-[14px] px-[4px] py-2 rounded-[8px] hover:bg-gray-100 flex items-center ${
+                className={`text-[#344054] text-[14px] px-2 py-2 rounded-[8px] hover:bg-gray-100 flex items-center shrink-0 ${
                     selectedLeads.length === 0 ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
             >
                     <DeleteOutlinedIcon style={{fontSize:'20px'}}/>
-                    <span className='ml-[4px]'>Delete ({selectedLeads.length})</span>
+                    <span className='ml-1 sm:ml-[4px] hidden sm:inline'>Delete ({selectedLeads.length})</span>
+                    <span className='ml-1 sm:ml-[4px] sm:hidden'>Del ({selectedLeads.length})</span>
                 </button>
                 <button 
                     onClick={() => setShowAssignModal(true)}
                     disabled={selectedLeads.length === 0}
-                    className={`border-[1px] border-[#D0D5DD] text-[#344054] text-[14px] px-4 py-2 rounded-[8px] hover:bg-gray-100 flex items-center ${
+                    className={`border-[1px] border-[#D0D5DD] text-[#344054] text-[14px] px-3 sm:px-4 py-2 rounded-[8px] hover:bg-gray-100 flex items-center shrink-0 ${
                         selectedLeads.length === 0 ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                 >
                     <ModeEditOutlineOutlinedIcon style={{fontSize:'20px'}}/>
-                    <span className='ml-[4px]'>Assign ({selectedLeads.length})</span>
+                    <span className='ml-1 sm:ml-[4px]'>Assign ({selectedLeads.length})</span>
                 </button>
             </div>
             </div>
-            <div className=' m-[16px] rounded-[8px] overflow-hidden shadow-sm'>
+            <div className='m-3 sm:m-4 lg:m-[16px] rounded-[8px] overflow-hidden shadow-sm'>
                 <AdminTable 
                     ITEMS_PER_PAGE={itemsPerPage} 
                     tableColumns={tableColumns} 

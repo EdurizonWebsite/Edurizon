@@ -90,7 +90,7 @@ const CounsellorDetails= ()  => {
 
    
     return (
-    <div className='m-[32px] rounded-[16px] overflow-hidden'>
+    <div className='m-4 sm:m-6 lg:m-[32px] rounded-[16px] overflow-hidden'>
       <AdminTable ITEMS_PER_PAGE={5} tableColumns={tableColumns} tableHeaders={tableHeaders} csvHeader={csvHeader} csvDataFields={csvDataFields} loading={loading} error={error} 
         leads={counsellorsData} setActiveTab={setActiveTab} tabs={tabs} activeTab={activeTab} bgColor="bg-white"
          extraButtons={<button

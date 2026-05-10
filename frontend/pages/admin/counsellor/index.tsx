@@ -53,7 +53,7 @@ const Dashboard = () => {
   return (
      <Layout navItems={navItems}>
       <Toaster />
-      <div>
+      <div className="min-w-0 px-2 sm:px-0">
         <CallingDetails adminData={adminData} ITEMS_PER_PAGE={10} />
       </div>
       </Layout>
