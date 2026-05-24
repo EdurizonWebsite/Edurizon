@@ -34,7 +34,7 @@ const services = [
     {
       icon: "/assets/Images/Icons/feesIcon.svg",
       text: "Tuition Fees",
-      label: "75,000 USD",
+      label: "78,000 USD",
     },
     {
       icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -132,10 +132,10 @@ const NewPage = () => {
                     <Image className='w-full md:w-[40.625vw] h-full' src={"/assets/Images/mbbs-in-nepal/nepal-medical-college.png"} alt='college Image' width={650} height={550}/>
                     <div className='relative mx-[6vw] md:mx-0 py-[4vw]'>
                       <h1 className='font-bold text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw]'>Nepal Medical College</h1>
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-[2.25vw]  md:gap-[.75vw] items-center  justify-center">
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-[2.25vw]  md:gap-[.vw] items-center  justify-center">
                                     {services.map((item, index) => (
-                                      <div key={index} className="w-full md:w-[16.5vw] relative mx-auto shadow-[0px_.25vw_2.46875vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] 
-                                                  rounded-[3.75vw] md:rounded-[1.875vw] bg-white overflow-hidden shrink-0 flex items-center justify-start py-[3vw] 
+                                      <div key={index} className="w-full md:w-[16.5vw] relative mx-auto shadow-[0px_.25vw_2.468vw_rgba(0,_0,_0,_0.25)] dark:shadow-[0px_.25vw_2.46vw_rgba(255,_255,_255,_0.25)] 
+                                                  rounded-[3.vw] md:rounded-[1.875vw] bg-white overflow-hidden shrink-0 flex items-center justify-start py-[3vw] 
                                                   md:py-[1.5vw] px-[3.875vw] md:px-[1.937vw] box-border gap-[1vw] text-center text-regularText text-black">
                                         <Image src={item.icon}
                                           alt={item.label} width={64} height={64} className="w-[8.5vw] h-[8.5vw] md:w-[4.25vw] md:h-[4.25vw] relative  overflow-hidden shrink-0" />

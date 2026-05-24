@@ -82,7 +82,7 @@ const KUAffiliated = [
     name: "Nepal Medical College",
     location: "Jorpati, Kathmandu",
     year: 1994,
-    fee: "75,000 USD",
+    fee: "78,000 USD",
     duration: 33,
     href:"/study-destinations/study-mbbs-in-nepal/nepal-medical-college"
   },
