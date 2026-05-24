@@ -17,6 +17,7 @@
 
  html {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  overflow-x: hidden;
 }
 
 
@@ -26,6 +27,7 @@
 
 body{
   background-color: white;
+  overflow-x: hidden;
   transition-property: opacity, transform, filter, background-color;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;

@@ -254,7 +254,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             </div>
           )}
 
-          <div className="relative">
+          <div className="relative w-full max-w-full overflow-x-hidden">
           {/* Admin routes are now fully accessible on all screen sizes */}
           {/* {!shouldExcludeLayout && <NavHeader/>} */}
 
