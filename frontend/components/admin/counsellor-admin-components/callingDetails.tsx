@@ -81,7 +81,6 @@ const CallingDetails = ()  => {
 
     const getAssignedCounsellorName = (lead: any) => {
         if (lead?.assignedCounsellorName) return lead.assignedCounsellorName;
-        console.log("lead",lead);
 
         const counsellorId = getCounsellorIdFromLead(lead);
         if (!counsellorId) return '';
@@ -378,7 +377,6 @@ const CallingDetails = ()  => {
         // Function to fetch leads data
         const fetchLeadsData = async () => {
             try {
-              console.log("fetching leads data for counsellor admin");
                 const token = localStorage.getItem('adminToken');
                 if (!token) {
                   console.log("ERRR");
@@ -395,7 +393,6 @@ const CallingDetails = ()  => {
                 });
 
                 if (assignedRes.data.success) {
-                  console.log("assignedRes.data.data",assignedRes.data.data);
                   setLeads(assignedRes.data.data);
                   filterLeads(assignedRes.data.data);
                 }

@@ -61,7 +61,6 @@ const CTASectionComponent = () => {
             chatBotReply
           );
           if (response.data.success) {
-            console.log("Data send");
           }
         } catch (e) {
           console.log(e);

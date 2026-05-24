@@ -330,7 +330,12 @@ const updateLeadStatus = async (req, res) => {
       followUpDate,
       remark,
       city,
-      state
+      state,
+      name,
+      phone,
+      countryInterested,
+      courseName,
+      source,
     } = req.body;
 
     if (!isOptionalString(city) || !isOptionalString(state)) {
@@ -370,6 +375,28 @@ const updateLeadStatus = async (req, res) => {
     }
     if (state !== undefined) {
       lead.state = state.trim();
+    }
+    if (name !== undefined) {
+      const trimmedName = String(name).trim();
+      if (!trimmedName) {
+        return res.status(400).json({
+          success: false,
+          message: 'Name cannot be empty',
+        });
+      }
+      lead.name = trimmedName;
+    }
+    if (phone !== undefined) {
+      lead.phone = String(phone).trim();
+    }
+    if (countryInterested !== undefined) {
+      lead.countryInterested = String(countryInterested).trim() || 'None';
+    }
+    if (courseName !== undefined) {
+      lead.courseName = String(courseName).trim() || 'None';
+    }
+    if (source !== undefined) {
+      lead.source = String(source).trim() || 'Website';
     }
     
     // Update the updatedAt timestamp

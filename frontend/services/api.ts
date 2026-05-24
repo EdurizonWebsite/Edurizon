@@ -29,6 +29,11 @@ export interface UpdateLeadStatusPayload {
   remark?: string;
   city?: string;
   state?: string;
+  name?: string;
+  phone?: string;
+  countryInterested?: string;
+  courseName?: string;
+  source?: string;
 }
 
 export const getLeadsByCounsellor = async (counsellorId: string) => {

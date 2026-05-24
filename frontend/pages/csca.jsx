@@ -146,7 +146,6 @@ export const videos = [
 ];
 
 export default function CSCAOverviewPage() {
-  console.log(countryNames["study-mbbs-in-china"])
   const chianUniversityData={
     title:"Universities in which CSCA provide scholarships",
     subTitle:"",

@@ -167,7 +167,6 @@ const CallingRecordComponent = ()  => {
            {
             key: "callingStatus",
             render: (lead:any) => {
-              console.log(lead.callingStatus);
               const status = lead.callingStatus || 'pending';
               const label = status
                 .split('-')

@@ -409,7 +409,6 @@ const ChatBox: React.FC<ChatBoxProps> = ({
       pending: true
     };
     
-    console.log('Sending message with data:', newMessage);
     
     pendingMessagesRef.current.add(clientMessageId);
     

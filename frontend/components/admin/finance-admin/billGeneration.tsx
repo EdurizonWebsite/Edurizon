@@ -84,7 +84,6 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           paymentMode:billForm.paymentMode,
           description:billForm.description
         };
-        console.log(receiptPayload)
         const res:any= await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
         
         // Create bill record with receipt URL - amountPaid equals amountDue for completed receipts

@@ -8,6 +8,7 @@ import CallIcon from '@mui/icons-material/Call';
 import MessageIcon from '@mui/icons-material/Message';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useSearch } from '@/context/SearchContext';
+import { countryOptions, courseOptions } from '@/lib/adminData';
 
 interface Lead {
   _id: string;
@@ -15,6 +16,7 @@ interface Lead {
   phone: string;
   countryInterested: string;
   courseName: string;
+  source?: string;
   callingStatus: 'pending' | 'follow-up' | 'no-answer' | 'not-interested';
   leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered' | 'positive-plus';
   leadStatus: 'pending' | 'hot' | 'warm' | 'cold' | 'negative' | 'completed' | 'positive-plus';
@@ -46,6 +48,43 @@ const CallingRecords = () => {
   const [cityInput, setCityInput] = useState('');
   const [stateInput, setStateInput] = useState('');
   const [isSavingLocation, setIsSavingLocation] = useState(false);
+  const [editingProfileId, setEditingProfileId] = useState<string | null>(null);
+  const [profileInputs, setProfileInputs] = useState({
+    name: '',
+    phone: '',
+    countryInterested: '',
+    courseName: '',
+    source: '',
+  });
+  const [isSavingProfile, setIsSavingProfile] = useState(false);
+
+  const getCountryLabel = (value?: string) =>
+    countryOptions.find((o) => o.value === value)?.label || value || 'None';
+
+  const getCourseLabel = (value?: string) =>
+    courseOptions.find((o) => o.value === value)?.label || value || 'None';
+
+  const startProfileEdit = (lead: Lead) => {
+    setEditingProfileId(lead._id);
+    setProfileInputs({
+      name: lead.name || '',
+      phone: lead.phone || '',
+      countryInterested: lead.countryInterested || '',
+      courseName: lead.courseName || '',
+      source: lead.source || 'Website',
+    });
+  };
+
+  const cancelProfileEdit = () => {
+    setEditingProfileId(null);
+    setProfileInputs({
+      name: '',
+      phone: '',
+      countryInterested: '',
+      courseName: '',
+      source: '',
+    });
+  };
 
   const navItems = [
     {
@@ -286,21 +325,95 @@ const CallingRecords = () => {
     },
     {
       key: "name",
-      render: (lead: Lead) => (
-        <div className="text-sm font-medium text-gray-900">{lead.name}</div>
-      ),
+      render: (lead: Lead) => {
+        const isEditingProfile = editingProfileId === lead._id;
+        if (isEditingProfile) {
+          return (
+            <input
+              type="text"
+              value={profileInputs.name}
+              onChange={(e) =>
+                setProfileInputs((prev) => ({ ...prev, name: e.target.value }))
+              }
+              placeholder="Student name"
+              className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+            />
+          );
+        }
+        return (
+          <button
+            type="button"
+            onClick={() => startProfileEdit(lead)}
+            className="text-left text-sm font-medium text-gray-900 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {lead.name}
+          </button>
+        );
+      },
     },
     {
       key: "country",
-      render: (lead: Lead) => (
-        <span className="text-sm text-gray-500">{lead.countryInterested || 'None'}</span>
-      ),
+      render: (lead: Lead) => {
+        const isEditingProfile = editingProfileId === lead._id;
+        if (isEditingProfile) {
+          return (
+            <select
+              value={profileInputs.countryInterested}
+              onChange={(e) =>
+                setProfileInputs((prev) => ({
+                  ...prev,
+                  countryInterested: e.target.value,
+                }))
+              }
+              className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+            >
+              <option value="">Select country</option>
+              {countryOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          );
+        }
+        return (
+          <button
+            type="button"
+            onClick={() => startProfileEdit(lead)}
+            className="text-left text-sm text-gray-500 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {getCountryLabel(lead.countryInterested)}
+          </button>
+        );
+      },
     },
     {
       key: "phone",
-      render: (lead: Lead) => (
-        <span className="text-sm text-gray-500">{lead.phone || 'None'}</span>
-      ),
+      render: (lead: Lead) => {
+        const isEditingProfile = editingProfileId === lead._id;
+        if (isEditingProfile) {
+          return (
+            <input
+              type="tel"
+              value={profileInputs.phone}
+              onChange={(e) =>
+                setProfileInputs((prev) => ({ ...prev, phone: e.target.value }))
+              }
+              placeholder="Contact number"
+              className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+            />
+          );
+        }
+        return (
+          <button
+            type="button"
+            onClick={() => startProfileEdit(lead)}
+            className="text-left text-sm text-gray-500 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {lead.phone || 'Add number'}
+          </button>
+        );
+      },
     },
     {
       key: "city",
@@ -431,9 +544,39 @@ const CallingRecords = () => {
     },
     {
       key: "course",
-      render: (lead: Lead) => (
-        <span className="text-sm text-gray-500">{lead.courseName || 'None'}</span>
-      ),
+      render: (lead: Lead) => {
+        const isEditingProfile = editingProfileId === lead._id;
+        if (isEditingProfile) {
+          return (
+            <select
+              value={profileInputs.courseName}
+              onChange={(e) =>
+                setProfileInputs((prev) => ({
+                  ...prev,
+                  courseName: e.target.value,
+                }))
+              }
+              className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+            >
+              <option value="">Select course</option>
+              {courseOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          );
+        }
+        return (
+          <button
+            type="button"
+            onClick={() => startProfileEdit(lead)}
+            className="text-left text-sm text-gray-500 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {getCourseLabel(lead.courseName)}
+          </button>
+        );
+      },
     },
     
     {
@@ -689,9 +832,89 @@ const CallingRecords = () => {
     },
     {
       key: "source",
-      render: (lead:any) => (
-        <span className="text-sm text-gray-500">{lead.source || 'Website'}</span>
-      ),
+      render: (lead: Lead) => {
+        const isEditingProfile = editingProfileId === lead._id;
+        if (isEditingProfile) {
+          return (
+            <div className="flex flex-col gap-1 min-w-[140px]">
+              <input
+                type="text"
+                value={profileInputs.source}
+                onChange={(e) =>
+                  setProfileInputs((prev) => ({ ...prev, source: e.target.value }))
+                }
+                placeholder="Source"
+                className="w-full text-sm border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500"
+              />
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  disabled={isSavingProfile}
+                  onClick={async () => {
+                    const trimmedName = profileInputs.name.trim();
+                    if (!trimmedName) {
+                      toast.error('Name is required');
+                      return;
+                    }
+                    try {
+                      setIsSavingProfile(true);
+                      const payload = {
+                        name: trimmedName,
+                        phone: profileInputs.phone.trim(),
+                        countryInterested:
+                          profileInputs.countryInterested.trim() || 'None',
+                        courseName: profileInputs.courseName.trim() || 'None',
+                        source: profileInputs.source.trim() || 'Website',
+                      };
+                      const response = await updateLeadStatus(lead._id, payload);
+                      if (response.success) {
+                        setLeads((prev) =>
+                          prev.map((l) =>
+                            l._id === lead._id ? { ...l, ...payload } : l
+                          )
+                        );
+                        toast.success('Lead details updated successfully');
+                        cancelProfileEdit();
+                      } else {
+                        toast.error(
+                          response.message || 'Failed to update lead details'
+                        );
+                      }
+                    } catch (err: any) {
+                      toast.error(
+                        err.response?.data?.message ||
+                          'Failed to update lead details'
+                      );
+                    } finally {
+                      setIsSavingProfile(false);
+                    }
+                  }}
+                  className="text-xs px-2 py-1 rounded-md bg-teal-600 text-white hover:bg-teal-700 disabled:opacity-60"
+                >
+                  {isSavingProfile ? 'Saving...' : 'Save'}
+                </button>
+                <button
+                  type="button"
+                  disabled={isSavingProfile}
+                  onClick={cancelProfileEdit}
+                  className="text-xs px-2 py-1 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          );
+        }
+        return (
+          <button
+            type="button"
+            onClick={() => startProfileEdit(lead)}
+            className="text-left text-sm text-gray-500 hover:text-gray-700 underline-offset-2 hover:underline"
+          >
+            {lead.source || 'Website'}
+          </button>
+        );
+      },
     },
   ];
 
