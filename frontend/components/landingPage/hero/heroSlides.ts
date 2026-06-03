@@ -11,7 +11,7 @@ export interface HeroSlide {
 export const heroSlides: HeroSlide[] = [
   {
     id: 'mbbs-abroad',
-    image: '/assets/Images/landingPage/hero-banner-1.png',
+    image: '/assets/Images/landingPage/hero-banner-1.jpeg',
     badge: 'Best in 2026',
     title: 'Study MBBS Abroad',
     titleHighlight: 'and in India',

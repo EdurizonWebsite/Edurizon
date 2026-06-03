@@ -8,7 +8,7 @@ const HeroSlider = dynamic(() => import('./hero/HeroSlider'), {
       className="relative w-full max-w-full pt-[18vw] md:pt-[7vw] overflow-x-hidden"
       aria-hidden
     >
-      <div className="relative w-full h-[clamp(160px,26vw,400px)] animate-pulse bg-[#0a1628]" />
+      <div className="relative w-full h-[calc(100vh-18vw)] md:h-[calc(100vh-7vw)] min-h-[200px] animate-pulse bg-[#0a1628]" />
     </section>
   ),
 });

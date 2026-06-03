@@ -264,7 +264,6 @@ const Chat: React.FC<ChatProps> = ({ userData, activeTab }) => {
         });
 
         if (response.data.success) {
-          console.log('Student message sent via polling API');
           // Update the message with the server response
           setMessages(prev => prev.map(msg => 
             msg.clientMessageId === clientMessageId 
