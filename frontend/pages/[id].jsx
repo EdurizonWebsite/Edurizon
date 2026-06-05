@@ -8,7 +8,6 @@ const BlogPageDetails = ({ page, metaDescription, metaTitle }) => {
       <Head>
         <title>{decodeWpEntities(metaTitle, { decodeNumeric: true })}</title>
         <meta name="description" content={decodeWpEntities(metaDescription, { decodeNumeric: true })} />
-        {/* <meta name="canonical" content={decodeWpEntities(metaCanonical, { decodeNumeric: true })} /> */}
       </Head>
       <section className='mx-auto  max-w-[1200px]'>
         <h1 className='text-h2TextPhone md:text-h2Text leading-[120%] pb-[2vw] font-bold'>
@@ -40,13 +39,13 @@ export async function getServerSideProps(context) {
     data[0]?.yoast_head_json?.description || null
     const metaTitle =
     data[0]?.yoast_head_json?.title || null
-
   
     const page = (Array.isArray(data) && data[0]) || null
 
     if (!page) {
       return { notFound: true }
     }
+
     return {
       props: { page, metaDescription, metaTitle },
     }

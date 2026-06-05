@@ -211,7 +211,7 @@ export const destinationData =[
     image: "/assets/Images/CountryBlogs/studyDestinationCard/nepal/b&c-medical-college.webp",
     title: "B&C Medical College",
     category: "University",
-    href: "/study-destinations/study-mbbs-in-nepal/b&c-medical-college",
+    href: "/study-destinations/study-mbbs-in-nepal/bandc-medical-college",
     description: "It was established by a social worker and activist Hon’ble Shri Durga Prasai, with Dr. Ram Babu Giri and Ms. Indira Giri, who envisage excellence in international standard medical education, research, and patient care, striving to create a learning environment that inspires future healthcare leaders and contributes to the advancement of medical knowledge and community health in Nepal."
   },
   {

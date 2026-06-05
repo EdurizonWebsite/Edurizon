@@ -30,6 +30,7 @@ import CTASectionComponent from "@/components/CTASectionComponent";
 import Home from '../pages/index'
 import NavHeader from "@/components/NavHeader";
 import { setupAdminAxiosInterceptor } from "@/lib/setupAdminAxiosInterceptor";
+import { SITE_URL, toCanonicalUrl } from "@/lib/siteUrl";
 
 if (typeof window !== "undefined") {
   setupAdminAxiosInterceptor();
@@ -196,9 +197,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [isAdminRoute]);
 
-  const siteUrl = "https://www.edurizon.in";
-  const path = router.asPath?.split("#")[0]?.split("?")[0] || "/";
-  const canonicalUrl = `${siteUrl}${path === "/" ? "" : path}`;
+  const siteUrl = SITE_URL;
+  const canonicalUrl = toCanonicalUrl(router.asPath);
   const hasCustomCanonical = router.pathname.startsWith("/study-destinations");
 
   return (

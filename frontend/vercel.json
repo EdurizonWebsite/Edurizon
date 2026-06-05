@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "edurizon.in"
+        }
+      ],
+      "destination": "https://www.edurizon.in/:path*",
+      "permanent": true
+    }
+  ]
+}

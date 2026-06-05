@@ -7,8 +7,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { heroSlides, AUTOPLAY_MS } from './heroSlides';
 
 /** Matches absolute navbar (pt + logo + pb) — keep in sync with Navbar.tsx */
-const BANNER_FRAME_CLASS =
-  'relative w-full max-w-full h-[calc(100vh-18vw)] md:h-[calc(100vh-7vw)] min-h-[200px] overflow-hidden';
+const BANNER_FRAME_CLASS = 'relative w-full max-w-full overflow-hidden';
 
 /** Top padding clears the absolute navbar */
 const NAVBAR_OFFSET_CLASS = 'pt-[18vw] md:pt-[7vw]';
@@ -79,18 +78,15 @@ const HeroSlider: React.FC = () => {
   const slide = heroSlides[activeIndex];
 
   const bannerImage = (
-    <div className="absolute inset-0 flex items-center justify-center bg-[#0c2d3a]">
-      <Image
-        src={slide.image}
-        alt={slide.title}
-        width={1920}
-        height={1080}
-        priority={activeIndex === 0}
-        sizes="100vw"
-        className="h-full w-full object-contain object-center"
-        style={{ objectFit: 'contain' }}
-      />
-    </div>
+    <Image
+      src={slide.image}
+      alt={slide.title}
+      width={1920}
+      height={1080}
+      priority={activeIndex === 0}
+      sizes="100vw"
+      className="block h-auto w-full"
+    />
   );
 
   return (
@@ -112,13 +108,13 @@ const HeroSlider: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.85, ease: 'easeInOut' }}
-              className="absolute inset-0 overflow-hidden"
+              className="w-full"
             >
               {bannerImage}
             </motion.div>
           </AnimatePresence>
         ) : (
-          <div className="absolute inset-0 overflow-hidden">{bannerImage}</div>
+          <div className="w-full">{bannerImage}</div>
         )}
 
         <button

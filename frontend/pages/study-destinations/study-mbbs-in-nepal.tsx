@@ -156,7 +156,7 @@ const KUAffiliated = [
     year: 2012,
     fee: "75,000 USD",
     duration: "16",
-    href:"/study-destinations/study-mbbs-in-nepal/b&c-medical-college"
+    href:"/study-destinations/study-mbbs-in-nepal/bandc-medical-college"
   },
 ];
 

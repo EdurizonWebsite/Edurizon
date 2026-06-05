@@ -1,5 +1,6 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
+import { SITE_URL } from '../../lib/siteUrl';
 
 const WORDPRESS_BASE = 'https://srv757671.hstgr.cloud/wp-json/wp/v2';
 const RESERVED_SLUGS = new Set([
@@ -168,7 +169,7 @@ const sitemap= async (req, res) => {
     ];
 
     const stream = new SitemapStream({
-        hostname: `https://${req.headers.host}`,
+        hostname: SITE_URL,
     });
 
     res.writeHead(200, {
