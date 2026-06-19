@@ -36,7 +36,7 @@ if (typeof window !== "undefined") {
   setupAdminAxiosInterceptor();
 }
 
-const GA_TRACKING_ID = "G-2BSRSYBTXP";
+const GA_TRACKING_ID = "AW-1030257167";
 
 // ✅ Load Navbar and Footer Only When Needed
 const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
