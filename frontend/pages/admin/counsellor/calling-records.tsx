@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AdminTable from '@/components/admin/AdminTable';
-import { getLeadsByCounsellor, updateLeadStatus } from '@/services/api';
+import { getLeadsByCounsellor, updateLead, updateLeadStatus } from '@/services/api';
 import toast, { Toaster } from 'react-hot-toast';
 import Layout from '@/components/admin/DocumentLayout';
 import GridViewIcon from '@mui/icons-material/GridView';
@@ -866,15 +866,31 @@ const CallingRecords = () => {
                         courseName: profileInputs.courseName.trim() || 'None',
                         source: profileInputs.source.trim() || 'Website',
                       };
-                      const response = await updateLeadStatus(lead._id, payload);
+                      const response = await updateLead(lead._id, payload);
                       if (response.success) {
-                        setLeads((prev) =>
-                          prev.map((l) =>
-                            l._id === lead._id ? { ...l, ...payload } : l
-                          )
-                        );
-                        toast.success('Lead details updated successfully');
-                        cancelProfileEdit();
+                        const persistedLead = response?.data;
+                        const isPersisted =
+                          persistedLead?.name === payload.name &&
+                          (persistedLead?.phone || '') === payload.phone &&
+                          (persistedLead?.countryInterested || 'None') ===
+                            payload.countryInterested &&
+                          (persistedLead?.courseName || 'None') === payload.courseName &&
+                          (persistedLead?.source || 'Website') === payload.source;
+
+                        if (isPersisted) {
+                          setLeads((prev) =>
+                            prev.map((l) =>
+                              l._id === lead._id ? { ...l, ...payload } : l
+                            )
+                          );
+                          toast.success('Lead details updated successfully');
+                          cancelProfileEdit();
+                        } else {
+                          await fetchLeads();
+                          toast.error(
+                            'Update not persisted on server. Please refresh and try again.'
+                          );
+                        }
                       } else {
                         toast.error(
                           response.message || 'Failed to update lead details'

@@ -177,28 +177,7 @@ const modifyLead = async (req, res) => {
     }
 
     // Update fields
-    if (name !== undefined) lead.name = name;
-    if (email !== undefined) lead.email = email;
-    if (phone !== undefined) lead.phone = phone;
-    if (countryInterested !== undefined) lead.countryInterested = countryInterested;
-    if (courseName !== undefined) lead.courseName = courseName;
-    if (leadType !== undefined) lead.leadType = leadType;
-    if (callingStatus !== undefined) lead.callingStatus = callingStatus;
-    if (leadStatus !== undefined) lead.leadStatus = leadStatus;
-    if (callingDate !== undefined) {
-      // Allow clearing the calling date by sending null/empty
-      lead.callingDate = callingDate ? new Date(callingDate) : null;
-    }
-    if (followUpDate !== undefined) {
-      // Allow clearing the follow-up date by sending null/empty
-      lead.followUpDate = followUpDate ? new Date(followUpDate) : null;
-    }
-    if (remark !== undefined) lead.remark = remark;
-    if (assignedCounsellor !== undefined) lead.assignedCounsellor = assignedCounsellor;
-    if (assignedCounsellorName !== undefined) lead.assignedCounsellorName=assignedCounsellorName;
-    if (source !== undefined) lead.source = source;
-    if (city !== undefined) lead.city = city.trim();
-    if (state !== undefined) lead.state = state.trim();
+    applyLeadUpdates(lead, req.body);
 
     const updatedLead = await lead.save();
     
@@ -212,9 +191,9 @@ const modifyLead = async (req, res) => {
     });
   } catch (error) {
     console.error('Error updating lead:', error);
-    res.status(500).json({
+    res.status(error.statusCode || 500).json({
       success: false,
-      message: 'Server error while updating lead',
+      message: error.statusCode ? error.message : 'Server error while updating lead',
       error: error.message
     });
   }
@@ -319,105 +298,98 @@ const getLeadsByCounsellor = async (req, res) => {
 // @desc    Update calling status and category instantly
 // @route   PATCH /api/leads/:id/update-status
 // @access  Private
+const applyLeadUpdates = (lead, updates) => {
+  const {
+    name,
+    email,
+    phone,
+    countryInterested,
+    courseName,
+    leadType,
+    callingStatus,
+    leadStatus,
+    callingDate,
+    followUpDate,
+    remark,
+    assignedCounsellor,
+    assignedCounsellorName,
+    source,
+    city,
+    state,
+  } = updates;
+
+  if (name !== undefined) {
+    const trimmedName = String(name).trim();
+    if (!trimmedName) {
+      const error = new Error('Name cannot be empty');
+      error.statusCode = 400;
+      throw error;
+    }
+    lead.name = trimmedName;
+  }
+  if (email !== undefined) lead.email = email;
+  if (phone !== undefined) lead.phone = String(phone).trim();
+  if (countryInterested !== undefined) {
+    lead.countryInterested = String(countryInterested).trim() || 'None';
+  }
+  if (courseName !== undefined) {
+    lead.courseName = String(courseName).trim() || 'None';
+  }
+  if (leadType !== undefined) lead.leadType = leadType;
+  if (callingStatus !== undefined) lead.callingStatus = callingStatus;
+  if (leadStatus !== undefined) lead.leadStatus = leadStatus;
+  if (callingDate !== undefined) {
+    lead.callingDate = callingDate ? new Date(callingDate) : null;
+  }
+  if (followUpDate !== undefined) {
+    lead.followUpDate = followUpDate ? new Date(followUpDate) : null;
+  }
+  if (remark !== undefined) lead.remark = remark;
+  if (assignedCounsellor !== undefined) lead.assignedCounsellor = assignedCounsellor;
+  if (assignedCounsellorName !== undefined) {
+    lead.assignedCounsellorName = assignedCounsellorName;
+  }
+  if (source !== undefined) lead.source = String(source).trim() || 'Website';
+  if (city !== undefined) lead.city = city.trim();
+  if (state !== undefined) lead.state = state.trim();
+};
+
 const updateLeadStatus = async (req, res) => {
   try {
     const { id } = req.params;
-    const {
-      callingStatus,
-      leadType,
-      leadStatus,
-      callingDate,
-      followUpDate,
-      remark,
-      city,
-      state,
-      name,
-      phone,
-      countryInterested,
-      courseName,
-      source,
-    } = req.body;
 
-    if (!isOptionalString(city) || !isOptionalString(state)) {
+    if (!isOptionalString(req.body.city) || !isOptionalString(req.body.state)) {
       return res.status(400).json({
         success: false,
-        message: 'City and state must be strings'
+        message: 'City and state must be strings',
       });
     }
 
     const lead = await Leads.findById(id);
-    
+
     if (!lead) {
       return res.status(404).json({
         success: false,
-        message: 'Lead not found'
+        message: 'Lead not found',
       });
     }
 
-    // Update fields
-    if (callingStatus !== undefined) lead.callingStatus = callingStatus;
-    if (leadType !== undefined) lead.leadType = leadType;
-    if (leadStatus !== undefined) lead.leadStatus = leadStatus;
-    if (callingDate !== undefined) {
-      // value can be a date string (yyyy-mm-dd) or null to clear
-      lead.callingDate = callingDate ? new Date(callingDate) : null;
-    }
-    // Handle follow-up date updates from counsellor UI
-    if (followUpDate !== undefined) {
-      // value can be a date string (yyyy-mm-dd) or null to clear
-      lead.followUpDate = followUpDate ? new Date(followUpDate) : null;
-    }
-    if (remark !== undefined) {
-      lead.remark = remark;
-    }
-    if (city !== undefined) {
-      lead.city = city.trim();
-    }
-    if (state !== undefined) {
-      lead.state = state.trim();
-    }
-    if (name !== undefined) {
-      const trimmedName = String(name).trim();
-      if (!trimmedName) {
-        return res.status(400).json({
-          success: false,
-          message: 'Name cannot be empty',
-        });
-      }
-      lead.name = trimmedName;
-    }
-    if (phone !== undefined) {
-      lead.phone = String(phone).trim();
-    }
-    if (countryInterested !== undefined) {
-      lead.countryInterested = String(countryInterested).trim() || 'None';
-    }
-    if (courseName !== undefined) {
-      lead.courseName = String(courseName).trim() || 'None';
-    }
-    if (source !== undefined) {
-      lead.source = String(source).trim() || 'Website';
-    }
-    
-    // Update the updatedAt timestamp
-    lead.updatedAt = new Date();
+    applyLeadUpdates(lead, req.body);
 
     const updatedLead = await lead.save();
-    
-    // Populate the assigned counsellor details
     await updatedLead.populate('assignedCounsellor', 'name email');
 
     res.status(200).json({
       success: true,
       message: 'Lead status updated successfully',
-      data: updatedLead
+      data: updatedLead,
     });
   } catch (error) {
     console.error('Error updating lead status:', error);
-    res.status(500).json({
+    res.status(error.statusCode || 500).json({
       success: false,
-      message: 'Server error while updating lead status',
-      error: error.message
+      message: error.statusCode ? error.message : 'Server error while updating lead status',
+      error: error.message,
     });
   }
 };

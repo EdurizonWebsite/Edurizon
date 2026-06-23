@@ -46,6 +46,11 @@ export const updateLeadStatus = async (leadId: string, statusData: UpdateLeadSta
   return response.data;
 };
 
+export const updateLead = async (leadId: string, leadData: UpdateLeadStatusPayload) => {
+  const response = await axios.put(`${API_URL}/leads/${leadId}`, leadData);
+  return response.data;
+};
+
 // Registered Students API functions
 export const getRegisteredStudentsByCounsellor = async (counsellorId: string) => {
   const response = await axios.get(`${API_URL}/registered-students/get-all`);
