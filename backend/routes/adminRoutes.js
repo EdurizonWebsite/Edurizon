@@ -39,6 +39,7 @@ router.get('/me', adminAuthController.getCurrentAdmin);
 // User management routes (Super Admin only)
 router.get('/users', isSuperAdmin, adminUserController.getAllUsers);
 router.patch('/users/:userId/toggle-access', isSuperAdmin, adminUserController.toggleAccess);
+router.patch('/users/:userId', isSuperAdmin, adminUserController.updateUser);
 router.delete('/users/:userId', isSuperAdmin, adminUserController.removeUser);
 
 // Admin user routes

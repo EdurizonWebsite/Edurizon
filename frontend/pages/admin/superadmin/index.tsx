@@ -6,6 +6,7 @@ import axios from 'axios';
 import { baseUrl } from '@/lib/baseUrl';
 
 import AddMemberDialog from '@/components/admin/AddMemberDialog';
+import EditMemberDialog from '@/components/admin/EditMemberDialog';
 import { TransitionLink } from '@/utils/TransitionLink';
 import Header from '@/components/admin/superadmin/header';
 import { getAdminToken } from '@/utils/adminStorage';
@@ -19,6 +20,7 @@ interface AdminUser {
   role: string;
   country: string[];
   contactNo: string;
+  whatsapp?: string;
   createdAt: string;
   active: boolean;
 }
@@ -53,6 +55,8 @@ const AdminDashboard = () => {
   const [filteredMembers, setFilteredMembers] = useState<AdminUser[]>([]);
 
   const [isAddMemberDialogOpen, setIsAddMemberDialogOpen] = useState(false);
+  const [isEditMemberDialogOpen, setIsEditMemberDialogOpen] = useState(false);
+  const [selectedMemberToEdit, setSelectedMemberToEdit] = useState<AdminUser | null>(null);
   const [pendingLeadsCount, setPendingLeadsCount] = useState(0);
   const [showAttendanceModal, setShowAttendanceModal] = useState(false);
   const [selectedMemberAttendance, setSelectedMemberAttendance] = useState<AdminUser | null>(null);
@@ -146,6 +150,11 @@ const AdminDashboard = () => {
     setSelectedMemberAttendance(member);
     setShowAttendanceModal(true);
     fetchAttendanceData(member._id);
+  };
+
+  const handleEditMember = (member: AdminUser) => {
+    setSelectedMemberToEdit(member);
+    setIsEditMemberDialogOpen(true);
   };
 
   const filterMembers = () => {
@@ -387,6 +396,7 @@ const AdminDashboard = () => {
                           <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Login-Access</th>
                           <th className="px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold">Remove</th>
                           <th className='px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold'>View</th>
+                          <th className='px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold'>Edit</th>
                           <th className='px-3 sm:px-6 py-3 text-left text-xs sm:text-sm font-semibold'>Attendance</th>
                         </tr>
                       </thead>
@@ -448,6 +458,16 @@ const AdminDashboard = () => {
                               View
                             </button>
                           </div>
+                            </td>
+                            <td className='px-3 sm:px-6 py-4 whitespace-nowrap'>
+                            <div className="relative">
+                              <button
+                                onClick={() => handleEditMember(member)}
+                                className="bg-amber-100 text-amber-800 px-3 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap"
+                              >
+                                Edit
+                              </button>
+                            </div>
                             </td>
                             <td className='px-3 sm:px-6 py-4 whitespace-nowrap'>
                             <div className="relative">
@@ -526,6 +546,18 @@ const AdminDashboard = () => {
       <AddMemberDialog
         isOpen={isAddMemberDialogOpen}
         onClose={() => setIsAddMemberDialogOpen(false)}
+        onSuccess={() => {
+          fetchTeamMembers();
+        }}
+      />
+
+      <EditMemberDialog
+        isOpen={isEditMemberDialogOpen}
+        member={selectedMemberToEdit}
+        onClose={() => {
+          setIsEditMemberDialogOpen(false);
+          setSelectedMemberToEdit(null);
+        }}
         onSuccess={() => {
           fetchTeamMembers();
         }}
