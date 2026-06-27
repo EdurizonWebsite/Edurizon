@@ -57,6 +57,10 @@ const financeBillSchema = new Schema(
     url:{
       type: String,
       default: null,
+    },
+    currency: {
+      type: String,
+      default: null,
     }
   },
   {

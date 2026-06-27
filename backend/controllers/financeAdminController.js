@@ -5,6 +5,15 @@ const FinanceBill = require('../model/FinanceBill');
 const { generateFeeStructurePDF } = require('../utils/pdfGenerators/feeStructurePDF');
 const { generateBillReceiptPDF } = require('../utils/pdfGenerators/billReceiptPDF');
 
+function formatBillAmount(amount, currency) {
+  const code = (currency || 'INR').toUpperCase();
+  const num = Number(amount) || 0;
+  if (code === 'INR') {
+    return `Rs ${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  }
+  return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
 const feeStructure = async (req, res) => {
   try {
     const {
@@ -15,6 +24,8 @@ const feeStructure = async (req, res) => {
       programme,
       oneTimeCharge,
       processingCharge,
+      otcCurrency,
+      processingCurrency,
       ticketsIncluded,
       visasIncluded,
       firstYearPackageIncluded,
@@ -47,6 +58,8 @@ const feeStructure = async (req, res) => {
       programme,
       oneTimeCharge,
       processingCharge,
+      otcCurrency: otcCurrency || 'USD',
+      processingCurrency: processingCurrency || 'INR',
       ticketsIncluded,
       visasIncluded,
       firstYearPackageIncluded,
@@ -83,6 +96,8 @@ const feeStructure = async (req, res) => {
         student.financeInfo.oneTimeCharge = roundCurrency(Number(oneTimeCharge) || 0);
         student.financeInfo.processingCharge = Math.round((Number(processingCharge) || 0) * 100) / 100;
         student.financeInfo.oneTimeChargePaid = 0; // OTC is not paid initially
+        student.financeInfo.otcCurrency = otcCurrency || 'USD';
+        student.financeInfo.processingCurrency = processingCurrency || 'INR';
         // Keep legacy fields for backward compatibility
         student.financeInfo.totalOtcUsd = roundCurrency(Number(oneTimeCharge) || 0);
         student.financeInfo.totalProcessingInr = Math.round((Number(processingCharge) || 0) * 100) / 100;
@@ -197,16 +212,18 @@ const billStructure = async (req, res) => {
 
     // Get finance tracking info using the helper function
     const financeTracking = await getFinanceTrackingInfo(studentId);
-    let pendingProcessingInr=financeTracking.pendingProcessingInr
-    let pendingOtc=financeTracking.pendingOtcUsd
-    if(currency==='USD'){
-      pendingOtc=pendingOtc-paymentAmount
-    }else{
-      pendingProcessingInr=pendingProcessingInr-paymentAmount
+    const isOtcPayment = purpose && (purpose.toLowerCase().includes('otc') || purpose.toLowerCase().includes('one time'));
+    let pendingProcessingInr = financeTracking.pendingProcessingInr;
+    let pendingOtc = financeTracking.pendingOtcUsd;
+    if (isOtcPayment) {
+      pendingOtc = pendingOtc - paymentAmount;
+    } else {
+      pendingProcessingInr = pendingProcessingInr - paymentAmount;
     }
 
-    // Determine if this is an OTC payment
-    const isOtcPayment = currency === 'USD' && purpose && (purpose.toLowerCase().includes('otc') || purpose.toLowerCase().includes('one time'));
+    // Read per-student currency settings from financeInfo
+    const otcCurrencyLabel = student.financeInfo?.otcCurrency || 'USD';
+    const processingCurrencyLabel = student.financeInfo?.processingCurrency || 'INR';
     
     // For pending calculation, we'll pass the values and let PDF generator adjust for current payment
     // The otcPaid value should be the amount BEFORE this current payment
@@ -234,11 +251,9 @@ const billStructure = async (req, res) => {
       
       // Determine currency and format amount
       const isOtcBill = bill.purpose === 'One Time Charge';
-      const billCurrency = isOtcBill ? 'USD' : 'INR';
+      const billCurrency = bill.currency || (isOtcBill ? otcCurrencyLabel : processingCurrencyLabel);
       const billAmount = bill.amountPaid || 0;
-      const formattedAmount = billCurrency === 'USD'
-        ? `USD ${roundCurrency(billAmount).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-        : `Rs ${billAmount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      const formattedAmount = formatBillAmount(billAmount, billCurrency);
       
       return {
         srNo: index + 1,
@@ -257,18 +272,20 @@ const billStructure = async (req, res) => {
       studentName,
       university,
       currency,
+      otcCurrency: otcCurrencyLabel,
+      processingCurrency: processingCurrencyLabel,
       purpose,
       fatherName,
       programme,
       totalOtcUsd: financeTracking.totalOtcUsd,
       totalProcessingInr: financeTracking.totalProcessingInr,
-      otcPaid: financeTracking.otcPaid, // Total OTC paid (including this payment)
-      pendingOtcUsd: pendingOtc, // PDF will adjust for current payment
-      pendingProcessingInr: pendingProcessingInr, // PDF will adjust for current payment
+      otcPaid: financeTracking.otcPaid,
+      pendingOtcUsd: pendingOtc,
+      pendingProcessingInr: pendingProcessingInr,
       payments: transformedPayments,
       accountDetail: accountDetail || 'EDURIZON PVT LTD',
-      paymentMode:paymentMode,
-      description:description
+      paymentMode: paymentMode,
+      description: description
     });
 
     // Create a buffer to store PDF

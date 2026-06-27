@@ -18,6 +18,7 @@ import PaymentModal from '@/components/admin/finance-admin/paymentModal';
 
 import BillReceipt from '@/components/admin/BillReceipt';
 import authHeaders from '@/components/admin/authHeader'
+import { useStaticAttributes } from '@/context/StaticAttributesContext';
 
 const navItems = [
   {
@@ -58,6 +59,39 @@ const FinanceDashboard = () => {
 
   const pdfContainerRef = useRef(null);
   const [pdfContext, setPdfContext] = useState(null);
+
+  const { currencies, addCurrency, removeCurrency, refresh: refreshStaticAttrs } = useStaticAttributes();
+
+  useEffect(() => { refreshStaticAttrs(); }, []);
+  const [manageCurrencyOpen, setManageCurrencyOpen] = useState(false);
+  const [newCurrencyName, setNewCurrencyName] = useState('');
+  const [savingCurrency, setSavingCurrency] = useState(false);
+
+  const handleAddCurrency = async () => {
+    if (!newCurrencyName.trim()) return;
+    setSavingCurrency(true);
+    try {
+      await addCurrency(newCurrencyName.trim());
+      setNewCurrencyName('');
+      toast.success('Currency added');
+    } catch (err) {
+      toast.error(err?.response?.data?.message || 'Failed to add currency');
+    } finally {
+      setSavingCurrency(false);
+    }
+  };
+
+  const handleRemoveCurrency = async (name) => {
+    setSavingCurrency(true);
+    try {
+      await removeCurrency(name);
+      toast.success('Currency removed');
+    } catch {
+      toast.error('Failed to remove currency');
+    } finally {
+      setSavingCurrency(false);
+    }
+  };
 
   const fetchFinanceData = async () => {
     setLoading(true);
@@ -366,9 +400,56 @@ const FinanceDashboard = () => {
             <>
               {activeTab === 'students' && (
                 <div className="flex flex-col gap-6">
+                  {/* Manage Currencies Panel */}
+                  <div className="bg-white rounded-xl shadow-sm border border-gray-200">
+                    <button
+                      type="button"
+                      className="w-full flex items-center justify-between px-6 py-4"
+                      onClick={() => setManageCurrencyOpen(prev => !prev)}
+                    >
+                      <div>
+                        <p className="text-base font-semibold text-gray-900 text-left">Manage Currencies</p>
+                        <p className="text-xs text-gray-500 text-left">Add or remove currencies available for billing</p>
+                      </div>
+                      <svg className={`w-5 h-5 text-gray-500 transition-transform ${manageCurrencyOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+
+                    {manageCurrencyOpen && (
+                      <div className="border-t border-gray-100 px-6 py-5">
+                        <div className="flex gap-2 mb-4">
+                          <input
+                            type="text"
+                            value={newCurrencyName}
+                            onChange={e => setNewCurrencyName(e.target.value)}
+                            onKeyDown={e => e.key === 'Enter' && handleAddCurrency()}
+                            placeholder="e.g. USD, INR, EUR, GBP"
+                            className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+                          />
+                          <button
+                            onClick={handleAddCurrency}
+                            disabled={savingCurrency || !newCurrencyName.trim()}
+                            className="px-4 py-2 bg-teal-600 text-white text-sm rounded-lg hover:bg-teal-700 disabled:opacity-50"
+                          >
+                            Add
+                          </button>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {currencies.length === 0 && <p className="text-xs text-gray-400">No currencies added yet</p>}
+                          {currencies.map(c => (
+                            <span key={c} className="inline-flex items-center gap-1 px-3 py-1.5 bg-teal-50 text-teal-700 border border-teal-200 rounded-full text-sm font-medium">
+                              {c}
+                              <button onClick={() => handleRemoveCurrency(c)} disabled={savingCurrency} className="ml-1 text-teal-400 hover:text-red-500 font-bold">✕</button>
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
                   <BillGeneration fetchFinanceData={fetchFinanceData} students={students} />
                   <FeeStructureGeneration fetchFinanceData={fetchFinanceData} students={students} />
-
                 </div>
               )}
               {activeTab === 'pending' && <PendingBills pendingTabRows={pendingTabRows} openStudentBillsModal={openStudentBillsModal} openPaymentModal={openPaymentModal} />}

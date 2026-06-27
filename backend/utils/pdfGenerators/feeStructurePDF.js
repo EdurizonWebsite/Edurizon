@@ -16,6 +16,15 @@ const path = require('path');
  * @param {Boolean} options.firstYearPackageIncluded - Whether first year package is included
  * @returns {PDFDocument} - PDF document instance
  */
+function formatFeeAmount(amount, currency) {
+  const code = (currency || 'INR').toUpperCase();
+  const num = Number(amount) || 0;
+  if (code === 'INR') {
+    return `INR ${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  }
+  return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
 const generateFeeStructurePDF = (options) => {
   const {
     student,
@@ -25,6 +34,8 @@ const generateFeeStructurePDF = (options) => {
     programme,
     oneTimeCharge,
     processingCharge,
+    otcCurrency = 'USD',
+    processingCurrency = 'INR',
     ticketsIncluded,
     visasIncluded,
     firstYearPackageIncluded,
@@ -159,14 +170,14 @@ const generateFeeStructurePDF = (options) => {
   // One Time Charge
   doc.fontSize(11)
      .font('Times-Roman')
-     .text('One Time Charge (USD)', col1, yPosition)
-     .text(`$${Number(oneTimeCharge).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, col2, yPosition, { align: 'right' });
-  
+     .text(`One Time Charge (${otcCurrency.toUpperCase()})`, col1, yPosition)
+     .text(formatFeeAmount(oneTimeCharge, otcCurrency), col2, yPosition, { align: 'right' });
+
   yPosition += itemHeight;
 
   // Processing Charge
-  doc.text('Processing Charge (INR)', col1, yPosition)
-     .text(`INR ${Number(processingCharge).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, col2, yPosition, { align: 'right' });
+  doc.text(`Processing Charge (${processingCurrency.toUpperCase()})`, col1, yPosition)
+     .text(formatFeeAmount(processingCharge, processingCurrency), col2, yPosition, { align: 'right' });
   
   yPosition += itemHeight;
 

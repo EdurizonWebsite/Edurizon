@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {useState,useMemo} from 'react'
 import axios from 'axios';
+import Select from 'react-select';
 import { baseUrl } from '@/lib/baseUrl';
 import toast, {Toaster} from 'react-hot-toast';
 import authHeaders from '@/components/admin/authHeader'
+import { useStaticAttributes } from '@/context/StaticAttributesContext';
 
 type StudentStruct={
   financeInfo: Record<string, any>,
@@ -14,19 +16,49 @@ type StudentStruct={
 }
 
 const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData:()=>void ,students?:any[]}) => {
-    
+
+    const { currencies, addCurrency, refresh: refreshStaticAttrs } = useStaticAttributes();
+
+    useEffect(() => { refreshStaticAttrs(); }, []);
+
+    const [addingCurrency, setAddingCurrency] = useState(false);
+    const [newCurrencyName, setNewCurrencyName] = useState('');
+    const [savingCurrency, setSavingCurrency] = useState(false);
+
+    const currencySelectOptions = [
+      ...currencies.map(c => ({ value: c, label: c })),
+      { value: '__add_new__', label: '+ Add new currency' },
+    ];
+
+    const handleSaveNewCurrency = async () => {
+      if (!newCurrencyName.trim()) return;
+      setSavingCurrency(true);
+      try {
+        await addCurrency(newCurrencyName.trim());
+        handleBillFormChange('currency', newCurrencyName.trim());
+        setAddingCurrency(false);
+        setNewCurrencyName('');
+        toast.success('Currency added');
+      } catch (err: any) {
+        toast.error(err?.response?.data?.message || 'Failed to add currency');
+      } finally {
+        setSavingCurrency(false);
+      }
+    };
+
     const [billFormOpen,setBillFormOpen] = useState(true);
     const [submittingBill, setSubmittingBill] = useState(false);
     const [billForm, setBillForm] = useState({
         studentId: '',
         studentName: '',
         amountPaid: '',
-        billDate: new Date().toISOString().split('T')[0], // Today's date as default
+        billDate: new Date().toISOString().split('T')[0],
         description: '',
-        chargeType: 'processing', // 'otc' or 'processing'
+        chargeType: 'processing',
         accountDetail: 'EDURIZON',
         paymentMode: 'Online Mode',
         purpose: '',
+        currency: '',
       });
     const [studentPickerOpen, setStudentPickerOpen] = useState(false);
     const [studentPickerSearch, setStudentPickerSearch] = useState('');
@@ -55,26 +87,25 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         return;
     }
 
+    if (!billForm.currency) {
+        toast.error('Please select a currency');
+        return;
+    }
+
     setSubmittingBill(true);
     try {
         const headers = authHeaders();
-      
-        // Determine currency based on charge type
-        const currency = billForm.chargeType === 'otc' ? 'USD' : 'INR';
+        const currency = billForm.currency;
         const purpose = billForm.purpose || (billForm.chargeType === 'otc' ? 'OTC Payment' : 'Processing Fee Payment');
 
-        // Generate payment receipt PDF (receipt is generated immediately for completed payments)
-      // university,
-      // fatherName,
-      // programme
         const receiptPayload = {
           studentId: billForm.studentId,
           paymentAmount: Number(billForm.amountPaid),
-          paymentNumber: 1, // Auto-increment or calculate based on existing bills
+          paymentNumber: 1,
           studentName: billForm.studentName,
-          university: selectedStudent!.enrolledUniversity, // Will be fetched from student's financeInfo
-          country: selectedStudent!.enrolledCountry, // Will be fetched from student's financeInfo
-          status:'completed', // Receipts are only for completed payments
+          university: selectedStudent!.enrolledUniversity,
+          country: selectedStudent!.enrolledCountry,
+          status:'completed',
           currency: currency,
           purpose: purpose,
           fatherName:selectedStudent!.fatherName,
@@ -85,19 +116,18 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           description:billForm.description
         };
         const res:any= await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
-        
-        // Create bill record with receipt URL - amountPaid equals amountDue for completed receipts
-        // Map purpose to match FinanceBill model enum values
+
         const mappedPurpose = billForm.chargeType === 'otc' ? 'One Time Charge' : 'Processing Fee';
-        
+
         const payload = {
         studentId: billForm.studentId,
-        amountDue: Number(billForm.amountPaid), // For completed receipts, amountDue = amountPaid
+        amountDue: Number(billForm.amountPaid),
         amountPaid: Number(billForm.amountPaid),
         description: billForm.description,
         studentName: billForm.studentName,
-        url: res.data.url, // Store the receipt PDF URL in FinanceBill model
-        purpose: mappedPurpose, // Must be 'Processing Fee' or 'One Time Charge'
+        url: res.data.url,
+        purpose: mappedPurpose,
+        currency: billForm.currency,
         paymentMode:billForm.paymentMode,
         accountName:billForm.accountDetail
         };
@@ -113,7 +143,8 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         chargeType: 'processing',
         purpose: '',
         accountDetail:"Edurizon",
-        paymentMode:'Online Mode'
+        paymentMode:'Online Mode',
+        currency: '',
         });
         setStudentPickerSearch('');
         await fetchFinanceData();
@@ -131,8 +162,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
 
     const filteredStudentOptions = useMemo(() => {
         const query = studentPickerSearch.trim().toLowerCase();
-    
-        // Ensure students is an array before iterating
+
         const studentsArray = Array.isArray(students) ? students : [];
         let sorted = [...studentsArray].sort((a, b) =>
           (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
@@ -141,13 +171,13 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           return item.financeInfo.feeStructureLink!=null
         })
         if (!query) return sorted;
-    
+
         return sorted.filter(
           (student) =>
             student.name?.toLowerCase().includes(query) || student.email?.toLowerCase().includes(query)
         );
       }, [studentPickerSearch, students]);
-  
+
     return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200">
       <button
@@ -245,9 +275,55 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
                   value={billForm.chargeType}
                   onChange={(e) => handleBillFormChange('chargeType', e.target.value)}
                 >
-                  <option value="processing">Processing Charge (INR)</option>
-                  <option value="otc">OTC - One Time Charge (USD)</option>
+                  <option value="processing">Processing Charge</option>
+                  <option value="otc">OTC - One Time Charge</option>
                 </select>
+              </div>
+
+              {/* Currency selector */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Currency *</label>
+                {addingCurrency ? (
+                  <div className="flex flex-col gap-2">
+                    <input
+                      type="text"
+                      value={newCurrencyName}
+                      onChange={e => setNewCurrencyName(e.target.value)}
+                      className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+                      placeholder="e.g. USD, EUR, GBP"
+                      autoFocus
+                    />
+                    <div className="flex gap-2">
+                      <button type="button" onClick={handleSaveNewCurrency} disabled={savingCurrency}
+                        className="flex-1 px-3 py-2 bg-teal-600 text-white text-sm rounded-lg hover:bg-teal-700 disabled:opacity-50">
+                        {savingCurrency ? 'Adding...' : 'Add'}
+                      </button>
+                      <button type="button" onClick={() => { setAddingCurrency(false); setNewCurrencyName(''); }}
+                        className="flex-1 px-3 py-2 border border-gray-300 text-gray-600 text-sm rounded-lg hover:bg-gray-50">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <Select
+                    options={currencySelectOptions}
+                    value={currencySelectOptions.find(o => o.value === billForm.currency) || null}
+                    onChange={option => {
+                      if (option?.value === '__add_new__') { setAddingCurrency(true); return; }
+                      handleBillFormChange('currency', option?.value || '');
+                    }}
+                    placeholder="Select currency"
+                    className="w-full"
+                    classNamePrefix="select"
+                    styles={{
+                      option: (base, state) => ({
+                        ...base,
+                        color: (state.data as any).value === '__add_new__' ? '#0d9488' : base.color,
+                        fontWeight: (state.data as any).value === '__add_new__' ? 600 : base.fontWeight,
+                      })
+                    }}
+                  />
+                )}
               </div>
 
               <div>
@@ -257,7 +333,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
                   min="0"
                   step="0.01"
                   className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
-                  placeholder={billForm.chargeType === 'otc' ? 'Enter amount in USD' : 'Enter amount in INR'}
+                  placeholder={billForm.currency ? `Enter amount in ${billForm.currency}` : 'Enter amount'}
                   value={billForm.amountPaid}
                   onChange={(e) => handleBillFormChange('amountPaid', e.target.value)}
                 />
@@ -288,7 +364,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
                 <input
                   type="text"
                   className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
-                  placeholder={billForm.chargeType === 'otc' ? 'e.g., Full OTC Payment' : 'e.g., Partial Processing Fee, Full Processing Fee'}
+                  placeholder="e.g., Online Mode, Cash, Bank Transfer"
                   value={billForm.paymentMode}
                   onChange={(e) => handleBillFormChange('paymentMode', e.target.value)}
                 />
@@ -298,7 +374,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
                 <input
                   type="text"
                   className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
-                  placeholder={'Enter Account Name in which money has been transfered to.'}
+                  placeholder="Enter Account Name in which money has been transferred to."
                   value={billForm.accountDetail}
                   onChange={(e) => handleBillFormChange('accountDetail', e.target.value)}
                 />

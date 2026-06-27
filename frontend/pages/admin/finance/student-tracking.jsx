@@ -35,6 +35,10 @@ const FinanceStudentTrackingPage = () => {
     studentName: '',
   });
 
+  const PAGE_SIZE = 10;
+  const [billsPage, setBillsPage] = useState(1);
+  const [feeStructurePage, setFeeStructurePage] = useState(1);
+
   const [studentModal, setStudentModal] = useState({
     open: false,
     student: null,
@@ -105,7 +109,12 @@ const FinanceStudentTrackingPage = () => {
     } else {
       fetchStudentsWithFeeStructure();
     }
+    setBillsPage(1);
+    setFeeStructurePage(1);
   }, [activeTab]);
+
+  useEffect(() => { setBillsPage(1); }, [debouncedSearchQuery]);
+  useEffect(() => { setFeeStructurePage(1); }, [debouncedSearchQuery]);
 
   const studentFinancialMap = useMemo(() => {
     const map = new Map();
@@ -123,15 +132,17 @@ const FinanceStudentTrackingPage = () => {
           totalPaidUsd: 0,
           outstandingUsd: 0,
           hasOtcBills: false,
+          otcCurrency: 'USD',
           status: 'Pending',
         });
       }
 
       const entry = map.get(key);
       const isOtcBill = bill.purpose === 'One Time Charge';
-      
+
       if (isOtcBill) {
         entry.hasOtcBills = true;
+        entry.otcCurrency = bill.currency || entry.otcCurrency;
         entry.totalBilledUsd += bill.amountDue || 0;
         entry.totalPaidUsd += bill.amountPaid || 0;
       } else {
@@ -170,6 +181,7 @@ const FinanceStudentTrackingPage = () => {
           totalPaidUsd: 0,
           outstandingUsd: 0,
           hasOtcBills: false,
+          otcCurrency: 'USD',
           status: 'Pending',
         };
       const overallStatus =
@@ -190,6 +202,7 @@ const FinanceStudentTrackingPage = () => {
         totalPaidUsd: summary.totalPaidUsd,
         outstandingUsd: summary.outstandingUsd,
         hasOtcBills: summary.hasOtcBills,
+        otcCurrency: summary.otcCurrency,
         overallStatus,
       };
     });
@@ -393,6 +406,54 @@ const FinanceStudentTrackingPage = () => {
     }
   };
 
+  const paginatedBillStudents = useMemo(
+    () => enrichedStudents.slice((billsPage - 1) * PAGE_SIZE, billsPage * PAGE_SIZE),
+    [enrichedStudents, billsPage]
+  );
+
+  const paginatedFeeStudents = useMemo(
+    () => filteredFeeStructureStudents.slice((feeStructurePage - 1) * PAGE_SIZE, feeStructurePage * PAGE_SIZE),
+    [filteredFeeStructureStudents, feeStructurePage]
+  );
+
+  const Pagination = ({ page, total, onPageChange }) => {
+    const totalPages = Math.ceil(total / PAGE_SIZE);
+    if (totalPages <= 1) return null;
+    return (
+      <div className="flex items-center justify-between px-6 py-4 border-t border-gray-100">
+        <p className="text-sm text-gray-500">
+          Showing {Math.min((page - 1) * PAGE_SIZE + 1, total)}–{Math.min(page * PAGE_SIZE, total)} of {total}
+        </p>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            disabled={page <= 1}
+            onClick={() => onPageChange(page - 1)}
+            className="px-3 py-1.5 text-sm border border-gray-200 rounded-lg hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            Previous
+          </button>
+          <span className="text-sm text-gray-600 px-2">Page {page} of {totalPages}</span>
+          <button
+            type="button"
+            disabled={page >= totalPages}
+            onClick={() => onPageChange(page + 1)}
+            className="px-3 py-1.5 text-sm border border-gray-200 rounded-lg hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  const formatBillAmount = (amount, currency, purpose) => {
+    const code = (currency || (purpose === 'One Time Charge' ? 'USD' : 'INR')).toUpperCase();
+    const num = Number(amount) || 0;
+    if (code === 'INR') return `₹${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  };
+
   const formatDate = (value) =>
     value
       ? new Date(value).toLocaleDateString('en-IN', {
@@ -472,7 +533,7 @@ const FinanceStudentTrackingPage = () => {
                   </p>
                 </div>
                 <p className="text-sm text-gray-500">
-                  Showing {enrichedStudents.length} of {students.length} students
+                  {enrichedStudents.length} of {students.length} students
                 </p>
               </div>
 
@@ -481,6 +542,7 @@ const FinanceStudentTrackingPage = () => {
                   <thead className="bg-gray-50">
                     <tr>
                       {['Student', 'Email', 'Total Billed', 'Total Paid', 'Outstanding', 'Status', 'Actions'].map(
+
                         (header) => (
                           <th
                             key={header}
@@ -494,14 +556,14 @@ const FinanceStudentTrackingPage = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-100">
-                    {enrichedStudents.length === 0 && (
+                    {paginatedBillStudents.length === 0 && (
                       <tr>
                         <td colSpan={7} className="px-6 py-8 text-center text-sm text-gray-500">
                           No students found. Adjust your search or try again later.
                         </td>
                       </tr>
                     )}
-                    {enrichedStudents.map((student) => (
+                    {paginatedBillStudents.map((student) => (
                       <tr key={student._id} className="hover:bg-gray-50 transition-colors">
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div>
@@ -515,7 +577,7 @@ const FinanceStudentTrackingPage = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                           {student.hasOtcBills ? (
                             <span className="text-gray-600">
-                              ₹{student.totalBilled.toLocaleString()} / ${student.totalBilledUsd?.toFixed(2) || '0.00'}
+                              ₹{student.totalBilled.toLocaleString()} / {student.otcCurrency} {student.totalBilledUsd?.toFixed(2) || '0.00'}
                             </span>
                           ) : (
                             `₹${student.totalBilled.toLocaleString()}`
@@ -524,7 +586,7 @@ const FinanceStudentTrackingPage = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-teal-700 font-semibold">
                           {student.hasOtcBills ? (
                             <span className="text-gray-600">
-                              ₹{student.totalPaid.toLocaleString()} / ${student.totalPaidUsd?.toFixed(2) || '0.00'}
+                              ₹{student.totalPaid.toLocaleString()} / {student.otcCurrency} {student.totalPaidUsd?.toFixed(2) || '0.00'}
                             </span>
                           ) : (
                             `₹${student.totalPaid.toLocaleString()}`
@@ -533,7 +595,7 @@ const FinanceStudentTrackingPage = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-semibold">
                           {student.hasOtcBills ? (
                             <span className="text-gray-600">
-                              ₹{student.outstanding.toLocaleString()} / ${student.outstandingUsd?.toFixed(2) || '0.00'}
+                              ₹{student.outstanding.toLocaleString()} / {student.otcCurrency} {student.outstandingUsd?.toFixed(2) || '0.00'}
                             </span>
                           ) : (
                             `₹${student.outstanding.toLocaleString()}`
@@ -556,6 +618,7 @@ const FinanceStudentTrackingPage = () => {
                   </tbody>
                 </table>
               </div>
+              <Pagination page={billsPage} total={enrichedStudents.length} onPageChange={setBillsPage} />
             </div>
           ) : (
             <div className="bg-white rounded-xl shadow-sm border border-gray-200">
@@ -567,7 +630,7 @@ const FinanceStudentTrackingPage = () => {
                   </p>
                 </div>
                 <p className="text-sm text-gray-500">
-                  Showing {filteredFeeStructureStudents.length} of {students.length} students
+                  {filteredFeeStructureStudents.length} of {students.length} students
                 </p>
               </div>
 
@@ -589,14 +652,14 @@ const FinanceStudentTrackingPage = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-100">
-                    {filteredFeeStructureStudents.length === 0 && (
+                    {paginatedFeeStudents.length === 0 && (
                       <tr>
                         <td colSpan={7} className="px-6 py-8 text-center text-sm text-gray-500">
                           No students found. Adjust your search or try again later.
                         </td>
                       </tr>
                     )}
-                    {filteredFeeStructureStudents.map((student) => (
+                    {paginatedFeeStudents.map((student) => (
                       <tr key={student._id} className="hover:bg-gray-50 transition-colors">
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div>
@@ -675,6 +738,7 @@ const FinanceStudentTrackingPage = () => {
                   </tbody>
                 </table>
               </div>
+              <Pagination page={feeStructurePage} total={filteredFeeStructureStudents.length} onPageChange={setFeeStructurePage} />
             </div>
           )}
         </div>
@@ -734,18 +798,10 @@ const FinanceStudentTrackingPage = () => {
                       <tr key={bill._id}>
                         <td className="px-4 py-3 text-sm text-gray-900">{bill.description}</td>
                         <td className="px-4 py-3 text-sm font-semibold text-gray-900">
-                          {bill.purpose === 'One Time Charge' ? (
-                            `$${(bill.amountDue || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-                          ) : (
-                            `₹${(bill.amountDue || 0).toLocaleString()}`
-                          )}
+                          {formatBillAmount(bill.amountDue, bill.currency, bill.purpose)}
                         </td>
                         <td className="px-4 py-3 text-sm text-teal-700 font-semibold">
-                          {bill.purpose === 'One Time Charge' ? (
-                            `$${(bill.amountPaid || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-                          ) : (
-                            `₹${(bill.amountPaid || 0).toLocaleString()}`
-                          )}
+                          {formatBillAmount(bill.amountPaid, bill.currency, bill.purpose)}
                         </td>
                         <td className="px-4 py-3 text-sm text-gray-600">
                           {formatDate(bill.issueDate || bill.createdAt)}

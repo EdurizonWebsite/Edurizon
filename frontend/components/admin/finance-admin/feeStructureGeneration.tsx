@@ -1,12 +1,19 @@
-import React, { use, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import {useState,useMemo} from 'react'
 import axios from 'axios';
+import Select from 'react-select';
 import { baseUrl } from '@/lib/baseUrl';
 import toast, {Toaster} from 'react-hot-toast';
 import authHeaders from '@/components/admin/authHeader'
+import { useStaticAttributes } from '@/context/StaticAttributesContext';
 
 const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData:()=>void ,students?:any[]}) => {
-    
+
+    const { currencies, addCurrency, refresh: refreshStaticAttrs } = useStaticAttributes();
+
+    // Ensure currencies are loaded when this component mounts
+    useEffect(() => { refreshStaticAttrs(); }, []);
+
     const [billFormOpen,setBillFormOpen] = useState(false);
     const [submittingBill, setSubmittingBill] = useState(false);
     const [billForm, setBillForm] = useState({
@@ -18,6 +25,8 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
         programme:'',
         oneTimeCharge:0,
         processingCharge:0,
+        otcCurrency:'',
+        processingCurrency:'',
         ticketsIncluded:false,
         visasIncluded:false,
         firstYearPackageIncluded:false,
@@ -25,11 +34,34 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
     const [studentPickerOpen, setStudentPickerOpen] = useState(false);
     const [studentPickerSearch, setStudentPickerSearch] = useState('');
 
-   
+    const [addingCurrency, setAddingCurrency] = useState<'otcCurrency' | 'processingCurrency' | null>(null);
+    const [newCurrencyName, setNewCurrencyName] = useState('');
+    const [savingCurrency, setSavingCurrency] = useState(false);
+
+    const currencySelectOptions = [
+      ...currencies.map(c => ({ value: c, label: c })),
+      { value: '__add_new__', label: '+ Add new currency' },
+    ];
+
+    const handleSaveNewCurrency = async () => {
+      if (!newCurrencyName.trim() || !addingCurrency) return;
+      setSavingCurrency(true);
+      try {
+        await addCurrency(newCurrencyName.trim());
+        handleBillFormChange(addingCurrency, newCurrencyName.trim());
+        setAddingCurrency(null);
+        setNewCurrencyName('');
+        toast.success('Currency added');
+      } catch (err: any) {
+        toast.error(err?.response?.data?.message || 'Failed to add currency');
+      } finally {
+        setSavingCurrency(false);
+      }
+    };
+
     const handleBillFormChange = (field:any, value:any) => {
     setBillForm((prev) => ({ ...prev, [field]: value }));
     };
-
 
     const handleSelectStudentForBill = (student:any) => {
         setBillForm((prev) => ({
@@ -42,7 +74,7 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
 
     const handleCreateBill = async (event:any) => {
     event.preventDefault();
-    if (!billForm.studentId || !billForm.studentName || !billForm.fatherName || !billForm.countryName 
+    if (!billForm.studentId || !billForm.studentName || !billForm.fatherName || !billForm.countryName
       || !billForm.programme || billForm.oneTimeCharge === undefined || billForm.processingCharge === undefined
     ) {
         toast.error('Please complete all required fields');
@@ -52,7 +84,6 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
     setSubmittingBill(true);
     try {
         const headers = authHeaders();
-        // Convert universities string to array (support both newline and comma separated)
         const universitiesArray = billForm.universities
           ? billForm.universities
               .split(/[,\n]/)
@@ -68,14 +99,15 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
         programme: billForm.programme,
         oneTimeCharge: Number(billForm.oneTimeCharge),
         processingCharge: Number(billForm.processingCharge),
+        otcCurrency: billForm.otcCurrency || 'USD',
+        processingCurrency: billForm.processingCurrency || 'INR',
         ticketsIncluded: billForm.ticketsIncluded,
         visasIncluded: billForm.visasIncluded,
         firstYearPackageIncluded: billForm.firstYearPackageIncluded,
         };
 
         await axios.put(`${baseUrl}/api/admin/finance/bills/feeStructure`, payload, { headers });
-        
-        // Update student enrollment (countries and universities)
+
         try {
           const enrollmentPayload = {
             studentId: billForm.studentId,
@@ -85,9 +117,8 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
           await axios.put(`${baseUrl}/api/admin/finance/students/enrollment`, enrollmentPayload, { headers });
         } catch (enrollmentErr: any) {
           console.error('Failed to update student enrollment:', enrollmentErr);
-          // Don't show error toast as fee structure was already generated successfully
         }
-        
+
         toast.success('Fee structure generated and uploaded successfully');
         setBillForm({
         studentId: '',
@@ -98,6 +129,8 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
         programme:'',
         oneTimeCharge:0,
         processingCharge:0,
+        otcCurrency:'',
+        processingCurrency:'',
         ticketsIncluded:false,
         visasIncluded:false,
         firstYearPackageIncluded:false,
@@ -115,16 +148,14 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
         setSubmittingBill(false);
     }
     }
-    
+
     const filteredStudentOptions = useMemo(() => {
         const query = studentPickerSearch.trim().toLowerCase();
-    
-        // Ensure students is an array before iterating
+
         const studentsArray = Array.isArray(students) ? students : [];
         const sorted = [...studentsArray].sort((a, b) =>
           (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' })
         );
-       
 
         if (!query) return sorted;
         return sorted.filter(
@@ -132,6 +163,54 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
             student.name?.toLowerCase().includes(query) || student.email?.toLowerCase().includes(query)
         );
       }, [studentPickerSearch, students]);
+
+    const CurrencyField = ({ field, label }: { field: 'otcCurrency' | 'processingCurrency'; label: string }) => (
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
+        {addingCurrency === field ? (
+          <div className="flex flex-col gap-2">
+            <input
+              type="text"
+              value={newCurrencyName}
+              onChange={e => setNewCurrencyName(e.target.value)}
+              className="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+              placeholder="e.g. USD, EUR, GBP"
+              autoFocus
+            />
+            <div className="flex gap-2">
+              <button type="button" onClick={handleSaveNewCurrency} disabled={savingCurrency}
+                className="flex-1 px-3 py-2 bg-teal-600 text-white text-sm rounded-lg hover:bg-teal-700 disabled:opacity-50">
+                {savingCurrency ? 'Adding...' : 'Add'}
+              </button>
+              <button type="button" onClick={() => { setAddingCurrency(null); setNewCurrencyName(''); }}
+                className="flex-1 px-3 py-2 border border-gray-300 text-gray-600 text-sm rounded-lg hover:bg-gray-50">
+                Cancel
+              </button>
+            </div>
+          </div>
+        ) : (
+          <Select
+            options={currencySelectOptions}
+            value={currencySelectOptions.find(o => o.value === billForm[field]) || null}
+            onChange={option => {
+              if ((option as any)?.value === '__add_new__') { setAddingCurrency(field); return; }
+              handleBillFormChange(field, (option as any)?.value || '');
+            }}
+            placeholder="Select currency"
+            className="w-full"
+            classNamePrefix="select"
+            styles={{
+              option: (base, state) => ({
+                ...base,
+                color: (state.data as any).value === '__add_new__' ? '#0d9488' : base.color,
+                fontWeight: (state.data as any).value === '__add_new__' ? 600 : base.fontWeight,
+              })
+            }}
+          />
+        )}
+      </div>
+    );
+
     return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200">
       <button
@@ -268,8 +347,9 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
                 <p className="text-xs text-gray-500 mt-1">You can enter multiple universities, one per line or separated by commas</p>
               </div>
 
+              {/* One Time Charge + Currency */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">One Time Charge (USD) *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">One Time Charge *</label>
                 <input
                   type="number"
                   min="0"
@@ -281,8 +361,11 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
                 />
               </div>
 
+              <CurrencyField field="otcCurrency" label="One Time Charge Currency" />
+
+              {/* Processing Charge + Currency */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Processing Charge (INR) *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Processing Charge *</label>
                 <input
                   type="number"
                   min="0"
@@ -293,6 +376,8 @@ const FeeStructureGeneration = ({ fetchFinanceData,  students = [] }: { fetchFin
                   onChange={(e) => handleBillFormChange('processingCharge', e.target.value)}
                 />
               </div>
+
+              <CurrencyField field="processingCurrency" label="Processing Charge Currency" />
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">

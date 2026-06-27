@@ -175,6 +175,16 @@ function drawTable(doc, config) {
   return currentY;
 }
 
+// Format an amount with its currency code
+function formatAmount(amount, currency) {
+  const code = (currency || 'INR').toUpperCase();
+  const num = Number(amount) || 0;
+  if (code === 'INR') {
+    return `Rs ${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  }
+  return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
 const generateBillReceiptPDF = (options) => {
   const {
     student,
@@ -182,6 +192,8 @@ const generateBillReceiptPDF = (options) => {
     studentName,
     university,
     currency = 'INR',
+    otcCurrency = 'USD',
+    processingCurrency = 'INR',
     purpose,
     fatherName,
     programme,
@@ -318,19 +330,9 @@ const generateBillReceiptPDF = (options) => {
   // Heading
   yPosition = drawSectionTitle(doc, 'Payment Agreed Upon', MARGIN, yPosition, contentWidth);
   
-  // Calculate pending amounts accounting for current payment
-  let adjustedPendingProcessing = pendingProcessingInr;
-  let adjustedPendingOtc = pendingOtcUsd;
-  
-  // If current payment is processing fee, subtract it from pending
-  if (currency === 'INR' && purpose && purpose.toLowerCase().includes('processing')) {
-    adjustedPendingProcessing = pendingProcessingInr;
-  }
-  
-  // If current payment is OTC, subtract it from pending
-  if (currency === 'USD' && purpose && (purpose.toLowerCase().includes('otc') || purpose.toLowerCase().includes('one time'))) {
-    adjustedPendingOtc = pendingOtcUsd - Number(paymentAmount);
-  }
+  // Pending amounts already adjusted by the controller before passing in
+  const adjustedPendingProcessing = pendingProcessingInr;
+  const adjustedPendingOtc = pendingOtcUsd;
   
   // Table columns
   const paymentAgreedColumns = [
@@ -342,15 +344,15 @@ const generateBillReceiptPDF = (options) => {
   // Table rows
   const paymentAgreedRows = [
     [
-      'One Time Charge (USD)',
-      `USD ${roundCurrency(totalOtcUsd).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
-      `USD ${roundCurrency(adjustedPendingOtc).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+      `One Time Charge (${otcCurrency.toUpperCase()})`,
+      formatAmount(totalOtcUsd, otcCurrency),
+      formatAmount(adjustedPendingOtc, otcCurrency),
     ],
     [
-      'Processing Charge (INR)',
-      `Rs ${totalProcessingInr.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
-      `Rs ${adjustedPendingProcessing.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-    ]
+      `Processing Charge (${processingCurrency.toUpperCase()})`,
+      formatAmount(totalProcessingInr, processingCurrency),
+      formatAmount(adjustedPendingProcessing, processingCurrency),
+    ],
   ];
   
   yPosition = drawTable(doc, {
@@ -369,16 +371,8 @@ const generateBillReceiptPDF = (options) => {
   
   // Prepare payments array - use provided payments or create from current payment
   let paymentsArray = payments;
+  const paymentAmountFormatted = formatAmount(paymentAmount, currency);
   if (!paymentsArray || !Array.isArray(paymentsArray) || paymentsArray.length === 0) {
-    // Create payment object from current payment data
-    const paymentAmountFormatted = currency === 'USD' 
-      ? `USD ${roundCurrency(Number(paymentAmount)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-      : `Rs ${Number(paymentAmount).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-    
-    const paymentPurpose = purpose && purpose.toLowerCase().includes('otc') 
-      ? 'One Time Charge (OTC)' 
-      : 'Processing Fee';
-    
     paymentsArray = [{
       srNo: 1,
       date: receiptDate,
@@ -387,23 +381,15 @@ const generateBillReceiptPDF = (options) => {
       description: description,
       mode: paymentMode
     }];
-  }else{
-    const paymentAmountFormatted = currency === 'USD' 
-    ? `USD ${roundCurrency(Number(paymentAmount)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-    : `Rs ${Number(paymentAmount).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-  
-  const paymentPurpose = purpose && purpose.toLowerCase().includes('otc') 
-    ? 'One Time Charge (OTC)' 
-    : 'Processing Fee';
-  
+  } else {
     paymentsArray.push({
-      srNo: paymentsArray.length+1,
+      srNo: paymentsArray.length + 1,
       date: receiptDate,
       amount: paymentAmountFormatted,
       accountDetails: accountDetail,
       description: description,
       mode: paymentMode
-    })
+    });
   }
   
   // Table columns

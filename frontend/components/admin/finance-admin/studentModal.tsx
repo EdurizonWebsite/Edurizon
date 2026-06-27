@@ -1,6 +1,13 @@
 import React from 'react'
 import renderStatusBadge from './renderStatusBadge'
 
+function formatBillAmount(amount: number, currency: string | null | undefined, purpose: string) {
+  const code = (currency || (purpose === 'One Time Charge' ? 'USD' : 'INR')).toUpperCase();
+  const num = Number(amount) || 0;
+  if (code === 'INR') return `₹${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
 const StudentModal = ({ studentModal, closeStudentModal, openPaymentModal, handleDownloadReceipt }: { studentModal: any, closeStudentModal: () => void, openPaymentModal: (bill: any) => void, handleDownloadReceipt: (bill: any, student: any) => void }) => {
   const handleDownloadDocument = async (url: string, docName:string) => {
     if (!url){
@@ -76,10 +83,10 @@ const StudentModal = ({ studentModal, closeStudentModal, openPaymentModal, handl
                 <tr key={bill._id}>
                   <td className="px-4 py-3 text-sm text-gray-900">{bill.description}</td>
                   <td className="px-4 py-3 text-sm font-semibold text-gray-900">
-                    ₹{(bill.amountDue || 0).toLocaleString()}
+                    {formatBillAmount(bill.amountDue, bill.currency, bill.purpose)}
                   </td>
                   <td className="px-4 py-3 text-sm text-teal-700 font-semibold">
-                    ₹{(bill.amountPaid || 0).toLocaleString()}
+                    {formatBillAmount(bill.amountPaid, bill.currency, bill.purpose)}
                   </td>
                   <td className="px-4 py-3 text-sm text-gray-600">
                     {bill.dueDate ? new Date(bill.dueDate).toLocaleDateString() : '—'}

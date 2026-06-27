@@ -34,17 +34,18 @@ const resolveBillStatus = (bill) => {
 // Route 1: Create/Generate New Bill
 router.post('/bills', ...requireFinanceAdmin, async (req, res) => {
   try {
-    const { 
-      studentId, 
-      description, 
+    const {
+      studentId,
+      description,
       amountDue,
       amountPaid = 0,
-      newBill, 
-      studentName, 
+      newBill,
+      studentName,
       url,
       purpose,
       paymentMode,
       accountName,
+      currency,
       // financeInfo,
       // fatherName,
     } = req.body;
@@ -88,7 +89,8 @@ router.post('/bills', ...requireFinanceAdmin, async (req, res) => {
       issuedBy,
       paymentMode,
       accountName,
-      url: url || null, // Store the receipt URL
+      currency: currency || null,
+      url: url || null,
     });
 
     // Update student's financeInfo to track payments

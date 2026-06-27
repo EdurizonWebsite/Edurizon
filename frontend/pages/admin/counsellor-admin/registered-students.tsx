@@ -24,8 +24,8 @@ import UploadIcon from '@mui/icons-material/Upload';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import axios from 'axios';
 import { baseUrl } from '@/lib/baseUrl';
-import { COUNTRIES, getUniversitiesByCountry } from '@/lib/constants';
 import { Student } from '@/utils/studentFilter';
+import { useStaticAttributes } from '@/context/StaticAttributesContext';
 
 interface RegisteredStudent {
   _id: string;
@@ -88,6 +88,23 @@ const navItems = [
 
 const RegisteredStudents = () => {
   const { debouncedSearchQuery } = useSearch();
+  const {
+    countries,
+    universities,
+    addCountry,
+    removeCountry,
+    addUniversity,
+    removeUniversity,
+    refresh: refreshStaticAttrs,
+  } = useStaticAttributes();
+
+  useEffect(() => { refreshStaticAttrs(); }, []);
+
+  // Manage attributes panel state
+  const [manageOpen, setManageOpen] = useState(false);
+  const [newCountryName, setNewCountryName] = useState('');
+  const [newUniversityName, setNewUniversityName] = useState('');
+  const [savingAttr, setSavingAttr] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [activeTab, setActiveTab] = useState('all');
@@ -241,18 +258,16 @@ const RegisteredStudents = () => {
     }
   };
 
-  // Get available universities based on selected country
+  // Get available universities — always use the full dynamic list from context
   const availableUniversities = useMemo(() => {
-    if (selectedCountry) {
-      return getUniversitiesByCountry(selectedCountry);
-    }
-    // If no country selected, return all unique universities from all students
+    if (universities.length > 0) return [...universities].sort();
+    // Fallback: collect unique universities from enrolled students
     const allUniversities = new Set<string>();
     students.forEach(student => {
       (student.enrolledUniversity || []).forEach((uni: string) => allUniversities.add(uni));
     });
     return Array.from(allUniversities).sort();
-  }, [selectedCountry, students]);
+  }, [universities, students]);
 
   const handleOpenNotificationModal = () => {
     setIsModalOpen(true);
@@ -413,6 +428,58 @@ const RegisteredStudents = () => {
     }
   };
 
+  const handleAddCountry = async () => {
+    if (!newCountryName.trim()) return;
+    setSavingAttr(true);
+    try {
+      await addCountry(newCountryName.trim());
+      setNewCountryName('');
+      toast.success('Country added');
+    } catch (err: any) {
+      toast.error(err?.response?.data?.message || 'Failed to add country');
+    } finally {
+      setSavingAttr(false);
+    }
+  };
+
+  const handleRemoveCountry = async (name: string) => {
+    setSavingAttr(true);
+    try {
+      await removeCountry(name);
+      toast.success('Country removed');
+    } catch {
+      toast.error('Failed to remove country');
+    } finally {
+      setSavingAttr(false);
+    }
+  };
+
+  const handleAddUniversity = async () => {
+    if (!newUniversityName.trim()) return;
+    setSavingAttr(true);
+    try {
+      await addUniversity(newUniversityName.trim());
+      setNewUniversityName('');
+      toast.success('University added');
+    } catch (err: any) {
+      toast.error(err?.response?.data?.message || 'Failed to add university');
+    } finally {
+      setSavingAttr(false);
+    }
+  };
+
+  const handleRemoveUniversity = async (name: string) => {
+    setSavingAttr(true);
+    try {
+      await removeUniversity(name);
+      toast.success('University removed');
+    } catch {
+      toast.error('Failed to remove university');
+    } finally {
+      setSavingAttr(false);
+    }
+  };
+
   // Get stage color
   const getStageColor = (stage: string) => {
     switch (stage) {
@@ -511,6 +578,91 @@ const RegisteredStudents = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Manage Countries & Universities Panel */}
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200">
+          <button
+            type="button"
+            className="w-full flex items-center justify-between px-6 py-4"
+            onClick={() => setManageOpen(prev => !prev)}
+          >
+            <div>
+              <p className="text-base font-semibold text-gray-900 text-left">Manage Countries &amp; Universities</p>
+              <p className="text-xs text-gray-500 text-left">Add or remove countries and universities available in dropdowns</p>
+            </div>
+            <svg className={`w-5 h-5 text-gray-500 transition-transform ${manageOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          {manageOpen && (
+            <div className="border-t border-gray-100 px-6 py-5 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Countries */}
+              <div>
+                <h4 className="text-sm font-semibold text-gray-700 mb-3">Countries</h4>
+                <div className="flex gap-2 mb-3">
+                  <input
+                    type="text"
+                    value={newCountryName}
+                    onChange={e => setNewCountryName(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && handleAddCountry()}
+                    placeholder="Country name"
+                    className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+                  />
+                  <button
+                    onClick={handleAddCountry}
+                    disabled={savingAttr || !newCountryName.trim()}
+                    className="px-3 py-2 bg-teal-600 text-white text-sm rounded-lg hover:bg-teal-700 disabled:opacity-50"
+                  >
+                    Add
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto">
+                  {countries.length === 0 && <p className="text-xs text-gray-400">No countries yet</p>}
+                  {countries.map(c => (
+                    <span key={c} className="inline-flex items-center gap-1 px-2.5 py-1 bg-blue-50 text-blue-700 border border-blue-200 rounded-full text-xs">
+                      {c}
+                      <button onClick={() => handleRemoveCountry(c)} disabled={savingAttr} className="ml-1 text-blue-400 hover:text-red-500">✕</button>
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Universities */}
+              <div>
+                <h4 className="text-sm font-semibold text-gray-700 mb-3">Universities</h4>
+                <div className="flex gap-2 mb-3">
+                  <input
+                    type="text"
+                    value={newUniversityName}
+                    onChange={e => setNewUniversityName(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && handleAddUniversity()}
+                    placeholder="University name"
+                    className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"
+                  />
+                  <button
+                    onClick={handleAddUniversity}
+                    disabled={savingAttr || !newUniversityName.trim()}
+                    className="px-3 py-2 bg-teal-600 text-white text-sm rounded-lg hover:bg-teal-700 disabled:opacity-50"
+                  >
+                    Add
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto">
+                  {universities.length === 0 && <p className="text-xs text-gray-400">No universities yet</p>}
+                  {universities.map(u => (
+                    <span key={u} className="inline-flex items-center gap-1 px-2.5 py-1 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-xs">
+                      {u}
+                      <button onClick={() => handleRemoveUniversity(u)} disabled={savingAttr} className="ml-1 text-purple-400 hover:text-red-500">✕</button>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -669,7 +821,7 @@ const RegisteredStudents = () => {
                     className="w-full rounded-xl border border-gray-200 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-all p-2.5 text-sm text-gray-700"
                   >
                     <option value="">All Countries</option>
-                    {COUNTRIES.map(country => (
+                    {countries.map(country => (
                       <option key={country} value={country}>{country}</option>
                     ))}
                   </select>

@@ -16,6 +16,7 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import { ThemeProvider } from "@/context/themeContext";
 import { SearchProvider } from "@/context/SearchContext";
+import { StaticAttributesProvider } from "@/context/StaticAttributesContext";
 import Head from "next/head";
 import axios from "axios";
 import { baseUrl } from "@/lib/baseUrl";
@@ -246,6 +247,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
 
       <ThemeProvider>
+        <StaticAttributesProvider>
         <SearchProvider>
           {/* Loading Overlay */}
           {isLoading && (
@@ -270,6 +272,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           )}
           </div>
         </SearchProvider>
+        </StaticAttributesProvider>
       </ThemeProvider>
     </>
   );

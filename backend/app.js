@@ -21,6 +21,7 @@ const partneredUniversitiesRoutes = require('./routes/partneredUniversitiesRoute
 const attendanceRoutes = require('./routes/attendanceRoutes')
 const adminTaskRoutes = require('./routes/adminTaskRoutes');
 const financeRoutes = require('./routes/financeRoutes');
+const staticAttributeRoutes = require('./routes/staticAttributeRoutes');
 const http = require('http');
 const { Server } = require('socket.io');
 const ChatMessage = require('./models/chatMessageModel');
@@ -485,6 +486,7 @@ app.use('/api/student', studentRoutes);
 app.use('/api/leads', leadsRoutes);
 app.use('/api/partnered-universities', partneredUniversitiesRoutes);
 app.use('/api/attendance', attendanceRoutes);
+app.use('/api/static-attributes', staticAttributeRoutes);
 
 
 // Use the HTTP server for listening

@@ -118,6 +118,16 @@ const userSchema = mongoose.Schema(
         default: 0,
         min: 0
       },
+      otcCurrency: {
+        type: String,
+        required: false,
+        default: 'USD'
+      },
+      processingCurrency: {
+        type: String,
+        required: false,
+        default: 'INR'
+      },
       inclusions: {
         visa: {
           type: Boolean,
