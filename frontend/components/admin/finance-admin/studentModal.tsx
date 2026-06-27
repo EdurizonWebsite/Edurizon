@@ -1,8 +1,9 @@
 import React from 'react'
 import renderStatusBadge from './renderStatusBadge'
 
-function formatBillAmount(amount: number, currency: string | null | undefined, purpose: string) {
-  const code = (currency || (purpose === 'One Time Charge' ? 'USD' : 'INR')).toUpperCase();
+function formatBillAmount(amount: number, currency: string | null | undefined, purpose: string | string[]) {
+  const purposeStr = Array.isArray(purpose) ? String(purpose[0] || '').trim() : String(purpose || '').trim();
+  const code = (currency || (purposeStr === 'One Time Charge' ? 'USD' : 'INR')).toUpperCase();
   const num = Number(amount) || 0;
   if (code === 'INR') return `₹${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;

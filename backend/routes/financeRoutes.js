@@ -175,6 +175,38 @@ router.get('/bills/all', ...requireFinanceAdmin, async (_req, res) => {
   }
 });
 
+// Route 2b: Paid summary aggregated by purpose + currency (for dashboard cards)
+router.get('/bills/paid-summary', ...requireFinanceAdmin, async (_req, res) => {
+  try {
+    const raw = await FinanceBill.aggregate([
+      // Normalise purpose: unwind handles both string storage and legacy array storage
+      { $addFields: { purposeNorm: { $cond: { if: { $isArray: '$purpose' }, then: { $arrayElemAt: ['$purpose', 0] }, else: '$purpose' } } } },
+      { $match: { amountPaid: { $gt: 0 } } },
+      {
+        $group: {
+          _id: { purpose: '$purposeNorm', currency: { $ifNull: ['$currency', 'UNKNOWN'] } },
+          totalPaid: { $sum: '$amountPaid' },
+        },
+      },
+    ]);
+
+    // Shape into { otc: { USD: 1000 }, processing: { INR: 50000 } }
+    const otc = {};
+    const processing = {};
+    raw.forEach(({ _id, totalPaid }) => {
+      const purpose = String(_id.purpose || '').trim();
+      const currency = String(_id.currency || '').toUpperCase();
+      if (purpose === 'One Time Charge') otc[currency] = (otc[currency] || 0) + totalPaid;
+      else if (purpose === 'Processing Fee') processing[currency] = (processing[currency] || 0) + totalPaid;
+    });
+
+    res.json({ success: true, data: { otc, processing } });
+  } catch (error) {
+    console.error('Error fetching paid summary:', error);
+    res.status(500).json({ success: false, message: 'Failed to fetch paid summary' });
+  }
+});
+
 // Route 3: Get Pending Bills List
 router.get('/bills/pending', ...requireFinanceAdmin, async (_req, res) => {
   try {

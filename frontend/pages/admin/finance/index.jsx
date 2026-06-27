@@ -38,6 +38,7 @@ const FinanceDashboard = () => {
   const [students, setStudents] = useState([]);
   const [allBills, setAllBills] = useState([]);
   const [pendingBills, setPendingBills] = useState([]);
+  const [paidSummary, setPaidSummary] = useState({ otc: {}, processing: {} });
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -98,15 +99,17 @@ const FinanceDashboard = () => {
     setError('');
     try {
       const headers = authHeaders();
-      const [studentsRes, billsRes, pendingRes] = await Promise.all([
+      const [studentsRes, billsRes, pendingRes, paidRes] = await Promise.all([
         axios.get(`${baseUrl}/api/admin/finance/students/all`, { headers }),
         axios.get(`${baseUrl}/api/admin/finance/bills/all`, { headers }),
         axios.get(`${baseUrl}/api/admin/finance/bills/pending`, { headers }),
+        axios.get(`${baseUrl}/api/admin/finance/bills/paid-summary`, { headers }),
       ]);
 
       setStudents(studentsRes.data?.data || []);
       setAllBills(billsRes.data?.data || []);
       setPendingBills(pendingRes.data?.data || []);
+      setPaidSummary(paidRes.data?.data || { otc: {}, processing: {} });
     } catch (err) {
       console.error('Failed to load finance dashboard:', err);
       const message = err?.response?.data?.message || 'Failed to load finance data';
@@ -122,21 +125,44 @@ const FinanceDashboard = () => {
   }, []);
 
   const summaryStats = useMemo(() => {
-    const totalOutstanding = pendingBills.reduce((sum, bill) => {
-      const outstanding = Math.max((bill.amountDue || 0) - (bill.amountPaid || 0), 0);
-      return sum + outstanding;
-    }, 0);
+    // ── Billed: from each student's financeInfo ──────────────────────────
+    const otcBilled = {};
+    const procBilled = {};
 
-    const totalPaid = allBills.reduce((sum, bill) => sum + (bill.amountPaid || 0), 0);
-    const totalBilled = allBills.reduce((sum, bill) => sum + (bill.amountDue || 0), 0);
+    students.forEach((student) => {
+      const fi = student.financeInfo || {};
+
+      const otcCur = (fi.otcCurrency || 'USD').toUpperCase();
+      const otcAmt = fi.oneTimeCharge || fi.totalOtcUsd || 0;
+      if (otcAmt > 0) otcBilled[otcCur] = (otcBilled[otcCur] || 0) + otcAmt;
+
+      const procCur = (fi.processingCurrency || 'INR').toUpperCase();
+      const procAmt = fi.processingCharge || fi.totalProcessingInr || 0;
+      if (procAmt > 0) procBilled[procCur] = (procBilled[procCur] || 0) + procAmt;
+    });
+
+    // ── Paid: from server-side aggregation of FinanceBill collection ─────
+    const otcPaid = paidSummary.otc || {};
+    const procPaid = paidSummary.processing || {};
+
+    // ── Merge billed + paid → pending per currency ────────────────────────
+    const merge = (billed, paid) => {
+      const currencies = new Set([...Object.keys(billed), ...Object.keys(paid)]);
+      const result = {};
+      currencies.forEach((cur) => {
+        const b = billed[cur] || 0;
+        const p = paid[cur] || 0;
+        result[cur] = { billed: b, paid: p, pending: Math.max(b - p, 0) };
+      });
+      return result;
+    };
 
     return {
       totalStudents: students.length,
-      totalOutstanding,
-      totalPaid,
-      totalBilled,
+      otcByCurrency: merge(otcBilled, otcPaid),
+      processingByCurrency: merge(procBilled, procPaid),
     };
-  }, [students.length, pendingBills, allBills]);
+  }, [students, paidSummary]);
 
   const pendingTabRows = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();

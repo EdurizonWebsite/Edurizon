@@ -138,7 +138,8 @@ const FinanceStudentTrackingPage = () => {
       }
 
       const entry = map.get(key);
-      const isOtcBill = bill.purpose === 'One Time Charge';
+      const purposeStr = Array.isArray(bill.purpose) ? String(bill.purpose[0] || '').trim() : String(bill.purpose || '').trim();
+      const isOtcBill = purposeStr === 'One Time Charge';
 
       if (isOtcBill) {
         entry.hasOtcBills = true;
@@ -448,7 +449,8 @@ const FinanceStudentTrackingPage = () => {
   };
 
   const formatBillAmount = (amount, currency, purpose) => {
-    const code = (currency || (purpose === 'One Time Charge' ? 'USD' : 'INR')).toUpperCase();
+    const purposeStr = Array.isArray(purpose) ? String(purpose[0] || '').trim() : String(purpose || '').trim();
+    const code = (currency || (purposeStr === 'One Time Charge' ? 'USD' : 'INR')).toUpperCase();
     const num = Number(amount) || 0;
     if (code === 'INR') return `₹${num.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     return `${code} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;

@@ -45,7 +45,8 @@ const financeBillSchema = new Schema(
       default:"Online mode"
     },
     purpose: {
-      type: ['Processing Fee', 'One Time Charge'],
+      type: String,
+      enum: ['Processing Fee', 'One Time Charge'],
       required: true,
       trim: true,
     },
