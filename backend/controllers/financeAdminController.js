@@ -184,6 +184,7 @@ const billStructure = async (req, res) => {
       country,
       status,
       currency = 'INR',
+      chargeType,
       purpose,
       fatherName,
       programme,
@@ -210,26 +211,24 @@ const billStructure = async (req, res) => {
       });
     }
 
-    // Get finance tracking info using the helper function
-    const financeTracking = await getFinanceTrackingInfo(studentId);
-    const isOtcPayment = purpose && (purpose.toLowerCase().includes('otc') || purpose.toLowerCase().includes('one time'));
-    let pendingProcessingInr = financeTracking.pendingProcessingInr;
-    let pendingOtc = financeTracking.pendingOtcUsd;
-    if (isOtcPayment) {
-      pendingOtc = pendingOtc - paymentAmount;
-    } else {
-      pendingProcessingInr = pendingProcessingInr - paymentAmount;
-    }
-
     // Read per-student currency settings from financeInfo
     const otcCurrencyLabel = student.financeInfo?.otcCurrency || 'USD';
     const processingCurrencyLabel = student.financeInfo?.processingCurrency || 'INR';
-    
-    // For pending calculation, we'll pass the values and let PDF generator adjust for current payment
-    // The otcPaid value should be the amount BEFORE this current payment
-    const otcPaidBeforeCurrent = isOtcPayment 
-      ? Math.max(0, financeTracking.otcPaid - Number(paymentAmount))
-      : financeTracking.otcPaid;
+
+    // Get finance tracking info using the helper function
+    const financeTracking = await getFinanceTrackingInfo(studentId);
+    const normalizedChargeType = String(chargeType || '').trim().toLowerCase();
+    const normalizedPurpose = String(purpose || '').trim().toLowerCase();
+    const normalizedCurrency = String(currency || '').trim().toUpperCase();
+    const normalizedOtcCurrency = String(otcCurrencyLabel || 'USD').trim().toUpperCase();
+    const isOtcPayment =
+      normalizedChargeType === 'otc' ||
+      normalizedChargeType === 'one time charge' ||
+      normalizedPurpose.includes('otc') ||
+      normalizedPurpose.includes('one time') ||
+      normalizedCurrency === normalizedOtcCurrency;
+    const pendingProcessingInr = financeTracking.pendingProcessingInr;
+    const pendingOtc = financeTracking.pendingOtcUsd;
 
     // Fetch bill documents from database using bill IDs
     const billsData = await getBillsData(financeInfo?.bills || []);

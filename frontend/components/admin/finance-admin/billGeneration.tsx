@@ -98,6 +98,22 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         const currency = billForm.currency;
         const purpose = billForm.purpose || (billForm.chargeType === 'otc' ? 'OTC Payment' : 'Processing Fee Payment');
 
+        const mappedPurpose = billForm.chargeType === 'otc' ? 'One Time Charge' : 'Processing Fee';
+
+        const payload = {
+        studentId: billForm.studentId,
+        amountDue: Number(billForm.amountPaid),
+        amountPaid: Number(billForm.amountPaid),
+        description: billForm.description,
+        studentName: billForm.studentName,
+        purpose: mappedPurpose,
+        currency: billForm.currency,
+        paymentMode:billForm.paymentMode,
+        accountName:billForm.accountDetail
+        };
+
+        const billResponse = await axios.post(`${baseUrl}/api/admin/finance/bills`, payload, { headers });
+
         const receiptPayload = {
           studentId: billForm.studentId,
           paymentAmount: Number(billForm.amountPaid),
@@ -107,6 +123,7 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
           country: selectedStudent!.enrolledCountry,
           status:'completed',
           currency: currency,
+          chargeType: billForm.chargeType,
           purpose: purpose,
           fatherName:selectedStudent!.fatherName,
           programme:selectedStudent!.intendedCourse.toLocaleUpperCase(),
@@ -117,22 +134,12 @@ const BillGeneration = ({ fetchFinanceData,  students = [] }: { fetchFinanceData
         };
         const res:any= await axios.post(`${baseUrl}/api/admin/finance/bills/generate-receipt`, receiptPayload, { headers })
 
-        const mappedPurpose = billForm.chargeType === 'otc' ? 'One Time Charge' : 'Processing Fee';
+        await axios.patch(
+          `${baseUrl}/api/admin/finance/bills/${billResponse.data?.data?._id}/url`,
+          { url: res.data.url },
+          { headers }
+        );
 
-        const payload = {
-        studentId: billForm.studentId,
-        amountDue: Number(billForm.amountPaid),
-        amountPaid: Number(billForm.amountPaid),
-        description: billForm.description,
-        studentName: billForm.studentName,
-        url: res.data.url,
-        purpose: mappedPurpose,
-        currency: billForm.currency,
-        paymentMode:billForm.paymentMode,
-        accountName:billForm.accountDetail
-        };
-
-        await axios.post(`${baseUrl}/api/admin/finance/bills`, payload, { headers });
         toast.success('Payment receipt generated successfully');
         setBillForm({
         studentId: '',

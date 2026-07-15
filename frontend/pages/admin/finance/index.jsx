@@ -260,7 +260,12 @@ const FinanceDashboard = () => {
         paymentAmount: Number(paymentModal.amount),
         paymentNumber: 1,
         studentName: bill.data.data.studentName,
-        university: bill.data.data.university,
+        currency: bill.data.data.currency || bill.data.data.studentCurrency || 'INR',
+        chargeType: bill.data.data.purpose === 'One Time Charge' ? 'otc' : 'processing',
+        purpose: bill.data.data.purpose,
+        accountDetail: bill.data.data.accountName,
+        paymentMode: bill.data.data.paymentMode,
+        description: bill.data.data.description,
         status: 'completed'
       };
 

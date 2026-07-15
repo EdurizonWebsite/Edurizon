@@ -372,6 +372,52 @@ router.patch('/bills/:billId/payment', ...requireFinanceAdmin, async (req, res) 
   }
 });
 
+// Route 5b: Update a bill's receipt URL after receipt generation
+router.patch('/bills/:billId/url', ...requireFinanceAdmin, async (req, res) => {
+  try {
+    const { billId } = req.params;
+    const { url } = req.body;
+
+    if (!billId) {
+      return res.status(400).json({
+        success: false,
+        message: 'billId param is required',
+      });
+    }
+
+    if (!url) {
+      return res.status(400).json({
+        success: false,
+        message: 'url is required',
+      });
+    }
+
+    const bill = await FinanceBill.findByIdAndUpdate(
+      billId,
+      { url },
+      { new: true }
+    );
+
+    if (!bill) {
+      return res.status(404).json({
+        success: false,
+        message: 'Finance bill not found',
+      });
+    }
+
+    return res.json({
+      success: true,
+      data: bill,
+    });
+  } catch (error) {
+    console.error('Error updating bill receipt url:', error);
+    return res.status(500).json({
+      success: false,
+      message: 'Failed to update bill receipt url',
+    });
+  }
+});
+
 // Route 6: Get List of All Students
 router.get('/students/all', ...requireFinanceAdmin, async (_req, res) => {
   try {
