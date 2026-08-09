@@ -26,7 +26,7 @@ const leadsSchema = mongoose.Schema(
     },
     leadType:{
         type:String,
-        enum: ['pending','follow-up','negative','completed','registered','positive-plus'],
+        enum: ['pending','follow-up','negative','completed','registered','positive-plus','2027-lead'],
         default: 'pending'
     },
     callingStatus:{

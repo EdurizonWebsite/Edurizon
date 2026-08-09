@@ -18,7 +18,7 @@ interface Lead {
   courseName: string;
   source?: string;
   callingStatus: 'pending' | 'follow-up' | 'no-answer' | 'not-interested';
-  leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered' | 'positive-plus';
+  leadType: 'pending' | 'follow-up' | 'negative' | 'completed' | 'registered' | 'positive-plus' | '2027-lead';
   leadStatus: 'pending' | 'hot' | 'warm' | 'cold' | 'negative' | 'completed' | 'positive-plus';
   remark: string;
   city?: string;
@@ -271,6 +271,7 @@ const CallingRecords = () => {
     { key: 'completed', label: 'Positive', count: leads.filter(lead => lead.leadType === 'completed').length },
     { key: 'positive-plus', label: 'Positive Plus', count: leads.filter(lead => lead.leadType === 'positive-plus').length },
     { key: 'registered', label: 'Registered', count: leads.filter(lead => lead.leadType === 'registered').length },
+    { key: '2027-lead', label: '2027 Lead', count: leads.filter(lead => lead.leadType === '2027-lead').length },
   ];
 
   // Table headers
@@ -632,13 +633,15 @@ const CallingRecords = () => {
             case 'negative': return 'text-red-600 bg-red-50 border-red-200';
             case 'completed': return 'text-green-600 bg-green-50 border-green-200';
             case 'registered': return 'text-purple-600 bg-purple-50 border-purple-200';
+            case 'positive-plus': return 'text-pink-600 bg-pink-50 border-pink-200';
+            case '2027-lead': return 'text-teal-600 bg-teal-50 border-teal-200';
             default: return 'text-gray-500 bg-gray-50 border-gray-200';
           }
         };
 
         return (
           <div className="flex items-center space-x-2">
-            <div className={`w-2 h-2 rounded-full ${lead.leadType === 'pending' ? 'bg-yellow-400' : lead.leadType === 'follow-up' ? 'bg-blue-400' : lead.leadType === 'negative' ? 'bg-red-400' : lead.leadType === 'completed' ? 'bg-green-400' : 'bg-purple-400'}`}></div>
+            <div className={`w-2 h-2 rounded-full ${lead.leadType === 'pending' ? 'bg-yellow-400' : lead.leadType === 'follow-up' ? 'bg-blue-400' : lead.leadType === 'negative' ? 'bg-red-400' : lead.leadType === 'completed' ? 'bg-green-400' : lead.leadType === 'positive-plus' ? 'bg-pink-400' : lead.leadType === '2027-lead' ? 'bg-teal-400' : 'bg-purple-400'}`}></div>
             <select
               value={lead.leadType}
               onChange={(e) => handleStatusUpdate(lead._id, 'leadType', e.target.value)}
@@ -650,6 +653,7 @@ const CallingRecords = () => {
               <option value="completed" className="bg-white text-green-600">✅ Positive</option>
               <option value="positive-plus" className="bg-white text-pink-600">✅ Positive Plus</option>
               <option value="registered" className="bg-white text-purple-600">🎓 Registered</option>
+              <option value="2027-lead" className="bg-white text-teal-600">📅 2027 Lead</option>
             </select>
           </div>
         );
@@ -1134,6 +1138,10 @@ const CallingRecords = () => {
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 rounded-full bg-purple-400"></div>
                   <span className="text-sm text-gray-600">Registered</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 rounded-full bg-teal-400"></div>
+                  <span className="text-sm text-gray-600">2027 Lead</span>
                 </div>
               </div>
             </div>

@@ -877,6 +877,7 @@ const CallingDetails = ()  => {
                         <option value="negative">Negative</option>
                         <option value="completed">Completed</option>
                         <option value="registered">Registered</option>
+                        <option value="2027-lead">2027 Lead</option>
                       </select>
                     </div>
                     <div>

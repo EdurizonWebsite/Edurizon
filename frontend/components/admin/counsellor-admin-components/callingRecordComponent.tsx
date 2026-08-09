@@ -231,7 +231,11 @@ const CallingRecordComponent = ()  => {
             render: (lead:any) => {
               const type = lead.leadType || 'none';
               const label = type !== 'none'
-                ? type=='completed' ? 'Positive' : type.charAt(0).toUpperCase() + type.slice(1)
+                ? type === 'completed'
+                  ? 'Positive'
+                  : type === '2027-lead'
+                    ? '2027 Lead'
+                    : type.charAt(0).toUpperCase() + type.slice(1)
                 : 'None';
 
               const getLeadStatusClasses = (status: string) => {
@@ -246,6 +250,10 @@ const CallingRecordComponent = ()  => {
                     return 'text-green-700 bg-green-50 border-green-200';
                   case 'registered':
                     return 'text-purple-700 bg-purple-50 border-purple-200';
+                  case 'positive-plus':
+                    return 'text-pink-700 bg-pink-50 border-pink-200';
+                  case '2027-lead':
+                    return 'text-teal-700 bg-teal-50 border-teal-200';
                   case 'warm':
                     return 'text-orange-700 bg-orange-50 border-orange-200';
                   case 'cold':
@@ -1147,6 +1155,8 @@ const CallingRecordComponent = ()  => {
                         <option value="follow-up">Follow Up</option>
                         <option value="negative">Negative</option>
                         <option value="completed">Completed</option>
+                        <option value="registered">Registered</option>
+                        <option value="2027-lead">2027 Lead</option>
                       </select>
                     </div>
                     <div>

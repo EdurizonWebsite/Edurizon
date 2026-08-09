@@ -235,7 +235,7 @@ const deleteLead = async (req, res) => {
 const getLeadsByStatus = async (req, res) => {
   try {
     const { status } = req.params;
-    const validStatuses = ['pending', 'follow-up', 'negative', 'completed', 'registered', 'hot', 'warm', 'cold', 'positive-plus'];
+    const validStatuses = ['pending', 'follow-up', 'negative', 'completed', 'registered', 'hot', 'warm', 'cold', 'positive-plus', '2027-lead'];
     
     if (!validStatuses.includes(status)) {
       return res.status(400).json({
