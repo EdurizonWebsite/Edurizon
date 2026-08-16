@@ -30,10 +30,17 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [transitionEnd, setTransitionEnd] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [indiaDropdownVisible, setIndiaDropdownVisible] = useState(false);
   const [studyDestinationHover, setStudyDestinationHover] = useState(0);
+  const mbbsIndiaLinks = [
+    { name: "India", href: "/mbbs-in-india" },
+    { name: "Deemed University", href: "/mbbs-in-india/deemed-universities" },
+    { name: "State Wise Institutes", href: "/mbbs-in-india/state-wise-institutes" },
+  ];
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
+    { name: "MBBS in India", href: "/mbbs-in-india", simpleDropdown: true },
     { name: "Study Destinations", href: "/study-destinations?category=Destination", dropdown: true , borderTop: true },
     { name: "Blogs", href: "/blog", external: false },
     { name: "NMC Guidelines", href: "/nmc-guidelines" },
@@ -44,7 +51,7 @@ const Navbar = () => {
 
   
   const studyDestinations1=[
-    {name:"MBBS in India", href:"/study-destinations/study-mbbs-in-india",flag:"/assets/Images/country-flag/indian-flag.png"},
+    {name:"MBBS in India", href:"/mbbs-in-india",flag:"/assets/Images/country-flag/indian-flag.png"},
     {name:"MBBS in Russia", href:"/study-destinations/study-mbbs-in-russia",flag:"/assets/Images/country-flag/russia.png"},
     {name:"MBBS in Georgia", href:"/study-destinations/study-mbbs-in-georgia",flag:"/assets/Images/country-flag/georgia.png"},
     {name:"MBBS in Tajikistan", href:"/study-destinations/study-mbbs-in-tajikistan",flag:"/assets/Images/country-flag/tajikistan.png"},
@@ -212,7 +219,49 @@ const Navbar = () => {
        {/* Main Navigation */}
        <div id="navbaritems" className="hidden md:flex gap-[1.5vw]">
             {menuItems.map((item, index) =>
-              item.dropdown ? (
+              item.simpleDropdown ? (
+        <div
+          key={index}
+          className="relative"
+          onMouseEnter={() => {
+            setHovered(index);
+            setIndiaDropdownVisible(true);
+          }}
+          onMouseLeave={() => {
+            setHovered(-1);
+            setIndiaDropdownVisible(false);
+          }}
+        >
+          <button type="button">
+            <TransitionLink href={item.href}>
+              <motion.div className="dark:text-white">
+                {item.name}
+                <div
+                  className={`border-t-[4px] border-orangeChosen transition-all duration-500 ease-in-out rounded-xl ${
+                    hovered === index ? "w-full" : "w-0"
+                  }`}
+                />
+              </motion.div>
+            </TransitionLink>
+          </button>
+          {indiaDropdownVisible && (
+            <div className="absolute left-0 top-full pt-2 z-50">
+              <div className="min-w-[14rem] bg-white dark:bg-black rounded-[.875vw] border border-gray-300 shadow-lg py-2">
+                {mbbsIndiaLinks.map((link) => (
+                  <TransitionLink href={link.href} key={link.href}>
+                    <div
+                      onClick={() => setIndiaDropdownVisible(false)}
+                      className="px-4 py-2 text-regularText font-bold hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer whitespace-nowrap"
+                    >
+                      {link.name}
+                    </div>
+                  </TransitionLink>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+              ) : item.dropdown ? (
         <div
 key={index}
           className=""
@@ -474,9 +523,24 @@ key={index}
           {menuItems.map((item, index) => (
             
             <div key={index} className="mx-[4vw] py-[4vw] " style={item.borderTop ? {borderTop: '1.5px solid #cac4d0'} : {}}>
+              {item.simpleDropdown ? (
+                <div>
+                  <TransitionLink href={item.href}>
+                    <span onClick={() => setIsMenuOpen(false)}>{item.name}</span>
+                  </TransitionLink>
+                  <div className="mt-[2vw] ml-[3vw] flex flex-col gap-[2vw]">
+                    {mbbsIndiaLinks.map((link) => (
+                      <TransitionLink href={link.href} key={link.href}>
+                        <span onClick={() => setIsMenuOpen(false)}>{link.name}</span>
+                      </TransitionLink>
+                    ))}
+                  </div>
+                </div>
+              ) : (
               <TransitionLink href={item.href} >
               <span onClick={() => setIsMenuOpen(false)}>{item.name}</span>
               </TransitionLink>
+              )}
             </div>
           ))}
         </div>

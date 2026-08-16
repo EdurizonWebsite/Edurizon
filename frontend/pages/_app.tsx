@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "@/styles/old.css";
 import "@/styles/owl.carousel.min.css";
+import "@/styles/mbbs-in-india.css";
 import { helvetica,poppins } from "../styles/fonts";
 import { useEffect, useState, useMemo, useRef } from "react";
 import type { AppProps } from "next/app";

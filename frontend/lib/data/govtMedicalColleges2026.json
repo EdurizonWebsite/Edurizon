@@ -1,0 +1,4511 @@
+{
+  "totals": {
+    "colleges": 456,
+    "seats": 63511,
+    "states": 33
+  },
+  "stateSummary": [
+    {
+      "state": "Andaman & Nicobar Islands",
+      "colleges": 1,
+      "seats": 114
+    },
+    {
+      "state": "Andhra Pradesh",
+      "colleges": 19,
+      "seats": 3415
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "colleges": 1,
+      "seats": 100
+    },
+    {
+      "state": "Assam",
+      "colleges": 16,
+      "seats": 1975
+    },
+    {
+      "state": "Bihar",
+      "colleges": 13,
+      "seats": 1645
+    },
+    {
+      "state": "Chandigarh",
+      "colleges": 1,
+      "seats": 150
+    },
+    {
+      "state": "Chattisgarh",
+      "colleges": 11,
+      "seats": 1555
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "colleges": 1,
+      "seats": 177
+    },
+    {
+      "state": "Delhi",
+      "colleges": 9,
+      "seats": 1297
+    },
+    {
+      "state": "Goa",
+      "colleges": 1,
+      "seats": 200
+    },
+    {
+      "state": "Gujarat",
+      "colleges": 24,
+      "seats": 4325
+    },
+    {
+      "state": "Haryana",
+      "colleges": 8,
+      "seats": 1060
+    },
+    {
+      "state": "Himachal Pradesh",
+      "colleges": 7,
+      "seats": 820
+    },
+    {
+      "state": "Jammu & Kashmir",
+      "colleges": 11,
+      "seats": 1525
+    },
+    {
+      "state": "Jharkhand",
+      "colleges": 7,
+      "seats": 855
+    },
+    {
+      "state": "Karnataka",
+      "colleges": 23,
+      "seats": 4100
+    },
+    {
+      "state": "Kerala",
+      "colleges": 14,
+      "seats": 1855
+    },
+    {
+      "state": "Madhya Pradesh",
+      "colleges": 21,
+      "seats": 3025
+    },
+    {
+      "state": "Maharashtra",
+      "colleges": 43,
+      "seats": 6075
+    },
+    {
+      "state": "Manipur",
+      "colleges": 3,
+      "seats": 375
+    },
+    {
+      "state": "Meghalaya",
+      "colleges": 2,
+      "seats": 100
+    },
+    {
+      "state": "Mizoram",
+      "colleges": 1,
+      "seats": 100
+    },
+    {
+      "state": "Nagaland",
+      "colleges": 1,
+      "seats": 100
+    },
+    {
+      "state": "Odisha",
+      "colleges": 15,
+      "seats": 1925
+    },
+    {
+      "state": "Pondicherry",
+      "colleges": 2,
+      "seats": 423
+    },
+    {
+      "state": "Punjab",
+      "colleges": 6,
+      "seats": 1000
+    },
+    {
+      "state": "Rajasthan",
+      "colleges": 33,
+      "seats": 4480
+    },
+    {
+      "state": "Tamil Nadu",
+      "colleges": 39,
+      "seats": 5200
+    },
+    {
+      "state": "Telangana",
+      "colleges": 37,
+      "seats": 4390
+    },
+    {
+      "state": "Tripura",
+      "colleges": 1,
+      "seats": 150
+    },
+    {
+      "state": "Uttar Pradesh",
+      "colleges": 51,
+      "seats": 5925
+    },
+    {
+      "state": "Uttarakhand",
+      "colleges": 6,
+      "seats": 750
+    },
+    {
+      "state": "West Bengal",
+      "colleges": 28,
+      "seats": 4325
+    }
+  ],
+  "byState": [
+    {
+      "state": "Andaman & Nicobar Islands",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Andaman & Nicobar Islands",
+          "college": "Andaman & Nicobar Islands Institute of Medical Sciences, Port Blair",
+          "university": "Pondicherry University",
+          "management": "Govt.",
+          "estb": 2015,
+          "seats": 114
+        }
+      ],
+      "seats": 114,
+      "collegeCount": 1
+    },
+    {
+      "state": "Andhra Pradesh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Andhra Pradesh",
+          "college": "ACSR Government Medical College Nellore",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2014,
+          "seats": 175
+        },
+        {
+          "sno": 2,
+          "state": "Andhra Pradesh",
+          "college": "All India Institute of Medical Sciences, Mangalagiri, Vijayawada",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2018,
+          "seats": 125
+        },
+        {
+          "sno": 3,
+          "state": "Andhra Pradesh",
+          "college": "Andhra Medical College, Visakhapatnam",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1923,
+          "seats": 250
+        },
+        {
+          "sno": 4,
+          "state": "Andhra Pradesh",
+          "college": "Government Medical College, Ananthapuram",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2000,
+          "seats": 200
+        },
+        {
+          "sno": 5,
+          "state": "Andhra Pradesh",
+          "college": "Government Medical College, Eluru",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Andhra Pradesh",
+          "college": "GMC, Rajiv Gandhi Institute of Medical Sciences, Kadapa",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 175
+        },
+        {
+          "sno": 7,
+          "state": "Andhra Pradesh",
+          "college": "Government Medical College, Machilipatnam",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 8,
+          "state": "Andhra Pradesh",
+          "college": "Government Medical College, Nandyal",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 9,
+          "state": "Andhra Pradesh",
+          "college": "GMC, Rajiv Gandhi Institute of Medical Sciences, Ongole",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2011,
+          "seats": 150
+        },
+        {
+          "sno": 10,
+          "state": "Andhra Pradesh",
+          "college": "Government medical College, Paderu, Visakhapatnam",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 11,
+          "state": "Andhra Pradesh",
+          "college": "Government Medical College, Rajamandravaram",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "Andhra Pradesh",
+          "college": "Government Medical College, Vizianagaram",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 13,
+          "state": "Andhra Pradesh",
+          "college": "Government Siddhartha Medical College, Vijaywada",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1980,
+          "seats": 175
+        },
+        {
+          "sno": 14,
+          "state": "Andhra Pradesh",
+          "college": "Guntur Medical College, Guntur",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1946,
+          "seats": 250
+        },
+        {
+          "sno": 15,
+          "state": "Andhra Pradesh",
+          "college": "Kurnool Medical College, Kurnool",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1957,
+          "seats": 250
+        },
+        {
+          "sno": 16,
+          "state": "Andhra Pradesh",
+          "college": "Rajiv Gandhi Institute of Medical Sciences, Srikakulam",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2008,
+          "seats": 200
+        },
+        {
+          "sno": 17,
+          "state": "Andhra Pradesh",
+          "college": "Rangaraya Medical College, Kakinada",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1958,
+          "seats": 250
+        },
+        {
+          "sno": 18,
+          "state": "Andhra Pradesh",
+          "college": "S V Medical College, Tirupati",
+          "university": "Dr. YSR University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1960,
+          "seats": 240
+        },
+        {
+          "sno": 19,
+          "state": "Andhra Pradesh",
+          "college": "SVIMS - Sri Padmavathi Medical College for Women, Alipiri Road, Tirupati",
+          "university": "Sri Venkateswara Institute of Medical Sciences (SVIMS), Tirupati",
+          "management": "State Govt.",
+          "estb": 2014,
+          "seats": 175
+        }
+      ],
+      "seats": 3415,
+      "collegeCount": 19
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Arunachal Pradesh",
+          "college": "Tomo Riba Institute of Health & Medical Sciences, Naharlagun",
+          "university": "Rajiv Gandhi University, Arunanchal Pradesh",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 100
+        }
+      ],
+      "seats": 100,
+      "collegeCount": 1
+    },
+    {
+      "state": "Assam",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Assam",
+          "college": "All India Institute of Medical Sciences, Guwahati",
+          "university": "Statutory Autonomous, AIIMS (Guwahati)",
+          "management": "Central Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Assam",
+          "college": "Assam Medical College, Dibrugarh",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1947,
+          "seats": 250
+        },
+        {
+          "sno": 3,
+          "state": "Assam",
+          "college": "Dhubri Medical College, Dhubri",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 4,
+          "state": "Assam",
+          "college": "Diphu Medical College & Hospital, Diphu",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "Assam",
+          "college": "ESIC Medical College and Hospital, Beltola",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 6,
+          "state": "Assam",
+          "college": "Fakhruddin Ali Ahmed Medical College, Barpeta, Assam",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt-Society",
+          "estb": 2012,
+          "seats": 125
+        },
+        {
+          "sno": 7,
+          "state": "Assam",
+          "college": "Gauhati Medical College, Guwahati",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1960,
+          "seats": 250
+        },
+        {
+          "sno": 8,
+          "state": "Assam",
+          "college": "Jorhat Medical College & Hospital , Jorhat",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2010,
+          "seats": 125
+        },
+        {
+          "sno": 9,
+          "state": "Assam",
+          "college": "Kokrajhar Medical College",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Assam",
+          "college": "Lakhimpur Medical College",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 11,
+          "state": "Assam",
+          "college": "Nagaon Medical College",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 12,
+          "state": "Assam",
+          "college": "Nalbari Medical College, Nalbari",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 13,
+          "state": "Assam",
+          "college": "Silchar Medical College, Silchar",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1968,
+          "seats": 150
+        },
+        {
+          "sno": 14,
+          "state": "Assam",
+          "college": "Tezpur Medical College & Hospital, Tezpur",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2014,
+          "seats": 125
+        },
+        {
+          "sno": 15,
+          "state": "Assam",
+          "college": "Tinsukia Medical College, Luhari",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 16,
+          "state": "Assam",
+          "college": "Pragjyotishpur Medical College",
+          "university": "Srimanta Shankardeva University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        }
+      ],
+      "seats": 1975,
+      "collegeCount": 16
+    },
+    {
+      "state": "Bihar",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Bihar",
+          "college": "All India Institute of Medical Sciences, Patna",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2012,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Bihar",
+          "college": "Anugrah Narayan Magadh Medical College, Gaya",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 1970,
+          "seats": 120
+        },
+        {
+          "sno": 3,
+          "state": "Bihar",
+          "college": "Bhagwan Mahavir Institute of Medical Sciences, Pawapuri, Nalanda",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 120
+        },
+        {
+          "sno": 4,
+          "state": "Bihar",
+          "college": "Darbhanga Medical College, Lehriasarai",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 1946,
+          "seats": 120
+        },
+        {
+          "sno": 5,
+          "state": "Bihar",
+          "college": "Employees State Insurance Corporation Medical College, Patna",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "Central Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 6,
+          "state": "Bihar",
+          "college": "Government Medical College, Bettiah",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 120
+        },
+        {
+          "sno": 7,
+          "state": "Bihar",
+          "college": "Government Medical College, Purnea",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 8,
+          "state": "Bihar",
+          "college": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna",
+          "university": "Indira Gandhi Instt of Medical Sciences (Deemed University), Patna",
+          "management": "State Govt.",
+          "estb": 2011,
+          "seats": 150
+        },
+        {
+          "sno": 9,
+          "state": "Bihar",
+          "college": "Jannayak Karpoori Thakur Medical College & Hospital, Madhepura",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Bihar",
+          "college": "Jawaharlal Nehru Medical College, Bhagalpur",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 1971,
+          "seats": 120
+        },
+        {
+          "sno": 11,
+          "state": "Bihar",
+          "college": "Nalanda Medical College, Patna",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 1970,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "Bihar",
+          "college": "Patna Medical College, Patna",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 1925,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Bihar",
+          "college": "Shri Krishna Medical College, Muzzafarpur",
+          "university": "Aryabhatta Knowledge University, Patna",
+          "management": "State Govt.",
+          "estb": 1970,
+          "seats": 120
+        }
+      ],
+      "seats": 1645,
+      "collegeCount": 13
+    },
+    {
+      "state": "Chandigarh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Chandigarh",
+          "college": "Government Medical College, Chandigarh",
+          "university": "Punjab University",
+          "management": "Govt.",
+          "estb": 1991,
+          "seats": 150
+        }
+      ],
+      "seats": 150,
+      "collegeCount": 1
+    },
+    {
+      "state": "Chattisgarh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Chattisgarh",
+          "college": "All India Institute of Medical Sciences, Raipur",
+          "university": "Statutory Autonomous, AIIMS(Raipur)",
+          "management": "Central Govt.",
+          "estb": 2012,
+          "seats": 125
+        },
+        {
+          "sno": 0,
+          "state": "Chattisgarh",
+          "college": "Chandulal Chandrakar Memorial Medical College, Durg",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 200
+        },
+        {
+          "sno": 2,
+          "state": "Chattisgarh",
+          "college": "Chhattisgarh Institute of Medical Sciences, Bilaspur",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2001,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Chattisgarh",
+          "college": "Government Medical College, Kanker",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 125
+        },
+        {
+          "sno": 4,
+          "state": "Chattisgarh",
+          "college": "Government Medical College, Korba",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 125
+        },
+        {
+          "sno": 5,
+          "state": "Chattisgarh",
+          "college": "GMC (Bharat Ratna Shri Atal Bihari Vajpyee Memorial Med. Col.), Rajnandgaon",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2014,
+          "seats": 125
+        },
+        {
+          "sno": 6,
+          "state": "Chattisgarh",
+          "college": "Rajmata Shrimati Devendra kumari Singhdeo Government Medical College, Ambikapur, (Surguja)",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 125
+        },
+        {
+          "sno": 7,
+          "state": "Chattisgarh",
+          "college": "Government Medical College, Mahasamund",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 125
+        },
+        {
+          "sno": 8,
+          "state": "Chattisgarh",
+          "college": "Late Shri Baliram Kashyap Memorial NDMC Govt. Medical College, Jagdalpur",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 125
+        },
+        {
+          "sno": 9,
+          "state": "Chattisgarh",
+          "college": "Late Shri Lakhi Ram Agrawal Memorial Govt. Medical College, Raigarh",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Chattisgarh",
+          "college": "Pt. J N M Medical College, Raipur",
+          "university": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University, Raipur",
+          "management": "State Govt.",
+          "estb": 1963,
+          "seats": 230
+        }
+      ],
+      "seats": 1555,
+      "collegeCount": 11
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Dadra and Nagar Haveli",
+          "college": "NAMO Medical Education & Research Institute, Govt Medical College, Silvassa",
+          "university": "Veer Narmad South Gujarat University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 177
+        }
+      ],
+      "seats": 177,
+      "collegeCount": 1
+    },
+    {
+      "state": "Delhi",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Delhi",
+          "college": "All India Institute of Medical Sciences, New Delhi",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 1956,
+          "seats": 132
+        },
+        {
+          "sno": 2,
+          "state": "Delhi",
+          "college": "Atal Bihari Vajpayee Institute of Medical Sciences and Dr. RML Hospital, New Delhi",
+          "university": "Guru Gobind Singh Indraprastha University",
+          "management": "Central Govt.",
+          "estb": 2008,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Delhi",
+          "college": "Dr. Baba Saheb Ambedkar Medical College, Rohini, Delhi",
+          "university": "Guru Gobind Singh Indraprastha University",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 125
+        },
+        {
+          "sno": 4,
+          "state": "Delhi",
+          "college": "ESIC Medical College & Hospital, Basaidarapur, New Delhi",
+          "university": "Guru Gobind Singh Indraprastha University",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 5,
+          "state": "Delhi",
+          "college": "Lady Hardinge Medical College, New Delhi",
+          "university": "Delhi University",
+          "management": "Central Govt.",
+          "estb": 1916,
+          "seats": 240
+        },
+        {
+          "sno": 6,
+          "state": "Delhi",
+          "college": "Maulana Azad Medical College, New Delhi",
+          "university": "Delhi University",
+          "management": "Central Govt.",
+          "estb": 1958,
+          "seats": 250
+        },
+        {
+          "sno": 7,
+          "state": "Delhi",
+          "college": "North Delhi Muncipal Corporation Medical College, Delhi",
+          "university": "Guru Gobind Singh Indraprastha University",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 60
+        },
+        {
+          "sno": 8,
+          "state": "Delhi",
+          "college": "University College of Medical Sciences & GTB Hospital, New Delhi",
+          "university": "Delhi University",
+          "management": "Central Govt.",
+          "estb": 1971,
+          "seats": 170
+        },
+        {
+          "sno": 9,
+          "state": "Delhi",
+          "college": "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi",
+          "university": "Guru Gobind Singh Indraprastha University",
+          "management": "Central Govt.",
+          "estb": 2002,
+          "seats": 170
+        }
+      ],
+      "seats": 1297,
+      "collegeCount": 9
+    },
+    {
+      "state": "Goa",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Goa",
+          "college": "Goa Medical College, Panaji",
+          "university": "Goa University",
+          "management": "Govt.",
+          "estb": 1963,
+          "seats": 200
+        }
+      ],
+      "seats": 200,
+      "collegeCount": 1
+    },
+    {
+      "state": "Gujarat",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Gujarat",
+          "college": "All India Institute of Medical Sciences, Rajkot",
+          "university": "Statutory Autonomous, AIIMS (Rajkot)",
+          "management": "Central Govt.",
+          "estb": 2020,
+          "seats": 75
+        },
+        {
+          "sno": 2,
+          "state": "Gujarat",
+          "college": "B.J. Medical College, Ahmedabad",
+          "university": "Gujarat University",
+          "management": "State Govt.",
+          "estb": 1946,
+          "seats": 250
+        },
+        {
+          "sno": 3,
+          "state": "Gujarat",
+          "college": "ESIC Medical College,Naroda Baounagar, Ahmedabad",
+          "university": "Gujarat University",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 4,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Dharpur, Patan",
+          "university": "Hemchandracharya North Gujarat University, Patan",
+          "management": "State Govt-Society",
+          "estb": 2012,
+          "seats": 200
+        },
+        {
+          "sno": 5,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Gandhinagar",
+          "university": "Gujarat University",
+          "management": "State Govt-Society",
+          "estb": 2012,
+          "seats": 200
+        },
+        {
+          "sno": 6,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Gotri, Vadodara",
+          "university": "MS University of Baroda",
+          "management": "State Govt-Society",
+          "estb": 2011,
+          "seats": 200
+        },
+        {
+          "sno": 7,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Morbi",
+          "university": "Saurashtra University, Rajkot",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 8,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Panchmahal Godhra",
+          "university": "Shri Govind Guru University, Godhara",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 9,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Himmatnagar",
+          "university": "Hemchandracharya North Gujarat University, Patan",
+          "management": "State Govt-Society",
+          "estb": 2015,
+          "seats": 200
+        },
+        {
+          "sno": 10,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Junagadh",
+          "university": "Bhakta Kavi Narsing Mehta University, Bikha Roa, Khadia",
+          "management": "State Govt-Society",
+          "estb": 2015,
+          "seats": 200
+        },
+        {
+          "sno": 11,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Sola, Ahmedabad",
+          "university": "Gujarat University",
+          "management": "State Govt-Society",
+          "estb": 2011,
+          "seats": 200
+        },
+        {
+          "sno": 12,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Vadnagar, Mehsana",
+          "university": "Hemchandracharya North Gujarat University, Patan",
+          "management": "State Govt-Society",
+          "estb": 2017,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Navsari",
+          "university": "Veer Narmad South Gujarat University",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 14,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Rajpipla",
+          "university": "Veer Narmad South Gujarat University",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 15,
+          "state": "Gujarat",
+          "college": "GMERS Medical College, Valsad",
+          "university": "Veer Narmad South Gujarat University",
+          "management": "State Govt-Society",
+          "estb": 2012,
+          "seats": 200
+        },
+        {
+          "sno": 16,
+          "state": "Gujarat",
+          "college": "Government Medical College, Bhavnagar",
+          "university": "Maharaja Krishnakumarsinghji Bhavnagar University",
+          "management": "State Govt.",
+          "estb": 1995,
+          "seats": 200
+        },
+        {
+          "sno": 17,
+          "state": "Gujarat",
+          "college": "Government Medical College, Surat",
+          "university": "Veer Narmad South Gujarat University",
+          "management": "State Govt.",
+          "estb": 1964,
+          "seats": 250
+        },
+        {
+          "sno": 18,
+          "state": "Gujarat",
+          "college": "Government Medical College, Porbandar",
+          "university": "Bhakta Kavi Narsing Mehta University, Bikha Roa, Khadia",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 19,
+          "state": "Gujarat",
+          "college": "Medical College, Baroda",
+          "university": "MS University of Baroda",
+          "management": "State Govt.",
+          "estb": 1949,
+          "seats": 250
+        },
+        {
+          "sno": 20,
+          "state": "Gujarat",
+          "college": "MP Shah Medical College, Jamnagar",
+          "university": "Saurashtra University",
+          "management": "State Govt.",
+          "estb": 1955,
+          "seats": 250
+        },
+        {
+          "sno": 21,
+          "state": "Gujarat",
+          "college": "Narendra Modi Medical College, Ahmedabad",
+          "university": "Gujarat University",
+          "management": "State Govt.",
+          "estb": 2009,
+          "seats": 200
+        },
+        {
+          "sno": 22,
+          "state": "Gujarat",
+          "college": "Pandit Deendayal Upadhyay Medical College, Rajkot",
+          "university": "Saurashtra University",
+          "management": "State Govt.",
+          "estb": 1995,
+          "seats": 200
+        },
+        {
+          "sno": 23,
+          "state": "Gujarat",
+          "college": "Smt. N.H.L.Municipal Medical College, Ahmedabad",
+          "university": "Gujarat University",
+          "management": "State Govt.",
+          "estb": 1963,
+          "seats": 250
+        },
+        {
+          "sno": 24,
+          "state": "Gujarat",
+          "college": "Surat Municipal Institute of Medical Education & Research, Surat",
+          "university": "Veer Narmad South Gujarat University",
+          "management": "State Govt.",
+          "estb": 1999,
+          "seats": 250
+        }
+      ],
+      "seats": 4325,
+      "collegeCount": 24
+    },
+    {
+      "state": "Haryana",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Haryana",
+          "college": "BPS Government Medical College for Women, Sonepat",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 2012,
+          "seats": 120
+        },
+        {
+          "sno": 2,
+          "state": "Haryana",
+          "college": "Employees State Insurance Corporation Medical College, Faridabad",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "Central Govt.",
+          "estb": 2015,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Haryana",
+          "college": "Kalpana Chawala Govt. Medical College, Karnal, Haryana",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 2017,
+          "seats": 120
+        },
+        {
+          "sno": 4,
+          "state": "Haryana",
+          "college": "Maharishi Chyawan Medical College, Koriawas",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "Haryana",
+          "college": "Pt. B D Sharma Postgraduate Institute of Medical Sciences, Rohtak",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 1960,
+          "seats": 250
+        },
+        {
+          "sno": 6,
+          "state": "Haryana",
+          "college": "Pt. Neki Ram Sharma GMC, Bhiwani",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        },
+        {
+          "sno": 7,
+          "state": "Haryana",
+          "college": "Shaheed Hasan Khan Mewati Government Medical College, Nalhar",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 120
+        },
+        {
+          "sno": 8,
+          "state": "Haryana",
+          "college": "Shri Atal Bihari Vajpayee Government Medical College, Faridabad",
+          "university": "PT. B.D. Sharma University of Health Sciences, Rohtak",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        }
+      ],
+      "seats": 1060,
+      "collegeCount": 8
+    },
+    {
+      "state": "Himachal Pradesh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Himachal Pradesh",
+          "college": "All India Institute of Medical Sciences, Bilaspur",
+          "university": "Statutory Autonomous, AIIMS (Bilaspur)",
+          "management": "Central Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Himachal Pradesh",
+          "college": "Dr. Radhakrishnan Government Medical College, Hamirpur",
+          "university": "Himachal Pradesh University",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 120
+        },
+        {
+          "sno": 3,
+          "state": "Himachal Pradesh",
+          "college": "Dr. Rajendar Prasad Government Medical College, Tanda",
+          "university": "Himachal Pradesh University",
+          "management": "State Govt.",
+          "estb": 1996,
+          "seats": 120
+        },
+        {
+          "sno": 4,
+          "state": "Himachal Pradesh",
+          "college": "Government Medical College, Nahan, Sirmour",
+          "university": "Himachal Pradesh University",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 120
+        },
+        {
+          "sno": 5,
+          "state": "Himachal Pradesh",
+          "college": "Indira Gandhi Medical College, Shimla",
+          "university": "Himachal Pradesh University",
+          "management": "State Govt.",
+          "estb": 1966,
+          "seats": 120
+        },
+        {
+          "sno": 6,
+          "state": "Himachal Pradesh",
+          "college": "Pt. Jawahar Lal Nehru Government Medical College, Chamba",
+          "university": "Himachal Pradesh University",
+          "management": "State Govt.",
+          "estb": 2017,
+          "seats": 120
+        },
+        {
+          "sno": 7,
+          "state": "Himachal Pradesh",
+          "college": "Shri Lal Bahadur Shastri Government Medical College, Mandi (ESIC)",
+          "university": "Himachal Pradesh University",
+          "management": "State Govt.",
+          "estb": 2017,
+          "seats": 120
+        }
+      ],
+      "seats": 820,
+      "collegeCount": 7
+    },
+    {
+      "state": "Jammu & Kashmir",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Jammu & Kashmir",
+          "college": "All India Institute of Medical Sciences, Vijaypur",
+          "university": "Statutory Autonomous, AIIMS (Vijaypur)",
+          "management": "Central Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College & Associated Hospital, Rajouri",
+          "university": "Jammu University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Anantnag",
+          "university": "Kashmir University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 4,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Baramulla",
+          "university": "Kashmir University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 5,
+          "state": "Jammu & Kashmir",
+          "college": "Govt. Medical College, Doda, Kashmir",
+          "university": "Kashmir University",
+          "management": "State Govt.",
+          "estb": 2020,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Handwara",
+          "university": "Kashmir University",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 7,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Jammu",
+          "university": "Jammu University",
+          "management": "State Govt.",
+          "estb": 1972,
+          "seats": 200
+        },
+        {
+          "sno": 8,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Kathua",
+          "university": "Jammu University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 9,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Udhampur",
+          "university": "University of Jammu",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Jammu & Kashmir",
+          "college": "Government Medical College, Srinagar",
+          "university": "Kashmir University",
+          "management": "State Govt.",
+          "estb": 1959,
+          "seats": 200
+        },
+        {
+          "sno": 11,
+          "state": "Jammu & Kashmir",
+          "college": "SKIMS, Srinagar",
+          "university": "SKIMS Deemed University",
+          "management": "State Govt.",
+          "estb": 1988,
+          "seats": 125
+        }
+      ],
+      "seats": 1525,
+      "collegeCount": 11
+    },
+    {
+      "state": "Jharkhand",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Jharkhand",
+          "college": "All India Institute of Medical Sciences, Deoghar",
+          "university": "Statutory Autonomous, AIIMS(Deoghar)",
+          "management": "Central Govt.",
+          "estb": 2019,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Jharkhand",
+          "college": "Dumka Medical College, Dighi, Dumka",
+          "university": "Sidho Kanhu Murmu University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Jharkhand",
+          "college": "Hazaribagh Medical College, Hazaribagh",
+          "university": "Vinoba Bhave University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 4,
+          "state": "Jharkhand",
+          "college": "M G M Medical College, Jamshedpur",
+          "university": "Kolhan University, Chaibasa",
+          "management": "State Govt.",
+          "estb": 1961,
+          "seats": 150
+        },
+        {
+          "sno": 5,
+          "state": "Jharkhand",
+          "college": "Palamu Medical College, Palamu",
+          "university": "Nilamber-Pitamber University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 6,
+          "state": "Jharkhand",
+          "college": "Rajendra Institute of Medical Sciences, Ranchi",
+          "university": "Ranchi University",
+          "management": "State Govt.",
+          "estb": 1960,
+          "seats": 180
+        },
+        {
+          "sno": 7,
+          "state": "Jharkhand",
+          "college": "Shahed Nirmal Mahto Medical College & Hospital, (Patliputra),Dhanbad",
+          "university": "Binod Bihati Mahto Koyalanchal University, Dhanbad",
+          "management": "State Govt.",
+          "estb": 1969,
+          "seats": 100
+        }
+      ],
+      "seats": 855,
+      "collegeCount": 7
+    },
+    {
+      "state": "Karnataka",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Karnataka",
+          "college": "Bangalore Medical College and Research Institute, Bangalore",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 1955,
+          "seats": 250
+        },
+        {
+          "sno": 2,
+          "state": "Karnataka",
+          "college": "Belagavi Institute of Medical Sciences, Belagavi",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 200
+        },
+        {
+          "sno": 3,
+          "state": "Karnataka",
+          "college": "Bidar Institute of Medical Sciences, Bidar",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2007,
+          "seats": 200
+        },
+        {
+          "sno": 4,
+          "state": "Karnataka",
+          "college": "Chikkaballapura Institute of Medical Sciences, Chikkaballapura",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 150
+        },
+        {
+          "sno": 5,
+          "state": "Karnataka",
+          "college": "Chamrajanagar Institute of Medical Sciences, Chamarajanagar",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Karnataka",
+          "college": "Chikkamagaluru Institute of Medical Sciences, Chikkamagaluru",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 7,
+          "state": "Karnataka",
+          "college": "Chitradurga Medical College and Research Institute, Chitradurga",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 8,
+          "state": "Karnataka",
+          "college": "Employees State Insurance Corporation Medical College, Bangalore",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "Central Govt.",
+          "estb": 2012,
+          "seats": 150
+        },
+        {
+          "sno": 9,
+          "state": "Karnataka",
+          "college": "Employees State Insurance Corporation Medical College, Gulbarga",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "Central Govt.",
+          "estb": 2013,
+          "seats": 150
+        },
+        {
+          "sno": 10,
+          "state": "Karnataka",
+          "college": "Gadag Institute of Medical Sciences, Mallasamudra, Mulgund Road, Gadag",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 150
+        },
+        {
+          "sno": 11,
+          "state": "Karnataka",
+          "college": "Gulbarga Institute of Medical Sciences, Gulbarga",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 200
+        },
+        {
+          "sno": 12,
+          "state": "Karnataka",
+          "college": "Hassan Institute of Medical Sciences, Hassan",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Karnataka",
+          "college": "Karnataka Institute of Medical Sciences, Hubballi",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 1957,
+          "seats": 200
+        },
+        {
+          "sno": 14,
+          "state": "Karnataka",
+          "college": "Karwar Institute of Medical Sciences, Karwar",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 150
+        },
+        {
+          "sno": 15,
+          "state": "Karnataka",
+          "college": "Kodagu Institute of Medical Sciences, Kodagu",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 150
+        },
+        {
+          "sno": 16,
+          "state": "Karnataka",
+          "college": "Koppal Institute of Medical Sciences, Koppal",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 150
+        },
+        {
+          "sno": 17,
+          "state": "Karnataka",
+          "college": "Mandya Institute of Medical Sciences, Mandya",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 150
+        },
+        {
+          "sno": 18,
+          "state": "Karnataka",
+          "college": "Mysore Medical College and Research Instt. (Prev.name Government Medical College), Mysore",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 1924,
+          "seats": 250
+        },
+        {
+          "sno": 19,
+          "state": "Karnataka",
+          "college": "Raichur Institute of Medical Sciences, Raichur",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2007,
+          "seats": 200
+        },
+        {
+          "sno": 20,
+          "state": "Karnataka",
+          "college": "Shimoga Institute of Medical Sciences, Shimoga",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2007,
+          "seats": 150
+        },
+        {
+          "sno": 21,
+          "state": "Karnataka",
+          "college": "Shri Atal Bihari Vajpayee Medical College & Research Institute, Bengaluru",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 200
+        },
+        {
+          "sno": 22,
+          "state": "Karnataka",
+          "college": "Vijaynagar Institute of Medical Sciences, Bellary",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 1961,
+          "seats": 250
+        },
+        {
+          "sno": 23,
+          "state": "Karnataka",
+          "college": "Yadgiri Institute of Medical Sciences, Yadgiri",
+          "university": "Rajiv Gandhi University of Health Sciences, Karnataka",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        }
+      ],
+      "seats": 4100,
+      "collegeCount": 23
+    },
+    {
+      "state": "Kerala",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Kerala",
+          "college": "Government Medical College (Institute of Integrated Medical Sciences), Yakkara, Palakkad",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 2014,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Kerala",
+          "college": "Government Medical College, Ernakulam",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 2000,
+          "seats": 110
+        },
+        {
+          "sno": 3,
+          "state": "Kerala",
+          "college": "Government Medical College, Kottayam",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 1960,
+          "seats": 175
+        },
+        {
+          "sno": 4,
+          "state": "Kerala",
+          "college": "Government Medical College, Kozhikode, Calicut",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 1957,
+          "seats": 250
+        },
+        {
+          "sno": 5,
+          "state": "Kerala",
+          "college": "Government Medical College, Manjeri, Malapuram Dist.",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 110
+        },
+        {
+          "sno": 6,
+          "state": "Kerala",
+          "college": "Government Medical College, Idukki",
+          "university": "Kerala University of Health Sciences, Thrissur, Kerala",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 7,
+          "state": "Kerala",
+          "college": "Government Medical College, Parippally, Kollam (ESI)",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "Central Govt.",
+          "estb": 2017,
+          "seats": 110
+        },
+        {
+          "sno": 8,
+          "state": "Kerala",
+          "college": "Government Medical College, Konni",
+          "university": "Kerala University of Health Sciences, Thrissur, Kerala",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 9,
+          "state": "Kerala",
+          "college": "Govt. Medical College,Pariyaram, Kannur (Prev. Known as Academy of Medical Sciences)",
+          "university": "Kerala University of Health Sciences, Thrissur, Kerala",
+          "management": "State Govt.",
+          "estb": 1995,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Kerala",
+          "college": "Government Medical College, Thrissur",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 1981,
+          "seats": 175
+        },
+        {
+          "sno": 11,
+          "state": "Kerala",
+          "college": "Medical College, Thiruvananthapuram",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 1951,
+          "seats": 250
+        },
+        {
+          "sno": 12,
+          "state": "Kerala",
+          "college": "T D Medical College, Alleppey (Alappuzha)",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 1963,
+          "seats": 175
+        },
+        {
+          "sno": 13,
+          "state": "Kerala",
+          "college": "Government Medical College Kasaragod",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 14,
+          "state": "Kerala",
+          "college": "Government Medical College, Wayanad",
+          "university": "Kerala University of Health Sciences, Thrissur",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        }
+      ],
+      "seats": 1855,
+      "collegeCount": 14
+    },
+    {
+      "state": "Madhya Pradesh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Madhya Pradesh",
+          "college": "All India Institute of Medical Sciences, Bhopal",
+          "university": "Statutory Autonomous, AIIMS(Bhopal)",
+          "management": "Central Govt.",
+          "estb": 2012,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Madhya Pradesh",
+          "college": "Bundelkhand Medical College, Sagar",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2009,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Madhya Pradesh",
+          "college": "ESIC Medical College and Hospital, Indore",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "Central Govt.",
+          "estb": 0,
+          "seats": 50
+        },
+        {
+          "sno": 3,
+          "state": "Madhya Pradesh",
+          "college": "Gajra Raja Medical College, Gwalior",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 1946,
+          "seats": 200
+        },
+        {
+          "sno": 4,
+          "state": "Madhya Pradesh",
+          "college": "Gandhi Medical College, Bhopal",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 1955,
+          "seats": 250
+        },
+        {
+          "sno": 5,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Chhindwara",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Datia",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 120
+        },
+        {
+          "sno": 7,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Khandwa",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 120
+        },
+        {
+          "sno": 8,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Ratlam",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 180
+        },
+        {
+          "sno": 9,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Satna",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 150
+        },
+        {
+          "sno": 10,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Shahdol, MP",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 11,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Shivpuri, MP",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 12,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Vidisha, MP",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 180
+        },
+        {
+          "sno": 13,
+          "state": "Madhya Pradesh",
+          "college": "M G M Medical College, Indore",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 1948,
+          "seats": 250
+        },
+        {
+          "sno": 14,
+          "state": "Madhya Pradesh",
+          "college": "Netaji Subhash Chandra Bose Medical College, Jabalpur",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 1955,
+          "seats": 250
+        },
+        {
+          "sno": 15,
+          "state": "Madhya Pradesh",
+          "college": "Shyam Shah Medical College, Rewa",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 1963,
+          "seats": 150
+        },
+        {
+          "sno": 16,
+          "state": "Madhya Pradesh",
+          "college": "Virendra Kumar Sakhlecha GMC, Neemuch",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 17,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Seoni",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 18,
+          "state": "Madhya Pradesh",
+          "college": "Sundarlal Patwa Govt. Medical College",
+          "university": "Madhya Pradesh Medical Science University, Jabalpur",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 19,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Singrauli",
+          "university": "Madhya Pradesh Medical Science University, Jabalpu",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        },
+        {
+          "sno": 20,
+          "state": "Madhya Pradesh",
+          "college": "Government Medical College, Sheopur",
+          "university": "Madhya Pradesh Medical Science University, Jabalpu",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        }
+      ],
+      "seats": 3025,
+      "collegeCount": 21
+    },
+    {
+      "state": "Maharashtra",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Maharashtra",
+          "college": "All India Institute of Medical Sciences, Nagpur",
+          "university": "Statutory Autonomous, AIIMS (New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2018,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Maharashtra",
+          "college": "Armed Forces Medical College, Pune",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "Central Govt.",
+          "estb": 1962,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Maharashtra",
+          "college": "B. J. Govt. Medical College, Pune",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1964,
+          "seats": 250
+        },
+        {
+          "sno": 4,
+          "state": "Maharashtra",
+          "college": "Dr Vaishampayan Memorial Medical College, Solapur",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1963,
+          "seats": 200
+        },
+        {
+          "sno": 5,
+          "state": "Maharashtra",
+          "college": "Dr. Shankarrao Chavan Govt. Medical College, Nanded",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1988,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Maharashtra",
+          "college": "ESIC Medical College and Hospital, Andheri",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 7,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Alibag",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 8,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Amravati",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 9,
+          "state": "Maharashtra",
+          "college": "Government Medical College & Hospital, Baramati",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Akola",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2002,
+          "seats": 200
+        },
+        {
+          "sno": 11,
+          "state": "Maharashtra",
+          "college": "Government Medical college, Ambernath",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 12,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Aurangabad",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1956,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Bhandara,",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 14,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Buldana",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 15,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Chandrapur",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 150
+        },
+        {
+          "sno": 16,
+          "state": "Maharashtra",
+          "college": "Goverment Medical College, Gadchiroli",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 17,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Gondia",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 150
+        },
+        {
+          "sno": 18,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Hingoli",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 19,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Jalgaon",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 150
+        },
+        {
+          "sno": 20,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Jalna",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 21,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Latur",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2002,
+          "seats": 150
+        },
+        {
+          "sno": 22,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Miraj",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1962,
+          "seats": 200
+        },
+        {
+          "sno": 23,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Nagpur",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1947,
+          "seats": 250
+        },
+        {
+          "sno": 24,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Nandurbar",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 25,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Nashik",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 26,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Osmanabad",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 27,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Parbhani",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 28,
+          "state": "Maharashtra",
+          "college": "Government Medical college and District Hospital, Ratnagiri",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 29,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Satara",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 30,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Sindhudurg",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 31,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Washim",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 32,
+          "state": "Maharashtra",
+          "college": "Grant Medical College, Mumbai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1845,
+          "seats": 250
+        },
+        {
+          "sno": 33,
+          "state": "Maharashtra",
+          "college": "H.B.T. Medical College & Dr. R.N. Cooper Municipal General Hospital, Juhu, Mumbai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 200
+        },
+        {
+          "sno": 34,
+          "state": "Maharashtra",
+          "college": "Indira Gandhi Medical College & Hospital, Nagpur",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1968,
+          "seats": 200
+        },
+        {
+          "sno": 35,
+          "state": "Maharashtra",
+          "college": "Lokmanya Tilak Municipal Medical College, Sion, Mumbai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1964,
+          "seats": 200
+        },
+        {
+          "sno": 36,
+          "state": "Maharashtra",
+          "college": "Rajashree Chatrapati Shahu Maharaj Government Medical College, Kolhapur",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2001,
+          "seats": 150
+        },
+        {
+          "sno": 37,
+          "state": "Maharashtra",
+          "college": "Rajiv Gandhi Medical College and Chhatrapati Shivaji Maharaj Hospital, Thane",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1992,
+          "seats": 100
+        },
+        {
+          "sno": 38,
+          "state": "Maharashtra",
+          "college": "Seth GS Medical College, Mumbai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1925,
+          "seats": 250
+        },
+        {
+          "sno": 39,
+          "state": "Maharashtra",
+          "college": "Shri Vasant Rao Naik Govt. Medical College, Yavatmal",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1989,
+          "seats": 200
+        },
+        {
+          "sno": 40,
+          "state": "Maharashtra",
+          "college": "Sri Bhausaheb Hire Government Medical College, Dhule",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1988,
+          "seats": 150
+        },
+        {
+          "sno": 41,
+          "state": "Maharashtra",
+          "college": "SRTR Medical College, Ambajogai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1974,
+          "seats": 150
+        },
+        {
+          "sno": 42,
+          "state": "Maharashtra",
+          "college": "Topiwala National Medical College, Mumbai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 1964,
+          "seats": 150
+        },
+        {
+          "sno": 43,
+          "state": "Maharashtra",
+          "college": "Government Medical College, Mumbai",
+          "university": "Maharashtra University of Health Sciences, Nashik",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        }
+      ],
+      "seats": 6075,
+      "collegeCount": 43
+    },
+    {
+      "state": "Manipur",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Manipur",
+          "college": "Government Medical College, Churachandpur",
+          "university": "Manipur University",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Manipur",
+          "college": "Jawaharlal Nehru Institute of Medical Sciences,Porompet,Imphal",
+          "university": "Manipur University",
+          "management": "State Govt.",
+          "estb": 2010,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Manipur",
+          "college": "Regional Institute of Medical Sciences, Imphal",
+          "university": "Manipur University",
+          "management": "State Govt.",
+          "estb": 1972,
+          "seats": 125
+        }
+      ],
+      "seats": 375,
+      "collegeCount": 3
+    },
+    {
+      "state": "Meghalaya",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Meghalaya",
+          "college": "North Eastern Indira Gandhi Regional Instt. of Health and Medical Sciences, Shillong",
+          "university": "North Eastern Hill University, Shillong",
+          "management": "Central Govt.",
+          "estb": 2008,
+          "seats": 50
+        },
+        {
+          "sno": 2,
+          "state": "Meghalaya",
+          "college": "Shillong Medical College",
+          "university": "North Eastern Hill University, Shillong",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        }
+      ],
+      "seats": 100,
+      "collegeCount": 2
+    },
+    {
+      "state": "Mizoram",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Mizoram",
+          "college": "Zoram Medical College, Mizoram",
+          "university": "Mizoram University",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 100
+        }
+      ],
+      "seats": 100,
+      "collegeCount": 1
+    },
+    {
+      "state": "Nagaland",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Nagaland",
+          "college": "Nagaland Institute of Medical Sciences & Research",
+          "university": "Nagaland University",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        }
+      ],
+      "seats": 100,
+      "collegeCount": 1
+    },
+    {
+      "state": "Odisha",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Odisha",
+          "college": "AIIMS, Bhubaneswar",
+          "university": "Statutory Autonomous, AIIMS",
+          "management": "Central Govt.",
+          "estb": 2012,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Odisha",
+          "college": "Dharanidhar Medical College & Hospital (DDMCH), Keonjhar",
+          "university": "MSCBD University, Baripada",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Odisha",
+          "college": "Government Medical College & Hospital (Renamed as Bhima Bhoi Medical College & Hospital), Balangir",
+          "university": "Sambalpur University",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 100
+        },
+        {
+          "sno": 4,
+          "state": "Odisha",
+          "college": "Government Medical College & Hospital (Renamed as Fakir Mohan Medical College & Hospital), Balasore",
+          "university": "Fakir Mohan University, Balasore",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "Odisha",
+          "college": "MKCG Medical College, Berhampur",
+          "university": "Berhampur University",
+          "management": "State Govt.",
+          "estb": 1962,
+          "seats": 250
+        },
+        {
+          "sno": 6,
+          "state": "Odisha",
+          "college": "Pt. Raghunath Murmu Medical College and Hospital, Baripada",
+          "university": "North Odisha University, Baripada, Odisha",
+          "management": "State Govt.",
+          "estb": 2017,
+          "seats": 125
+        },
+        {
+          "sno": 7,
+          "state": "Odisha",
+          "college": "Saheed Rendo Majhi Medical College & Hospital, Bhawanipatna, Kalahandi",
+          "university": "The Kalahandi university",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 8,
+          "state": "Odisha",
+          "college": "Saheed Laxman Nayak Medical College & Hospital, Koraput",
+          "university": "Berhampur University",
+          "management": "State Govt.",
+          "estb": 2017,
+          "seats": 125
+        },
+        {
+          "sno": 9,
+          "state": "Odisha",
+          "college": "Sri Jagannath Medical College & Hospital, Puri",
+          "university": "Utkal University, Bhubaneswar",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Odisha",
+          "college": "SCB Medical College, Cuttack",
+          "university": "Utkal University, Bhubaneswar",
+          "management": "State Govt.",
+          "estb": 1944,
+          "seats": 250
+        },
+        {
+          "sno": 11,
+          "state": "Odisha",
+          "college": "Government Medical College, Sundargarh",
+          "university": "Sambalpur University",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 12,
+          "state": "Odisha",
+          "college": "Veer Surendra Sai Institute of Medical Sciences and Research, Burla",
+          "university": "Sambalpur University",
+          "management": "State Govt.",
+          "estb": 1959,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Odisha",
+          "college": "Government Medical College and Hospital, Jajpur,",
+          "university": "The Orissa University Of Health Sciences, Bhubaneswar",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 14,
+          "state": "Odisha",
+          "college": "Pabitra Mohan Pradhan Medical College, Talcher",
+          "university": "The Orissa University Of Health Sciences, Bhubaneswar",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        },
+        {
+          "sno": 15,
+          "state": "Odisha",
+          "college": "Government Medical College Phulbani, Kandhamal",
+          "university": "Utkal University, Bhubaneswar",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        }
+      ],
+      "seats": 1925,
+      "collegeCount": 15
+    },
+    {
+      "state": "Pondicherry",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Pondicherry",
+          "college": "Indira Gandhi Medical College & Research Institute, Puducherry",
+          "university": "Pondicherry University",
+          "management": "Govt.",
+          "estb": 2010,
+          "seats": 180
+        },
+        {
+          "sno": 2,
+          "state": "Pondicherry",
+          "college": "Jawaharlal Institute of Postgraduate Medical Education & Research, Puducherry",
+          "university": "Statutory Autonomous, Puducherry",
+          "management": "Central Govt.",
+          "estb": 1956,
+          "seats": 243
+        }
+      ],
+      "seats": 423,
+      "collegeCount": 2
+    },
+    {
+      "state": "Punjab",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Punjab",
+          "college": "All India Institute of Medical Sciences, Bhatinda",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Punjab",
+          "college": "Dr B R Ambedkar State Institute of Medical Sciences,Mohali",
+          "university": "Baba Farid University of Health Sciences,Faridkot",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Punjab",
+          "college": "ESIC Medical College Ludhiana",
+          "university": "Baba Farid University of Health Sciences,Faridkot",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 4,
+          "state": "Punjab",
+          "college": "Government Medical College, Amritsar",
+          "university": "Baba Farid University of Health Sciences,Faridkot",
+          "management": "State Govt.",
+          "estb": 1943,
+          "seats": 250
+        },
+        {
+          "sno": 5,
+          "state": "Punjab",
+          "college": "Government Medical College, Patiala",
+          "university": "Baba Farid University of Health Sciences,Faridkot",
+          "management": "State Govt.",
+          "estb": 1953,
+          "seats": 250
+        },
+        {
+          "sno": 6,
+          "state": "Punjab",
+          "college": "Guru Govind Singh Medical College, Faridkot",
+          "university": "Baba Farid University of Health Sciences,Faridkot",
+          "management": "State Govt.",
+          "estb": 1973,
+          "seats": 250
+        }
+      ],
+      "seats": 1000,
+      "collegeCount": 6
+    },
+    {
+      "state": "Rajasthan",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Rajasthan",
+          "college": "All India Institute of Medical Sciences, Jodhpur",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2012,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Rajasthan",
+          "college": "Employees State Insurance Corporation Medical College, Alwar",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "Central Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Rajasthan",
+          "college": "ESIC Medical College & Hospital, Jaipur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 4,
+          "state": "Rajasthan",
+          "college": "Dr SN Medical College, Jodhpur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1965,
+          "seats": 250
+        },
+        {
+          "sno": 5,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Alwar",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 6,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Barmer",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 130
+        },
+        {
+          "sno": 7,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Bharatpur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 150
+        },
+        {
+          "sno": 8,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Bhilwara",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 150
+        },
+        {
+          "sno": 9,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Bundi",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Chittorgarh",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 11,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Churu",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Dausa",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 13,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Dholpur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 14,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Dungarpur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 150
+        },
+        {
+          "sno": 15,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Hanumangarh",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 16,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Karauli",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 17,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Kota",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1992,
+          "seats": 250
+        },
+        {
+          "sno": 18,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Pali",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 150
+        },
+        {
+          "sno": 19,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Sirohi",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 20,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Sri Ganganagar",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 21,
+          "state": "Rajasthan",
+          "college": "Jawaharlal Nehru Medical College, Ajmer",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1965,
+          "seats": 250
+        },
+        {
+          "sno": 22,
+          "state": "Rajasthan",
+          "college": "Jhalawar Medical College, Jhalawar",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2008,
+          "seats": 200
+        },
+        {
+          "sno": 23,
+          "state": "Rajasthan",
+          "college": "R N T Medical College, Udaipur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1961,
+          "seats": 250
+        },
+        {
+          "sno": 24,
+          "state": "Rajasthan",
+          "college": "RUHS College of Medical Sciences, Jaipur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2014,
+          "seats": 150
+        },
+        {
+          "sno": 25,
+          "state": "Rajasthan",
+          "college": "Sardar Patel Medical College, Bikaner",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1959,
+          "seats": 250
+        },
+        {
+          "sno": 26,
+          "state": "Rajasthan",
+          "college": "Shri Kalyan Govt. Medical College, Sikar",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2020,
+          "seats": 100
+        },
+        {
+          "sno": 27,
+          "state": "Rajasthan",
+          "college": "SMS Medical College, Jaipur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 1947,
+          "seats": 250
+        },
+        {
+          "sno": 28,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Baran",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 29,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Nagaur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 30,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Jhunjhunu",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 31,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Sawai Madhopur",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 32,
+          "state": "Rajasthan",
+          "college": "Government Medical College, Jaisalmer",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 33,
+          "state": "Rajasthan",
+          "college": "Government medical college, Tonk",
+          "university": "Rajasthan University of Health Sciences",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        }
+      ],
+      "seats": 4480,
+      "collegeCount": 33
+    },
+    {
+      "state": "Tamil Nadu",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Tamil Nadu",
+          "college": "All India Institute of Medical Sciences, Madurai",
+          "university": "Statutory Autonomous, AIIMS (Madurai)",
+          "management": "Central Govt.",
+          "estb": 2020,
+          "seats": 50
+        },
+        {
+          "sno": 2,
+          "state": "Tamil Nadu",
+          "college": "Chengalpattu Medical College, Chengalpattu",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1965,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Tamil Nadu",
+          "college": "Coimbatore Medical College, Coimbatore",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1966,
+          "seats": 150
+        },
+        {
+          "sno": 4,
+          "state": "Tamil Nadu",
+          "college": "ESI-PGIMSR, ESI Hospital, K.K Nagar, Chennai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "Central Govt.",
+          "estb": 2013,
+          "seats": 150
+        },
+        {
+          "sno": 5,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College,Ariyalur",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Tamil Nadu",
+          "college": "Government Dharmapuri Medical College, Dharmapuri",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2008,
+          "seats": 100
+        },
+        {
+          "sno": 7,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College,Dindigul",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 150
+        },
+        {
+          "sno": 8,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College & ESIC Hospital, Coimbatore",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "Central Govt.",
+          "estb": 2016,
+          "seats": 100
+        },
+        {
+          "sno": 9,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College Kallakurichi",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, Karur",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 11,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College Krishnagiri",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College Nagapattinam",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 150
+        },
+        {
+          "sno": 13,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, Namakkal",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 14,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, The Nilgiris",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 15,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, Omandurar",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 100
+        },
+        {
+          "sno": 16,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, Pudukottai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2017,
+          "seats": 150
+        },
+        {
+          "sno": 17,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College Ramanathapuram",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 18,
+          "state": "Tamil Nadu",
+          "college": "Government Sivagangai Medical College, Sivaganga",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2012,
+          "seats": 100
+        },
+        {
+          "sno": 19,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, Thiruvallu",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 20,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College ,Tiruppur",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 21,
+          "state": "Tamil Nadu",
+          "college": "Government Thiruvannamalai Medical College, Thiruvannamalai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 100
+        },
+        {
+          "sno": 22,
+          "state": "Tamil Nadu",
+          "college": "Government Vellore Medical College, Vellore",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2005,
+          "seats": 100
+        },
+        {
+          "sno": 23,
+          "state": "Tamil Nadu",
+          "college": "Government Medical College, Virudhunagar",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 150
+        },
+        {
+          "sno": 24,
+          "state": "Tamil Nadu",
+          "college": "Government Villupuram Medical College, Villupuram",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2010,
+          "seats": 100
+        },
+        {
+          "sno": 25,
+          "state": "Tamil Nadu",
+          "college": "Government Erode Medical College & Hospital, IRT Perundurai Medical College, Perundurai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1992,
+          "seats": 100
+        },
+        {
+          "sno": 26,
+          "state": "Tamil Nadu",
+          "college": "K A P Viswanathan Government Medical College, Trichy",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1998,
+          "seats": 150
+        },
+        {
+          "sno": 27,
+          "state": "Tamil Nadu",
+          "college": "KanyaKumari Government Medical College, Asaripallam",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2003,
+          "seats": 150
+        },
+        {
+          "sno": 28,
+          "state": "Tamil Nadu",
+          "college": "Kilpauk Medical College, Chennai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1960,
+          "seats": 150
+        },
+        {
+          "sno": 29,
+          "state": "Tamil Nadu",
+          "college": "Madras Medical College, Chennai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1835,
+          "seats": 250
+        },
+        {
+          "sno": 30,
+          "state": "Tamil Nadu",
+          "college": "Madurai Medical College, Madurai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1954,
+          "seats": 250
+        },
+        {
+          "sno": 31,
+          "state": "Tamil Nadu",
+          "college": "Mohan Kumaramangalam Medical College, Salem",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1986,
+          "seats": 100
+        },
+        {
+          "sno": 32,
+          "state": "Tamil Nadu",
+          "college": "Rajah Muthiah Medical College, Annamalainagar",
+          "university": "Annamalai University",
+          "management": "State Govt.",
+          "estb": 1985,
+          "seats": 150
+        },
+        {
+          "sno": 33,
+          "state": "Tamil Nadu",
+          "college": "Stanley Medical College, Chennai",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1838,
+          "seats": 250
+        },
+        {
+          "sno": 34,
+          "state": "Tamil Nadu",
+          "college": "Thanjavur Medical College,Thanjavur",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1959,
+          "seats": 150
+        },
+        {
+          "sno": 35,
+          "state": "Tamil Nadu",
+          "college": "Theni Government Medical College,Theni",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 100
+        },
+        {
+          "sno": 36,
+          "state": "Tamil Nadu",
+          "college": "Thiruvarur Govt. Medical College, Thiruvarur",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2010,
+          "seats": 100
+        },
+        {
+          "sno": 37,
+          "state": "Tamil Nadu",
+          "college": "Thoothukudi Medical College, Thoothukudi",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2000,
+          "seats": 150
+        },
+        {
+          "sno": 38,
+          "state": "Tamil Nadu",
+          "college": "Tirunelveli Medical College,Tirunelveli",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 1965,
+          "seats": 250
+        },
+        {
+          "sno": 39,
+          "state": "Tamil Nadu",
+          "college": "Annaii Medical College and Hospital, Kancheepuram Distt",
+          "university": "The Tamilnadu Dr. MGR Medical University,Chennai",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        }
+      ],
+      "seats": 5200,
+      "collegeCount": 39
+    },
+    {
+      "state": "Telangana",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Telangana",
+          "college": "All India Institute of Medical Sciences, Bibinagar",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 2,
+          "state": "Telangana",
+          "college": "Employees State Insurance Coporation Medical College, Hyderabad",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "Central Govt.",
+          "estb": 2016,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Telangana",
+          "college": "Government Medical College, Jagtial",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 4,
+          "state": "Telangana",
+          "college": "Government Medical College, Jayashankar Bhupalpally",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "Telangana",
+          "college": "Government Medical College Jangaon",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 6,
+          "state": "Telangana",
+          "college": "Government Medical College, Kamareddy",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 7,
+          "state": "Telangana",
+          "college": "Government Medical College, Karimnagar",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 8,
+          "state": "Telangana",
+          "college": "Government Medical College, Khammam",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 9,
+          "state": "Telangana",
+          "college": "Government Medical College, Bhadradri Kothagudem",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 10,
+          "state": "Telangana",
+          "college": "Government Medical College, Kumuram Bheem Asifabad",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 11,
+          "state": "Telangana",
+          "college": "Government Medical College, Mahabubabad",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "Telangana",
+          "college": "Government Medical College, Mancherial",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 13,
+          "state": "Telangana",
+          "college": "Government Medical College, Nagarkurnool",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 14,
+          "state": "Telangana",
+          "college": "Government Medical College, Sangareddy",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 15,
+          "state": "Telangana",
+          "college": "Government Medical College, Vikarabad",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 16,
+          "state": "Telangana",
+          "college": "Government Medical College, Wanaparthy",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 17,
+          "state": "Telangana",
+          "college": "Gandhi Medical College, Secunderabad",
+          "university": "NTR University of Health Sciences, VijayWada",
+          "management": "State Govt.",
+          "estb": 1954,
+          "seats": 250
+        },
+        {
+          "sno": 18,
+          "state": "Telangana",
+          "college": "Government Medical College, Mahabubnagar",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 175
+        },
+        {
+          "sno": 19,
+          "state": "Telangana",
+          "college": "Government Medical College, Nalgonda",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 20,
+          "state": "Telangana",
+          "college": "Government Medical College, Nirmal",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 21,
+          "state": "Telangana",
+          "college": "Government Medical College, Nizamabad",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 120
+        },
+        {
+          "sno": 22,
+          "state": "Telangana",
+          "college": "Government Medical College, Ramagundam",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 150
+        },
+        {
+          "sno": 23,
+          "state": "Telangana",
+          "college": "Government Medical College, Rajanna Sircilla",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2023,
+          "seats": 100
+        },
+        {
+          "sno": 24,
+          "state": "Telangana",
+          "college": "Government Medical College, Siddipet",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2018,
+          "seats": 175
+        },
+        {
+          "sno": 25,
+          "state": "Telangana",
+          "college": "Government Medical College, Suryapet",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 26,
+          "state": "Telangana",
+          "college": "Kakatiya Medical College, Wrangal",
+          "university": "NTR University of Health Sciences, VijayWada",
+          "management": "State Govt.",
+          "estb": 1959,
+          "seats": 250
+        },
+        {
+          "sno": 27,
+          "state": "Telangana",
+          "college": "Osmania Medical College, Hyderabad",
+          "university": "NTR University of Health Sciences, VijayWada",
+          "management": "State Govt.",
+          "estb": 1946,
+          "seats": 250
+        },
+        {
+          "sno": 28,
+          "state": "Telangana",
+          "college": "Rajiv Gandhi Institute of Medical Sciences, adilabad",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2008,
+          "seats": 120
+        },
+        {
+          "sno": 29,
+          "state": "Telangana",
+          "college": "Government Medical College, Maheshwaram",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 30,
+          "state": "Telangana",
+          "college": "Government Medical College, Medak",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 31,
+          "state": "Telangana",
+          "college": "Government Medical College, Yadadri",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 32,
+          "state": "Telangana",
+          "college": "Government medical College, Quthbullapur",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 33,
+          "state": "Telangana",
+          "college": "Government Medical College, Mulugu",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 34,
+          "state": "Telangana",
+          "college": "Government Medical College, Jogulamba,m Gadwal",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 35,
+          "state": "Telangana",
+          "college": "Government Medical College, Narsampet",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 36,
+          "state": "Telangana",
+          "college": "Government Medical College, Narayanpet",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 50
+        },
+        {
+          "sno": 37,
+          "state": "Telangana",
+          "college": "Government Medical College, Kodangal",
+          "university": "Kaloji Narayana Rao University of Health Sciences, Warangal",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 50
+        }
+      ],
+      "seats": 4390,
+      "collegeCount": 37
+    },
+    {
+      "state": "Tripura",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Tripura",
+          "college": "Agartala Government Medical College, Agartala",
+          "university": "Tripura University",
+          "management": "State Govt.",
+          "estb": 2005,
+          "seats": 150
+        }
+      ],
+      "seats": 150,
+      "collegeCount": 1
+    },
+    {
+      "state": "Uttar Pradesh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Uttar Pradesh",
+          "college": "All India Institute of Medical Sciences, Gorakhpur",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2019,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Uttar Pradesh",
+          "college": "All India Institute of Medical Sciences, Rae Bareli",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Central Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 3,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Society, Etah",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 4,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Society, Fatehpur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Society Ghazipur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 6,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Society, Hardoi",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 7,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Society Medical College Mirzapur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 8,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Pratapgarh",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 9,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College, Siddharthnagar",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 10,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College, Sonebhadra",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 11,
+          "state": "Uttar Pradesh",
+          "college": "BRD Medical College, Gorakhpur",
+          "university": "Deen Dayal Upadhyay Gorakhpur University, Gorakhpur",
+          "management": "State Govt.",
+          "estb": 1972,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "Uttar Pradesh",
+          "college": "Dr. Ram Manohar Lohia Institute of Medical Sciences,Lucknow",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2012,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Uttar Pradesh",
+          "college": "Government Allopathic Medical College, Banda",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 100
+        },
+        {
+          "sno": 14,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College, Rampur, Basti",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 15,
+          "state": "Uttar Pradesh",
+          "college": "Government Institute of Medical Sciences, Kasna, Greater Noida",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt- Society",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 16,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College & Super facility Hospital, Azamgarh",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 100
+        },
+        {
+          "sno": 17,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College, Badaun",
+          "university": "Mahatma Jyotiba Phule Rohilkhand University",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 18,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College, Faizabad",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 19,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College, Firozabad",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 20,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College, Kannauj",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2012,
+          "seats": 100
+        },
+        {
+          "sno": 21,
+          "state": "Uttar Pradesh",
+          "college": "Government Medical College, Shahjahanpur",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 22,
+          "state": "Uttar Pradesh",
+          "college": "GSVM Medical College, Kanpur",
+          "university": "C.S.J.M. University, Kanpur",
+          "management": "State Govt.",
+          "estb": 1955,
+          "seats": 250
+        },
+        {
+          "sno": 23,
+          "state": "Uttar Pradesh",
+          "college": "Institute of Medical Sciences, BHU, Varansi",
+          "university": "Banaras Hindu University",
+          "management": "Central Govt.",
+          "estb": 1960,
+          "seats": 100
+        },
+        {
+          "sno": 24,
+          "state": "Uttar Pradesh",
+          "college": "Jawaharlal Nehru Medical College, Aligarh",
+          "university": "Aligarh Muslim University",
+          "management": "Central Govt.",
+          "estb": 1961,
+          "seats": 150
+        },
+        {
+          "sno": 25,
+          "state": "Uttar Pradesh",
+          "college": "King George Medical University, Lucknow",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 1911,
+          "seats": 250
+        },
+        {
+          "sno": 26,
+          "state": "Uttar Pradesh",
+          "college": "LLRM Medical College, Meerut",
+          "university": "Ch. Charan Singh Universitiy, Meerut",
+          "management": "State Govt.",
+          "estb": 1966,
+          "seats": 150
+        },
+        {
+          "sno": 27,
+          "state": "Uttar Pradesh",
+          "college": "Moti Lal Nehru Medical College, Allahabad",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 1961,
+          "seats": 200
+        },
+        {
+          "sno": 28,
+          "state": "Uttar Pradesh",
+          "college": "Maharshi Devraha Baba Autonomous State Medical College, Deoria",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 29,
+          "state": "Uttar Pradesh",
+          "college": "Mahamaya Rajkiya Allopathic Medical College, Ambedkarnagar",
+          "university": "Dr. Ram Manohar Lohia Avadh University, Faizabad",
+          "management": "State Govt.",
+          "estb": 2011,
+          "seats": 100
+        },
+        {
+          "sno": 30,
+          "state": "Uttar Pradesh",
+          "college": "Maharani Laxmi Bai Medical College, Jhansi",
+          "university": "Bundelkhand University",
+          "management": "State Govt.",
+          "estb": 1968,
+          "seats": 150
+        },
+        {
+          "sno": 31,
+          "state": "Uttar Pradesh",
+          "college": "Rajkiya Allopathic Medical College, Bahraich",
+          "university": "King Georges Medical University,Lucknow",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 100
+        },
+        {
+          "sno": 32,
+          "state": "Uttar Pradesh",
+          "college": "Uttar PradeshRajkiya Medical College Jalaun, Orai",
+          "university": "C.S.J.M. University, Kanpur",
+          "management": "State Govt.",
+          "estb": 2013,
+          "seats": 100
+        },
+        {
+          "sno": 33,
+          "state": "Uttar Pradesh",
+          "college": "Shaikh-UL-Hind Maulana Mahmood Hasan Medical College, Saharanpur",
+          "university": "Ch. Charan Singh Universitiy, Meerut",
+          "management": "State Govt.",
+          "estb": 2015,
+          "seats": 100
+        },
+        {
+          "sno": 34,
+          "state": "Uttar Pradesh",
+          "college": "S.N.Medical College, Agra",
+          "university": "Dr B R Ambedkar University,Agra, U.P.",
+          "management": "State Govt.",
+          "estb": 1939,
+          "seats": 200
+        },
+        {
+          "sno": 35,
+          "state": "Uttar Pradesh",
+          "college": "Uma Nath Singh Autonomous State Medical College Society Jaunpur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 36,
+          "state": "Uttar Pradesh",
+          "college": "Uttar Pradesh University of Medical Sciences, (Prev. UP Rural Inst.of Med.Sc&R) Etawah",
+          "university": "Uttar Pradesh University of Medical Sciences, Etawah",
+          "management": "State Govt.",
+          "estb": 2006,
+          "seats": 200
+        },
+        {
+          "sno": 37,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College, Lalitpur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 38,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College, Akbarpur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 39,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College and Hospital Kaushambi",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 40,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Sultanpur",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 41,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Kushinagar",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 42,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College Pilibhit",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 43,
+          "state": "Uttar Pradesh",
+          "college": "Mahatma Vidur Autonomous State Medical College, Bijnor",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 44,
+          "state": "Uttar Pradesh",
+          "college": "Kalyan Singh Government Medical College, Hospital and Kasturba Mahila Chikitsalaya, Bulandshahr",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 45,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College and Hospital Auraiya",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 46,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College and Hospital Gonda",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 47,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College and Hospital Lakhimpuri kheri",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 48,
+          "state": "Uttar Pradesh",
+          "college": "Baba Kina Ram Autonomous State Medical College and Hospital, Kamalangar, Distt. Chandauil",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 49,
+          "state": "Uttar Pradesh",
+          "college": "Autonomous State Medical College, Amethi",
+          "university": "Atal Bihari Vajpayee Medical University, Lucknow, Uttar Pradesh",
+          "management": "State Govt.",
+          "estb": 2025,
+          "seats": 100
+        },
+        {
+          "sno": 50,
+          "state": "Uttar Pradesh",
+          "college": "ESIC Medical College and Hospital, Noida",
+          "university": "Ch. Charan Singh Universitiy, Meerut",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        },
+        {
+          "sno": 51,
+          "state": "Uttar Pradesh",
+          "college": "ESIC Medical College and Hospital, varanasi",
+          "university": "",
+          "management": "Central Govt.",
+          "estb": 2025,
+          "seats": 50
+        }
+      ],
+      "seats": 5925,
+      "collegeCount": 51
+    },
+    {
+      "state": "Uttarakhand",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Uttarakhand",
+          "college": "All India Institute of Medical Sciences, Rishikesh",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Centaral Govt.",
+          "estb": 2021,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "Uttarakhand",
+          "college": "Doon Medical College, Dehradun",
+          "university": "Hemwati Nandan Bahuguna Uttarakhand Medical Education University, Dehradun",
+          "management": "State Govt.",
+          "estb": 2016,
+          "seats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Uttarakhand",
+          "college": "Government Medical College (Prev.Uttarakhand Forest Hospital Trust Med.Col.), Haldwani",
+          "university": "Kumaon University, Nainital",
+          "management": "State Govt.",
+          "estb": 2001,
+          "seats": 125
+        },
+        {
+          "sno": 4,
+          "state": "Uttarakhand",
+          "college": "Soban Singh Jeena Government Institute of Medical Science & Research, Almora",
+          "university": "Hemwati Nandan Bahuguna Uttarakhand Medical Education University, Dehradun",
+          "management": "State Govt.",
+          "estb": 2021,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "Uttarakhand",
+          "college": "Veer Chandra Singh Garhwali Govt. Medical Sc. & Research Instt, Srinagar, Pauri Garhwal",
+          "university": "Uttrakhand Technical University, Dehradun",
+          "management": "State Govt.",
+          "estb": 2008,
+          "seats": 150
+        },
+        {
+          "sno": 6,
+          "state": "Uttarakhand",
+          "college": "Government Medical college and Hospital , Haridwar",
+          "university": "Hemwati Nandan Bahuguna Uttarakhand Medical Education University, Dehradun",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        }
+      ],
+      "seats": 750,
+      "collegeCount": 6
+    },
+    {
+      "state": "West Bengal",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "West Bengal",
+          "college": "AIIMS, Kalyani, Nadia",
+          "university": "Statutory Autonomous, AIIMS(New Delhi)",
+          "management": "Cetral Govt.",
+          "estb": 2019,
+          "seats": 125
+        },
+        {
+          "sno": 2,
+          "state": "West Bengal",
+          "college": "ESI PGI MSR AND ESIC MEDICA L COLLEG E JOKA KOLKATA",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "Cetral Govt.",
+          "estb": 2013,
+          "seats": 125
+        },
+        {
+          "sno": 3,
+          "state": "West Bengal",
+          "college": "Bankura Sammilani Medical College, Bankura",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1956,
+          "seats": 200
+        },
+        {
+          "sno": 4,
+          "state": "West Bengal",
+          "college": "BARASAT GOVERNMENT MEDICAL COLLEGE AND HOSPITAL",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 5,
+          "state": "West Bengal",
+          "college": "Burdwan Medical College, Burdwan",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1969,
+          "seats": 200
+        },
+        {
+          "sno": 6,
+          "state": "West Bengal",
+          "college": "Calcutta National Medical College, Kolkata",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1948,
+          "seats": 250
+        },
+        {
+          "sno": 7,
+          "state": "West Bengal",
+          "college": "College of Medicine and JNM Hospital, Kalyani, Nadia",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2010,
+          "seats": 150
+        },
+        {
+          "sno": 8,
+          "state": "West Bengal",
+          "college": "College of Medicine and Sagore Dutta Hospital, Kolkata",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2011,
+          "seats": 125
+        },
+        {
+          "sno": 9,
+          "state": "West Bengal",
+          "college": "Coochbehar Government Medical College & Hospital, Coochbehar",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 10,
+          "state": "West Bengal",
+          "college": "Deben Mahata Government Medical College & Hospital, Purulia",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 11,
+          "state": "West Bengal",
+          "college": "Diamond Harbour Government Medical College and Hospital, Diamond Harbour",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 12,
+          "state": "West Bengal",
+          "college": "Institute of Postgraduate Medical Education & Research, Kolkata",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1957,
+          "seats": 200
+        },
+        {
+          "sno": 13,
+          "state": "West Bengal",
+          "college": "JALPAIGURI GOVERNMENT MEDICAL COLLEGE AND HOSPITAL",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 14,
+          "state": "West Bengal",
+          "college": "JHARGRAM GOVERNMENT MEDICAL COLLEGE AND HOSPITAL",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 15,
+          "state": "West Bengal",
+          "college": "MAHARAJA JITENDRA NARAYAN MEDICAL COLLEGE AND HOSPITAL, COOCHBEHAR",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2024,
+          "seats": 100
+        },
+        {
+          "sno": 16,
+          "state": "West Bengal",
+          "college": "Malda Medical College & Hospital, Malda",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2011,
+          "seats": 125
+        },
+        {
+          "sno": 17,
+          "state": "West Bengal",
+          "college": "Medical College, Kolkata",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1838,
+          "seats": 250
+        },
+        {
+          "sno": 18,
+          "state": "West Bengal",
+          "college": "Midnapore Medical College, Midnapore",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2001,
+          "seats": 200
+        },
+        {
+          "sno": 19,
+          "state": "West Bengal",
+          "college": "Murshidabad Medical College & Hospitals, Murshidabad",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2012,
+          "seats": 125
+        },
+        {
+          "sno": 20,
+          "state": "West Bengal",
+          "college": "Nilratan Sircar Medical College, Kolkata",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1948,
+          "seats": 250
+        },
+        {
+          "sno": 21,
+          "state": "West Bengal",
+          "college": "North Bengal Medical College, Darjeeling",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1968,
+          "seats": 200
+        },
+        {
+          "sno": 22,
+          "state": "West Bengal",
+          "college": "Prafulla Chandra Sen Government Medical College and Hospital, Arambag, Hooghly",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 23,
+          "state": "West Bengal",
+          "college": "Purulia Government Medical College & Hospital",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2020,
+          "seats": 150
+        },
+        {
+          "sno": 24,
+          "state": "West Bengal",
+          "college": "RG Kar Medical College, Kolkata",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 1916,
+          "seats": 250
+        },
+        {
+          "sno": 25,
+          "state": "West Bengal",
+          "college": "Raiganj Government Medical College & Hospital, Raiganj",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 26,
+          "state": "West Bengal",
+          "college": "Rampurhat Government Medical College & Hospital, Rampurhat",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2019,
+          "seats": 150
+        },
+        {
+          "sno": 27,
+          "state": "West Bengal",
+          "college": "Sarat Chandra Chattopadhyay Medical College and Hospital, Uluberia city, Howrah",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        },
+        {
+          "sno": 28,
+          "state": "West Bengal",
+          "college": "Tamralipto Government Medical College & Hospital, Tamluk",
+          "university": "West Bengal University of Health Sciences,Kolkata",
+          "management": "State Govt.",
+          "estb": 2022,
+          "seats": 100
+        }
+      ],
+      "seats": 4325,
+      "collegeCount": 28
+    }
+  ]
+}
