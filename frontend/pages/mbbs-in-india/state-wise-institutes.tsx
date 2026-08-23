@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/router";
 import collegeData from "@/lib/data/govtMedicalColleges2026.json";
 
 const PDF_LINKS = [
@@ -18,8 +19,17 @@ const PDF_LINKS = [
 ];
 
 export default function StateWiseInstitutesPage() {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedState, setSelectedState] = useState("");
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    const state = typeof router.query.state === "string" ? router.query.state : "";
+    if (state) {
+      setSelectedState(state);
+    }
+  }, [router.isReady, router.query.state]);
 
   const filteredGroups = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();

@@ -5,6 +5,7 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { baseUrl } from "@/lib/baseUrl";
+import MbbsIndiaStatesSection from "@/components/mbbs-in-india/MbbsIndiaStatesSection";
 
 const INDIAN_STATES = [
   "Andhra Pradesh",
@@ -342,6 +343,7 @@ export default function MbbsInIndiaPage() {
           </div>
         </div>
 
+
         <section id="colleges" ref={collegesRef}>
           <div className="container">
             <div className="section-head">
@@ -388,6 +390,9 @@ export default function MbbsInIndiaPage() {
             </div>
           </div>
         </section>
+
+        <MbbsIndiaStatesSection />
+
 
         <section className="light">
           <div className="container feature-grid">

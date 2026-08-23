@@ -668,6 +668,39 @@
   margin-bottom: 0;
 }
 
+.mbbs-india-page .notice-box {
+  background: #fff5eb;
+  border: 1px solid #ffd7c3;
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin-bottom: 24px;
+}
+
+.mbbs-india-page .notice-box h3 {
+  margin: 8px 0 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.mbbs-india-page .notice-box p {
+  margin: 0;
+  color: var(--muted);
+  text-align: left;
+  line-height: 1.7;
+}
+
+.mbbs-india-page .bullet-list {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.mbbs-india-page .bullet-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
 .mbbs-india-page .top-pills {
   display: flex;
   flex-wrap: wrap;
@@ -825,5 +858,40 @@
 
   .mbbs-india-page section {
     padding: 55px 0;
+  }
+}
+
+.mbbs-states-carousel {
+  padding: 6vw 0 2vw;
+}
+
+@media (min-width: 768px) {
+  .mbbs-states-carousel {
+    padding: 2.5vw 0 1.5vw;
+  }
+
+  .mbbs-states-carousel .embla__slide {
+    flex: 0 0 calc((100% - 3.75vw) / 4);
+    min-width: 0;
+  }
+}
+
+.mbbs-states-card {
+  width: 100%;
+  height: 25vw;
+}
+
+@media (max-width: 767px) {
+  .mbbs-states-carousel {
+    padding: 6vw 0 4vw;
+  }
+
+  .mbbs-states-carousel .embla__slidePhone {
+    flex: 0 0 72vw;
+    min-width: 0;
+  }
+
+  .mbbs-states-card {
+    height: 62vw;
   }
 }
