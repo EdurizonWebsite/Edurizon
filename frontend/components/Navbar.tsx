@@ -35,6 +35,7 @@ const Navbar = () => {
   const mbbsIndiaLinks = [
     { name: "India", href: "/mbbs-in-india" },
     { name: "Deemed University", href: "/mbbs-in-india/deemed-universities" },
+    { name: "Private University", href: "/mbbs-in-india/private-universities" },
     { name: "State Wise Institutes", href: "/mbbs-in-india/state-wise-institutes" },
   ];
   const menuItems = [

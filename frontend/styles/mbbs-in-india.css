@@ -4,8 +4,8 @@
   --sky: #fef0e6;
   --gold: #9c572e;
   --accent: #299d91;
-  --text: #191d23;
-  --muted: rgba(102, 102, 102, 0.85);
+  --text: #000000;
+  --muted: #000000;
   --white: #fff;
   --line: #d0d5dd;
   --line-strong: #ffd7c3;
@@ -372,13 +372,18 @@
 
 .mbbs-india-page .select {
   background: #fff;
-  color: #667085;
+  color: #000000;
   padding: 13px 14px;
   border-radius: 8px;
   border: 1px solid var(--line-strong);
   font-family: inherit;
   font-size: 14px;
   width: 100%;
+}
+
+.mbbs-india-page .college-table td,
+.mbbs-india-page .summary-table td {
+  color: #000000;
 }
 
 .mbbs-india-page .search-controls .btn {

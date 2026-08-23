@@ -1,0 +1,3761 @@
+{
+  "totals": {
+    "colleges": 382,
+    "seats": 73643,
+    "states": 26
+  },
+  "stateSummary": [
+    {
+      "state": "Andhra Pradesh",
+      "colleges": 21,
+      "seats": 3950
+    },
+    {
+      "state": "Bihar",
+      "colleges": 14,
+      "seats": 2450
+    },
+    {
+      "state": "Chhattisgarh",
+      "colleges": 6,
+      "seats": 1200
+    },
+    {
+      "state": "Delhi",
+      "colleges": 2,
+      "seats": 250
+    },
+    {
+      "state": "Gujarat",
+      "colleges": 19,
+      "seats": 3500
+    },
+    {
+      "state": "Haryana",
+      "colleges": 10,
+      "seats": 1900
+    },
+    {
+      "state": "Himachal Pradesh",
+      "colleges": 1,
+      "seats": 150
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "colleges": 1,
+      "seats": 150
+    },
+    {
+      "state": "Jharkhand",
+      "colleges": 4,
+      "seats": 700
+    },
+    {
+      "state": "Karnataka",
+      "colleges": 51,
+      "seats": 10995
+    },
+    {
+      "state": "Kerala",
+      "colleges": 22,
+      "seats": 3849
+    },
+    {
+      "state": "Madhya Pradesh",
+      "colleges": 14,
+      "seats": 3000
+    },
+    {
+      "state": "Maharashtra",
+      "colleges": 44,
+      "seats": 7099
+    },
+    {
+      "state": "Manipur",
+      "colleges": 1,
+      "seats": 150
+    },
+    {
+      "state": "Meghalaya",
+      "colleges": 1,
+      "seats": 150
+    },
+    {
+      "state": "Odisha",
+      "colleges": 6,
+      "seats": 1100
+    },
+    {
+      "state": "Puducherry",
+      "colleges": 7,
+      "seats": 1600
+    },
+    {
+      "state": "Punjab",
+      "colleges": 7,
+      "seats": 950
+    },
+    {
+      "state": "Rajasthan",
+      "colleges": 18,
+      "seats": 3600
+    },
+    {
+      "state": "Sikkim",
+      "colleges": 1,
+      "seats": 100
+    },
+    {
+      "state": "Tamil Nadu",
+      "colleges": 41,
+      "seats": 8650
+    },
+    {
+      "state": "Telangana",
+      "colleges": 30,
+      "seats": 5850
+    },
+    {
+      "state": "Tripura",
+      "colleges": 2,
+      "seats": 300
+    },
+    {
+      "state": "Uttar Pradesh",
+      "colleges": 39,
+      "seats": 8300
+    },
+    {
+      "state": "Uttarakhand",
+      "colleges": 4,
+      "seats": 850
+    },
+    {
+      "state": "West Bengal",
+      "colleges": 16,
+      "seats": 2850
+    }
+  ],
+  "byState": [
+    {
+      "state": "Andhra Pradesh",
+      "colleges": [
+        {
+          "sno": 1,
+          "state": "Andhra Pradesh",
+          "college": "Alluri Sitaram Raju Academy of Medical Sciences, Eluru",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 2,
+          "state": "Andhra Pradesh",
+          "college": "Anna Gowri Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 3,
+          "state": "Andhra Pradesh",
+          "college": "Apollo Institute of Medical Sciences and Research, Chittoor",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 4,
+          "state": "Andhra Pradesh",
+          "college": "Dr. P.S.I. Medical College , Chinoutpalli",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 5,
+          "state": "Andhra Pradesh",
+          "college": "Fathima Instt. of Medical Sciences, Kadapa",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 6,
+          "state": "Andhra Pradesh",
+          "college": "Gayathri Vidya Parishad Institute of Health Care & Medical Technology, Visakhapatnam",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 7,
+          "state": "Andhra Pradesh",
+          "college": "GITAM Institute of Medical Sciences and Research, Visakhapatnam",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 8,
+          "state": "Andhra Pradesh",
+          "college": "Great Eastern Medical School and Hospital, Srikakulam",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 9,
+          "state": "Andhra Pradesh",
+          "college": "GSL Medical College, Rajahmundry",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 10,
+          "state": "Andhra Pradesh",
+          "college": "Katuri Medical College, Guntur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 11,
+          "state": "Andhra Pradesh",
+          "college": "Konaseema Institute of Medical Sciences & Research Foundation, Amalapuram",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 12,
+          "state": "Andhra Pradesh",
+          "college": "Maharajah Institute of Medical Sciences, Vizianagaram",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 13,
+          "state": "Andhra Pradesh",
+          "college": "Narayana Medical College, Nellore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 14,
+          "state": "Andhra Pradesh",
+          "college": "Nimra Institute of Medical Sciences, Krishna Dist.",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 15,
+          "state": "Andhra Pradesh",
+          "college": "NRI Institute of Medical Sciences, Visakhapatnam",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 16,
+          "state": "Andhra Pradesh",
+          "college": "NRI Medical College, Guntur",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 17,
+          "state": "Andhra Pradesh",
+          "college": "P E S Institute Of Medical Sciences and Research, Kuppam",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 18,
+          "state": "Andhra Pradesh",
+          "college": "RVS INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 50,
+          "totalSeats": 50
+        },
+        {
+          "sno": 19,
+          "state": "Andhra Pradesh",
+          "college": "Santhiram Medical College, Nandyal",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 20,
+          "state": "Andhra Pradesh",
+          "college": "Sri Balaji Medical College, Hospital and Research Instiutute, Chittoor",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 21,
+          "state": "Andhra Pradesh",
+          "college": "Viswabharathi Medical College",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 3950,
+      "collegeCount": 21
+    },
+    {
+      "state": "Bihar",
+      "colleges": [
+        {
+          "sno": 22,
+          "state": "Bihar",
+          "college": "Buddha Hospital and Research Institute",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 23,
+          "state": "Bihar",
+          "college": "Himalaya Medical College and Hospital , Patna, Bihar",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 24,
+          "state": "Bihar",
+          "college": "Katihar Medical College, Katihar",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 25,
+          "state": "Bihar",
+          "college": "Lord Buddha Koshi Medical College and Hospital, Saharsa",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 26,
+          "state": "Bihar",
+          "college": "Madhubani Medical College, Madhubani",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 27,
+          "state": "Bihar",
+          "college": "MAHABODHI MEDICAL COLLEGE & HOSPITAL",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 28,
+          "state": "Bihar",
+          "college": "Mata Gujri Memorial Medical College, Kishanganj",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 29,
+          "state": "Bihar",
+          "college": "Narayan Medical College & Hospital, Sasaram",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 30,
+          "state": "Bihar",
+          "college": "Netaji Subhas Medical College & Hospital, Amhara, Bihta, Patna",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 31,
+          "state": "Bihar",
+          "college": "Radha Devi Jageshwari Memorial Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 32,
+          "state": "Bihar",
+          "college": "Shree Narayan Medical Institute and Hospital",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 33,
+          "state": "Bihar",
+          "college": "SHRINIVAS G EDUCATIONAL & RESEARCH INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 34,
+          "state": "Bihar",
+          "college": "SHYAMLAL CHANDRASHEKHAR MEDICAL COLLEGE & S P N M HOPSITAL",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 35,
+          "state": "Bihar",
+          "college": "VIRAAT RAMAYAN INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 100,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 2450,
+      "collegeCount": 14
+    },
+    {
+      "state": "Chhattisgarh",
+      "colleges": [
+        {
+          "sno": 36,
+          "state": "Chhattisgarh",
+          "college": "MAA PADMAVATI INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 37,
+          "state": "Chhattisgarh",
+          "college": "Abhishek Mishra Memorial Medical College & RC Bhiali Distt. Durg CG",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 38,
+          "state": "Chhattisgarh",
+          "college": "Raipur Institute of Medical Sciences (RIMS), Raipur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 39,
+          "state": "Chhattisgarh",
+          "college": "Shri Balaji Institute of Medical Science",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 40,
+          "state": "Chhattisgarh",
+          "college": "Shri Rawatpura Sarkar Institute of Medical Sciences and Research Atal Nagar, Dist- Raipur (C.G.)",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 41,
+          "state": "Chhattisgarh",
+          "college": "Shri Shankaracharya Institute of Medical Sciences, Bhilai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 1200,
+      "collegeCount": 6
+    },
+    {
+      "state": "Delhi",
+      "colleges": [
+        {
+          "sno": 42,
+          "state": "Delhi",
+          "college": "Army College of Medical Sciences, New Delhi",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 43,
+          "state": "Delhi",
+          "college": "Hamdard Institute of Medical Sciences & Research, New Delhi",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 250,
+      "collegeCount": 2
+    },
+    {
+      "state": "Gujarat",
+      "colleges": [
+        {
+          "sno": 44,
+          "state": "Gujarat",
+          "college": "Ananya College of Medicine & Research, Kalol",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 45,
+          "state": "Gujarat",
+          "college": "Banas Medical College and Research Institute, Palanpur, Gujarat",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 46,
+          "state": "Gujarat",
+          "college": "Bhagyoday Medical College",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 47,
+          "state": "Gujarat",
+          "college": "CU Shah Medical College, Surendra Nagar",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 48,
+          "state": "Gujarat",
+          "college": "Dr. Kiran C.Patel Medical College and Research Institute",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 49,
+          "state": "Gujarat",
+          "college": "Dr. M.K. Shah Medical College & Research Centre, Ahmedabad",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 50,
+          "state": "Gujarat",
+          "college": "Dr. N.D. Desai Faculty of Medical Science and Research, Nadiad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 51,
+          "state": "Gujarat",
+          "college": "GCS Medical College, Ahmedabad",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 52,
+          "state": "Gujarat",
+          "college": "Gujarat Adani Institute of Medical Sciences, Bhuj",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 53,
+          "state": "Gujarat",
+          "college": "Kiran Medical College",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 54,
+          "state": "Gujarat",
+          "college": "Matushri prabhaben khodabhai boghara medical college & research centre",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 55,
+          "state": "Gujarat",
+          "college": "Nootan Medical College and Research Centre, Mehsana",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 56,
+          "state": "Gujarat",
+          "college": "Parul Institute of Medical Sciences & Research, Vadodara",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 57,
+          "state": "Gujarat",
+          "college": "Pramukhswami Medical College, Karmsad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 58,
+          "state": "Gujarat",
+          "college": "SAL Institute of Medical Sciences, Ahmedabad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 59,
+          "state": "Gujarat",
+          "college": "SBKS Medical Instt. & Research Centre, Vadodra",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 60,
+          "state": "Gujarat",
+          "college": "Shantabaa Medical College, Amreli",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 61,
+          "state": "Gujarat",
+          "college": "SWAMIINARAYAN INSTITUTE OF MEDICAL SCIENCES & RESEARCH",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 62,
+          "state": "Gujarat",
+          "college": "Zydus Medical College & Hospital, Dahod",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        }
+      ],
+      "seats": 3500,
+      "collegeCount": 19
+    },
+    {
+      "state": "Haryana",
+      "colleges": [
+        {
+          "sno": 63,
+          "state": "Haryana",
+          "college": "Adesh Medical College and Hospital, Shahabad, Kurukshetra, Haryana",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 64,
+          "state": "Haryana",
+          "college": "Al Falah School of Medical Sciences & Research Centre, Faridabad",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 65,
+          "state": "Haryana",
+          "college": "Amrita School of Medicine",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 66,
+          "state": "Haryana",
+          "college": "Faculty of Medicine and Health Sciences, Gurgaon (Formarly SGGST Medical College & R Centre,Gurgaon)",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 67,
+          "state": "Haryana",
+          "college": "Maharaja Agrasen Medical College, Agroha",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 68,
+          "state": "Haryana",
+          "college": "Maharishi Markandeshwar College of Medical Sciences & Research, Sadopur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 69,
+          "state": "Haryana",
+          "college": "Maharishi Markandeshwar Institute Of Medical Sciences & Research, Mullana, Ambala",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 70,
+          "state": "Haryana",
+          "college": "N.C. Medical College & Hospital, Panipat",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 71,
+          "state": "Haryana",
+          "college": "Sanskaram School of Medical Sciences",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 72,
+          "state": "Haryana",
+          "college": "World College of Medical Sciences & Researc, Jhajjar, Haryana",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 1900,
+      "collegeCount": 10
+    },
+    {
+      "state": "Himachal Pradesh",
+      "colleges": [
+        {
+          "sno": 73,
+          "state": "Himachal Pradesh",
+          "college": "Maharishi Markandeshwar Medical College & Hospital, Solan",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 150,
+      "collegeCount": 1
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "colleges": [
+        {
+          "sno": 74,
+          "state": "Jammu and Kashmir",
+          "college": "Acharya Shri Chander College of Medical Sciences, Jammu",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 150,
+      "collegeCount": 1
+    },
+    {
+      "state": "Jharkhand",
+      "colleges": [
+        {
+          "sno": 75,
+          "state": "Jharkhand",
+          "college": "Laxmi Chandravansi Medical College & Hospital",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 76,
+          "state": "Jharkhand",
+          "college": "Manipal Tata Medical College,Baridih Jameshedpur",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 77,
+          "state": "Jharkhand",
+          "college": "NETAJI SUBHAS MEDICAL COLLEGE AND HOSPITAL",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 100,
+          "totalSeats": 200
+        },
+        {
+          "sno": 78,
+          "state": "Jharkhand",
+          "college": "Sido Kanhu Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        }
+      ],
+      "seats": 700,
+      "collegeCount": 4
+    },
+    {
+      "state": "Karnataka",
+      "colleges": [
+        {
+          "sno": 79,
+          "state": "Karnataka",
+          "college": "A J Institute of Medical Sciences & Research Centre, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 80,
+          "state": "Karnataka",
+          "college": "Adichunchanagiri Institute of Medical Sciences, Bellur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 81,
+          "state": "Karnataka",
+          "college": "Akash Institute of Medical Sciences & Research Centre, Devanhalli, Bangalore, Karnataka",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 82,
+          "state": "Karnataka",
+          "college": "Al-Ameen Medical College, Bijapur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 83,
+          "state": "Karnataka",
+          "college": "ALVA'S INSTITUTE OF MEDICAL SCIENCES AND RESEARCH CENTRE",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        },
+        {
+          "sno": 84,
+          "state": "Karnataka",
+          "college": "Basaveswara Medical College and Hospital, Chitradurga",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 85,
+          "state": "Karnataka",
+          "college": "BGS Global Institute of Medical Sciences, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 86,
+          "state": "Karnataka",
+          "college": "BGS Medical College and Hospital Bengaluru, Karnataka",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 87,
+          "state": "Karnataka",
+          "college": "Chettinad Institute of Medical Education and Research",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 88,
+          "state": "Karnataka",
+          "college": "Dr BR Ambedkar Medical College, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 89,
+          "state": "Karnataka",
+          "college": "Dr. Chandramma Dayananda Sagar Instt. of Medical Education & Research, Harohalli, Hubli",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 90,
+          "state": "Karnataka",
+          "college": "East Point College of Medical Sciences & Research Centre, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 91,
+          "state": "Karnataka",
+          "college": "FAROOKH ACADEMY OF MEDICAL EDUCATION HOSPITAL AND RESEARCH INSTITUTE",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 92,
+          "state": "Karnataka",
+          "college": "Father Mullers Medical College, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 93,
+          "state": "Karnataka",
+          "college": "G R Medical College Hospital & Research Centre",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 94,
+          "state": "Karnataka",
+          "college": "Jagadguru Gangadhar Mahaswamigalu Moorusavirmath Medical College JGMMMC",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 95,
+          "state": "Karnataka",
+          "college": "Jawaharlal Nehru Medical College, Belgaum",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 96,
+          "state": "Karnataka",
+          "college": "JJM Medical College, Davangere",
+          "status": "Private",
+          "seatsRenewed": 245,
+          "seatsIncreased": 0,
+          "totalSeats": 245
+        },
+        {
+          "sno": 97,
+          "state": "Karnataka",
+          "college": "JSS Medical College, Mysore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 98,
+          "state": "Karnataka",
+          "college": "K S Hegde Medical Academy, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 99,
+          "state": "Karnataka",
+          "college": "K V G Medical College, Sullia",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 100,
+          "state": "Karnataka",
+          "college": "Kanachur Institute of Medical Sciences, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 101,
+          "state": "Karnataka",
+          "college": "Kasturba Medical College, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 102,
+          "state": "Karnataka",
+          "college": "Kasturba Medical College, Manipal",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 103,
+          "state": "Karnataka",
+          "college": "Kempegowda Institute of Medical Sciences, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 104,
+          "state": "Karnataka",
+          "college": "Khaja Bandanawaz University - Faculty of Medical Sciences, Gulbarga",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 105,
+          "state": "Karnataka",
+          "college": "M S Ramaiah Medical College, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 106,
+          "state": "Karnataka",
+          "college": "Mahadevappa Rampure Medical College, Kalaburagi, Gulbarga",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 107,
+          "state": "Karnataka",
+          "college": "MVJ Medical College and Research Hospital, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 108,
+          "state": "Karnataka",
+          "college": "Navodaya Medical College, Raichur",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 109,
+          "state": "Karnataka",
+          "college": "PES University Institute of Medical Sciences and Reseach Bangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 110,
+          "state": "Karnataka",
+          "college": "Raja Rajeswari Medical College & Hospital, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 111,
+          "state": "Karnataka",
+          "college": "S S Institute of Medical Sciences& Research Centre, Davangere",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 112,
+          "state": "Karnataka",
+          "college": "S. Nijalingappa Medical College & HSK Hospital & Research Centre, Bagalkot",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 113,
+          "state": "Karnataka",
+          "college": "Sapthagiri Institute of Medical Sciences & Research Centre, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 114,
+          "state": "Karnataka",
+          "college": "SDM College of Medical Sciences & Hospital, Sattur, Dharwad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 115,
+          "state": "Karnataka",
+          "college": "Shri B M Patil Medical College, Hospital & Research Centre, Vijayapura (Bijapur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 116,
+          "state": "Karnataka",
+          "college": "Shridevi Institute of Medical Sciences & Research Hospital, Tumkur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 117,
+          "state": "Karnataka",
+          "college": "Siddaganga Medical College and Research Institute, Tumakuru",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 118,
+          "state": "Karnataka",
+          "college": "SR Patil Medical College and Hospital Distt Bagalkot",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 119,
+          "state": "Karnataka",
+          "college": "Sri Chamundeshwari Medical College Hospital & Research Institute",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 120,
+          "state": "Karnataka",
+          "college": "Sri Devaraj URS Medical College, Kolar",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 121,
+          "state": "Karnataka",
+          "college": "Sri Madhusudan Sai Institute of Medical Sciences & Research, Chikballapur",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 0,
+          "totalSeats": 50
+        },
+        {
+          "sno": 122,
+          "state": "Karnataka",
+          "college": "Sri siddhartha Institute of Medical Sciences & Research Centre, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 123,
+          "state": "Karnataka",
+          "college": "Sri Siddhartha Medical College, Tumkur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 124,
+          "state": "Karnataka",
+          "college": "Srinivas Institute of Medical Research Centre, Srinivasnagar, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 125,
+          "state": "Karnataka",
+          "college": "St. Johns Medical College, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 126,
+          "state": "Karnataka",
+          "college": "Subbaiah Institute of Medical Sciences, Shimoga, Karnataka",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 127,
+          "state": "Karnataka",
+          "college": "The Oxford Medical College, Hospital & Research Centre, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 128,
+          "state": "Karnataka",
+          "college": "Vydehi Institute Of Medical Sciences & Research Centre, Bangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 129,
+          "state": "Karnataka",
+          "college": "Yenepoya Medical College, Mangalore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 10995,
+      "collegeCount": 51
+    },
+    {
+      "state": "Kerala",
+      "colleges": [
+        {
+          "sno": 130,
+          "state": "Kerala",
+          "college": "Al-Azhar Medical College and Super Speciality Hospital, Thodupuzha",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 131,
+          "state": "Kerala",
+          "college": "Amala Institute of Medical Sciences, Thrissur",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 132,
+          "state": "Kerala",
+          "college": "Amrita School of Medicine, Elamkara, Kochi",
+          "status": "Private",
+          "seatsRenewed": 149,
+          "seatsIncreased": 0,
+          "totalSeats": 149
+        },
+        {
+          "sno": 133,
+          "state": "Kerala",
+          "college": "Azeezia Instt of Medical Science,Meeyannoor, Kollam",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 134,
+          "state": "Kerala",
+          "college": "Believers Church Medical College Hospital, Thiruvalla, Kerala",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 135,
+          "state": "Kerala",
+          "college": "Dr. Moopen Medical College Wayanad, Kerala",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 136,
+          "state": "Kerala",
+          "college": "Dr. Somervel Memorial CSI Hospital & Medical College, Karakonam, Thiruvananthapuram",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 137,
+          "state": "Kerala",
+          "college": "Jubilee Mission Medical College & Research Institute, Thrissur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 138,
+          "state": "Kerala",
+          "college": "Karuna Medical College, Palakkad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 139,
+          "state": "Kerala",
+          "college": "Kerala Medical College, Mangode",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 140,
+          "state": "Kerala",
+          "college": "KMCT Medical College, Kozhikode, Calicut",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 141,
+          "state": "Kerala",
+          "college": "M E S Medical College , Perintalmanna Malappuram Distt.Kerala",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 142,
+          "state": "Kerala",
+          "college": "Malabar Medical College, Kozhikode, Calicut",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 143,
+          "state": "Kerala",
+          "college": "Malankara Orthodox Syrian Church Medical College, Kolenchery",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 144,
+          "state": "Kerala",
+          "college": "Mount Zion Medical College, Chayalode, Ezhamkulam Adoor, Pathanamthitta",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 145,
+          "state": "Kerala",
+          "college": "P K Das Institute of Medical Sciences, Palakkad, Kerala",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 146,
+          "state": "Kerala",
+          "college": "Palakkad Institute of Medical Sciences, Palakkad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 147,
+          "state": "Kerala",
+          "college": "Pushpagiri Institute Of Medical Sciences and Research Centre, Tiruvalla",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 148,
+          "state": "Kerala",
+          "college": "Sree Gokulam Medical College Trust & Research Foundation, Trivandrum",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 149,
+          "state": "Kerala",
+          "college": "Sree Narayana Instt. of Medical Sciences, Chalakka, Ernakulam",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 150,
+          "state": "Kerala",
+          "college": "Sree Uthradom Thiurnal Academy of Medical Sciences, Trivandrum",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 151,
+          "state": "Kerala",
+          "college": "Travancore Medical College, Kollam",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        }
+      ],
+      "seats": 3849,
+      "collegeCount": 22
+    },
+    {
+      "state": "Madhya Pradesh",
+      "colleges": [
+        {
+          "sno": 152,
+          "state": "Madhya Pradesh",
+          "college": "Amaltas Institute of Medical Sciences, Dewas",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 153,
+          "state": "Madhya Pradesh",
+          "college": "Chirayu Medical College and Hospital, Bairagarh, Bhopal",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 154,
+          "state": "Madhya Pradesh",
+          "college": "Index Medical College Hospital & Research Centre, Indore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 155,
+          "state": "Madhya Pradesh",
+          "college": "L.N. Medical College and Research Centre, Bhopal",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 156,
+          "state": "Madhya Pradesh",
+          "college": "LNCT Medical College & Sewakunj Hospital, Indore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 157,
+          "state": "Madhya Pradesh",
+          "college": "Mahaveer Institute of Medical Sciences & Research, Bhopal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 158,
+          "state": "Madhya Pradesh",
+          "college": "MANSAROVAR MEDICAL COLLEGE AND MGU HOSPITAL",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 159,
+          "state": "Madhya Pradesh",
+          "college": "Peoples College of Medical Sciences & Research Centre, Bhanpur, Bhopal",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 160,
+          "state": "Madhya Pradesh",
+          "college": "Ram Krishna College Hospital & Research Centre, Bhopal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 161,
+          "state": "Madhya Pradesh",
+          "college": "RKDF Medical College Hospital & Research Centre, Jatkhedi, Bhopal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 162,
+          "state": "Madhya Pradesh",
+          "college": "Ruxmaniben Deepchand Gardi Medical College, Ujjain",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 163,
+          "state": "Madhya Pradesh",
+          "college": "School of Medical Sciences, Sri Satya Sai University of Technology and Medical Sciences",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 164,
+          "state": "Madhya Pradesh",
+          "college": "Sri Aurobindo Medical College and Post Graduate Institute , Indore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 165,
+          "state": "Madhya Pradesh",
+          "college": "Sukh Sagar Medical College & Hospital, Jabalpur",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        }
+      ],
+      "seats": 3000,
+      "collegeCount": 14
+    },
+    {
+      "state": "Maharashtra",
+      "colleges": [
+        {
+          "sno": 166,
+          "state": "Maharashtra",
+          "college": "ACPM Medical College, Dhule",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 167,
+          "state": "Maharashtra",
+          "college": "Ashwini Rural Medical College, Hospital & Research Centre, Solapur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 168,
+          "state": "Maharashtra",
+          "college": "B.K.L. Walawalkar Rural Medical College, Ratnagiri",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 169,
+          "state": "Maharashtra",
+          "college": "B.S.P. Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        },
+        {
+          "sno": 170,
+          "state": "Maharashtra",
+          "college": "Bharati Vidyapeeth Deemed University Medical College & Hospital, Sangli",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 171,
+          "state": "Maharashtra",
+          "college": "Bharati Vidyapeeth University Medical College, Pune",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 172,
+          "state": "Maharashtra",
+          "college": "Bharatratna Atal Bihari Vajpayee Medical College, Pune",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 173,
+          "state": "Maharashtra",
+          "college": "Datta Meghe Medical College, Nagpur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 174,
+          "state": "Maharashtra",
+          "college": "Dr. D Y Patil Medical College, Hospital and Research Centre, Pimpri, Pune",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 175,
+          "state": "Maharashtra",
+          "college": "Dr. D Y Patil Medical College, Kolhapur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 176,
+          "state": "Maharashtra",
+          "college": "Dr. N Y Tasgaonkar Institute of Medical Science",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 177,
+          "state": "Maharashtra",
+          "college": "Dr. Panjabrao Alias Bhausaheb Deshmukh Memorial Medical College, Amravati",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 178,
+          "state": "Maharashtra",
+          "college": "Dr. Rajendra Gode Medical College, Amravati",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 179,
+          "state": "Maharashtra",
+          "college": "Dr. Ulhas Patil Medical College & Hospital, Jalgaon",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 180,
+          "state": "Maharashtra",
+          "college": "Dr. Vasantrao Pawar Med. Col. Hosp. & Research Centre, Nasik (Prev. NDMVP Samaj Medical College)",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 181,
+          "state": "Maharashtra",
+          "college": "Dr. Vithalrao Vikhe Patil Foundations Medical College & Hospital, Ahmednagar",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 182,
+          "state": "Maharashtra",
+          "college": "DY Patil University, School of Medicine",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 183,
+          "state": "Maharashtra",
+          "college": "Indian Institute of Medical Science & Research, Jalna",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 184,
+          "state": "Maharashtra",
+          "college": "Jawaharlal Nehru Medical College, Sawangi (Meghe), Wardha",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 185,
+          "state": "Maharashtra",
+          "college": "KJ Somaiyya Medical College & Research Centre, Mumbai",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 186,
+          "state": "Maharashtra",
+          "college": "Krishna Institute of Medical Sciences, Karad",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 187,
+          "state": "Maharashtra",
+          "college": "Maharashtra Institute of Medical Education & Research, Talegaon, Pune",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 188,
+          "state": "Maharashtra",
+          "college": "Maharashtra Institute of Medical Sciences & Research, Latur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 189,
+          "state": "Maharashtra",
+          "college": "Mahatma Gandhi Institute of Medical Sciences, Sevagram, Wardha",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 190,
+          "state": "Maharashtra",
+          "college": "Mahatma Gandhi Mission Medical College, Vashi",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 191,
+          "state": "Maharashtra",
+          "college": "Mahatma Gandhi Missions Medical College, Aurangabad",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 192,
+          "state": "Maharashtra",
+          "college": "Mahatma Gandhi Missions Medical College, Kamothe, Navi Mumbai",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 193,
+          "state": "Maharashtra",
+          "college": "Mahatma Gandhi Missions Medical College, Nerul, Navi Mumbai",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 0,
+          "totalSeats": 50
+        },
+        {
+          "sno": 194,
+          "state": "Maharashtra",
+          "college": "Mahatma Gandhi Missions Medical College, Panvel",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 195,
+          "state": "Maharashtra",
+          "college": "MALATI MULTISPECIALITY HOSPITAL AND MEDICAL COLLEGE",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 0,
+          "totalSeats": 50
+        },
+        {
+          "sno": 196,
+          "state": "Maharashtra",
+          "college": "Mauli Medical College Hospital & Research Center",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 197,
+          "state": "Maharashtra",
+          "college": "N. K. P. Salve Instt. of Medical Sciences and Research Centre and Lata Mangeshkar Hospital, Nagpur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 198,
+          "state": "Maharashtra",
+          "college": "Padmashree Dr. D.Y.Patil Medical College, Navi Mumbai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 199,
+          "state": "Maharashtra",
+          "college": "Parbhani Medical College",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 200,
+          "state": "Maharashtra",
+          "college": "Prakash Institute of Medical Sciences & Research, Sangli",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 201,
+          "state": "Maharashtra",
+          "college": "R K Damani Medical College ShriRamchandra Institute ofMedical Sciences, Chhatrapati Sambhajinagar",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 202,
+          "state": "Maharashtra",
+          "college": "Rural Medical College, Loni",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 203,
+          "state": "Maharashtra",
+          "college": "Sindhudurg Shikshan Prasarak Mandal (SSPM) Medical College & Lifetime Hospital, Padave, Sindhudurg",
+          "status": "Private",
+          "seatsRenewed": 149,
+          "seatsIncreased": 0,
+          "totalSeats": 149
+        },
+        {
+          "sno": 204,
+          "state": "Maharashtra",
+          "college": "SMBT Institute of Medical Sciences & Research Centre, Nandihills, Nashik",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 205,
+          "state": "Maharashtra",
+          "college": "Smt Sakhubai Narayanrao Katkade Medical College and Research Center",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 206,
+          "state": "Maharashtra",
+          "college": "Smt. Kashibai Navale Medical College and General Hospital, Pune",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 207,
+          "state": "Maharashtra",
+          "college": "Symbiosis Medical College for Women, Pune",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 208,
+          "state": "Maharashtra",
+          "college": "Terna Medical College, Navi Mumbai",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 209,
+          "state": "Maharashtra",
+          "college": "Vedantaa Institute of Medical Sciences, Palghar, Maharashtra",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 7099,
+      "collegeCount": 44
+    },
+    {
+      "state": "Manipur",
+      "colleges": [
+        {
+          "sno": 210,
+          "state": "Manipur",
+          "college": "Shija Academy of Health Sciences",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 150,
+      "collegeCount": 1
+    },
+    {
+      "state": "Meghalaya",
+      "colleges": [
+        {
+          "sno": 211,
+          "state": "Meghalaya",
+          "college": "PA Sangama International Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 150,
+      "collegeCount": 1
+    },
+    {
+      "state": "Odisha",
+      "colleges": [
+        {
+          "sno": 212,
+          "state": "Odisha",
+          "college": "DRIEMS Institute of Health Sciences and Hospital, Kairapari",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 213,
+          "state": "Odisha",
+          "college": "Hi-Tech Medical College & Hospital, Bhubaneswar",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 214,
+          "state": "Odisha",
+          "college": "Hi-Tech Medical College & Hospital, Rourkela",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 215,
+          "state": "Odisha",
+          "college": "Institute of Medical Sciences & SUM Hospital, Bhubaneswar",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 216,
+          "state": "Odisha",
+          "college": "Institute Of Medical Sciences & SUM Hospital, Bhubaneswar",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 217,
+          "state": "Odisha",
+          "college": "Kalinga Institute of Medical Sciences, Bhubaneswar",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 1100,
+      "collegeCount": 6
+    },
+    {
+      "state": "Puducherry",
+      "colleges": [
+        {
+          "sno": 218,
+          "state": "Puducherry",
+          "college": "Aarupadai Veedu Medical College, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 219,
+          "state": "Puducherry",
+          "college": "Mahatma Gandhi Medical College & Research Institute, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 220,
+          "state": "Puducherry",
+          "college": "Puducherry Institute of Medical Sciences & Research, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 221,
+          "state": "Puducherry",
+          "college": "Sri Lakshmi Narayana Institute of Medical Sciences, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 222,
+          "state": "Puducherry",
+          "college": "Sri Manakula Vinayagar Medical College & Hospital, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 223,
+          "state": "Puducherry",
+          "college": "Sri Venkateswaraa Medical College, Hospital & Research Centre, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 224,
+          "state": "Puducherry",
+          "college": "Vinayaka Missions Medical College, Karaikal, Pondicherry",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        }
+      ],
+      "seats": 1600,
+      "collegeCount": 7
+    },
+    {
+      "state": "Punjab",
+      "colleges": [
+        {
+          "sno": 225,
+          "state": "Punjab",
+          "college": "Adesh Institute of Medical Sciences & Research, Bhatinda",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 226,
+          "state": "Punjab",
+          "college": "Christian Medical College, Ludhiana",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 227,
+          "state": "Punjab",
+          "college": "Dayanand Medical College & Hospital, Ludhiana",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 228,
+          "state": "Punjab",
+          "college": "Gian Sagar Medical College & Hospital, Patiala",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 229,
+          "state": "Punjab",
+          "college": "Punjab Institute of Medical Sciences, Jalandhar",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 230,
+          "state": "Punjab",
+          "college": "RIMT Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 50,
+          "totalSeats": 100
+        },
+        {
+          "sno": 231,
+          "state": "Punjab",
+          "college": "Sri Guru Ram Das Institute of Medical Sciences and Research, Sri Amritsar",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 950,
+      "collegeCount": 7
+    },
+    {
+      "state": "Rajasthan",
+      "colleges": [
+        {
+          "sno": 232,
+          "state": "Rajasthan",
+          "college": "American International Institute of Medical Sciences, Bedwas",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 233,
+          "state": "Rajasthan",
+          "college": "Ananta Institute of Medical Sciences & Research Centre, Rajsamand",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 234,
+          "state": "Rajasthan",
+          "college": "Arya Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 100,
+          "totalSeats": 150
+        },
+        {
+          "sno": 235,
+          "state": "Rajasthan",
+          "college": "Balvir Singh Tomar Institute of Medical Sciences and Research",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 236,
+          "state": "Rajasthan",
+          "college": "BHARAT VIKAS INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        },
+        {
+          "sno": 237,
+          "state": "Rajasthan",
+          "college": "Dr S S Tantia Medical College Hospital & Research Centre",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 238,
+          "state": "Rajasthan",
+          "college": "Dr. B. S. Tomar Institute of Medical Sciences and Research",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        },
+        {
+          "sno": 239,
+          "state": "Rajasthan",
+          "college": "GEETANJALI INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 240,
+          "state": "Rajasthan",
+          "college": "Geetanjali Medical College & Hospital,Udaipur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 241,
+          "state": "Rajasthan",
+          "college": "Jaipur National University Institute for Medical Sciences and Research Centre, Jagatpura, Jaipur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 242,
+          "state": "Rajasthan",
+          "college": "JIET Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 243,
+          "state": "Rajasthan",
+          "college": "Mahatma Gandhi Medical College and Hospital, Sitapur, Jaipur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 244,
+          "state": "Rajasthan",
+          "college": "National Institute of Medical Science & Research, Jaipur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 245,
+          "state": "Rajasthan",
+          "college": "Pacific Institute of Medical Sciences, Umarda, Udaipur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 246,
+          "state": "Rajasthan",
+          "college": "Pacific Medical College & Hospital, Bhilo Ka Bedla, Udaipur",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 247,
+          "state": "Rajasthan",
+          "college": "Prince Medical College & Hospital",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 50,
+          "totalSeats": 50
+        },
+        {
+          "sno": 248,
+          "state": "Rajasthan",
+          "college": "Sudha Medical College, Kota, Rajasthan",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 100,
+          "totalSeats": 200
+        },
+        {
+          "sno": 249,
+          "state": "Rajasthan",
+          "college": "Vyas Medical College & Hospital Jodhpur, Rajasthan",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        }
+      ],
+      "seats": 3600,
+      "collegeCount": 18
+    },
+    {
+      "state": "Sikkim",
+      "colleges": [
+        {
+          "sno": 250,
+          "state": "Sikkim",
+          "college": "Sikkim Manipal Institute of Medical Sciences, Gangtok",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        }
+      ],
+      "seats": 100,
+      "collegeCount": 1
+    },
+    {
+      "state": "Tamil Nadu",
+      "colleges": [
+        {
+          "sno": 253,
+          "state": "Tamil Nadu",
+          "college": "ACS Medical College and Hospital, Chennai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 254,
+          "state": "Tamil Nadu",
+          "college": "Annapoorna Medical College & Hospital, Salem",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 255,
+          "state": "Tamil Nadu",
+          "college": "APS MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        },
+        {
+          "sno": 256,
+          "state": "Tamil Nadu",
+          "college": "Arunai Medical College And Hospital",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 257,
+          "state": "Tamil Nadu",
+          "college": "Bhaarat Medical College & Hospital",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 258,
+          "state": "Tamil Nadu",
+          "college": "Chettinad Hospital & Research Institute, Kanchipuram",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 259,
+          "state": "Tamil Nadu",
+          "college": "Christian Medical College, Vellore",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 260,
+          "state": "Tamil Nadu",
+          "college": "Dhanalakshmi Srinivasan Institute of Medical Sciences and Hospital - Thuraiyur Road, Perambalur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 261,
+          "state": "Tamil Nadu",
+          "college": "Dhanalakshmi Srinivasan Medical College and Hospital, Perambalur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 262,
+          "state": "Tamil Nadu",
+          "college": "Faculty of Medicine , Sri Lalithambigai Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 263,
+          "state": "Tamil Nadu",
+          "college": "Indira Medical College & Hospitals, Thiruvallur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 264,
+          "state": "Tamil Nadu",
+          "college": "J R Medical College and Hospital Villupuram District, Tamilnadu",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 265,
+          "state": "Tamil Nadu",
+          "college": "Kanyakumari Medical Mission Research Centre, Kanyakumari District",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 266,
+          "state": "Tamil Nadu",
+          "college": "Karpaga Vinayaga Institute of Medical Sciences, Maduranthagam",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 267,
+          "state": "Tamil Nadu",
+          "college": "Karpagam Faculty of Medical Sciences & Research, Coimbatore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 268,
+          "state": "Tamil Nadu",
+          "college": "KMCH Institute of Health Sciences and Research, Coimbatore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 269,
+          "state": "Tamil Nadu",
+          "college": "Madha Medical College and Hospital, Thandalam, Chennai",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 270,
+          "state": "Tamil Nadu",
+          "college": "Meenakshi Medical College and Research Institute, Enathur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 271,
+          "state": "Tamil Nadu",
+          "college": "Melmaruvathur Adiparasakthi Instt. Medical Sciences and Research",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 272,
+          "state": "Tamil Nadu",
+          "college": "Nandha Medical College & Hospital Erode",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 273,
+          "state": "Tamil Nadu",
+          "college": "Panimalar Medical College Hospital & Research Institute, Chennai,Tamil Nadu",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 274,
+          "state": "Tamil Nadu",
+          "college": "PSG Institute of Medical Sciences, Coimbatore",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 275,
+          "state": "Tamil Nadu",
+          "college": "PSP Medical College Hospital and Research Institute, Chennai",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 276,
+          "state": "Tamil Nadu",
+          "college": "Rajalakshmi Medical College Hospital and Research Institute",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 277,
+          "state": "Tamil Nadu",
+          "college": "Saveetha Medical College and Hospital, Kanchipuram",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 278,
+          "state": "Tamil Nadu",
+          "college": "Shri Sathya Sai Medical College and Research Institute, Kancheepuram",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 279,
+          "state": "Tamil Nadu",
+          "college": "Sree Balaji Medical College and Hospital, Chennai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 280,
+          "state": "Tamil Nadu",
+          "college": "Sree Mookambika Institute of Medical Sciences, Kanyakumari",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 281,
+          "state": "Tamil Nadu",
+          "college": "Sri Muthukumaran Medical College,Chennai",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 282,
+          "state": "Tamil Nadu",
+          "college": "Sri Ramachandra Medical College & Research Institute, Chennai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 283,
+          "state": "Tamil Nadu",
+          "college": "Sri Venkateswaraa Medical College Hospital and Research Institute, Chennai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 284,
+          "state": "Tamil Nadu",
+          "college": "Srinivasan Medical College and Hospital",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 285,
+          "state": "Tamil Nadu",
+          "college": "SRM Medical College Hospital & Research Centre, Kancheepuram",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 286,
+          "state": "Tamil Nadu",
+          "college": "ST Peters Medical College, Hospital & Research Institute",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 287,
+          "state": "Tamil Nadu",
+          "college": "Swamy Vivekanandha Medical College Hospital And Research Institute",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 288,
+          "state": "Tamil Nadu",
+          "college": "Tagore Medical College and Hospital, Chennai",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 289,
+          "state": "Tamil Nadu",
+          "college": "TAKSHASHILA MEDICAL COLLEGE",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 100,
+          "totalSeats": 200
+        },
+        {
+          "sno": 290,
+          "state": "Tamil Nadu",
+          "college": "Trichy SRM Medical College Hospital & Research Centre, Trichy",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 291,
+          "state": "Tamil Nadu",
+          "college": "Velammal Medical College Hospital and Research Institute, Madurai",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 292,
+          "state": "Tamil Nadu",
+          "college": "VELS Medical College & Hospital",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 293,
+          "state": "Tamil Nadu",
+          "college": "Vinayaka Missions Kirupananda Variyar Medical College, Salem",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        }
+      ],
+      "seats": 8650,
+      "collegeCount": 41
+    },
+    {
+      "state": "Telangana",
+      "colleges": [
+        {
+          "sno": 294,
+          "state": "Telangana",
+          "college": "Apollo Institute of Medical Sciences and Research, Hyderabad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 295,
+          "state": "Telangana",
+          "college": "Arundathi Institute of Medical Sciences, Medchal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 296,
+          "state": "Telangana",
+          "college": "Ayaan Institute of Medical Sciences, Teaching Hospital & Research Centre, Kanaka Mamidi, R.R. Dist",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 297,
+          "state": "Telangana",
+          "college": "Bhaskar Medical College, Yenkapally",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 298,
+          "state": "Telangana",
+          "college": "Chalmeda Anand Rao Institute Of Medical Sciences, Karimnagar",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 299,
+          "state": "Telangana",
+          "college": "CMR Institute of Medical Science",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 300,
+          "state": "Telangana",
+          "college": "Deccan College of Medical Sciences",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 301,
+          "state": "Telangana",
+          "college": "Dr. Patnam Mahender Reddy Institute of Medical Sciences, Chevella, Rangareddy",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 302,
+          "state": "Telangana",
+          "college": "Dr. VRK Womens Medical College, Aziznagar",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 303,
+          "state": "Telangana",
+          "college": "Father Colombo Institute of Medical Sciences, Warangal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 304,
+          "state": "Telangana",
+          "college": "Kamineni Academy of Medical Sciences & Research Center, Hyderabad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 305,
+          "state": "Telangana",
+          "college": "Kamineni Institute of Medical Sciences, Narketpally",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 306,
+          "state": "Telangana",
+          "college": "Mahavir Institute of Medical Sciences, Vikarabad, Telengana",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 307,
+          "state": "Telangana",
+          "college": "Maheshwara Medical College, Chitkul, Patancheru, Medak",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 308,
+          "state": "Telangana",
+          "college": "Malla Reddy Institute of Medical Sciences, Hyderabad",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 309,
+          "state": "Telangana",
+          "college": "Mallareddy Medical College for Women, Hyderabad",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 310,
+          "state": "Telangana",
+          "college": "Mamata Academy of Medical Sciences, Bachupally",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 311,
+          "state": "Telangana",
+          "college": "Mamata Medical College, Khammam",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 312,
+          "state": "Telangana",
+          "college": "Mediciti Institute Of Medical Sciences, Ghanpur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 313,
+          "state": "Telangana",
+          "college": "MNR Medical College & Hospital, Sangareddy",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 314,
+          "state": "Telangana",
+          "college": "NEELIMA INSTITUTE OF MEDICAL SCIENCES",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 315,
+          "state": "Telangana",
+          "college": "Nova Institute of Medical Sciences and Research Centre",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 316,
+          "state": "Telangana",
+          "college": "Prathima Institute Of Medical Sciences, Karimnagar",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 317,
+          "state": "Telangana",
+          "college": "Prathima Relief Institute of Medical Sciences, Warangal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 318,
+          "state": "Telangana",
+          "college": "R.V.M. Institute of Medical Sciences and Research Centre, Siddipet",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 319,
+          "state": "Telangana",
+          "college": "RAJA RAJESHWARI INSTITUTE OF MEDICAL SCIENCES-GIRLS",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        },
+        {
+          "sno": 320,
+          "state": "Telangana",
+          "college": "S V S Medical College, Mehboobnagar",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 321,
+          "state": "Telangana",
+          "college": "Shadan Institute of Medical Sciences,Research Centre and Teaching Hospital, Peerancheru",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 322,
+          "state": "Telangana",
+          "college": "Surabhi Institute of Medical Sciences, Siddipet, Telangana",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 323,
+          "state": "Telangana",
+          "college": "TRR Institute of Medical Sciences, patancheru",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 5850,
+      "collegeCount": 30
+    },
+    {
+      "state": "Tripura",
+      "colleges": [
+        {
+          "sno": 324,
+          "state": "Tripura",
+          "college": "Tripura Medical College and Dr. B R A M Teaching Hospital, Agartala",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 325,
+          "state": "Tripura",
+          "college": "Tripura Santiniketan Medical College, Dist- West Tripura",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 300,
+      "collegeCount": 2
+    },
+    {
+      "state": "Uttar Pradesh",
+      "colleges": [
+        {
+          "sno": 326,
+          "state": "Uttar Pradesh",
+          "college": "Ajay Sangaal Institute of Medical Sciences and Ayushman Hospital Shamli (UP)",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 327,
+          "state": "Uttar Pradesh",
+          "college": "Career Instt. Of Medical Sciences & Hospital, Lucknow",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 328,
+          "state": "Uttar Pradesh",
+          "college": "Dr. B.S. Kushwah Medical College, Kanpur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 329,
+          "state": "Uttar Pradesh",
+          "college": "Dr. KNS Memorial Institute of Medical Sciences ( Formerly Known as Mayo Institute of Medical Sciences), Lucknow-Ayodhya Road",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 330,
+          "state": "Uttar Pradesh",
+          "college": "Era Lucknow Medical College , Lucknow",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 331,
+          "state": "Uttar Pradesh",
+          "college": "F.H. Medical College & Hospital, Etamdapur, Agra",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 332,
+          "state": "Uttar Pradesh",
+          "college": "FULAN SINGH MEDICAL COLLEGE, FS UNIVERSITY",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 100,
+          "totalSeats": 100
+        },
+        {
+          "sno": 333,
+          "state": "Uttar Pradesh",
+          "college": "G.S. Medical College & Hospital, Hapur, UP",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 334,
+          "state": "Uttar Pradesh",
+          "college": "Heritage Institute of Medical Sciences, Varanasi",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 335,
+          "state": "Uttar Pradesh",
+          "college": "Hind Institute of Medical Sciences , Barabanki",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 336,
+          "state": "Uttar Pradesh",
+          "college": "Hind Institute of Medical Sciences, Sitapur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 337,
+          "state": "Uttar Pradesh",
+          "college": "Integral Institute of Medical Sciences & Research, Lucknow",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 338,
+          "state": "Uttar Pradesh",
+          "college": "K.D. Medical College Hospital & Research Centre, Mathura",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 339,
+          "state": "Uttar Pradesh",
+          "college": "KMC Medical College & Hospital, Maharajganj, Uttar Pradesh",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 340,
+          "state": "Uttar Pradesh",
+          "college": "Krishna Mohan Medical College & Hospital, Mathura",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 341,
+          "state": "Uttar Pradesh",
+          "college": "Muzaffarnagar Medical College, Muzaffarnagar",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 50,
+          "totalSeats": 250
+        },
+        {
+          "sno": 342,
+          "state": "Uttar Pradesh",
+          "college": "Naraina Medical College & Research Centre",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 343,
+          "state": "Uttar Pradesh",
+          "college": "National Capital Region Institute of Medical Sciences, Meerut",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 344,
+          "state": "Uttar Pradesh",
+          "college": "Noida International Institute Of Medical Sciences",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 345,
+          "state": "Uttar Pradesh",
+          "college": "Prasad Institute of Medical Sciences, Lucknow",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 346,
+          "state": "Uttar Pradesh",
+          "college": "Rajshree Medical Research Institute, Bareilly",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 347,
+          "state": "Uttar Pradesh",
+          "college": "Rama Medical College Hospital & Research Centre, Kanpur",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 348,
+          "state": "Uttar Pradesh",
+          "college": "Rama Medical College Hospital and Research Centre, Hapur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 349,
+          "state": "Uttar Pradesh",
+          "college": "Rohilkhand Medical College & Hospital, Bareilly",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 350,
+          "state": "Uttar Pradesh",
+          "college": "Santosh Medical College, Ghaziabad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 351,
+          "state": "Uttar Pradesh",
+          "college": "Saraswati Institute of Medical Sciences, Hapur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 352,
+          "state": "Uttar Pradesh",
+          "college": "Saraswati Medical College, Unnao, U.P.",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 353,
+          "state": "Uttar Pradesh",
+          "college": "sardar Patel Institute of medical education and health sciences",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 50,
+          "totalSeats": 50
+        },
+        {
+          "sno": 354,
+          "state": "Uttar Pradesh",
+          "college": "Sharda School of Medical Sciences & Research ( previously School of Medical Sciences & Research,Greater Noida)",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 355,
+          "state": "Uttar Pradesh",
+          "college": "Shri Gorakshnath Medical College Hospital & Arogya Dham Gorakhpur (UP)",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 356,
+          "state": "Uttar Pradesh",
+          "college": "Shri Ram Murti Smarak Institute of Medical Sciences, Bareilly",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 357,
+          "state": "Uttar Pradesh",
+          "college": "Shri Siddhi Vinayak Medical College & Hospital Sambhal (UP) 244302",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 358,
+          "state": "Uttar Pradesh",
+          "college": "SKS Hospital Medical College & Research Centre",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 359,
+          "state": "Uttar Pradesh",
+          "college": "Subharti Medical College, Meerut",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 360,
+          "state": "Uttar Pradesh",
+          "college": "T S Misra Medical College & Hospital, Amusi, Lucknow",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 361,
+          "state": "Uttar Pradesh",
+          "college": "Teerthanker Mahaveer Medical College, Moradabad",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 362,
+          "state": "Uttar Pradesh",
+          "college": "United Institute of Medical Sciences, Allahabad",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 363,
+          "state": "Uttar Pradesh",
+          "college": "Varun Arjun Medical College, Banthra, Shahjahanpur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 364,
+          "state": "Uttar Pradesh",
+          "college": "Venkateshwara Institute of Medical Sciences, Gajraula",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 8300,
+      "collegeCount": 39
+    },
+    {
+      "state": "Uttarakhand",
+      "colleges": [
+        {
+          "sno": 365,
+          "state": "Uttarakhand",
+          "college": "Gautam Buddha Chikitsa Mahavidyalaya, Dehradum",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 366,
+          "state": "Uttarakhand",
+          "college": "Graphic Era Institute of Medical Sciences Dehradun, Uttrakhand",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 367,
+          "state": "Uttarakhand",
+          "college": "Himalayan Institute of Medical Sciences, Dehradun",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 368,
+          "state": "Uttarakhand",
+          "college": "Shri Guru Ram Rai Institute of Medical & Health Sciences, Dehradun",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        }
+      ],
+      "seats": 850,
+      "collegeCount": 4
+    },
+    {
+      "state": "West Bengal",
+      "colleges": [
+        {
+          "sno": 369,
+          "state": "West Bengal",
+          "college": "East West Institute of Medical Sciences and Research, Burdwan",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 370,
+          "state": "West Bengal",
+          "college": "Gouri Devi Institute of Medical Sciences and Hospital, Durgapur",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 371,
+          "state": "West Bengal",
+          "college": "ICARE Institute of Medical Sciences & Research, Haldia, Purba Midanpore",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 50,
+          "totalSeats": 200
+        },
+        {
+          "sno": 372,
+          "state": "West Bengal",
+          "college": "IQ-City Medical College, Burdwan",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 373,
+          "state": "West Bengal",
+          "college": "Jagannath Gupta Institute of Medical Sciences & Hospital, Kolkata",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 374,
+          "state": "West Bengal",
+          "college": "Jagannath Gupta Institute of Medical Sciences and Hospital",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 50,
+          "totalSeats": 150
+        },
+        {
+          "sno": 375,
+          "state": "West Bengal",
+          "college": "Jakir Hossain Medical College, Burdwan",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 0,
+          "totalSeats": 100
+        },
+        {
+          "sno": 376,
+          "state": "West Bengal",
+          "college": "JIS School of Medical Science & Research, Howrah",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 377,
+          "state": "West Bengal",
+          "college": "JMN Medical College, Nadia",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 378,
+          "state": "West Bengal",
+          "college": "KPC Medical College, Jadavpur, Kolkata",
+          "status": "Private",
+          "seatsRenewed": 200,
+          "seatsIncreased": 0,
+          "totalSeats": 200
+        },
+        {
+          "sno": 379,
+          "state": "West Bengal",
+          "college": "Krishnanagar Institute of Medical Sciences Pvt. Ltd Krishnanagar, Nadia (WB)",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 100,
+          "totalSeats": 250
+        },
+        {
+          "sno": 380,
+          "state": "West Bengal",
+          "college": "PKG Medical College & Hospital",
+          "status": "Private",
+          "seatsRenewed": 50,
+          "seatsIncreased": 50,
+          "totalSeats": 100
+        },
+        {
+          "sno": 381,
+          "state": "West Bengal",
+          "college": "RANIGANJ INSTITUTE OF MEDICAL SCIENCE",
+          "status": "Private",
+          "seatsRenewed": 100,
+          "seatsIncreased": 100,
+          "totalSeats": 200
+        },
+        {
+          "sno": 382,
+          "state": "West Bengal",
+          "college": "Santiniketan Medical College, Bolpur, West Bengal",
+          "status": "Private",
+          "seatsRenewed": 150,
+          "seatsIncreased": 0,
+          "totalSeats": 150
+        },
+        {
+          "sno": 383,
+          "state": "West Bengal",
+          "college": "Shri Ramkrishna Institute of Medical Sciences & Sanaka Hospitals, Durgapur",
+          "status": "Private",
+          "seatsRenewed": 250,
+          "seatsIncreased": 0,
+          "totalSeats": 250
+        },
+        {
+          "sno": 384,
+          "state": "West Bengal",
+          "college": "SKS MEDICAL COLLEGE",
+          "status": "Private",
+          "seatsRenewed": 0,
+          "seatsIncreased": 150,
+          "totalSeats": 150
+        }
+      ],
+      "seats": 2850,
+      "collegeCount": 16
+    }
+  ]
+}

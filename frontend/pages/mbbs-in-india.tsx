@@ -370,9 +370,9 @@ export default function MbbsInIndiaPage() {
                 <p>
                   Browse private MBBS colleges with state-wise fee information and admission guidance.
                 </p>
-                <button type="button" className="btn" onClick={() => scrollTo(feesRef)}>
+                <Link href="/mbbs-in-india/private-universities" className="btn">
                   View Colleges →
-                </button>
+                </Link>
               </div>
               <div className="card">
                 <div className="icon">D</div>
