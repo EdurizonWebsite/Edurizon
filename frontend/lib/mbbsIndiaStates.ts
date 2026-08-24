@@ -15,6 +15,25 @@ const mergedStates = new Set<string>([
   ...govtData.stateSummary.map((item) => item.state),
   ...privateData.stateSummary.map((item) => item.state),
 ]);
+const STATE_IMAGE_SLUG: Record<string, string> = {
+  "Andhra Pradesh": "andhra-pradesh",
+  Karnataka: "karnataka",
+  Rajasthan: "rajasthan",
+  Gujarat: "gujrat",
+};
+
+export function getMbbsIndiaStateImagePath(state: string) {
+  const slug =
+    STATE_IMAGE_SLUG[state] ??
+    state
+      .toLowerCase()
+      .replace(/\s*&\s*/g, "-and-")
+      .replace(/\s+/g, "-");
+
+  return `/assets/Images/mbbs-in-india/states/${slug}.png`;
+}
+
+const FEATURED_STATES = ["Karnataka", "Andhra Pradesh", "Rajasthan", "Gujarat"];
 
 export const MBBS_INDIA_STATES = [...mergedStates]
   .map(normalizeMbbsIndiaState)
@@ -25,8 +44,9 @@ export const MBBS_INDIA_STATE_PAGES: Record<string, string> = {
   Karnataka: "/mbbs-in-india/karnataka",
 };
 
-export const MBBS_INDIA_STATE_SLIDES = MBBS_INDIA_STATES.map((title) => ({
+export const MBBS_INDIA_STATE_SLIDES = FEATURED_STATES.map((title) => ({
   title,
+  image: getMbbsIndiaStateImagePath(title),
   href:
     MBBS_INDIA_STATE_PAGES[title] ??
     `/mbbs-in-india/state-wise-institutes?state=${encodeURIComponent(title)}`,

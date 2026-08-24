@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import useEmblaCarousel from "embla-carousel-react";
-import { EmblaOptionsType } from "embla-carousel";
+import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";import { EmblaOptionsType } from "embla-carousel";
 import { IconButton } from "../Buttons";
 import {
   NextButton,
@@ -109,7 +109,16 @@ const MbbsIndiaStatesSection = () => {
                     href={slide.href}
                     className="mbbs-states-card block relative overflow-hidden rounded-[4vw] md:rounded-[1.5vw] border border-[#ffd7c3] bg-linenChosen"
                   >
-                    <div className="absolute inset-x-0 bottom-0 bg-white/90 border-t border-[#ffd7c3] px-[4vw] md:px-[1.25vw] py-[4vw] md:py-[1.25vw]">
+                    <div className="relative flex-1 w-full overflow-hidden">
+                      <Image
+                        src={slide.image}
+                        alt={`MBBS in ${slide.title}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 72vw, 20vw"
+                      />
+                    </div>
+                    <div className="relative shrink-0 bg-white/90 border-t border-[#ffd7c3] px-[4vw] md:px-[1.25vw] py-[4vw] md:py-[1.25vw]">
                       <p className="text-black font-semibold text-regularTextPhone md:text-h6Text">
                         MBBS in {slide.title}
                       </p>

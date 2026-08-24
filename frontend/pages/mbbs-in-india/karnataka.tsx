@@ -4,6 +4,7 @@ import {
   formatKarnatakaFee,
   KARNATAKA_PRIVATE_FEE_TABLE,
 } from "@/lib/data/karnatakaMbbsFees";
+import { getKarnatakaCollegePagePath } from "@/lib/mbbsIndiaCollegeSlugs";
 
 const WHY_KARNATAKA = [
   {
@@ -500,7 +501,15 @@ export default function MbbsInKarnatakaPage() {
                   {KARNATAKA_PRIVATE_FEE_TABLE.map((row, index) => (
                     <tr key={row.college}>
                       <td>{index + 1}</td>
-                      <td>{row.college}</td>
+                      <td>
+                        {row.slug ? (
+                          <Link href={getKarnatakaCollegePagePath(row.slug)}>
+                            {row.college}
+                          </Link>
+                        ) : (
+                          row.college
+                        )}
+                      </td>
                       <td>{row.estb}</td>
                       <td>{formatKarnatakaFee(row.govtQuotaFee)}</td>
                       <td>{formatKarnatakaFee(row.privateQuotaFee)}</td>
@@ -575,7 +584,7 @@ export default function MbbsInKarnatakaPage() {
           </div>
         </section>
 
-        <section className="cta">
+        <section className="cta mb-[6.25vw] md:mb-[7.5vw]">
           <div className="container">
             <h2>Ready to Begin Your Karnataka MBBS Journey?</h2>
             <p>

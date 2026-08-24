@@ -30,7 +30,6 @@ export default function StateWiseInstitutesPage() {
       setSelectedState(state);
     }
   }, [router.isReady, router.query.state]);
-
   const filteredGroups = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
 

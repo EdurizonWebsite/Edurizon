@@ -744,6 +744,15 @@
   color: var(--primary);
 }
 
+.mbbs-india-page .college-table a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.mbbs-india-page .college-table a:hover {
+  text-decoration: underline;
+}
+
 .mbbs-india-page .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--line-strong);
@@ -879,6 +888,8 @@
 .mbbs-states-card {
   width: 100%;
   height: 25vw;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 767px) {

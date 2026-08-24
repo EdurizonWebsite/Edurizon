@@ -34,7 +34,7 @@ const Navbar = () => {
   const [studyDestinationHover, setStudyDestinationHover] = useState(0);
   const mbbsIndiaLinks = [
     { name: "India", href: "/mbbs-in-india" },
-    { name: "Karnataka", href: "/mbbs-in-india/karnataka" },
+    // { name: "Karnataka", href: "/mbbs-in-india/karnataka" },
     { name: "Deemed University", href: "/mbbs-in-india/deemed-universities" },
     { name: "Private University", href: "/mbbs-in-india/private-universities" },
     { name: "State Wise Institutes", href: "/mbbs-in-india/state-wise-institutes" },

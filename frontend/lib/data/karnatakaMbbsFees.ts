@@ -1,9 +1,12 @@
+import { SAPTHAGIRI_COLLEGE_SLUG } from "@/lib/mbbsIndiaCollegeSlugs";
+
 export type KarnatakaFeeRow = {
   college: string;
   estb: number;
   govtQuotaFee: number;
   privateQuotaFee: number;
   nriMgtQuotaFee: number;
+  slug?: string;
 };
 
 export const KARNATAKA_PRIVATE_FEE_TABLE: KarnatakaFeeRow[] = [
@@ -76,6 +79,7 @@ export const KARNATAKA_PRIVATE_FEE_TABLE: KarnatakaFeeRow[] = [
     govtQuotaFee: 182371,
     privateQuotaFee: 2240750,
     nriMgtQuotaFee: 4540750,
+    slug: SAPTHAGIRI_COLLEGE_SLUG,
   },
   {
     college: "Akash Institute of Medical Sciences and Research Centre",
