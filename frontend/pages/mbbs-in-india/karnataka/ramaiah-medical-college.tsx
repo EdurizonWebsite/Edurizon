@@ -5,31 +5,31 @@ import Breadcrumbs from "@/components/Breadcumbs";
 import Head from "next/head";
 import CallingBox from "@/components/studyDestinationComponents/header/callingBox";
 
-const COLLEGE_NAME =
-  "SIMS & Research Centre";
+const COLLEGE_NAME = "Ramaiah Medical College";
 
 const atAGlanceData = {
   id: "karnataka",
   section2: "highlight",
   content: {
-    title: "Sapthagiri Medical College at a Glance",
+    title: "Ramaiah Medical College at a Glance",
     subTitle: "",
     data: [
       ["Particular", "Details"],
       ["College Name", COLLEGE_NAME],
-      ["Location", "Bengaluru, Karnataka"],
-      ["Year of Inception", "2011"],
+      ["Location", "Bangalore, Karnataka"],
+      ["Year of Inception", "1979"],
       ["Management", "Private"],
-      ["Current University", "Sapthagiri NPS University, Bengaluru"],
-      ["Previous Affiliation", "Rajiv Gandhi University of Health Sciences (RGUHS)"],
-      ["MBBS Seats", "250"],
-      ["Course Duration", "5.5 years including internship"],
-      ["Teaching Hospital", "Sapthagiri Hospital (~1,070 beds)"],
+      ["University", "Ramaiah University of Applied Sciences (RUAS) from AY 2022–23"],
+      ["Recognition", "National Medical Commission (NMC)"],
+      ["MBBS Seats", "200 per year"],
+      ["PG Seats (MD/MS)", "192 per year across 23 departments"],
+      ["Super-Specialty Seats (DM/M.Ch)", "56 per year across 13 departments"],
+      ["Teaching Hospital", "Ramaiah Medical College Hospital (est. 1984)"],
+      ["Hospital Capacity", "Approximately 1,392 beds"],
+      ["Campus", "65 acres"],
       ["Admission", "NEET-UG through KEA counselling"],
-      [
-        "Address",
-        "15, Hesarghatta Road, Navy Layout, Chikkasandra, Chikkabanavara, Bengaluru – 560090",
-      ],
+      ["NIRF Ranking (2024)", "46 among medical colleges in India"],
+      ["India Today Ranking (2024)", "26 among medical colleges in India"],
     ],
   },
 };
@@ -38,14 +38,28 @@ const feeStructureData = {
   id: "karnataka",
   section2: "",
   content: {
-    title: "MBBS Fee Structure 2025–26",
-    subTitle: "Sapthagiri Institute of Medical Sciences, Bangalore",
+    title: "MBBS Fee Structure 2026–27",
+    subTitle: "Ramaiah Medical College, Bangalore",
     data: [
-      ["Seat Category", "Seats", "Tuition Fee", "Skill Lab Fee", "Misc. Fee"],
-      ["Government Merit Quota – Karnataka Domicile", "100", "₹1,41,621", "₹30,000", "₹15,000"],
-      ["Private GMP Quota", "50", "₹22,00,000", "₹30,000", "₹15,000"],
-      ["Private Open Quota", "50", "₹22,00,000", "₹30,000", "₹15,000"],
-      ["Management – Indian/NRI", "50", "₹45,00,000", "₹30,000", "₹15,000"],
+      ["Seat Category", "MBBS Fee"],
+      ["Government Quota", "As per the Government of Karnataka fee orders"],
+      ["Private Quota", "₹25,00,000 per annum"],
+      ["NRI / Other Quota", "₹45,00,000 per annum"],
+    ],
+  },
+};
+
+const seatIntakeData = {
+  id: "karnataka",
+  section2: "",
+  content: {
+    title: "Seat Breakdown Summary",
+    subTitle: "Undergraduate, postgraduate and super-specialty intake",
+    data: [
+      ["Programme", "Seats per year", "Details"],
+      ["Undergraduate (UG/MBBS)", "200", "MBBS seats per year"],
+      ["Postgraduate (PG/MD/MS)", "192", "Distributed across 23 departments"],
+      ["Super-Specialty (DM/M.Ch)", "56", "Distributed across 13 departments"],
     ],
   },
 };
@@ -55,12 +69,20 @@ const eligibilityData = {
   section2: "",
   content: {
     title: "Eligibility Criteria",
-    subTitle: "MBBS admission at Sapthagiri Institute of Medical Sciences",
+    subTitle: "MBBS admission at Ramaiah Medical College",
     data: [
       ["Criteria", "Details"],
-      ["Academic Qualification", ["Completion of 10+2 / equivalent", "Physics, Chemistry and Biology/Biotechnology as prescribed"]],
-      ["Minimum Marks", "Fulfilment of applicable minimum qualifying marks"],
-      ["Age", "Meeting the prescribed age requirement"],
+      [
+        "Academic Qualification",
+        [
+          "Passed 2nd PUC / Class 12 / equivalent examination",
+          "English as one of the subjects/languages",
+        ],
+      ],
+      [
+        "Minimum Marks",
+        "50% aggregate in Physics, Chemistry and Biology, with applicable relaxation for eligible reserved categories",
+      ],
       ["NEET-UG", "Qualification in NEET-UG is mandatory"],
       ["Category Requirements", "Compliance with eligibility and category requirements applicable to counselling"],
     ],
@@ -88,8 +110,8 @@ const counsellingData = {
 const services = [
   {
     icon: "/assets/Images/Icons/feesIcon.svg",
-    text: "Govt Quota Fee",
-    label: "₹1,41,621/Year",
+    text: "Private Quota Fee",
+    label: "₹25,00,000/Year",
   },
   {
     icon: "/assets/Images/Icons/ExperienceIcon.svg",
@@ -99,53 +121,41 @@ const services = [
   {
     icon: "/assets/Images/Icons/TieUpsIcon.svg",
     text: "City & State",
-    label: "Bengaluru, Karnataka",
+    label: "Bangalore, Karnataka",
   },
   {
     icon: "/assets/Images/Icons/AcademinCoursesIcon.svg",
     text: "MBBS Seats",
-    label: "250",
+    label: "200",
   },
 ];
 
 const whyChooseItems = [
-  "250 MBBS seats with NMC-recognised intake",
-  "Large 1,070-bed teaching hospital supporting clinical education",
-  "NABH-accredited hospital (Certificate H-2024-1311)",
-  "Bangalore location with strong healthcare ecosystem",
-  "Integrated medical education under Sapthagiri NPS University",
-  "Postgraduate and super-specialty learning environment",
-  "Active research and academic programmes",
-  "Community-oriented healthcare exposure",
+  "Established in 1979 with NMC recognition",
+  "200 MBBS seats with attached 1,392-bed teaching hospital",
+  "Constituent college of Ramaiah University of Applied Sciences",
+  "NIRF rank 46 and India Today rank 26 among medical colleges in 2024",
+  "65-acre campus with modern academic and clinical facilities",
+  "Advanced Learning Centre, skill laboratory and Integrated Museum",
+  "5,360+ publications with patents filed, granted and published",
+  "Broad-specialty and super-specialty clinical exposure",
 ];
 
-const preClinicalDepartments = [
+const museumDepartments = [
   "Anatomy",
-  "Physiology",
-  "Biochemistry",
-];
-
-const paraClinicalDepartments = [
+  "Microbiology",
   "Pathology",
   "Pharmacology",
-  "Microbiology",
   "Forensic Medicine",
-  "Community Medicine",
+  "Medicine",
 ];
 
-const clinicalDepartments = [
-  "General Medicine",
-  "General Surgery",
-  "Obstetrics & Gynaecology",
-  "Paediatrics",
-  "Orthopaedics",
-  "Ophthalmology",
-  "ENT",
-  "Dermatology",
-  "Psychiatry",
-  "Anaesthesiology",
-  "Radiodiagnosis",
-  "Pulmonary Medicine",
+const superSpecialtyServices = [
+  "Endocrinology",
+  "Cardiology",
+  "Surgical Gastroenterology",
+  "Pulmonary & Critical Care Medicine",
+  "Other specialized clinical services",
 ];
 
 const documentsRequired = [
@@ -166,26 +176,26 @@ const documentsRequired = [
   "Other documents specified by the counselling authority",
 ];
 
-const SapthagiriInstitutePage = () => {
+const RamaiahMedicalCollegePage = () => {
   return (
     <>
       <Head>
         <title>
-          Sapthagiri Institute of Medical Sciences Bangalore | MBBS Fees & Admission | Edurizon
+          Ramaiah Medical College Bangalore | MBBS Fees, Admission & Ranking | Edurizon
         </title>
         <meta
           name="description"
-          content="Study MBBS at Sapthagiri Institute of Medical Sciences & Research Centre, Bangalore. Explore fees, eligibility, 250 MBBS seats, NABH hospital, KEA counselling and admission guidance."
+          content="Study MBBS at Ramaiah Medical College, Bangalore. Explore 200 MBBS seats, 2026–27 fees, 1,392-bed hospital, NIRF ranking, eligibility, KEA counselling and admission guidance."
         />
         <meta
           name="keywords"
-          content="Sapthagiri Medical College Bangalore, SIMSRC MBBS fees, Sapthagiri Institute of Medical Sciences admission, MBBS in Bangalore, Karnataka medical college"
+          content="Ramaiah Medical College Bangalore, RMC MBBS fees, MS Ramaiah Medical College admission, MBBS in Bangalore, Karnataka medical college"
         />
         <meta name="author" content="edurizon" />
         <meta name="robots" content="index, follow" />
         <link
           rel="alternate"
-          href="https://www.edurizon.in/mbbs-in-india/karnataka/sapthagiri-institute-of-medical-sciences-and-research-centre"
+          href="https://www.edurizon.in/mbbs-in-india/karnataka/ramaiah-medical-college"
           hrefLang="en-in"
         />
       </Head>
@@ -198,8 +208,8 @@ const SapthagiriInstitutePage = () => {
           <div className="bg-linenChosen flex flex-col md:flex-row gap-[3vw] items-center w-full text-black">
             <Image
               className="w-full md:w-[40.625vw] h-full object-cover"
-              src="/assets/Images/mbbs-in-india/states/karnataka/sims.png"
-              alt="Sapthagiri Institute of Medical Sciences, Bangalore"
+              src="/assets/Images/mbbs-in-india/states/karnataka/ramaiah-medical-college.png"
+              alt="Ramaiah Medical College, Bangalore"
               width={650}
               height={550}
             />
@@ -237,45 +247,41 @@ const SapthagiriInstitutePage = () => {
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Overview</h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>
-              Sapthagiri Institute of Medical Sciences &amp; Research Centre (SIMSRC), Bangalore,
-              is a private medical institution located on Hesaraghatta Main Road in Bengaluru,
-              Karnataka.
+              Ramaiah Medical College (RMC), Bangalore, was established in 1979 with the vision of
+              providing quality medical education and developing competent healthcare professionals.
             </li>
             <li>
-              Established under the Sri Srinivasa Educational &amp; Charitable Trust, the institution
-              provides undergraduate and postgraduate medical education along with tertiary and
-              super-specialty healthcare services.
+              The college is a constituent college of Ramaiah University of Applied Sciences (RUAS)
+              from the academic year 2022–23 onwards and is recognized by the National Medical
+              Commission (NMC).
             </li>
             <li>
-              The medical college is part of Sapthagiri NPS University, Bengaluru, established under
-              the Sapthagiri NPS University Act, 2022.
+              With a strong emphasis on academics, clinical training, research and professional
+              development, RMC combines rigorous medical education with practical clinical experience.
             </li>
             <li>
-              NMC identifies SIMSRC as a private medical college established in 2011, with an MBBS
-              intake of 250 seats.
-            </li>
-            <li>
-              The college combines medical education with hospital-based clinical training through
-              laboratories, lecture facilities, clinical skills training, research activities and
-              other learning resources.
+              The college is equipped with modern infrastructure, technology-enabled classrooms,
+              advanced laboratories, clinical learning facilities and skill-development resources.
             </li>
           </ul>
 
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            About Karnataka &amp; Bengaluru
+            A Legacy of Medical Education
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>
-              Karnataka is one of India&apos;s leading destinations for medical education with a strong
-              network of government and private medical colleges.
+              The Ramaiah Group of Institutions was founded by Late Sri. M. S. Ramaiah with the
+              vision of creating institutions that contribute meaningfully to education and society.
             </li>
             <li>
-              Bengaluru is a major education, technology and healthcare hub with excellent
-              connectivity and student-friendly infrastructure.
+              Since its establishment, Ramaiah Medical College has developed into a prominent
+              medical education institution focused on academic excellence, clinical competence,
+              research and professional ethics.
             </li>
             <li>
-              Students benefit from exposure to multispecialty hospitals, research environments and
-              diverse clinical cases across the city.
+              The college aims to develop doctors with strong medical knowledge as well as the
+              ability to communicate, collaborate, make informed clinical decisions and respond to
+              patient and community needs.
             </li>
           </ul>
 
@@ -284,24 +290,20 @@ const SapthagiriInstitutePage = () => {
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>
-              <strong>Teaching Hospital:</strong> Sapthagiri Hospital with approximately 1,070 beds
-              supporting clinical education and community healthcare.
+              <strong>Teaching Hospital:</strong> Ramaiah Medical College Hospital, established in
+              1984, with approximately 1,392 beds.
             </li>
             <li>
-              <strong>University:</strong> Part of Sapthagiri NPS University, Bengaluru; previously
-              affiliated to Rajiv Gandhi University of Health Sciences (RGUHS).
+              <strong>University:</strong> Constituent college of Ramaiah University of Applied
+              Sciences (RUAS) from AY 2022–23.
             </li>
             <li>
-              <strong>Programme:</strong> MBBS is a 5½-year programme including compulsory internship.
+              <strong>Campus:</strong> 65-acre campus with library, hostel, laboratories, cafeteria,
+              sports complex, counselling cell, auditorium and student tracking security.
             </li>
             <li>
-              <strong>Clinical Training:</strong> Pre-clinical, para-clinical and clinical disciplines
-              with practical laboratory training, hospital postings and community-oriented medical
-              education.
-            </li>
-            <li>
-              <strong>Accreditation:</strong> NABH Certificate H-2024-1311 valid from 11 January 2024
-              to 10 January 2028.
+              <strong>Rankings:</strong> Ranked 46th by NIRF (2024) and 26th by India Today (2024)
+              among medical colleges in India.
             </li>
           </ul>
         </section>
@@ -309,7 +311,7 @@ const SapthagiriInstitutePage = () => {
         <div className="p-[8vw] md:p-[4vw] flex flex-col md:flex-row px-[6vw] md:px-[12.5vw] gap-[5vw] md:gap-[2vw] mb-[10vw] md:mb-[4vw] items-center bg-linenChosen">
           <div className="flex flex-col gap-[2vw] md:gap-[1vw] text-black">
             <h3 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%] mb-[4vw] md:mb-[1vw] text-left">
-              Why Choose Sapthagiri for MBBS?
+              Why Choose Ramaiah Medical College?
             </h3>
             <ul className="list-disc list-outside pl-[2vw] md:pl-[1.5vw] text-smallTextPhone md:text-regularText">
               {whyChooseItems.map((item) => (
@@ -318,7 +320,7 @@ const SapthagiriInstitutePage = () => {
             </ul>
           </div>
           <Image
-            src="/assets/Images/why-chose.png"
+                        src="/assets/Images/why-chose.png"
             className="ml-auto w-full md:w-[32.5vw] h-auto"
             width={690}
             height={690}
@@ -333,6 +335,12 @@ const SapthagiriInstitutePage = () => {
         />
 
         <ListedTable
+          id={seatIntakeData.id}
+          section2={seatIntakeData.section2}
+          content={seatIntakeData.content}
+        />
+
+        <ListedTable
           id={feeStructureData.id}
           section2={feeStructureData.section2}
           content={feeStructureData.content}
@@ -340,71 +348,67 @@ const SapthagiriInstitutePage = () => {
 
         <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Sapthagiri NPS University
+            MBBS Programme
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>
-              Sapthagiri Institute of Medical Sciences is part of the academic ecosystem of Sapthagiri
-              NPS University, Bengaluru.
+              The MBBS programme covers pre-clinical, para-clinical and clinical disciplines in
+              accordance with applicable NMC guidelines.
             </li>
             <li>
-              The university was established through Karnataka Act No. 18 of 2023 and is promoted by
-              the Sri Srinivasa Educational &amp; Charitable Trust.
+              Students undergo classroom teaching, lectures, tutorials, practical sessions,
+              laboratory training, clinical postings, hospital-based training and community/field-based
+              learning.
             </li>
             <li>
-              The School of Medicine &amp; Health Sciences offers MBBS, MD/MS specializations and
-              selected DM/M.Ch programmes.
-            </li>
-            <li>
-              Students should note that older third-party listings may still show RGUHS affiliation;
-              the current NMC listing identifies Sapthagiri NPS University.
+              The curriculum focuses on integrated learning so students understand how medical
+              disciplines work together in diagnosis, management and treatment.
             </li>
           </ul>
 
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Teaching Hospital &amp; Clinical Training
+            Teaching Hospital &amp; Clinical Exposure
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>Approximately 1,070-bed multispecialty teaching hospital</li>
-            <li>Outpatient departments, inpatient wards and emergency services</li>
-            <li>Intensive-care facilities, operation theatres and diagnostic services</li>
-            <li>Blood bank, pharmacy, physiotherapy and clinical support services</li>
+            <li>Approximately 1,392-bed teaching hospital operating 24 hours a day, 7 days a week</li>
+            <li>Emergency and inpatient services with broad-specialty and super-specialty departments</li>
+            <li>Clinical wards, outpatient departments and rural and urban field practice areas</li>
             <li>
-              Exposure across General Medicine, Surgery, OBG, Paediatrics, Orthopaedics,
-              Ophthalmology, ENT, Dermatology, Psychiatry, Anaesthesiology, Radiodiagnosis and more
+              Super-specialty services include {superSpecialtyServices.join(", ")}
             </li>
           </ul>
 
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Academic Departments
-          </h3>
-          <p className="text-smallTextPhone md:text-regularText text-left mb-[2vw]">
-            <strong>Pre-Clinical:</strong> {preClinicalDepartments.join(", ")}
-          </p>
-          <p className="text-smallTextPhone md:text-regularText text-left mb-[2vw]">
-            <strong>Para-Clinical:</strong> {paraClinicalDepartments.join(", ")}
-          </p>
-          <p className="text-smallTextPhone md:text-regularText text-left mb-[4vw]">
-            <strong>Clinical:</strong> {clinicalDepartments.join(", ")}
-          </p>
-
-          <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Infrastructure &amp; Student Facilities
+            Modern Infrastructure &amp; Learning Facilities
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>Lecture halls, teaching laboratories and departmental facilities</li>
-            <li>Clinical skills training, library resources and diagnostic facilities</li>
-            <li>Hostel accommodation with separate arrangements for male and female students</li>
-            <li>Dining facilities, sports, recreation and student support services</li>
-            <li>Seminars, workshops, conferences and research activities</li>
+            <li>Technology-enabled classrooms, advanced laboratories and a skill laboratory</li>
+            <li>Advanced Learning Centre, clinical training facilities and teaching hospital</li>
+            <li>Library and learning resources with co-curricular and extracurricular facilities</li>
+            <li>
+              Integrated Museum covering {museumDepartments.join(", ")} with specimens, charts and
+              case-based learning resources
+            </li>
+            <li>
+              Museum features include a common display area, student feedback area, self-learning
+              area, tabletop touchscreen 3D simulator, interactive simulator, LCD kiosks and about
+              10,000 sq. ft. of museum space
+            </li>
           </ul>
 
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Postgraduate &amp; Super-Specialty Programmes
+            Research, Rankings &amp; Recognition
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>MD/MS programmes across Anatomy, Medicine, Surgery, Paediatrics, Radiodiagnosis and other specialties</li>
-            <li>Super-specialty programmes including DM Cardiology, DM Medical Gastroenterology, DM Endocrinology, M.Ch Surgical Oncology and M.Ch Urology</li>
+            <li>5,360+ publications with 15 patents filed, 11 granted and 11 published</li>
+            <li>NMC recognition and NABH-accredited institutional initiatives</li>
+            <li>Accredited centre for Pharmacovigilance in India</li>
+            <li>Regional Centre for training in the Basic Course in Medical Education (BCME)</li>
+            <li>
+              Regional Centre for the Curriculum Implementation Support Programme (CISP) under NMC
+              initiatives
+            </li>
+            <li>Ranked 50th in India in 2025, as stated by the institution</li>
           </ul>
         </section>
 
@@ -434,14 +438,14 @@ const SapthagiriInstitutePage = () => {
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>NEET counselling guidance and Karnataka medical counselling support</li>
-            <li>MBBS college selection and Sapthagiri admission guidance</li>
+            <li>MBBS college selection and Ramaiah admission guidance</li>
             <li>Seat-category information, fee structure analysis and college comparison</li>
             <li>Eligibility assessment, document preparation, and reporting guidance</li>
           </ul>
           <p className="text-smallTextPhone md:text-regularText text-left">
             Looking for MBBS admission in Bangalore? Connect with Edurizon Pvt. Ltd. for
-            personalized guidance on MBBS admission at Sapthagiri Institute of Medical Sciences and
-            other medical colleges in Karnataka.
+            personalized guidance on MBBS admission at Ramaiah Medical College and other medical
+            colleges in Karnataka.
           </p>
         </section>
       </div>
@@ -449,4 +453,4 @@ const SapthagiriInstitutePage = () => {
   );
 };
 
-export default SapthagiriInstitutePage;
+export default RamaiahMedicalCollegePage;

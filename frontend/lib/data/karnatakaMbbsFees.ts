@@ -1,4 +1,4 @@
-import { SAPTHAGIRI_COLLEGE_SLUG } from "@/lib/mbbsIndiaCollegeSlugs";
+import { AKASH_COLLEGE_SLUG, MVJ_COLLEGE_SLUG, RAMAIAH_COLLEGE_SLUG, SAPTHAGIRI_COLLEGE_SLUG } from "@/lib/mbbsIndiaCollegeSlugs";
 
 export type KarnatakaFeeRow = {
   college: string;
@@ -65,6 +65,15 @@ export const KARNATAKA_PRIVATE_FEE_TABLE: KarnatakaFeeRow[] = [
     govtQuotaFee: 153571,
     privateQuotaFee: 1200117,
     nriMgtQuotaFee: 4011950,
+    slug: MVJ_COLLEGE_SLUG,
+  },
+  {
+    college: "Ramaiah Medical College, Bangalore",
+    estb: 1979,
+    govtQuotaFee: 153571,
+    privateQuotaFee: 2500000,
+    nriMgtQuotaFee: 4500000,
+    slug: RAMAIAH_COLLEGE_SLUG,
   },
   {
     college: "Vydehi Institute of Medical Sciences and Research Centre",
@@ -87,6 +96,7 @@ export const KARNATAKA_PRIVATE_FEE_TABLE: KarnatakaFeeRow[] = [
     govtQuotaFee: 153571,
     privateQuotaFee: 1200117,
     nriMgtQuotaFee: 3611950,
+    slug: AKASH_COLLEGE_SLUG,
   },
   {
     college: "Khaja Bande Navaz Institute of Medical Sciences",

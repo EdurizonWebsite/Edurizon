@@ -5,30 +5,34 @@ import Breadcrumbs from "@/components/Breadcumbs";
 import Head from "next/head";
 import CallingBox from "@/components/studyDestinationComponents/header/callingBox";
 
-const COLLEGE_NAME =
-  "SIMS & Research Centre";
+const COLLEGE_NAME = "MVJ Medical College & Research Hospital";
 
 const atAGlanceData = {
   id: "karnataka",
   section2: "highlight",
   content: {
-    title: "Sapthagiri Medical College at a Glance",
+    title: "MVJ Medical College at a Glance",
     subTitle: "",
     data: [
       ["Particular", "Details"],
       ["College Name", COLLEGE_NAME],
-      ["Location", "Bengaluru, Karnataka"],
-      ["Year of Inception", "2011"],
+      ["Location", "Hoskote, Bengaluru Rural District, Karnataka"],
+      ["Year of Inception", "2001"],
       ["Management", "Private"],
-      ["Current University", "Sapthagiri NPS University, Bengaluru"],
-      ["Previous Affiliation", "Rajiv Gandhi University of Health Sciences (RGUHS)"],
-      ["MBBS Seats", "250"],
+      ["University", "Rajiv Gandhi University of Health Sciences (RGUHS)"],
+      ["MBBS Seats – 2026–27", "250"],
       ["Course Duration", "5.5 years including internship"],
-      ["Teaching Hospital", "Sapthagiri Hospital (~1,070 beds)"],
+      ["Teaching Hospital", "MVJ Medical College & Research Hospital"],
+      ["Hospital Beds", "1,100"],
+      ["Emergency Beds", "30"],
+      ["Operation Theatres", "12"],
+      ["ICUs", "8"],
+      ["Hospital Services", "24/7"],
       ["Admission", "NEET-UG through KEA counselling"],
+      ["Hospital Accreditation", "NABH Entry-Level Certified and ISO Accredited, as stated by MVJ"],
       [
         "Address",
-        "15, Hesarghatta Road, Navy Layout, Chikkasandra, Chikkabanavara, Bengaluru – 560090",
+        "Dandupalya, 30th KM Milestone, National Highway 75, Kolathur Post, Hoskote Taluk, Bengaluru Rural District, Karnataka – 562114",
       ],
     ],
   },
@@ -39,13 +43,12 @@ const feeStructureData = {
   section2: "",
   content: {
     title: "MBBS Fee Structure 2025–26",
-    subTitle: "Sapthagiri Institute of Medical Sciences, Bangalore",
+    subTitle: "MVJ Medical College & Research Hospital, Bangalore",
     data: [
-      ["Seat Category", "Seats", "Tuition Fee", "Skill Lab Fee", "Misc. Fee"],
-      ["Government Merit Quota – Karnataka Domicile", "100", "₹1,41,621", "₹30,000", "₹15,000"],
-      ["Private GMP Quota", "50", "₹22,00,000", "₹30,000", "₹15,000"],
-      ["Private Open Quota", "50", "₹22,00,000", "₹30,000", "₹15,000"],
-      ["Management – Indian/NRI", "50", "₹45,00,000", "₹30,000", "₹15,000"],
+      ["Seat Category", "Tuition Fee", "Other College Fee"],
+      ["NEET Government", "₹1,41,621", "₹60,000"],
+      ["NEET Private", "₹11,88,167", "₹60,000"],
+      ["NEET Others", "₹40,00,000", "—"],
     ],
   },
 };
@@ -55,12 +58,11 @@ const eligibilityData = {
   section2: "",
   content: {
     title: "Eligibility Criteria",
-    subTitle: "MBBS admission at Sapthagiri Institute of Medical Sciences",
+    subTitle: "MBBS admission at MVJ Medical College",
     data: [
       ["Criteria", "Details"],
-      ["Academic Qualification", ["Completion of 10+2 / equivalent", "Physics, Chemistry and Biology/Biotechnology as prescribed"]],
-      ["Minimum Marks", "Fulfilment of applicable minimum qualifying marks"],
-      ["Age", "Meeting the prescribed age requirement"],
+      ["Academic Qualification", ["Physics, Chemistry and Biology must be studied", "Fulfilment of the prescribed age requirement"]],
+      ["Minimum Marks", "Candidate must satisfy the minimum qualifying marks in PCB"],
       ["NEET-UG", "Qualification in NEET-UG is mandatory"],
       ["Category Requirements", "Compliance with eligibility and category requirements applicable to counselling"],
     ],
@@ -85,6 +87,19 @@ const counsellingData = {
   },
 };
 
+const seatIntakeData = {
+  id: "karnataka",
+  section2: "",
+  content: {
+    title: "MBBS Seat Intake 2026–27",
+    subTitle: "NMC UG seat matrix dated 13 July 2026",
+    data: [
+      ["Course", "Academic Year", "MBBS Seats"],
+      ["MBBS", "2026–27", "250"],
+    ],
+  },
+};
+
 const services = [
   {
     icon: "/assets/Images/Icons/feesIcon.svg",
@@ -99,7 +114,7 @@ const services = [
   {
     icon: "/assets/Images/Icons/TieUpsIcon.svg",
     text: "City & State",
-    label: "Bengaluru, Karnataka",
+    label: "Hoskote, Karnataka",
   },
   {
     icon: "/assets/Images/Icons/AcademinCoursesIcon.svg",
@@ -109,21 +124,17 @@ const services = [
 ];
 
 const whyChooseItems = [
-  "250 MBBS seats with NMC-recognised intake",
-  "Large 1,070-bed teaching hospital supporting clinical education",
-  "NABH-accredited hospital (Certificate H-2024-1311)",
-  "Bangalore location with strong healthcare ecosystem",
-  "Integrated medical education under Sapthagiri NPS University",
-  "Postgraduate and super-specialty learning environment",
-  "Active research and academic programmes",
-  "Community-oriented healthcare exposure",
+  "250 MBBS seats as per NMC UG seat matrix 2026–27",
+  "1,100-bed teaching hospital with 24/7 services",
+  "NABH entry-level certified and ISO accredited hospital, as stated by MVJ",
+  "27-acre campus on NH-75 at Dandupalya, Hoskote",
+  "Affiliation with Rajiv Gandhi University of Health Sciences",
+  "3D interactive medical learning platform",
+  "Dedicated skill laboratory for clinical training",
+  "MVJ Neurosciences Centre and selected super-specialty services",
 ];
 
-const preClinicalDepartments = [
-  "Anatomy",
-  "Physiology",
-  "Biochemistry",
-];
+const preClinicalDepartments = ["Anatomy", "Physiology", "Biochemistry"];
 
 const paraClinicalDepartments = [
   "Pathology",
@@ -145,7 +156,7 @@ const clinicalDepartments = [
   "Psychiatry",
   "Anaesthesiology",
   "Radiodiagnosis",
-  "Pulmonary Medicine",
+  "Other clinical specialties",
 ];
 
 const documentsRequired = [
@@ -166,26 +177,26 @@ const documentsRequired = [
   "Other documents specified by the counselling authority",
 ];
 
-const SapthagiriInstitutePage = () => {
+const MvjMedicalCollegePage = () => {
   return (
     <>
       <Head>
         <title>
-          Sapthagiri Institute of Medical Sciences Bangalore | MBBS Fees & Admission | Edurizon
+          MVJ Medical College Bangalore | MBBS Fees, Admission & Counselling | Edurizon
         </title>
         <meta
           name="description"
-          content="Study MBBS at Sapthagiri Institute of Medical Sciences & Research Centre, Bangalore. Explore fees, eligibility, 250 MBBS seats, NABH hospital, KEA counselling and admission guidance."
+          content="Study MBBS at MVJ Medical College & Research Hospital, Hoskote, Bangalore. Explore 250 MBBS seats, fees, eligibility, 1,100-bed hospital, KEA counselling and admission guidance."
         />
         <meta
           name="keywords"
-          content="Sapthagiri Medical College Bangalore, SIMSRC MBBS fees, Sapthagiri Institute of Medical Sciences admission, MBBS in Bangalore, Karnataka medical college"
+          content="MVJ Medical College Bangalore, MVJMC MBBS fees, MVJ Medical College Hoskote admission, MBBS in Bangalore, Karnataka medical college"
         />
         <meta name="author" content="edurizon" />
         <meta name="robots" content="index, follow" />
         <link
           rel="alternate"
-          href="https://www.edurizon.in/mbbs-in-india/karnataka/sapthagiri-institute-of-medical-sciences-and-research-centre"
+          href="https://www.edurizon.in/mbbs-in-india/karnataka/mvj-medical-college-and-research-hospital"
           hrefLang="en-in"
         />
       </Head>
@@ -198,13 +209,13 @@ const SapthagiriInstitutePage = () => {
           <div className="bg-linenChosen flex flex-col md:flex-row gap-[3vw] items-center w-full text-black">
             <Image
               className="w-full md:w-[40.625vw] h-full object-cover"
-              src="/assets/Images/mbbs-in-india/states/karnataka/sims.png"
-              alt="Sapthagiri Institute of Medical Sciences, Bangalore"
+              src="/assets/Images/mbbs-in-india/states/karnataka/mvj-medical-college.png"
+              alt="MVJ Medical College & Research Hospital, Bangalore"
               width={650}
               height={550}
             />
             <div className="relative mx-[6vw] md:mx-0 py-[4vw]">
-              <h1 className="font-bold text-h3TextPhone md:text-h2Text leading-[120%] mb-[2vw] md:mb-[1.5vw] ">
+              <h1 className="font-bold text-h3TextPhone md:text-h3Text leading-[120%] mb-[2vw] md:mb-[1.5vw] ">
                 {COLLEGE_NAME}
               </h1>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-[2.25vw] md:gap-[.75vw] items-center justify-center">
@@ -237,27 +248,24 @@ const SapthagiriInstitutePage = () => {
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">Overview</h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>
-              Sapthagiri Institute of Medical Sciences &amp; Research Centre (SIMSRC), Bangalore,
-              is a private medical institution located on Hesaraghatta Main Road in Bengaluru,
-              Karnataka.
+              MVJ Medical College &amp; Research Hospital (MVJMC&amp;RH), Bangalore, is a private
+              medical college located at Dandupalya, Hoskote, in Bengaluru Rural District, Karnataka.
             </li>
             <li>
-              Established under the Sri Srinivasa Educational &amp; Charitable Trust, the institution
-              provides undergraduate and postgraduate medical education along with tertiary and
-              super-specialty healthcare services.
+              Established in 2001, the institution operates under the Venkatesha Education Society
+              and is affiliated with Rajiv Gandhi University of Health Sciences (RGUHS), Karnataka.
             </li>
             <li>
-              The medical college is part of Sapthagiri NPS University, Bengaluru, established under
-              the Sapthagiri NPS University Act, 2022.
+              The college offers undergraduate and postgraduate medical education along with
+              hospital-based clinical training through its attached teaching hospital.
             </li>
             <li>
-              NMC identifies SIMSRC as a private medical college established in 2011, with an MBBS
-              intake of 250 seats.
+              MVJ Medical College and Hospital, Hoskote, is a 27-acre medical education campus and
+              tertiary healthcare facility at the 30th-kilometer milestone on Old Madras Road (NH-75).
             </li>
             <li>
-              The college combines medical education with hospital-based clinical training through
-              laboratories, lecture facilities, clinical skills training, research activities and
-              other learning resources.
+              The teaching hospital has over 1,100 beds, modern intensive care units and advanced
+              research facilities supporting clinical learning.
             </li>
           </ul>
 
@@ -270,12 +278,12 @@ const SapthagiriInstitutePage = () => {
               network of government and private medical colleges.
             </li>
             <li>
-              Bengaluru is a major education, technology and healthcare hub with excellent
-              connectivity and student-friendly infrastructure.
+              Hoskote, in Bengaluru Rural District, offers hospital-based training with access to
+              Bengaluru&apos;s education, technology and healthcare ecosystem.
             </li>
             <li>
-              Students benefit from exposure to multispecialty hospitals, research environments and
-              diverse clinical cases across the city.
+              The hospital caters to communities across 454 villages covering the Hoskote, Malur and
+              Chintamani areas.
             </li>
           </ul>
 
@@ -284,24 +292,25 @@ const SapthagiriInstitutePage = () => {
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>
-              <strong>Teaching Hospital:</strong> Sapthagiri Hospital with approximately 1,070 beds
-              supporting clinical education and community healthcare.
+              <strong>Teaching Hospital:</strong> MVJ Medical College &amp; Research Hospital with
+              approximately 1,100 beds, 30 emergency beds, 12 operation theatres and 8 ICUs.
             </li>
             <li>
-              <strong>University:</strong> Part of Sapthagiri NPS University, Bengaluru; previously
-              affiliated to Rajiv Gandhi University of Health Sciences (RGUHS).
+              <strong>University:</strong> Affiliated to Rajiv Gandhi University of Health Sciences
+              (RGUHS), Karnataka.
             </li>
             <li>
-              <strong>Programme:</strong> MBBS is a 5½-year programme including compulsory internship.
+              <strong>Programme:</strong> MBBS is a 5.5-year programme comprising 4.5 years of academic
+              study followed by one year of compulsory rotating internship.
             </li>
             <li>
               <strong>Clinical Training:</strong> Pre-clinical, para-clinical and clinical disciplines
-              with practical laboratory training, hospital postings and community-oriented medical
+              with practical laboratory training, hospital postings and community-based medical
               education.
             </li>
             <li>
-              <strong>Accreditation:</strong> NABH Certificate H-2024-1311 valid from 11 January 2024
-              to 10 January 2028.
+              <strong>Accreditation:</strong> NABH entry-level certified and ISO accredited, as stated
+              by MVJ.
             </li>
           </ul>
         </section>
@@ -309,7 +318,7 @@ const SapthagiriInstitutePage = () => {
         <div className="p-[8vw] md:p-[4vw] flex flex-col md:flex-row px-[6vw] md:px-[12.5vw] gap-[5vw] md:gap-[2vw] mb-[10vw] md:mb-[4vw] items-center bg-linenChosen">
           <div className="flex flex-col gap-[2vw] md:gap-[1vw] text-black">
             <h3 className="font-bold text-h5TextPhone md:text-h3Text leading-[120%] mb-[4vw] md:mb-[1vw] text-left">
-              Why Choose Sapthagiri for MBBS?
+              Why Choose MVJ for MBBS?
             </h3>
             <ul className="list-disc list-outside pl-[2vw] md:pl-[1.5vw] text-smallTextPhone md:text-regularText">
               {whyChooseItems.map((item) => (
@@ -333,6 +342,12 @@ const SapthagiriInstitutePage = () => {
         />
 
         <ListedTable
+          id={seatIntakeData.id}
+          section2={seatIntakeData.section2}
+          content={seatIntakeData.content}
+        />
+
+        <ListedTable
           id={feeStructureData.id}
           section2={feeStructureData.section2}
           content={feeStructureData.content}
@@ -340,38 +355,22 @@ const SapthagiriInstitutePage = () => {
 
         <section className="mx-[6vw] md:mx-[12.5vw] pb-[10vw] md:pb-[4vw]">
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Sapthagiri NPS University
-          </h3>
-          <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>
-              Sapthagiri Institute of Medical Sciences is part of the academic ecosystem of Sapthagiri
-              NPS University, Bengaluru.
-            </li>
-            <li>
-              The university was established through Karnataka Act No. 18 of 2023 and is promoted by
-              the Sri Srinivasa Educational &amp; Charitable Trust.
-            </li>
-            <li>
-              The School of Medicine &amp; Health Sciences offers MBBS, MD/MS specializations and
-              selected DM/M.Ch programmes.
-            </li>
-            <li>
-              Students should note that older third-party listings may still show RGUHS affiliation;
-              the current NMC listing identifies Sapthagiri NPS University.
-            </li>
-          </ul>
-
-          <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
             Teaching Hospital &amp; Clinical Training
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>Approximately 1,070-bed multispecialty teaching hospital</li>
-            <li>Outpatient departments, inpatient wards and emergency services</li>
-            <li>Intensive-care facilities, operation theatres and diagnostic services</li>
-            <li>Blood bank, pharmacy, physiotherapy and clinical support services</li>
             <li>
-              Exposure across General Medicine, Surgery, OBG, Paediatrics, Orthopaedics,
-              Ophthalmology, ENT, Dermatology, Psychiatry, Anaesthesiology, Radiodiagnosis and more
+              The attached teaching hospital was established in 2001 to provide healthcare services
+              to the population in and around Hoskote.
+            </li>
+            <li>1,100 beds with 24/7 hospital services, blood bank and pharmacy</li>
+            <li>30 emergency beds, 12 operation theatres and 8 ICUs</li>
+            <li>5+ laboratories, emergency and casualty services</li>
+            <li>Broad medical and surgical specialties with selected super-specialty services</li>
+            <li>MVJ Neurosciences Centre providing neurosurgical care</li>
+            <li>
+              Clinical exposure across OPD, inpatient wards, emergency services, ICUs, operation
+              theatres, General Medicine, Surgery, OBG, Paediatrics, Orthopaedics, Ophthalmology,
+              ENT, Dermatology, Psychiatry, Radiodiagnosis, Anaesthesiology and Community Medicine
             </li>
           </ul>
 
@@ -385,26 +384,58 @@ const SapthagiriInstitutePage = () => {
             <strong>Para-Clinical:</strong> {paraClinicalDepartments.join(", ")}
           </p>
           <p className="text-smallTextPhone md:text-regularText text-left mb-[4vw]">
-            <strong>Clinical:</strong> {clinicalDepartments.join(", ")}
+            <strong>Clinical &amp; Allied Specialties:</strong> {clinicalDepartments.join(", ")}
           </p>
 
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Infrastructure &amp; Student Facilities
+            3D Interactive Medical Learning
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>Lecture halls, teaching laboratories and departmental facilities</li>
-            <li>Clinical skills training, library resources and diagnostic facilities</li>
-            <li>Hostel accommodation with separate arrangements for male and female students</li>
-            <li>Dining facilities, sports, recreation and student support services</li>
-            <li>Seminars, workshops, conferences and research activities</li>
+            <li>
+              MVJ uses a digital 3D learning platform to help students visualise concepts that can
+              be difficult through conventional two-dimensional teaching material.
+            </li>
+            <li>
+              The technology is used in Anatomy, Physiology, Biochemistry, Histology, Neuroanatomy
+              and Embryology.
+            </li>
           </ul>
 
           <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
-            Postgraduate &amp; Super-Specialty Programmes
+            Skill-Based Medical Training
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
-            <li>MD/MS programmes across Anatomy, Medicine, Surgery, Paediatrics, Radiodiagnosis and other specialties</li>
-            <li>Super-specialty programmes including DM Cardiology, DM Medical Gastroenterology, DM Endocrinology, M.Ch Surgical Oncology and M.Ch Urology</li>
+            <li>
+              A dedicated skill laboratory allows students to practise selected clinical procedures
+              and communication techniques before supervised patient care.
+            </li>
+            <li>
+              Training supports clinical confidence, procedural skills, communication, patient
+              interaction, teamwork, decision-making and professional behaviour.
+            </li>
+          </ul>
+
+          <h3 className="text-h6TextPhone leading-[120%] md:text-h5Text text-left">
+            Library, Research &amp; Campus Life
+          </h3>
+          <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
+            <li>
+              Central Library with textbooks, reference materials, journals and digital learning
+              resources for undergraduate and postgraduate study
+            </li>
+            <li>
+              Research projects, academic presentations, poster presentations, seminars, conferences
+              and community-based research
+            </li>
+            <li>
+              Hostel facilities including separate accommodation, furnished rooms, Wi-Fi, dining,
+              hot water and power backup
+            </li>
+            <li>
+              Sports and recreation including basketball, volleyball, badminton, tennis, outdoor
+              sports and gymnasium
+            </li>
+            <li>Transportation, dining, student activities and academic support on campus</li>
           </ul>
         </section>
 
@@ -434,14 +465,14 @@ const SapthagiriInstitutePage = () => {
           </h3>
           <ul className="text-smallTextPhone list-disc ml-[3vw] md:ml-[1.5vw] mb-[4vw] md:mb-[1vw] text-left md:text-regularText md:text-justify">
             <li>NEET counselling guidance and Karnataka medical counselling support</li>
-            <li>MBBS college selection and Sapthagiri admission guidance</li>
+            <li>MBBS college selection and MVJ admission guidance</li>
             <li>Seat-category information, fee structure analysis and college comparison</li>
             <li>Eligibility assessment, document preparation, and reporting guidance</li>
           </ul>
           <p className="text-smallTextPhone md:text-regularText text-left">
             Looking for MBBS admission in Bangalore? Connect with Edurizon Pvt. Ltd. for
-            personalized guidance on MBBS admission at Sapthagiri Institute of Medical Sciences and
-            other medical colleges in Karnataka.
+            personalized guidance on MBBS admission at MVJ Medical College &amp; Research Hospital
+            and other medical colleges in Karnataka.
           </p>
         </section>
       </div>
@@ -449,4 +480,4 @@ const SapthagiriInstitutePage = () => {
   );
 };
 
-export default SapthagiriInstitutePage;
+export default MvjMedicalCollegePage;

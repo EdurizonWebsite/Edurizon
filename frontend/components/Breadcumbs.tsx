@@ -84,6 +84,9 @@ const Breadcrumbs: React.FC = () => {
     'mbbs-in-india':'MBBS in India',
     'karnataka':'Karnataka',
     'sapthagiri-institute-of-medical-sciences-and-research-centre':'Sapthagiri Institute of Medical Sciences',
+    'mvj-medical-college-and-research-hospital':'MVJ Medical College & Research Hospital',
+    'ramaiah-medical-college':'Ramaiah Medical College',
+    'akash-institute-of-medical-sciences-and-research-centre':'Akash Institute of Medical Sciences',
   };
 
   return (
