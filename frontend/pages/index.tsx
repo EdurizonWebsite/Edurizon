@@ -44,7 +44,7 @@ const Home = () => {
 
       {/* ✅ Lazy Loaded Sections (Prevents Render Blocking) */}
       <WhyChoseUsSection />
-      <Universities />
+      {/* <Universities /> */}
       <JourneySection />
       <FAQSection data={data} />
       <AssociatedUniversitiesSection />

@@ -32,12 +32,13 @@
 
 .mbbs-india-page p {
   text-align: left;
+  @apply text-regularTextPhone md:text-tinyText;
 }
 
 .mbbs-india-page .top-bar {
   background: var(--navy);
   color: #fff;
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-tinyText;
   padding: 9px 0;
 }
 
@@ -68,12 +69,12 @@
   border: 1px solid #ffffff30;
   padding: 8px 13px;
   border-radius: 50px;
-  font-size: 13px;
-  font-weight: 800;
+  @apply text-regularTextPhone md:text-smallText;
+  font-weight: 700;
 }
 
 .mbbs-india-page .hero h1 {
-  font-size: clamp(34px, 5vw, 54px);
+  @apply text-h4TextPhone md:text-h4Text;
   line-height: 1.08;
   margin: 18px 0;
   font-weight: 800;
@@ -85,7 +86,7 @@
 }
 
 .mbbs-india-page .hero p {
-  font-size: 18px;
+  @apply text-regularTextPhone md:text-regularText;
   color: #f5e6dc;
   max-width: 650px;
   text-align: left;
@@ -107,7 +108,7 @@
   display: inline-block;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-smallText;
   transition: opacity 0.2s ease;
 }
 
@@ -145,7 +146,7 @@
 
 .mbbs-india-page .hero-card h3 {
   margin: 0 0 16px;
-  font-size: 20px;
+  @apply text-h6TextPhone md:text-regularText;
 }
 
 .mbbs-india-page .field {
@@ -155,7 +156,7 @@
   border-radius: 8px;
   margin: 10px 0;
   color: var(--text);
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-smallText;
   font-family: inherit;
   background: #fff;
 }
@@ -200,12 +201,13 @@
 }
 
 .mbbs-india-page .stat b {
-  font-size: 27px;
+  @apply text-h4TextPhone md:text-h6Text;
   color: var(--primary);
   display: block;
 }
 
 .mbbs-india-page .stat small {
+  @apply text-regularTextPhone md:text-regularText;
   color: var(--muted);
 }
 
@@ -220,13 +222,14 @@
 }
 
 .mbbs-india-page .section-head h2 {
-  font-size: clamp(28px, 4vw, 36px);
+  @apply text-h4TextPhone md:text-h5Text;
   margin: 9px 0 8px;
   font-weight: 800;
   text-align: left;
 }
 
 .mbbs-india-page .section-head p {
+  @apply text-regularTextPhone md:text-regularText;
   color: var(--muted);
   text-align: left;
   margin: 0;
@@ -234,7 +237,7 @@
 
 .mbbs-india-page .eyebrow {
   color: var(--primary);
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-smallText;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.4px;
@@ -269,12 +272,12 @@
 
 .mbbs-india-page .card h3 {
   margin: 16px 0 8px;
-  font-size: 18px;
+  @apply text-h6TextPhone md:text-regularText;
 }
 
 .mbbs-india-page .card p {
   color: var(--muted);
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-smallText;
 }
 
 .mbbs-india-page .light {
@@ -301,7 +304,7 @@
   padding: 13px;
   border-radius: 9px;
   font-weight: 700;
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-smallText;
 }
 
 .mbbs-india-page .check span {
@@ -329,18 +332,57 @@
 }
 
 .mbbs-india-page .num {
-  font-size: 30px;
+  @apply text-h4TextPhone md:text-h6Text;
   font-weight: 900;
-  color: #d4b89a;
+  color: #000000;
 }
 
 .mbbs-india-page .step h3 {
   margin: 5px 0;
-  font-size: 16px;
+  @apply text-h6TextPhone md:text-regularText;
 }
 
-.mbbs-india-page .step p {
-  font-size: 13px;
+.mbbs-india-page .step p,
+.mbbs-india-page .step h6 {
+  @apply text-regularTextPhone md:text-smallText;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.mbbs-india-page .rounds-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.mbbs-india-page .round-card {
+  background: #fff;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  padding: 20px 18px;
+  text-align: left;
+}
+
+.mbbs-india-page .round-num {
+  display: block;
+  color: var(--primary);
+  @apply text-regularTextPhone md:text-regularText;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+}
+
+.mbbs-india-page .round-card h3 {
+  margin: 0 0 8px;
+  @apply text-h6TextPhone md:text-h6Text;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.mbbs-india-page .round-card p {
+  margin: 0;
+  @apply text-regularTextPhone md:text-regularText;
+  line-height: 1.6;
   color: var(--muted);
 }
 
@@ -356,7 +398,7 @@
 }
 
 .mbbs-india-page .searchbox h2 {
-  font-size: 32px;
+  @apply text-h4TextPhone md:text-h4Text;
   margin: 0 0 8px;
 }
 
@@ -377,7 +419,7 @@
   border-radius: 8px;
   border: 1px solid var(--line-strong);
   font-family: inherit;
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-regularText;
   width: 100%;
 }
 
@@ -407,12 +449,12 @@
 
 .mbbs-india-page .search-result-card h4 {
   margin: 0 0 6px;
-  font-size: 15px;
+  @apply text-h6TextPhone md:text-h6Text;
 }
 
 .mbbs-india-page .search-result-card p {
   margin: 0;
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
   color: var(--muted);
 }
 
@@ -424,7 +466,7 @@
 }
 
 .mbbs-india-page .cta h2 {
-  font-size: clamp(28px, 4vw, 35px);
+  @apply text-h4TextPhone md:text-h4Text;
   margin: 0 0 10px;
 }
 
@@ -454,7 +496,7 @@
 
 .mbbs-india-page .help-copy h3 {
   margin: 8px 0 10px;
-  font-size: clamp(22px, 3vw, 28px);
+  @apply text-h5TextPhone md:text-h5Text;
   line-height: 1.2;
   text-align: left;
 }
@@ -508,12 +550,12 @@
 
 .mbbs-india-page .help-link strong {
   display: block;
-  font-size: 15px;
+  @apply text-regularTextPhone md:text-regularText;
 }
 
 .mbbs-india-page .help-link small {
   color: var(--muted);
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
 }
 
 .mbbs-india-page .pdf-links {
@@ -541,12 +583,12 @@
 
 .mbbs-india-page .pdf-card strong {
   color: var(--text);
-  font-size: 15px;
+  @apply text-regularTextPhone md:text-regularText;
 }
 
 .mbbs-india-page .pdf-card span {
   color: var(--muted);
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
 }
 
 .mbbs-india-page .summary-grid {
@@ -568,7 +610,7 @@
   width: 100%;
   border-collapse: collapse;
   background: #fff;
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
   margin: 0;
 }
 
@@ -616,7 +658,7 @@
 }
 
 .mbbs-india-page .form-note {
-  font-size: 11px;
+  @apply text-regularTextPhone md:text-regularText;
   color: #98a2b3;
   text-align: center;
   margin: 10px 0 0;
@@ -624,7 +666,7 @@
 
 .mbbs-india-page .form-success {
   color: var(--accent);
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
   text-align: center;
   margin-top: 8px;
   font-weight: 600;
@@ -632,13 +674,13 @@
 
 .mbbs-india-page .form-error {
   color: #dc2626;
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
   text-align: center;
   margin-top: 8px;
 }
 
 .mbbs-india-page .india-crumb {
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-regularText;
   font-weight: 700;
   margin-bottom: 16px;
   color: #ffd7c3;
@@ -657,11 +699,17 @@
   box-shadow: 0 8px 25px rgba(25, 29, 35, 0.06);
 }
 
+.mbbs-india-page .intro-block h3 {
+  margin: 0 0 12px;
+  @apply text-h6TextPhone md:text-h6Text;
+}
+
 .mbbs-india-page .intro-block p {
   color: var(--muted);
   margin: 0 0 14px;
   text-align: left;
   line-height: 1.7;
+  @apply text-regularTextPhone md:text-smallText
 }
 
 .mbbs-india-page .intro-block p:last-child {
@@ -678,7 +726,7 @@
 
 .mbbs-india-page .notice-box h3 {
   margin: 8px 0 10px;
-  font-size: 20px;
+  @apply text-h6TextPhone md:text-h6Text;
   text-align: left;
 }
 
@@ -693,7 +741,7 @@
   margin: 14px 0 0;
   padding-left: 20px;
   color: var(--muted);
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-regularText;
 }
 
 .mbbs-india-page .bullet-list li {
@@ -714,7 +762,7 @@
   border: 1px solid #ffd7c3;
   border-radius: 999px;
   padding: 6px 12px;
-  font-size: 12px;
+  @apply text-regularTextPhone md:text-regularText;
   font-weight: 700;
 }
 
@@ -725,18 +773,19 @@
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 14px;
+  
 }
 
 .mbbs-india-page .table-meta h3 {
   margin: 0;
-  font-size: 22px;
+  @apply text-h6TextPhone md:text-h6Text;
   text-align: left;
 }
 
 .mbbs-india-page .meta-stats {
   display: flex;
   gap: 18px;
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-regularText;
   color: var(--muted);
 }
 
@@ -765,7 +814,7 @@
   width: 100%;
   border-collapse: collapse;
   min-width: 760px;
-  font-size: 14px;
+  @apply text-regularTextPhone md:text-smallText;
   margin: 0;
 }
 
@@ -798,7 +847,7 @@
   font-weight: 800;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  font-size: 13px;
+  @apply text-regularTextPhone md:text-smallText;
 }
 
 .mbbs-india-page .total-row td {
@@ -827,7 +876,8 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .mbbs-india-page .steps {
+  .mbbs-india-page .steps,
+  .mbbs-india-page .rounds-track {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -843,6 +893,7 @@
 
   .mbbs-india-page .cards,
   .mbbs-india-page .steps,
+  .mbbs-india-page .rounds-track,
   .mbbs-india-page .check,
   .mbbs-india-page .search-controls,
   .mbbs-india-page .search-results {
@@ -862,7 +913,7 @@
   }
 
   .mbbs-india-page .hero p {
-    font-size: 16px;
+    @apply text-mediumTextPhone;
   }
 
   .mbbs-india-page section {

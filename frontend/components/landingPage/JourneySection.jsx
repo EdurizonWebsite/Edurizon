@@ -6,12 +6,12 @@ const JounreySection =()=>{
             <div className="w-full md:w-[41.125vw] mx-auto md:mb-[-10vw]">
             {/* <div className='flex flex-col justify-center bg-paleOrangeChosen mb-[6vw] md:mb-[1.5vw]  text-black text-tinyTextPhone md:text-tinyText h-[7vw] md:h-[1.75vw] w-[21vw] md:w-[6.5vw] mx-auto rounded-[11vw] md:rounded-[2.75vw]'>
                 <p className=' text-center '>Journey</p></div> */}
-                <div className='mb-[.5vw] text-center'>
+                <div className='mb-[.5vw] text-left'>
                     <h2 className='text-h2Text  leading-[120%] dark:text-white'><strong><span className="text-h0Text">Y</span>our <span className='text-orangeChosen'>Journey</span> With Us</strong></h2>
                     <p className='md:text-smallTextPhone text-smallTextPhone text-black dark:text-white '>From Application to Arrival - We Guide You Every Step of the Way!</p>
                 </div>
                 </div>
-                <div className="relative hidden md:flex md:flex-col justify-center h-[103.875vw] scale-75 " >
+                <div className="relative hidden md:flex md:flex-col text-left h-[103.875vw] scale-75 " >
                 {/* Journey 1 */}
                 <div className='absolute top-[3vw] left-[0] w-[27.25vw] dark:text-white'>
                     <h5 className='text-h4Text  font-bold leading-[140%] mb-[1vw]'>Consultation and University selection</h5>
@@ -25,7 +25,7 @@ const JounreySection =()=>{
                 {/* Journey 2 */}
                 <div className='absolute top-[25.25vw] right-[0] w-[25.25vw] dark:text-white'>
                     <h5 className='text-h4Text   font-bold leading-[140%] mb-[1vw]'>Application & SOP Assistance</h5>
-                    <p className='text-regularText leading-[150%] '>Edurizon Pvt. Ltd. is one of the best abroad education consultants Company, in Delhi. We have 7 branch offices all over India. We have been experts in the field of counseling for the last 10 years.</p>
+                    <p className='text-regularText leading-[150%] '>Edurizon Pvt. Ltd. is one of the best abroad education consultants Company, in Delhi. We have 7 branch offices all over India. We have been experts in the field of counseling for the last 19 years.</p>
                 </div>
                 <Image width={40} height={40} src="/assets/Images/Icons/Journey2.svg" alt='Journey2' className='absolute left-[41.75vw] top-[23vw] w-[17.5vw] h-[11.6875vw] ' />
                     <svg className='absolute left-[44.625vw] top-[35vw]' style={{ width: "15.875vw", height: "16vw" }} width="254" height="256" viewBox="0 0 254 256" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ const JounreySection =()=>{
             <div className='md:hidden flex flex-row items-center overflow-x-auto gap-[3vw] no-scrollbar'>
                 <div className='w-[80vw] flex-shrink-0'>
                     <Image width={40} height={40} src="/assets/Images/Icons/Journey1.svg" alt="Journey1" className="w-[35vw] h-[35vw] mx-auto object-cover" />
-                    <h5 className='text-h5TextPhone   font-bold leading-[140%] mb-[4vw]'>Consultation and University selection</h5>
+                    <h5 className='text-h5TextPhone text-left   font-bold leading-[140%] mb-[4vw]'>Consultation and University selection</h5>
                     <p className='text-smallTextPhone leading-[150%] '>Confused about which university to choose? Our expert advisors help you select the best university based on your academic background, budget, and career goals.</p>
                 </div>
 
@@ -74,7 +74,7 @@ const JounreySection =()=>{
                 <div className='w-[80vw] flex-shrink-0'>
                     <Image width={40} height={40} src="/assets/Images/Icons/Journey2.svg" alt="Journey2" className="w-[35vw] h-[35vw] mx-auto object-cover" />
                     <h5 className='text-h5TextPhone   font-bold leading-[140%] mb-[4vw]'>Application & SOP Assistance</h5>
-                    <p className='text-smallTextPhone leading-[150%] '>Edurizon Pvt. Ltd. is one of the best abroad education consultants Company, in Delhi. We have 7 branch offices all over India. We have been experts in the field of counseling for the last 10 years..</p>
+                    <p className='text-smallTextPhone leading-[150%] '>Edurizon Pvt. Ltd. is one of the best abroad education consultants Company, in Delhi. We have 7 branch offices all over India. We have been experts in the field of counseling for the last 19 years..</p>
                 </div>
 
                 <svg className='flex-shrink-0' style={{ width: "12.5vw", height: "15.75vw" }} viewBox="0 0 82 16" fill="none" xmlns="http://www.w3.org/2000/svg">

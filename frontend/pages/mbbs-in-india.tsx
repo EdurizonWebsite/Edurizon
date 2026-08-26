@@ -346,7 +346,7 @@ export default function MbbsInIndiaPage() {
 
         <section id="colleges" ref={collegesRef}>
           <div className="container">
-            <div className="section-head">
+            <div className="section-head ">
               <div className="eyebrow">Explore Your Options</div>
               <h2>Medical Colleges Across India</h2>
               <p>
@@ -354,38 +354,44 @@ export default function MbbsInIndiaPage() {
                 primary discovery point for students.
               </p>
             </div>
-            <div className="cards">
-              <div className="card">
+            <div className="cards ">
+              <div className="card flex flex-col">
                 <div className="icon">G</div>
                 <h3>Government Medical Colleges</h3>
-                <p>
+                <p className="mb-auto">
                   Explore government medical colleges, eligibility, seats, counselling routes and
                   available NRI options.
                 </p>
+                <p className="max-w-30">
                 <Link href="/mbbs-in-india/state-wise-institutes" className="btn">
                   View Colleges →
                 </Link>
+                </p>
               </div>
-              <div className="card">
+              <div className="card flex flex-col">
                 <div className="icon">P</div>
                 <h3>Private Medical Colleges</h3>
                 <p>
                   Browse private MBBS colleges with state-wise fee information and admission guidance.
                 </p>
+                <p className="max-w-30 mt-auto">
                 <Link href="/mbbs-in-india/private-universities" className="btn">
                   View Colleges →
                 </Link>
+                </p>
               </div>
-              <div className="card">
+              <div className="card flex flex-col">
                 <div className="icon">D</div>
                 <h3>Deemed Universities</h3>
                 <p>
                   Discover deemed medical universities and compare tuition fee structures and admission
                   pathways.
                 </p>
+                <p className="max-w-30 mt-auto">
                 <Link href="/mbbs-in-india/deemed-universities" className="btn">
                   View Colleges →
                 </Link>
+                </p>
               </div>
             </div>
           </div>
@@ -459,7 +465,7 @@ export default function MbbsInIndiaPage() {
                 <button
                   type="button"
                   className="btn"
-                  style={{ marginTop: 10, padding: "10px 16px", fontSize: 13 }}
+                  style={{ marginTop: 10, padding: "10px 16px" }}
                   onClick={() => scrollTo(contactRef)}
                 >
                   Talk to Expert →
@@ -582,7 +588,7 @@ export default function MbbsInIndiaPage() {
           </div>
         </section>
 
-        <section className="light">
+        <section className="light mb-20">
           <div className="container">
             <div className="section-head">
               <div className="eyebrow">Student Resources</div>
@@ -599,7 +605,7 @@ export default function MbbsInIndiaPage() {
           </div>
         </section>
 
-        <div className="cta mb-10" id="contact" ref={contactRef}>
+        {/* <div className="cta mb-10" id="contact" ref={contactRef}>
           <div className="container">
             <h2>Confused About Which MBBS College to Choose?</h2>
             <p>
@@ -620,7 +626,7 @@ export default function MbbsInIndiaPage() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
       <ToastContainer position="top-right" autoClose={5000} />
     </>

@@ -12,24 +12,25 @@ const teamMembers = [
         name: "Kunal Chauhan",
         position: "Academic Director",
         image: "/assets/Images/Team/kunalSir.png",
-      }
-    ],
-    [
-      {
-        name: "Yogesh Thakur",
-        position: "Finance Manager",
-        image: "/assets/Images/Team/yogeshSir.png",
       },
       {
         name: "Karishma Singh",
         position: "Overseas Head",
         image: "/assets/Images/Team/karishmaMam.png",
-      },
-      {
-        name: "Pankaj Kumar",
-        position: "IT Manager",
-        image: "/assets/Images/Team/pankajSir.png",
-      },
+      }
+    ],
+    [
+      // {
+      //   name: "Yogesh Thakur",
+      //   position: "Finance Manager",
+      //   image: "/assets/Images/Team/yogeshSir.png",
+      // },
+      
+      // {
+      //   name: "Pankaj Kumar",
+      //   position: "IT Manager",
+      //   image: "/assets/Images/Team/pankajSir.png",
+      // },
     ],
   ];
 

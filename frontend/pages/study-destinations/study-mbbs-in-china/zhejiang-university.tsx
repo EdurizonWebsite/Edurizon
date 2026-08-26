@@ -387,7 +387,7 @@ const NewPage = () => {
                 </div>
                 <ul className="points-two">
                     <li>Edurizon Pvt Ltd is an authorized agent of Zhejiang University.</li>
-                    <li>Edurizon Pvt Ltd is a study abroad consultant with 10 years of experience for admission in China.</li>
+                    <li>Edurizon Pvt Ltd is a study abroad consultant with 19 years of experience for admission in China.</li>
                     <li>We have sent highest number of students to China in 2019 from almost every state of India.</li>
                     <li>We help our students in each and every step of their career.</li>
                     <li>We provide free service to the students for total 6years, till the completion of the course.</li>

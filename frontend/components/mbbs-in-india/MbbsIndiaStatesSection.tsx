@@ -69,7 +69,7 @@ const MbbsIndiaStatesSection = () => {
     <section className="w-full gradient-bg relative md:min-h-[50.25vw] flex flex-col  justify-between overflow-hidden py-[10vw] md:py-[3vw] px-[6.25vw] md:px-[7.5vw] box-border">
       <div className="flex flex-row md:gap-[23.3125vw] items-center mx-[6.25vw] md:mx-[7.5vw]">
         <div className="w-full md:w-[37.1875vw]">
-          <h2 className="text-h5TextPhone md:text-h2Text leading-[120%] text-black">
+          <h2 className="text-h5TextPhone md:text-h3Text leading-[120%] text-black">
             <strong>
               Explore <span className="text-orangeChosen">Medical Colleges</span>
             </strong>{" "}
@@ -119,7 +119,7 @@ const MbbsIndiaStatesSection = () => {
                       />
                     </div>
                     <div className="relative shrink-0 bg-white/90 border-t border-[#ffd7c3] px-[4vw] md:px-[1.25vw] py-[4vw] md:py-[1.25vw]">
-                      <p className="text-black font-semibold text-regularTextPhone md:text-h6Text">
+                      <p className="text-black font-semibold " style={{fontSize:"16px"}}>
                         MBBS in {slide.title}
                       </p>
                     </div>
@@ -150,14 +150,14 @@ const MbbsIndiaStatesSection = () => {
         <Link href="/mbbs-in-india/state-wise-institutes">
           <IconButton
             btnTitle="Explore All States"
-            className="font-medium text-smallTextPhone md:text-regularText"
+            className="font-medium text-center text-smallTextPhone md:text-regularText"
             btnHeightPhone={11}
             btnRadiusPhone={15.5}
             btnWidthPhone={55.5}
             iconWidthPhone={7.75}
             paddingPhone={1.75}
             btnHeight={3.3}
-            btnWidth={16}
+            btnWidth={11}
             btnRadius={7.5}
             padding={0.5}
             iconWidth={2.1875}

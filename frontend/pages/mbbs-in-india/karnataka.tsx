@@ -75,20 +75,24 @@ const ADMISSION_STEPS = [
 
 const COUNSELLING_ROUNDS = [
   {
+    num: "01",
     title: "Round 1",
     text: "Initial seat allotment based on NEET rank, eligibility and choices.",
   },
   {
+    num: "02",
     title: "Round 2",
     text: "Further allotment or upgradation against available vacant seats.",
   },
   {
+    num: "03",
     title: "Round 3 – Mop-Up",
     text: "Conducted to fill remaining seats after the earlier rounds.",
   },
   {
-    title: "Stray Vacancy Round",
-    text: "Final round for filling seats that remain vacant after the regular counselling rounds.",
+    num: "04",
+    title: "Stray Vacancy",
+    text: "Last round for filling seats that remain vacant after regular counselling.",
   },
 ];
 
@@ -388,8 +392,8 @@ export default function MbbsInKarnatakaPage() {
               {ADMISSION_STEPS.map((step) => (
                 <div className="step" key={step.num}>
                   <div className="num">{step.num}</div>
-                  <h3>{step.title}</h3>
-                  <p>{step.text}</p>
+                  <h3 className="font-semibold text-h6TextPhone md:text-h6Text">{step.title}</h3>
+                  <h6 className="text-left text-regularTextPhone md:text-regularText">{step.text}</h6>
                 </div>
               ))}
             </div>
@@ -399,12 +403,13 @@ export default function MbbsInKarnatakaPage() {
               <p>Generally, NEET-UG MBBS counselling in Karnataka may include:</p>
             </div>
 
-            <div className="cards">
+            <div className="rounds-track">
               {COUNSELLING_ROUNDS.map((round) => (
-                <div className="card" key={round.title}>
+                <article className="round-card" key={round.num}>
+                  <span className="round-num">{round.num}</span>
                   <h3>{round.title}</h3>
                   <p>{round.text}</p>
-                </div>
+                </article>
               ))}
             </div>
           </div>
@@ -426,9 +431,9 @@ export default function MbbsInKarnatakaPage() {
             <div className="cards">
               {FEE_CATEGORIES.map((category) => (
                 <div className="card" key={category.title}>
-                  <h3>{category.title}</h3>
+                  <h3 className="font-bold">{category.title}</h3>
                   <p>{category.text}</p>
-                  <ul className="bullet-list">
+                  <ul className="bullet-list list-disc">
                     {category.points.map((point) => (
                       <li key={point}>{point}</li>
                     ))}
@@ -584,7 +589,7 @@ export default function MbbsInKarnatakaPage() {
           </div>
         </section>
 
-        <section className="cta mb-[6.25vw] md:mb-[7.5vw]">
+        {/* <section className="cta mb-[6.25vw] md:mb-[7.5vw]">
           <div className="container">
             <h2>Ready to Begin Your Karnataka MBBS Journey?</h2>
             <p>
@@ -605,7 +610,7 @@ export default function MbbsInKarnatakaPage() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );

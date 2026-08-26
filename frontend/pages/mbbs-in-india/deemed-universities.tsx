@@ -243,7 +243,7 @@ export default function DeemedUniversitiesPage() {
             </div>
 
             <div className="intro-block">
-              <p>
+              <p className="text-h4Text"> 
                 As of August 2025, India has <b>59 Deemed Medical Colleges</b> offering MBBS.
                 State breakdown: Andhra Pradesh, Delhi, Gujarat, Jharkhand, Kerala, Uttarakhand and
                 Uttar Pradesh — 1 each; Odisha — 3; Telangana &amp; Haryana — 2 each; Pondicherry — 5

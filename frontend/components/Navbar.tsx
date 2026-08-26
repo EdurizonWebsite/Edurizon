@@ -43,7 +43,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
     { name: "MBBS in India", href: "/mbbs-in-india", simpleDropdown: true },
-    { name: "Study Destinations", href: "/study-destinations?category=Destination", dropdown: true , borderTop: true },
+    { name: "MBBS in Abroad", href: "/study-destinations?category=Destination", dropdown: true , borderTop: true },
     { name: "Blogs", href: "/blog", external: false },
     { name: "NMC Guidelines", href: "/nmc-guidelines" },
     { name: "Contact Us", href: "/contact-us" , borderTop: true },
