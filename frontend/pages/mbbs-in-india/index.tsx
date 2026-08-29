@@ -356,7 +356,7 @@ export default function MbbsInIndiaPage() {
             </div>
             <div className="cards ">
               <div className="card flex flex-col">
-                <div className="icon">G</div>
+                <img src='/assets/Images/mbbs-in-india/university-type-icon/government_college_icon.png' className="icon"></img>
                 <h3>Government Medical Colleges</h3>
                 <p className="mb-auto">
                   Explore government medical colleges, eligibility, seats, counselling routes and
@@ -369,7 +369,7 @@ export default function MbbsInIndiaPage() {
                 </p>
               </div>
               <div className="card flex flex-col">
-                <div className="icon">P</div>
+              <img src='/assets/Images/mbbs-in-india/university-type-icon/private_college_icon.png' className="icon"></img>
                 <h3>Private Medical Colleges</h3>
                 <p>
                   Browse private MBBS colleges with state-wise fee information and admission guidance.
@@ -381,7 +381,7 @@ export default function MbbsInIndiaPage() {
                 </p>
               </div>
               <div className="card flex flex-col">
-                <div className="icon">D</div>
+              <img src='/assets/Images/mbbs-in-india/university-type-icon/deemed_college_icon.png' className="icon"></img>
                 <h3>Deemed Universities</h3>
                 <p>
                   Discover deemed medical universities and compare tuition fee structures and admission
