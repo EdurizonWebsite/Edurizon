@@ -98,7 +98,7 @@ const CTASectionComponent = () => {
       }, []);
   return (
     <>
-              <div id="ctaSection" ref={ctaSectionRef} >
+              <div    id="ctaSection" ref={ctaSectionRef} >
               <CTASection />
               </div>
               {/* ✅ Theme Toggle Positioned to Avoid Blocking Render */}

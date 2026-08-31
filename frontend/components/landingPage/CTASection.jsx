@@ -43,8 +43,8 @@ const CTASection = () => {
     return (
         <>
          
-        <div className="mx-[7.5vw] mb-[14.5vw] md:mb-[9vw] py-[10vw] md:py-0 px-[6vw] rounded-[10vw] md:rounded-[2.5vw] w-auto h-[52vw] md:h-[28.5625vw] text-white flex md:flex-row gap-[8.625vw] bg-orangeChosen" >
-            <div className="hidden md:block w-[43.1875vw] my-auto">
+        <div  className="scale-90 mx-[7.5vw] mb-[14.5vw] md:mb-[9vw] py-[10vw] md:py-0 px-[6vw] rounded-[10vw] md:rounded-[2.5vw] w-auto h-[52vw] md:h-[28.5625vw] text-white flex md:flex-row gap-[8.625vw] bg-orangeChosen" >
+            <div className=" hidden md:block w-[43.1875vw] my-auto">
                 <h2 className="text-h2Text md:text-h3Text font-bold leading-[120%] mb-[1vw]">{heading}</h2>
                     <p className="text-regularText leading-[150%]">{description}</p>
                 </div>

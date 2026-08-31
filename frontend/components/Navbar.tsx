@@ -53,11 +53,13 @@ const Navbar = () => {
 
   
   const studyDestinations1=[
-    {name:"MBBS in India", href:"/mbbs-in-india",flag:"/assets/Images/country-flag/indian-flag.png"},
+    // {name:"MBBS in India", href:"/mbbs-in-india",flag:"/assets/Images/country-flag/indian-flag.png"},
     {name:"MBBS in Russia", href:"/study-destinations/study-mbbs-in-russia",flag:"/assets/Images/country-flag/russia.png"},
     {name:"MBBS in Georgia", href:"/study-destinations/study-mbbs-in-georgia",flag:"/assets/Images/country-flag/georgia.png"},
     {name:"MBBS in Tajikistan", href:"/study-destinations/study-mbbs-in-tajikistan",flag:"/assets/Images/country-flag/tajikistan.png"},
     {name:"MBBS in Kyrgyzstan", href:"/study-destinations/study-mbbs-in-kyrgyzstan",flag:"/assets/Images/country-flag/kyrgyzstan.png"},
+    {name:"Study in Australia", href:"/study-destinations/study-in-australia",flag:"/assets/Images/country-flag/australia.jpg"},
+
 
   ]
    const studyDestinations2=[
@@ -74,7 +76,6 @@ const Navbar = () => {
     {name:"Study in Germany", href:"/study-destinations/study-in-germany",flag:"/assets/Images/country-flag/german.png"},
     {name:"Study in UK", href:"/study-destinations/study-in-uk",flag:"/assets/Images/country-flag/uk.png"},
     {name:"Study in Hungary", href:"/study-destinations/study-in-hungary",flag:"/assets/Images/country-flag/hungary.png"},
-    {name:"Study in Australia", href:"/study-destinations/study-in-australia",flag:"/assets/Images/country-flag/australia.jpg"},
    ]
 
 

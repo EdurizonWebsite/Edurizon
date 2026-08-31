@@ -236,7 +236,13 @@ export default function MbbsInKarnatakaPage() {
           </div>
         </div>
 
-        <header className="hero">
+        <header className="hero"
+          style={{
+            backgroundImage: "url('/assets/Images/mbbs-in-india/states/karnataka/mbbs-in-karnataka-banner.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}>
           <div className="container">
             <div className="india-crumb">
               <Link href="/mbbs-in-india">MBBS in India</Link>

@@ -240,7 +240,15 @@ export default function MbbsInIndiaPage() {
           </div>
         </div>
 
-        <header className="hero">
+        <header
+          className="hero"
+          style={{
+            backgroundImage: "url('/assets/Images/mbbs-in-india/mbbs-in-india-banner.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <div className="container hero-grid">
             <div>
               <div className="badge">INDIA MBBS ADMISSION 2026</div>
