@@ -187,7 +187,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        },  10 * 60 * 1000) // Show after 20 minutes
+        },  6 * 60 * 1000) // Show after 20 minutes
       );
     };
 
