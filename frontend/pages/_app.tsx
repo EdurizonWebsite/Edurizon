@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "../components/landingPage/faq.css"; 
+import "../components/landingPage/faq.css";
 import "../components/OtpLogin.css";
 import "../components/EmblaCarousel/embla.css";
 import "../components/landingPage/slider.css";
@@ -135,11 +135,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const shouldExcludeLayout = excludedPaths.some(path => router.pathname.includes(path));
   const isAdminRoute = useMemo(() => router.pathname.includes('/admin'), [router.pathname]);
 
-  // Form 
+  // Form
   const [showConsultationForm, setShowConsultationForm] = useState(false);
   const [formFilled, setFormFilled] = useState(false)
   const [suppressConsultationForm, setSuppressConsultationForm] = useState(false);
-  
+
 
   useEffect(() => {
         if (showConsultationForm) {
@@ -168,31 +168,31 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // Don't show form on admin routes
     if (isAdminRoute) return;
-    
+
     const timeouts: NodeJS.Timeout[] = [];
-  
+
     const showFormAtIntervals = () => {
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, 5 * 1000) // After 30 seconds
+        }, 5 * 1000) // Show after 05 seconds
       );
-  
+
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        }, 10 * 1000) // After 5 minutes
+        }, 3 * 60 * 1000) // Show after 3 minutes
       );
-  
+
       timeouts.push(
         setTimeout(() => {
           setShowConsultationForm(true);
-        },  30* 1000) // After 20 minutes
+        },  10 * 60 * 1000) // Show after 20 minutes
       );
     };
-  
+
     showFormAtIntervals();
-  
+
     // Clean up on unmount
     return () => {
       timeouts.forEach(clearTimeout);
@@ -215,7 +215,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         {/* {!hasCustomCanonical && <link rel="canonical" href={canonicalUrl} />} */}
-        <link rel="canonical" href={canonicalUrl} />  
+        <link rel="canonical" href={canonicalUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
